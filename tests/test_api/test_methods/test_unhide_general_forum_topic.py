@@ -1,0 +1,14 @@
+import pytest
+
+from litegram.methods import UnhideGeneralForumTopic
+from tests.mocked_bot import MockedBot
+
+
+class TestUnhideGeneralForumTopic:
+    @pytest.mark.anyio
+    async def test_bot_method(self, bot: MockedBot):
+        prepare_result = bot.add_result_for(UnhideGeneralForumTopic, ok=True, result=True)
+
+        response: bool = await bot.unhide_general_forum_topic(chat_id=42)
+        bot.get_request()
+        assert response == prepare_result.result

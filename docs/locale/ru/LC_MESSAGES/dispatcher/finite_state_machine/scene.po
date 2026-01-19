@@ -1,0 +1,913 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"PO-Revision-Date: 2023-11-23 01:27+0200\n"
+"Last-Translator: \n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:5
+msgid "Scenes Wizard"
+msgstr "Майcтер сцен"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:11
+msgid "This feature is experimental and may be changed in future versions."
+msgstr ""
+"Дана фича является експериментальною, поэтому в наступних оновленнях может "
+"зминюватись."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:13
+msgid ""
+"**litegram's** basics API is easy to use and powerful, allowing the "
+"implementation of simple interactions such as triggering a command or "
+"message for a response. However, certain tasks require a dialogue between"
+" the user and the bot. This is where Scenes come into play."
+msgstr ""
+"Базовий интерфейс **litegram**-в простий и мощный в використанни, что "
+"дозволяе реализувати простые взаемодии, такие как обробка команд или "
+"сообщений и видповидей. Однак деяки завдання вимагають поетапного "
+"диалогу между пользователем и ботом. Ось где сцени вступають в гру."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:20
+msgid "Understanding Scenes"
+msgstr "Що ж ике сцены?"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:22
+msgid ""
+"A Scene in **litegram** is like an abstract, isolated namespace or room "
+"that a user can be ushered into via the code. When a user is within a "
+"Scene, most other global commands or message handlers are bypassed, "
+"unless they are specifically designed to function outside of the Scenes. "
+"This helps in creating an experience of focused interactions. Scenes "
+"provide a structure for more complex interactions, effectively isolating "
+"and managing contexts for different stages of the conversation. They "
+"allow you to control and manage the flow of the conversation in a more "
+"organized manner."
+msgstr ""
+"Сцена в **litegram** схожа на абстрактний, изольований простир имен или "
+"кимнату, к которой пользователь может потрапити с помощью коду. Коли "
+"пользователь перебувае в межах Сцени, бильшисть других глобальних команд или"
+" обработчиков сообщений пропускаються, если только вони не призначени для"
+" роботи поза Сценами.Сцени забезпечують структуру для бильш складних "
+"взаемодий, ефективно изолюючи и керуючи контекстами для ризних етапив "
+"розмови. Вони дозволяють бильш организовано контролювати и керувати "
+"розмовою."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:31
+msgid "Scene Lifecycle"
+msgstr "Життевий цикл"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:33
+#, fuzzy
+msgid ""
+"Each Scene can be \"entered\", \"left\" or \"exited\", allowing for clear"
+" transitions between different stages of the conversation. For instance, "
+"in a multi-step form filling interaction, each step could be a Scene - "
+"the bot guides the user from one Scene to the next as they provide the "
+"required information."
+msgstr ""
+"У кожну сцену можна \"увийти\", \"покинути\" или \"вийти\", что обеспечивает"
+" читки переходи между ризними етапами розмови. Например, в багатоетапний "
+"взаемодии заповнення форми каждый крок может бути сценою - бот направляе "
+"пользователя от одниеи сцени к наступнои, когда вони надають необхидну "
+"информацию."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:39
+msgid "Scene Listeners"
+msgstr "Слухачи событий"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:41
+msgid ""
+"Scenes have their own hooks which are command or message listeners that "
+"only act while the user is within the Scene. These hooks react to user "
+"actions while the user is 'inside' the Scene, providing the responses or "
+"actions appropriate for that context. When the user is ushered from one "
+"Scene to another, the actions and responses change accordingly as the "
+"user is now interacting with the set of listeners inside the new Scene. "
+"These 'Scene-specific' hooks or listeners, detached from the global "
+"listening context, allow for more streamlined and organized bot-user "
+"interactions."
+msgstr ""
+"Сцени мають власни хуки, которые является слухачами команд или сообщений, которые "
+"диють только тогда, когда пользователь знаходиться всередини сцени. Ци хуки "
+"реагують на действия пользователя, когда пользователь перебувае «всередини» Сцени,"
+" предоставляя видповиди или действия, видповидни этому контексту. Коли пользователь "
+"переходить от одниеи сцени к иншои, действия и видповиди видповидно "
+"зминюються, оскильки пользователь теперь взаемодие с групою слухачив в новий"
+" сцени. Ци «специфични для сцени» хуки или слухачи, видирвани от "
+"глобального контексту прослуховування, дозволяють бильш оптимизовану и "
+"организовану взаемодию бот-пользователь."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:52
+msgid "Scene Interactions"
+msgstr "Взаемодия"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:54
+msgid ""
+"Each Scene is like a self-contained world, with interactions defined "
+"within the scope of that Scene. As such, only the handlers defined within"
+" the specific Scene will react to user's input during the lifecycle of "
+"that Scene."
+msgstr ""
+"Кожна сцена схожа на самодостатний свит из взаемодиями, визначеними в "
+"межах этой сцени. Таким чином, только обробники, визначени в конкретний "
+"сцени, реагуватимуть на введення пользователя протягом життевого циклу "
+"этой сцени."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:60
+msgid "Scene Benefits"
+msgstr "Переваги"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:62
+msgid ""
+"Scenes can help manage more complex interaction workflows and enable more"
+" interactive and dynamic dialogs between the user and the bot. This "
+"offers great flexibility in handling multi-step interactions or "
+"conversations with the users."
+msgstr ""
+"Сцени могут допомогти керувати бильш складними робочими процесами "
+"взаемодии и забезпечити бильш интерактивни и динамични диалоги между "
+"пользователем и ботом. Це обеспечивает велику гнучкисть в обробци "
+"багатоетапних взаемодий или розмов с користувачами."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:67
+msgid "How to use Scenes"
+msgstr "Как это использовать?"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:69
+msgid ""
+"For example we have a quiz bot, which asks the user a series of questions"
+" and then displays the results."
+msgstr ""
+"Например, в нас является тестовий бот, который задае користувачеви серию запитань,"
+" а потим видображае результати - назвемо его гра-викторина."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:71
+msgid ""
+"Lets start with the data models, in this example simple data models are "
+"used to represent the questions and answers, in real life you would "
+"probably use a database to store the data."
+msgstr ""
+"Почнемо с моделей данных. У этому примеры простые модели данных "
+"використовуються для представлення запитань и видповидей, в реальному "
+"житти вы, ймовирно, використовували б базу данных для хранения данных."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:74
+msgid "Questions list"
+msgstr "Запииння"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:79
+msgid ""
+"Then, we need to create a Scene class that will represent the quiz game "
+"scene:"
+msgstr ""
+"Затем нам потрибно створити клас Scene, который представлятиме сцену "
+"викторини:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:83
+msgid ""
+"Keyword argument passed into class definition describes the scene name - "
+"is the same as state of the scene."
+msgstr ""
+"Іменований аргумент, переданий в визначення класу, описуе имя сцени - те"
+" саме, что стан сцени."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:85
+msgid "Quiz Scene"
+msgstr "Сэтона викторини"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:93
+msgid "Also we need to define a handler that helps to start the quiz game:"
+msgstr "Також нам потрибно визначити обробник, который поможетт запустити викторину:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:95
+msgid "Start command handler"
+msgstr "Обробник для запуску викторини"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:100
+msgid "Once the scene is defined, we need to register it in the SceneRegistry:"
+msgstr "Писля визначення сцены нам потрибно зарееструвати ии в SceneRegistry:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:102
+msgid "Registering the scene"
+msgstr "Реестрация сцены"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:107
+msgid ""
+"So, now we can implement the quiz game logic, each question is sent to "
+"the user one by one, and the user's answer is checked at the end of all "
+"questions."
+msgstr ""
+"Отже, теперь ми можемо реализувати логику гри-викторини, кожне запитання "
+"надсилаеться користувачеви одне за одним, а ответ пользователя "
+"перевиряеться в кинци всех запитань."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:110
+msgid "Now we need to write an entry point for the question handler:"
+msgstr "Тепер нам потрибно написати точку входу для обробника запиинь:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:112
+msgid "Question handler entry point"
+msgstr "Точка входу обробника запиинь"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:118
+msgid ""
+"Once scene is entered, we should expect the user's answer, so we need to "
+"write a handler for it, this handler should expect the text message, save"
+" the answer and retake the question handler for the next question:"
+msgstr ""
+"Писля входу в сцену ми маемо очикувати видповиди пользователя, поэтому нам "
+"потрибно написати для неи обробник, этот обробник имеет очикувати текстове "
+"сообщения, зберегти ответ и повторно виконати обробник запитання "
+"для наступного запитання:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:122
+msgid "Answer handler"
+msgstr "Обробник ответов"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:127
+msgid ""
+"When user answer with unknown message, we should expect the text message "
+"again:"
+msgstr ""
+"Коли пользователь видповидае невидомим повидомленням, ми должны знову "
+"очикувати текстове сообщения:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:129
+msgid "Unknown message handler"
+msgstr "Невикмий обробник сообщений"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:134
+msgid ""
+"When all questions are answered, we should show the results to the user, "
+"as you can see in the code below, we use `await self.wizard.exit()` to "
+"exit from the scene when questions list is over in the "
+"`QuizScene.on_enter` handler."
+msgstr ""
+"Писля видповиди на все запитання ми маемо показати результати "
+"користувачеви, как вы можете бачити в коди нижче, ми використовуемо `await"
+" self.wizard.exit()`, чтобы вийти зи сцени, когда список запитань в "
+"`QuizScene» закинчено .on_enter` обробник."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:137
+msgid ""
+"Thats means that we need to write an exit handler to show the results to "
+"the user:"
+msgstr ""
+"Це означае, что нам потрибно написати обробник виходу, чтобы показати "
+"результати користувачеви:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:139
+msgid "Show results handler"
+msgstr "Обробник показу результаттив"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:144
+msgid ""
+"Also we can implement a actions to exit from the quiz game or go back to "
+"the previous question:"
+msgstr ""
+"Також ми можемо виконати действия для виходу с викторини или возврат к "
+"попереднього запитання:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:146
+msgid "Exit handler"
+msgstr "Обробник виходу"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:151
+msgid "Back handler"
+msgstr "Обробник действия \"повернутись\""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:156
+msgid "Now we can run the bot and test the quiz game:"
+msgstr "Тепер ми можетмо запустити бота и протестувати гру-викторину:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:158
+msgid "Run the bot"
+msgstr "Запустить бота"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:163
+msgid "Complete them all"
+msgstr "Зберемо все разом"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:165
+msgid "Quiz Example"
+msgstr "Пример викторини"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:171
+msgid "Components"
+msgstr "Компоненти"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:173
+msgid ":class:`litegram.fsm.scene.Scene` - represents a scene, contains handlers"
+msgstr ":class:`litegram.fsm.scene.Scene` - представляет сцену, содержит обробники"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:174
+msgid ""
+":class:`litegram.fsm.scene.SceneRegistry` - container for all scenes in "
+"the bot, used to register scenes and resolve them by name"
+msgstr ""
+":class:`litegram.fsm.scene.SceneRegistry` - контейнер для всех сцен в "
+"боти, використовуеться для реестрации сцен и их виришення за назвою"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:175
+msgid ""
+":class:`litegram.fsm.scene.ScenesManager` - manages scenes for each user,"
+" used to enter, leave and resolve current scene for user"
+msgstr ""
+":class:`litegram.fsm.scene.ScenesManager` - керуе сценами для каждого "
+"пользователя, використовуеться для входу, виходу и виришення поточнои "
+"сцени для пользователя"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:176
+msgid ""
+":class:`litegram.fsm.scene.SceneConfig` - scene configuration, used to "
+"configure scene"
+msgstr ""
+":class:`litegram.fsm.scene.SceneConfig` - конфигурация сцени, "
+"використовуеться для настройки сцени"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:177
+msgid ""
+":class:`litegram.fsm.scene.SceneWizard` - scene wizard, used to interact "
+"with user in scene from active scene handler"
+msgstr ""
+":class:`litegram.fsm.scene.SceneWizard` - майстер сцени, который "
+"використовуеться для взаемодии с пользователем в сцени с активного "
+"обробника сцени"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:178
+msgid "Markers - marker for scene handlers, used to mark scene handlers"
+msgstr ""
+"Markers - маркер для обработчиков сцен, використовуеться для позначення "
+"обработчиков сцен"
+
+#: litegram.fsm.scene.Scene:1 of
+msgid "Represents a scene in a conversation flow."
+msgstr "Предсивляе крок в диалози."
+
+#: litegram.fsm.scene.Scene:3 of
+msgid ""
+"A scene is a specific state in a conversation where certain actions can "
+"take place."
+msgstr "Сэтона — это певний син розмови, где могут отбуватися певни действия."
+
+#: litegram.fsm.scene.Scene:5 of
+msgid ""
+"Each scene has a set of filters that determine when it should be "
+"triggered, and a set of handlers that define the actions to be executed "
+"when the scene is active."
+msgstr ""
+"Кожна сцена имеет набир фильтрив, которые визначають, когда вона имеет бути "
+"запущена, и набир обработчиков, которые визначають действия, которые мають виконуватися,"
+" когда сцена активна."
+
+#: litegram.fsm.scene.Scene:9 of
+msgid ""
+"This class is not meant to be used directly. Instead, it should be "
+"subclassed to define custom scenes."
+msgstr ""
+"Этот клас не призначений для безпосереднього використання. Замисть этого "
+"следует створити пидкласи для визначення власних сцен."
+
+#: litegram.fsm.scene.Scene.add_to_router:1 of
+msgid "Adds the scene to the given router."
+msgstr "Додае сцену к заданого маршрутизатора."
+
+#: ../../dispatcher/finite_state_machine/scene.rst
+msgid "Parameters"
+msgstr "Параметры"
+
+#: ../../dispatcher/finite_state_machine/scene.rst
+msgid "Returns"
+msgstr "Возвращает"
+
+#: litegram.fsm.scene.Scene.as_handler:1 of
+msgid ""
+"Create an entry point handler for the scene, can be used to simplify the "
+"handler that starts the scene."
+msgstr ""
+"Створить обробник точки входу для сцени, который можна использовать для "
+"спрощення обробника, который запускае сцену."
+
+#: litegram.fsm.scene.Scene.as_router:1 of
+msgid "Returns the scene as a router."
+msgstr "Returns the scene as a router."
+
+#: litegram.fsm.scene.Scene.as_router:3 of
+msgid "new router"
+msgstr "новий роутер"
+
+#: litegram.fsm.scene.SceneRegistry:1 of
+msgid "A class that represents a registry for scenes in a Telegram bot."
+msgstr "Клас, который представляет реестр для сцен."
+
+#: litegram.fsm.scene.SceneRegistry.add:1 of
+msgid ""
+"This method adds the specified scenes to the registry and optionally "
+"registers it to the router."
+msgstr ""
+"Этот метод додае вказани сцени к реестру и додатково рееструе их на "
+"маршрутизатори."
+
+#: litegram.fsm.scene.SceneRegistry.add:4 of
+msgid ""
+"If a scene with the same state already exists in the registry, a "
+"SceneException is raised."
+msgstr ""
+"Якщо сцена с таким самим станом уже существует в реестри, виникае "
+"SceneException."
+
+#: litegram.fsm.scene.SceneRegistry.add:8 of
+msgid ""
+"If the router is not specified, the scenes will not be registered to the "
+"router. You will need to include the scenes manually to the router or use"
+" the register method."
+msgstr ""
+"If the router is not specified, the scenes will not be registered to the "
+"router. You will need to include the scenes manually to the router or use"
+" the register method."
+
+#: litegram.fsm.scene.SceneRegistry.add:11 of
+msgid ""
+"A variable length parameter that accepts one or more types of scenes. "
+"These scenes are instances of the Scene class."
+msgstr ""
+"Параметр зминнои довжини, который принимает один или килька типов сцен. Ци "
+"сцени является екземплярами класу Scene."
+
+#: litegram.fsm.scene.SceneRegistry.add:13 of
+msgid ""
+"An optional parameter that specifies the router to which the scenes "
+"should be added."
+msgstr ""
+"Додатковий параметр, который визначае маршрутизатор, к которого следует додати "
+"сцени."
+
+#: litegram.fsm.scene.SceneRegistry.add:15
+#: litegram.fsm.scene.SceneRegistry.register:4
+#: litegram.fsm.scene.SceneWizard.back:4
+#: litegram.fsm.scene.SceneWizard.clear_data:3
+#: litegram.fsm.scene.SceneWizard.enter:6 litegram.fsm.scene.SceneWizard.exit:4
+#: litegram.fsm.scene.SceneWizard.goto:9 litegram.fsm.scene.SceneWizard.leave:6
+#: litegram.fsm.scene.SceneWizard.retake:4
+#: litegram.fsm.scene.SceneWizard.set_data:4
+#: litegram.fsm.scene.ScenesManager.close:4
+#: litegram.fsm.scene.ScenesManager.enter:7 of
+msgid "None"
+msgstr ""
+
+#: litegram.fsm.scene.SceneRegistry.get:1 of
+#, fuzzy
+msgid ""
+"This method returns the registered Scene object for the specified scene. "
+"The scene parameter can be either a Scene object, State object or a "
+"string representing the name of the scene. If a Scene object is provided,"
+" the state attribute of the SceneConfig object associated with the Scene "
+"object will be used as the scene name. If a State object is provided, the"
+" state attribute of the State object will be used as the scene name. If "
+"None or an invalid type is provided, a SceneException will be raised."
+msgstr ""
+"Этот метод повертае зареестрований объект Scene для вказанои сцени. "
+"Параметром сцени может бути или объект Scene, или рядок, что представляет "
+"назву сцени. Якщо надаеться объект Scene, атрибут стану объекта "
+"SceneConfig, пов’язаного с объектом Scene, використовуватиметься как им’я "
+"сцени. Якщо вказано None или недийсний тип, буде викликано "
+"SceneException."
+
+#: litegram.fsm.scene.SceneRegistry.get:8 of
+msgid ""
+"If the specified scene is not registered in the SceneRegistry object, a "
+"SceneException will be raised."
+msgstr ""
+"Якщо вказану сцену не зареестровано в объекти SceneRegistry, буде "
+"породжено помилку SceneException."
+
+#: litegram.fsm.scene.SceneRegistry.get:11 of
+#, fuzzy
+msgid ""
+"A Scene object, State object or a string representing the name of the "
+"scene."
+msgstr "Об’ект Scene или рякк, что представляет назву сцены."
+
+#: litegram.fsm.scene.SceneRegistry.get:12 of
+msgid "The registered Scene object corresponding to the given scene parameter."
+msgstr "Зареестрований объект Scene, что ответие даному параметру сцены."
+
+#: litegram.fsm.scene.SceneRegistry.register:1 of
+msgid "Registers one or more scenes to the SceneRegistry."
+msgstr "Рееструе одну или килька сцен в SceneRegistry."
+
+#: litegram.fsm.scene.SceneRegistry.register:3 of
+msgid "One or more scene classes to register."
+msgstr "Один или килька класив сцен для реестрации."
+
+#: litegram.fsm.scene.ScenesManager:1 of
+msgid ""
+"The ScenesManager class is responsible for managing scenes in an "
+"application. It provides methods for entering and exiting scenes, as well"
+" as retrieving the active scene."
+msgstr ""
+"Клас ScenesManager видповидае за керування сценами в програми. Он предоставляет "
+"методы входу и виходу зи сцен, а також видновлення активнои сцени."
+
+#: litegram.fsm.scene.ScenesManager.close:1 of
+msgid ""
+"Close method is used to exit the currently active scene in the "
+"ScenesManager."
+msgstr ""
+"Метод Close використовуеться для виходу с поточнои активнои сцени в "
+"ScenesManager."
+
+#: litegram.fsm.scene.ScenesManager.close:3 of
+msgid "Additional keyword arguments passed to the scene's exit method."
+msgstr "Додаткови аргументи ключового слова, передани в метод виходу сцены."
+
+#: litegram.fsm.scene.ScenesManager.enter:1 of
+msgid "Enters the specified scene."
+msgstr "Виходить на вказану сцену."
+
+#: litegram.fsm.scene.ScenesManager.enter:3 of
+#, fuzzy
+msgid "Optional Type[Scene], State or str representing the scene type to enter."
+msgstr ""
+"Додатково Type[Scene] или str, что представляет тип сцени, который потрибно "
+"ввести."
+
+#: litegram.fsm.scene.ScenesManager.enter:4 of
+msgid ""
+"Optional bool indicating whether to check if there is an active scene to "
+"exit before entering the new scene. Defaults to True."
+msgstr ""
+"Необов’язковий параметр, что вказуе, чи перевиряти наявнисть активнои "
+"сцени для виходу перед входом в нову сцену. За замовчуванням значение "
+"True."
+
+#: litegram.fsm.scene.ScenesManager.enter:6 of
+msgid "Additional keyword arguments to pass to the scene's wizard.enter() method."
+msgstr "Додаткови именованные аргументи для передачи в метод wizard.enter() сцены."
+
+#: litegram.fsm.scene.SceneConfig.actions:1 of
+msgid "Scene actions"
+msgstr "Дии сцены"
+
+#: litegram.utils.class_attrs_resolver.get_sorted_mro_attrs_resolver:1 of
+msgid "Attributes resolver."
+msgstr ""
+
+#: litegram.utils.class_attrs_resolver.get_sorted_mro_attrs_resolver:4 of
+msgid "This attribute should only be changed when you know what you are doing."
+msgstr ""
+
+#: litegram.fsm.scene.SceneConfig.callback_query_without_state:1 of
+msgid "Allow callback query without state"
+msgstr "Створювати обробники кнопок без проверки сину поточнои сцены"
+
+#: litegram.fsm.scene.SceneConfig.handlers:1 of
+msgid "Scene handlers"
+msgstr "Обробники сцены"
+
+#: litegram.fsm.scene.SceneConfig.reset_data_on_enter:1 of
+msgid "Reset scene data on enter"
+msgstr "Скинути дани сцены после входу"
+
+#: litegram.fsm.scene.SceneConfig.reset_history_on_enter:1 of
+msgid "Reset scene history on enter"
+msgstr "Скинути историю сцены во время входу"
+
+#: litegram.fsm.scene.SceneConfig.state:1 of
+msgid "Scene state"
+msgstr "Син сцены"
+
+#: litegram.fsm.scene.SceneWizard:1 of
+msgid "A class that represents a wizard for managing scenes in a Telegram bot."
+msgstr "Клас, который представляет майстер сцен."
+
+#: litegram.fsm.scene.SceneWizard:3 of
+msgid ""
+"Instance of this class is passed to each scene as a parameter. So, you "
+"can use it to transition between scenes, get and set data, etc."
+msgstr ""
+"Екземпляр этого класу передаеться кожний сцени как параметр. Отже, вы "
+"можете использовать его для переходу между сценами, отримання и "
+"встановлення данных и т.д.."
+
+#: litegram.fsm.scene.SceneWizard:8 of
+msgid ""
+"This class is not meant to be used directly. Instead, it should be used "
+"as a parameter in the scene constructor."
+msgstr ""
+"Этот клас не призначений для безпосереднього використання. Натомисть его "
+"следует использовать как параметр в конструктори сцени."
+
+#: litegram.fsm.scene.SceneWizard.back:1 of
+msgid "This method is used to go back to the previous scene."
+msgstr "Этот метод використовуеться для возврат к попередньои сцены."
+
+#: litegram.fsm.scene.SceneWizard.back:3 of
+msgid "Keyword arguments that can be passed to the method."
+msgstr "Аргументи ключових слив, которые можна передати в метод."
+
+#: litegram.fsm.scene.SceneWizard.clear_data:1 of
+msgid "Clears the data."
+msgstr "Очищае дани."
+
+#: litegram.fsm.scene.SceneWizard.enter:1 of
+msgid ""
+"Enter method is used to transition into a scene in the SceneWizard class."
+" It sets the state, clears data and history if specified, and triggers "
+"entering event of the scene."
+msgstr ""
+"Метод Enter використовуеться для переходу в сцену в класи SceneWizard. "
+"Он встановлюе стан, очищае дани и историю, если вказано, и запускае "
+"введення подии сцени."
+
+#: litegram.fsm.scene.SceneWizard.enter:5 litegram.fsm.scene.SceneWizard.exit:3
+#: litegram.fsm.scene.SceneWizard.leave:5 of
+msgid "Additional keyword arguments."
+msgstr "Додаткови именованные аргументи."
+
+#: litegram.fsm.scene.SceneWizard.exit:1 of
+msgid "Exit the current scene and enter the default scene/state."
+msgstr "Вийти с поточнои сцены и перейти к синдартного сину чи сцены."
+
+#: litegram.fsm.scene.SceneWizard.get_data:1 of
+msgid "This method returns the data stored in the current state."
+msgstr "Этот метод поверие дани, что зберигаються в поточному сини."
+
+#: litegram.fsm.scene.SceneWizard.get_data:3 of
+msgid "A dictionary containing the data stored in the scene state."
+msgstr "Словник, что содержит дани, что зберигаються в сини сцены."
+
+#: litegram.fsm.scene.SceneWizard.goto:1 of
+msgid ""
+"The `goto` method transitions to a new scene. It first calls the `leave` "
+"method to perform any necessary cleanup in the current scene, then calls "
+"the `enter` event to enter the specified scene."
+msgstr ""
+"Метод `goto` переходить к новои сцени. Спочатку вин викликае метод "
+"`leave`, чтобы виконати будь-которое необхидне очищення в поточний сцени, а "
+"потим викликае подию `enter`, чтобы увийти к вказанои сцени."
+
+#: litegram.fsm.scene.SceneWizard.goto:5 of
+#, fuzzy
+msgid ""
+"The scene to transition to. Can be either a `Scene` instance `State` "
+"instance or a string representing the scene."
+msgstr ""
+"Сцена для переходу. Може бути екземпляром `Scene` или рядком, что "
+"представляет сцену."
+
+#: litegram.fsm.scene.SceneWizard.goto:7 of
+msgid ""
+"Additional keyword arguments to pass to the `enter` method of the scene "
+"manager."
+msgstr "Додаткови именованные аргументи для точки входу к `enter` менеджера сцен."
+
+#: litegram.fsm.scene.SceneWizard.leave:1 of
+msgid ""
+"Leaves the current scene. This method is used to exit a scene and "
+"transition to the next scene."
+msgstr ""
+"Залишае поточну сцену. Этот метод використовуеться для виходу зи сцени и "
+"переходу к наступнои сцени."
+
+#: litegram.fsm.scene.SceneWizard.leave:4 of
+msgid "Whether to include history in the snapshot. Defaults to True."
+msgstr "Чи включати историю в знимок. За замовчуванням значение True."
+
+#: litegram.fsm.scene.SceneWizard.retake:1 of
+msgid "This method allows to re-enter the current scene."
+msgstr "Этот метод кзволяе повторно увийти к поточнои сцены."
+
+#: litegram.fsm.scene.SceneWizard.retake:3 of
+msgid "Additional keyword arguments to pass to the scene."
+msgstr "Додаткови именованные аргументи для передачи к сцены."
+
+#: litegram.fsm.scene.SceneWizard.set_data:1 of
+msgid "Sets custom data in the current state."
+msgstr "Всиновлюе настроювани дани в поточний син."
+
+#: litegram.fsm.scene.SceneWizard.set_data:3 of
+#, fuzzy
+msgid "A mapping containing the custom data to be set in the current state."
+msgstr ""
+"Словник, что содержит настроювани дани, которые потрибно встановити в поточному"
+" стани."
+
+#: litegram.fsm.scene.SceneWizard.update_data:1 of
+msgid "This method updates the data stored in the current state"
+msgstr "Этот метод оновлюе дани, что зберигаються в поточному сини"
+
+#: litegram.fsm.scene.SceneWizard.update_data:3 of
+#, fuzzy
+msgid "Optional mapping of data to update."
+msgstr "Додатковий словник данных для обновления."
+
+#: litegram.fsm.scene.SceneWizard.update_data:4 of
+msgid "Additional key-value pairs of data to update."
+msgstr "Додаткови пари ключ-значение данных для обновления."
+
+#: litegram.fsm.scene.SceneWizard.update_data:5 of
+msgid "Dictionary of updated data"
+msgstr "Словник оновлених данных"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:197
+msgid "Markers"
+msgstr "Маркери"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:199
+msgid ""
+"Markers are similar to the Router event registering mechanism, but they "
+"are used to mark scene handlers in the Scene class."
+msgstr ""
+"Маркери подибни к механизму реестрации событий Router, але вони "
+"використовуються для позначення обработчиков сцени в класи Scene."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:202
+msgid ""
+"It can be imported from :code:`from litegram.fsm.scene import on` and "
+"should be used as decorator."
+msgstr ""
+"Его можна импортувати с :code:`from litegram.fsm.scene import on` и следует"
+" использовать как декоратор."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:204
+msgid "Allowed event types:"
+msgstr "Дозволени типы событий:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:206
+msgid "message"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:207
+msgid "edited_message"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:208
+msgid "channel_post"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:209
+msgid "edited_channel_post"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:210
+msgid "inline_query"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:211
+msgid "chosen_inline_result"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:212
+msgid "callback_query"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:213
+msgid "shipping_query"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:214
+msgid "pre_checkout_query"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:215
+msgid "poll"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:216
+msgid "poll_answer"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:217
+msgid "my_chat_member"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:218
+msgid "chat_member"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:219
+msgid "chat_join_request"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:221
+msgid "Each event type can be filtered in the same way as in the Router."
+msgstr "Кожен тип подии можна отфильтрувати ик само, как и в маршрутизатори."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:223
+msgid ""
+"Also each event type can be marked as scene entry point, exit point or "
+"leave point."
+msgstr ""
+"Також каждый тип подии можна позначити как точку входу в сцену, точку "
+"виходу или точку переходу."
+
+#: ../../dispatcher/finite_state_machine/scene.rst:225
+msgid ""
+"If you want to mark the scene can be entered from message or inline "
+"query, you should use :code:`on.message` or :code:`on.inline_query` "
+"marker:"
+msgstr ""
+"Если вы хотите позначити, что к сцени можна потрапити с сообщения или "
+"ин-лайн кнопки, вам следует использовать маркер :code:`on.message` или "
+":code:`on.inline_query`:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:240
+#, fuzzy
+msgid "Scene has only three points for transitions:"
+msgstr "Сэтони мають три точки для переходив:"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:242
+msgid "enter point - when user enters to the scene"
+msgstr "Точка входу - когда пользователь входить к сцены"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:243
+msgid "leave point - when user leaves the scene and the enter another scene"
+msgstr "Точка переходу - когда пользователь переходить к иншои сцены"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:244
+msgid "exit point - when user exits from the scene"
+msgstr "Точка виходу - когда пользователь завершуе сцену"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:247
+#, fuzzy
+msgid "How to enter the scene"
+msgstr "Как это использовать?"
+
+#: ../../dispatcher/finite_state_machine/scene.rst:249
+msgid ""
+"There are several ways to enter a scene in litegram. Each approach has "
+"specific use cases and advantages"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:251
+msgid "**Directly using the scene's entry point as a handler:**"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:253
+msgid ""
+"You can convert a scene's entry point to a handler and register it like "
+"any other handler:"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:259
+msgid "**From a regular handler using ScenesManager:**"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:261
+msgid "Enter a scene from any regular handler by using the ScenesManager:"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:265
+msgid ""
+"When using ScenesManager, you need to explicitly pass all dependencies "
+"required by the scene's entry point handler as arguments to the enter "
+"method."
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:274
+msgid "**From another scene using After.goto marker:**"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:276
+msgid ""
+"Transition to another scene after a handler is executed using the After "
+"marker:"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:292
+msgid "**Using explicit transition with wizard.goto:**"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:294
+msgid ""
+"For more control over the transition, use the wizard.goto method from "
+"within a scene handler:"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:298
+msgid ""
+"Dependencies will be injected into the handler normally and then extended"
+" with the arguments specified in the goto method."
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/scene.rst:314
+msgid ""
+"Each method offers different levels of control and integration with your "
+"application's architecture. Choose the approach that best fits your "
+"specific use case and coding style."
+msgstr ""

@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-14 17:21+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../utils/media_group.rst:3
+msgid "Media group builder"
+msgstr ""
+
+#: ../../utils/media_group.rst:5
+msgid ""
+"This module provides a builder for media groups, it can be used to build "
+"media groups for "
+":class:`litegram.types.input_media_photo.InputMediaPhoto`, "
+":class:`litegram.types.input_media_video.InputMediaVideo`, "
+":class:`litegram.types.input_media_document.InputMediaDocument` and "
+":class:`litegram.types.input_media_audio.InputMediaAudio`."
+msgstr ""
+
+#: ../../utils/media_group.rst:11
+msgid ""
+":class:`litegram.types.input_media_animation.InputMediaAnimation` is not "
+"supported yet in the Bot API to send as media group."
+msgstr ""
+
+#: ../../utils/media_group.rst:16
+msgid "Usage"
+msgstr ""
+
+#: ../../utils/media_group.rst:30
+msgid ""
+"To send media group use "
+":meth:`litegram.methods.send_media_group.SendMediaGroup` method, but when "
+"you use :class:`litegram.utils.media_group.MediaGroupBuilder` you should "
+"pass ``media`` argument as ``media_group.build()``."
+msgstr ""
+
+#: ../../utils/media_group.rst:34
+msgid ""
+"If you specify ``caption`` in "
+":class:`litegram.utils.media_group.MediaGroupBuilder` it will be used as "
+"``caption`` for first media in group."
+msgstr ""
+
+#: ../../utils/media_group.rst:43
+msgid "References"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add:1 of
+msgid "Add a media object to the media group."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio
+#: litegram.utils.media_group.MediaGroupBuilder.add_document
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo
+#: litegram.utils.media_group.MediaGroupBuilder.add_video of
+msgid "Parameters"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add:3 of
+msgid ""
+"Keyword arguments for the media object. The available keyword arguments "
+"depend on the media type."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio
+#: litegram.utils.media_group.MediaGroupBuilder.add_document
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo
+#: litegram.utils.media_group.MediaGroupBuilder.add_video
+#: litegram.utils.media_group.MediaGroupBuilder.build of
+msgid "Returns"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add:5
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:22
+#: litegram.utils.media_group.MediaGroupBuilder.add_document:27
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo:17
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:30 of
+msgid "None"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:1 of
+msgid "Add an audio file to the media group."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:3
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo:3 of
+msgid ""
+"File to send. Pass a file_id to send a file that exists on the Telegram "
+"servers (recommended), pass an HTTP URL for Telegram to get a file from "
+"the Internet, or pass 'attach://<file_attach_name>' to upload a new one "
+"using multipart/form-data under <file_attach_name> name.  :ref:`More "
+"information on Sending Files » <sending-files>`"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:3
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo:3 of
+msgid ""
+"File to send. Pass a file_id to send a file that exists on the Telegram "
+"servers (recommended), pass an HTTP URL for Telegram to get a file from "
+"the Internet, or pass 'attach://<file_attach_name>' to upload a new one "
+"using multipart/form-data under <file_attach_name> name."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:7
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo:7 of
+msgid ":ref:`More information on Sending Files » <sending-files>`"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:8 of
+msgid ""
+"*Optional*. Thumbnail of the file sent; can be ignored if thumbnail "
+"generation for the file is supported server-side. The thumbnail should be"
+" in JPEG format and less than 200 kB in size. A thumbnail's width and "
+"height should not exceed 320."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:12 of
+msgid ""
+"*Optional*. Caption of the audio to be sent, 0-1024 characters after "
+"entities parsing"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:14 of
+msgid ""
+"*Optional*. Mode for parsing entities in the audio caption. See "
+"`formatting options <https://core.telegram.org/bots/api#formatting-"
+"options>`_ for more details."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:17
+#: litegram.utils.media_group.MediaGroupBuilder.add_document:22
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo:13
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:21 of
+msgid ""
+"*Optional*. List of special entities that appear in the caption, which "
+"can be specified instead of *parse_mode*"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:19 of
+msgid "*Optional*. Duration of the audio in seconds"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:20 of
+msgid "*Optional*. Performer of the audio"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_audio:21 of
+msgid "*Optional*. Title of the audio"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_document:1 of
+msgid "Add a document to the media group."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_document:3
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:3 of
+msgid ""
+"File to send. Pass a file_id to send a file that exists on the Telegram "
+"servers (recommended), pass an HTTP URL for Telegram to get a file from "
+"the Internet, or pass 'attach://<file_attach_name>' to upload a new one "
+"using multipart/form-data under <file_attach_name> name. :ref:`More "
+"information on Sending Files » <sending-files>`"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_document:8
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:8 of
+msgid ""
+"*Optional*. Thumbnail of the file sent; can be ignored if thumbnail "
+"generation for the file is supported server-side. The thumbnail should be"
+" in JPEG format and less than 200 kB in size. A thumbnail's width and "
+"height should not exceed 320. Ignored if the file is not uploaded using "
+"multipart/form-data. Thumbnails can't be reused and can be only uploaded "
+"as a new file, so you can pass 'attach://<file_attach_name>' if the "
+"thumbnail was uploaded using multipart/form-data under "
+"<file_attach_name>. :ref:`More information on Sending Files » <sending-"
+"files>`"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_document:17 of
+msgid ""
+"*Optional*. Caption of the document to be sent, 0-1024 characters after "
+"entities parsing"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_document:19 of
+msgid ""
+"*Optional*. Mode for parsing entities in the document caption. See "
+"`formatting options <https://core.telegram.org/bots/api#formatting-"
+"options>`_ for more details."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_document:24 of
+msgid ""
+"*Optional*. Disables automatic server-side content type detection for "
+"files uploaded using multipart/form-data. Always :code:`True`, if the "
+"document is sent as part of an album."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo:1 of
+msgid "Add a photo to the media group."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo:8 of
+msgid ""
+"*Optional*. Caption of the photo to be sent, 0-1024 characters after "
+"entities parsing"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo:10 of
+msgid ""
+"*Optional*. Mode for parsing entities in the photo caption. See "
+"`formatting options <https://core.telegram.org/bots/api#formatting-"
+"options>`_ for more details."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_photo:15 of
+msgid ""
+"*Optional*. Pass :code:`True` if the photo needs to be covered with a "
+"spoiler animation"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:1 of
+msgid "Add a video to the media group."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:16 of
+msgid ""
+"*Optional*. Caption of the video to be sent, 0-1024 characters after "
+"entities parsing"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:18 of
+msgid ""
+"*Optional*. Mode for parsing entities in the video caption. See "
+"`formatting options <https://core.telegram.org/bots/api#formatting-"
+"options>`_ for more details."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:23 of
+msgid "*Optional*. Video width"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:24 of
+msgid "*Optional*. Video height"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:25 of
+msgid "*Optional*. Video duration in seconds"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:26 of
+msgid ""
+"*Optional*. Pass :code:`True` if the uploaded video is suitable for "
+"streaming"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.add_video:28 of
+msgid ""
+"*Optional*. Pass :code:`True` if the video needs to be covered with a "
+"spoiler animation"
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.build:1 of
+msgid "Builds a list of media objects for a media group."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.build:3 of
+msgid "Adds the caption to the first media object if it is present."
+msgstr ""
+
+#: litegram.utils.media_group.MediaGroupBuilder.build:5 of
+msgid "List of media objects."
+msgstr ""

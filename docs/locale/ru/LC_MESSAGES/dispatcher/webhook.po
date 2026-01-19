@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../dispatcher/webhook.rst:5
+msgid "Webhook"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:7
+msgid ""
+"Telegram Bot API supports webhook. If you set webhook for your bot, "
+"Telegram will send updates to the specified url. You can use "
+":meth:`litegram.methods.set_webhook.SetWebhook` method to specify a url "
+"and receive incoming updates on it."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:14
+msgid "If you use webhook, you can't use long polling at the same time."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:16
+msgid ""
+"Before start i'll recommend you to read `official Telegram's "
+"documentation about webhook <https://core.telegram.org/bots/webhooks>`_"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:18
+msgid "After you read it, you can start to read this section."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:20
+msgid ""
+"Generally to use webhook with litegram you should use any async web "
+"framework. By out of the box litegram has an httpx integration, so we'll "
+"use it."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:25
+msgid ""
+"You can use any async web framework you want, but you should write your "
+"own integration if you don't use httpx."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:29
+msgid "httpx integration"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:31
+msgid "Out of the box litegram has httpx integration, so you can use it."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:33
+msgid ""
+"Here is available few ways to do it using different implementations of "
+"the webhook controller:"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:35
+msgid ""
+":class:`litegram.webhook.litestar_server.BaseRequestHandler` - Abstract "
+"class for httpx webhook controller"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:36
+msgid ""
+":class:`litegram.webhook.litestar_server.SimpleRequestHandler`  - Simple "
+"webhook controller, uses single Bot instance"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:37
+msgid ""
+":class:`litegram.webhook.litestar_server.TokenBasedRequestHandler`  - "
+"Token based webhook controller, uses multiple Bot instances and tokens"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:39
+msgid "You can use it as is or inherit from it and override some methods."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:51
+msgid "Security"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:53
+msgid ""
+"Telegram supports two methods to verify incoming requests that they are "
+"from Telegram:"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:56
+msgid "Using a secret token"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:58
+msgid ""
+"When you set webhook, you can specify a secret token and then use it to "
+"verify incoming requests."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:61
+msgid "Using IP filtering"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:63
+msgid ""
+"You can specify a list of IP addresses from which you expect incoming "
+"requests, and then use it to verify incoming requests."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:65
+msgid ""
+"It can be acy using firewall rules or nginx configuration or middleware "
+"on application level."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:67
+msgid ""
+"So, litegram has an implementation of the IP filtering middleware for "
+"httpx."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:75
+msgid "Examples"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:78
+msgid "Behind reverse proxy"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:80
+msgid ""
+"In this example we'll use httpx as web framework and nginx as reverse "
+"proxy."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:84
+msgid ""
+"When you use nginx as reverse proxy, you should set `proxy_pass` to your "
+"httpx server address."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:98
+msgid "Without reverse proxy (not recommended)"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:100
+msgid "In case without using reverse proxy, you can use httpx's ssl context."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:102
+msgid "Also this example contains usage with self-signed certificate."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:108
+msgid "With using other web framework"
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:110
+msgid ""
+"You can pass incoming request to litegram's webhook controller from any "
+"web framework you want."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:112
+msgid ""
+"Read more about it in "
+":meth:`litegram.dispatcher.dispatcher.Dispatcher.feed_webhook_update` or "
+":meth:`litegram.dispatcher.dispatcher.Dispatcher.feed_update` methods."
+msgstr ""
+
+#: ../../dispatcher/webhook.rst:123
+msgid ""
+"If you want to use reply into webhook, you should check that result of "
+"the :code:`feed_update` methods is an instance of API method and build "
+":code:`multipart/form-data` or :code:`application/json` response body "
+"manually."
+msgstr ""

@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"PO-Revision-Date: 2022-12-10 19:44+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../dispatcher/dispatcher.rst:3
+msgid "Dispatcher"
+msgstr "Диспетчер"
+
+#: ../../dispatcher/dispatcher.rst:5
+#, fuzzy
+msgid ""
+"Dispatcher is root :class:`~litegram.dispatcher.router.Router` and in "
+"code Dispatcher can be used directly for routing updates or attach "
+"another routers into dispatcher."
+msgstr ""
+"Диспетчер — это корневой маршрутизатор, и в коде диспетчер может "
+"использоваться непосредственно для маршрутизации событий или подключения "
+"других маршрутизаторов к диспетчеру."
+
+#: ../../dispatcher/dispatcher.rst:7
+#, fuzzy
+msgid ""
+"Here is only listed base information about Dispatcher. All about writing "
+"handlers, filters and etc. you can find in next pages:"
+msgstr ""
+"Здесь приведена только базовая информация о диспетчере. Все о написании "
+"обработчиков, фильтров и т.д. вы можете найти на следующих страницах:"
+
+#: ../../dispatcher/dispatcher.rst:9
+#, fuzzy
+msgid ":ref:`Router <Router>`"
+msgstr "`Маршрутизатор <router.html>`__"
+
+#: ../../dispatcher/dispatcher.rst:10
+msgid ":ref:`Filtering events`"
+msgstr ":ref:`Фильтрация событий`"
+
+#: litegram.dispatcher.dispatcher.Dispatcher:1
+#: litegram.dispatcher.dispatcher.Dispatcher.__init__:1 of
+msgid "Root router"
+msgstr "Корневой маршрутизатор"
+
+#: ../../dispatcher/dispatcher.rst
+msgid "Parameters"
+msgstr "Параметры"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.__init__:3 of
+msgid "Storage for FSM"
+msgstr "Хранилище для конечного автомата (FSM)"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.__init__:4 of
+msgid "FSM strategy"
+msgstr "Стратегия конечного автомата"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.__init__:5 of
+msgid "Events isolation"
+msgstr "Изоляция событий"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.__init__:6 of
+msgid ""
+"Disable FSM, note that if you disable FSM then you should not use storage"
+" and events isolation"
+msgstr ""
+"Отключение конечного автомата, заметьте, что при выключенном конечном "
+"автомате вам не следует использовать хранилище и изоляцию событий"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.__init__:8 of
+msgid "Other arguments, will be passed as keyword arguments to handlers"
+msgstr "Другие аргументы будут переданы обработчикам как именованные аргументы"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.feed_raw_update:1 of
+msgid ""
+"Main entry point for incoming updates with automatic Dict->Update "
+"serializer"
+msgstr "Основная точка входа для событий с автоматической сериализацией Dict->Update"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.feed_update:1 of
+msgid ""
+"Main entry point for incoming updates Response of this method can be used"
+" as Webhook response"
+msgstr ""
+"Основная точка входа для событий. Ответ этого метода может быть "
+"использован для ответа в Webhook"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:1 of
+msgid "Run many bots with polling"
+msgstr "Запуск нескольких ботов с использованием опроса"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:3
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:3 of
+msgid "Bot instances (one or more)"
+msgstr "Экземпляры ботов (один или несколько)"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:4
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:4 of
+msgid "Long-polling wait time"
+msgstr "Время ожидания при долгом опросе"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:5
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:5 of
+msgid "Run task for each event and no wait result"
+msgstr "Запуск задачи для кажкго события без ожидания результатов"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:6
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:6 of
+msgid "backoff-retry config"
+msgstr "конфигурация повторов с задержкой"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:7 of
+msgid "List of the update types you want your bot to receive"
+msgstr "Список типов обновлений, которые должен получать ваш бот"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:8
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:9 of
+msgid "handle signals (SIGINT/SIGTERM)"
+msgstr "обработка сигналов (SIGINT/SIGTERM)"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:9
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:10 of
+msgid "close bot sessions on shutdown"
+msgstr "закрывать сессии бота при завершении работы"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:10
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:11 of
+msgid ""
+"Maximum number of concurrent updates to process (None = no limit), used "
+"only if handle_as_tasks is True"
+msgstr ""
+
+#: litegram.dispatcher.dispatcher.Dispatcher.run_polling:12
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:13 of
+msgid "contextual data"
+msgstr "контекстные данные"
+
+#: ../../dispatcher/dispatcher.rst
+msgid "Returns"
+msgstr "Возвращает"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:1 of
+msgid "Polling runner"
+msgstr "Запуск исполнителя опроса"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.start_polling:7 of
+msgid ""
+"List of the update types you want your bot to receive By default, all "
+"used update types are enabled (resolved from handlers)"
+msgstr ""
+"Список типов обновлений, которые должен получать ваш бот. По умолчанию "
+"включены все используемые типы обновлений (определяются по обработчикам)"
+
+#: litegram.dispatcher.dispatcher.Dispatcher.stop_polling:1 of
+msgid "Execute this method if you want to stop polling programmatically"
+msgstr "Используйте этот метод, если хотите остановить опрос программно"
+
+#: ../../dispatcher/dispatcher.rst:18
+msgid "Simple usage"
+msgstr "Простое использование"
+
+#: ../../dispatcher/dispatcher.rst:20 ../../dispatcher/dispatcher.rst:33
+msgid "Example:"
+msgstr "Пример:"
+
+#: ../../dispatcher/dispatcher.rst:31
+msgid "Including routers"
+msgstr "Подключение роутеров"
+
+#: ../../dispatcher/dispatcher.rst:46
+msgid "Handling updates"
+msgstr "Обработка обновлений"
+
+#: ../../dispatcher/dispatcher.rst:48
+msgid ""
+"All updates can be propagated to the dispatcher by "
+":meth:`~litegram.dispatcher.dispatcher.Dispatcher.feed_update` method:"
+msgstr ""
+"Все обновления могут быть переданы диспетчеру через метод "
+":meth:`~litegram.dispatcher.dispatcher.Dispatcher.feed_update`:"
+
+#: ../../dispatcher/dispatcher.rst:57
+msgid ""
+"Also you can feed raw update (dictionary) object to the dispatcher by "
+":meth:`~litegram.dispatcher.dispatcher.Dispatcher.feed_raw_update` "
+"method:"
+msgstr ""
+"Также вы можете передать сырой объект обновления (словарь) диспетчеру "
+"через метод "
+":meth:`~litegram.dispatcher.dispatcher.Dispatcher.feed_raw_update`:"

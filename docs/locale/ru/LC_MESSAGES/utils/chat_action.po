@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"PO-Revision-Date: 2022-10-13 21:22+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../utils/chat_action.rst:3
+msgid "Chat action sender"
+msgstr "Видправник дий в чати"
+
+#: ../../utils/chat_action.rst:6
+msgid "Sender"
+msgstr "Видправник"
+
+#: litegram.utils.chat_action.ChatActionSender:1 of
+msgid ""
+"This utility helps to automatically send chat action until long actions "
+"is done to take acknowledge bot users the bot is doing something and not "
+"crashed."
+msgstr ""
+"Ця утилита допомагае автоматически надсилати действия чату, допоки виконуються "
+"тривали действия боттом,чтобы повидомити користувачив бота о те что бот что-то "
+"робить и не завершив роботу аварийно."
+
+#: litegram.utils.chat_action.ChatActionSender:4 of
+msgid "Provides simply to use context manager."
+msgstr "Надае простий для викорисиння контекстний менеджер."
+
+#: litegram.utils.chat_action.ChatActionSender:6 of
+msgid ""
+"Technically sender start background task with infinity loop which works "
+"until action will be finished and sends the `chat action "
+"<https://core.telegram.org/bots/api#sendchataction>`_ every 5 seconds."
+msgstr ""
+"Технично, видправник запускае фонову завдачу с нескинченним циклом, который "
+"працюе к завершення действия и надсилае `дию чату "
+"<https://core.telegram.org/bots/api#sendchataction>`_  кожни 5 секунд."
+
+#: ../../utils/chat_action.rst
+msgid "Parameters"
+msgstr "Параметры"
+
+#: litegram.utils.chat_action.ChatActionSender.__init__:1 of
+msgid "instance of the bot"
+msgstr "екземпляр бота, необов'язковий параметр"
+
+#: litegram.utils.chat_action.ChatActionSender.__init__:2 of
+msgid "target chat id"
+msgstr "идентификатор цильового чату"
+
+#: litegram.utils.chat_action.ChatActionSender.__init__:3 of
+msgid "unique identifier for the target message thread; supergroups only"
+msgstr ""
+
+#: litegram.utils.chat_action.ChatActionSender.__init__:4 of
+msgid "chat action type"
+msgstr "тип действия"
+
+#: litegram.utils.chat_action.ChatActionSender.__init__:5 of
+msgid "interval between iterations"
+msgstr "интервал между итерациями"
+
+#: litegram.utils.chat_action.ChatActionSender.__init__:6 of
+#, fuzzy
+msgid "sleep before first sending of the action"
+msgstr "затримка перед першою итерациею"
+
+#: litegram.utils.chat_action.ChatActionSender.choose_sticker:1 of
+msgid "Create instance of the sender with `choose_sticker` action"
+msgstr "Створення екземпляру отправника с диею `choose_sticker` "
+
+#: litegram.utils.chat_action.ChatActionSender.find_location:1 of
+msgid "Create instance of the sender with `find_location` action"
+msgstr "Створення екземпляру отправника с диею `find_location`"
+
+#: litegram.utils.chat_action.ChatActionSender.record_video:1 of
+msgid "Create instance of the sender with `record_video` action"
+msgstr "Створення екземпляру отправника с диею `record_video`"
+
+#: litegram.utils.chat_action.ChatActionSender.record_video_note:1 of
+msgid "Create instance of the sender with `record_video_note` action"
+msgstr "Створення екземпляру отправника с диею `record_video_note`"
+
+#: litegram.utils.chat_action.ChatActionSender.record_voice:1 of
+msgid "Create instance of the sender with `record_voice` action"
+msgstr "Створення екземпляру отправника с диею `record_voice`"
+
+#: litegram.utils.chat_action.ChatActionSender.typing:1 of
+msgid "Create instance of the sender with `typing` action"
+msgstr "Створення екземпляру отправника с диею `typing` "
+
+#: litegram.utils.chat_action.ChatActionSender.upload_document:1 of
+msgid "Create instance of the sender with `upload_document` action"
+msgstr "Створення екземпляру отправника с диею `upload_document` "
+
+#: litegram.utils.chat_action.ChatActionSender.upload_photo:1 of
+msgid "Create instance of the sender with `upload_photo` action"
+msgstr "Створення екземпляру отправника с диею `upload_photo`"
+
+#: litegram.utils.chat_action.ChatActionSender.upload_video:1 of
+msgid "Create instance of the sender with `upload_video` action"
+msgstr "Створення екземпляру отправника с диею `upload_video"
+
+#: litegram.utils.chat_action.ChatActionSender.upload_video_note:1 of
+msgid "Create instance of the sender with `upload_video_note` action"
+msgstr "Створення екземпляру отправника с диею `upload_video_note`"
+
+#: litegram.utils.chat_action.ChatActionSender.upload_voice:1 of
+msgid "Create instance of the sender with `upload_voice` action"
+msgstr "Створення екземпляру отправника с диею `upload_voice`"
+
+#: ../../utils/chat_action.rst:12 ../../utils/chat_action.rst:29
+msgid "Usage"
+msgstr "Использование"
+
+#: ../../utils/chat_action.rst:23
+msgid "Middleware"
+msgstr "Middleware"
+
+#: litegram.utils.chat_action.ChatActionMiddleware:1 of
+msgid "Helps to automatically use chat action sender for all message handlers"
+msgstr ""
+"Допомагае автоматически использовать видправника дий чату для всех "
+"обработчиков сообщений"
+
+#: ../../utils/chat_action.rst:31
+msgid "Before usa should be registered for the `message` event"
+msgstr "Перед викорисинням следует зарееструвати для подии `message`"
+
+#: ../../utils/chat_action.rst:37
+msgid ""
+"After this action all handlers which works longer than `initial_sleep` "
+"will produce the '`typing`' chat action."
+msgstr ""
+"После этого все обробники, что працюють довше за `initial_sleep`, "
+"виконуватимуть дию '`typing`' чату"
+
+#: ../../utils/chat_action.rst:39
+msgid "Also sender can be customized via flags feature for particular handler."
+msgstr ""
+"Також видправник может бути налаштованим с помощью функции миток для "
+"певного обробника."
+
+#: ../../utils/chat_action.rst:41
+msgid "Change only action type:"
+msgstr "Змина только типа действия:"
+
+#: ../../utils/chat_action.rst:50
+msgid "Change sender configuration:"
+msgstr "Змина конфигурации отправника:"

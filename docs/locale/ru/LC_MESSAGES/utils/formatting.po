@@ -1,0 +1,485 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Украинська <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../utils/formatting.rst:5
+msgid "Formatting"
+msgstr "Форматування"
+
+#: ../../utils/formatting.rst:7
+msgid "Make your message formatting flexible and simple"
+msgstr "Зробить форматування ваших сообщений гнучким и простим"
+
+#: ../../utils/formatting.rst:9
+msgid ""
+"This instrument works on top of Message entities instead of using HTML or"
+" Markdown markups, you can easily construct your message and sent it to "
+"the Telegram without the need to remember tag parity (opening and "
+"closing) or escaping user input."
+msgstr ""
+"Этот инструмент працюе на основи сутностей сообщений, а не "
+"используя HTML чи розмитку Markdown, вы можете легко створити свое "
+"сообщения и отправить его в Telegram без необхидности пам'ятати о "
+"парнисть тегив (открытия и закриття) или о екранування "
+"користувацького вводу."
+
+#: ../../utils/formatting.rst:14
+msgid "Usage"
+msgstr "Использование"
+
+#: ../../utils/formatting.rst:17
+msgid "Basic scenario"
+msgstr "Основний сценарий"
+
+#: ../../utils/formatting.rst:19
+msgid "Construct your message and send it to the Telegram."
+msgstr "Складить свое повикмлення и надишлить его в Telegram."
+
+#: ../../utils/formatting.rst:26
+msgid "Is the same as the next example, but without usage markup"
+msgstr "Такий самий, как наступний пример, але без викорисиння розмитки"
+
+#: ../../utils/formatting.rst:35
+msgid ""
+"Literally when you execute :code:`as_kwargs` method the Text object is "
+"converted into text :code:`Hello, Alex!` with entities list "
+":code:`[MessageEntity(type='bold', offset=7, length=4)]` and passed into "
+"dict which can be used as :code:`**kwargs` in API call."
+msgstr ""
+"Досливно, когда вы виконуете метод :code:`as_kwargs`, объект Text "
+"перетворюеться в текст :code:`Hello, Alex!` из списком сутностей "
+":code:`[MessageEntity(type='bold', offset=7, length=4)]` и передаеться в "
+"словник, который может бути використаний как :code:`**kwargs` в API-виклику."
+
+#: ../../utils/formatting.rst:39
+msgid ""
+"The complete list of elements is listed `on this page below <#available-"
+"elements>`_."
+msgstr ""
+"Повний список елементив наведено `на сторинци нижче <#available-"
+"elements>`_."
+
+#: ../../utils/formatting.rst:42
+msgid "Advanced scenario"
+msgstr "Розширений сценарий"
+
+#: ../../utils/formatting.rst:44
+msgid ""
+"On top of base elements can be implemented content rendering structures, "
+"so, out of the box litegram has a few already implemented functions that "
+"helps you to format your messages:"
+msgstr ""
+"На додаток к базових елементив могут бути реализовани структури "
+"рендерингу контенту, поэтому с коробки litegram предоставляет декилька уже "
+"реализованих функций, которые допомагають форматувати ваши сообщения:"
+
+#: litegram.utils.formatting.as_line:1 of
+msgid "Wrap multiple nodes into line with :code:`\\\\n` at the end of line."
+msgstr "Об'еднайте килька вузлив в рякк из :code:`\\\\n` в кинци рядка."
+
+#: ../../utils/formatting.rst
+msgid "Parameters"
+msgstr "Параметры"
+
+#: litegram.utils.formatting.as_line:3 of
+msgid "Text or Any"
+msgstr "Текст или Інше"
+
+#: litegram.utils.formatting.as_line:4 of
+msgid "ending of the line, by default is :code:`\\\\n`"
+msgstr "завершення рядка, по умолчанию :code:`\\\\n`"
+
+#: litegram.utils.formatting.as_line:5 of
+msgid "separator between items, by default is empty string"
+msgstr "роздильник между елеменими, по умолчанию пуст рякк"
+
+#: ../../utils/formatting.rst
+msgid "Returns"
+msgstr "Возвращает"
+
+#: litegram.utils.formatting.as_key_value:5 litegram.utils.formatting.as_line:6
+#: litegram.utils.formatting.as_marked_list:5
+#: litegram.utils.formatting.as_numbered_list:6
+#: litegram.utils.formatting.as_section:5 of
+msgid "Text"
+msgstr "Текст"
+
+#: litegram.utils.formatting.as_list:1 of
+msgid "Wrap each element to separated lines"
+msgstr "Обгорнить каждый елемент в окремий рякк"
+
+#: litegram.utils.formatting.as_marked_list:1 of
+msgid "Wrap elements as marked list"
+msgstr "Обгорнить елементи в маркований список"
+
+#: litegram.utils.formatting.as_marked_list:4 of
+msgid "line marker, by default is '- '"
+msgstr "маркер рядка, по умолчанию '- '"
+
+#: litegram.utils.formatting.as_numbered_list:1 of
+msgid "Wrap elements as numbered list"
+msgstr "Обгорнить елементи в нумерований список"
+
+#: litegram.utils.formatting.as_numbered_list:4 of
+msgid "initial number, by default 1"
+msgstr "початковий номер, по умолчанию 1"
+
+#: litegram.utils.formatting.as_numbered_list:5 of
+#, python-brace-format
+msgid "number format, by default '{}. '"
+msgstr "формат номера, по умолчанию '{}. '"
+
+#: litegram.utils.formatting.as_section:1 of
+msgid "Wrap elements as simple section, section has title and body"
+msgstr "Обгорнить елементи в простий роздил, роздил имеет заголовок и тило"
+
+#: litegram.utils.formatting.as_marked_section:1 of
+msgid "Wrap elements as section with marked list"
+msgstr "Обгорнить елементи в роздил из маркованим списком"
+
+#: litegram.utils.formatting.as_numbered_section:1 of
+msgid "Wrap elements as section with numbered list"
+msgstr "Обгорнить елементи в роздил из нумерованим списком"
+
+#: litegram.utils.formatting.as_key_value:1 of
+#, python-brace-format
+msgid "Wrap elements pair as key-value line. (:code:`<b>{key}:</b> {value}`)"
+msgstr ""
+"Обгорнить пари елементив в рядок ключ-значение. (:code:`<b>{key}:</b> "
+"{value}`)"
+
+#: ../../utils/formatting.rst:64
+msgid "and lets complete them all:"
+msgstr "и давайте завершимо их всех:"
+
+#: ../../utils/formatting.rst:92
+msgid "Will be rendered into:"
+msgstr "Буде отрендерено в:"
+
+#: ../../utils/formatting.rst:94
+msgid "**Success:**"
+msgstr "**Успишно:**"
+
+#: ../../utils/formatting.rst:96
+msgid "✅ Test 1"
+msgstr "✅ Тест 1"
+
+#: ../../utils/formatting.rst:98
+msgid "✅ Test 3"
+msgstr "✅ Тест 3"
+
+#: ../../utils/formatting.rst:100
+msgid "✅ Test 4"
+msgstr "✅ Тест 4"
+
+#: ../../utils/formatting.rst:102
+msgid "**Failed:**"
+msgstr "**Помилки:**"
+
+#: ../../utils/formatting.rst:104
+msgid "❌ Test 2"
+msgstr "❌ Тест 2"
+
+#: ../../utils/formatting.rst:106
+msgid "**Summary:**"
+msgstr "**Пидсумки:**"
+
+#: ../../utils/formatting.rst:108
+msgid "**Total**: 4"
+msgstr "**Загалом**: 4"
+
+#: ../../utils/formatting.rst:110
+msgid "**Success**: 3"
+msgstr "**Успишно**: 3"
+
+#: ../../utils/formatting.rst:112
+msgid "**Failed**: 1"
+msgstr "**Помилки**: 1"
+
+#: ../../utils/formatting.rst:114
+msgid "#test"
+msgstr "#тест"
+
+#: ../../utils/formatting.rst:117
+msgid "Or as HTML:"
+msgstr "Або как HTML:"
+
+#: ../../utils/formatting.rst:137
+msgid "Available methods"
+msgstr ""
+
+#: litegram.utils.formatting.Text:1 of
+msgid "Simple text element"
+msgstr ""
+
+#: litegram.utils.formatting.Text.render:1 of
+#, fuzzy
+msgid "Render elements tree as text with entities list"
+msgstr "Обгорнить елементи в роздил из нумерованим списком"
+
+#: litegram.utils.formatting.Text.as_kwargs:1 of
+msgid ""
+"Render element tree as keyword arguments for usage in an API call, for "
+"example:"
+msgstr ""
+
+#: litegram.utils.formatting.Text.as_caption_kwargs:1 of
+msgid ""
+"Shortcut for :meth:`as_kwargs` for usage with API calls that take "
+"``caption`` as a parameter."
+msgstr ""
+
+#: litegram.utils.formatting.Text.as_caption_kwargs:9
+#: litegram.utils.formatting.Text.as_gift_text_kwargs:9
+#: litegram.utils.formatting.Text.as_poll_explanation_kwargs:14
+#: litegram.utils.formatting.Text.as_poll_question_kwargs:9 of
+msgid "Will be passed to :meth:`as_kwargs`."
+msgstr ""
+
+#: litegram.utils.formatting.Text.as_poll_explanation_kwargs:1
+#: litegram.utils.formatting.Text.as_poll_question_kwargs:1 of
+msgid ""
+"Shortcut for :meth:`as_kwargs` for usage with method "
+":class:`litegram.methods.send_poll.SendPoll`."
+msgstr ""
+
+#: litegram.utils.formatting.Text.as_gift_text_kwargs:1 of
+msgid ""
+"Shortcut for :meth:`as_kwargs` for usage with method "
+":class:`litegram.methods.send_gift.SendGift`."
+msgstr ""
+
+#: litegram.utils.formatting.Text.as_html:1 of
+msgid "Render elements tree as HTML markup"
+msgstr ""
+
+#: litegram.utils.formatting.Text.as_markdown:1 of
+msgid "Render elements tree as MarkdownV2 markup"
+msgstr ""
+
+#: ../../utils/formatting.rst:147
+msgid "Available elements"
+msgstr ""
+
+#: litegram.utils.formatting.HashTag:1 of
+msgid "Hashtag element."
+msgstr ""
+
+#: litegram.utils.formatting.HashTag:5 of
+msgid "The value should always start with '#' symbol"
+msgstr ""
+
+#: litegram.utils.formatting.HashTag:7 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.HASHTAG`"
+msgstr ""
+
+#: litegram.utils.formatting.CashTag:1 of
+msgid "Cashtag element."
+msgstr ""
+
+#: litegram.utils.formatting.CashTag:5 of
+msgid "The value should always start with '$' symbol"
+msgstr ""
+
+#: litegram.utils.formatting.CashTag:7 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.CASHTAG`"
+msgstr ""
+
+#: litegram.utils.formatting.BotCommand:1 of
+msgid "Bot command element."
+msgstr ""
+
+#: litegram.utils.formatting.BotCommand:5 of
+msgid "The value should always start with '/' symbol"
+msgstr ""
+
+#: litegram.utils.formatting.BotCommand:7 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.BOT_COMMAND`"
+msgstr ""
+
+#: litegram.utils.formatting.Url:1 of
+msgid "Url element."
+msgstr ""
+
+#: litegram.utils.formatting.Url:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type :obj:`litegram.enums.message_entity_type.MessageEntityType.URL`"
+msgstr ""
+
+#: litegram.utils.formatting.Email:1 of
+msgid "Email element."
+msgstr ""
+
+#: litegram.utils.formatting.Email:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.EMAIL`"
+msgstr ""
+
+#: litegram.utils.formatting.PhoneNumber:1 of
+msgid "Phone number element."
+msgstr ""
+
+#: litegram.utils.formatting.PhoneNumber:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.PHONE_NUMBER`"
+msgstr ""
+
+#: litegram.utils.formatting.Bold:1 of
+msgid "Bold element."
+msgstr ""
+
+#: litegram.utils.formatting.Bold:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.BOLD`"
+msgstr ""
+
+#: litegram.utils.formatting.Italic:1 of
+msgid "Italic element."
+msgstr ""
+
+#: litegram.utils.formatting.Italic:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.ITALIC`"
+msgstr ""
+
+#: litegram.utils.formatting.Underline:1 of
+msgid "Underline element."
+msgstr ""
+
+#: litegram.utils.formatting.Underline:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.UNDERLINE`"
+msgstr ""
+
+#: litegram.utils.formatting.Strikethrough:1 of
+msgid "Strikethrough element."
+msgstr ""
+
+#: litegram.utils.formatting.Strikethrough:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.STRIKETHROUGH`"
+msgstr ""
+
+#: litegram.utils.formatting.Spoiler:1 of
+msgid "Spoiler element."
+msgstr ""
+
+#: litegram.utils.formatting.Spoiler:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.SPOILER`"
+msgstr ""
+
+#: litegram.utils.formatting.Code:1 of
+msgid "Code element."
+msgstr ""
+
+#: litegram.utils.formatting.Code:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.CODE`"
+msgstr ""
+
+#: litegram.utils.formatting.Pre:1 of
+msgid "Pre element."
+msgstr ""
+
+#: litegram.utils.formatting.Pre:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type :obj:`litegram.enums.message_entity_type.MessageEntityType.PRE`"
+msgstr ""
+
+#: litegram.utils.formatting.TextLink:1 of
+msgid "Text link element."
+msgstr ""
+
+#: litegram.utils.formatting.TextLink:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.TEXT_LINK`"
+msgstr ""
+
+#: litegram.utils.formatting.TextMention:1 of
+msgid "Text mention element."
+msgstr ""
+
+#: litegram.utils.formatting.TextMention:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.TEXT_MENTION`"
+msgstr ""
+
+#: litegram.utils.formatting.CustomEmoji:1 of
+msgid "Custom emoji element."
+msgstr ""
+
+#: litegram.utils.formatting.CustomEmoji:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.CUSTOM_EMOJI`"
+msgstr ""
+
+#: litegram.utils.formatting.BlockQuote:1 of
+msgid "Block quote element."
+msgstr ""
+
+#: litegram.utils.formatting.BlockQuote:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.BLOCKQUOTE`"
+msgstr ""
+
+#: litegram.utils.formatting.ExpandableBlockQuote:1 of
+msgid "Expandable block quote element."
+msgstr ""
+
+#: litegram.utils.formatting.ExpandableBlockQuote:3 of
+msgid ""
+"Will be wrapped into :obj:`litegram.types.message_entity.MessageEntity` "
+"with type "
+":obj:`litegram.enums.message_entity_type.MessageEntityType.EXPANDABLE_BLOCKQUOTE`"
+msgstr ""

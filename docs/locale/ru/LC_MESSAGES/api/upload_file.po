@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"PO-Revision-Date: 2022-12-13 21:40+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../api/upload_file.rst:5
+msgid "How to upload file?"
+msgstr "Как выгрузити файл?"
+
+#: ../../api/upload_file.rst:7
+msgid ""
+"As says `official Telegram Bot API documentation "
+"<https://core.telegram.org/bots/api#sending-files>`_ there are three ways"
+" to send files (photos, stickers, audio, media, etc.):"
+msgstr ""
+"Как утверждает `official Telegram Bot API documentation "
+"<https://core.telegram.org/bots/api#sending-files>`_ существует три способа "
+"отправить файл (фото, стикеры, аудио, медиа и т.д.):"
+
+#: ../../api/upload_file.rst:10
+msgid ""
+"If the file is already stored somewhere on the Telegram servers or file "
+"is available by the URL, you don't need to reupload it."
+msgstr ""
+"Якщо файл уже зберигаеться десь на серверах Telegram или файл доступний "
+"за URL-адресою, вам не потрибно его повторно завантажувати."
+
+#: ../../api/upload_file.rst:13
+#, fuzzy
+msgid ""
+"But if you need to upload a new file just use subclasses of `InputFile "
+"<types/input_file.html>`__."
+msgstr ""
+"Але если вам потрибно скачать новий файл, просто используйте "
+"пидкласи `InputFile <types/input_file.md>`__."
+
+#: ../../api/upload_file.rst:15
+#, fuzzy
+msgid "Here are the three different available builtin types of input file:"
+msgstr "Тут доступни три ризни типы вхидних файлов:"
+
+#: ../../api/upload_file.rst:17
+msgid ""
+":class:`litegram.types.input_file.FSInputFile` - `uploading from file "
+"system <#upload-from-file-system>`__"
+msgstr ""
+":class:`litegram.types.input_file.FSInputFile` - `видвантажений с файловои"
+" системи <#upload-from-file-system>`__"
+
+#: ../../api/upload_file.rst:18
+msgid ""
+":class:`litegram.types.input_file.BufferedInputFile` - `uploading from "
+"buffer <#upload-from-buffer>`__"
+msgstr ""
+":class:`litegram.types.input_file.BufferedInputFile` - `видвантажений с "
+"буферу <#upload-from-buffer>`__"
+
+#: ../../api/upload_file.rst:19
+msgid ""
+":class:`litegram.types.input_file.URLInputFile` - `uploading from URL "
+"<#upload-from-url>`__"
+msgstr ""
+":class:`litegram.types.input_file.URLInputFile` - `видвантажений с URL "
+"<#upload-from-url>`__"
+
+#: ../../api/upload_file.rst:23
+#, fuzzy
+msgid "**Be respectful to Telegram**"
+msgstr "**Поважайте Telegram**"
+
+#: ../../api/upload_file.rst:25
+#, fuzzy
+msgid ""
+"Instances of `InputFile` are reusable. That means you can create an "
+"instance of InputFile and send it multiple times. However, Telegram does "
+"not recommend doing this. Instead, once you upload a file, save its "
+"`file_id` and reuse that later."
+msgstr ""
+"Екземпляри `InputFile` можна использовать повторно. Це означае, что вы "
+"можете створити екземпляр InputFile и отправить этот файл килька разив, "
+"але Telegram не рекомендуе этого робити, и когда вы завантажуете файл один"
+" раз, просто збережить его `file_id` и используйте его наступного "
+"разу."
+
+#: ../../api/upload_file.rst:29
+msgid "Upload from file system"
+msgstr "Видваниження с файловои системи"
+
+#: ../../api/upload_file.rst:31
+msgid "By first step you will need to import InputFile wrapper:"
+msgstr "Перш за все, вам потрибно буде импортувати обгортку InputFile:"
+
+#: ../../api/upload_file.rst:37
+msgid "Then you can use it:"
+msgstr "Тепер вы можетте использовать ии:"
+
+#: litegram.types.input_file.BufferedInputFile.__init__:1
+#: litegram.types.input_file.FSInputFile.__init__:1 of
+msgid "Represents object for uploading files from filesystem"
+msgstr "Об’ект для выгруження файлов из файловои системи"
+
+#: ../../api/upload_file.rst
+msgid "Parameters"
+msgstr "Параметры"
+
+#: litegram.types.input_file.FSInputFile.__init__:3 of
+msgid "Path to file"
+msgstr "Путь к файлу"
+
+#: litegram.types.input_file.FSInputFile.__init__:4 of
+msgid ""
+"Filename to be propagated to telegram. By default, will be parsed from "
+"path"
+msgstr ""
+"Ім'я файлу, которое буде передано в telegram. За замовчуванням, буде взято зи"
+" шляху"
+
+#: litegram.types.input_file.BufferedInputFile.__init__:5
+#: litegram.types.input_file.FSInputFile.__init__:6 of
+msgid "Uploading chunk size"
+msgstr "Розмир фрагмени выгруження"
+
+#: ../../api/upload_file.rst:50
+msgid "Upload from buffer"
+msgstr "Видваниження с буферу"
+
+#: ../../api/upload_file.rst:52
+#, fuzzy
+msgid ""
+"Files can be also passed from buffer (For example you generate image "
+"using `Pillow <https://pillow.readthedocs.io/en/stable/>`_ and you want "
+"to send it to Telegram):"
+msgstr ""
+"Файли також можна передавати с буфера (например, вы створюете зображення"
+" с помощью `Pillow <https://pillow.readthedocs.io/en/stable/>`_ и "
+"хотите отправить его в Telegram):"
+
+#: ../../api/upload_file.rst:56 ../../api/upload_file.rst:78
+msgid "Import wrapper:"
+msgstr "Імпорт обгортки:"
+
+#: ../../api/upload_file.rst:62 ../../api/upload_file.rst:84
+msgid "And then you can use it:"
+msgstr "Тепер вы можетте использовать ии:"
+
+#: litegram.types.input_file.BufferedInputFile.__init__:3 of
+msgid "Bytes"
+msgstr "Байти"
+
+#: litegram.types.input_file.BufferedInputFile.__init__:4 of
+msgid "Filename to be propagated to telegram."
+msgstr "Ім'я файлу, которое буде передано в telegram."
+
+#: ../../api/upload_file.rst:72
+msgid "Upload from url"
+msgstr "Видваниження с URL"
+
+#: ../../api/upload_file.rst:74
+msgid ""
+"If you need to upload a file from another server, but the direct link is "
+"bound to your server's IP, or you want to bypass native `upload limits "
+"<https://core.telegram.org/bots/api#sending-files>`_ by URL, you can use "
+":obj:`litegram.types.input_file.URLInputFile`."
+msgstr ""
+"Якщо вам потрибно видвантажити файл с иншого сервера, але пряме ссылку"
+" прив’язано к IP-адреси вашого сервера, или вы хотите обийти власни "
+"`обмеження на загрузка <https://core.telegram.org/bots/api#sending-"
+"files> `_ за URL-адресою, вы можете использовать "
+":obj:`litegram.types.input_file.URLInputFile`."

@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../dispatcher/errors.rst:3
+msgid "Errors"
+msgstr ""
+
+#: ../../dispatcher/errors.rst:7
+msgid "Handling errors"
+msgstr ""
+
+#: ../../dispatcher/errors.rst:9
+msgid ""
+"Is recommended way that you should use errors inside handlers using try-"
+"except block, but in common cases you can use global errors handler at "
+"router or dispatcher level."
+msgstr ""
+
+#: ../../dispatcher/errors.rst:12
+msgid ""
+"If you specify errors handler for router - it will be used for all "
+"handlers inside this router."
+msgstr ""
+
+#: ../../dispatcher/errors.rst:14
+msgid ""
+"If you specify errors handler for dispatcher - it will be used for all "
+"handlers inside all routers."
+msgstr ""
+
+#: ../../dispatcher/errors.rst:34
+msgid "ErrorEvent"
+msgstr ""
+
+#: litegram.types.error_event.ErrorEvent:1 of
+msgid ""
+"Internal event, should be used to receive errors while processing Updates"
+" from Telegram"
+msgstr ""
+
+#: litegram.types.error_event.ErrorEvent:3 of
+msgid "Source: https://core.telegram.org/bots/api#error-event"
+msgstr ""
+
+#: litegram.types.error_event.ErrorEvent.update:1 of
+msgid "Received update"
+msgstr ""
+
+#: litegram.types.error_event.ErrorEvent.exception:1 of
+msgid "Exception"
+msgstr ""
+
+#: ../../dispatcher/errors.rst:45
+msgid "Error types"
+msgstr ""
+
+#: litegram.exceptions.LitegramError:1 of
+msgid "Base exception for all litegram errors."
+msgstr ""
+
+#: litegram.exceptions.DetailedLitegramError:1 of
+msgid "Base exception for all litegram errors with detailed message."
+msgstr ""
+
+#: litegram.exceptions.CallbackAnswerException:1 of
+msgid "Exception for callback answer."
+msgstr ""
+
+#: litegram.exceptions.SceneException:1 of
+msgid "Exception for scenes."
+msgstr ""
+
+#: litegram.exceptions.UnsupportedKeywordArgument:1 of
+msgid "Exception raised when a keyword argument is passed as filter."
+msgstr ""
+
+#: litegram.exceptions.TelegramAPIError:1 of
+msgid "Base exception for all Telegram API errors."
+msgstr ""
+
+#: litegram.exceptions.TelegramNetworkError:1 of
+msgid "Base exception for all Telegram network errors."
+msgstr ""
+
+#: litegram.exceptions.TelegramRetryAfter:1 of
+msgid "Exception raised when flood control exceeds."
+msgstr ""
+
+#: litegram.exceptions.TelegramMigrateToChat:1 of
+msgid "Exception raised when chat has been migrated to a supergroup."
+msgstr ""
+
+#: litegram.exceptions.TelegramBadRequest:1 of
+msgid "Exception raised when request is malformed."
+msgstr ""
+
+#: litegram.exceptions.TelegramNotFound:1 of
+msgid "Exception raised when chat, message, user, etc. not found."
+msgstr ""
+
+#: litegram.exceptions.TelegramConflictError:1 of
+msgid ""
+"Exception raised when bot token is already used by another application in"
+" polling mode."
+msgstr ""
+
+#: litegram.exceptions.TelegramUnauthorizedError:1 of
+msgid "Exception raised when bot token is invalid."
+msgstr ""
+
+#: litegram.exceptions.TelegramForbiddenError:1 of
+msgid "Exception raised when bot is kicked from chat or etc."
+msgstr ""
+
+#: litegram.exceptions.TelegramServerError:1 of
+msgid "Exception raised when Telegram server returns 5xx error."
+msgstr ""
+
+#: litegram.exceptions.RestartingTelegram:1 of
+msgid "Exception raised when Telegram server is restarting."
+msgstr ""
+
+#: litegram.exceptions.RestartingTelegram:3 of
+msgid ""
+"It seems like this error is not used by Telegram anymore, but it's still "
+"here for backward compatibility."
+msgstr ""
+
+#: litegram.exceptions.RestartingTelegram:6 of
+msgid ""
+"Currently, you should expect that Telegram can raise RetryAfter (with "
+"timeout 5 seconds)"
+msgstr ""
+
+#: litegram.exceptions.RestartingTelegram:7 of
+msgid "error instead of this one."
+msgstr ""
+
+#: litegram.exceptions.TelegramEntityTooLarge:1 of
+msgid "Exception raised when you are trying to send a file that is too large."
+msgstr ""
+
+#: litegram.exceptions.ClientDecodeError:1 of
+msgid ""
+"Exception raised when client can't decode response. (Malformed response, "
+"etc.)"
+msgstr ""
+
+#: litegram.exceptions.DataNotDictLikeError:1 of
+msgid "Exception raised when data is not dict-like."
+msgstr ""

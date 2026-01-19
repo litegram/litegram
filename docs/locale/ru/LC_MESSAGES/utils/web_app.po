@@ -1,0 +1,348 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"PO-Revision-Date: 2024-03-04 17:30+0200\n"
+"Last-Translator: Leroy-Bit\n"
+"Language: ru\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../utils/web_app.rst:3
+msgid "WebApp"
+msgstr "Веб Приложение (WebApp)"
+
+#: ../../utils/web_app.rst:5
+msgid ""
+"Telegram Bot API 6.0 announces a revolution in the development of "
+"chatbots using WebApp feature."
+msgstr ""
+"Telegram Bot API 6.0 произвел революцию в разработке чат-ботов, "
+"используя особенности Веб Приложений."
+
+#: ../../utils/web_app.rst:7
+msgid ""
+"You can read more details on it in the official `blog "
+"<https://telegram.org/blog/notifications-bots#bot-revolution>`_ and "
+"`documentation <https://core.telegram.org/bots/webapps>`_."
+msgstr ""
+"Вы можете прочитать больше о это в официальном `блоге "
+"<https://telegram.org/blog/notifications-bots#bot-revolution>`_ и "
+"`документации <https://core.telegram.org/bots/webapps>`_."
+
+#: ../../utils/web_app.rst:10
+msgid ""
+"`litegram` implements simple utils to remove headache with the data "
+"validation from Telegram WebApp on the backend side."
+msgstr ""
+"`litegram` реализует простые утилиты для устранения головной боли, предоставляя "
+"готовые инструменты проверки данных из Веб Застосунку Telegram на "
+"серверной стороне."
+
+#: ../../utils/web_app.rst:13
+msgid "Usage"
+msgstr "Использование"
+
+#: ../../utils/web_app.rst:15
+msgid ""
+"For example from frontend you will pass :code:`application/x-www-form-"
+"urlencoded` POST request with :code:`_auth` field in body and wants to "
+"return User info inside response as :code:`application/json`"
+msgstr ""
+"Например, из фронтенда вы передадите :code:`application/x-www-form-"
+"urlencoded` в POST запросе  из полем :code:`_auth` в теле и хотите "
+"вернуть информацию о пользователя в ответ как "
+":code:`application/json`"
+
+#: ../../utils/web_app.rst:35
+msgid "Functions"
+msgstr "Функции"
+
+#: litegram.utils.web_app.check_webapp_signature:1 of
+msgid "Check incoming WebApp init data signature"
+msgstr "Проверка входящей подписи данных инициализации Веб Застосунку"
+
+#: litegram.utils.web_app.check_webapp_signature:3 of
+msgid ""
+"Source: https://core.telegram.org/bots/webapps#validating-data-received-"
+"via-the-web-app"
+msgstr ""
+"Источник: https://core.telegram.org/bots/webapps#validating-data-received-"
+"via-the-web-app"
+
+#: ../../utils/web_app.rst
+msgid "Parameters"
+msgstr "Параметры"
+
+#: litegram.utils.web_app.check_webapp_signature:5 of
+msgid "bot Token"
+msgstr "Токен бота"
+
+#: litegram.utils.web_app.check_webapp_signature:6 of
+msgid "data from frontend to be validated"
+msgstr "дани с фронтенда, что подлежат проверке"
+
+#: ../../utils/web_app.rst
+msgid "Returns"
+msgstr "Возвращает"
+
+#: litegram.utils.web_app.parse_webapp_init_data:1 of
+msgid "Parse WebApp init data and return it as WebAppInitData object"
+msgstr ""
+"Анализ данихи инициализации Веб Застосунку и возврат их как объекта "
+"WebAppInitData"
+
+#: litegram.utils.web_app.parse_webapp_init_data:3 of
+msgid ""
+"This method doesn't make any security check, so you shall not trust to "
+"this data, use :code:`safe_parse_webapp_init_data` instead."
+msgstr ""
+"Этот метод не обеспечивает безопасность, поэтому вам не стоит доверять этим данным, "
+"вместо этого используйте :code:`safe_parse_webapp_init_data`."
+
+#: litegram.utils.web_app.parse_webapp_init_data:6 of
+msgid "data from frontend to be parsed"
+msgstr "дани с frontend для анализу"
+
+#: litegram.utils.web_app.safe_parse_webapp_init_data:1 of
+msgid "Validate raw WebApp init data and return it as WebAppInitData object"
+msgstr ""
+"Проверка необроблених данных инициализации Веб Застосунку и возврат их"
+" как объекта WebAppInitData"
+
+#: litegram.utils.web_app.safe_parse_webapp_init_data:3 of
+msgid "Raise :obj:`ValueError` when data is invalid"
+msgstr "Выдает :obj:`ValueError`, когда дани недействительны"
+
+#: litegram.utils.web_app.safe_parse_webapp_init_data:5 of
+msgid "bot token"
+msgstr "токен бота"
+
+#: litegram.utils.web_app.safe_parse_webapp_init_data:6 of
+msgid "data from frontend to be parsed and validated"
+msgstr "дани с фронтенда для анализу и проверки"
+
+#: ../../utils/web_app.rst:45
+msgid "Types"
+msgstr "Типы"
+
+#: litegram.utils.web_app.WebAppInitData:1 of
+msgid ""
+"This object contains data that is transferred to the Web App when it is "
+"opened. It is empty if the Web App was launched from a keyboard button."
+msgstr ""
+"Об’ект, что содержит дани которые передаются в Веб Приложение во время его "
+"открытия. Он пуст, если Веб Приложение було запущено с помощью "
+"кнопки клавиатуры."
+
+#: litegram.utils.web_app.WebAppInitData:4 of
+msgid "Source: https://core.telegram.org/bots/webapps#webappinitdata"
+msgstr "Источник: https://core.telegram.org/bots/webapps#webappinitdata"
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.query_id:1 of
+msgid ""
+"A unique identifier for the Web App session, required for sending "
+"messages via the answerWebAppQuery method."
+msgstr ""
+"Уникальный идентификатор сеанса Веб Застосунку, необходим для отправки"
+" сообщений через метод answerWebAppQuery."
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.user:1 of
+msgid "An object containing data about the current user."
+msgstr "Объект, что содержит дани о текущего пользователя."
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.receiver:1 of
+msgid ""
+"An object containing data about the chat partner of the current user in "
+"the chat where the bot was launched via the attachment menu. Returned "
+"only for Web Apps launched via the attachment menu."
+msgstr ""
+"Объект, что содержит дани о собеседника текущего пользователя в чати, "
+"где бот був запущен через меню вкладення. Возвращается только для "
+"веб-приложений, запущенных через меню вложений."
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.chat:1 of
+msgid ""
+"An object containing data about the chat where the bot was launched via "
+"the attachment menu. Returned for supergroups, channels, and group chats "
+"– only for Web Apps launched via the attachment menu."
+msgstr ""
+"Объект, что содержит дани о чат, в котором бот був запущен через меню "
+"вложений. Возвращается для супергрупп, каналов и групповых чатов - только "
+"для веб-приложений, запущенных через меню вложений."
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.chat_type:1 of
+msgid ""
+"Type of the chat from which the Web App was opened. Can be either "
+"“sender” for a private chat with the user opening the link, “private”, "
+"“group”, “supergroup”, or “channel”. Returned only for Web Apps launched "
+"from direct links."
+msgstr ""
+"Тип чату, с которого було открыто веб-додаток. Може бути как \"sender\" для "
+"частного чату с пользователем, который открыл ссылку, так и "
+"\"private\", \"group\", \"supergroup\" или \"channel\". Возвращается "
+"только для веб-програм, запущенных за прямим посиланням."
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.chat_instance:1 of
+msgid ""
+"Global identifier, uniquely corresponding to the chat from which the Web "
+"App was opened. Returned only for Web Apps launched from a direct link."
+msgstr ""
+"Глобальный идентификатор, что уникальний для чату, с которого було открыто "
+"веб-програму. Возвращается только для веб-приложений, запущенных за прямим "
+"посиланням."
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.start_param:1 of
+msgid ""
+"The value of the startattach parameter, passed via link. Only returned "
+"for Web Apps when launched from the attachment menu via link. The value "
+"of the start_param parameter will also be passed in the GET-parameter "
+"tgWebAppStartParam, so the Web App can load the correct interface right "
+"away."
+msgstr ""
+"Значение параметра startattach, переданное через ссылку. Возвращается "
+"только для Веб Приложений, когда их запускають из меню вложений за "
+"посиланням. Значение параметра start_param також буде передано в "
+"GET-параметр tgWebAppStartParam, поэтому Веб Приложение может сразу "
+"скачать правильный интерфейс."
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.can_send_after:1 of
+msgid ""
+"Time in seconds, after which a message can be sent via the "
+"answerWebAppQuery method."
+msgstr ""
+"Время в секундах после которого сообщения может бути отправлено за "
+"помощью метода answerWebAppQuery."
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.auth_date:1 of
+msgid "Unix time when the form was opened."
+msgstr "Unix час откриття форми."
+
+#: ../../docstring litegram.utils.web_app.WebAppInitData.hash:1 of
+msgid ""
+"A hash of all passed parameters, which the bot server can use to check "
+"their validity."
+msgstr ""
+"Хеш всех переданных параметров, с помощью которого бот-сервер может "
+"проверить их валидность."
+
+#: litegram.utils.web_app.WebAppUser:1 of
+msgid "This object contains the data of the Web App user."
+msgstr "Объект что содержит дани пользователя Веб Застосунку."
+
+#: litegram.utils.web_app.WebAppUser:3 of
+msgid "Source: https://core.telegram.org/bots/webapps#webappuser"
+msgstr "Источник: https://core.telegram.org/bots/webapps#webappuser"
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.id:1 of
+msgid ""
+"A unique identifier for the user or bot. This number may have more than "
+"32 significant bits and some programming languages may have "
+"difficulty/silent defects in interpreting it. It has at most 52 "
+"significant bits, so a 64-bit integer or a double-precision float type is"
+" safe for storing this identifier."
+msgstr ""
+"Уникальный идентификатор пользователя или бота. Це число может мати больше "
+"32 значимых битов, и деяки языки программирования могут мати трудности в его"
+" интерпретации. Он имеет щонайбильше 52 значущи бити, поэтому 64-битне целое "
+"число или тип с плаваючою точнистю подвийнои точности является безопасным для "
+"хранения этого идентификатора."
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.is_bot:1 of
+msgid "True, if this user is a bot. Returns in the receiver field only."
+msgstr ""
+"True, если этот пользователь бот. Повертается только в поли "
+"отримувача(receiver)."
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.first_name:1 of
+msgid "First name of the user or bot."
+msgstr "Ім'я пользователя или бота."
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.last_name:1 of
+msgid "Last name of the user or bot."
+msgstr "Фамилия пользователя или бота."
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.username:1 of
+msgid "Username of the user or bot."
+msgstr "Ник пользователя или бота."
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.language_code:1 of
+msgid "IETF language tag of the user's language. Returns in user field only."
+msgstr ""
+"Языковой тег IETF языки пользователя. Повертается только в поли "
+"пользователя(user)."
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.is_premium:1 of
+msgid "True, if this user is a Telegram Premium user."
+msgstr "True, если этой пользователь имеет подписку Telegram Premium."
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.added_to_attachment_menu:1
+#: of
+msgid "True, if this user added the bot to the attachment menu."
+msgstr "True, если этой пользователь кдав бота к меню вложений."
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.allows_write_to_pm:1 of
+msgid "True, if this user allowed the bot to message them."
+msgstr "True, если этой пользователь кзволив надсилати йому повикмлення."
+
+#: ../../docstring litegram.utils.web_app.WebAppUser.photo_url:1 of
+msgid ""
+"URL of the user’s profile photo. The photo can be in .jpeg or .svg "
+"formats. Only returned for Web Apps launched from the attachment menu."
+msgstr ""
+"URL-адреса фотографии профилю пользователя. Фотография может бути в "
+"форматах .jpeg или .svg. Возвращается только для Веб Приложений, запущенных"
+" из меню вложений."
+
+#: litegram.utils.web_app.WebAppChat:1 of
+msgid "This object represents a chat."
+msgstr "Объект чату."
+
+#: litegram.utils.web_app.WebAppChat:3 of
+msgid "Source: https://core.telegram.org/bots/webapps#webappchat"
+msgstr "Источник: https://core.telegram.org/bots/webapps#webappchat"
+
+#: ../../docstring litegram.utils.web_app.WebAppChat.id:1 of
+msgid ""
+"Unique identifier for this chat. This number may have more than 32 "
+"significant bits and some programming languages may have "
+"difficulty/silent defects in interpreting it. But it has at most 52 "
+"significant bits, so a signed 64-bit integer or double-precision float "
+"type are safe for storing this identifier."
+msgstr ""
+"Уникальный идентификатор этого чату. Це число может мати больше 32 "
+"значимых битов, и деяки языки программирования могут мати трудности в его "
+"интерпретации. Он имеет щонайбильше 52 значущи бити, поэтому 64-битне целое "
+"число или тип с плаваючою точкою подвийнои точности является безопасным для "
+"хранения этого идентификатора."
+
+#: ../../docstring litegram.utils.web_app.WebAppChat.type:1 of
+msgid "Type of chat, can be either “group”, “supergroup” or “channel”"
+msgstr "Тип чату, может бути \"group\", \"supergroup\" или \"channel\""
+
+#: ../../docstring litegram.utils.web_app.WebAppChat.title:1 of
+msgid "Title of the chat"
+msgstr "Название чату"
+
+#: ../../docstring litegram.utils.web_app.WebAppChat.username:1 of
+msgid "Username of the chat"
+msgstr "Ник пользователя или бота"
+
+#: ../../docstring litegram.utils.web_app.WebAppChat.photo_url:1 of
+msgid ""
+"URL of the chat’s photo. The photo can be in .jpeg or .svg formats. Only "
+"returned for Web Apps launched from the attachment menu."
+msgstr ""
+"URL-адреса фотографии чату. Фотография может бути в форматах .jpeg или "
+".svg. Возвращается только для Веб Приложений, запущенных из меню вложений."

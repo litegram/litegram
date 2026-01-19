@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../api/methods/add_sticker_to_set.rst:3
+msgid "addStickerToSet"
+msgstr ""
+
+#: ../../api/methods/add_sticker_to_set.rst:5
+msgid "Returns: :obj:`bool`"
+msgstr ""
+
+#: litegram.methods.add_sticker_to_set.AddStickerToSet:1 of
+msgid ""
+"Use this method to add a new sticker to a set created by the bot. Emoji "
+"sticker sets can have up to 200 stickers. Other sticker sets can have up "
+"to 120 stickers. Returns :code:`True` on success."
+msgstr ""
+
+#: litegram.methods.add_sticker_to_set.AddStickerToSet:3 of
+msgid "Source: https://core.telegram.org/bots/api#addstickertoset"
+msgstr ""
+
+#: ../../docstring litegram.methods.add_sticker_to_set.AddStickerToSet.user_id:1
+#: of
+msgid "User identifier of sticker set owner"
+msgstr ""
+
+#: ../../docstring litegram.methods.add_sticker_to_set.AddStickerToSet.name:1 of
+msgid "Sticker set name"
+msgstr ""
+
+#: ../../docstring litegram.methods.add_sticker_to_set.AddStickerToSet.sticker:1
+#: of
+msgid ""
+"A JSON-serialized object with information about the added sticker. If "
+"exactly the same sticker had already been added to the set, then the set "
+"isn't changed."
+msgstr ""
+
+#: ../../api/methods/add_sticker_to_set.rst:15
+msgid "Usage"
+msgstr ""
+
+#: ../../api/methods/add_sticker_to_set.rst:18
+msgid "As bot method"
+msgstr ""
+
+#: ../../api/methods/add_sticker_to_set.rst:26
+msgid "Method as object"
+msgstr ""
+
+#: ../../api/methods/add_sticker_to_set.rst:28
+msgid "Imports:"
+msgstr ""
+
+#: ../../api/methods/add_sticker_to_set.rst:30
+msgid ":code:`from litegram.methods.add_sticker_to_set import AddStickerToSet`"
+msgstr ""
+
+#: ../../api/methods/add_sticker_to_set.rst:31
+msgid "alias: :code:`from litegram.methods import AddStickerToSet`"
+msgstr ""
+
+#: ../../api/methods/add_sticker_to_set.rst:34
+msgid "With specific bot"
+msgstr ""
+
+#: ../../api/methods/add_sticker_to_set.rst:41
+msgid "As reply into Webhook in handler"
+msgstr ""

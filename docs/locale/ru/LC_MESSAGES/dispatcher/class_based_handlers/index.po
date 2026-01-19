@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-01 22:51+0300\n"
+"PO-Revision-Date: 2022-12-11 22:30+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: ../../dispatcher/class_based_handlers/index.rst:3
+msgid "Class based handlers"
+msgstr "Обробники на основи класив"
+
+#: ../../dispatcher/class_based_handlers/index.rst:5
+msgid ""
+"A handler is a async callable which takes a event with contextual data "
+"and returns a response."
+msgstr ""
+"Обробник (handler) — это корутина, которая принимает подию с контекстними "
+"даними и повертае ответ."
+
+#: ../../dispatcher/class_based_handlers/index.rst:7
+msgid ""
+"In **litegram** it can be more than just an async function, these allow "
+"you to use classes which can be used as Telegram event handlers to "
+"structure your event handlers and reuse code by harnessing inheritance "
+"and mixins."
+msgstr ""
+"В **litegram** это может бути бильш, ниж просто асинхронна функция, это "
+"дозволяе вам использовать класи, которые можна использовать как "
+"обробники событий Telegram для структурування ваших обработчиков событий и "
+"повторного використання коду с помощью унаслидування и розширення."
+
+#: ../../dispatcher/class_based_handlers/index.rst:10
+msgid ""
+"There are some base class based handlers what you need to use in your "
+"own handlers:"
+msgstr ""
+"Нижче наведено килька обработчиков на основи класив, которые вам потрибно "
+"использовать в своих власних обробниках:"

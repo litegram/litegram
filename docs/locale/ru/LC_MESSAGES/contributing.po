@@ -1,0 +1,436 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ru <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../contributing.rst:3
+msgid "Contributing"
+msgstr "Содействие разработке"
+
+#: ../../contributing.rst:5
+msgid "You're welcome to contribute to litegram!"
+msgstr "Добро пожаловать в разработку litegram!"
+
+#: ../../contributing.rst:7
+msgid ""
+"*litegram* is an open-source project, and anyone can contribute to it in "
+"any possible way"
+msgstr ""
+"*litegram* — это проект с открытым исходным кодом, и каждый может внести "
+"свой вклад любым возможным способом"
+
+#: ../../contributing.rst:11
+msgid "Developing"
+msgstr "Разработка"
+
+#: ../../contributing.rst:13
+msgid ""
+"Before making any changes in the framework code, it is necessary to fork "
+"the project and clone the project to your PC and know how to do a pull-"
+"request."
+msgstr ""
+"Перед внесением любых изменений в код фреймворка необходимо сделать форк "
+"проекта, клонировать проект на свой ПК и знать, как делать pull-request."
+
+#: ../../contributing.rst:16
+msgid ""
+"How to work with pull-request you can read in the `GitHub docs "
+"<https://docs.github.com/en/pull-requests/collaborating-with-pull-"
+"requests/proposing-changes-to-your-work-with-pull-requests/creating-a"
+"-pull-request>`_"
+msgstr ""
+"О том, как работать с pull-request, можно прочитать в `документации "
+"GitHub <https://docs.github.com/en/pull-requests/collaborating-with-pull-"
+"requests/proposing-changes-to-your-work-with-pull-requests/creating-a"
+"-pull-request>`_"
+
+#: ../../contributing.rst:18
+msgid ""
+"Also in due to this project is written in Python, you will need Python to"
+" be installed (is recommended to use latest Python versions, but any "
+"version starting from 3.8 can be used)"
+msgstr ""
+"Так как этот проект написан на Python, вам потребуется установленный "
+"Python (рекомендуется использовать последние версии Python, но можно "
+"использовать любую версию, начиная с 3.8)"
+
+#: ../../contributing.rst:23
+msgid "Use virtualenv"
+msgstr "Использование virtualenv"
+
+#: ../../contributing.rst:25
+msgid ""
+"You can create a virtual environment in a directory using :code:`venv` "
+"module (it should be pre-installed by default):"
+msgstr ""
+"Вы можете создать виртуальное окружение в каталоге, используя модуль "
+":code:`venv` (он должен быть предустановлен по умолчанию):"
+
+#: ../../contributing.rst:31
+msgid ""
+"This action will create a :code:`.venv` directory with the Python "
+"binaries and then you will be able to install packages into that isolated"
+" environment."
+msgstr ""
+"Это действие создаст каталог :code:`.venv` с исполняемыми файлами Python,"
+" после чего вы сможете устанавливать пакеты в это изолированное "
+"окружение."
+
+#: ../../contributing.rst:36
+msgid "Activate the environment"
+msgstr "Активация окружения"
+
+#: ../../contributing.rst:38 ../../contributing.rst:77
+#: ../../contributing.rst:106
+msgid "Linux / macOS:"
+msgstr "Linux / macOS:"
+
+#: ../../contributing.rst:44
+msgid "Windows cmd"
+msgstr "Windows cmd"
+
+#: ../../contributing.rst:50
+msgid "Windows PowerShell"
+msgstr "Windows PowerShell"
+
+#: ../../contributing.rst:56
+msgid ""
+"To check it worked, use described command, it should show the :code:`pip`"
+" version and location inside the isolated environment"
+msgstr ""
+"Чтобы проверить, что все работает, используйте указанную команду; она "
+"должна показать версию :code:`pip` и его расположение внутри "
+"изолированного окружения"
+
+#: ../../contributing.rst:64
+msgid ""
+"Also make sure you have the latest pip version in your virtual "
+"environment to avoid errors on next steps:"
+msgstr ""
+"Также убедитесь, что в вас установлена последняя версия pip в вашем "
+"виртуальном окружении, чтобы избежать ошибок на следующих этапах:"
+
+#: ../../contributing.rst:73
+msgid "Setup project"
+msgstr "Настройка проеки"
+
+#: ../../contributing.rst:75
+#, fuzzy
+msgid ""
+"After activating the environment install `litegram` from sources and "
+"their dependencies."
+msgstr ""
+"После активации окружения установите `litegram` из исходников и его "
+"зависимости:"
+
+#: ../../contributing.rst:83 ../../contributing.rst:112
+#, fuzzy
+msgid "Windows:"
+msgstr "Windows cmd"
+
+#: ../../contributing.rst:89
+msgid ""
+"It will install :code:`litegram` in editable mode into your virtual "
+"environment and all dependencies."
+msgstr ""
+
+#: ../../contributing.rst:92
+msgid "Alternative: Using uv (Modern Approach)"
+msgstr ""
+
+#: ../../contributing.rst:94
+msgid ""
+"As an alternative to the traditional :code:`pip` and :code:`venv` "
+"workflow, you can use `uv <https://github.com/astral-sh/uv>`_ - a modern,"
+" fast Python package manager that handles virtual environments, "
+"dependency resolution, and package installation."
+msgstr ""
+
+#: ../../contributing.rst:97
+msgid "**Benefits of using uv:**"
+msgstr ""
+
+#: ../../contributing.rst:99
+msgid "10-100x faster dependency resolution than pip"
+msgstr ""
+
+#: ../../contributing.rst:100
+msgid "Automatic virtual environment management"
+msgstr ""
+
+#: ../../contributing.rst:101
+msgid "Reproducible builds with lockfile"
+msgstr ""
+
+#: ../../contributing.rst:102
+msgid "Single tool for all package management needs"
+msgstr ""
+
+#: ../../contributing.rst:104
+msgid "**Installing uv:**"
+msgstr ""
+
+#: ../../contributing.rst:118
+msgid "Or using pip:"
+msgstr ""
+
+#: ../../contributing.rst:124
+#, fuzzy
+msgid "**Setup project with uv:**"
+msgstr "Настройка проеки"
+
+#: ../../contributing.rst:126
+msgid ""
+"Instead of manually creating and activating a virtual environment, "
+":code:`uv` handles this automatically:"
+msgstr ""
+
+#: ../../contributing.rst:140
+msgid ""
+"That's it! The :code:`uv sync` command creates a virtual environment in "
+":code:`.venv/`, installs all dependencies including optional extras and "
+"development tools, and generates a :code:`uv.lock` file for reproducible "
+"builds."
+msgstr ""
+
+#: ../../contributing.rst:144
+msgid "**Running commands with uv:**"
+msgstr ""
+
+#: ../../contributing.rst:146
+msgid ""
+"When using :code:`uv`, prefix commands with :code:`uv run` to execute "
+"them in the managed environment:"
+msgstr ""
+
+#: ../../contributing.rst:164
+msgid "Or use the Makefile commands which now support :code:`uv`:"
+msgstr ""
+
+#: ../../contributing.rst:174
+msgid "Making changes in code"
+msgstr ""
+
+#: ../../contributing.rst:176
+msgid ""
+"At this point you can make any changes in the code that you want, it can "
+"be any fixes, implementing new features or experimenting."
+msgstr ""
+
+#: ../../contributing.rst:181
+msgid "Format the code (code-style)"
+msgstr ""
+
+#: ../../contributing.rst:183
+msgid ""
+"Note that this project uses Ruff for formatting and linting, so you "
+"should follow that code-style. To be sure you're correctly doing this, "
+"let's reformat the code automatically:"
+msgstr ""
+
+#: ../../contributing.rst:186 ../../contributing.rst:212
+#: ../../contributing.rst:233 ../../contributing.rst:251
+#: ../../contributing.rst:279 ../../contributing.rst:307
+msgid "Using traditional approach:"
+msgstr ""
+
+#: ../../contributing.rst:193 ../../contributing.rst:218
+#: ../../contributing.rst:239 ../../contributing.rst:257
+#: ../../contributing.rst:287 ../../contributing.rst:313
+msgid "Or with uv:"
+msgstr ""
+
+#: ../../contributing.rst:200
+msgid "Or simply use Makefile:"
+msgstr ""
+
+#: ../../contributing.rst:208
+msgid "Run tests"
+msgstr ""
+
+#: ../../contributing.rst:210
+msgid "All changes should be tested:"
+msgstr ""
+
+#: ../../contributing.rst:224 ../../contributing.rst:263
+#: ../../contributing.rst:294
+msgid "Or use Makefile:"
+msgstr ""
+
+#: ../../contributing.rst:230
+msgid ""
+"Also if you are doing something with Redis-storage or/and MongoDB-"
+"storage, you will need to test everything works with Redis or/and "
+"MongoDB:"
+msgstr ""
+
+#: ../../contributing.rst:246
+msgid "Docs"
+msgstr ""
+
+#: ../../contributing.rst:248
+msgid ""
+"We are using `Sphinx` to render docs in different languages, all sources "
+"located in `docs` directory, you can change the sources and to test it "
+"you can start live-preview server and look what you are doing:"
+msgstr ""
+
+#: ../../contributing.rst:271
+#, fuzzy
+msgid "Docs translations"
+msgstr "Документация"
+
+#: ../../contributing.rst:273
+msgid ""
+"Translation of the documentation is very necessary and cannot be done "
+"without the help of the community from all over the world, so you are "
+"welcome to translate the documentation into different languages."
+msgstr ""
+
+#: ../../contributing.rst:277
+msgid "Before start, let's up to date all texts:"
+msgstr ""
+
+#: ../../contributing.rst:300
+msgid ""
+"Change the :code:`<language_code>` in example below to the target "
+"language code, after that you can modify texts inside "
+":code:`docs/locale/<language_code>/LC_MESSAGES` as :code:`*.po` files by "
+"using any text-editor or specialized utilites for GNU Gettext, for "
+"example via `poedit <https://poedit.net/>`_."
+msgstr ""
+
+#: ../../contributing.rst:305
+msgid "To view results:"
+msgstr ""
+
+#: ../../contributing.rst:321
+msgid "Describe changes"
+msgstr ""
+
+#: ../../contributing.rst:323
+msgid ""
+"Describe your changes in one or more sentences so that bot developers "
+"know what's changed in their favorite framework - create "
+"`<code>.<category>.rst` file and write the description."
+msgstr ""
+
+#: ../../contributing.rst:326
+msgid ""
+":code:`<code>` is Issue or Pull-request number, after release link to "
+"this issue will be published to the *Changelog* page."
+msgstr ""
+
+#: ../../contributing.rst:329
+msgid ":code:`<category>` is a changes category marker, it can be one of:"
+msgstr ""
+
+#: ../../contributing.rst:331
+msgid ":code:`feature` - when you are implementing new feature"
+msgstr ""
+
+#: ../../contributing.rst:332
+msgid ":code:`bugfix` - when you fix a bug"
+msgstr ""
+
+#: ../../contributing.rst:333
+msgid ":code:`doc` - when you improve the docs"
+msgstr ""
+
+#: ../../contributing.rst:334
+msgid ":code:`removal` - when you remove something from the framework"
+msgstr ""
+
+#: ../../contributing.rst:335
+msgid ""
+":code:`misc` - when changed something inside the Core or project "
+"configuration"
+msgstr ""
+
+#: ../../contributing.rst:337
+msgid ""
+"If you have troubles with changing category feel free to ask Core-"
+"contributors to help with choosing it."
+msgstr ""
+
+#: ../../contributing.rst:340
+msgid "Complete"
+msgstr ""
+
+#: ../../contributing.rst:342
+msgid ""
+"After you have made all your changes, publish them to the repository and "
+"create a pull request as mentioned at the beginning of the article and "
+"wait for a review of these changes."
+msgstr ""
+
+#: ../../contributing.rst:347
+msgid "Star on GitHub"
+msgstr ""
+
+#: ../../contributing.rst:349
+msgid ""
+"You can \"star\" repository on GitHub - "
+"https://github.com/litegram/litegram (click the star button at the top "
+"right)"
+msgstr ""
+
+#: ../../contributing.rst:351
+msgid ""
+"Adding stars makes it easier for other people to find this project and "
+"understand how useful it is."
+msgstr ""
+
+#: ../../contributing.rst:354
+msgid "Guides"
+msgstr ""
+
+#: ../../contributing.rst:356
+msgid ""
+"You can write guides how to develop Bots on top of litegram and publish "
+"it into YouTube, Medium, GitHub Books, any Courses platform or any other "
+"platform that you know."
+msgstr ""
+
+#: ../../contributing.rst:359
+msgid ""
+"This will help more people learn about the framework and learn how to use"
+" it"
+msgstr ""
+
+#: ../../contributing.rst:363
+msgid "Take answers"
+msgstr ""
+
+#: ../../contributing.rst:365
+msgid ""
+"The developers is always asks for any question in our chats or any other "
+"platforms like GitHub Discussions, StackOverflow and others, feel free to"
+" answer to this questions."
+msgstr ""
+
+#: ../../contributing.rst:369
+msgid "Funding"
+msgstr ""
+
+#: ../../contributing.rst:371
+msgid ""
+"The development of the project is free and not financed by commercial "
+"organizations, it is my personal initiative (`@RussianCheese "
+"<https://t.me/RussianCheese>`_) and I am engaged in the development of the "
+"project in my free time."
+msgstr ""

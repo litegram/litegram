@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../dispatcher/dependency_injection.rst:3
+msgid "Dependency injection"
+msgstr "Ін'екция залежностей"
+
+#: ../../dispatcher/dependency_injection.rst:5
+msgid ""
+"Dependency injection is a programming technique that makes a class "
+"independent of its dependencies. It achieves that by decoupling the usage"
+" of an object from its creation. This helps you to follow `SOLID's "
+"<https://en.wikipedia.org/wiki/SOLID>`_ dependency inversion and single "
+"responsibility principles."
+msgstr ""
+"Ін'екция залежностей — это техника программирования, которая робить класи "
+"незалежними от ихних залежностей. Вона досягаеться шляхом виддилення "
+"використання объекта от его створення. Це допомагае дотримуватися "
+"принципив инверсии залежностей и единои видповидальности за SOLID."
+
+#: ../../dispatcher/dependency_injection.rst:12
+msgid "How it works in litegram"
+msgstr "Как это працюе в litegram"
+
+#: ../../dispatcher/dependency_injection.rst:14
+msgid ""
+"For each update :class:`litegram.dispatcher.dispatcher.Dispatcher` passes "
+"handling context data. Filters and middleware can also make changes to "
+"the context."
+msgstr ""
+"Для каждого обновления :class:`litegram.dispatcher.dispatcher.Dispatcher` "
+"передае дани контексту обработки. Фильтри и промижне програмне забезпечення "
+"також могут вносити змини к контексту."
+
+#: ../../dispatcher/dependency_injection.rst:17
+msgid ""
+"To access contextual data you should specify corresponding keyword "
+"parameter in handler or filter. For example, to get "
+":class:`litegram.fsm.context.FSMContext` we do it like that:"
+msgstr ""
+"Чтобы получить доступ к контекстних данных, вы должны указать видповидний "
+"параметр ключового слова в обробнику или фильтри. Например, чтобы получить "
+":class:`litegram.fsm.context.FSMContext`, ми робимо это так:"
+
+#: ../../dispatcher/dependency_injection.rst:30
+msgid "Injecting own dependencies"
+msgstr "Ін'екция власних залежностей"
+
+#: ../../dispatcher/dependency_injection.rst:32
+msgid "Litegram provides several ways to complement / modify contextual data."
+msgstr "Litegram предосивляет килька способив для кповнення/модификации контекстних данных."
+
+#: ../../dispatcher/dependency_injection.rst:34
+msgid ""
+"The first and easiest way is to simply specify the named arguments in "
+":class:`litegram.dispatcher.dispatcher.Dispatcher` initialization, polling"
+" start methods or "
+":class:`litegram.webhook.litestar_server.SimpleRequestHandler` "
+"initialization if you use webhooks."
+msgstr ""
+"Перший и найпростиший спосиб — это просто указать именованные аргументи во время "
+"инициализации :class:`litegram.dispatcher.dispatcher.Dispatcher`, запуску методив "
+"опроса или инициализации "
+":class:`litegram.webhook.litestar_server.SimpleRequestHandler`, если вы використовуете вебхуки."
+
+#: ../../dispatcher/dependency_injection.rst:46
+msgid "Analogy for webhook:"
+msgstr "Аналогия для вебхука:"
+
+#: ../../dispatcher/dependency_injection.rst:55
+msgid ""
+":class:`litegram.dispatcher.dispatcher.Dispatcher`'s workflow data also "
+"can be supplemented by setting values as in a dictionary:"
+msgstr ""
+"Дани робочого процесса :class:`litegram.dispatcher.dispatcher.Dispatcher` також могут "
+"доповнюватися шляхом встановлення значень, как в словнику:"
+
+#: ../../dispatcher/dependency_injection.rst:63
+msgid ""
+"The middlewares updates the context quite often. You can read more about "
+"them on this page:"
+msgstr ""
+"Промижне програмне забезпечення досить часто оновлюе контекст. Вы можете "
+"прочитать о это больше на ций сторинци:"
+
+#: ../../dispatcher/dependency_injection.rst:66
+msgid ":ref:`Middlewares <middlewares>`"
+msgstr ":ref:`Промеждуне програмне забезпечення <middlewares>`"
+
+#: ../../dispatcher/dependency_injection.rst:68
+msgid "The last way is to return a dictionary from the filter:"
+msgstr "Осинний спосиб — вернуть словник из фильтра:"
+
+#: ../../dispatcher/dependency_injection.rst:72
+msgid ""
+"...or using :ref:`MagicFilter <magic-filters>` with :code:`.as_(...)` "
+"method."
+msgstr ""
+"...или используя :ref:`MagicFilter <magic-filters>` с методом "
+":code:`.as_(...)`."
+
+#: ../../dispatcher/dependency_injection.rst:76
+msgid "Using type hints"
+msgstr "Использование пидказок типов"
+
+#: ../../dispatcher/dependency_injection.rst:80
+msgid ""
+"Type-hinting middleware data is optional and is not required for the "
+"correct operation of the dispatcher. However, it is recommended to use it"
+" to improve the readability of the code."
+msgstr ""
+"Использование пидказок типов для данных промижного програмного забезпечення "
+"необов'язкове й не потрибне для правильнои роботи диспетчера. Проте "
+"рекомендуеться использовать их для покращення читабельности коду."
+
+#: ../../dispatcher/dependency_injection.rst:83
+msgid ""
+"You can use type hints to specify the type of the context data in the "
+"middlewares, filters and handlers."
+msgstr ""
+"Вы можете использовать пидказки типов для визначення типа контекстних "
+"данных в промижному ПЗ, фильтрах и обробниках."
+
+#: ../../dispatcher/dependency_injection.rst:85
+msgid ""
+"The default middleware data typed dict can be found in "
+":class:`litegram.dispatcher.middlewares.data.MiddlewareData`."
+msgstr ""
+"Словник типов данных по умолчанию для промижного ПЗ можна знайти в "
+":class:`litegram.dispatcher.middlewares.data.MiddlewareData`."
+
+#: ../../dispatcher/dependency_injection.rst:87
+msgid ""
+"In case when you have extended the context data, you can use the "
+":class:`litegram.dispatcher.middlewares.data.MiddlewareData` as a base "
+"class and specify the type hints for the new fields."
+msgstr ""
+"Якщо вы розширили контекстни дани, вы можете использовать "
+":class:`litegram.dispatcher.middlewares.data.MiddlewareData` как базовий клас "
+"и указать пидказки типов для нових полив."
+
+#: ../../dispatcher/dependency_injection.rst:91
+msgid ""
+"If you using type checking tools like mypy, you can experience warnings "
+"about that this type hint against Liskov substitution principle in due "
+"stricter type is not a subclass of :code:`dict[str, Any]`. This is a "
+"known issue and it is not a bug. You can ignore this warning or use "
+":code:`# type: ignore` comment."
+msgstr ""
+"Якщо вы використовуете инструменты проверки типов, такие как mypy, вы "
+"можете получить попередження о те, что эти пидказки типов порушують "
+"принцип пидстановки Лисков через те, что сувориший тип не является пидкласом "
+":code:`dict[str, Any]`. Це видома проблема, и это не является помилкою. Вы можете "
+"проигнорувати это попередження или використати коментар :code:`# type: ignore`."
+
+#: ../../dispatcher/dependency_injection.rst:94
+msgid "Example of using type hints:"
+msgstr "Пример викорисиння пидказок типов:"
+
+#: ../../dispatcher/dependency_injection.rst:119
+msgid "Available context data type helpers"
+msgstr "Доступни помичники для типов контекстних данных"
+
+#: litegram.dispatcher.middlewares.data.MiddlewareData:1 of
+msgid "Data passed to the handler by the middlewares."
+msgstr "Дани, передани обробнику промеждуним ПЗ."
+
+#: litegram.dispatcher.middlewares.data.MiddlewareData:3 of
+msgid "You can add your own data by extending this class."
+msgstr "Ви можетте добавить власни дани, розширивши этой клас."
+
+#: litegram.dispatcher.middlewares.data.I18nData:1 of
+msgid "I18n related data."
+msgstr "Дани, пов'язани с I18n."
+
+#: litegram.dispatcher.middlewares.data.I18nData:3 of
+msgid ""
+"Is not included by default, you need to add it to your own Data class if "
+"you need it."
+msgstr ""
+"За замовчуванням не включено, вам потрибно додати это к власного класу Даних, "
+"если это необходимо."
+
+#: ../../docstring litegram.dispatcher.middlewares.data.I18nData.i18n:1 of
+msgid "I18n object."
+msgstr "Объект I18n."
+
+#: ../../docstring
+#: litegram.dispatcher.middlewares.data.I18nData.i18n_middleware:1 of
+msgid "I18n middleware."
+msgstr "Промеждуне ПЗ для I18n."

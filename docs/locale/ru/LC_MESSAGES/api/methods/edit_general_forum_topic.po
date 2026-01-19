@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../api/methods/edit_general_forum_topic.rst:3
+msgid "editGeneralForumTopic"
+msgstr ""
+
+#: ../../api/methods/edit_general_forum_topic.rst:5
+msgid "Returns: :obj:`bool`"
+msgstr ""
+
+#: litegram.methods.edit_general_forum_topic.EditGeneralForumTopic:1 of
+msgid ""
+"Use this method to edit the name of the 'General' topic in a forum "
+"supergroup chat. The bot must be an administrator in the chat for this to"
+" work and must have the *can_manage_topics* administrator rights. Returns"
+" :code:`True` on success."
+msgstr ""
+
+#: litegram.methods.edit_general_forum_topic.EditGeneralForumTopic:3 of
+msgid "Source: https://core.telegram.org/bots/api#editgeneralforumtopic"
+msgstr ""
+
+#: ../../docstring
+#: litegram.methods.edit_general_forum_topic.EditGeneralForumTopic.chat_id:1 of
+msgid ""
+"Unique identifier for the target chat or username of the target "
+"supergroup (in the format :code:`@supergroupusername`)"
+msgstr ""
+
+#: ../../docstring
+#: litegram.methods.edit_general_forum_topic.EditGeneralForumTopic.name:1 of
+msgid "New topic name, 1-128 characters"
+msgstr ""
+
+#: ../../api/methods/edit_general_forum_topic.rst:15
+msgid "Usage"
+msgstr ""
+
+#: ../../api/methods/edit_general_forum_topic.rst:18
+msgid "As bot method"
+msgstr ""
+
+#: ../../api/methods/edit_general_forum_topic.rst:26
+msgid "Method as object"
+msgstr ""
+
+#: ../../api/methods/edit_general_forum_topic.rst:28
+msgid "Imports:"
+msgstr ""
+
+#: ../../api/methods/edit_general_forum_topic.rst:30
+msgid ""
+":code:`from litegram.methods.edit_general_forum_topic import "
+"EditGeneralForumTopic`"
+msgstr ""
+
+#: ../../api/methods/edit_general_forum_topic.rst:31
+msgid "alias: :code:`from litegram.methods import EditGeneralForumTopic`"
+msgstr ""
+
+#: ../../api/methods/edit_general_forum_topic.rst:34
+msgid "With specific bot"
+msgstr ""
+
+#: ../../api/methods/edit_general_forum_topic.rst:41
+msgid "As reply into Webhook in handler"
+msgstr ""

@@ -1,0 +1,15 @@
+import pytest
+
+from litegram.methods import GetUpdates
+from litegram.types import Update
+from tests.mocked_bot import MockedBot
+
+
+class TestGetUpdates:
+    @pytest.mark.anyio
+    async def test_bot_method(self, bot: MockedBot):
+        prepare_result = bot.add_result_for(GetUpdates, ok=True, result=[Update(update_id=42)])
+
+        response: list[Update] = await bot.get_updates()
+        bot.get_request()
+        assert response == prepare_result.result

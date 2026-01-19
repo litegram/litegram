@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-23 00:47+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../api/enums/chat_action.rst:3
+msgid "ChatAction"
+msgstr ""
+
+#: litegram.enums.chat_action.ChatAction:1 of
+msgid "This object represents bot actions."
+msgstr "Этот объект представляет действия бота."
+
+#: litegram.enums.chat_action.ChatAction:3 of
+msgid "Choose one, depending on what the user is about to receive:"
+msgstr "Выберите один в зависимости от того, что пользователь собирается получить:"
+
+#: litegram.enums.chat_action.ChatAction:5 of
+msgid "typing for text messages,"
+msgstr "typing для текстовых сообщений,"
+
+#: litegram.enums.chat_action.ChatAction:6 of
+msgid "upload_photo for photos,"
+msgstr "upload_photo для фотографий,"
+
+#: litegram.enums.chat_action.ChatAction:7 of
+msgid "record_video or upload_video for videos,"
+msgstr "record_video или upload_video для видео,"
+
+#: litegram.enums.chat_action.ChatAction:8 of
+msgid "record_voice or upload_voice for voice notes,"
+msgstr "record_voice или upload_voice для голосовых сообщений,"
+
+#: litegram.enums.chat_action.ChatAction:9 of
+msgid "upload_document for general files,"
+msgstr "upload_document для общих файлов,"
+
+#: litegram.enums.chat_action.ChatAction:10 of
+msgid "choose_sticker for stickers,"
+msgstr "choose_sticker для наклеек,"
+
+#: litegram.enums.chat_action.ChatAction:11 of
+msgid "find_location for location data,"
+msgstr "find_location для данних о место нахождении,"
+
+#: litegram.enums.chat_action.ChatAction:12 of
+msgid "record_video_note or upload_video_note for video notes."
+msgstr "record_video_note или upload_video_note для видео кружков."
+
+#: litegram.enums.chat_action.ChatAction:14 of
+msgid "Source: https://core.telegram.org/bots/api#sendchataction"
+msgstr "Источник: https://core.telegram.org/bots/api#sendchataction"

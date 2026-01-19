@@ -1,0 +1,57 @@
+############
+sendDocument
+############
+
+Returns: :obj:`Message`
+
+.. automodule:: litegram.methods.send_document
+    :members:
+    :member-order: bysource
+    :undoc-members: True
+    :exclude-members: model_config,model_fields
+
+
+Usage
+=====
+
+As bot method
+-------------
+
+.. code-block::
+
+    result: Message = await bot.send_document(...)
+
+
+Method as object
+----------------
+
+Imports:
+
+- :code:`from litegram.methods.send_document import SendDocument`
+- alias: :code:`from litegram.methods import SendDocument`
+
+With specific bot
+~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    result: Message = await bot(SendDocument(...))
+
+As reply into Webhook in handler
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    return SendDocument(...)
+
+
+As shortcut from received object
+--------------------------------
+
+- :meth:`litegram.types.message.Message.answer_document`
+- :meth:`litegram.types.message.Message.reply_document`
+- :meth:`litegram.types.chat_join_request.ChatJoinRequest.answer_document`
+- :meth:`litegram.types.chat_join_request.ChatJoinRequest.answer_document_pm`
+- :meth:`litegram.types.chat_member_updated.ChatMemberUpdated.answer_document`
+- :meth:`litegram.types.inaccessible_message.InaccessibleMessage.answer_document`
+- :meth:`litegram.types.inaccessible_message.InaccessibleMessage.reply_document`

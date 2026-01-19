@@ -1,0 +1,309 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "litegram"
+description = 'Modern and fully asynchronous framework for Telegram Bot API'
+readme = "README.rst"
+requires-python = ">=3.13,<3.15"
+license = "MIT"
+authors = [
+    { name = "Ruslan Samoylov", email = "ruslan@samoylov.tech" },
+]
+maintainers = [
+    { name = "Ruslan Samoylov", email = "ruslan@samoylov.tech" },
+]
+keywords = [
+    "telegram",
+    "bot",
+    "api",
+    "framework",
+    "wrapper",
+    "asyncio",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Framework :: AsyncIO",
+    "Typing :: Typed",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Communications :: Chat",
+]
+dependencies = [
+    "httpx>=0.27,<0.29",
+    "litestar>=2.19,<3.0",
+    "pydantic>=2.12,<2.13",
+    "aiofiles>=25.1,<26.0",
+    "certifi>=2026.1.4",
+    "typing-extensions>=4.15.0,<=5.0",
+]
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "litegram/__meta__.py"
+
+[project.optional-dependencies]
+fast = [
+    "uvloop>=0.22.1; (sys_platform == 'darwin' or sys_platform == 'linux') and platform_python_implementation != 'PyPy'",
+    "httptools>=0.6.4",
+]
+speedups = [
+    "litegram[fast]",
+]
+redis = [
+    "litestar[redis]",
+]
+mongo = [
+    "motor>=3.7,<3.8",
+    "pymongo>=4.10,<4.17",
+]
+proxy = [
+    "httpx-socks~=0.11",
+]
+i18n = [
+    "Babel>=2.17,<3",
+]
+cli = [
+    "litestar[cli]",
+    "rich-click>=1.8.5",
+    "shellingham>=1.5.4",
+]
+cryptography = [
+    "litestar[cryptography]",
+]
+signature = [
+    "litegram[cryptography]",
+]
+docs = [
+    "Sphinx>=9.1",
+    "sphinx-intl>=2.3",
+    "sphinx-autobuild>=2025.8.25",
+    "sphinx-copybutton>=0.5.2",
+    "furo>=2025.12.19",
+    "Sphinx-Substitution-Extensions>=2026.1.12",
+    "towncrier>=25.8.0",
+    "pygments>=2.19",
+    "pymdown-extensions>=10.20",
+    "markdown-include>=0.8.1",
+    "sphinxcontrib-towncrier>=0.5.0a0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14",
+    "pre-commit>=4.5.1",
+    "packaging>=25.0",
+    "motor-types>=1.0.0b4",
+    "ty>=0.0.12",
+]
+test = [
+    "pytest==9.0.2",
+    "pytest-html==4.1.1",
+    "pytest-mock==3.15.1",
+    "pytest-cov==7.0.0",
+    "pytest-httpx==0.36.0",
+    "pytest-asyncio>=0.25.0",
+    "polyfactory==3.2.0",
+    "pytz==2025.2",
+    "pycryptodomex==3.23.0",
+]
+
+[project.urls]
+Homepage = "https://litegram.dev/"
+Documentation = "https://docs.litegram.dev/"
+Repository = "https://github.com/litegram/litegram/"
+
+[project.scripts]
+litegram = "litegram.cli.main:litegram_group"
+
+[tool.ruff]
+line-length = 128
+target-version = "py314"
+src = ["litegram", "tests"]
+exclude = [
+    ".git",
+    "build",
+    "dist",
+    "venv",
+    ".venv",
+    "docs",
+    "tests",
+    "dev",
+    "scripts",
+    "*.egg-info",
+]
+
+[tool.ruff.lint]
+select = [
+    # "C", # TODO: mccabe - code complecity
+    "A", # flake8-annotations
+    "B", # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "DTZ", # flake8-datetimez
+    "E", # pycodestyle errors
+    "F", # pyflakes
+    "I", # isort
+    "PERF", # perflint
+    "PL", # pylint
+    "Q", # flake8-quotes
+    "RET", # flake8-return
+    "SIM", # flake8-simplify
+    "T10", # flake8-debugger
+    "T20", # flake8-print
+    "UP", # pyupgrade
+    "TC", # flake8-type-checking
+    "FURB", # refurb
+]
+ignore = [
+    "F401", # unused-import (handled by other tools)
+    "A002", # builtin-argument-shadowing (common in API: type, id, format, etc.)
+    "A005", # stdlib-module-shadowing (Module `types` shadows a Python standard-library module)
+    "B008", # function-call-in-default-argument (Pydantic Field() defaults)
+    "UP042", # BotCommandScopeType inherits from both `str` and `enum.Enum` (intentional)
+    "B024", # KeyboardBuilder is an abstract base class, but it has no abstract methods or properties
+    "PLC0415", # import-outside-top-level (needed for circular imports)
+    "PLC1901", # compare-to-empty-string (sometimes more explicit is better)
+    "PLR0904", # too-many-public-methods (Bot class has many API methods)
+    "PLR0911", # too-many-return-statements
+    "PLR0912", # too-many-branches
+    "PLR0913", # too-many-arguments (Telegram API methods have many params)
+    "PLR0915", # too-many-statements
+    "PLR0917", # too-many-positional-arguments (Telegram API design)
+    "PLR6301", # no-self-use (sometimes methods are intentionally not static)
+    "PLW2901", # redefined-loop-name (intentional pattern in this codebase)
+    "PLW3201", # bad-dunder-method-name (custom dunders for framework design)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = [
+    "litegram",
+    "finite_state_machine",
+    "handlers",
+    "routes",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"litegram/client/bot.py" = ["E501"]
+"litegram/types/*" = ["E501"]
+"litegram/methods/*" = ["E501"]
+"litegram/enums/*" = ["E501"]
+"tests/**" = [
+    "PLR0124",
+    "PLR2004",
+    "DTZ005",
+    "DTZ006",
+    "A001",
+    "A004",
+    "B018",
+    "B020",
+    "B904",
+    "E501",
+    "F821",
+    "UP",
+]
+
+
+[tool.pytest.ini_options]
+markers = [
+    "asyncio: mark test as asyncio",
+    "anyio: mark test as anyio",
+    "redis: marked tests require redis connection to run",
+    "mongo: marked tests require mongo connection to run",
+]
+asyncio_mode = "auto"
+testpaths = [
+    "tests",
+]
+filterwarnings = [
+    "error",
+    "ignore::pytest.PytestUnraisableExceptionWarning",
+    # Remove when uvloop fixes the issue
+    # https://github.com/MagicStack/uvloop/issues/703
+    # https://github.com/MagicStack/uvloop/pull/705
+    "ignore:.*asyncio.iscoroutinefunction.*:DeprecationWarning",
+    "ignore:Core Pydantic V1 functionality isn't compatible with Python 3.*:UserWarning",
+]
+
+[tool.coverage.run]
+branch = false
+parallel = true
+omit = [
+    "litegram/__meta__.py",
+    "litegram/dispatcher/middlewares/data.py"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "if __name__ == .__main__.:",
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "@abstractmethod",
+    "@overload",
+    "if sys.version_info",
+    "except ImportError:"
+]
+
+[tool.ty]
+environment.python-version = "3.13"
+
+[tool.ty.rules]
+unused-ignore-comment = "ignore"
+unknown-argument = "ignore"
+possibly-missing-attribute = "ignore"
+unresolved-attribute = "ignore"
+invalid-argument-type = "ignore"
+invalid-parameter-default = "ignore"
+invalid-method-override = "ignore"
+invalid-return-type = "ignore"
+invalid-assignment = "ignore"
+redundant-cast = "ignore"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.towncrier]
+package = "litegram"
+filename = "CHANGES.rst"
+directory = "CHANGES/"
+template = "CHANGES/.template.rst.jinja2"
+issue_format = "`#{issue} <https://github.com/litegram/litegram/issues/{issue}>`_"
+ignore = [
+    ".template.rst.jinja2",
+]
+
+[[tool.towncrier.section]]
+path = ""
+
+[[tool.towncrier.type]]
+directory = "feature"
+name = "Features"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "bugfix"
+name = "Bugfixes"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "doc"
+name = "Improved Documentation"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removal"
+name = "Deprecations and Removals"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "misc"
+name = "Misc"
+showcontent = true

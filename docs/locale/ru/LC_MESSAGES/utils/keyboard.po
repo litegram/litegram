@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-06 16:52+0300\n"
+"PO-Revision-Date: 2022-10-13 21:54+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../utils/keyboard.rst:4
+msgid "Keyboard builder"
+msgstr "Конструктор клавиатуры"
+
+#: ../../utils/keyboard.rst:6
+msgid "Keyboard builder helps to dynamically generate markup."
+msgstr "Конструктор клавиатуры кпомагае динамично генерувати розмитку"
+
+#: ../../utils/keyboard.rst:10
+msgid ""
+"Note that if you have static markup, it's best to define it explicitly "
+"rather than using builder, but if you have dynamic markup configuration, "
+"feel free to use builder as you wish."
+msgstr ""
+"Зауважте, что если в вас является статична розмитка, найкраще визначити ии явно, "
+"а не использовать конструктор, але если в вас является конфигурация "
+"динамичнои розмитки, смиливо используйте конструктор на свий розсуд."
+
+#: ../../utils/keyboard.rst:15
+msgid "Usage example"
+msgstr "Пример викорисиння"
+
+#: ../../utils/keyboard.rst:17
+msgid "For example you want to generate inline keyboard with 10 buttons"
+msgstr ""
+
+#: ../../utils/keyboard.rst:27
+msgid ""
+"then adjust this buttons to some grid, for example first line will have 3"
+" buttons, the next lines will have 2 buttons"
+msgstr ""
+
+#: ../../utils/keyboard.rst:33
+msgid "also you can attach another builder to this one"
+msgstr ""
+
+#: ../../utils/keyboard.rst:40
+msgid "or you can attach some already generated markup"
+msgstr ""
+
+#: ../../utils/keyboard.rst:47
+msgid "and finally you can export this markup to use it in your message"
+msgstr ""
+
+#: ../../utils/keyboard.rst:53
+#, fuzzy
+msgid "Reply keyboard builder has the same interface"
+msgstr "Конструктор клавиатуры кпомагае динамично генерувати розмитку"
+
+#: ../../utils/keyboard.rst:57
+msgid ""
+"Note that you can't attach reply keyboard builder to inline keyboard "
+"builder and vice versa"
+msgstr ""
+
+#: ../../utils/keyboard.rst:61
+msgid "Inline Keyboard"
+msgstr "Клавиатура под повикмленням(Inline Keyboard)"
+
+#: litegram.utils.keyboard.InlineKeyboardBuilder:1 of
+msgid "Inline keyboard builder inherits all methods from generic builder"
+msgstr ""
+"Конструктор клавиатуры под повидомленням успадковуе все методы от "
+"универсального конструктора"
+
+#: ../../utils/keyboard.rst:69
+msgid "Add new inline button to markup"
+msgstr "Додавання новои кнопки к розмитки"
+
+#: ../../utils/keyboard.rst:74
+msgid "Construct an InlineKeyboardMarkup"
+msgstr "Створення InlineKeyboardMarkup"
+
+#: litegram.utils.keyboard.KeyboardBuilder.add:1 of
+msgid "Add one or many buttons to markup."
+msgstr "Додавання одниеи или килькох кнопок к розмитки."
+
+#: litegram.utils.keyboard.InlineKeyboardBuilder.from_markup
+#: litegram.utils.keyboard.KeyboardBuilder.add
+#: litegram.utils.keyboard.KeyboardBuilder.adjust
+#: litegram.utils.keyboard.KeyboardBuilder.row
+#: litegram.utils.keyboard.ReplyKeyboardBuilder.from_markup of
+msgid "Parameters"
+msgstr "Параметры"
+
+#: litegram.utils.keyboard.InlineKeyboardBuilder.buttons
+#: litegram.utils.keyboard.InlineKeyboardBuilder.copy
+#: litegram.utils.keyboard.InlineKeyboardBuilder.from_markup
+#: litegram.utils.keyboard.KeyboardBuilder.add
+#: litegram.utils.keyboard.KeyboardBuilder.adjust
+#: litegram.utils.keyboard.KeyboardBuilder.export
+#: litegram.utils.keyboard.KeyboardBuilder.row
+#: litegram.utils.keyboard.ReplyKeyboardBuilder.buttons
+#: litegram.utils.keyboard.ReplyKeyboardBuilder.copy
+#: litegram.utils.keyboard.ReplyKeyboardBuilder.from_markup of
+msgid "Returns"
+msgstr "Возвращает"
+
+#: litegram.utils.keyboard.KeyboardBuilder.adjust:1 of
+msgid "Adjust previously added buttons to specific row sizes."
+msgstr "Налаштування раньше кданных кнопок к певних розмирив рядкив."
+
+#: litegram.utils.keyboard.KeyboardBuilder.adjust:3 of
+#, fuzzy
+msgid ""
+"By default, when the sum of passed sizes is lower than buttons count the "
+"last one size will be used for tail of the markup. If repeat=True is "
+"passed - all sizes will be cycled when available more buttons count than "
+"all sizes"
+msgstr ""
+"За замовчуванням, когда сума переданных розмирив менша за килькисть кнопок,"
+" для хвоста розмитки буде використано останний переданий розмир. Якщо "
+"передано параметр repeat=True, уси розмири будуть повторюватися, поки является "
+"доступни кнопки"
+
+#: litegram.utils.keyboard.InlineKeyboardBuilder.buttons:1
+#: litegram.utils.keyboard.ReplyKeyboardBuilder.buttons:1 of
+msgid "Get flatten set of all buttons"
+msgstr "Отримання плоского списку всех кнопок"
+
+#: litegram.utils.keyboard.InlineKeyboardBuilder.copy:1
+#: litegram.utils.keyboard.ReplyKeyboardBuilder.copy:1 of
+msgid "Make full copy of current builder with markup"
+msgstr "Робить повну копию текущего конструктора с розмиткою"
+
+#: litegram.utils.keyboard.KeyboardBuilder.export:1 of
+msgid "Export configured markup as list of lists of buttons"
+msgstr "Експортуе налаштовану розмитку как список спискив кнопок"
+
+#: litegram.utils.keyboard.InlineKeyboardBuilder.from_markup:1
+#: litegram.utils.keyboard.ReplyKeyboardBuilder.from_markup:1 of
+msgid "Create builder from existing markup"
+msgstr ""
+
+#: litegram.utils.keyboard.KeyboardBuilder.row:1 of
+msgid "Add row to markup"
+msgstr "Додае рякк в розмитку"
+
+#: litegram.utils.keyboard.KeyboardBuilder.row:3 of
+msgid "When too much buttons is passed it will be separated to many rows"
+msgstr ""
+"Коли передано занадто много кнопок, вони будуть роздилени на много "
+"рядкив"
+
+#: ../../utils/keyboard.rst:77
+msgid "Reply Keyboard"
+msgstr "Клавиатура ответов"
+
+#: litegram.utils.keyboard.ReplyKeyboardBuilder:1 of
+msgid "Reply keyboard builder inherits all methods from generic builder"
+msgstr ""
+"Конструктор клавиатуры видповидей успадковуе все методы от "
+"универсального конструктора"
+
+#: ../../utils/keyboard.rst:85
+msgid "Add new button to markup"
+msgstr "Додавання новои кнопки к розмитки"
+
+#: ../../utils/keyboard.rst:90
+msgid "Construct an ReplyKeyboardMarkup"
+msgstr "Створення ReplyKeyboardMarkup"

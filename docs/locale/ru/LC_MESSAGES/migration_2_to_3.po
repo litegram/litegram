@@ -1,0 +1,547 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"PO-Revision-Date: 2023-09-14 18:34+0300\n"
+"Last-Translator: \n"
+"Language: ru\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../migration_2_to_3.rst:7
+msgid "Migration FAQ (2.x -> 3.0)"
+msgstr "FAQ по переходу с версии 2.x на 3.0"
+
+#: ../../migration_2_to_3.rst:11
+msgid "This guide is still in progress."
+msgstr "Этот посибник все еще в разработке."
+
+#: ../../migration_2_to_3.rst:13
+msgid ""
+"This version introduces numerous breaking changes and architectural "
+"improvements. It helps reduce the count of global variables in your code,"
+" provides useful mechanisms to modularize your code, and enables the "
+"creation of shareable modules via packages on PyPI. It also makes "
+"middlewares and filters more controllable, among other improvements."
+msgstr ""
+"Ця версия содержит численни суттеви змини и архитектурни покращення. Вона"
+" допомагае зменшити килькисть глобальних зминних в вашому коди, предоставляет "
+"корисни механизми для модуляризации вашого коду и дозволяе створювати "
+"спильни модули с помощью пакетив на PyPI. Крим того, серед других "
+"покращень, вин робить промижне програмне забезпечення (мидлвари) и "
+"фильтри бильш контрольованими."
+
+#: ../../migration_2_to_3.rst:19
+msgid ""
+"On this page, you can read about the changes made in relation to the last"
+" stable 2.x version."
+msgstr ""
+"На ций сторинци вы можете прочитать о змини, внесени в останню "
+"стабильну версию 2.x."
+
+#: ../../migration_2_to_3.rst:23
+msgid ""
+"This page more closely resembles a detailed changelog than a migration "
+"guide, but it will be updated in the future."
+msgstr ""
+"Ця сторинка больше нагадуе детальний список змин, ниж посибник с "
+"миграции, але вона буде оновлюватися в майбутньому."
+
+#: ../../migration_2_to_3.rst:26
+msgid ""
+"Feel free to contribute to this page, if you find something that is not "
+"mentioned here."
+msgstr ""
+"Не соромтеся зробити свий внесок в цю сторинку, если вы знайшли что-то, о"
+" что здесь не згадано."
+
+#: ../../migration_2_to_3.rst:29
+msgid "Dependencies"
+msgstr "Залежности"
+
+#: ../../migration_2_to_3.rst:31
+msgid ""
+"The dependencies required for :code:`i18n` are no longer part of the "
+"default package. If your application uses translation functionality, be "
+"sure to add an optional dependency:"
+msgstr "Залежности, необхидни для :code:`i18n`, больше не является частиною пакету по умолчанию. Якщо ваш кдаток використовуе функциональнисть перекладу, обов'язково кдайте необов'язкову залежнисть:"
+
+#: ../../migration_2_to_3.rst:34
+msgid ":code:`pip install litegram[i18n]`"
+msgstr ""
+
+#: ../../migration_2_to_3.rst:38
+msgid "Dispatcher"
+msgstr "Диспетчер"
+
+#: ../../migration_2_to_3.rst:40
+msgid ""
+"The |Dispatcher| class no longer accepts a |Bot| instance in its "
+"initializer. Instead, the |Bot| instance should be passed to the "
+"dispatcher only for starting polling or handling events from webhooks. "
+"This approach also allows for the use of multiple bot instances "
+"simultaneously (\"multibot\")."
+msgstr ""
+"Клас :class:`Dispatcher` больше не принимает екземпляр `Bot` в своему "
+"инициализатори. Замисть этого екземпляр `Bot` следует передавати диспетчеру "
+"только для запуску полингу или обработки событий с вебхукив. Такий пидхид "
+"також дозволяе использовать декилька екземплярив бота одночасно "
+"(\"мультибот\")."
+
+#: ../../migration_2_to_3.rst:44
+msgid ""
+"|Dispatcher| now can be extended with another Dispatcher-like thing named"
+" |Router|. With routes, you can easily modularize your code and "
+"potentially share these modules between projects. (:ref:`Read more » "
+"<Nested routers>`.)"
+msgstr ""
+"Клас :class:`Dispatcher` теперь можна розширити еще одним объектом на "
+"кшталт диспетчера с назвою :class:`Router` (:ref:`Детальнише » <Nested "
+"routers>`)."
+
+#: ../../migration_2_to_3.rst:47
+msgid ""
+"Removed the **_handler** suffix from all event handler decorators and "
+"registering methods. (:ref:`Read more » <Event observers>`)"
+msgstr ""
+"Видалено суфикс **_handler** с всех декораторив обработчиков событий и "
+"методив реестрации. (:ref:`Детальнише » <Event observers>`)"
+
+#: ../../migration_2_to_3.rst:49
+msgid ""
+"The :class:`Executor` has been entirely removed; you can now use the "
+"|Dispatcher| directly to start poll the API or handle webhooks from it."
+msgstr ""
+"Executor було полностью вилучено; теперь вы можете использовать "
+"Dispatcher непосредственно для запуску полингу или обработки вебхукив."
+
+#: ../../migration_2_to_3.rst:50
+msgid ""
+"The throttling method has been completely removed; you can now use "
+"middlewares to control the execution context and implement any throttling"
+" mechanism you desire."
+msgstr ""
+"Метод дроселювання (Throttling) полностью вилучено; теперь вы можете "
+"использовать промижне програмне забезпечення (middleware) для "
+"керування контекстом виконання и реализовувати будь-который механизм "
+"дроселювання за вашим бажанням."
+
+#: ../../migration_2_to_3.rst:52
+msgid ""
+"Removed global context variables from the API types, |Bot| and "
+"|Dispatcher| object. From now on, if you want to access the current bot "
+"instance within handlers or filters, you should accept the argument "
+":code:`bot: Bot` and use it instead of :code:`Bot.get_current()`. In "
+"middlewares, it can be accessed via :code:`data[\"bot\"]`."
+msgstr ""
+"Вилучено глобальни контекстни зминни с типов API, объектив Bot и "
+"Dispatcher, Видтепер, если вы хотите получить доступ к текущего "
+"екземпляру бота в обробниках или фильтрах, вы должны приймати аргумент "
+":code:`bot: Bot` и использовать его вместо "
+":code:`Bot.get_current()`. У промижному програмному забезпеченни "
+"(middleware) доступ к нього можна получить через :code:`data[\"bot\"]`."
+
+#: ../../migration_2_to_3.rst:56
+#, fuzzy
+msgid ""
+"To skip pending updates, you should now call the "
+":class:`~litegram.methods.delete_webhook.DeleteWebhook` method directly, "
+"rather than passing :code:`skip_updates=True` to the start polling "
+"method."
+msgstr ""
+"Чтобы пропустити очикувани обновления, теперь вам следует викликати метод "
+":class:`litegram.methods.delete_webhook.DeleteWebhook` непосредственно, а не"
+" передавати :code:`skip_updates=True` к методу запуску полингу."
+
+#: ../../migration_2_to_3.rst:57
+msgid ""
+"To feed updates to the |Dispatcher|, instead of method "
+":meth:`process_update`, you should use method "
+":meth:`~litegram.dispatcher.dispatcher.Dispatcher.feed_update`. "
+"(:ref:`Read more » <Handling updates>`)"
+msgstr ""
+
+#: ../../migration_2_to_3.rst:63
+msgid "Filtering events"
+msgstr "Фильтрация событий"
+
+#: ../../migration_2_to_3.rst:65
+msgid ""
+"Keyword filters can no longer be used; use filters explicitly. (`Read "
+"more » <https://github.com/litegram/litegram/issues/942>`_)"
+msgstr ""
+"Фильтри за ключовими словами больше не можна использовать; "
+"используйте фильтри явно. (`Детальнише » "
+"<https://github.com/litegram/litegram/issues/942>`_)"
+
+#: ../../migration_2_to_3.rst:66
+msgid ""
+"Due to the removal of keyword filters, all previously enabled-by-default "
+"filters (such as state and content_type) are now disabled. You must "
+"specify them explicitly if you wish to use them. For example instead of "
+"using :code:`@dp.message_handler(content_types=ContentType.PHOTO)` you "
+"should use :code:`@router.message(F.photo)`"
+msgstr ""
+"У зв'язку с вилученням keyword фильтрив, все раньше ввимкнени за "
+"замовчуванням фильтри (такие как state и content_type) теперь вимкнено. Якщо"
+" вы бажаете их использовать, вы должны указать их явно. Например, "
+"вместо :code:`@dp.message_handler(content_types=ContentType.PHOTO)` следует"
+" использовать :code:`@router.message(F.photo)`."
+
+#: ../../migration_2_to_3.rst:71
+#, fuzzy
+msgid ""
+"Most common filters have been replaced with the \"magic filter.\" "
+"(:ref:`Read more » <magic-filters>`)"
+msgstr ""
+"Большинство звичайних фильтрив було заминено на \"магичний фильтр\". "
+"(:ref:`Детальнише дали » <magic-filters>`)"
+
+#: ../../migration_2_to_3.rst:72
+msgid ""
+"By default, the message handler now receives any content type. If you "
+"want a specific one, simply add the appropriate filters (Magic or any "
+"other)."
+msgstr ""
+"За замовчуванням обробник сообщений теперь отримуе будь-который тип содержимого."
+" Якщо вам потрибен певний тип, просто додайте видповидни фильтри (Magic "
+"или будь-который инший)."
+
+#: ../../migration_2_to_3.rst:74
+msgid ""
+"The state filter is no longer enabled by default. This means that if you "
+"used :code:`state=\"*\"` in v2, you should not pass any state filter in "
+"v3. Conversely, if the state was not specified in v2, you will now need "
+"to specify it in v3."
+msgstr ""
+"Фильтр стану больше не вмикаеться по умолчанию. Це означае, что если "
+"вы використовували :code:`state=\"*\"` в v2, вам не следует передавати "
+"фильтр стану в v3. І навпаки, если стан не було вказано в v2, вам "
+"потрибно буде указать его в v3."
+
+#: ../../migration_2_to_3.rst:77
+msgid ""
+"Added the possibility to register global filters for each router, which "
+"helps to reduce code repetition and provides an easier way to control the"
+" purpose of each router."
+msgstr ""
+"Додано можливисть реестрации глобальних фильтрив для каждого роутера, что "
+"допомагае зменшити повторення коду и полегшуе контроль назначения "
+"каждого роутера."
+
+#: ../../migration_2_to_3.rst:83
+msgid "Bot API"
+msgstr ""
+
+#: ../../migration_2_to_3.rst:85
+msgid ""
+"All API methods are now classes with validation, implemented via "
+"`pydantic <https://docs.pydantic.dev/>`. These API calls are also "
+"available as methods in the Bot class."
+msgstr ""
+"Вси методы API теперь является класами с валидациею, реализованими через "
+"`pydantic <https://docs.pydantic.dev/>`. Ци виклики API також доступни как"
+" методы в класи Bot."
+
+#: ../../migration_2_to_3.rst:88
+msgid ""
+"More pre-defined Enums have been added and moved to the `litegram.enums` "
+"sub-package. For example, the chat type enum is now "
+":class:`litegram.enums.ChatType` instead of "
+":class:`litegram.types.chat.ChatType`."
+msgstr ""
+"Додано больше попередньо визначених enums и перемищено их к пидпакету "
+"`litegram.enums`. Например, enum типа чату теперь имеет вигляд "
+":class:`litegram.enums.ChatType` вместо "
+":class:`litegram.types.chat.ChatType`."
+
+#: ../../migration_2_to_3.rst:90
+msgid ""
+"The HTTP client session has been separated into a container that can be "
+"reused across different Bot instances within the application."
+msgstr ""
+"Клиентська сесия HTTP була видокремлена в контейнер, который можна повторно "
+"использовать для ризних екземплярив бота в додатку."
+
+#: ../../migration_2_to_3.rst:92
+msgid ""
+"API Exceptions are no longer classified by specific messages, as Telegram"
+" has no documented error codes. However, all errors are classified by "
+"HTTP status codes, and for each method, only one type of error can be "
+"associated with a given code. Therefore, in most cases, you should check "
+"only the error type (by status code) without inspecting the error "
+"message."
+msgstr ""
+"Виключення API больше не класификуються за конкретними повидомленнями, "
+"оскильки Telegram не имеет задокументованих кодив помилок. Проте все "
+"помилки класификуються за кодами статусу HTTP, и для каждого методу с "
+"певним кодом может бути пов'язаний только один тип помилки. Тому в бильшости"
+" випадкив следует перевиряти только тип помилки (за кодом статусу), не "
+"перевиряючи сообщения о помилку."
+
+#: ../../migration_2_to_3.rst:102
+msgid "Middlewares"
+msgstr "Промеждуне ПО (Middlewares)"
+
+#: ../../migration_2_to_3.rst:104
+msgid ""
+"Middlewares can now control an execution context, e.g., using context "
+"managers. (:ref:`Read more » <middlewares>`)"
+msgstr ""
+"Промижне програмне забезпечення теперь может керувати контекстом виконання,"
+" например, с помощью менеджерив контексту. (:ref:`Детальнише » "
+"<middlewares>`)"
+
+#: ../../migration_2_to_3.rst:106
+msgid ""
+"All contextual data is now shared end-to-end between middlewares, "
+"filters, and handlers. For example now you can easily pass some data into"
+" context inside middleware and get it in the filters layer as the same "
+"way as in the handlers via keyword arguments."
+msgstr ""
+"Вси контекстни дани теперь наскризно використовуються между промижним "
+"програмним забезпеченням, фильтрами и обробниками. Например, теперь вы "
+"можете легко передати деяки дани в контекст в промижному програмному "
+"забезпеченни и получить их в шари фильтрив так же, как и в обробниках "
+"через аргументи ключових слив."
+
+#: ../../migration_2_to_3.rst:109
+msgid ""
+"Added a mechanism named **flags** that helps customize handler behavior "
+"in conjunction with middlewares. (:ref:`Read more » <flags>`)"
+msgstr ""
+"Додано механизм с назвою **flags**, который допомагае налаштовувати "
+"повединку обробника в поеднанни с промижним програмним забезпеченням. "
+"(:ref:`Детальнише о » <flags>`)"
+
+#: ../../migration_2_to_3.rst:114
+msgid "Keyboard Markup"
+msgstr "Розмитка клавиатуры"
+
+#: ../../migration_2_to_3.rst:116
+msgid ""
+"Now :class:`litegram.types.inline_keyboard_markup.InlineKeyboardMarkup` "
+"and :class:`litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup` no "
+"longer have methods for extension, instead you have to use markup "
+"builders :class:`litegram.utils.keyboard.ReplyKeyboardBuilder` and "
+":class:`litegram.utils.keyboard.KeyboardBuilder` respectively (:ref:`Read "
+"more » <Keyboard builder>`)"
+msgstr ""
+"Тепер :class:`litegram.types.inline_keyboard_markup.InlineKeyboardMarkup` "
+"и :class:`litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup` "
+"больше не мають методив для розширення, натомисть вам следует "
+"использовать будивники розмитки "
+":class:`litegram.utils.keyboard.ReplyKeyboardBuilder` и "
+":class:`litegram.utils.keyboard.InlineKeyboardBuilder` видповидно "
+"(:ref:`Детальнише » <Keyboard builder>`)"
+
+#: ../../migration_2_to_3.rst:124
+msgid "Callbacks data"
+msgstr "Дани зворотного виклику"
+
+#: ../../migration_2_to_3.rst:126
+msgid ""
+"The callback data factory is now strictly typed using `pydantic "
+"<https://docs.pydantic.dev/>`_ models. (:ref:`Read more » <Callback data "
+"factory>`)"
+msgstr ""
+"Фабрику данных зворотного виклику теперь строго типизовано с помощью "
+"моделей `pydantic <https://docs.pydantic.dev/>`_. (:ref:`Детальнише » "
+"<Callback data factory>`)"
+
+#: ../../migration_2_to_3.rst:131
+msgid "Finite State machine"
+msgstr "Скинченний автомат"
+
+#: ../../migration_2_to_3.rst:133
+msgid ""
+"State filters will no longer be automatically added to all handlers; you "
+"will need to specify the state if you want to use it."
+msgstr ""
+"Фильтри станив больше не будуть автоматически додаватися к всех "
+"обработчиков; вам потрибно буде указать стан, если вы хотите его "
+"використати."
+
+#: ../../migration_2_to_3.rst:135
+msgid ""
+"Added the possibility to change the FSM strategy. For example, if you "
+"want to control the state for each user based on chat topics rather than "
+"the user in a chat, you can specify this in the |Dispatcher|."
+msgstr ""
+"Додано можливисть изменять стратегию FSM. Например, если вы хотите "
+"контролювати стан для каждого пользователя на основи топикив чату, а не "
+"пользователя в чати, вы можете указать это в Диспетчери."
+
+#: ../../migration_2_to_3.rst:138
+#, fuzzy
+msgid ""
+"Now :class:`litegram.fsm.state.State` and "
+":class:`litegram.fsm.state.StateGroup` don't have helper methods like "
+":code:`.set()`, :code:`.next()`, etc. Instead, you should set states by "
+"passing them directly to :class:`litegram.fsm.context.FSMContext` "
+"(:ref:`Read more » <Finite State Machine>`)"
+msgstr ""
+"Тепер :class:`litegram.fsm.state.State` и "
+":class:`litegram.fsm.state.StateGroup` не мають допомижних методив, таких "
+"как :code:`.set()`, :code:`.next()` и т.д.."
+
+#: ../../migration_2_to_3.rst:142
+msgid ""
+"The state proxy is deprecated; you should update the state data by "
+"calling :code:`state.set_data(...)` and :code:`state.get_data()` "
+"respectively."
+msgstr ""
+"Прокси стану является застарилим; вам следует оновити дани стану, викликавши "
+":code:`state.set_data(...)` и :code:`state.get_data()` видповидно."
+
+#: ../../migration_2_to_3.rst:147
+msgid "Sending Files"
+msgstr "Надсилання файлов"
+
+#: ../../migration_2_to_3.rst:149
+msgid ""
+"From now on, you should wrap files in an InputFile object before sending "
+"them, instead of passing the IO object directly to the API method. "
+"(:ref:`Read more » <sending-files>`)"
+msgstr ""
+"Видтепер перед видправкою файлов следует обертати их в объект InputFile "
+"вместо того, чтобы передавати объект вводу-виводу непосредственно к методу "
+"API. (:ref:`Детальнише » <sending-files>`)"
+
+#: ../../migration_2_to_3.rst:154
+msgid "Webhook"
+msgstr "Вебхук"
+
+#: ../../migration_2_to_3.rst:156
+msgid "The httpx web app configuration has been simplified."
+msgstr "Спрощено настройки веб-застосунку httpx."
+
+#: ../../migration_2_to_3.rst:157
+msgid ""
+"By default, the ability to upload files has been added when you `make "
+"requests in response to updates <https://core.telegram.org/bots/faq#how-"
+"can-i-make-requests-in-response-to-updates>`_ (available for webhook "
+"only)."
+msgstr "За замовчуванням кдана можливисть скачивание файлов при `ответях на обновления <https://core.telegram.org/bots/faq#how-can-i-make-requests-in-response-to-updates>`_ (доступно только для вебхука)."
+
+#: ../../migration_2_to_3.rst:161
+msgid "Telegram API Server"
+msgstr "Сервер Telegram API"
+
+#: ../../migration_2_to_3.rst:163
+#, fuzzy
+msgid ""
+"The :obj:`server` parameter has been moved from the |Bot| instance to "
+":obj:`api` parameter of the "
+":class:`~litegram.client.session.base.BaseSession`."
+msgstr ""
+"Параметр `server` було перенесено с екземпляра `Bot` к `api` в "
+"`BaseSession`."
+
+#: ../../migration_2_to_3.rst:164
+#, fuzzy
+msgid ""
+"The constant :obj:`litegram.bot.api.TELEGRAM_PRODUCTION` has been moved to"
+" :obj:`litegram.client.telegram.PRODUCTION`."
+msgstr ""
+"Константа `litegram.bot.api.TELEGRAM_PRODUCTION` була перемищена на "
+"`litegram.client.telegram.PRODUCTION`."
+
+#: ../../migration_2_to_3.rst:168
+msgid "Telegram objects transformation (to dict, to json, from json)"
+msgstr "Перетворення объектив Telegram (в словник, в json, с json)"
+
+#: ../../migration_2_to_3.rst:170
+msgid ""
+"Methods :code:`TelegramObject.to_object()`, "
+":code:`TelegramObject.to_json()` and :code:`TelegramObject.to_python()` "
+"have been removed due to the use of `pydantic "
+"<https://docs.pydantic.dev/>`_ models."
+msgstr "Методи :code:`TelegramObject.to_object()`, :code:`TelegramObject.to_json()` и :code:`TelegramObject.to_python()` були вилучени через викорисиння моделей `pydantic <https://docs.pydantic.dev/>`_."
+
+
+#: ../../migration_2_to_3.rst:172
+msgid ""
+":code:`TelegramObject.to_object()` should be replaced by "
+":code:`TelegramObject.model_validate()` (`Read more "
+"<https://docs.pydantic.dev/2.7/api/base_model/#pydantic.BaseModel.model_validate>`_)"
+msgstr ":code:`TelegramObject.to_object()` следует заминити на "
+":code:`TelegramObject.model_validate()` (`Детальнише "
+"<https://docs.pydantic.dev/2.7/api/base_model/#pydantic.BaseModel.model_validate>`_)"
+
+#: ../../migration_2_to_3.rst:174
+msgid ""
+":code:`TelegramObject.as_json()` should be replaced by "
+":func:`litegram.utils.serialization.deserialize_telegram_object_to_python`"
+msgstr ":code:`TelegramObject.as_json()` следует заминити на "
+":func:`litegram.utils.serialization.deserialize_telegram_object_to_python`"
+
+#: ../../migration_2_to_3.rst:175
+msgid ""
+":code:`<TelegramObject>.to_python()` should be replaced by "
+":code:`json.dumps(deserialize_telegram_object_to_python(<TelegramObject>))`"
+msgstr ":code:`<TelegramObject>.to_python()` следует заминити на "
+":code:`json.dumps(deserialize_telegram_object_to_python(<TelegramObject>))`"
+
+
+#: ../../migration_2_to_3.rst:177
+msgid "Here are some usage examples:"
+msgstr "Ось деяки примеры викорисиння:"
+
+#: ../../migration_2_to_3.rst:179
+msgid "Creating an object from a dictionary representation of an object"
+msgstr "Створення об'еки с предсивлення об'еки в вигляди словника"
+
+#: ../../migration_2_to_3.rst:201
+msgid "Creating a json representation of an object"
+msgstr "Cтворення предсивлення об'еки в вигляди json"
+
+#: ../../migration_2_to_3.rst:223
+msgid "Creating a dictionary representation of an object"
+msgstr "Створення предсивлення об'еки в вигляди словника"
+
+#: ../../migration_2_to_3.rst:247
+msgid "ChatMember tools"
+msgstr "Інструменти ChatMember"
+
+#: ../../migration_2_to_3.rst:249
+msgid ""
+"Now :class:`litegram.types.chat_member.ChatMember` no longer contains "
+"tools to resolve an object with the appropriate status."
+msgstr "Тепер :class:`litegram.types.chat_member.ChatMember` больше не содержит "
+"инструментив для виришення объекта с видповидним статусом."
+
+#: ../../migration_2_to_3.rst:266
+msgid ""
+"Now :class:`litegram.types.chat_member.ChatMember` and all its child "
+"classes no longer contain methods for checking for membership in certain "
+"logical groups. As a substitute, you can use pre-defined groups or create"
+" such groups yourself and check their entry using the :func:`isinstance` "
+"function"
+msgstr "Видтепер :class:`litegram.types.chat_member.ChatMember` и все его "
+"дочирни класи больше не мистять методив для проверки належности к певних логичних груп. "
+"Замисть этого вы можете использовать попередньо визначени групи или створювати такие "
+"групи самостийно и перевиряти их входження с помощью функции :func:`isinstance`"
+
+#: ../../migration_2_to_3.rst:294
+msgid ""
+"You also can independently create group similar to ADMINS that fits the "
+"logic of your application."
+msgstr "Також вы можетте самостийно створити групу, подибну к ADMINS, которая ответие логици вашого застосунку."
+
+#: ../../migration_2_to_3.rst:296
+msgid ""
+"E.g., you can create a PUNISHED group and include banned and restricted "
+"members there!"
+msgstr "Например, вы можетте створити групу PUNISHED и включити туди заблокованих и обмежених учасникив!"

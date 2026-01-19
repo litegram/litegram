@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-23 00:47+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../api/methods/kick_chat_member.rst:3
+msgid "kickChatMember"
+msgstr ""
+
+#: ../../api/methods/kick_chat_member.rst:5
+msgid "Returns: :obj:`bool`"
+msgstr ""
+
+#: ../../api/methods/kick_chat_member.rst:14
+msgid "Usage"
+msgstr ""
+
+#: ../../api/methods/kick_chat_member.rst:17
+msgid "As bot method"
+msgstr ""
+
+#: ../../api/methods/kick_chat_member.rst:25
+msgid "Method as object"
+msgstr ""
+
+#: ../../api/methods/kick_chat_member.rst:27
+msgid "Imports:"
+msgstr ""
+
+#: ../../api/methods/kick_chat_member.rst:29
+msgid ":code:`from litegram.methods.kick_chat_member import KickChatMember`"
+msgstr ""
+
+#: ../../api/methods/kick_chat_member.rst:30
+msgid "alias: :code:`from litegram.methods import KickChatMember`"
+msgstr ""
+
+#: ../../api/methods/kick_chat_member.rst:33
+msgid "With specific bot"
+msgstr ""
+
+#: ../../api/methods/kick_chat_member.rst:40
+msgid "As reply into Webhook in handler"
+msgstr ""

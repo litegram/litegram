@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../api/types/poll_option.rst:3
+msgid "PollOption"
+msgstr ""
+
+#: litegram.types.poll_option.PollOption:1 of
+msgid "This object contains information about one answer option in a poll."
+msgstr ""
+
+#: litegram.types.poll_option.PollOption:3 of
+msgid "Source: https://core.telegram.org/bots/api#polloption"
+msgstr ""
+
+#: ../../docstring litegram.types.poll_option.PollOption.text:1 of
+msgid "Option text, 1-100 characters"
+msgstr ""
+
+#: ../../docstring litegram.types.poll_option.PollOption.voter_count:1 of
+msgid "Number of users that voted for this option"
+msgstr ""
+
+#: ../../docstring litegram.types.poll_option.PollOption.text_entities:1 of
+msgid ""
+"*Optional*. Special entities that appear in the option *text*. Currently,"
+" only custom emoji entities are allowed in poll option texts"
+msgstr ""

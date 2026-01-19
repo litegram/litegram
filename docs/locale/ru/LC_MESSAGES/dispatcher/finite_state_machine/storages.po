@@ -1,0 +1,307 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../dispatcher/finite_state_machine/storages.rst:3
+msgid "Storages"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/storages.rst:6
+msgid "Storages out of the box"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/storages.rst:9
+msgid "MemoryStorage"
+msgstr ""
+
+#: litegram.fsm.storage.memory.MemoryStorage:1 of
+msgid ""
+"Default FSM storage, stores all data in :class:`dict` and loss everything"
+" on shutdown"
+msgstr ""
+
+#: litegram.fsm.storage.memory.MemoryStorage:5 of
+msgid ""
+"Is not recommended using in production in due to you will lose all data "
+"when your bot restarts"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/storages.rst:16
+msgid "RedisStorage"
+msgstr ""
+
+#: litegram.fsm.storage.redis.RedisStorage:1 of
+msgid ""
+"Redis storage required :code:`redis` package installed (:code:`pip "
+"install redis`)"
+msgstr ""
+"Для сховища Redis потрибен встановлений пакет :code:`redis` (:code:`pip "
+"install redis`)"
+
+#: ../../dispatcher/finite_state_machine/storages.rst
+msgid "Parameters"
+msgstr ""
+
+#: litegram.fsm.storage.redis.RedisStorage.__init__:1 of
+msgid "Instance of Redis connection"
+msgstr "Екземпляр подключение Redis"
+
+#: litegram.fsm.storage.mongo.MongoStorage.__init__:2
+#: litegram.fsm.storage.pymongo.PyMongoStorage.__init__:2
+#: litegram.fsm.storage.redis.RedisStorage.__init__:2 of
+msgid "builder that helps to convert contextual key to string"
+msgstr "конструктор, который кпомагае конвертувати контекстний ключ в рякк"
+
+#: litegram.fsm.storage.redis.RedisStorage.__init__:3 of
+msgid "TTL for state records"
+msgstr "Время життя (TTL) для записив сину"
+
+#: litegram.fsm.storage.redis.RedisStorage.__init__:4 of
+msgid "TTL for data records"
+msgstr "Время життя (TTL) для записив данных"
+
+#: litegram.fsm.storage.redis.RedisStorage.from_url:1 of
+msgid ""
+"Create an instance of :class:`RedisStorage` with specifying the "
+"connection string"
+msgstr "Створити екземпляр :class:`RedisStorage`, вказавши строку подключение"
+
+#: litegram.fsm.storage.redis.RedisStorage.from_url:3 of
+msgid "for example :code:`redis://user:password@host:port/db`"
+msgstr "например :code:`redis://user:password@host:port/db`"
+
+#: litegram.fsm.storage.redis.RedisStorage.from_url:4 of
+msgid "see :code:`redis` docs"
+msgstr "див. ккуменицию :code:`redis`"
+
+#: litegram.fsm.storage.redis.RedisStorage.from_url:5 of
+msgid "arguments to be passed to :class:`RedisStorage`"
+msgstr "аргументи, которые потрибно передати :class:`RedisStorage`"
+
+#: ../../dispatcher/finite_state_machine/storages.rst
+msgid "Returns"
+msgstr ""
+
+#: litegram.fsm.storage.redis.RedisStorage.from_url:6 of
+#, fuzzy
+msgid "an instance of :class:`RedisStorage`"
+msgstr "екземпляр класу :class:`MongoStorage`"
+
+#: ../../dispatcher/finite_state_machine/storages.rst:23
+msgid "MongoStorage"
+msgstr ""
+
+#: litegram.fsm.storage.pymongo.PyMongoStorage:1 of
+#, fuzzy
+msgid ""
+"MongoDB storage required :code:`pymongo` package installed (:code:`pip "
+"install pymongo`)."
+msgstr ""
+"Для сховища MongoDB потрибен встановлений пакет :code:`motor` (:code:`pip"
+" install motor`)"
+
+#: litegram.fsm.storage.pymongo.PyMongoStorage.__init__:1 of
+#, fuzzy
+msgid "Instance of AsyncMongoClient"
+msgstr "Екземпляр AsyncIOMotorClient"
+
+#: litegram.fsm.storage.mongo.MongoStorage.__init__:3
+#: litegram.fsm.storage.pymongo.PyMongoStorage.__init__:3 of
+msgid "name of the MongoDB database for FSM"
+msgstr "название бази данных MongoDB для FSM"
+
+#: litegram.fsm.storage.mongo.MongoStorage.__init__:4
+#: litegram.fsm.storage.pymongo.PyMongoStorage.__init__:4 of
+msgid "name of the collection for storing FSM states and data"
+msgstr "название колекции для хранения синив и данных FSM"
+
+#: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:1 of
+#, fuzzy
+msgid ""
+"Create an instance of :class:`PyMongoStorage` with specifying the "
+"connection string"
+msgstr "Створити екземпляр :class:`MongoStorage`, вказавши строку подключение"
+
+#: litegram.fsm.storage.mongo.MongoStorage.from_url:3
+#: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:3 of
+msgid "for example :code:`mongodb://user:password@host:port`"
+msgstr "например :code:`mongodb://user:password@host:port`"
+
+#: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:4 of
+#, fuzzy
+msgid "see :code:`pymongo` docs"
+msgstr "див. ккуменицию :code:`motor`"
+
+#: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:5 of
+#, fuzzy
+msgid "arguments to be passed to :class:`PyMongoStorage`"
+msgstr "аргументи, которые потрибно передати :class:`MongoStorage`"
+
+#: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:6 of
+#, fuzzy
+msgid "an instance of :class:`PyMongoStorage`"
+msgstr "екземпляр класу :class:`MongoStorage`"
+
+#: litegram.fsm.storage.mongo.MongoStorage:2 of
+msgid ""
+"DEPRECATED: Use :class:`PyMongoStorage` instead. This class will be "
+"removed in future versions."
+msgstr ""
+
+#: litegram.fsm.storage.mongo.MongoStorage:6 of
+msgid ""
+"MongoDB storage required :code:`motor` package installed (:code:`pip "
+"install motor`)"
+msgstr ""
+"Для сховища MongoDB потрибен встановлений пакет :code:`motor` (:code:`pip"
+" install motor`)"
+
+#: litegram.fsm.storage.mongo.MongoStorage.__init__:1 of
+msgid "Instance of AsyncIOMotorClient"
+msgstr "Екземпляр AsyncIOMotorClient"
+
+#: litegram.fsm.storage.mongo.MongoStorage.from_url:1 of
+msgid ""
+"Create an instance of :class:`MongoStorage` with specifying the "
+"connection string"
+msgstr "Створити екземпляр :class:`MongoStorage`, вказавши строку подключение"
+
+#: litegram.fsm.storage.mongo.MongoStorage.from_url:4 of
+msgid "see :code:`motor` docs"
+msgstr "див. ккуменицию :code:`motor`"
+
+#: litegram.fsm.storage.mongo.MongoStorage.from_url:5 of
+msgid "arguments to be passed to :class:`MongoStorage`"
+msgstr "аргументи, которые потрибно передати :class:`MongoStorage`"
+
+#: litegram.fsm.storage.mongo.MongoStorage.from_url:6 of
+msgid "an instance of :class:`MongoStorage`"
+msgstr "екземпляр класу :class:`MongoStorage`"
+
+#: ../../dispatcher/finite_state_machine/storages.rst:34
+msgid "KeyBuilder"
+msgstr ""
+
+#: ../../dispatcher/finite_state_machine/storages.rst:36
+msgid "Keys inside Redis and Mongo storages can be customized via key builders:"
+msgstr ""
+
+#: litegram.fsm.storage.base.KeyBuilder:1 of
+msgid "Base class for key builder."
+msgstr "Базовий клас для конструктора ключив."
+
+#: litegram.fsm.storage.base.DefaultKeyBuilder.build:1
+#: litegram.fsm.storage.base.KeyBuilder.build:1 of
+msgid "Build key to be used in storage's db queries"
+msgstr "Створити ключ для викорисиння в запиих к бази данных сховища"
+
+#: litegram.fsm.storage.base.DefaultKeyBuilder.build:3
+#: litegram.fsm.storage.base.KeyBuilder.build:3 of
+msgid "contextual key"
+msgstr "контекстний ключ"
+
+#: litegram.fsm.storage.base.DefaultKeyBuilder.build:4
+#: litegram.fsm.storage.base.KeyBuilder.build:4 of
+msgid "part of the record"
+msgstr "частина запису"
+
+#: litegram.fsm.storage.base.DefaultKeyBuilder.build:5
+#: litegram.fsm.storage.base.KeyBuilder.build:5 of
+msgid "key to be used in storage's db queries"
+msgstr "ключ для викорисиння в запиих к бази данных сховища"
+
+#: litegram.fsm.storage.base.DefaultKeyBuilder:1 of
+msgid "Simple key builder with default prefix."
+msgstr "Простий конструктор ключив из синдартним префиксом."
+
+#: litegram.fsm.storage.base.DefaultKeyBuilder:3 of
+msgid ""
+"Generates a colon-joined string with prefix, chat_id, user_id, optional "
+"bot_id, business_connection_id, destiny and field."
+msgstr ""
+"Генеруе рядок из префиксом, chat_id, user_id, додатковим bot_id, "
+"business_connection_id, destiny и полем, роздиленими двокрапкою."
+
+#: litegram.fsm.storage.base.DefaultKeyBuilder:6 of
+msgid "Format:"
+msgstr "Формат:"
+
+#: litegram.fsm.storage.base.DefaultKeyBuilder:7 of
+msgid ":code:`<prefix>:<bot_id?>:<business_connection_id?>:<chat_id>:<user_id>:<destiny?>:<field?>`"
+msgstr ":code:`<prefix>:<bot_id?>:<business_connection_id?>:<chat_id>:<user_id>:<destiny?>:<field?>`"
+
+#: ../../dispatcher/finite_state_machine/storages.rst:48
+msgid "Writing own storages"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage:1 of
+msgid "Base class for all FSM storages"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.set_state:1 of
+msgid "Set state for specified key"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.get_data:3
+#: litegram.fsm.storage.base.BaseStorage.get_state:3
+#: litegram.fsm.storage.base.BaseStorage.set_data:3
+#: litegram.fsm.storage.base.BaseStorage.set_state:3
+#: litegram.fsm.storage.base.BaseStorage.update_data:3 of
+msgid "storage key"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.set_state:4 of
+msgid "new state"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.get_state:1 of
+msgid "Get key state"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.get_state:4 of
+msgid "current state"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.set_data:1 of
+msgid "Write data (replace)"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.set_data:4
+#: litegram.fsm.storage.base.BaseStorage.update_data:5 of
+msgid "new data"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.get_data:1 of
+msgid "Get current data for key"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.get_data:4 of
+msgid "current data"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.update_data:1 of
+msgid "Update date in the storage for key (like dict.update)"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.update_data:4 of
+msgid "partial data"
+msgstr ""
+
+#: litegram.fsm.storage.base.BaseStorage.close:1 of
+msgid "Close storage (database connection, file or etc.)"
+msgstr ""

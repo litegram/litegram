@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"PO-Revision-Date: 2022-10-20 20:56+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../dispatcher/middlewares.rst:5
+msgid "Middlewares"
+msgstr "Middleware"
+
+#: ../../dispatcher/middlewares.rst:7
+msgid ""
+"**litegram** provides powerful mechanism for customizing event handlers "
+"via middlewares."
+msgstr ""
+"**litegram** предоставляет мощный механизм для настройки обработчиков(handler)"
+" событий через промижни програми."
+
+#: ../../dispatcher/middlewares.rst:9
+msgid ""
+"Middlewares in bot framework seems like Middlewares mechanism in web-"
+"frameworks like `httpx "
+"<https://docs.httpx.org/en/stable/web_advanced.html#httpx-web-"
+"middlewares>`_, `fastapi "
+"<https://fastapi.tiangolo.com/tutorial/middleware/>`_, `Django "
+"<https://docs.djangoproject.com/en/3.0/topics/http/middleware/>`_ or "
+"etc.) with small difference - here is implemented two layers of "
+"middlewares (before and after filters)."
+msgstr ""
+"Middleware в фреймворка для ботив похожи на механизм промижних"
+" програм в веб-фреймворках, таких как `httpx "
+"<https://docs.httpx.org/en/stable/web_advanced.html#httpx-web-"
+"middlewares>`_, `fastapi "
+"<https://fastapi.tiangolo.com/tutorial/middleware/>`_, `Django "
+"<https://docs.djangoproject.com/en/3.0/topics/http/middleware/>`_  и т.д.) "
+"с невеликою ризницею – здесь реализовано два уровня промижного програмних "
+"програм (к и после фильтрив)."
+
+#: ../../dispatcher/middlewares.rst:17
+msgid ""
+"Middleware is function that triggered on every event received from "
+"Telegram Bot API in many points on processing pipeline."
+msgstr ""
+"Middleware — это функция, которая запускается во время каждой подии, "
+"полученной от Telegram Bot API в многих точках процесса обработки."
+
+#: ../../dispatcher/middlewares.rst:21
+msgid "Base theory"
+msgstr "Основные понятия"
+
+#: ../../dispatcher/middlewares.rst:23
+msgid "As many books and other literature in internet says:"
+msgstr "Как утверждают многие книги и другие источники в интернете:"
+
+#: ../../dispatcher/middlewares.rst:25
+msgid ""
+"Middleware is reusable software that leverages patterns and frameworks to"
+" bridge the gap between the functional requirements of applications and "
+"the underlying operating systems, network protocol stacks, and databases."
+msgstr ""
+"Middleware — это програма, многократного використання, что "
+"використовуе шаблони и фреймворки для ликвидування разрыва между "
+"функциональними вимогами приложений и основными операцийними системами, "
+"стеками сетевых протоколив и базами данных."
+
+#: ../../dispatcher/middlewares.rst:29
+msgid ""
+"Middleware can modify, extend or reject processing event in many places "
+"of pipeline."
+msgstr ""
+"Middleware может изменять, расширять или отклонять подию обработки"
+" в многих точках процесса обработки."
+
+#: ../../dispatcher/middlewares.rst:32
+msgid "Basics"
+msgstr "Основы"
+
+#: ../../dispatcher/middlewares.rst:34
+msgid ""
+"Middleware instance can be applied for every type of Telegram Event "
+"(Update, Message, etc.) in two places"
+msgstr ""
+"Екземпляр промижнои програми можна застосувати для каждого типа подии "
+"Telegram (обновления, сообщения и т.д.) в двох местах"
+
+#: ../../dispatcher/middlewares.rst:36
+msgid ""
+"Outer scope - before processing filters "
+"(:code:`<router>.<event>.outer_middleware(...)`)"
+msgstr ""
+"Внешняя область - перед обработкой фильтрами "
+"(:code:`<router>.<event>.outer_middleware(...)`)"
+
+#: ../../dispatcher/middlewares.rst:37
+msgid ""
+"Inner scope - after processing filters but before handler "
+"(:code:`<router>.<event>.middleware(...)`)"
+msgstr ""
+"Внутренняя область – после обработки фильтрами, но перед обработчиком "
+"(handler) (:code:`<router>.<event>.middleware(...)`)"
+
+#: ../../dispatcher/middlewares.rst:39
+msgid "Middleware basics"
+msgstr "Основы промеждуних програм"
+
+#: ../../dispatcher/middlewares.rst:44
+msgid ""
+"Middleware should be subclass of :code:`BaseMiddleware` (:code:`from "
+"litegram import BaseMiddleware`) or any async callable"
+msgstr ""
+"Middleware имеет бути пидкласом :code:`BaseMiddleware` (:code:`from "
+"litegram import BaseMiddleware`) или будь-которой асинхронною функциею"
+
+#: ../../dispatcher/middlewares.rst:47
+msgid "Arguments specification"
+msgstr "Спецификация аргументив"
+
+#: litegram.dispatcher.middlewares.base.BaseMiddleware:1 of
+msgid "Generic middleware class"
+msgstr "Узагальнений клас промеждуних програм"
+
+#: litegram.dispatcher.middlewares.base.BaseMiddleware.__call__:1 of
+msgid "Execute middleware"
+msgstr "Виконання промеждунои програми"
+
+#: ../../dispatcher/middlewares.rst
+msgid "Parameters"
+msgstr "Параметры"
+
+#: litegram.dispatcher.middlewares.base.BaseMiddleware.__call__:3 of
+msgid "Wrapped handler in middlewares chain"
+msgstr "Обробник (handler), обгорнутий в ланцюжок промеждуних програм"
+
+#: litegram.dispatcher.middlewares.base.BaseMiddleware.__call__:4 of
+msgid "Incoming event (Subclass of :class:`litegram.types.base.TelegramObject`)"
+msgstr "Вхидна подия (пидклас :class:`litegram.types.base.TelegramObject`)"
+
+#: litegram.dispatcher.middlewares.base.BaseMiddleware.__call__:5 of
+msgid "Contextual data. Will be mapped to handler arguments"
+msgstr "Контекстни дани. Будуть зисивлени с аргуменими обробника"
+
+#: ../../dispatcher/middlewares.rst
+msgid "Returns"
+msgstr "Возвращает"
+
+#: litegram.dispatcher.middlewares.base.BaseMiddleware.__call__:6 of
+msgid ":class:`Any`"
+msgstr ":class:`Any`"
+
+#: ../../dispatcher/middlewares.rst:58
+msgid "Examples"
+msgstr "Примери"
+
+#: ../../dispatcher/middlewares.rst:62
+#, fuzzy
+msgid ""
+"Middleware should always call :code:`await handler(event, data)` to "
+"propagate event for next middleware/handler. If you want to stop "
+"processing event in middleware you should not call :code:`await "
+"handler(event, data)`."
+msgstr ""
+"Middleware мають всегда викликати :code:`await handler(event, "
+"data)` , чтобы передавати подию для наступнои промижнои програми/обробника "
+"(handler)"
+
+#: ../../dispatcher/middlewares.rst:67
+msgid "Class-based"
+msgstr "Класово ориентований"
+
+#: ../../dispatcher/middlewares.rst:88
+msgid "and then"
+msgstr "и тогда"
+
+#: ../../dispatcher/middlewares.rst:97
+msgid "Function-based"
+msgstr "Функционально-ориентований"
+
+#: ../../dispatcher/middlewares.rst:112
+msgid "Facts"
+msgstr "Факти"
+
+#: ../../dispatcher/middlewares.rst:114
+msgid "Middlewares from outer scope will be called on every incoming event"
+msgstr ""
+"Middleware из зовнишньои области викликатимуться во время каждой "
+"вхиднои подии"
+
+#: ../../dispatcher/middlewares.rst:115
+msgid "Middlewares from inner scope will be called only when filters pass"
+msgstr ""
+"Middleware из внутришньои области викликатимуться только после "
+"проходження фильтрив"
+
+#: ../../dispatcher/middlewares.rst:116
+msgid ""
+"Inner middlewares is always calls for "
+":class:`litegram.types.update.Update` event type in due to all incoming "
+"updates going to specific event type handler through built in update "
+"handler"
+msgstr ""
+"Внутришни промижни програми викликають тип подии "
+":class:`litegram.types.update.Update` , через те, что все вхидни обновления"
+" надходять к обробника (handler) певного типа событий через вбудований "
+"обробник (handler) оновлень"
