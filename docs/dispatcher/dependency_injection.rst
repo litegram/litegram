@@ -9,7 +9,7 @@ inversion and single responsibility principles.
 
 
 How it works in litegram
-=======================
+========================
 
 For each update :class:`litegram.dispatcher.dispatcher.Dispatcher` passes handling context data.
 Filters and middleware can also make changes to the context.

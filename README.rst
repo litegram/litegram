@@ -1,6 +1,6 @@
-#######
+########
 litegram
-#######
+########
 
 .. image:: https://img.shields.io/pypi/l/litegram.svg?style=flat-square
     :target: https://opensource.org/licenses/MIT

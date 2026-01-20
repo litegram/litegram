@@ -150,7 +150,7 @@ This part is not available in *magic-filter* directly but can be used with *lite
         await message.answer(html.quote(str(digits)))
 
 Usage in *litegram*
-==================
+===================
 
 .. code-block:: python
 
