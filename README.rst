@@ -2,23 +2,23 @@
 litegram
 ########
 
-.. image:: https://img.shields.io/pypi/l/litegram.svg?style=flat-square
+.. image:: https://img.shields.io/pypi/l/litegram?style=flat-square
     :target: https://opensource.org/licenses/MIT
     :alt: MIT License
 
-.. image:: https://img.shields.io/pypi/status/litegram.svg?style=flat-square
+.. image:: https://img.shields.io/pypi/status/litegram?style=flat-square
     :target: https://pypi.python.org/pypi/litegram
     :alt: PyPi status
 
-.. image:: https://img.shields.io/pypi/v/litegram.svg?style=flat-square
+.. image:: https://img.shields.io/pypi/v/litegram?style=flat-square
     :target: https://pypi.python.org/pypi/litegram
     :alt: PyPi Package Version
 
-.. image:: https://img.shields.io/pypi/dm/litegram.svg?style=flat-square
+.. image:: https://img.shields.io/pypi/dm/litegram?style=flat-square
     :target: https://pypi.python.org/pypi/litegram
     :alt: Downloads
 
-.. image:: https://img.shields.io/pypi/pyversions/litegram.svg?style=flat-square
+.. image:: https://img.shields.io/pypi/pyversions/litegram?style=flat-square
     :target: https://pypi.python.org/pypi/litegram
     :alt: Supported python versions
 
@@ -26,7 +26,7 @@ litegram
     :target: https://core.telegram.org/bots/api
     :alt: Telegram Bot API
 
-.. image:: https://img.shields.io/github/actions/workflow/status/litegram/litegram/tests.yml?branch=dev-master&style=flat-square
+.. image:: https://img.shields.io/github/actions/workflow/status/litegram/litegram/tests.yml?branch=master&style=flat-square
     :target: https://github.com/litegram/litegram/actions
     :alt: Tests
 
