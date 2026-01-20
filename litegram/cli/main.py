@@ -124,6 +124,136 @@ def run_webhook(path: str, host: str, port: int, log_level: str) -> None:
     uvicorn.run(app, host=host, port=port, log_level=log_level.lower())
 
 
+@litegram_group.group()
+def bot() -> None:
+    """Bot management."""
+
+
+@bot.command(name="info")
+@click.option("--token", help="Bot token", envvar="BOT_TOKEN")
+def bot_info(token: str | None) -> None:
+    """Get bot information."""
+    import asyncio
+
+    from litegram import Bot
+    from litegram.exceptions import TelegramAPIError
+
+    if not token:
+        click.secho("Error: Bot token is required. Use --token or BOT_TOKEN env var.", fg="red", err=True)
+        sys.exit(1)
+
+    async def get_info() -> None:
+        async with Bot(token=token) as bot:
+            try:
+                user = await bot.get_me()
+                click.secho("Bot information:", fg="green", bold=True)
+                click.echo(f"  ID:       {user.id}")
+                click.echo(f"  Name:     {user.first_name}")
+                click.echo(f"  Username: @{user.username}")
+                click.echo(f"  Can join groups:   {user.can_join_groups}")
+                click.echo(f"  Can read messages: {user.can_read_all_group_messages}")
+                click.echo(f"  Supports inline:   {user.supports_inline_queries}")
+            except TelegramAPIError as e:
+                click.secho(f"Error: {e}", fg="red", err=True)
+                sys.exit(1)
+
+    asyncio.run(get_info())
+
+
+@litegram_group.group()
+def i18n() -> None:
+    """Manage bot translations."""
+
+
+@i18n.command(name="extract")
+@click.option("-d", "--domain", default="messages", show_default=True)
+@click.option("-p", "--path", default="locales", show_default=True)
+@click.option("-i", "--input", "input_path", default=".", show_default=True)
+def i18n_extract(domain: str, path: str, input_path: str) -> None:
+    """Extract messages from source code."""
+    from babel.messages.frontend import CommandLineInterface
+
+    click.echo(f"Extracting messages to {path}/{domain}.pot...")
+    CommandLineInterface().run(
+        [
+            "pybabel",
+            "extract",
+            input_path,
+            "-o",
+            f"{path}/{domain}.pot",
+            "--project",
+            "litegram-bot",
+        ]
+    )
+
+
+@i18n.command(name="init")
+@click.option("-d", "--domain", default="messages", show_default=True)
+@click.option("-p", "--path", default="locales", show_default=True)
+@click.argument("locale")
+def i18n_init(domain: str, path: str, locale: str) -> None:
+    """Initialize a new locale."""
+    from babel.messages.frontend import CommandLineInterface
+
+    click.echo(f"Initializing locale {locale}...")
+    CommandLineInterface().run(
+        [
+            "pybabel",
+            "init",
+            "-i",
+            f"{path}/{domain}.pot",
+            "-d",
+            path,
+            "-D",
+            domain,
+            "-l",
+            locale,
+        ]
+    )
+
+
+@i18n.command(name="update")
+@click.option("-d", "--domain", default="messages", show_default=True)
+@click.option("-p", "--path", default="locales", show_default=True)
+def i18n_update(domain: str, path: str) -> None:
+    """Update existing locales from POT file."""
+    from babel.messages.frontend import CommandLineInterface
+
+    click.echo(f"Updating locales in {path}...")
+    CommandLineInterface().run(
+        [
+            "pybabel",
+            "update",
+            "-i",
+            f"{path}/{domain}.pot",
+            "-d",
+            path,
+            "-D",
+            domain,
+        ]
+    )
+
+
+@i18n.command(name="compile")
+@click.option("-d", "--domain", default="messages", show_default=True)
+@click.option("-p", "--path", default="locales", show_default=True)
+def i18n_compile(domain: str, path: str) -> None:
+    """Compile locales."""
+    from babel.messages.frontend import CommandLineInterface
+
+    click.echo(f"Compiling locales in {path}...")
+    CommandLineInterface().run(
+        [
+            "pybabel",
+            "compile",
+            "-d",
+            path,
+            "-D",
+            domain,
+        ]
+    )
+
+
 @litegram_group.command(name="version")
 def version_command() -> None:
     """Show litegram version."""
