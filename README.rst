@@ -50,7 +50,7 @@ Features
 ========
 
 - Asynchronous (`asyncio docs <https://docs.python.org/3/library/asyncio.html>`_, :pep:`492`)
-- Has type hints (:pep:`484`) and can be used with `ty <https://github.com/v999/ty>`_
+- Has type hints (:pep:`484`) and can be used with `ty <https://github.com/astral-sh/ty>`_
 - Supports `Telegram Bot API 9.3 <https://core.telegram.org/bots/api>`_ and gets fast updates to the latest versions of the Bot API
 - Updates router (Blueprints)
 - Has Finite State Machine
