@@ -1,25 +1,36 @@
+from __future__ import annotations
+
+import asyncio
+from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, patch
 
 import pytest
 
-from litegram.fsm.storage.base import BaseEventIsolation, StorageKey
+from litegram.fsm.storage.memory import DisabledEventIsolation
 from litegram.fsm.storage.redis import RedisEventIsolation, RedisStorage
 
+if TYPE_CHECKING:
+    from litegram.fsm.storage.base import BaseEventIsolation, StorageKey
 
-@pytest.mark.parametrize(
-    "isolation",
-    ["redis_isolation", "lock_isolation", "disabled_isolation"],
-    indirect=True,
-)
+
 class TestIsolations:
-    @pytest.mark.anyio
+    @pytest.mark.asyncio
     async def test_lock(
         self,
         isolation: BaseEventIsolation,
         storage_key: StorageKey,
     ):
         async with isolation.lock(key=storage_key):
-            assert True, "Are you kidding me?"
+            if isinstance(isolation, DisabledEventIsolation):
+                # DisabledEventIsolation should not block
+                async with asyncio.timeout(1):
+                    async with isolation.lock(key=storage_key):
+                        pass
+                return
+
+            # Verify that we cannot acquire the lock again (non-reentrant)
+            with pytest.raises((asyncio.TimeoutError, TimeoutError)):
+                await asyncio.wait_for(isolation.lock(key=storage_key).__aenter__(), timeout=0.1)
 
 
 class TestRedisEventIsolation:
@@ -54,7 +65,7 @@ class TestRedisEventIsolation:
 
             pool.assert_called_once_with("redis://localhost:6379/0")
 
-    @pytest.mark.anyio
+    @pytest.mark.asyncio
     async def test_close(self):
         isolation = RedisEventIsolation(redis=AsyncMock())
         await isolation.close()

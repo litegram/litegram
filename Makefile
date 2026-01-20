@@ -51,14 +51,18 @@ reformat:
 # =================================================================================================
 .PHONY: test-run-services
 test-run-services:
-	@#docker-compose -f tests/docker-compose.yml -p litegram3-dev up -d
+	docker compose -f tests/docker-compose.yml -p litegram3-dev up -d
+
+.PHONY: compile-locales
+compile-locales:
+	uv run pybabel compile -d tests/data/locales -f
 
 .PHONY: test
-test: test-run-services
+test: compile-locales test-run-services
 	uv run pytest --cov=litegram --cov-config .coveragerc tests/ --redis $(redis_connection) --mongo $(mongo_connection)
 
 .PHONY: test-coverage
-test-coverage: test-run-services
+test-coverage: compile-locales test-run-services
 	mkdir -p $(reports_dir)/tests/
 	uv run pytest --cov=litegram --cov-config .coveragerc --html=$(reports_dir)/tests/index.html tests/ --redis $(redis_connection) --mongo $(mongo_connection)
 	uv run coverage html -d $(reports_dir)/coverage

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import pytest
 
 from litegram.fsm.strategy import FSMStrategy, apply_strategy

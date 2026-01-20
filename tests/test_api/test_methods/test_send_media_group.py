@@ -1,4 +1,7 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
@@ -12,7 +15,9 @@ from litegram.types import (
     PhotoSize,
     Video,
 )
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSendMediaGroup:
@@ -24,14 +29,14 @@ class TestSendMediaGroup:
             result=[
                 Message(
                     message_id=42,
-                    date=datetime.datetime.now(),
+                    date=datetime.datetime.now(datetime.UTC),
                     photo=[PhotoSize(file_id="file id", width=42, height=42, file_unique_id="file id")],
                     media_group_id="media group",
                     chat=Chat(id=42, type="private"),
                 ),
                 Message(
                     message_id=43,
-                    date=datetime.datetime.now(),
+                    date=datetime.datetime.now(datetime.UTC),
                     video=Video(
                         file_id="file id",
                         width=42,

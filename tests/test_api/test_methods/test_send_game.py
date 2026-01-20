@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import SendGame
 from litegram.types import Chat, Game, Message, PhotoSize
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSendGame:
@@ -15,7 +20,7 @@ class TestSendGame:
             ok=True,
             result=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 game=Game(
                     title="title",
                     description="description",

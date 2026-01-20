@@ -1,12 +1,14 @@
+from __future__ import annotations
+
 import io
 import os
 from pathlib import Path
 from tempfile import mkstemp
+from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import aiofiles
 import pytest
-from pytest_httpx import HTTPXMock
 
 from litegram import Bot
 from litegram.client.session.httpx import HttpxSession
@@ -15,6 +17,9 @@ from litegram.methods import GetFile, GetMe
 from litegram.types import File, PhotoSize
 from tests.mocked_bot import MockedBot
 from tests.test_api.test_client.test_session.test_base_session import CustomSession
+
+if TYPE_CHECKING:
+    from pytest_httpx import HTTPXMock
 
 
 @pytest.fixture()

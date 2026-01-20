@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from collections.abc import Awaitable
 from unittest.mock import AsyncMock, patch
 

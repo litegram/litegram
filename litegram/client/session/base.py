@@ -186,6 +186,8 @@ class BaseSession(abc.ABC):
         """
         if value is None:
             return None
+        if isinstance(value, Enum):
+            return self.prepare_value(value.value, bot=bot, files=files, _dumps_json=_dumps_json)
         if isinstance(value, str):
             return value
         if isinstance(value, Default):
@@ -234,8 +236,6 @@ class BaseSession(abc.ABC):
             return str(round((now + value).timestamp()))
         if isinstance(value, datetime.datetime):
             return str(round(value.timestamp()))
-        if isinstance(value, Enum):
-            return self.prepare_value(value.value, bot=bot, files=files)
         if isinstance(value, TelegramObject):
             return self.prepare_value(
                 value.model_dump(warnings=False),

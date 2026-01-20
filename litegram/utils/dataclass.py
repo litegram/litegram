@@ -4,6 +4,8 @@ This module contains utility functions for working with dataclasses in Python.
 DO NOT USE THIS MODULE DIRECTLY. IT IS INTENDED FOR INTERNAL USE ONLY.
 """
 
+from __future__ import annotations
+
 from typing import Any
 
 

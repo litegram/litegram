@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import datetime
 from typing import Any
 
@@ -33,7 +35,7 @@ class TestChatJoinRequest:
             chat=Chat(id=-42, type="supergroup"),
             from_user=User(id=42, is_bot=False, first_name="Test"),
             user_chat_id=42,
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
         )
 
         api_method = chat_join_request.approve()
@@ -47,7 +49,7 @@ class TestChatJoinRequest:
             chat=Chat(id=-42, type="supergroup"),
             from_user=User(id=42, is_bot=False, first_name="Test"),
             user_chat_id=42,
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
         )
 
         api_method = chat_join_request.decline()
@@ -134,7 +136,7 @@ class TestChatJoinRequest:
             chat=Chat(id=-42, type="channel"),
             from_user=User(id=42, is_bot=False, first_name="Test"),
             user_chat_id=42,
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
         )
 
         alias = getattr(event, alias_for_method + suffix)

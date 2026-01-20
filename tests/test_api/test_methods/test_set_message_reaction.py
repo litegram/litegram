@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 from random import randint
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import SetMessageReaction
 from litegram.types import ReactionTypeCustomEmoji
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSetMessageReaction:

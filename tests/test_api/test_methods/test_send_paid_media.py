@@ -1,4 +1,7 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
@@ -11,7 +14,9 @@ from litegram.types import (
     PaidMediaPhoto,
     PhotoSize,
 )
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSendPaidMedia:
@@ -22,7 +27,7 @@ class TestSendPaidMedia:
             ok=True,
             result=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 chat=Chat(id=42, type="private"),
                 paid_media=PaidMediaInfo(
                     paid_media=[PaidMediaPhoto(photo=[PhotoSize(file_id="test", width=42, height=42, file_unique_id="test")])],

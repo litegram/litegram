@@ -1,5 +1,8 @@
-from datetime import datetime, timedelta
+from __future__ import annotations
+
+from datetime import UTC, datetime, timedelta
 from random import randint
+from typing import TYPE_CHECKING
 
 import pytest
 
@@ -11,13 +14,15 @@ from litegram.types import (
     User,
     UserChatBoosts,
 )
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestGetUserChatBoosts:
     @pytest.mark.anyio
     async def test_bot_method(self, bot: MockedBot):
-        now = datetime.now()
+        now = datetime.now(UTC)
         user = User(
             id=randint(200, 500),
             is_bot=False,

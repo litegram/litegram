@@ -1,15 +1,20 @@
+from __future__ import annotations
+
 import asyncio
-from datetime import datetime
+from datetime import UTC, datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram import Dispatcher
 from litegram.filters import Command
-from litegram.fsm.context import FSMContext
 from litegram.fsm.state import State, StatesGroup
 from litegram.fsm.storage.memory import SimpleEventIsolation
 from litegram.types import Chat, Message, Update, User
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from litegram.fsm.context import FSMContext
+    from tests.mocked_bot import MockedBot
 
 
 class TestStateVSIsolation:
@@ -76,7 +81,7 @@ def create_message_update(index: int, text: str):
         update_id=index,
         message=Message(
             message_id=index,
-            date=datetime.now(),
+            date=datetime.now(UTC),
             chat=Chat(id=42, type="private"),
             from_user=User(id=42, is_bot=False, first_name="Test", username="test"),
             text=text,

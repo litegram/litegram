@@ -1,7 +1,10 @@
+from __future__ import annotations
+
+import contextlib
 import datetime
 import json
 from collections.abc import AsyncGenerator
-from typing import Any, AsyncContextManager
+from typing import Any
 from unittest.mock import AsyncMock, patch
 
 import pytest
@@ -54,7 +57,7 @@ class CustomSession(BaseSession):
         timeout: int = 30,
         chunk_size: int = 65536,
         raise_for_status: bool = True,
-    ) -> AsyncGenerator[bytes, None]:  # pragma: no cover
+    ) -> AsyncGenerator[bytes]:  # pragma: no cover
         assert isinstance(url, str)
         assert isinstance(timeout, int)
         assert isinstance(chunk_size, int)
@@ -248,7 +251,7 @@ class TestBaseSession:
     @pytest.mark.anyio
     async def test_context_manager(self):
         session = CustomSession()
-        assert isinstance(session, AsyncContextManager)
+        assert isinstance(session, contextlib.AbstractAsyncContextManager)
 
         with patch(
             "tests.test_api.test_client.test_session.test_base_session.CustomSession.close",

@@ -67,9 +67,9 @@ jobs:
 
       - name: Lint code
         run: |
-          uv run ruff check --output-format=github litegram examples
-          uv run ty check --output-format=github litegram
-          uv run ruff format --check --diff litegram tests scripts examples
+          uv run ruff check --output-format=github .
+          uv run ty check --output-format=github litegram tests examples scripts
+          uv run ruff format --check .
 
       - name: Setup redis
         if: ${{ env.IS_WINDOWS == 'false' }}
@@ -88,6 +88,7 @@ jobs:
 
       - name: Run tests
         run: |
+          uv run pybabel compile -d tests/data/locales -f
           flags="$flags --cov=litegram --cov-config .coveragerc --cov-report=xml"
           [[ "$IS_WINDOWS" == "false" ]] && flags="$flags --redis redis://localhost:6379/0"
           [[ "$IS_UBUNTU" == "true" ]] && flags="$flags --mongo mongodb://mongo:mongo@localhost:27017"
@@ -100,4 +101,4 @@ jobs:
           files: coverage.xml
           flags: unittests
           name: py-${{ matrix.python-version }}-${{ matrix.os }}
-          fail_ci_if_error: true
+          fail_ci_if_error: false

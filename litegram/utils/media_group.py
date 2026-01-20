@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Any, Literal, overload
 
 from litegram.enums import InputMediaType

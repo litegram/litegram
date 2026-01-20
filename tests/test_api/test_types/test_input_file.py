@@ -1,9 +1,16 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 import pytest
-from pytest_httpx import HTTPXMock
 
 from litegram import Bot
 from litegram.types import BufferedInputFile, FSInputFile, InputFile, URLInputFile
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from pytest_httpx import HTTPXMock
+
+    from tests.mocked_bot import MockedBot
 
 
 class TestInputFile:

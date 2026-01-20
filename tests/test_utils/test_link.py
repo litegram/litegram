@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from itertools import product
 from typing import Any
 from urllib.parse import parse_qs
@@ -67,8 +69,8 @@ class TestCreateChannelBotLink:
         }
 
         variants = product([True, False], repeat=len(params))
-        for _index, variants in enumerate(variants):
-            kwargs = {k: v for k, v in zip(params, variants, strict=False) if v}
+        for _index, variant in enumerate(variants):
+            kwargs = {k: v for k, v in zip(params, variant, strict=False) if v}
             if not kwargs:
                 # Variant without additional arguments is already covered
                 continue

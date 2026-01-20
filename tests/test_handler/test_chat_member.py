@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import datetime
 from typing import Any
 
@@ -13,7 +15,7 @@ class TestChatMemberUpdated:
         event = ChatMemberUpdated(
             chat=Chat(id=42, type="private"),
             from_user=User(id=42, is_bot=False, first_name="Test"),
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
             old_chat_member=ChatMemberMember(user=User(id=42, is_bot=False, first_name="Test")),
             new_chat_member=ChatMemberMember(user=User(id=42, is_bot=False, first_name="Test")),
         )

@@ -1,19 +1,24 @@
+from __future__ import annotations
+
 import asyncio
 from collections.abc import AsyncGenerator
-from typing import Any, AsyncContextManager
+from typing import TYPE_CHECKING, Any
 from unittest.mock import AsyncMock, patch
 
 import httpx
 import pytest
-from pytest_httpx import HTTPXMock
 
-from litegram import Bot
 from litegram.client.default import Default
 from litegram.client.session.httpx import HttpxSession
 from litegram.exceptions import TelegramNetworkError
 from litegram.methods import TelegramMethod
 from litegram.types import InputFile
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from pytest_httpx import HTTPXMock
+
+    from litegram import Bot
+    from tests.mocked_bot import MockedBot
 
 
 class BareInputFile(InputFile):

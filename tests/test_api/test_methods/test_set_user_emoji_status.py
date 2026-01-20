@@ -1,9 +1,14 @@
-from datetime import datetime, timedelta
+from __future__ import annotations
+
+from datetime import UTC, datetime, timedelta
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import SetUserEmojiStatus
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSetUserEmojiStatus:
@@ -14,7 +19,7 @@ class TestSetUserEmojiStatus:
         response: bool = await bot.set_user_emoji_status(
             user_id=42,
             emoji_status_custom_emoji_id="emoji_status_custom_emoji_id",
-            emoji_status_expiration_date=datetime.now() + timedelta(days=1),
+            emoji_status_expiration_date=datetime.now(UTC) + timedelta(days=1),
         )
         bot.get_request()
         assert response == prepare_result.result

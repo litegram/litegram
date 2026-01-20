@@ -1,12 +1,17 @@
+from __future__ import annotations
+
 import datetime
 import logging
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.client.session.middlewares.request_logging import RequestLogging
 from litegram.methods import GetMe, SendMessage
 from litegram.types import Chat, Message, User
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestRequestLogging:
@@ -33,7 +38,7 @@ class TestRequestLogging:
             ok=True,
             result=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 text="test",
                 chat=Chat(id=42, type="private"),
             ),

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import datetime
 from typing import Any
 
@@ -120,21 +122,21 @@ from litegram.types.message import ContentType, Message
 
 TEST_MESSAGE_TEXT = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     text="test",
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_AUDIO = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     audio=Audio(file_id="file id", file_unique_id="file id", duration=42),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_ANIMATION = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     animation=Animation(
         file_id="file id",
         file_unique_id="file id",
@@ -147,14 +149,14 @@ TEST_MESSAGE_ANIMATION = Message(
 )
 TEST_MESSAGE_DOCUMENT = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     document=Document(file_id="file id", file_unique_id="file id"),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_GAME = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     game=Game(
         title="title",
         description="description",
@@ -165,7 +167,7 @@ TEST_MESSAGE_GAME = Message(
 )
 TEST_MESSAGE_PHOTO = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     photo=[PhotoSize(file_id="file id", file_unique_id="file id", width=42, height=42)],
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -173,7 +175,7 @@ TEST_MESSAGE_PHOTO = Message(
 
 TEST_MESSAGE_STICKER = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     sticker=Sticker(
         file_id="file id",
         file_unique_id="file id",
@@ -188,7 +190,7 @@ TEST_MESSAGE_STICKER = Message(
 )
 TEST_MESSAGE_VIDEO = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     video=Video(
         file_id="file id",
         file_unique_id="file id",
@@ -201,28 +203,28 @@ TEST_MESSAGE_VIDEO = Message(
 )
 TEST_MESSAGE_VIDEO_NOTE = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     video_note=VideoNote(file_id="file id", file_unique_id="file id", length=0, duration=0),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_VOICE = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     voice=Voice(file_id="file id", file_unique_id="file id", duration=0),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_CONTACT = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     contact=Contact(phone_number="911", first_name="911"),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_VENUE = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     venue=Venue(
         location=Location(latitude=3.14, longitude=3.14),
         title="Cupboard Under the Stairs",
@@ -233,28 +235,28 @@ TEST_MESSAGE_VENUE = Message(
 )
 TEST_MESSAGE_LOCATION = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     location=Location(longitude=3.14, latitude=3.14),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_NEW_CHAT_MEMBERS = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     new_chat_members=[User(id=42, is_bot=False, first_name="Test")],
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_LEFT_CHAT_MEMBER = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     left_chat_member=User(id=42, is_bot=False, first_name="Test"),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_INVOICE = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     invoice=Invoice(
         title="test",
         description="test",
@@ -267,7 +269,7 @@ TEST_MESSAGE_INVOICE = Message(
 )
 TEST_MESSAGE_SUCCESSFUL_PAYMENT = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     successful_payment=SuccessfulPayment(
         currency="BTC",
         total_amount=42,
@@ -280,31 +282,31 @@ TEST_MESSAGE_SUCCESSFUL_PAYMENT = Message(
 )
 TEST_MESSAGE_CONNECTED_WEBSITE = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     connected_website="token",
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_MIGRATE_FROM_CHAT_ID = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     migrate_from_chat_id=42,
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_MIGRATE_TO_CHAT_ID = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     migrate_to_chat_id=42,
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_PINNED_MESSAGE = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     pinned_message=Message(
         message_id=42,
-        date=datetime.datetime.now(),
+        date=datetime.datetime.now(datetime.UTC),
         text="pinned",
         chat=Chat(id=42, type="private"),
         from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -314,49 +316,49 @@ TEST_MESSAGE_PINNED_MESSAGE = Message(
 )
 TEST_MESSAGE_NEW_CHAT_TITLE = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     new_chat_title="test",
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_NEW_CHAT_PHOTO = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     new_chat_photo=[PhotoSize(file_id="file id", file_unique_id="file id", width=42, height=42)],
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_DELETE_CHAT_PHOTO = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     delete_chat_photo=True,
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_GROUP_CHAT_CREATED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     group_chat_created=True,
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_SUPERGROUP_CHAT_CREATED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     supergroup_chat_created=True,
     chat=Chat(id=-10042, type="supergroup"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_CHANNEL_CHAT_CREATED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     channel_chat_created=True,
     chat=Chat(id=-10042, type="channel"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_PAID_MEDIA = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     paid_media=PaidMediaInfo(
         star_count=100500,
         paid_media=[
@@ -370,7 +372,7 @@ TEST_MESSAGE_PAID_MEDIA = Message(
 )
 TEST_MESSAGE_PASSPORT_DATA = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     passport_data=PassportData(
         data=[],
         credentials=EncryptedCredentials(data="test", hash="test", secret="test"),
@@ -380,7 +382,7 @@ TEST_MESSAGE_PASSPORT_DATA = Message(
 )
 TEST_MESSAGE_PROXIMITY_ALERT_TRIGGERED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="supergroup"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     proximity_alert_triggered=ProximityAlertTriggered(
@@ -391,7 +393,7 @@ TEST_MESSAGE_PROXIMITY_ALERT_TRIGGERED = Message(
 )
 TEST_MESSAGE_POLL = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     poll=Poll(
         id="QA",
         question="Q",
@@ -411,58 +413,58 @@ TEST_MESSAGE_POLL = Message(
 )
 TEST_MESSAGE_MESSAGE_AUTO_DELETE_TIMER_CHANGED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     message_auto_delete_timer_changed=MessageAutoDeleteTimerChanged(message_auto_delete_time=42),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_VIDEO_CHAT_STARTED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     video_chat_started=VideoChatStarted(),
 )
 TEST_MESSAGE_VIDEO_CHAT_ENDED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     video_chat_ended=VideoChatEnded(duration=42),
 )
 TEST_MESSAGE_VIDEO_CHAT_PARTICIPANTS_INVITED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     video_chat_participants_invited=VideoChatParticipantsInvited(users=[User(id=69, is_bot=False, first_name="Test")]),
 )
 TEST_MESSAGE_VIDEO_CHAT_SCHEDULED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     video_chat_scheduled=VideoChatScheduled(
-        start_date=datetime.datetime.now(),
+        start_date=datetime.datetime.now(datetime.UTC),
     ),
 )
 TEST_MESSAGE_DICE = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     dice=Dice(value=6, emoji="X"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_WEB_APP_DATA = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     web_app_data=WebAppData(data="test", button_text="Test"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_FORUM_TOPIC_CREATED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     forum_topic_created=ForumTopicCreated(
@@ -472,7 +474,7 @@ TEST_FORUM_TOPIC_CREATED = Message(
 )
 TEST_FORUM_TOPIC_EDITED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     forum_topic_edited=ForumTopicEdited(
@@ -482,28 +484,28 @@ TEST_FORUM_TOPIC_EDITED = Message(
 )
 TEST_FORUM_TOPIC_CLOSED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     forum_topic_closed=ForumTopicClosed(),
 )
 TEST_FORUM_TOPIC_REOPENED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     forum_topic_reopened=ForumTopicReopened(),
 )
 TEST_MESSAGE_USER_SHARED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     user_shared=UserShared(request_id=42, user_id=42),
 )
 TEST_MESSAGE_USERS_SHARED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=None,
     users_shared=UsersShared(
@@ -513,14 +515,14 @@ TEST_MESSAGE_USERS_SHARED = Message(
 )
 TEST_CHAT_SHARED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     chat_shared=ChatShared(request_id=42, chat_id=42),
 )
 TEST_MESSAGE_STORY = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     story=Story(chat=Chat(id=42, type="private"), id=42),
@@ -528,72 +530,72 @@ TEST_MESSAGE_STORY = Message(
 
 TEST_MESSAGE_GIVEAWAY = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=None,
     giveaway=Giveaway(
         chats=[Chat(id=42, type="private")],
-        winners_selection_date=datetime.datetime.now() + datetime.timedelta(days=7),
+        winners_selection_date=datetime.datetime.now(datetime.UTC) + datetime.timedelta(days=7),
         winner_count=10,
     ),
 )
 TEST_MESSAGE_GIVEAWAY_CREATED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=None,
     giveaway_created=GiveawayCreated(prize_star_count=42),
 )
 TEST_MESSAGE_GIVEAWAY_WINNERS = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=None,
     giveaway_winners=GiveawayWinners(
         chat=Chat(id=77, type="private"),
         giveaway_message_id=123,
-        winners_selection_date=datetime.datetime.now(),
+        winners_selection_date=datetime.datetime.now(datetime.UTC),
         winner_count=1,
         winners=[User(id=42, is_bot=False, first_name="Test")],
     ),
 )
 TEST_MESSAGE_GIVEAWAY_COMPLETED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=None,
     giveaway_completed=GiveawayCompleted(winner_count=10),
 )
 TEST_MESSAGE_GENERAL_FORUM_TOPIC_HIDDEN = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=None,
     general_forum_topic_hidden=GeneralForumTopicHidden(),
 )
 TEST_MESSAGE_GENERAL_FORUM_TOPIC_UNHIDDEN = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=None,
     general_forum_topic_unhidden=GeneralForumTopicUnhidden(),
 )
 TEST_MESSAGE_WRITE_ACCESS_ALLOWED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     write_access_allowed=WriteAccessAllowed(),
 )
 TEST_MESSAGE_BOOST_ADDED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="User"),
     boost_added=ChatBoostAdded(boost_count=1),
 )
 TEST_CHAT_BACKGROUND_SET = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="User"),
     chat_background_set=ChatBackground(
@@ -605,7 +607,7 @@ TEST_CHAT_BACKGROUND_SET = Message(
 )
 TEST_REFUND_PAYMENT = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="User"),
     refunded_payment=RefundedPayment(
@@ -617,13 +619,13 @@ TEST_REFUND_PAYMENT = Message(
 )
 TEST_MESSAGE_UNKNOWN = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )
 TEST_MESSAGE_GIFT = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     gift=GiftInfo(
@@ -650,7 +652,7 @@ TEST_MESSAGE_GIFT = Message(
 )
 TEST_MESSAGE_UNIQUE_GIFT = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     unique_gift=UniqueGiftInfo(
@@ -703,7 +705,7 @@ TEST_MESSAGE_GIFT_UPGRADE_SENT = Message(
     message_id=42,
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     gift_upgrade_sent=GiftInfo(
         gift=Gift(
             id="test_gift_id",
@@ -728,7 +730,7 @@ TEST_MESSAGE_GIFT_UPGRADE_SENT = Message(
 )
 TEST_MESSAGE_CHECKLIST = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     checklist=Checklist(
@@ -747,7 +749,7 @@ TEST_MESSAGE_CHECKLIST = Message(
 )
 TEST_MESSAGE_CHECKLIST_TASKS_DONE = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     checklist_tasks_done=ChecklistTasksDone(
@@ -756,7 +758,7 @@ TEST_MESSAGE_CHECKLIST_TASKS_DONE = Message(
 )
 TEST_MESSAGE_CHECKLIST_TASKS_ADDED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     checklist_tasks_added=ChecklistTasksAdded(
@@ -770,7 +772,7 @@ TEST_MESSAGE_CHECKLIST_TASKS_ADDED = Message(
 )
 TEST_MESSAGE_DIRECT_MESSAGE_PRICE_CHANGED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     direct_message_price_changed=DirectMessagePriceChanged(
@@ -780,7 +782,7 @@ TEST_MESSAGE_DIRECT_MESSAGE_PRICE_CHANGED = Message(
 )
 TEST_MESSAGE_PAID_MESSAGE_PRICE_CHANGED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     paid_message_price_changed=PaidMessagePriceChanged(
@@ -789,7 +791,7 @@ TEST_MESSAGE_PAID_MESSAGE_PRICE_CHANGED = Message(
 )
 TEST_MESSAGE_SUGGESTED_POST_APPROVED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     suggested_post_approved=SuggestedPostApproved(
@@ -798,7 +800,7 @@ TEST_MESSAGE_SUGGESTED_POST_APPROVED = Message(
 )
 TEST_MESSAGE_SUGGESTED_POST_APPROVAL_FAILED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     suggested_post_approval_failed=SuggestedPostApprovalFailed(
@@ -807,21 +809,21 @@ TEST_MESSAGE_SUGGESTED_POST_APPROVAL_FAILED = Message(
 )
 TEST_MESSAGE_SUGGESTED_POST_DECLINED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     suggested_post_declined=SuggestedPostDeclined(),
 )
 TEST_MESSAGE_SUGGESTED_POST_PAID = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     suggested_post_paid=SuggestedPostPaid(currency="XTR"),
 )
 TEST_MESSAGE_SUGGESTED_POST_REFUNDED = Message(
     message_id=42,
-    date=datetime.datetime.now(),
+    date=datetime.datetime.now(datetime.UTC),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
     suggested_post_refunded=SuggestedPostRefunded(reason="post_deleted"),
@@ -1019,7 +1021,7 @@ class TestMessage:
         assert message.content_type == content_type
 
     def test_as_reply_parameters(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         reply_parameters = message.as_reply_parameters()
         assert reply_parameters.message_id == message.message_id
         assert reply_parameters.chat_id == message.chat.id
@@ -1096,7 +1098,7 @@ class TestMessage:
             | SendPaidMedia
         ],
     ):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         alias_name = "_".join(item for item in [alias_type, alias_for_method] if item)
 
         alias = getattr(message, alias_name)
@@ -1120,7 +1122,7 @@ class TestMessage:
             assert getattr(api_method, key) == value
 
     def test_copy_to(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.copy_to(chat_id=message.chat.id)
         assert isinstance(method, CopyMessage)
         assert method.chat_id == message.chat.id
@@ -1141,10 +1143,10 @@ class TestMessage:
 
         method = message.send_copy(chat_id=42)
         assert isinstance(method, expected_method)
+        assert method.chat_id == 42
         if hasattr(method, "parse_mode"):
             # default parse mode in send_copy
             assert method.parse_mode is None
-        # TODO: Check additional fields
 
     @pytest.mark.parametrize(
         "custom_parse_mode",
@@ -1179,20 +1181,20 @@ class TestMessage:
         assert method.parse_mode == custom_parse_mode
 
     def test_edit_text(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.edit_text(text="test")
         assert isinstance(method, EditMessageText)
         assert method.chat_id == message.chat.id
 
     def test_forward(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.forward(chat_id=69)
         assert isinstance(method, ForwardMessage)
         assert method.chat_id == 69
         assert method.from_chat_id == message.chat.id
 
     def test_edit_media(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.edit_media(media=InputMediaPhoto(media="photo.jpg"))
         assert isinstance(method, EditMessageMedia)
         assert method.chat_id == message.chat.id
@@ -1222,7 +1224,7 @@ class TestMessage:
         message = Message(
             message_id=42,
             chat=Chat(id=42, type="private"),
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
             reply_markup=reply_markup,
         )
         method = message.edit_reply_markup(
@@ -1247,7 +1249,7 @@ class TestMessage:
         message = Message(
             message_id=42,
             chat=Chat(id=42, type="private"),
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
             reply_markup=reply_markup,
         )
         method = message.delete_reply_markup()
@@ -1256,39 +1258,39 @@ class TestMessage:
         assert method.chat_id == message.chat.id
 
     def test_edit_live_location(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.edit_live_location(latitude=42, longitude=69)
         assert isinstance(method, EditMessageLiveLocation)
         assert method.chat_id == message.chat.id
 
     def test_stop_live_location(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.stop_live_location()
         assert isinstance(method, StopMessageLiveLocation)
         assert method.chat_id == message.chat.id
 
     def test_edit_caption(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.edit_caption(caption="test")
         assert isinstance(method, EditMessageCaption)
         assert method.chat_id == message.chat.id
 
     def test_delete(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.delete()
         assert isinstance(method, DeleteMessage)
         assert method.chat_id == message.chat.id
         assert method.message_id == message.message_id
 
     def test_pin(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.pin()
         assert isinstance(method, PinChatMessage)
         assert method.chat_id == message.chat.id
         assert method.message_id == message.message_id
 
     def test_unpin(self):
-        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         method = message.unpin()
         assert isinstance(method, UnpinChatMessage)
         assert method.chat_id == message.chat.id
@@ -1297,7 +1299,7 @@ class TestMessage:
         message = Message(
             message_id=777,
             chat=Chat(id=-42, type="channel"),
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
         )
         emoji_reaction = ReactionTypeCustomEmoji(custom_emoji_id="qwerty")
         method = message.react(
@@ -1320,7 +1322,7 @@ class TestMessage:
         message = Message(
             message_id=42,
             chat=Chat(id=42, type="private"),
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
             text=text,
             entities=entities,
         )

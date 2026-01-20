@@ -135,8 +135,10 @@ class MongoStorage(BaseStorage):
         return cast("dict[str, Any]", document["data"])
 
     async def update_data(self, key: StorageKey, data: Mapping[str, Any]) -> dict[str, Any]:
+        if not data:
+            return await self.get_data(key)
         document_id = self._key_builder.build(key)
-        update_with = {f"data.{key}": value for key, value in data.items()}
+        update_with = {f"data.{k}": v for k, v in data.items()}
         update_result = await self._collection.find_one_and_update(
             filter={"_id": document_id},
             update={"$set": update_with},
@@ -145,5 +147,5 @@ class MongoStorage(BaseStorage):
             projection={"_id": 0},
         )
         if not update_result:
-            await self._collection.delete_one({"_id": document_id})
+            return {}
         return update_result.get("data", {})

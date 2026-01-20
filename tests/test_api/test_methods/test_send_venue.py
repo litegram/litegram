@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import SendVenue
 from litegram.types import Chat, Location, Message, Venue
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSendVenue:
@@ -15,7 +20,7 @@ class TestSendVenue:
             ok=True,
             result=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 venue=Venue(
                     location=Location(latitude=3.14, longitude=3.14),
                     title="Cupboard Under the Stairs",

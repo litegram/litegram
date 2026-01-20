@@ -1,9 +1,14 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.types import Chat, Message
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestGetMessageUrl:
@@ -38,7 +43,7 @@ class TestGetMessageUrl:
         fake_message_id = 10
         fake_message = Message(
             message_id=fake_message_id,
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
             text="test",
             chat=fake_chat,
         )
@@ -86,7 +91,7 @@ class TestGetMessageUrl:
         fake_chat_with_topics = Chat(id=fake_chat_id, username=chat_username, type=fake_chat_type, is_forum=True)
         fake_message_from_topic = Message(
             message_id=fake_message_id,
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
             text="test",
             chat=fake_chat_with_topics,
             is_topic_message=True,

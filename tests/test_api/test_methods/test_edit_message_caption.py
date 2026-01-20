@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import EditMessageCaption
 from litegram.types import Chat, Message
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestEditMessageCaption:
@@ -15,7 +20,7 @@ class TestEditMessageCaption:
             ok=True,
             result=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 text="text",
                 chat=Chat(id=42, type="private"),
             ),

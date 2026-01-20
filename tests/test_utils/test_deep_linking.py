@@ -1,3 +1,7 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 import pytest
 
 from litegram.utils.deep_linking import (
@@ -6,7 +10,9 @@ from litegram.utils.deep_linking import (
     create_startgroup_link,
 )
 from litegram.utils.payload import decode_payload, encode_payload
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 PAYLOADS = [
     "foo",

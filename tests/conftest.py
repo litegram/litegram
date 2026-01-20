@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import asyncio
 import sys
 from pathlib import Path
@@ -7,7 +9,7 @@ from _pytest.config import UsageError
 from pymongo.errors import InvalidURI, PyMongoError
 from pymongo.uri_parser import parse_uri as parse_mongo_url
 from redis.asyncio.connection import parse_url as parse_redis_url
-from redis.exceptions import ConnectionError
+from redis.exceptions import ConnectionError as RedisConnectionError
 
 from litegram import Dispatcher
 from litegram.fsm.storage.base import StorageKey
@@ -41,8 +43,20 @@ def pytest_configure(config):
 
     if sys.platform == "win32" and sys.version_info < (3, 14):
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    else:
-        asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
+
+    # Compile locales
+    try:
+        from babel.messages.mofile import write_mo
+        from babel.messages.pofile import read_po
+
+        for path in DATA_DIR.rglob("*.po"):
+            mo_path = path.with_suffix(".mo")
+            with path.open("rb") as f_po:
+                catalog = read_po(f_po)
+            with mo_path.open("wb") as f_mo:
+                write_mo(f_mo, catalog, use_fuzzy=True)
+    except ImportError:
+        pass
 
 
 @pytest.fixture()
@@ -59,11 +73,11 @@ async def redis_storage(redis_server):
     try:
         parse_redis_url(redis_server)
     except ValueError as e:
-        raise UsageError(INVALID_URI_PATTERN.format(db="redis", uri=redis_server, err=e))
+        raise UsageError(INVALID_URI_PATTERN.format(db="redis", uri=redis_server, err=e)) from e
     storage = RedisStorage.from_url(redis_server)
     try:
         await storage.redis.info()
-    except ConnectionError as e:
+    except RedisConnectionError as e:
         pytest.fail(str(e))
     try:
         yield storage
@@ -87,7 +101,7 @@ async def mongo_storage(mongo_server):
     try:
         parse_mongo_url(mongo_server)
     except InvalidURI as e:
-        raise UsageError(INVALID_URI_PATTERN.format(db="mongo", uri=mongo_server, err=e))
+        raise UsageError(INVALID_URI_PATTERN.format(db="mongo", uri=mongo_server, err=e)) from e
     storage = MongoStorage.from_url(
         url=mongo_server,
         connection_kwargs={"serverSelectionTimeoutMS": 2000},
@@ -117,7 +131,7 @@ async def pymongo_storage(pymongo_server):
     try:
         parse_mongo_url(pymongo_server)
     except InvalidURI as e:
-        raise UsageError(INVALID_URI_PATTERN.format(db="mongo", uri=pymongo_server, err=e))
+        raise UsageError(INVALID_URI_PATTERN.format(db="mongo", uri=pymongo_server, err=e)) from e
     storage = PyMongoStorage.from_url(
         url=pymongo_server,
         connection_kwargs={"serverSelectionTimeoutMS": 2000},
@@ -198,6 +212,29 @@ def storage(request):
 @pytest.fixture()
 def isolation(request):
     return request.getfixturevalue(request.param)
+
+
+def pytest_generate_tests(metafunc):
+    if "storage" in metafunc.fixturenames:
+        params = ["memory_storage"]
+        if metafunc.config.getoption("--redis"):
+            params.append("redis_storage")
+        if metafunc.config.getoption("--mongo"):
+            params.append("mongo_storage")
+            params.append("pymongo_storage")
+        metafunc.parametrize("storage", params, indirect=True)
+    if "isolation" in metafunc.fixturenames:
+        params = ["lock_isolation", "disabled_isolation"]
+        if metafunc.config.getoption("--redis"):
+            params.append("redis_isolation")
+        metafunc.parametrize("isolation", params, indirect=True)
+
+
+def pytest_collection_modifyitems(config, items):
+    if not config.getoption("--mongo"):
+        items[:] = [item for item in items if "test_mongodb.py" not in str(item.path)]
+    if not config.getoption("--redis"):
+        items[:] = [item for item in items if "test_redis.py" not in str(item.path)]
 
 
 # @pytest.fixture(scope="session")

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import asyncio
 import datetime
 from functools import wraps
@@ -41,7 +43,7 @@ class TestBaseClassBasedHandler:
         handler = MyHandler(event=event, key=42)
 
         with pytest.raises(RuntimeError):
-            handler.bot
+            _ = handler.bot
 
     @pytest.mark.anyio
     async def test_bot_from_data(self):
@@ -53,7 +55,7 @@ class TestBaseClassBasedHandler:
         assert handler.bot == bot
 
     def test_update_from_data(self):
-        event = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        event = Message(message_id=42, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
         update = Update(update_id=42, message=event)
         handler = MyHandler(event=event, update=update)
 

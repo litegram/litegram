@@ -1,6 +1,7 @@
-from collections.abc import Awaitable, Callable
-from datetime import datetime
-from typing import Any
+from __future__ import annotations
+
+from datetime import UTC, datetime
+from typing import TYPE_CHECKING, Any
 from unittest.mock import AsyncMock
 
 import pytest
@@ -10,7 +11,11 @@ from litegram.enums import ChatType
 from litegram.filters import Command
 from litegram.fsm.scene import Scene, SceneRegistry, ScenesManager, on
 from litegram.types import Chat, Message, TelegramObject, Update, User
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from collections.abc import Awaitable, Callable
+
+    from tests.mocked_bot import MockedBot
 
 
 class EchoScene(Scene, state="test"):
@@ -53,7 +58,7 @@ async def test_middleware_data_passed_to_scene(bot: MockedBot):
     # Create a proper message with the command
     chat = Chat(id=123, type=ChatType.PRIVATE)
     user = User(id=456, is_bot=False, first_name="Test User")
-    message = Message(message_id=1, date=datetime.now(), from_user=user, chat=chat, text="/test")
+    message = Message(message_id=1, date=datetime.now(UTC), from_user=user, chat=chat, text="/test")
     update = Update(message=message, update_id=1)
 
     # Mock the ScenesManager.enter method

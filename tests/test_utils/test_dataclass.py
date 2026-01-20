@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from litegram.utils.dataclass import dataclass_kwargs
 
 ALL_VERSIONS = {

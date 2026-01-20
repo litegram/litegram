@@ -1,4 +1,7 @@
-from datetime import datetime, timedelta
+from __future__ import annotations
+
+from datetime import UTC, datetime, timedelta
+from typing import TYPE_CHECKING
 
 import pytest
 
@@ -8,7 +11,9 @@ from litegram.types import (
     InputTextMessageContent,
     PreparedInlineMessage,
 )
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSavePreparedInlineMessage:
@@ -19,7 +24,7 @@ class TestSavePreparedInlineMessage:
             ok=True,
             result=PreparedInlineMessage(
                 id="id",
-                expiration_date=datetime.now() + timedelta(days=1),
+                expiration_date=datetime.now(UTC) + timedelta(days=1),
             ),
         )
 

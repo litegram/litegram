@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 from random import randint
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import CopyMessages
 from litegram.types import MessageId
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestCopyMessages:

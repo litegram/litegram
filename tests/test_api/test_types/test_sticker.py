@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from litegram.enums import StickerType
 from litegram.types import Sticker
 

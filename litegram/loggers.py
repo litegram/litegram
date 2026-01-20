@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import logging
 
 dispatcher = logging.getLogger("litegram.dispatcher")

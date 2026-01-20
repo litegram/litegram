@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import SendVideoNote
 from litegram.types import BufferedInputFile, Chat, Message, VideoNote
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSendVideoNote:
@@ -15,7 +20,7 @@ class TestSendVideoNote:
             ok=True,
             result=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 video_note=VideoNote(file_id="file id", length=0, duration=0, file_unique_id="file id"),
                 chat=Chat(id=42, type="private"),
             ),

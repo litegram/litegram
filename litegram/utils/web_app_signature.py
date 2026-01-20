@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import base64
 from operator import itemgetter
 from urllib.parse import parse_qsl

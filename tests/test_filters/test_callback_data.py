@@ -1,7 +1,9 @@
+from __future__ import annotations
+
 from decimal import Decimal
 from enum import Enum, auto
 from fractions import Fraction
-from typing import Optional, Union
+from typing import Any
 from uuid import UUID
 
 import pytest
@@ -169,8 +171,8 @@ class TestCallbackData:
     @pytest.mark.parametrize(
         "hint",
         [
-            Union[int, None],
-            Optional[int],
+            int | None,
+            int | None,
         ],
     )
     def test_unpack_optional_wo_default(self, hint):

@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import GetUserGifts
 from litegram.types import Gift, OwnedGiftRegular, OwnedGifts, Sticker
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestGetUserGifts:
@@ -30,7 +35,7 @@ class TestGetUserGifts:
                             ),
                             star_count=100,
                         ),
-                        send_date=int(datetime.datetime.now().timestamp()),
+                        send_date=int(datetime.datetime.now(datetime.UTC).timestamp()),
                     )
                 ],
             ),

@@ -1,18 +1,17 @@
-from typing import TypedDict
+from __future__ import annotations
+
+from typing import TYPE_CHECKING, TypedDict
 
 import pytest
 
 from litegram.exceptions import DataNotDictLikeError
-from litegram.fsm.storage.base import BaseStorage, StorageKey
+
+if TYPE_CHECKING:
+    from litegram.fsm.storage.base import BaseStorage, StorageKey
 
 
-@pytest.mark.parametrize(
-    "storage",
-    ["memory_storage", "redis_storage", "mongo_storage", "pymongo_storage"],
-    indirect=True,
-)
 class TestStorages:
-    @pytest.mark.anyio
+    @pytest.mark.asyncio
     async def test_set_state(self, storage: BaseStorage, storage_key: StorageKey):
         assert await storage.get_state(key=storage_key) is None
 
@@ -21,7 +20,7 @@ class TestStorages:
         await storage.set_state(key=storage_key, state=None)
         assert await storage.get_state(key=storage_key) is None
 
-    @pytest.mark.anyio
+    @pytest.mark.asyncio
     async def test_set_data(self, storage: BaseStorage, storage_key: StorageKey):
         assert await storage.get_data(key=storage_key) == {}
         assert await storage.get_value(storage_key=storage_key, dict_key="foo") is None
@@ -49,7 +48,7 @@ class TestStorages:
         with pytest.raises(DataNotDictLikeError):
             await storage.set_data(key=storage_key, data=())
 
-    @pytest.mark.anyio
+    @pytest.mark.asyncio
     async def test_update_data(self, storage: BaseStorage, storage_key: StorageKey):
         assert await storage.get_data(key=storage_key) == {}
         assert await storage.update_data(key=storage_key, data={"foo": "bar"}) == {"foo": "bar"}

@@ -1,4 +1,6 @@
-from datetime import datetime
+from __future__ import annotations
+
+from datetime import UTC, datetime
 
 import pytest
 from pydantic_core import PydanticSerializationError
@@ -25,7 +27,7 @@ class TestSerialize:
     def test_deserialize_default(self):
         message = Message(
             message_id=42,
-            date=datetime.now(),
+            date=datetime.now(UTC),
             chat=Chat(id=42, type=ChatType.PRIVATE, first_name="Test"),
             from_user=User(id=42, first_name="Test", is_bot=False),
             text="https://example.com",

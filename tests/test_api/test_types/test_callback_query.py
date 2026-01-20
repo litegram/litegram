@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from litegram.methods import AnswerCallbackQuery
 from litegram.types import CallbackQuery, InaccessibleMessage, Message, User
 

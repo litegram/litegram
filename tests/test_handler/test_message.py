@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import datetime
 from typing import Any
 
@@ -18,7 +20,7 @@ class TestClassBasedMessageHandler:
     async def test_message_handler(self):
         event = Message(
             message_id=42,
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
             text="test",
             chat=Chat(id=42, type="private"),
             from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -39,7 +41,7 @@ class TestBaseMessageHandlerCommandMixin:
         handler = HandlerWithCommand(
             Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 text="/test args",
                 chat=Chat(id=42, type="private"),
                 from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -54,7 +56,7 @@ class TestBaseMessageHandlerCommandMixin:
         handler = HandlerWithCommand(
             Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 text="test",
                 chat=Chat(id=42, type="private"),
                 from_user=User(id=42, is_bot=False, first_name="Test"),

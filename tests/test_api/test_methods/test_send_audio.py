@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import SendAudio
 from litegram.types import Audio, Chat, Message
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSendAudio:
@@ -15,7 +20,7 @@ class TestSendAudio:
             ok=True,
             result=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 audio=Audio(file_id="file id", duration=42, file_unique_id="file id"),
                 chat=Chat(id=42, type="private"),
             ),

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import TYPE_CHECKING, Any
 
 from ..exceptions import RejectOperations
@@ -25,7 +27,7 @@ class FunctionOperation(BaseOperation):
             return self.function(
                 *(resolve_if_needed(arg, initial_value) for arg in self.args),
                 value,
-                **{key: resolve_if_needed(value, initial_value) for key, value in self.kwargs.items()},
+                **{k: resolve_if_needed(v, initial_value) for k, v in self.kwargs.items()},
             )
         except (TypeError, ValueError) as e:
             raise RejectOperations(e) from e

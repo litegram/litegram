@@ -1,5 +1,8 @@
+from __future__ import annotations
+
 import datetime
 import re
+from typing import TYPE_CHECKING
 
 import pytest
 
@@ -7,7 +10,9 @@ from litegram import F
 from litegram.filters import Command, CommandObject
 from litegram.filters.command import CommandStart
 from litegram.types import BotCommand, Chat, Message, User
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestCommandFilter:
@@ -101,7 +106,7 @@ class TestCommandFilter:
     async def test_parse_command(self, bot: MockedBot, text: str, result: bool, command: Command):
         # TODO: test ignore mention
 
-        message = Message(message_id=0, text=text, chat=Chat(id=42, type="private"), date=datetime.datetime.now())
+        message = Message(message_id=0, text=text, chat=Chat(id=42, type="private"), date=datetime.datetime.now(datetime.UTC))
 
         response = await command(message, bot)
         assert bool(response) is result
@@ -112,7 +117,7 @@ class TestCommandFilter:
             [
                 Message(
                     message_id=42,
-                    date=datetime.datetime.now(),
+                    date=datetime.datetime.now(datetime.UTC),
                     chat=Chat(id=42, type="private"),
                     from_user=User(id=42, is_bot=False, first_name="Test"),
                 ),
@@ -121,7 +126,7 @@ class TestCommandFilter:
             [
                 Message(
                     message_id=42,
-                    date=datetime.datetime.now(),
+                    date=datetime.datetime.now(datetime.UTC),
                     text="/test",
                     chat=Chat(id=42, type="private"),
                     from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -142,7 +147,7 @@ class TestCommandFilter:
             message_id=0,
             text="/test 42",
             chat=Chat(id=42, type="private"),
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
         )
         command = Command(commands=["test"], magic=(F.args.as_("args")))
         result = await command(message=message, bot=bot)
@@ -158,7 +163,7 @@ class TestCommandFilter:
             message_id=0,
             text="/test",
             chat=Chat(id=42, type="private"),
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
         )
         command = Command("test")
         result = await command(message=message, bot=bot)

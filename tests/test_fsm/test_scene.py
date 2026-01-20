@@ -1,5 +1,8 @@
+from __future__ import annotations
+
 import inspect
-from datetime import datetime
+from datetime import UTC, datetime
+from typing import TYPE_CHECKING
 from unittest.mock import ANY, AsyncMock, patch
 
 import pytest
@@ -31,7 +34,9 @@ from litegram.fsm.state import State, StatesGroup
 from litegram.fsm.storage.base import BaseStorage, StorageKey
 from litegram.fsm.storage.memory import MemoryStorage, MemoryStorageRecord
 from litegram.types import Chat, Message, Update
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestOnMarker:
@@ -262,7 +267,7 @@ class TestSceneHandlerWrapper:
             message=Message(
                 message_id=42,
                 text="test",
-                date=datetime.now(),
+                date=datetime.now(UTC),
                 chat=Chat(
                     type="private",
                     id=42,
@@ -292,7 +297,7 @@ class TestSceneHandlerWrapper:
             message=Message(
                 message_id=42,
                 text="test",
-                date=datetime.now(),
+                date=datetime.now(UTC),
                 chat=Chat(
                     type="private",
                     id=42,
@@ -1133,7 +1138,7 @@ class TestScenesManager:
                 message=Message(
                     message_id=42,
                     text="test",
-                    date=datetime.now(),
+                    date=datetime.now(UTC),
                     chat=Chat(
                         type="private",
                         id=42,
@@ -1171,7 +1176,7 @@ class TestScenesManager:
                 message=Message(
                     message_id=42,
                     text="test",
-                    date=datetime.now(),
+                    date=datetime.now(UTC),
                     chat=Chat(
                         type="private",
                         id=42,
@@ -1201,7 +1206,7 @@ class TestScenesManager:
                 message=Message(
                     message_id=42,
                     text="test",
-                    date=datetime.now(),
+                    date=datetime.now(UTC),
                     chat=Chat(
                         type="private",
                         id=42,
@@ -1228,7 +1233,7 @@ class TestScenesManager:
                 message=Message(
                     message_id=42,
                     text="test",
-                    date=datetime.now(),
+                    date=datetime.now(UTC),
                     chat=Chat(
                         type="private",
                         id=42,
@@ -1253,7 +1258,7 @@ class TestScenesManager:
                 message=Message(
                     message_id=42,
                     text="test",
-                    date=datetime.now(),
+                    date=datetime.now(UTC),
                     chat=Chat(
                         type="private",
                         id=42,
@@ -1284,7 +1289,7 @@ class TestScenesManager:
                 message=Message(
                     message_id=42,
                     text="test",
-                    date=datetime.now(),
+                    date=datetime.now(UTC),
                     chat=Chat(
                         type="private",
                         id=42,
@@ -1326,7 +1331,7 @@ class TestScenesManager:
                 message=Message(
                     message_id=42,
                     text="test",
-                    date=datetime.now(),
+                    date=datetime.now(UTC),
                     chat=Chat(
                         type="private",
                         id=42,
@@ -1535,7 +1540,7 @@ class TestSceneRegistry:
             message=Message(
                 message_id=42,
                 text="test",
-                date=datetime.now(),
+                date=datetime.now(UTC),
                 chat=Chat(id=42, type="private"),
             ),
         )
@@ -1556,7 +1561,7 @@ class TestSceneRegistry:
         event = Message(
             message_id=42,
             text="test",
-            date=datetime.now(),
+            date=datetime.now(UTC),
             chat=Chat(id=42, type="private"),
         )
         data = {"state": FSMContext(storage=MemoryStorage(), key=StorageKey(chat_id=-42, user_id=42, bot_id=bot.id))}
@@ -1574,7 +1579,7 @@ class TestSceneRegistry:
             message=Message(
                 message_id=42,
                 text="test",
-                date=datetime.now(),
+                date=datetime.now(UTC),
                 chat=Chat(id=42, type="private"),
             ),
         )

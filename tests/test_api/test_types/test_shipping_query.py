@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from litegram.methods import AnswerShippingQuery
 from litegram.types import (
     LabeledPrice,

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import datetime
 import functools
 from typing import Any, NoReturn
@@ -107,7 +109,7 @@ class TestTelegramEventObserver:
 
         message = Message(
             message_id=42,
-            date=datetime.datetime.now(),
+            date=datetime.datetime.now(datetime.UTC),
             text="test",
             chat=Chat(id=42, type="private"),
             from_user=User(id=42, is_bot=False, first_name="Test"),

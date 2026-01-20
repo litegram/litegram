@@ -673,7 +673,7 @@ class Dispatcher(Router):
             )
 
             try:
-                import uvloop
+                import uvloop  # type: ignore[import-not-found]
 
             except ImportError:
                 return asyncio.run(coro)

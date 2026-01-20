@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from litegram.methods import AnswerInlineQuery
 from litegram.types import InlineQuery, User
 

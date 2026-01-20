@@ -1,13 +1,19 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 import pytest
 
-from litegram import Bot
 from litegram.client.session.middlewares.base import (
     BaseRequestMiddleware,
     NextRequestMiddlewareType,
 )
 from litegram.client.session.middlewares.manager import RequestMiddlewareManager
-from litegram.methods import Response, TelegramMethod
-from litegram.types import TelegramObject
+
+if TYPE_CHECKING:
+    from litegram import Bot
+    from litegram.methods import Response, TelegramMethod
+    from litegram.types import TelegramObject
 
 
 class TestMiddlewareManager:

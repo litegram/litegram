@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import pytest
 
 from litegram.dispatcher.flags import Flag, FlagDecorator, FlagGenerator
@@ -63,4 +65,4 @@ class TestFlagGenerator:
         generator = FlagGenerator()
 
         with pytest.raises(AttributeError):
-            generator._something
+            _ = generator._something

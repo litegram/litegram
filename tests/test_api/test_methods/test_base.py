@@ -1,10 +1,15 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
 from unittest.mock import sentinel
 
 import pytest
 
 from litegram.methods import GetMe, TelegramMethod
 from litegram.types import TelegramObject, User
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestTelegramMethodRemoveUnset:

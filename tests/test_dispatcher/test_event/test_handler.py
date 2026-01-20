@@ -1,6 +1,7 @@
+from __future__ import annotations
+
 import functools
-from collections.abc import Callable
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 import pytest
 
@@ -11,6 +12,9 @@ from litegram.handlers import BaseHandler
 from litegram.types import Update
 from litegram.utils.magic_filter import F as A
 from litegram.utils.warnings import Recommendation
+
+if TYPE_CHECKING:
+    from collections.abc import Callable
 
 
 def callback1(foo: int, bar: int, baz: int):

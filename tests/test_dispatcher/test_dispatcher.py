@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import asyncio
 import datetime
 import signal
@@ -6,7 +8,7 @@ import warnings
 from asyncio import Event
 from collections import Counter
 from contextlib import suppress
-from typing import Any
+from typing import TYPE_CHECKING, Any
 from unittest.mock import AsyncMock, patch
 
 import pytest
@@ -45,8 +47,10 @@ from litegram.types import (
     Update,
     User,
 )
-from litegram.types.error_event import ErrorEvent
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from litegram.types.error_event import ErrorEvent
+    from tests.mocked_bot import MockedBot
 
 
 async def simple_message_handler(message: Message):
@@ -57,10 +61,6 @@ async def simple_message_handler(message: Message):
 async def invalid_message_handler(message: Message):
     await asyncio.sleep(0.2)
     raise Exception(42)
-
-
-async def anext(ait):
-    return await ait.__anext__()
 
 
 RAW_UPDATE = {
@@ -130,7 +130,7 @@ class TestDispatcher:
                 update_id=42,
                 message=Message(
                     message_id=42,
-                    date=datetime.datetime.now(),
+                    date=datetime.datetime.now(datetime.UTC),
                     text="test",
                     chat=Chat(id=42, type="private"),
                     from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -227,7 +227,7 @@ class TestDispatcher:
                     update_id=42,
                     message=Message(
                         message_id=42,
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         text="test",
                         chat=Chat(id=42, type="private"),
                         from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -242,7 +242,7 @@ class TestDispatcher:
                     update_id=42,
                     edited_message=Message(
                         message_id=42,
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         text="edited test",
                         chat=Chat(id=42, type="private"),
                         from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -257,7 +257,7 @@ class TestDispatcher:
                     update_id=42,
                     channel_post=Message(
                         message_id=42,
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         text="test",
                         chat=Chat(id=-42, type="private"),
                     ),
@@ -271,7 +271,7 @@ class TestDispatcher:
                     update_id=42,
                     edited_channel_post=Message(
                         message_id=42,
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         text="test",
                         chat=Chat(id=-42, type="private"),
                     ),
@@ -331,7 +331,7 @@ class TestDispatcher:
                         data="placeholder",
                         message=Message(
                             message_id=42,
-                            date=datetime.datetime.now(),
+                            date=datetime.datetime.now(datetime.UTC),
                             text="test",
                             chat=Chat(id=42, type="private"),
                             from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -419,7 +419,7 @@ class TestDispatcher:
                     my_chat_member=ChatMemberUpdated(
                         chat=Chat(id=42, type="private"),
                         from_user=User(id=42, is_bot=False, first_name="Test"),
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         old_chat_member=ChatMemberMember(user=User(id=42, is_bot=False, first_name="Test")),
                         new_chat_member=ChatMemberMember(user=User(id=42, is_bot=False, first_name="Test")),
                     ),
@@ -434,7 +434,7 @@ class TestDispatcher:
                     chat_member=ChatMemberUpdated(
                         chat=Chat(id=42, type="private"),
                         from_user=User(id=42, is_bot=False, first_name="Test"),
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         old_chat_member=ChatMemberMember(user=User(id=42, is_bot=False, first_name="Test")),
                         new_chat_member=ChatMemberMember(user=User(id=42, is_bot=False, first_name="Test")),
                     ),
@@ -450,7 +450,7 @@ class TestDispatcher:
                         chat=Chat(id=-42, type="private"),
                         from_user=User(id=42, is_bot=False, first_name="Test"),
                         user_chat_id=42,
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                     ),
                 ),
                 True,
@@ -464,7 +464,7 @@ class TestDispatcher:
                         chat=Chat(id=-42, type="channel"),
                         message_id=12345,
                         user=User(id=42, is_bot=False, first_name="Test"),
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         old_reaction=[],
                         new_reaction=[ReactionTypeCustomEmoji(custom_emoji_id="qwerty")],
                     ),
@@ -479,7 +479,7 @@ class TestDispatcher:
                     message_reaction_count=MessageReactionCountUpdated(
                         chat=Chat(id=-42, type="channel"),
                         message_id=12345,
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         reactions=[
                             ReactionCount(
                                 type=ReactionTypeCustomEmoji(custom_emoji_id="qwerty"),
@@ -499,8 +499,8 @@ class TestDispatcher:
                         chat=Chat(id=-42, type="channel"),
                         boost=ChatBoost(
                             boost_id="qwerty",
-                            add_date=datetime.datetime.now(),
-                            expiration_date=datetime.datetime.now(),
+                            add_date=datetime.datetime.now(datetime.UTC),
+                            expiration_date=datetime.datetime.now(datetime.UTC),
                             source=ChatBoostSourceGiveaway(
                                 giveaway_message_id=77,
                             ),
@@ -517,7 +517,7 @@ class TestDispatcher:
                     removed_chat_boost=ChatBoostRemoved(
                         chat=Chat(id=-42, type="channel"),
                         boost_id="qwerty",
-                        remove_date=datetime.datetime.now(),
+                        remove_date=datetime.datetime.now(datetime.UTC),
                         source=ChatBoostSourceGiveaway(
                             giveaway_message_id=77,
                         ),
@@ -547,7 +547,7 @@ class TestDispatcher:
                         id="qwerty",
                         user=User(id=42, is_bot=False, first_name="Test"),
                         user_chat_id=42,
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         can_reply=True,
                         is_enabled=True,
                     ),
@@ -561,7 +561,7 @@ class TestDispatcher:
                     update_id=42,
                     edited_business_message=Message(
                         message_id=42,
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         text="test",
                         chat=Chat(id=42, type="private"),
                         from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -576,7 +576,7 @@ class TestDispatcher:
                     update_id=42,
                     business_message=Message(
                         message_id=42,
-                        date=datetime.datetime.now(),
+                        date=datetime.datetime.now(datetime.UTC),
                         text="test",
                         chat=Chat(id=42, type="private"),
                         from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -682,7 +682,7 @@ class TestDispatcher:
             update_id=42,
             message=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 text="test",
                 chat=Chat(id=42, type="private"),
                 from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -725,7 +725,7 @@ class TestDispatcher:
                 update_id=42,
                 message=Message(
                     message_id=42,
-                    date=datetime.datetime.fromtimestamp(0),
+                    date=datetime.datetime.fromtimestamp(0, datetime.UTC),
                     chat=Chat(id=-42, type="group"),
                 ),
             ),
@@ -955,7 +955,7 @@ class TestDispatcher:
             update_id=42,
             message=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 text="test",
                 chat=Chat(id=42, type="private"),
                 from_user=User(id=42, is_bot=False, first_name="Test"),
@@ -1079,10 +1079,39 @@ class TestDispatcher:
 
             mocked_process_update.assert_awaited()
 
-    @pytest.mark.skip("Stopping by signal should also be tested as the same as stopping by method")
     @pytest.mark.anyio
     async def test_stop_polling_by_signal(self, bot: MockedBot):
-        pass
+        dispatcher = Dispatcher()
+        bot.add_result_for(GetMe, ok=True, result=User(id=42, is_bot=True, first_name="The bot", username="tbot"))
+        running = Event()
+
+        async def _mock_updates(*_):
+            running.set()
+            while True:
+                yield Update(update_id=42)
+                await asyncio.sleep(1)
+
+        with (
+            patch("litegram.dispatcher.dispatcher.Dispatcher._process_update", new_callable=AsyncMock) as mocked_process_update,
+            patch(
+                "litegram.dispatcher.dispatcher.Dispatcher._listen_updates",
+                return_value=_mock_updates(),
+            ),
+        ):
+            task = asyncio.ensure_future(dispatcher.start_polling(bot))
+            await running.wait()
+
+            assert not dispatcher._stop_signal.is_set()
+            assert not dispatcher._stopped_signal.is_set()
+
+            dispatcher._signal_stop_polling(signal.SIGINT)
+            await task
+
+            assert dispatcher._stop_signal.is_set()
+            assert dispatcher._stopped_signal.is_set()
+            assert not task.exception()
+
+            mocked_process_update.assert_awaited()
 
     def test_run_polling(self, bot: MockedBot):
         dispatcher = Dispatcher()

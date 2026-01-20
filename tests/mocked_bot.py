@@ -1,14 +1,19 @@
+from __future__ import annotations
+
 from collections import deque
-from collections.abc import AsyncGenerator
 from typing import TYPE_CHECKING, Any
 
 from litegram import Bot
 from litegram.client.session.base import BaseSession
-from litegram.methods import TelegramMethod
 from litegram.methods.base import Response
 
 # Removed TelegramType import
 from litegram.types import UNSET_PARSE_MODE, ResponseParameters, User
+
+if TYPE_CHECKING:
+    from collections.abc import AsyncGenerator
+
+    from litegram.methods import TelegramMethod
 
 
 class MockedSession(BaseSession):
@@ -52,7 +57,7 @@ class MockedSession(BaseSession):
         timeout: int = 30,
         chunk_size: int = 65536,
         raise_for_status: bool = True,
-    ) -> AsyncGenerator[bytes, None]:  # pragma: no cover
+    ) -> AsyncGenerator[bytes]:  # pragma: no cover
         yield b""
 
 

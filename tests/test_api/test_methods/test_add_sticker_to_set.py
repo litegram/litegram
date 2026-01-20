@@ -1,9 +1,15 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 import pytest
 
 from litegram.enums import StickerFormat
 from litegram.methods import AddStickerToSet
 from litegram.types import InputSticker
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestAddStickerToSet:

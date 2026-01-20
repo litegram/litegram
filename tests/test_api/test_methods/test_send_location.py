@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import SendLocation
 from litegram.types import Chat, Location, Message
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSendLocation:
@@ -15,7 +20,7 @@ class TestSendLocation:
             ok=True,
             result=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 location=Location(longitude=3.14, latitude=3.14),
                 chat=Chat(id=42, type="private"),
             ),

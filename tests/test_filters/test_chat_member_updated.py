@@ -1,4 +1,6 @@
-from datetime import datetime
+from __future__ import annotations
+
+from datetime import UTC, datetime
 
 import pytest
 
@@ -289,7 +291,7 @@ class TestChatMemberUpdatedStatusFilter:
     USER = User(id=42, first_name="Test", is_bot=False)
     PARAMS = {
         "user": USER,
-        "until_date": datetime.now(),
+        "until_date": datetime.now(UTC),
         "is_anonymous": True,
         "custom_title": "title",
         "can_be_edited": True,
@@ -375,7 +377,7 @@ class TestChatMemberUpdatedStatusFilter:
             from_user=self.USER,
             old_chat_member=old,
             new_chat_member=new,
-            date=datetime.now(),
+            date=datetime.now(UTC),
         )
 
         assert await updated_filter(event) is result

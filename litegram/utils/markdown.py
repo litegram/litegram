@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Any
 
 from .text_decorations import html_decoration, markdown_decoration

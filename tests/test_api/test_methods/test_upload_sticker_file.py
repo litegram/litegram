@@ -1,9 +1,15 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 import pytest
 
 from litegram.enums import StickerFormat
 from litegram.methods import UploadStickerFile
 from litegram.types import BufferedInputFile, File
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestUploadStickerFile:

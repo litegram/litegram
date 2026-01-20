@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from dataclasses import dataclass
 from re import Match
 from typing import TYPE_CHECKING

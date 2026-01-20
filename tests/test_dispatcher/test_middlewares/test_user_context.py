@@ -1,4 +1,6 @@
-from datetime import datetime
+from __future__ import annotations
+
+from datetime import UTC, datetime
 from unittest.mock import patch
 
 import pytest
@@ -74,8 +76,8 @@ class TestUserContextMiddleware:
         data = {}
 
         chat = Chat(id=1, type="private", title="Test")
-        add_date = datetime.now()
-        expiration_date = datetime.now()
+        add_date = datetime.now(UTC)
+        expiration_date = datetime.now(UTC)
 
         boost = ChatBoost(boost_id="Test", add_date=add_date, expiration_date=expiration_date, source=source)
         update = Update(update_id=42, chat_boost=ChatBoostUpdated(chat=chat, boost=boost))

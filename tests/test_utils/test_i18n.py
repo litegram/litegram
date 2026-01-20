@@ -1,4 +1,6 @@
-from typing import Any
+from __future__ import annotations
+
+from typing import TYPE_CHECKING, Any
 
 import pytest
 
@@ -15,7 +17,9 @@ from litegram.utils.i18n import (
 )
 from litegram.utils.i18n.context import get_i18n, gettext, lazy_gettext
 from tests.conftest import DATA_DIR
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 @pytest.fixture(name="i18n")
@@ -98,7 +102,7 @@ async def next_call(event, data):
 
 class TestSimpleI18nMiddleware:
     @pytest.mark.parametrize(
-        "event_from_user,result",
+        "event_from_user,expected",
         [
             [None, "test"],
             [User(id=42, is_bot=False, language_code="ru", first_name="Test"), "тест"],
@@ -106,14 +110,14 @@ class TestSimpleI18nMiddleware:
         ],
     )
     @pytest.mark.anyio
-    async def test_middleware(self, i18n: I18n, event_from_user, result):
+    async def test_middleware(self, i18n: I18n, event_from_user, expected):
         middleware = SimpleI18nMiddleware(i18n=i18n)
         result = await middleware(
             next_call,
             Update(update_id=42),
             {"event_from_user": event_from_user},
         )
-        assert result == result
+        assert result == expected
 
     @pytest.mark.anyio
     async def test_setup(self, i18n: I18n):

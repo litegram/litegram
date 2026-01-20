@@ -20,3 +20,12 @@ repos:
         files: &files '^(litegram|tests|examples)'
       - id: ruff-format
         files: *files
+
+  - repo: local
+    hooks:
+      - id: ty
+        name: ty
+        entry: uv run ty check litegram tests examples scripts
+        language: system
+        types: [python]
+        pass_filenames: false

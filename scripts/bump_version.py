@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Version bumping script for litegram (replaces hatch version)."""
 
+from __future__ import annotations
+
 import re
 import sys
 from pathlib import Path
@@ -43,7 +45,8 @@ def bump_version(part: str) -> str:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    REQUIRED_ARGS_COUNT = 2
+    if len(sys.argv) != REQUIRED_ARGS_COUNT:
         sys.exit(1)
 
     new_version = bump_version(sys.argv[1])

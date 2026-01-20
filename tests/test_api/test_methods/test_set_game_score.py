@@ -1,12 +1,14 @@
+from __future__ import annotations
+
 from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import SetGameScore
-from tests.mocked_bot import MockedBot
 
 if TYPE_CHECKING:
     from litegram.types import Message
+    from tests.mocked_bot import MockedBot
 
 
 class TestSetGameScore:

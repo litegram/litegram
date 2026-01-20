@@ -1,4 +1,7 @@
-from datetime import datetime
+from __future__ import annotations
+
+from datetime import UTC, datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
@@ -10,7 +13,9 @@ from litegram.types import (
     TransactionPartnerUser,
     User,
 )
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestGetStarTransactions:
@@ -26,7 +31,7 @@ class TestGetStarTransactions:
                         id="test1",
                         user=user,
                         amount=1,
-                        date=datetime.now(),
+                        date=datetime.now(UTC),
                         source=TransactionPartnerUser(
                             user=user,
                             transaction_type=TransactionPartnerUserTransactionTypeEnum.GIFT_PURCHASE,
@@ -36,7 +41,7 @@ class TestGetStarTransactions:
                         id="test2",
                         user=user,
                         amount=1,
-                        date=datetime.now(),
+                        date=datetime.now(UTC),
                         receiver=TransactionPartnerUser(
                             user=user,
                             transaction_type=TransactionPartnerUserTransactionTypeEnum.GIFT_PURCHASE,

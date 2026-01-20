@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import pytest
 
 from litegram.utils.backoff import Backoff, BackoffConfig

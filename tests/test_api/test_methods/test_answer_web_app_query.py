@@ -1,8 +1,14 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 import pytest
 
 from litegram.methods import AnswerWebAppQuery
 from litegram.types import InlineQueryResultPhoto, SentWebAppMessage
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestAnswerWebAppQuery:

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from typing import Any
 
 from litegram.utils.i18n.core import I18n

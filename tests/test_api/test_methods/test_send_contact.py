@@ -1,10 +1,15 @@
+from __future__ import annotations
+
 import datetime
+from typing import TYPE_CHECKING
 
 import pytest
 
 from litegram.methods import SendContact
 from litegram.types import Chat, Contact, Message
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestSendContact:
@@ -15,7 +20,7 @@ class TestSendContact:
             ok=True,
             result=Message(
                 message_id=42,
-                date=datetime.datetime.now(),
+                date=datetime.datetime.now(datetime.UTC),
                 contact=Contact(phone_number="911", first_name="911"),
                 chat=Chat(id=42, type="private"),
             ),

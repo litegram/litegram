@@ -1,6 +1,9 @@
+from __future__ import annotations
+
 import asyncio
 import time
-from datetime import datetime
+from datetime import UTC, datetime
+from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, patch
 
 import pytest
@@ -9,7 +12,9 @@ from litegram import Bot, flags
 from litegram.dispatcher.event.handler import HandlerObject
 from litegram.types import Chat, Message, User
 from litegram.utils.chat_action import ChatActionMiddleware, ChatActionSender
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 class TestChatActionSender:
@@ -110,7 +115,7 @@ class TestChatActionMiddleware:
             message = Message(
                 chat=Chat(id=42, type="private", title="Test"),
                 from_user=User(id=42, is_bot=False, first_name="Test"),
-                date=datetime.now(),
+                date=datetime.now(UTC),
                 message_id=42,
             )
 

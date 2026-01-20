@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import sys
 from datetime import UTC, datetime, timezone
 from typing import Annotated

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from litegram import Bot, F, Router
 from litegram.filters import Command, CommandStart
 from litegram.types import (

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from litegram.methods import AnswerPreCheckoutQuery
 from litegram.types import PreCheckoutQuery, User
 

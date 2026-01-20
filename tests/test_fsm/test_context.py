@@ -1,9 +1,15 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 import pytest
 
 from litegram.fsm.context import FSMContext
 from litegram.fsm.storage.base import StorageKey
 from litegram.fsm.storage.memory import MemoryStorage
-from tests.mocked_bot import MockedBot
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
 
 
 @pytest.fixture()

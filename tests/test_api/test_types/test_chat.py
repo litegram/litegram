@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from pytest import mark, param
 
 from litegram.enums import ChatAction

@@ -134,9 +134,7 @@ exclude = [
     "venv",
     ".venv",
     "docs",
-    "tests",
     "dev",
-    "scripts",
     "*.egg-info",
 ]
 
@@ -194,20 +192,7 @@ known-first-party = [
 "litegram/types/*" = ["E501"]
 "litegram/methods/*" = ["E501"]
 "litegram/enums/*" = ["E501"]
-"tests/**" = [
-    "PLR0124",
-    "PLR2004",
-    "DTZ005",
-    "DTZ006",
-    "A001",
-    "A004",
-    "B018",
-    "B020",
-    "B904",
-    "E501",
-    "F821",
-    "UP",
-]
+"tests/**" = ["PLR2004"]
 
 
 [tool.pytest.ini_options]

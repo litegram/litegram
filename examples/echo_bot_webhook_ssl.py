@@ -2,6 +2,8 @@
 This example shows how to use webhook with SSL certificate.
 """
 
+from __future__ import annotations
+
 import logging
 import ssl
 import sys

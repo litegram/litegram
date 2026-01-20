@@ -1,4 +1,6 @@
-from datetime import datetime
+from __future__ import annotations
+
+from datetime import UTC, datetime
 
 import pytest
 
@@ -41,7 +43,7 @@ CHAT_MEMBER_ADMINISTRATOR = ChatMemberAdministrator(
 
 CHAT_MEMBER_BANNED = ChatMemberBanned(
     user=USER,
-    until_date=datetime.now(),
+    until_date=datetime.now(UTC),
 ).model_dump()
 
 CHAT_MEMBER_LEFT = ChatMemberLeft(
@@ -74,7 +76,7 @@ CHAT_MEMBER_RESTRICTED = ChatMemberRestricted(
     can_invite_users=False,
     can_pin_messages=False,
     can_manage_topics=False,
-    until_date=datetime.now(),
+    until_date=datetime.now(UTC),
 ).model_dump()
 
 
