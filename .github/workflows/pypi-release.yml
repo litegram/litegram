@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/project/litegram/${{ steps.package-version.outputs.value }}/
+      url: https://pypi.org/project/litegram/${{ steps.package-version.outputs.current-version }}/
     permissions:
       id-token: write
     steps:
