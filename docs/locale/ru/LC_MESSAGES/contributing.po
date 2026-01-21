@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../../contributing.rst:73
 msgid "Setup project"
-msgstr "Настройка проеки"
+msgstr "Настройка проекта"
 
 #: ../../contributing.rst:75
 #, fuzzy
@@ -192,7 +192,7 @@ msgstr ""
 #: ../../contributing.rst:124
 #, fuzzy
 msgid "**Setup project with uv:**"
-msgstr "Настройка проеки"
+msgstr "**Настройка проекта с помощью uv:**"
 
 #: ../../contributing.rst:126
 msgid ""

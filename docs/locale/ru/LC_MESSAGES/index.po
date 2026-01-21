@@ -63,8 +63,8 @@ msgid ""
 msgstr ""
 "**litegram** — это современный и полностью асинхронный фреймворк для "
 "разработки чат-ботов `Telegram Bot API "
-"<https://core.telegram.org/bots/api>`_ на Python 3.10+ с использованием "
-"`asyncio <https://docs.python.org/3/library/asyncio.html>`_ и `httpx "
+"<https://core.telegram.org/bots/api>`_ на Python 3.13+ с использованием "
+"`litestar <https://github.com/litestar-org/litestar>`_ и `httpx "
 "<https://github.com/encode/httpx>`_."
 
 #: ../../../README.rst:42
@@ -110,7 +110,7 @@ msgid ""
 " gets fast updates to the latest versions of the Bot API"
 msgstr ""
 "Поддерживает `Telegram Bot API 9.3 <https://core.telegram.org/bots/api>`_"
-" и быстро получает обновления к последних версий API"
+" и быстро получает обновления к последним версиям API"
 
 #: ../../../README.rst:55
 msgid "Updates router (Blueprints)"
@@ -128,7 +128,7 @@ msgid ""
 "#magic-filters>`_"
 msgstr ""
 "Использует мощные `магические фильтры "
-"<https://litegram.readthedocs.io/en/latest/dispatcher/filters/magic_filters.html"
+"<https://litegram.readthedocs.io/ru/latest/dispatcher/filters/magic_filters.html"
 "#magic-filters>`_"
 
 #: ../../../README.rst:58
@@ -159,7 +159,7 @@ msgstr ""
 
 #: ../../../README.rst:69
 msgid "If you have any questions, you can visit our community chats on Telegram:"
-msgstr "Если в вас есть вопросы, вы можете посетить наши сообщества в Telegram:"
+msgstr "Если у вас есть вопросы, вы можете посетить наши сообщества в Telegram:"
 
 #: ../../../README.rst:71
 msgid "🇷🇺 `@litegram_ru <https://t.me/litegram_ru>`_"

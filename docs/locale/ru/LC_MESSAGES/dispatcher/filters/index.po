@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../../dispatcher/filters/index.rst:5
 msgid "Filtering events"
-msgstr "Фильтрування событий"
+msgstr "Фильтрация событий"
 
 #: ../../dispatcher/filters/index.rst:7
 #, fuzzy
@@ -28,56 +28,54 @@ msgid ""
 "default, all handlers has empty set of filters, so all updates will be "
 "passed to first handler that has empty set of filters."
 msgstr ""
-"Фильтри потрибни для маршрутизации оновлень к конкретного обробника "
-"(handler) . Пошук обробника (handler) всегда зупиняеться после першого "
-"збигу набору фильтрив."
+"Фильтры нужны для маршрутизации обновлений к конкретному обработчику. "
+"Поиск обработчика всегда останавливается на первом совпадении набора "
+"фильтров."
 
 #: ../../dispatcher/filters/index.rst:11
 #, fuzzy
 msgid "*litegram* has some builtin useful filters or you can write own filters."
-msgstr "*litegram* имеет декилька вбукваних корисних фильтрив."
+msgstr "*litegram* имеет несколько встроенных полезных фильтров."
 
 #: ../../dispatcher/filters/index.rst:14
 msgid "Builtin filters"
-msgstr "Вбуквани фильтри"
+msgstr "Встроенные фильтры"
 
 #: ../../dispatcher/filters/index.rst:16
 msgid "Here is list of builtin filters:"
-msgstr "Ось список вбукваних фильтрив:"
+msgstr "Вот список встроенных фильтров:"
 
 #: ../../dispatcher/filters/index.rst:29
 msgid "Writing own filters"
-msgstr "Написання власних фильтрив"
+msgstr "Написание собственных фильтров"
 
 #: ../../dispatcher/filters/index.rst:31
 msgid "Filters can be:"
-msgstr "Фильтри бувають:"
+msgstr "Фильтры могут быть:"
 
 #: ../../dispatcher/filters/index.rst:33
 msgid "Asynchronous function (:code:`async def my_filter(*args, **kwargs): pass`)"
-msgstr "Асинхронною функциею (:code:`async def my_filter(*args, **kwargs): pass`)"
+msgstr "Асинхронной функцией (:code:`async def my_filter(*args, **kwargs): pass`)"
 
 #: ../../dispatcher/filters/index.rst:34
 msgid "Synchronous function (:code:`def my_filter(*args, **kwargs): pass`)"
-msgstr "Синхронною функциею (:code:`def my_filter(*args, **kwargs): pass`)"
+msgstr "Синхронной функцией (:code:`def my_filter(*args, **kwargs): pass`)"
 
 #: ../../dispatcher/filters/index.rst:35
 msgid "Anonymous function (:code:`lambda event: True`)"
-msgstr "Анонимною функциею (:code:`lambda event: True`)"
+msgstr "Анонимной функцией (:code:`lambda event: True`)"
 
 #: ../../dispatcher/filters/index.rst:36
 msgid "Any awaitable object"
-msgstr ""
-"Будь-которым очикуваним объектом (awaitable object, объект, который может бути "
-"використаний в :code:`await` вирази)"
+msgstr "Любым ожидаемым объектом (awaitable object)"
 
 #: ../../dispatcher/filters/index.rst:37
 msgid "Subclass of :class:`litegram.filters.base.Filter`"
-msgstr "Пидкласом :class:`litegram.filters.base.Filter`"
+msgstr "Подклассом :class:`litegram.filters.base.Filter`"
 
 #: ../../dispatcher/filters/index.rst:38
 msgid "Instances of :ref:`MagicFilter <magic-filters>`"
-msgstr "Екземпляром  :ref:`MagicFilter <magic-filters>`"
+msgstr "Экземпляром :ref:`MagicFilter <magic-filters>`"
 
 #: ../../dispatcher/filters/index.rst:40
 msgid ""
@@ -85,13 +83,13 @@ msgid ""
 "filter - resulted data will be propagated to the next filters and handler"
 " as keywords arguments."
 msgstr ""
-"и имеет повертати bool или dict. Якщо словник передаеться как результат "
-"фильтра, отримани дани будуть передани к наступних фильтрив и обробника "
-"как аргументи ключових слив."
+"и должен возвращать bool или dict. Если в качестве результата фильтра "
+"передан словарь — полученные данные будут переданы следующим фильтрам и "
+"обработчику в качестве именованных аргументов (keywords arguments)."
 
 #: ../../dispatcher/filters/index.rst:45
 msgid "Base class for own filters"
-msgstr "Базовий клас для власних фильтрив"
+msgstr "Базовый класс для собственных фильтров"
 
 #: litegram.filters.base.Filter:1 of
 msgid ""
@@ -99,17 +97,17 @@ msgid ""
 " write subclass of this class with overriding the :code:`__call__` method"
 " and adding filter attributes."
 msgstr ""
-"Якщо Ви хотите зарееструвати власни фильтри, как вбудовани фильтри, Вам "
-"потрибно буде написати пидклас этого класу с заминою методу "
-":code:`__call__` и додаванням атрибутив фильтра."
+"Если вы хотите зарегистрировать собственные фильтры, как встроенные фильтры, вам "
+"нужно будет написать подкласс этого класса с переопределением метода "
+":code:`__call__` и добавлением атрибутов фильтра."
 
 #: litegram.filters.base.Filter.__call__:1 of
 msgid "This method should be overridden."
-msgstr "Этот метод следует перевизначити."
+msgstr "Этот метод следует переопределить."
 
 #: litegram.filters.base.Filter.__call__:3 of
 msgid "Accepts incoming event and should return boolean or dict."
-msgstr "Приймае вхидну подию и имеет поверити логичне (bool) значение или dict."
+msgstr "Принимает входящее событие и должен вернуть логическое (bool) значение или dict."
 
 #: ../../dispatcher/filters/index.rst
 msgid "Returns"
@@ -125,8 +123,8 @@ msgid ""
 "Also if you want to extend handler flags with using this filter you "
 "should implement this method"
 msgstr ""
-"Крим того, если вы хотите розширити маркери обробника (handler) за "
-"помощью этого фильтра, вам следует реализувати этот метод"
+"Кроме того, если вы хотите расширить флаги обработчика (handler) с "
+"помощью этого фильтра, вам следует реализовать этот метод"
 
 #: ../../dispatcher/filters/index.rst
 msgid "Parameters"
@@ -134,35 +132,35 @@ msgstr "Параметры"
 
 #: litegram.filters.base.Filter.update_handler_flags:4 of
 msgid "existing flags, can be updated directly"
-msgstr "иснуючи маркери, можна оновити непосредственно"
+msgstr "существующие флаги, можно обновить напрямую"
 
 #: ../../dispatcher/filters/index.rst:53
 msgid "Own filter example"
-msgstr "Пример власного фильтра"
+msgstr "Пример собственного фильтра"
 
 #: ../../dispatcher/filters/index.rst:55
 msgid "For example if you need to make simple text filter:"
-msgstr "Например, если Вам потрибно створити простий текстовий фильтр:"
+msgstr "Например, если вам нужно создать простой текстовый фильтр:"
 
 #: ../../dispatcher/filters/index.rst:62
 msgid "Combining Filters"
-msgstr "Комбинування фильтрив"
+msgstr "Комбинирование фильтров"
 
 #: ../../dispatcher/filters/index.rst:64
 msgid "In general, all filters can be combined in two ways"
-msgstr "Взагалом, уси фильтри можна комбинувати двома способами"
+msgstr "В целом, все фильтры можно комбинировать двумя способами"
 
 #: ../../dispatcher/filters/index.rst:68
 msgid "Recommended way"
-msgstr "Рекоменкваний спосиб"
+msgstr "Рекомендуемый способ"
 
 #: ../../dispatcher/filters/index.rst:70
 msgid ""
 "If you specify multiple filters in a row, it will be checked with an "
 "\"and\" condition:"
 msgstr ""
-"Якщо Ви вкажете килька фильтрив поспиль, это буде проверено умовою "
-"\"and\" :"
+"Если вы укажете несколько фильтров подряд, они будут проверены по условию "
+"\"and\":"
 
 #: ../../dispatcher/filters/index.rst:77
 msgid ""
@@ -170,9 +168,9 @@ msgid ""
 "(\"or\" condition) you can register the handler twice or more times as "
 "you like"
 msgstr ""
-"Крим того, если вы хотите использовать два альтернативни способи "
-"запуску одного обробника (умова \"or\"), вы можете зарееструвати обробник"
-" двичи или больше разив, как вам подобаеться"
+"Кроме того, если вы хотите использовать два альтернативных способа "
+"запуска одного и того же обработчика (условие \"or\"), вы можете "
+"зарегистрировать обработчик дважды или более раз, как вам удобно"
 
 #: ../../dispatcher/filters/index.rst:86
 msgid ""
@@ -180,19 +178,19 @@ msgid ""
 " have an *IsAdmin* filter and you want to check if the user is not an "
 "admin"
 msgstr ""
-"Також иногда Вам потрибно буде инвертувати результат фильтра, например, в"
-" вас является фильтр *IsAdmin* и вы хотите проверить, чи пользователь не является "
+"Также иногда вам нужно будет инвертировать результат фильтра, например, у"
+" вас есть фильтр *IsAdmin* и вы хотите проверить, не является ли пользователь "
 "администратором"
 
 #: ../../dispatcher/filters/index.rst:95
 msgid "Another possible way"
-msgstr "Інший можливий спосиб"
+msgstr "Другой возможный способ"
 
 #: ../../dispatcher/filters/index.rst:97
 msgid ""
 "An alternative way is to combine using special functions (:func:`and_f`, "
 ":func:`or_f`, :func:`invert_f` from :code:`litegram.filters` module):"
 msgstr ""
-"Альтернативним способом является об’еднання с помощью специальних функций "
-"(:func:`and_f`, :func:`or_f`, :func:`invert_f` с модуля "
+"Альтернативным способом является объединение с помощью специальных функций "
+"(:func:`and_f`, :func:`or_f`, :func:`invert_f` из модуля "
 ":code:`litegram.filters`):"

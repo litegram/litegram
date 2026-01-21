@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../dispatcher/dependency_injection.rst:3
 msgid "Dependency injection"
-msgstr "Ін'екция залежностей"
+msgstr "Внедрение зависимостей"
 
 #: ../../dispatcher/dependency_injection.rst:5
 msgid ""
@@ -29,14 +29,14 @@ msgid ""
 "<https://en.wikipedia.org/wiki/SOLID>`_ dependency inversion and single "
 "responsibility principles."
 msgstr ""
-"Ін'екция залежностей — это техника программирования, которая робить класи "
-"незалежними от ихних залежностей. Вона досягаеться шляхом виддилення "
-"використання объекта от его створення. Це допомагае дотримуватися "
-"принципив инверсии залежностей и единои видповидальности за SOLID."
+"Внедрение зависимостей — это техника программирования, которая делает классы "
+"независимыми от их зависимостей. Оно достигается путем отделения "
+"использования объекта от его создания. Это помогает соблюдать "
+"принципы инверсии зависимостей и единой ответственности по SOLID."
 
 #: ../../dispatcher/dependency_injection.rst:12
 msgid "How it works in litegram"
-msgstr "Как это працюе в litegram"
+msgstr "Как это работает в litegram"
 
 #: ../../dispatcher/dependency_injection.rst:14
 msgid ""
@@ -45,8 +45,8 @@ msgid ""
 "the context."
 msgstr ""
 "Для каждого обновления :class:`litegram.dispatcher.dispatcher.Dispatcher` "
-"передае дани контексту обработки. Фильтри и промижне програмне забезпечення "
-"також могут вносити змини к контексту."
+"передает данные контекста обработки. Фильтры и промежуточное ПО также "
+"могут вносить изменения в контекст."
 
 #: ../../dispatcher/dependency_injection.rst:17
 msgid ""
@@ -54,17 +54,17 @@ msgid ""
 "parameter in handler or filter. For example, to get "
 ":class:`litegram.fsm.context.FSMContext` we do it like that:"
 msgstr ""
-"Чтобы получить доступ к контекстних данных, вы должны указать видповидний "
-"параметр ключового слова в обробнику или фильтри. Например, чтобы получить "
-":class:`litegram.fsm.context.FSMContext`, ми робимо это так:"
+"Чтобы получить доступ к контекстным данным, вы должны указать соответствующий "
+"ключевой параметр в обработчике или фильтре. Например, чтобы получить "
+":class:`litegram.fsm.context.FSMContext`, мы делаем это так:"
 
 #: ../../dispatcher/dependency_injection.rst:30
 msgid "Injecting own dependencies"
-msgstr "Ін'екция власних залежностей"
+msgstr "Внедрение собственных зависимостей"
 
 #: ../../dispatcher/dependency_injection.rst:32
 msgid "Litegram provides several ways to complement / modify contextual data."
-msgstr "Litegram предосивляет килька способив для кповнення/модификации контекстних данных."
+msgstr "Litegram предоставляет несколько способов дополнения/модификации контекстных данных."
 
 #: ../../dispatcher/dependency_injection.rst:34
 msgid ""
@@ -74,10 +74,10 @@ msgid ""
 ":class:`litegram.webhook.litestar_server.SimpleRequestHandler` "
 "initialization if you use webhooks."
 msgstr ""
-"Перший и найпростиший спосиб — это просто указать именованные аргументи во время "
-"инициализации :class:`litegram.dispatcher.dispatcher.Dispatcher`, запуску методив "
+"Первый и самый простой способ — это просто указать именованные аргументы во время "
+"инициализации :class:`litegram.dispatcher.dispatcher.Dispatcher`, запуска методов "
 "опроса или инициализации "
-":class:`litegram.webhook.litestar_server.SimpleRequestHandler`, если вы використовуете вебхуки."
+":class:`litegram.webhook.litestar_server.SimpleRequestHandler`, если вы используете вебхуки."
 
 #: ../../dispatcher/dependency_injection.rst:46
 msgid "Analogy for webhook:"
@@ -88,24 +88,24 @@ msgid ""
 ":class:`litegram.dispatcher.dispatcher.Dispatcher`'s workflow data also "
 "can be supplemented by setting values as in a dictionary:"
 msgstr ""
-"Дани робочого процесса :class:`litegram.dispatcher.dispatcher.Dispatcher` також могут "
-"доповнюватися шляхом встановлення значень, как в словнику:"
+"Данные рабочего процесса :class:`litegram.dispatcher.dispatcher.Dispatcher` также могут "
+"дополняться путем установки значений, как в словаре:"
 
 #: ../../dispatcher/dependency_injection.rst:63
 msgid ""
 "The middlewares updates the context quite often. You can read more about "
 "them on this page:"
 msgstr ""
-"Промижне програмне забезпечення досить часто оновлюе контекст. Вы можете "
-"прочитать о это больше на ций сторинци:"
+"Промежуточное ПО достаточно часто обновляет контекст. Вы можете "
+"прочитать об этом больше на этой странице:"
 
 #: ../../dispatcher/dependency_injection.rst:66
 msgid ":ref:`Middlewares <middlewares>`"
-msgstr ":ref:`Промеждуне програмне забезпечення <middlewares>`"
+msgstr ":ref:`Middlewares <middlewares>`"
 
 #: ../../dispatcher/dependency_injection.rst:68
 msgid "The last way is to return a dictionary from the filter:"
-msgstr "Осинний спосиб — вернуть словник из фильтра:"
+msgstr "Последний способ — вернуть словарь из фильтра:"
 
 #: ../../dispatcher/dependency_injection.rst:72
 msgid ""
@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../dispatcher/dependency_injection.rst:76
 msgid "Using type hints"
-msgstr "Использование пидказок типов"
+msgstr "Использование аннотаций типов"
 
 #: ../../dispatcher/dependency_injection.rst:80
 msgid ""
@@ -125,24 +125,24 @@ msgid ""
 "correct operation of the dispatcher. However, it is recommended to use it"
 " to improve the readability of the code."
 msgstr ""
-"Использование пидказок типов для данных промижного програмного забезпечення "
-"необов'язкове й не потрибне для правильнои роботи диспетчера. Проте "
-"рекомендуеться использовать их для покращення читабельности коду."
+"Использование аннотаций типов для данных промежуточного ПО необязательно и "
+"не требуется для корректной работы диспетчера. Однако рекомендуется "
+"использовать их для улучшения читаемости кода."
 
 #: ../../dispatcher/dependency_injection.rst:83
 msgid ""
 "You can use type hints to specify the type of the context data in the "
 "middlewares, filters and handlers."
 msgstr ""
-"Вы можете использовать пидказки типов для визначення типа контекстних "
-"данных в промижному ПЗ, фильтрах и обробниках."
+"Вы можете использовать аннотации типов для определения типа контекстных "
+"данных в промежуточном ПО, фильтрах и обработчиках."
 
 #: ../../dispatcher/dependency_injection.rst:85
 msgid ""
 "The default middleware data typed dict can be found in "
 ":class:`litegram.dispatcher.middlewares.data.MiddlewareData`."
 msgstr ""
-"Словник типов данных по умолчанию для промижного ПЗ можна знайти в "
+"Словарь типов данных по умолчанию для промежуточного ПО можно найти в "
 ":class:`litegram.dispatcher.middlewares.data.MiddlewareData`."
 
 #: ../../dispatcher/dependency_injection.rst:87
@@ -151,9 +151,9 @@ msgid ""
 ":class:`litegram.dispatcher.middlewares.data.MiddlewareData` as a base "
 "class and specify the type hints for the new fields."
 msgstr ""
-"Якщо вы розширили контекстни дани, вы можете использовать "
-":class:`litegram.dispatcher.middlewares.data.MiddlewareData` как базовий клас "
-"и указать пидказки типов для нових полив."
+"В случае если вы расширили данные контекста, вы можете использовать "
+":class:`litegram.dispatcher.middlewares.data.MiddlewareData` как базовый класс "
+"и указать аннотации типов для новых полей."
 
 #: ../../dispatcher/dependency_injection.rst:91
 msgid ""
@@ -163,38 +163,38 @@ msgid ""
 "known issue and it is not a bug. You can ignore this warning or use "
 ":code:`# type: ignore` comment."
 msgstr ""
-"Якщо вы використовуете инструменты проверки типов, такие как mypy, вы "
-"можете получить попередження о те, что эти пидказки типов порушують "
-"принцип пидстановки Лисков через те, что сувориший тип не является пидкласом "
-":code:`dict[str, Any]`. Це видома проблема, и это не является помилкою. Вы можете "
-"проигнорувати это попередження или використати коментар :code:`# type: ignore`."
+"Если вы используете инструменты проверки типов, такие как mypy, вы "
+"можете получить предупреждение о том, что эти аннотации типов нарушают "
+"принцип подстановки Лисков из-за того, что более строгий тип не является подклассом "
+":code:`dict[str, Any]`. Это известная проблема, и она не является ошибкой. Вы можете "
+"проигнорировать это предупреждение или использовать комментарий :code:`# type: ignore`."
 
 #: ../../dispatcher/dependency_injection.rst:94
 msgid "Example of using type hints:"
-msgstr "Пример викорисиння пидказок типов:"
+msgstr "Пример использования аннотаций типов:"
 
 #: ../../dispatcher/dependency_injection.rst:119
 msgid "Available context data type helpers"
-msgstr "Доступни помичники для типов контекстних данных"
+msgstr "Доступные помощники для типов контекстных данных"
 
 #: litegram.dispatcher.middlewares.data.MiddlewareData:1 of
 msgid "Data passed to the handler by the middlewares."
-msgstr "Дани, передани обробнику промеждуним ПЗ."
+msgstr "Данные, передаваемые обработчику промежуточным ПО."
 
 #: litegram.dispatcher.middlewares.data.MiddlewareData:3 of
 msgid "You can add your own data by extending this class."
-msgstr "Ви можетте добавить власни дани, розширивши этой клас."
+msgstr "Вы можете добавить собственные данные, расширив этот класс."
 
 #: litegram.dispatcher.middlewares.data.I18nData:1 of
 msgid "I18n related data."
-msgstr "Дани, пов'язани с I18n."
+msgstr "Данные, связанные с I18n."
 
 #: litegram.dispatcher.middlewares.data.I18nData:3 of
 msgid ""
 "Is not included by default, you need to add it to your own Data class if "
 "you need it."
 msgstr ""
-"За замовчуванням не включено, вам потрибно додати это к власного класу Даних, "
+"По умолчанию не включено, вам нужно добавить это в собственный класс данных, "
 "если это необходимо."
 
 #: ../../docstring litegram.dispatcher.middlewares.data.I18nData.i18n:1 of
@@ -204,4 +204,4 @@ msgstr "Объект I18n."
 #: ../../docstring
 #: litegram.dispatcher.middlewares.data.I18nData.i18n_middleware:1 of
 msgid "I18n middleware."
-msgstr "Промеждуне ПЗ для I18n."
+msgstr "Промежуточное ПО для I18n."

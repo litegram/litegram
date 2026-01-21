@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../../dispatcher/filters/command.rst:3
 msgid "Command"
-msgstr "Команди"
+msgstr "Команды"
 
 #: ../../dispatcher/filters/command.rst:6
 msgid "Usage"
@@ -26,7 +26,7 @@ msgstr "Использование"
 
 #: ../../dispatcher/filters/command.rst:8
 msgid "Filter single variant of commands: :code:`Command(\"start\")`"
-msgstr "Фильтр единого варианту команд: :code:`Command(\"start\")`"
+msgstr "Фильтр одиночного варианта команд: :code:`Command(\"start\")`"
 
 #: ../../dispatcher/filters/command.rst:9
 #, fuzzy
@@ -34,7 +34,7 @@ msgid ""
 "Handle command by regexp pattern: "
 ":code:`Command(re.compile(r\"item_(\\\\d+)\"))`"
 msgstr ""
-"Обробка команды за шаблоном регулярного виразу: "
+"Обработка команды по шаблону регулярного выражения: "
 ":code:`Command(re.compile(r\"item_(\\d+)\"))`"
 
 #: ../../dispatcher/filters/command.rst:10
@@ -43,7 +43,7 @@ msgid ""
 "Match command by multiple variants: :code:`Command(\"item\", "
 "re.compile(r\"item_(\\\\d+)\"))`"
 msgstr ""
-"Поривняння команды за килькома вариантами: :code:`Command(\"item\", "
+"Сопоставление команды по нескольким вариантам: :code:`Command(\"item\", "
 "re.compile(r\"item_(\\d+)\"))`"
 
 #: ../../dispatcher/filters/command.rst:11
@@ -51,7 +51,7 @@ msgid ""
 "Handle commands in public chats intended for other bots: "
 ":code:`Command(\"command\", ignore_mention=True)`"
 msgstr ""
-"Обробка команды в публичних чатах, призначених для других ботив: "
+"Обработка команды в публичных чатах, предназначенных для других ботов: "
 ":code:`Command(\"command\", ignore_mention=True)`"
 
 #: ../../dispatcher/filters/command.rst:12
@@ -66,23 +66,23 @@ msgstr ""
 
 #: ../../dispatcher/filters/command.rst:16
 msgid "Command cannot include spaces or any whitespace"
-msgstr "Команда не может мистити пробилив чи переносив рядкив"
+msgstr "Команда не может содержать пробелы или любые другие пробельные символы"
 
 #: litegram.filters.command.Command:1 of
 msgid "This filter can be helpful for handling commands from the text messages."
-msgstr "Этот фильтр может бути корисним для обработки команд из текстовых сообщений."
+msgstr "Этот фильтр может быть полезен для обработки команд из текстовых сообщений."
 
 #: litegram.filters.command.Command:3 of
 msgid ""
 "Works only with :class:`litegram.types.message.Message` events which have "
 "the :code:`text`."
 msgstr ""
-"Працюе только с подиями :class:`litegram.types.message.Message` , что мають  "
+"Работает только с событиями :class:`litegram.types.message.Message`, которые имеют "
 ":code:`text`."
 
 #: litegram.filters.command.Command.__init__:1 of
 msgid "List of commands (string or compiled regexp patterns)"
-msgstr "Перелик команд (рядки или скомпильовани шаблони регулярних виразив)"
+msgstr "Список команд (строки или скомпилированные регулярные выражения)"
 
 #: ../../dispatcher/filters/command.rst
 msgid "Parameters"
@@ -94,45 +94,45 @@ msgid ""
 "all of allowed prefixes, for example: :code:`\"/!\"` will work with "
 "commands prefixed by :code:`\"/\"` or :code:`\"!\"`."
 msgstr ""
-"Префикс для команды. Префикс всегда складаеться с одного символу, але здесь"
-" вы можете передати все дозволени префикси, например: :code:`\"/!\"` "
-"працюватиме с командами с префиксом :code:`\"/\"` или :code:`\"!\" `."
+"Префикс для команды. Префикс всегда состоит из одного символа, но здесь"
+" вы можете передать все разрешенные префиксы, например: :code:`\"/!\"` "
+"будет работать с командами с префиксом :code:`\"/\"` или :code:`\"!\"`."
 
 #: litegram.filters.command.Command.__init__:7 of
 msgid "Ignore case (Does not work with regexp, use flags instead)"
 msgstr ""
-"Ігнорувати регистр (не працюе с регулярним виразом, вместо этого "
-"используйте маркери)"
+"Игнорировать регистр (не работает с регулярным выражением, вместо этого "
+"используйте флаги)"
 
 #: litegram.filters.command.Command.__init__:8 of
 msgid ""
 "Ignore bot mention. By default, bot can not handle commands intended for "
 "other bots"
 msgstr ""
-"Ігнорувати згадку о бота. За замовчуванням бот не может обробляти "
-"команды, призначени для других ботив"
+"Игнорировать упоминание бота. По умолчанию бот не может обрабатывать "
+"команды, предназначенные для других ботов"
 
 #: litegram.filters.command.Command.__init__:10 of
 msgid "Validate command object via Magic filter after all checks done"
 msgstr ""
-"Проверка объекта команды с помощью магичного фильтра после виконання "
-"всех перевирок"
+"Проверка объекта команды с помощью магического фильтра после выполнения "
+"всех проверок"
 
 #: ../../dispatcher/filters/command.rst:24
 msgid ""
 "When filter is passed the :class:`litegram.filters.command.CommandObject` "
 "will be passed to the handler argument :code:`command`"
 msgstr ""
-"Коли фильтр пройдено, :class:`litegram.filters.command.CommandObject` буде"
-" передано аргументу обробника :code:`command`"
+"Когда фильтр пройден, :class:`litegram.filters.command.CommandObject` будет "
+"передан аргументу обработчика :code:`command`"
 
 #: litegram.filters.command.CommandObject:1 of
 msgid ""
 "Instance of this object is always has command and it prefix. Can be "
 "passed as keyword argument **command** to the handler"
 msgstr ""
-"Екземпляр этого объекта всегда имеет команду и ии префикс. Можна передати "
-"обробнику (handler) как аргумент ключового слова **command**"
+"Экземпляр этого объекта всегда имеет команду и её префикс. Можно передать "
+"обработчику (handler) как аргумент ключевого слова **command**"
 
 #: ../../docstring litegram.filters.command.CommandObject.prefix:1 of
 msgid "Command prefix"
@@ -140,11 +140,11 @@ msgstr "Префикс команды"
 
 #: ../../docstring litegram.filters.command.CommandObject.command:1 of
 msgid "Command without prefix and mention"
-msgstr "Команда без префикса и згадки"
+msgstr "Команда без префикса и упоминания"
 
 #: ../../docstring litegram.filters.command.CommandObject.mention:1 of
 msgid "Mention (if available)"
-msgstr "Згадка (за наявности)"
+msgstr "Упоминание (если доступно)"
 
 #: ../../docstring litegram.filters.command.CommandObject.args:1 of
 msgid "Command argument"
@@ -155,24 +155,24 @@ msgid ""
 "Will be presented match result if the command is presented as regexp in "
 "filter"
 msgstr ""
-"Буде представлено результат видповидности, если команда представлена как "
-"регулярний вираз в фильтри"
+"Будет представлен результат соответствия, если команда представлена как "
+"регулярное выражение в фильтре"
 
 #: litegram.filters.command.CommandObject.mentioned:1 of
 msgid "This command has mention?"
-msgstr "Ця команда згадуеться?"
+msgstr "Эта команда содержит упоминание?"
 
 #: litegram.filters.command.CommandObject.text:1 of
 msgid "Generate original text from object"
-msgstr "Створення оригинального тексту с об'еки"
+msgstr "Создание оригинального текста из объекта"
 
 #: ../../dispatcher/filters/command.rst:32
 msgid "Allowed handlers"
-msgstr "Дозволени обробники (handler)"
+msgstr "Разрешенные обработчики (handler)"
 
 #: ../../dispatcher/filters/command.rst:34
 msgid "Allowed update types for this filter:"
-msgstr "Дозволени типы оновлень для этого фильтра:"
+msgstr "Разрешенные типы обновлений для этого фильтра:"
 
 #: ../../dispatcher/filters/command.rst:36
 msgid "`message`"

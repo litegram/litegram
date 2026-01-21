@@ -41,7 +41,7 @@ rst_prolog = f"""
    :language: python3
 """
 
-# language = None
+language = "en"
 locale_dirs = ["locale/"]
 gettext_compact = False
 

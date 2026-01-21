@@ -30,25 +30,25 @@ msgid ""
 "Router can route update, and it nested update types like messages, "
 "callback query, polls and all other event types."
 msgstr ""
-"Маршрутизатор может маршрутизувати подии, а також вкладени типы оновлень, "
-"такие как сообщения, запит зворотного виклику, опроса и все инши "
+"Маршрутизатор может маршрутизировать события, а также вложенные типы обновлений, "
+"такие как сообщения, запросы обратного вызова, опросы и все другие "
 "типы событий."
 
 #: litegram.dispatcher.router.Router:4 of
 msgid "Event handlers can be registered in observer by two ways:"
-msgstr "Обробники событий могут бути зареестровани в обсервери двома шляхами:"
+msgstr "Обработчики событий могут быть зарегистрированы в обсервере двумя способами:"
 
 #: litegram.dispatcher.router.Router:6 of
 msgid ""
 "By observer method - :obj:`router.<event_type>.register(handler, "
 "<filters, ...>)`"
 msgstr ""
-"За помощью методу обсервера - "
+"С помощью метода обсервера - "
 ":obj:`router.<event_type>.register(handler, <filters, ...>)`"
 
 #: litegram.dispatcher.router.Router:7 of
 msgid "By decorator - :obj:`@router.<event_type>(<filters, ...>)`"
-msgstr "За помогою декоратора - :obj:`@router.<event_type>(<filters, ...>)`"
+msgstr "С помощью декоратора - :obj:`@router.<event_type>(<filters, ...>)`"
 
 #: ../../dispatcher/router.rst
 msgid "Parameters"
@@ -56,11 +56,11 @@ msgstr "Параметры"
 
 #: litegram.dispatcher.router.Router.__init__:1 of
 msgid "Optional router name, can be useful for debugging"
-msgstr "Додаткова название маршрутизатора, может бути корисною для отлагодження"
+msgstr "Дополнительное имя маршрутизатора, может быть полезно для отладки"
 
 #: litegram.dispatcher.router.Router.include_router:1 of
 msgid "Attach another router."
-msgstr "Пидключення маршрутизатора."
+msgstr "Подключение маршрутизатора."
 
 #: ../../dispatcher/router.rst
 msgid "Returns"
@@ -69,7 +69,7 @@ msgstr "Возвращает"
 #: litegram.dispatcher.router.Router.include_routers:1 of
 #, fuzzy
 msgid "Attach multiple routers."
-msgstr "Пидключення маршрутизатора."
+msgstr "Подключение маршрутизаторов."
 
 #: litegram.dispatcher.router.Router.resolve_used_update_types:1 of
 msgid "Resolve registered event names"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: ../../dispatcher/router.rst:29
 msgid "Event observers"
-msgstr "Обсервери событий"
+msgstr "Обсерверы событий"
 
 #: ../../dispatcher/router.rst:33
 msgid ""
@@ -98,18 +98,18 @@ msgid ""
 "but it is recommended to not overlap the name with contextual data in due"
 " to function can not accept two arguments with the same name."
 msgstr ""
-"Все обробники всегда мають бути асинхронними. Ім'я функции обработки не имеет"
-" значение. Название аргументу подии також не важлива, але рекомендуеться не "
-"накладати назву на контекстни дани, оскильки функция не может прийняти два"
-" аргументи с однаковою назвою."
+"Все обработчики всегда должны быть асинхронными. Имя функции обработки не имеет"
+" значения. Название аргумента события также не важно, но рекомендуется не "
+"перекрывать название данными контекста, так как функция не может принимать два"
+" аргумента с одинаковым названием."
 
 #: ../../dispatcher/router.rst:36
 msgid ""
 "Here is the list of available observers and examples of how to register "
 "handlers"
 msgstr ""
-"Ось список доступних обсерверив и примеры того, как зарееструвати "
-"обробники"
+"Вот список доступных обсерверов и примеры того, как зарегистрировать "
+"обработчики"
 
 #: ../../dispatcher/router.rst:38
 msgid ""
@@ -117,31 +117,31 @@ msgid ""
 " if you don't like @decorators just use :obj:`<event type>.register(...)`"
 " method instead."
 msgstr ""
-"У этих прикладах використовуються только обробники реестрации в стили "
-"декоратора, але если вам не подобаються @decorators, просто "
-"используйте :obj:`<event type>.register(...)` method instead."
+"В этих примерах используются только обработчики регистрации в стиле "
+"декоратора, но если вам не нравятся @декораторы, просто "
+"используйте метод :obj:`<event type>.register(...)`."
 
 #: ../../dispatcher/router.rst:41
 msgid "Message"
-msgstr "Повикмлення"
+msgstr "Сообщение"
 
 #: ../../dispatcher/router.rst:46
 msgid "Be attentive with filtering this event"
-msgstr "Будьте уважни при фильтруванни этой подии"
+msgstr "Будьте внимательны при фильтрации этого события"
 
 #: ../../dispatcher/router.rst:48
 msgid ""
 "You should expect that this event can be with different sets of "
 "attributes in different cases"
 msgstr ""
-"Вам следует очикувати, что эта подия может мати ризни набори атрибутив в ризних"
-" випадках"
+"Вам следует ожидать, что это событие может иметь разные наборы атрибутов в разных"
+" случаях"
 
 #: ../../dispatcher/router.rst:50
 msgid ""
 "(For example text, sticker and document are always of different content "
 "types of message)"
-msgstr "(Например, текст, стикер и документ всегда мають ризни типы содержимого)"
+msgstr "(Например, текст, стикер и документ всегда имеют разные типы содержимого)"
 
 #: ../../dispatcher/router.rst:52
 msgid ""
@@ -149,50 +149,50 @@ msgid ""
 " :ref:`magic filter <magic-filters>`: :code:`F.text` to handle text, "
 ":code:`F.sticker` to handle stickers only and etc."
 msgstr ""
-"Рекомендований спосиб проверить наявнисть полив перед використанням, "
-"например с помощью :ref:`magic filter <magic-filters>`: "
-":code:`F.text` для обработки тексту, :code:`F.sticker` для обработки только "
-"стикерив и и т.д.."
+"Рекомендуемый способ проверить наличие полей перед использованием, "
+"например, с помощью :ref:`magic filter <magic-filters>`: "
+":code:`F.text` для обработки текста, :code:`F.sticker` для обработки только "
+"стикеров и т. д."
 
 #: ../../dispatcher/router.rst:63
 msgid "Edited message"
-msgstr "Видредаговане повикмлення"
+msgstr "Отредактированное сообщение"
 
 #: ../../dispatcher/router.rst:71
 msgid "Channel post"
-msgstr "Пост на канали"
+msgstr "Пост в канале"
 
 #: ../../dispatcher/router.rst:79
 msgid "Edited channel post"
-msgstr "Видредагований пост на канали"
+msgstr "Отредактированный пост в канале"
 
 #: ../../dispatcher/router.rst:88
 msgid "Inline query"
-msgstr "Inline запит"
+msgstr "Inline запрос"
 
 #: ../../dispatcher/router.rst:96
 msgid "Chosen inline query"
-msgstr "Вибраний результатт inline запиту"
+msgstr "Выбранный результат inline запроса"
 
 #: ../../dispatcher/router.rst:104
 msgid "Callback query"
-msgstr "Запит зворотнои ответи"
+msgstr "Запрос обратного вызова (callback query)"
 
 #: ../../dispatcher/router.rst:112
 msgid "Shipping query"
-msgstr "Запит пидтвердження ксивки"
+msgstr "Запрос доставки (shipping query)"
 
 #: ../../dispatcher/router.rst:120
 msgid "Pre checkout query"
-msgstr "Запит перед оформленням замовлення"
+msgstr "Запрос перед оформлением заказа (pre checkout query)"
 
 #: ../../dispatcher/router.rst:128
 msgid "Poll"
-msgstr "Опитування"
+msgstr "Опрос"
 
 #: ../../dispatcher/router.rst:136
 msgid "Poll answer"
-msgstr "Видпооть на опроса"
+msgstr "Ответ в опросе"
 
 #: ../../dispatcher/router.rst:145
 msgid "My chat member"
@@ -226,26 +226,26 @@ msgstr ""
 
 #: ../../dispatcher/router.rst:208
 msgid "Errors"
-msgstr "Помилки"
+msgstr "Ошибки"
 
 #: ../../dispatcher/router.rst:215
 #, fuzzy
 msgid ""
 "Is useful for handling errors from other handlers, error event described "
 ":ref:`here <error-event>`"
-msgstr "Корисно для обработки помилок других обработчиков"
+msgstr "Полезно для обработки ошибок других обработчиков"
 
 #: ../../dispatcher/router.rst:222
 msgid "Nested routers"
-msgstr "Вкладени маршрутизатори"
+msgstr "Вложенные маршрутизаторы"
 
 #: ../../dispatcher/router.rst:226
 msgid ""
 "Routers by the way can be nested to an another routers with some "
 "limitations:"
 msgstr ""
-"До речи, маршрутизатори могут бути вкладеними в инши маршрутизатори с "
-"деякими обмеженнями:"
+"Кстати, маршрутизаторы могут быть вложены в другие маршрутизаторы с "
+"некоторыми ограничениями:"
 
 #: ../../dispatcher/router.rst:227
 msgid ""
@@ -253,10 +253,10 @@ msgid ""
 "circular including (router 1 include router 2, router 2 include router 3,"
 " router 3 include router 1)"
 msgstr ""
-"1. Маршрутизатор **НЕ МОЖЕ** включити себе \n"
-"2. Маршрутизатори **НЕ МОЖНА** использовать для цикличного включення "
-"(маршрутизатор 1 включае маршрутизатор 2, маршрутизатор 2 включае "
-"маршрутизатор 3, маршрутизатор 3 включае маршрутизатор 1)"
+"1. Маршрутизатор **НЕ МОЖЕТ** включать сам себя\n"
+"2. Маршрутизаторы **НЕ МОГУТ** использоваться для циклического включения "
+"(маршрутизатор 1 включает маршрутизатор 2, маршрутизатор 2 включает "
+"маршрутизатор 3, маршрутизатор 3 включает маршрутизатор 1)"
 
 #: ../../dispatcher/router.rst:231
 msgid "Example:"
@@ -273,7 +273,7 @@ msgstr "module_2.py"
 
 #: ../../dispatcher/router.rst:255
 msgid "Update"
-msgstr "Оновлення"
+msgstr "Обновление"
 
 #: ../../dispatcher/router.rst:264
 msgid "The only root Router (Dispatcher) can handle this type of event."
@@ -288,20 +288,20 @@ msgstr ""
 
 #: ../../dispatcher/router.rst:271
 msgid "How it works?"
-msgstr "Как это працюе?"
+msgstr "Как это работает?"
 
 #: ../../dispatcher/router.rst:273
 msgid ""
 "For example, dispatcher has 2 routers, the last router also has one "
 "nested router:"
 msgstr ""
-"Например, диспетчер имеет 2 маршрутизатори, останний маршрутизатор також "
-"имеет один вкладений маршрутизатор:"
+"Например, у диспетчера есть 2 маршрутизатора, при этом у последнего маршрутизатора также "
+"есть один вложенный маршрутизатор:"
 
 #: ../../dispatcher/router.rst:275 ../../dispatcher/router.rst:280
 msgid "Nested routers example"
-msgstr "Пример вкладених маршрутизаторив"
+msgstr "Пример вложенных маршрутизаторов"
 
 #: ../../dispatcher/router.rst:278
 msgid "In this case update propagation flow will have form:"
-msgstr "У этому случае потик розповсюдження обновления матиме вигляд:"
+msgstr "В этом случае поток распространения обновления будет иметь вид:"
