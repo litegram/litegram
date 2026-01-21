@@ -42,8 +42,8 @@ litegram
 Make your bots faster and more powerful!
 
 Documentation:
- - 🇷🇺 `Russian <https://docs.litegram.dev/ru/master/>`_
- - 🇺🇸 `English <https://docs.litegram.dev/en/master/>`_
+ - 🇷🇺 `Russian <https://litegram.readthedocs.io/ru/master/>`_
+ - 🇺🇸 `English <https://litegram.readthedocs.io/en/master/>`_
 
 
 Features
@@ -54,7 +54,7 @@ Features
 - Supports `Telegram Bot API 9.3 <https://core.telegram.org/bots/api>`_ and gets fast updates to the latest versions of the Bot API
 - Updates router (Blueprints)
 - Has Finite State Machine
-- Uses powerful `magic filters <https://docs.litegram.dev/en/latest/dispatcher/filters/magic_filters.html#magic-filters>`_
+- Uses powerful `magic filters <https://litegram.readthedocs.io/en/latest/dispatcher/filters/magic_filters.html#magic-filters>`_
 - Middlewares (incoming updates and API calls)
 - Provides `Replies into Webhook <https://core.telegram.org/bots/faq#how-can-i-make-requests-in-response-to-updates>`_
 - Integrated I18n/L10n support with GNU Gettext (or Fluent)

@@ -117,7 +117,7 @@ test = [
 
 [project.urls]
 Homepage = "https://litegram.dev/"
-Documentation = "https://docs.litegram.dev/"
+Documentation = "https://litegram.readthedocs.io/"
 Repository = "https://github.com/litegram/litegram/"
 
 [project.scripts]

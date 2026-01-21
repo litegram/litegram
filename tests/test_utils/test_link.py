@@ -34,10 +34,10 @@ class TestLink:
         assert create_telegram_link(base, **params) == result
 
     def test_fragment(self):
-        assert docs_url("test.html", fragment_="test") == f"https://docs.litegram.dev/en/{BRANCH}/test.html#test"
+        assert docs_url("test.html", fragment_="test") == f"https://litegram.readthedocs.io/en/{BRANCH}/test.html#test"
 
     def test_docs(self):
-        assert docs_url("test.html") == f"https://docs.litegram.dev/en/{BRANCH}/test.html"
+        assert docs_url("test.html") == f"https://litegram.readthedocs.io/en/{BRANCH}/test.html"
 
 
 class TestCreateChannelBotLink:

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 16:43+0300\n"
+"POT-Creation-Date: 2026-01-21 18:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -77,13 +77,13 @@ msgstr "Документация:"
 
 #: ../../../README.rst:45
 #, fuzzy
-msgid "🇷🇺 `Russian <https://docs.litegram.dev/ru/master/>`_"
-msgstr "🇷🇺 `Русский <https://docs.litegram.dev/ru/dev-master/>`_"
+msgid "🇷🇺 `Russian <https://litegram.readthedocs.io//ru/master/>`_"
+msgstr "🇷🇺 `Русский <https://litegram.readthedocs.io/ru/dev-master/>`_"
 
 #: ../../../README.rst:46
 #, fuzzy
-msgid "🇺🇸 `English <https://docs.litegram.dev/en/master/>`_"
-msgstr "🇺🇸 `English <https://docs.litegram.dev/en/dev-master/>`_"
+msgid "🇺🇸 `English <https://litegram.readthedocs.io//en/master/>`_"
+msgstr "🇺🇸 `English <https://litegram.readthedocs.io/en/dev-master/>`_"
 
 #: ../../../README.rst:50
 msgid "Features"
@@ -123,13 +123,14 @@ msgid "Has Finite State Machine"
 msgstr "Имеет встроенный конечный автомат (FSM)"
 
 #: ../../../README.rst:57
+#, fuzzy
 msgid ""
 "Uses powerful `magic filters "
-"<https://docs.litegram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"<https://litegram.readthedocs.io//en/latest/dispatcher/filters/magic_filters.html"
 "#magic-filters>`_"
 msgstr ""
 "Использует мощные `магические фильтры "
-"<https://docs.litegram.dev/en/latest/dispatcher/filters/magic_filters.html"
+"<https://litegram.readthedocs.io/en/latest/dispatcher/filters/magic_filters.html"
 "#magic-filters>`_"
 
 #: ../../../README.rst:58
