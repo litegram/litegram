@@ -586,10 +586,10 @@ class TestDispatcher:
                 True,
             ),
             pytest.param(
-                "purchased_paid_media",
+                "paid_media_purchased",
                 Update(
                     update_id=42,
-                    purchased_paid_media=PaidMediaPurchased(
+                    paid_media_purchased=PaidMediaPurchased(
                         paid_media_payload="payload",
                         from_user=User(id=42, is_bot=False, first_name="Test"),
                     ),

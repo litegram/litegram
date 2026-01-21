@@ -66,7 +66,7 @@ class Update(TelegramObject):
     """*Optional*. New incoming shipping query. Only for invoices with flexible price"""
     pre_checkout_query: PreCheckoutQuery | None = None
     """*Optional*. New incoming pre-checkout query. Contains full information about checkout"""
-    purchased_paid_media: PaidMediaPurchased | None = None
+    paid_media_purchased: PaidMediaPurchased | None = None
     """*Optional*. A user purchased paid media with a non-empty payload sent by the bot in a non-channel chat"""
     poll: Poll | None = None
     """*Optional*. New poll state. Bots receive only updates about manually stopped polls and polls, which are sent by the bot"""
@@ -106,7 +106,7 @@ class Update(TelegramObject):
             callback_query: CallbackQuery | None = None,
             shipping_query: ShippingQuery | None = None,
             pre_checkout_query: PreCheckoutQuery | None = None,
-            purchased_paid_media: PaidMediaPurchased | None = None,
+            paid_media_purchased: PaidMediaPurchased | None = None,
             poll: Poll | None = None,
             poll_answer: PollAnswer | None = None,
             my_chat_member: ChatMemberUpdated | None = None,
@@ -137,7 +137,7 @@ class Update(TelegramObject):
                 callback_query=callback_query,
                 shipping_query=shipping_query,
                 pre_checkout_query=pre_checkout_query,
-                purchased_paid_media=purchased_paid_media,
+                paid_media_purchased=paid_media_purchased,
                 poll=poll,
                 poll_answer=poll_answer,
                 my_chat_member=my_chat_member,
@@ -204,8 +204,8 @@ class Update(TelegramObject):
             return "edited_business_message"
         if self.business_message:
             return "business_message"
-        if self.purchased_paid_media:
-            return "purchased_paid_media"
+        if self.paid_media_purchased:
+            return "paid_media_purchased"
 
         raise UpdateTypeLookupError("Update does not contain any known event type.")
 

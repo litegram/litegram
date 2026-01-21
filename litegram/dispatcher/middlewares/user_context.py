@@ -171,8 +171,8 @@ class UserContextMiddleware(BaseMiddleware):
                 ),
                 business_connection_id=event.edited_business_message.business_connection_id,
             )
-        if event.purchased_paid_media:
+        if event.paid_media_purchased:
             return EventContext(
-                user=event.purchased_paid_media.from_user,
+                user=event.paid_media_purchased.from_user,
             )
         return EventContext()

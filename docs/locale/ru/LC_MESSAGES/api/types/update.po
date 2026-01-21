@@ -139,7 +139,7 @@ msgid ""
 "about checkout"
 msgstr ""
 
-#: ../../docstring litegram.types.update.Update.purchased_paid_media:1 of
+#: ../../docstring litegram.types.update.Update.paid_media_purchased:1 of
 msgid ""
 "*Optional*. A user purchased paid media with a non-empty payload sent by "
 "the bot in a non-channel chat"
