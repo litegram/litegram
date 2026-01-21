@@ -106,13 +106,17 @@ $(locale_targets): docs-serve-%:
 # Project
 # =================================================================================================
 
+ifeq (bump,$(firstword $(MAKECMDGOALS)))
+  BUMP_ARGS := $(filter-out bump,$(MAKECMDGOALS))
+endif
+
 .PHONY: build
 build: clean
 	uv build
 
 .PHONY: bump
 bump:
-	uv run python scripts/bump_version.py $(args)
+	uv run python scripts/bump_version.py $(or $(args),$(BUMP_ARGS))
 	uv run python scripts/bump_versions.py
 
 update-api:
@@ -142,3 +146,7 @@ release:
 	git add .
 	git commit -m "Release $(shell uv run python -c 'from litegram import __version__; print(__version__)')"
 	git tag v$(shell uv run python -c 'from litegram import __version__; print(__version__)')
+
+# Catch-all target to allow passing arguments to other targets
+%:
+	@:

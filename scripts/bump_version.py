@@ -45,8 +45,6 @@ def bump_version(part: str) -> str:
 
 
 if __name__ == "__main__":
-    REQUIRED_ARGS_COUNT = 2
-    if len(sys.argv) != REQUIRED_ARGS_COUNT:
-        sys.exit(1)
+    part = "patch" if len(sys.argv) < 2 else sys.argv[1]  # noqa
 
-    new_version = bump_version(sys.argv[1])
+    new_version = bump_version(part)
