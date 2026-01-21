@@ -4,7 +4,7 @@ from typing import Any
 from urllib.parse import urlencode, urljoin
 
 BASE_DOCS_URL = "https://litegram.readthedocs.io/"
-BRANCH = "master"
+BRANCH = "latest"
 
 BASE_PAGE_URL = f"{BASE_DOCS_URL}/en/{BRANCH}/"
 

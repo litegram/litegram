@@ -21,19 +21,19 @@ msgstr ""
 
 #: ../../install.rst:3
 msgid "Installation"
-msgstr "Всиновлення"
+msgstr "Установка"
 
 #: ../../install.rst:6
 msgid "From PyPI"
-msgstr "З PyPI"
+msgstr "Из PyPI"
 
 #: ../../install.rst:13
 msgid "Development build"
-msgstr "Беи-версия (3.х)"
+msgstr "Версия для разработки"
 
 #: ../../install.rst:16
 msgid "From GitHub"
-msgstr "З GitHub"
+msgstr "Из GitHub"
 
 #~ msgid "From Arch Linux Repository"
 #~ msgstr "З репозиторию Arch Linux"

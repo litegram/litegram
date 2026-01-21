@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-21 18:40+0300\n"
+"POT-Creation-Date: 2026-01-21 19:27+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -76,13 +76,11 @@ msgid "Documentation:"
 msgstr "Документация:"
 
 #: ../../../README.rst:45
-#, fuzzy
-msgid "🇷🇺 `Russian <https://litegram.readthedocs.io/ru/master/>`_"
+msgid "🇷🇺 `Russian <https://litegram.readthedocs.io/ru/latest/>`_"
 msgstr "🇷🇺 `Русский <https://litegram.readthedocs.io/ru/latest/>`_"
 
 #: ../../../README.rst:46
-#, fuzzy
-msgid "🇺🇸 `English <https://litegram.readthedocs.io/en/master/>`_"
+msgid "🇺🇸 `English <https://litegram.readthedocs.io/en/latest/>`_"
 msgstr "🇺🇸 `English <https://litegram.readthedocs.io/en/latest/>`_"
 
 #: ../../../README.rst:50

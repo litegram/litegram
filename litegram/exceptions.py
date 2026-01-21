@@ -52,8 +52,6 @@ class UnsupportedKeywordArgument(DetailedLitegramError):
     Exception raised when a keyword argument is passed as filter.
     """
 
-    url = docs_url("migration_2_to_3.html", fragment_="filtering-events")
-
 
 class TelegramAPIError[TelegramType: Any](DetailedLitegramError):
     """

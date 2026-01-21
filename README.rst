@@ -42,8 +42,8 @@ litegram
 Make your bots faster and more powerful!
 
 Documentation:
- - 🇷🇺 `Russian <https://litegram.readthedocs.io/ru/master/>`_
- - 🇺🇸 `English <https://litegram.readthedocs.io/en/master/>`_
+ - 🇷🇺 `Russian <https://litegram.readthedocs.io/ru/latest/>`_
+ - 🇺🇸 `English <https://litegram.readthedocs.io/en/latest/>`_
 
 
 Features

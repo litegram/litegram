@@ -51,7 +51,7 @@ reformat:
 # =================================================================================================
 .PHONY: test-run-services
 test-run-services:
-	docker compose -f tests/docker-compose.yml -p litegram3-dev up -d
+	docker compose -f tests/docker-compose.yml -p litegram-dev up -d
 
 .PHONY: compile-locales
 compile-locales:
@@ -84,9 +84,12 @@ docs_dir := docs
 docs-gettext:
 	uv run --extra docs bash -c 'cd $(docs_dir) && make gettext'
 	uv run --extra docs bash -c 'cd $(docs_dir) && sphinx-intl update -p $(locales_pot) $(addprefix -l , $(locales))'
-.PHONY: docs-gettext
 
-docs-html:
+docs-compile:
+	uv run --extra docs sphinx-intl build -d $(docs_dir)/locale/ -l $(locales)
+.PHONY: docs-compile
+
+docs-html: docs-compile
 	uv run --extra docs bash -c 'cd $(docs_dir) && make html'
 .PHONY: docs-html
 
@@ -94,7 +97,7 @@ docs-clean:
 	cd $(docs_dir) && make clean
 .PHONY: docs-clean
 
-docs-serve:
+docs-serve: docs-compile
 	uv run --extra docs sphinx-autobuild --watch litegram/ --watch CHANGES.rst --watch README.rst docs/ docs/_build/ $(OPTS)
 .PHONY: docs-serve
 

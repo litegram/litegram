@@ -70,9 +70,6 @@ class TelegramEventObserver:
             msg = (
                 "Passing any additional keyword arguments to the registrar method "
                 "is not supported.\n"
-                "This error may be caused when you are trying to register filters like in 2.x "
-                "version of this framework, if it's true just look at correspoding "
-                "documentation pages.\n"
                 f"Please remove the {set(kwargs.keys())} arguments from this call.\n"
             )
             raise UnsupportedKeywordArgument(msg)
