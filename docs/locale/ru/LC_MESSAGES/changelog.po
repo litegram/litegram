@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-01-20 16:43+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,4 +23,20 @@ msgstr ""
 
 #: ../../../CHANGES.rst:20
 msgid "1.0.0 (2026-01-20)"
+msgstr ""
+
+#: ../../../CHANGES.rst:23
+msgid "Features"
+msgstr ""
+
+#: ../../../CHANGES.rst:25
+msgid "Added full support for Telegram Bot API 9.3"
+msgstr ""
+
+#: ../../../CHANGES.rst:28
+msgid "Bugfixes"
+msgstr ""
+
+#: ../../../CHANGES.rst:31
+msgid "Misc"
 msgstr ""

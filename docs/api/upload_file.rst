@@ -44,6 +44,7 @@ Then you can use it:
 
 .. autoclass:: litegram.types.input_file.FSInputFile
     :members: __init__
+    :no-index:
 
 
 Upload from buffer
@@ -67,6 +68,7 @@ And then you can use it:
 
 .. autoclass:: litegram.types.input_file.BufferedInputFile
     :members: __init__
+    :no-index:
 
 Upload from url
 ===============
@@ -92,3 +94,4 @@ And then you can use it:
 
 .. autoclass:: litegram.types.input_file.URLInputFile
     :members:
+    :no-index:

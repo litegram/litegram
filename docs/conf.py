@@ -2,6 +2,7 @@ import datetime
 from pathlib import Path
 
 import litegram
+import litegram.utils.web_app
 
 project = "litegram"
 author = "litegram Team"
@@ -65,6 +66,24 @@ texinfo_documents = [
 ]
 
 # add_module_names = False
+autodoc_mock_imports = ["redis", "motor", "pymongo"]
+suppress_warnings = ["ref.python"]
+
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/3", None),
+}
+
+autodoc_type_aliases = {
+    "BotCommand": "litegram.types.bot_command.BotCommand",
+    "EncryptedPassportElement": "litegram.types.encrypted_passport_element.EncryptedPassportElement",
+    "type": "python:type",
+}
+
+nitpick_ignore = [
+    ("py:class", "litegram.types.bot_command.BotCommand"),
+    ("py:class", "litegram.types.encrypted_passport_element.EncryptedPassportElement"),
+    ("py:obj", "type"),
+]
 
 towncrier_draft_autoversion_mode = "draft"
 towncrier_draft_include_empty = False

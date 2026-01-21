@@ -86,6 +86,14 @@ docs-gettext:
 	uv run --extra docs bash -c 'cd $(docs_dir) && sphinx-intl update -p $(locales_pot) $(addprefix -l , $(locales))'
 .PHONY: docs-gettext
 
+docs-html:
+	uv run --extra docs bash -c 'cd $(docs_dir) && make html'
+.PHONY: docs-html
+
+docs-clean:
+	cd $(docs_dir) && make clean
+.PHONY: docs-clean
+
 docs-serve:
 	uv run --extra docs sphinx-autobuild --watch litegram/ --watch CHANGES.rst --watch README.rst docs/ docs/_build/ $(OPTS)
 .PHONY: docs-serve

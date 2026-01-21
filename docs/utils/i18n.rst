@@ -85,6 +85,7 @@ a singular string, a plural string, and a value.
 
 .. code-block:: python
     :emphasize-lines: 6, 10
+
     from litegram import html
     from litegram.utils.i18n import gettext as _
 

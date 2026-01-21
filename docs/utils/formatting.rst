@@ -158,6 +158,7 @@ Available elements
 
 .. autoclass:: litegram.utils.formatting.BotCommand
     :show-inheritance:
+    :noindex:
 
 .. autoclass:: litegram.utils.formatting.Url
     :show-inheritance:

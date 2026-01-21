@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-01-21 10:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,20 +46,22 @@ msgid "RedisStorage"
 msgstr ""
 
 #: litegram.fsm.storage.redis.RedisStorage:1 of
+#, fuzzy
 msgid ""
 "Redis storage required :code:`redis` package installed (:code:`pip "
 "install redis`)"
 msgstr ""
-"Для сховища Redis потрибен встановлений пакет :code:`redis` (:code:`pip "
-"install redis`)"
+"Для сховища MongoDB потрибен встановлений пакет :code:`motor` (:code:`pip"
+" install motor`)"
 
 #: ../../dispatcher/finite_state_machine/storages.rst
 msgid "Parameters"
 msgstr ""
 
 #: litegram.fsm.storage.redis.RedisStorage.__init__:1 of
+#, fuzzy
 msgid "Instance of Redis connection"
-msgstr "Екземпляр подключение Redis"
+msgstr "Екземпляр AsyncIOMotorClient"
 
 #: litegram.fsm.storage.mongo.MongoStorage.__init__:2
 #: litegram.fsm.storage.pymongo.PyMongoStorage.__init__:2
@@ -69,29 +71,33 @@ msgstr "конструктор, который кпомагае конверту
 
 #: litegram.fsm.storage.redis.RedisStorage.__init__:3 of
 msgid "TTL for state records"
-msgstr "Время життя (TTL) для записив сину"
+msgstr ""
 
 #: litegram.fsm.storage.redis.RedisStorage.__init__:4 of
 msgid "TTL for data records"
-msgstr "Время життя (TTL) для записив данных"
+msgstr ""
 
 #: litegram.fsm.storage.redis.RedisStorage.from_url:1 of
+#, fuzzy
 msgid ""
 "Create an instance of :class:`RedisStorage` with specifying the "
 "connection string"
-msgstr "Створити екземпляр :class:`RedisStorage`, вказавши строку подключение"
+msgstr "Створити екземпляр :class:`MongoStorage`, вказавши строку подключение"
 
 #: litegram.fsm.storage.redis.RedisStorage.from_url:3 of
+#, fuzzy
 msgid "for example :code:`redis://user:password@host:port/db`"
-msgstr "например :code:`redis://user:password@host:port/db`"
+msgstr "например :code:`mongodb://user:password@host:port`"
 
 #: litegram.fsm.storage.redis.RedisStorage.from_url:4 of
+#, fuzzy
 msgid "see :code:`redis` docs"
-msgstr "див. ккуменицию :code:`redis`"
+msgstr "див. ккуменицию :code:`motor`"
 
 #: litegram.fsm.storage.redis.RedisStorage.from_url:5 of
+#, fuzzy
 msgid "arguments to be passed to :class:`RedisStorage`"
-msgstr "аргументи, которые потрибно передати :class:`RedisStorage`"
+msgstr "аргументи, которые потрибно передати :class:`MongoStorage`"
 
 #: ../../dispatcher/finite_state_machine/storages.rst
 msgid "Returns"
@@ -164,6 +170,7 @@ msgid ""
 msgstr ""
 
 #: litegram.fsm.storage.mongo.MongoStorage:6 of
+#, fuzzy
 msgid ""
 "MongoDB storage required :code:`motor` package installed (:code:`pip "
 "install motor`)"
@@ -172,24 +179,29 @@ msgstr ""
 " install motor`)"
 
 #: litegram.fsm.storage.mongo.MongoStorage.__init__:1 of
+#, fuzzy
 msgid "Instance of AsyncIOMotorClient"
 msgstr "Екземпляр AsyncIOMotorClient"
 
 #: litegram.fsm.storage.mongo.MongoStorage.from_url:1 of
+#, fuzzy
 msgid ""
 "Create an instance of :class:`MongoStorage` with specifying the "
 "connection string"
 msgstr "Створити екземпляр :class:`MongoStorage`, вказавши строку подключение"
 
 #: litegram.fsm.storage.mongo.MongoStorage.from_url:4 of
+#, fuzzy
 msgid "see :code:`motor` docs"
 msgstr "див. ккуменицию :code:`motor`"
 
 #: litegram.fsm.storage.mongo.MongoStorage.from_url:5 of
+#, fuzzy
 msgid "arguments to be passed to :class:`MongoStorage`"
 msgstr "аргументи, которые потрибно передати :class:`MongoStorage`"
 
 #: litegram.fsm.storage.mongo.MongoStorage.from_url:6 of
+#, fuzzy
 msgid "an instance of :class:`MongoStorage`"
 msgstr "екземпляр класу :class:`MongoStorage`"
 
@@ -305,3 +317,68 @@ msgstr ""
 #: litegram.fsm.storage.base.BaseStorage.close:1 of
 msgid "Close storage (database connection, file or etc.)"
 msgstr ""
+
+#~ msgid ""
+#~ "Redis storage required :code:`redis` package"
+#~ " installed (:code:`pip install redis`)"
+#~ msgstr ""
+#~ "Для сховища Redis потрибен встановлений "
+#~ "пакет :code:`redis` (:code:`pip install "
+#~ "redis`)"
+
+#~ msgid "Instance of Redis connection"
+#~ msgstr "Екземпляр подключение Redis"
+
+#~ msgid "TTL for state records"
+#~ msgstr "Время життя (TTL) для записив сину"
+
+#~ msgid "TTL for data records"
+#~ msgstr "Время життя (TTL) для записив данных"
+
+#~ msgid ""
+#~ "Create an instance of :class:`RedisStorage`"
+#~ " with specifying the connection string"
+#~ msgstr "Створити екземпляр :class:`RedisStorage`, вказавши строку подключение"
+
+#~ msgid "for example :code:`redis://user:password@host:port/db`"
+#~ msgstr "например :code:`redis://user:password@host:port/db`"
+
+#~ msgid "see :code:`redis` docs"
+#~ msgstr "див. ккуменицию :code:`redis`"
+
+#~ msgid "arguments to be passed to :class:`RedisStorage`"
+#~ msgstr "аргументи, которые потрибно передати :class:`RedisStorage`"
+
+#~ msgid "an instance of :class:`RedisStorage`"
+#~ msgstr "екземпляр класу :class:`MongoStorage`"
+
+#~ msgid ""
+#~ "DEPRECATED: Use :class:`PyMongoStorage` instead. "
+#~ "This class will be removed in "
+#~ "future versions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "MongoDB storage required :code:`motor` package"
+#~ " installed (:code:`pip install motor`)"
+#~ msgstr ""
+#~ "Для сховища MongoDB потрибен встановлений "
+#~ "пакет :code:`motor` (:code:`pip install "
+#~ "motor`)"
+
+#~ msgid "Instance of AsyncIOMotorClient"
+#~ msgstr "Екземпляр AsyncIOMotorClient"
+
+#~ msgid ""
+#~ "Create an instance of :class:`MongoStorage`"
+#~ " with specifying the connection string"
+#~ msgstr "Створити екземпляр :class:`MongoStorage`, вказавши строку подключение"
+
+#~ msgid "see :code:`motor` docs"
+#~ msgstr "див. ккуменицию :code:`motor`"
+
+#~ msgid "arguments to be passed to :class:`MongoStorage`"
+#~ msgstr "аргументи, которые потрибно передати :class:`MongoStorage`"
+
+#~ msgid "an instance of :class:`MongoStorage`"
+#~ msgstr "екземпляр класу :class:`MongoStorage`"

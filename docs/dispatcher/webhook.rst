@@ -39,13 +39,13 @@ Here is available few ways to do it using different implementations of the webho
 You can use it as is or inherit from it and override some methods.
 
 .. autoclass:: litegram.webhook.litestar_server.BaseRequestHandler
-    :members: __init__, register, close, resolve_bot, verify_secret, handle
+    :members: __init__, close, resolve_bot, verify_secret, handle
 
 .. autoclass:: litegram.webhook.litestar_server.SimpleRequestHandler
-    :members: __init__, register, close, resolve_bot, verify_secret, handle
+    :members: __init__, close, resolve_bot, verify_secret, handle
 
 .. autoclass:: litegram.webhook.litestar_server.TokenBasedRequestHandler
-    :members: __init__, register, close, resolve_bot, verify_secret, handle
+    :members: __init__, close, resolve_bot, verify_secret, handle
 
 Security
 --------
@@ -64,9 +64,7 @@ You can specify a list of IP addresses from which you expect incoming requests, 
 
 It can be acy using firewall rules or nginx configuration or middleware on application level.
 
-So, litegram has an implementation of the IP filtering middleware for httpx.
-
-.. autofunction:: litegram.webhook.litestar_server.ip_filter_middleware
+So, litegram has an implementation of the IP filtering for Litestar.
 
 .. autoclass:: litegram.webhook.security.IPFilter
     :members: __init__, allow, allow_ip, default, check

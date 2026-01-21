@@ -12,7 +12,7 @@ Changelog
 
     WARNING: Don't drop the next directive!
 
-.. towncrier-draft-entries:: [UPCOMING UPDATE]
+.. .. towncrier-draft-entries:: [UPCOMING UPDATE]
 
 .. towncrier release notes start
 

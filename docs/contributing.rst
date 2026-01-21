@@ -265,6 +265,7 @@ Or use Makefile:
 .. code-block:: bash
 
     make docs-serve
+    make docs-html
 
 
 Docs translations

@@ -16,7 +16,10 @@ help:
 update-intl: gettext
 	$(SPHINXINTL) update -p $(BUILDDIR)/gettext $(O)
 
-.PHONY: help update-intl Makefile
+docs-gettext docs-serve docs-serve-ru docs-html docs-clean:
+	@$(MAKE) -C .. $@
+
+.PHONY: help update-intl docs-gettext docs-serve docs-serve-ru docs-html docs-clean Makefile
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).

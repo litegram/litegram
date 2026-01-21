@@ -2,6 +2,8 @@
 WebApp
 ======
 
+.. module:: litegram.utils.web_app
+
 Telegram Bot API 6.0 announces a revolution in the development of chatbots using WebApp feature.
 
 You can read more details on it in the official `blog <https://telegram.org/blog/notifications-bots#bot-revolution>`_

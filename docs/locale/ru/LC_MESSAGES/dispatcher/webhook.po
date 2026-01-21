@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-01-20 16:43+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,64 +129,68 @@ msgid ""
 msgstr ""
 
 #: ../../dispatcher/webhook.rst:67
-msgid ""
-"So, litegram has an implementation of the IP filtering middleware for "
-"httpx."
+msgid "So, litegram has an implementation of the IP filtering for Litestar."
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:75
+#: ../../dispatcher/webhook.rst:73
 msgid "Examples"
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:78
+#: ../../dispatcher/webhook.rst:76
 msgid "Behind reverse proxy"
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:80
+#: ../../dispatcher/webhook.rst:78
 msgid ""
 "In this example we'll use httpx as web framework and nginx as reverse "
 "proxy."
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:84
+#: ../../dispatcher/webhook.rst:82
 msgid ""
 "When you use nginx as reverse proxy, you should set `proxy_pass` to your "
 "httpx server address."
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:98
+#: ../../dispatcher/webhook.rst:96
 msgid "Without reverse proxy (not recommended)"
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:100
+#: ../../dispatcher/webhook.rst:98
 msgid "In case without using reverse proxy, you can use httpx's ssl context."
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:102
+#: ../../dispatcher/webhook.rst:100
 msgid "Also this example contains usage with self-signed certificate."
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:108
+#: ../../dispatcher/webhook.rst:106
 msgid "With using other web framework"
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:110
+#: ../../dispatcher/webhook.rst:108
 msgid ""
 "You can pass incoming request to litegram's webhook controller from any "
 "web framework you want."
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:112
+#: ../../dispatcher/webhook.rst:110
 msgid ""
 "Read more about it in "
 ":meth:`litegram.dispatcher.dispatcher.Dispatcher.feed_webhook_update` or "
 ":meth:`litegram.dispatcher.dispatcher.Dispatcher.feed_update` methods."
 msgstr ""
 
-#: ../../dispatcher/webhook.rst:123
+#: ../../dispatcher/webhook.rst:121
 msgid ""
 "If you want to use reply into webhook, you should check that result of "
 "the :code:`feed_update` methods is an instance of API method and build "
 ":code:`multipart/form-data` or :code:`application/json` response body "
 "manually."
 msgstr ""
+
+#~ msgid ""
+#~ "So, litegram has an implementation of"
+#~ " the IP filtering middleware for "
+#~ "httpx."
+#~ msgstr ""

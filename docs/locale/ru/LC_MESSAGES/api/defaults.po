@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-01-21 10:24+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/defaults.rst:3
 msgid "Global defaults"
@@ -30,9 +30,9 @@ msgid ""
 "to Telegram Bot API in your application using "
 ":class:`litegram.client.default.DefaultBotProperties` class."
 msgstr ""
-"litegram предоставляет механизм для установки некоторых глобальных настроек для "
-"всех запросов к Telegram Bot API в вашем приложении, используя класс "
-":class:`litegram.client.default.DefaultBotProperties`."
+"litegram предоставляет механизм для установки некоторых глобальных "
+"настроек для всех запросов к Telegram Bot API в вашем приложении, "
+"используя класс :class:`litegram.client.default.DefaultBotProperties`."
 
 #: ../../api/defaults.rst:8
 msgid "There are some properties that can be set:"
@@ -42,11 +42,10 @@ msgstr "Можно установить некоторые свойства:"
 msgid "Default bot properties."
 msgstr "Синдартные свойства бота."
 
-#: ../../docstring litegram.client.default.DefaultBotProperties.parse_mode:1 of
+#: litegram.client.default.DefaultBotProperties.parse_mode:1 of
 msgid "Default parse mode for messages."
 msgstr "Синдартный режим разбора для сообщений."
 
-#: ../../docstring
 #: litegram.client.default.DefaultBotProperties.disable_notification:1 of
 msgid ""
 "Sends the message silently. Users will receive a notification with no "
@@ -55,45 +54,38 @@ msgstr ""
 "Отправляет сообщение без звука. Пользователи получат уведомление без "
 "звукового сигнала."
 
-#: ../../docstring
 #: litegram.client.default.DefaultBotProperties.protect_content:1 of
 msgid "Protects content from copying."
 msgstr "Защищает контент от копирования."
 
-#: ../../docstring
-#: litegram.client.default.DefaultBotProperties.allow_sending_without_reply:1 of
+#: litegram.client.default.DefaultBotProperties.allow_sending_without_reply:1
+#: of
 msgid "Allows to send messages without reply."
 msgstr "Позволяет отправлять сообщения без отвеи."
 
-#: ../../docstring litegram.client.default.DefaultBotProperties.link_preview:1
-#: of
+#: litegram.client.default.DefaultBotProperties.link_preview:1 of
 msgid "Link preview settings."
 msgstr "Настройки предварительного просмотра ссылок."
 
-#: ../../docstring
 #: litegram.client.default.DefaultBotProperties.link_preview_is_disabled:1 of
 msgid "Disables link preview."
 msgstr "Отключает предварительный просмотр ссылок."
 
-#: ../../docstring
 #: litegram.client.default.DefaultBotProperties.link_preview_prefer_small_media:1
 #: of
 msgid "Prefer small media in link preview."
 msgstr "Предпочиить маленькие медиафайлы в предварительном просмотре ссылок."
 
-#: ../../docstring
 #: litegram.client.default.DefaultBotProperties.link_preview_prefer_large_media:1
 #: of
 msgid "Prefer large media in link preview."
 msgstr "Предпочиить большие медиафайлы в предварительном просмотре ссылок."
 
-#: ../../docstring
 #: litegram.client.default.DefaultBotProperties.link_preview_show_above_text:1
 #: of
 msgid "Show link preview above text."
 msgstr "Показывать предварительный просмотр ссылки над текстом."
 
-#: ../../docstring
 #: litegram.client.default.DefaultBotProperties.show_caption_above_media:1 of
 msgid "Show caption above media."
 msgstr "Показывать подпись над медиафайлом."
@@ -105,18 +97,20 @@ msgid ""
 "that you want to set as defaults and pass explicit values for other "
 "properties."
 msgstr ""
-"Если вам нужно переопределить стандартные свойства для некоторых запросов, "
-"следует использовать `litegram.client.default.DefaultBotProperties` только "
-"для свойств, которые вы хотите установить по умолчанию, и передавать "
-"явные значения для других свойств."
+"Если вам нужно переопределить стандартные свойства для некоторых "
+"запросов, следует использовать "
+"`litegram.client.default.DefaultBotProperties` только для свойств, "
+"которые вы хотите установить по умолчанию, и передавать явные значения "
+"для других свойств."
 
 #: ../../api/defaults.rst:22
 msgid ""
-"If you upgrading from litegram 3.0-3.6 to 3.7, you should update your code"
-" to use `litegram.client.default.DefaultBotProperties`."
+"If you upgrading from litegram 3.0-3.6 to 3.7, you should update your "
+"code to use `litegram.client.default.DefaultBotProperties`."
 msgstr ""
 "Если вы обновляетесь с версий litegram 3.0-3.6 к 3.7, вам следует "
-"обновить свой код для использования `litegram.client.default.DefaultBotProperties`."
+"обновить свой код для использования "
+"`litegram.client.default.DefaultBotProperties`."
 
 #: ../../api/defaults.rst:26
 msgid "Example"
@@ -135,8 +129,8 @@ msgid ""
 "In this case all messages sent by this bot will be parsed as HTML, so you"
 " don't need to specify `parse_mode` in every message you send."
 msgstr ""
-"В этом случае все сообщения, отправленные этим ботом, будут "
-"разбираться как HTML, поэтому вам не нужно указывать `parse_mode` в каждом "
+"В этом случае все сообщения, отправленные этим ботом, будут разбираться "
+"как HTML, поэтому вам не нужно указывать `parse_mode` в каждом "
 "отправляемом сообщении."
 
 #: ../../api/defaults.rst:42
@@ -156,8 +150,9 @@ msgid ""
 "In some cases you may want to override default properties for some "
 "requests. You can do it by passing explicit values to the method:"
 msgstr ""
-"В некоторых случаях вы можете захотеть переопределить стандартные свойства для "
-"некоторых запросов. Вы можете сделать это, передав явные значения в метод:"
+"В некоторых случаях вы можете захотеть переопределить стандартные "
+"свойства для некоторых запросов. Вы можете сделать это, передав явные "
+"значения в метод:"
 
 #: ../../api/defaults.rst:63
 msgid ""
@@ -172,12 +167,13 @@ msgid "Another example of overriding default properties:"
 msgstr "Еще один пример переопределения синдартных свойств:"
 
 #: ../../api/defaults.rst:71
+#, fuzzy
 msgid ""
 "In this case the message will be send withoout parse mode, even if "
 "default parse mode is set it may be useful if you want to send message "
-"with plain text or :ref:`litegram.types.message_entity.MessageEntity`."
+"with plain text or :class:`litegram.types.message_entity.MessageEntity`."
 msgstr ""
 "В этом случае сообщение будет отправлено без режима разбора, даже если "
-"установлен стандартный режим разбора. Это может быть полезно, если вы хотите "
-"отправить сообщение в виде обычного текста или "
+"установлен стандартный режим разбора. Это может быть полезно, если вы "
+"хотите отправить сообщение в виде обычного текста или "
 ":ref:`litegram.types.message_entity.MessageEntity`."

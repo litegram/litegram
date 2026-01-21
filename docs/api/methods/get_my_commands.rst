@@ -2,7 +2,7 @@
 getMyCommands
 #############
 
-Returns: :obj:`list[BotCommand]`
+Returns: :obj:`list[litegram.types.bot_command.BotCommand]`
 
 .. automodule:: litegram.methods.get_my_commands
     :members:
