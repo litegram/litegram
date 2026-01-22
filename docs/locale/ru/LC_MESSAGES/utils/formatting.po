@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -23,7 +22,7 @@ msgstr "Форматування"
 
 #: ../../utils/formatting.rst:7
 msgid "Make your message formatting flexible and simple"
-msgstr "Зробить форматування ваших сообщений гнучким и простим"
+msgstr "Сделайте форматирование ваших сообщений гибким и простым"
 
 #: ../../utils/formatting.rst:9
 msgid ""
@@ -32,11 +31,11 @@ msgid ""
 "the Telegram without the need to remember tag parity (opening and "
 "closing) or escaping user input."
 msgstr ""
-"Этот инструмент працюе на основи сутностей сообщений, а не "
-"используя HTML чи розмитку Markdown, вы можете легко створити свое "
-"сообщения и отправить его в Telegram без необхидности пам'ятати о "
-"парнисть тегив (открытия и закриття) или о екранування "
-"користувацького вводу."
+"Этот инструмент работает на основе сущностей сообщений, а не "
+"используя HTML или розмитку Markdown, вы можете легко создать свое "
+"сообщения и отправить его в Telegram без необходимости помнить о "
+"парнисть тегив (открытия и закриття) или о экранирования "
+"пользовательского ввода."
 
 #: ../../utils/formatting.rst:14
 msgid "Usage"
@@ -48,11 +47,11 @@ msgstr "Основний сценарий"
 
 #: ../../utils/formatting.rst:19
 msgid "Construct your message and send it to the Telegram."
-msgstr "Складить свое повикмлення и надишлить его в Telegram."
+msgstr "Составьте свое сообщение и отправьте его в Telegram."
 
 #: ../../utils/formatting.rst:26
 msgid "Is the same as the next example, but without usage markup"
-msgstr "Такий самий, как наступний пример, але без викорисиння розмитки"
+msgstr "Такой самий, как следующий пример, но без использования розмитки"
 
 #: ../../utils/formatting.rst:35
 msgid ""
@@ -62,16 +61,16 @@ msgid ""
 "dict which can be used as :code:`**kwargs` in API call."
 msgstr ""
 "Досливно, когда вы виконуете метод :code:`as_kwargs`, объект Text "
-"перетворюеться в текст :code:`Hello, Alex!` из списком сутностей "
+"перетворюеться в текст :code:`Hello, Alex!` из списком сущностей "
 ":code:`[MessageEntity(type='bold', offset=7, length=4)]` и передаеться в "
-"словник, который может бути використаний как :code:`**kwargs` в API-виклику."
+"словарь, который может быть использован как :code:`**kwargs` в API-вызова."
 
 #: ../../utils/formatting.rst:39
 msgid ""
 "The complete list of elements is listed `on this page below <#available-"
 "elements>`_."
 msgstr ""
-"Повний список елементив наведено `на сторинци нижче <#available-"
+"Повний список елементив приведено `на сторинци ниже <#available-"
 "elements>`_."
 
 #: ../../utils/formatting.rst:42
@@ -84,13 +83,13 @@ msgid ""
 "so, out of the box litegram has a few already implemented functions that "
 "helps you to format your messages:"
 msgstr ""
-"На додаток к базових елементив могут бути реализовани структури "
+"На дополнение к базових елементив могут быть реализовани структуры "
 "рендерингу контенту, поэтому с коробки litegram предоставляет декилька уже "
-"реализованих функций, которые допомагають форматувати ваши сообщения:"
+"реализованных функций, которые помогают форматувати ваши сообщения:"
 
 #: litegram.utils.formatting.as_line:1 of
 msgid "Wrap multiple nodes into line with :code:`\\\\n` at the end of line."
-msgstr "Об'еднайте килька вузлив в рякк из :code:`\\\\n` в кинци рядка."
+msgstr "Об'еднайте несколько узлов в строку из :code:`\\\\n` в кинци рядка."
 
 #: ../../utils/formatting.rst
 msgid "Parameters"
@@ -98,15 +97,15 @@ msgstr "Параметры"
 
 #: litegram.utils.formatting.as_line:3 of
 msgid "Text or Any"
-msgstr "Текст или Інше"
+msgstr "Текст или Другое"
 
 #: litegram.utils.formatting.as_line:4 of
 msgid "ending of the line, by default is :code:`\\\\n`"
-msgstr "завершення рядка, по умолчанию :code:`\\\\n`"
+msgstr "завершения рядка, по умолчанию :code:`\\\\n`"
 
 #: litegram.utils.formatting.as_line:5 of
 msgid "separator between items, by default is empty string"
-msgstr "роздильник между елеменими, по умолчанию пуст рякк"
+msgstr "разделитель между елеменими, по умолчанию пуст строку"
 
 #: ../../utils/formatting.rst
 msgid "Returns"
@@ -121,11 +120,11 @@ msgstr "Текст"
 
 #: litegram.utils.formatting.as_list:1 of
 msgid "Wrap each element to separated lines"
-msgstr "Обгорнить каждый елемент в окремий рякк"
+msgstr "Обгорнить каждый елемент в отдельный строку"
 
 #: litegram.utils.formatting.as_marked_list:1 of
 msgid "Wrap elements as marked list"
-msgstr "Обгорнить елементи в маркований список"
+msgstr "Обгорнить елементи в маркированный список"
 
 #: litegram.utils.formatting.as_marked_list:4 of
 msgid "line marker, by default is '- '"
@@ -133,11 +132,11 @@ msgstr "маркер рядка, по умолчанию '- '"
 
 #: litegram.utils.formatting.as_numbered_list:1 of
 msgid "Wrap elements as numbered list"
-msgstr "Обгорнить елементи в нумерований список"
+msgstr "Обгорнить елементи в нумерованный список"
 
 #: litegram.utils.formatting.as_numbered_list:4 of
 msgid "initial number, by default 1"
-msgstr "початковий номер, по умолчанию 1"
+msgstr "начальный номер, по умолчанию 1"
 
 #: litegram.utils.formatting.as_numbered_list:5 of
 #, python-brace-format
@@ -146,21 +145,21 @@ msgstr "формат номера, по умолчанию '{}. '"
 
 #: litegram.utils.formatting.as_section:1 of
 msgid "Wrap elements as simple section, section has title and body"
-msgstr "Обгорнить елементи в простий роздил, роздил имеет заголовок и тило"
+msgstr "Обгорнить елементи в простой раздел, раздел имеет заголовок и тело"
 
 #: litegram.utils.formatting.as_marked_section:1 of
 msgid "Wrap elements as section with marked list"
-msgstr "Обгорнить елементи в роздил из маркованим списком"
+msgstr "Обгорнить елементи в раздел из маркованим списком"
 
 #: litegram.utils.formatting.as_numbered_section:1 of
 msgid "Wrap elements as section with numbered list"
-msgstr "Обгорнить елементи в роздил из нумерованим списком"
+msgstr "Обгорнить елементи в раздел из нумерованим списком"
 
 #: litegram.utils.formatting.as_key_value:1 of
 #, python-brace-format
 msgid "Wrap elements pair as key-value line. (:code:`<b>{key}:</b> {value}`)"
 msgstr ""
-"Обгорнить пари елементив в рядок ключ-значение. (:code:`<b>{key}:</b> "
+"Обгорнить пари елементив в строку ключ-значение. (:code:`<b>{key}:</b> "
 "{value}`)"
 
 #: ../../utils/formatting.rst:64
@@ -228,9 +227,8 @@ msgid "Simple text element"
 msgstr ""
 
 #: litegram.utils.formatting.Text.render:1 of
-#, fuzzy
 msgid "Render elements tree as text with entities list"
-msgstr "Обгорнить елементи в роздил из нумерованим списком"
+msgstr "Обгорнить елементи в раздел из нумерованим списком"
 
 #: litegram.utils.formatting.Text.as_kwargs:1 of
 msgid ""

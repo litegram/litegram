@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
@@ -46,12 +45,11 @@ msgid "RedisStorage"
 msgstr ""
 
 #: litegram.fsm.storage.redis.RedisStorage:1 of
-#, fuzzy
 msgid ""
 "Redis storage required :code:`redis` package installed (:code:`pip "
 "install redis`)"
 msgstr ""
-"Для сховища MongoDB потрибен встановлений пакет :code:`motor` (:code:`pip"
+"Для хранилища MongoDB нужен установленный пакет :code:`motor` (:code:`pip"
 " install motor`)"
 
 #: ../../dispatcher/finite_state_machine/storages.rst
@@ -59,15 +57,14 @@ msgid "Parameters"
 msgstr ""
 
 #: litegram.fsm.storage.redis.RedisStorage.__init__:1 of
-#, fuzzy
 msgid "Instance of Redis connection"
-msgstr "Екземпляр AsyncIOMotorClient"
+msgstr "Экземпляр Redis"
 
 #: litegram.fsm.storage.mongo.MongoStorage.__init__:2
 #: litegram.fsm.storage.pymongo.PyMongoStorage.__init__:2
 #: litegram.fsm.storage.redis.RedisStorage.__init__:2 of
 msgid "builder that helps to convert contextual key to string"
-msgstr "конструктор, который кпомагае конвертувати контекстний ключ в рякк"
+msgstr "конструктор, который кпомагае конвертувати контекстный ключ в строку"
 
 #: litegram.fsm.storage.redis.RedisStorage.__init__:3 of
 msgid "TTL for state records"
@@ -78,70 +75,62 @@ msgid "TTL for data records"
 msgstr ""
 
 #: litegram.fsm.storage.redis.RedisStorage.from_url:1 of
-#, fuzzy
 msgid ""
 "Create an instance of :class:`RedisStorage` with specifying the "
 "connection string"
-msgstr "Створити екземпляр :class:`MongoStorage`, вказавши строку подключение"
+msgstr "Создать экземпляр :class:`RedisStorage`, указав строку подключения"
 
 #: litegram.fsm.storage.redis.RedisStorage.from_url:3 of
-#, fuzzy
 msgid "for example :code:`redis://user:password@host:port/db`"
-msgstr "например :code:`mongodb://user:password@host:port`"
+msgstr "например :code:`redis://user:password@host:port`"
 
 #: litegram.fsm.storage.redis.RedisStorage.from_url:4 of
-#, fuzzy
 msgid "see :code:`redis` docs"
-msgstr "див. ккуменицию :code:`motor`"
+msgstr "див. документацию :code:`redis`"
 
 #: litegram.fsm.storage.redis.RedisStorage.from_url:5 of
-#, fuzzy
 msgid "arguments to be passed to :class:`RedisStorage`"
-msgstr "аргументи, которые потрибно передати :class:`MongoStorage`"
+msgstr "аргументы, которые нужно передать :class:`RedisStorage`"
 
 #: ../../dispatcher/finite_state_machine/storages.rst
 msgid "Returns"
 msgstr ""
 
 #: litegram.fsm.storage.redis.RedisStorage.from_url:6 of
-#, fuzzy
 msgid "an instance of :class:`RedisStorage`"
-msgstr "екземпляр класу :class:`MongoStorage`"
+msgstr "экземпляр класса :class:`RedisStorage`"
 
 #: ../../dispatcher/finite_state_machine/storages.rst:23
 msgid "MongoStorage"
 msgstr ""
 
 #: litegram.fsm.storage.pymongo.PyMongoStorage:1 of
-#, fuzzy
 msgid ""
 "MongoDB storage required :code:`pymongo` package installed (:code:`pip "
 "install pymongo`)."
 msgstr ""
-"Для сховища MongoDB потрибен встановлений пакет :code:`motor` (:code:`pip"
+"Для хранилища MongoDB нужен установленный пакет :code:`motor` (:code:`pip"
 " install motor`)"
 
 #: litegram.fsm.storage.pymongo.PyMongoStorage.__init__:1 of
-#, fuzzy
 msgid "Instance of AsyncMongoClient"
-msgstr "Екземпляр AsyncIOMotorClient"
+msgstr "Экземпляр AsyncIOMotorClient"
 
 #: litegram.fsm.storage.mongo.MongoStorage.__init__:3
 #: litegram.fsm.storage.pymongo.PyMongoStorage.__init__:3 of
 msgid "name of the MongoDB database for FSM"
-msgstr "название бази данных MongoDB для FSM"
+msgstr "название базе данных MongoDB для FSM"
 
 #: litegram.fsm.storage.mongo.MongoStorage.__init__:4
 #: litegram.fsm.storage.pymongo.PyMongoStorage.__init__:4 of
 msgid "name of the collection for storing FSM states and data"
-msgstr "название колекции для хранения синив и данных FSM"
+msgstr "название коллекции для хранения состояний и данных FSM"
 
 #: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:1 of
-#, fuzzy
 msgid ""
 "Create an instance of :class:`PyMongoStorage` with specifying the "
 "connection string"
-msgstr "Створити екземпляр :class:`MongoStorage`, вказавши строку подключение"
+msgstr "Создать экземпляр :class:`PyMongoStorage`, указав строку подключения"
 
 #: litegram.fsm.storage.mongo.MongoStorage.from_url:3
 #: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:3 of
@@ -149,19 +138,16 @@ msgid "for example :code:`mongodb://user:password@host:port`"
 msgstr "например :code:`mongodb://user:password@host:port`"
 
 #: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:4 of
-#, fuzzy
 msgid "see :code:`pymongo` docs"
-msgstr "див. ккуменицию :code:`motor`"
+msgstr "див. документацию :code:`motor`"
 
 #: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:5 of
-#, fuzzy
 msgid "arguments to be passed to :class:`PyMongoStorage`"
-msgstr "аргументи, которые потрибно передати :class:`MongoStorage`"
+msgstr "аргументы, которые нужно передать :class:`PyMongoStorage`"
 
 #: litegram.fsm.storage.pymongo.PyMongoStorage.from_url:6 of
-#, fuzzy
 msgid "an instance of :class:`PyMongoStorage`"
-msgstr "екземпляр класу :class:`MongoStorage`"
+msgstr "экземпляр класса :class:`PyMongoStorage`"
 
 #: litegram.fsm.storage.mongo.MongoStorage:2 of
 msgid ""
@@ -170,40 +156,34 @@ msgid ""
 msgstr ""
 
 #: litegram.fsm.storage.mongo.MongoStorage:6 of
-#, fuzzy
 msgid ""
 "MongoDB storage required :code:`motor` package installed (:code:`pip "
 "install motor`)"
 msgstr ""
-"Для сховища MongoDB потрибен встановлений пакет :code:`motor` (:code:`pip"
+"Для хранилища MongoDB нужен установленный пакет :code:`motor` (:code:`pip"
 " install motor`)"
 
 #: litegram.fsm.storage.mongo.MongoStorage.__init__:1 of
-#, fuzzy
 msgid "Instance of AsyncIOMotorClient"
-msgstr "Екземпляр AsyncIOMotorClient"
+msgstr "Экземпляр AsyncIOMotorClient"
 
 #: litegram.fsm.storage.mongo.MongoStorage.from_url:1 of
-#, fuzzy
 msgid ""
 "Create an instance of :class:`MongoStorage` with specifying the "
 "connection string"
-msgstr "Створити екземпляр :class:`MongoStorage`, вказавши строку подключение"
+msgstr "Создать экземпляр :class:`MongoStorage`, указав строку подключения"
 
 #: litegram.fsm.storage.mongo.MongoStorage.from_url:4 of
-#, fuzzy
 msgid "see :code:`motor` docs"
-msgstr "див. ккуменицию :code:`motor`"
+msgstr "див. документацию :code:`motor`"
 
 #: litegram.fsm.storage.mongo.MongoStorage.from_url:5 of
-#, fuzzy
 msgid "arguments to be passed to :class:`MongoStorage`"
-msgstr "аргументи, которые потрибно передати :class:`MongoStorage`"
+msgstr "аргументы, которые нужно передать :class:`MongoStorage`"
 
 #: litegram.fsm.storage.mongo.MongoStorage.from_url:6 of
-#, fuzzy
 msgid "an instance of :class:`MongoStorage`"
-msgstr "екземпляр класу :class:`MongoStorage`"
+msgstr "экземпляр класса :class:`MongoStorage`"
 
 #: ../../dispatcher/finite_state_machine/storages.rst:34
 msgid "KeyBuilder"
@@ -215,39 +195,39 @@ msgstr ""
 
 #: litegram.fsm.storage.base.KeyBuilder:1 of
 msgid "Base class for key builder."
-msgstr "Базовий клас для конструктора ключив."
+msgstr "Базовый класс для конструктора ключей."
 
 #: litegram.fsm.storage.base.DefaultKeyBuilder.build:1
 #: litegram.fsm.storage.base.KeyBuilder.build:1 of
 msgid "Build key to be used in storage's db queries"
-msgstr "Створити ключ для викорисиння в запиих к бази данных сховища"
+msgstr "Создать ключ для использования в запросах к базе данных хранилища"
 
 #: litegram.fsm.storage.base.DefaultKeyBuilder.build:3
 #: litegram.fsm.storage.base.KeyBuilder.build:3 of
 msgid "contextual key"
-msgstr "контекстний ключ"
+msgstr "контекстный ключ"
 
 #: litegram.fsm.storage.base.DefaultKeyBuilder.build:4
 #: litegram.fsm.storage.base.KeyBuilder.build:4 of
 msgid "part of the record"
-msgstr "частина запису"
+msgstr "часть записи"
 
 #: litegram.fsm.storage.base.DefaultKeyBuilder.build:5
 #: litegram.fsm.storage.base.KeyBuilder.build:5 of
 msgid "key to be used in storage's db queries"
-msgstr "ключ для викорисиння в запиих к бази данных сховища"
+msgstr "ключ для использования в запросах к базе данных хранилища"
 
 #: litegram.fsm.storage.base.DefaultKeyBuilder:1 of
 msgid "Simple key builder with default prefix."
-msgstr "Простий конструктор ключив из синдартним префиксом."
+msgstr "Простой конструктор ключей из стандартным префиксом."
 
 #: litegram.fsm.storage.base.DefaultKeyBuilder:3 of
 msgid ""
 "Generates a colon-joined string with prefix, chat_id, user_id, optional "
 "bot_id, business_connection_id, destiny and field."
 msgstr ""
-"Генеруе рядок из префиксом, chat_id, user_id, додатковим bot_id, "
-"business_connection_id, destiny и полем, роздиленими двокрапкою."
+"Генерирует строку с префиксом, chat_id, user_id, дополнительным bot_id, "
+"business_connection_id, destiny и полем, разделенными двоеточием."
 
 #: litegram.fsm.storage.base.DefaultKeyBuilder:6 of
 msgid "Format:"
@@ -322,12 +302,12 @@ msgstr ""
 #~ "Redis storage required :code:`redis` package"
 #~ " installed (:code:`pip install redis`)"
 #~ msgstr ""
-#~ "Для сховища Redis потрибен встановлений "
+#~ "Для хранилища Redis нужен установленный "
 #~ "пакет :code:`redis` (:code:`pip install "
 #~ "redis`)"
 
 #~ msgid "Instance of Redis connection"
-#~ msgstr "Екземпляр подключение Redis"
+#~ msgstr "Экземпляр подключения Redis"
 
 #~ msgid "TTL for state records"
 #~ msgstr "Время життя (TTL) для записив сину"
@@ -338,19 +318,19 @@ msgstr ""
 #~ msgid ""
 #~ "Create an instance of :class:`RedisStorage`"
 #~ " with specifying the connection string"
-#~ msgstr "Створити екземпляр :class:`RedisStorage`, вказавши строку подключение"
+#~ msgstr "Создать экземпляр :class:`RedisStorage`, указав строку подключения"
 
 #~ msgid "for example :code:`redis://user:password@host:port/db`"
 #~ msgstr "например :code:`redis://user:password@host:port/db`"
 
 #~ msgid "see :code:`redis` docs"
-#~ msgstr "див. ккуменицию :code:`redis`"
+#~ msgstr "див. документацию :code:`redis`"
 
 #~ msgid "arguments to be passed to :class:`RedisStorage`"
-#~ msgstr "аргументи, которые потрибно передати :class:`RedisStorage`"
+#~ msgstr "аргументы, которые нужно передать :class:`RedisStorage`"
 
 #~ msgid "an instance of :class:`RedisStorage`"
-#~ msgstr "екземпляр класу :class:`MongoStorage`"
+#~ msgstr "экземпляр класса :class:`MongoStorage`"
 
 #~ msgid ""
 #~ "DEPRECATED: Use :class:`PyMongoStorage` instead. "
@@ -362,23 +342,23 @@ msgstr ""
 #~ "MongoDB storage required :code:`motor` package"
 #~ " installed (:code:`pip install motor`)"
 #~ msgstr ""
-#~ "Для сховища MongoDB потрибен встановлений "
+#~ "Для хранилища MongoDB нужен установленный "
 #~ "пакет :code:`motor` (:code:`pip install "
 #~ "motor`)"
 
 #~ msgid "Instance of AsyncIOMotorClient"
-#~ msgstr "Екземпляр AsyncIOMotorClient"
+#~ msgstr "Экземпляр AsyncIOMotorClient"
 
 #~ msgid ""
 #~ "Create an instance of :class:`MongoStorage`"
 #~ " with specifying the connection string"
-#~ msgstr "Створити екземпляр :class:`MongoStorage`, вказавши строку подключение"
+#~ msgstr "Создать экземпляр :class:`MongoStorage`, указав строку подключения"
 
 #~ msgid "see :code:`motor` docs"
-#~ msgstr "див. ккуменицию :code:`motor`"
+#~ msgstr "див. документацию :code:`motor`"
 
 #~ msgid "arguments to be passed to :class:`MongoStorage`"
-#~ msgstr "аргументи, которые потрибно передати :class:`MongoStorage`"
+#~ msgstr "аргументы, которые нужно передать :class:`MongoStorage`"
 
 #~ msgid "an instance of :class:`MongoStorage`"
-#~ msgstr "екземпляр класу :class:`MongoStorage`"
+#~ msgstr "экземпляр класса :class:`MongoStorage`"

@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -28,11 +27,11 @@ msgstr "Стратегия"
 msgid ""
 "This module provides the `FSMStrategy` enumeration which is used to "
 "define the strategy of the finite state machine."
-msgstr "Этот модуль обеспечивает перелик `FSMStrategy`, который використовуеться для визначення стратегии кинэтового автомата."
+msgstr "Этот модуль обеспечивает перелик `FSMStrategy`, который використовуеться для определения стратегии кинэтового автомата."
 
 #: litegram.fsm.strategy.FSMStrategy:1 of
 msgid "FSM strategy for storage key generation."
-msgstr "Стратегия кинэтового автомата для генерации ключив збереження."
+msgstr "Стратегия кинэтового автомата для генерации ключей збереження."
 
 #: ../../docstring litegram.fsm.strategy.FSMStrategy.CHAT:1 of
 msgid "State will be stored for each chat globally without separating by users."
@@ -40,7 +39,7 @@ msgstr "Син зберигатиметься для каждого чату г�
 
 #: ../../docstring litegram.fsm.strategy.FSMStrategy.CHAT_TOPIC:1 of
 msgid "State will be stored for each chat and topic, but not separated by users."
-msgstr "Син зберигатиметься для каждого чату и темы, але без роздилення за користувачами."
+msgstr "Син зберигатиметься для каждого чату и темы, но без роздилення за користувачами."
 
 #: ../../docstring litegram.fsm.strategy.FSMStrategy.GLOBAL_USER:1 of
 msgid "State will be stored globally for each user globally."

@@ -21,7 +21,6 @@ msgid "Router"
 msgstr "Маршрутизатор"
 
 #: ../../dispatcher/router.rst:7
-#, fuzzy
 msgid "Usage:"
 msgstr "Повикмлення"
 
@@ -67,7 +66,6 @@ msgid "Returns"
 msgstr "Возвращает"
 
 #: litegram.dispatcher.router.Router.include_routers:1 of
-#, fuzzy
 msgid "Attach multiple routers."
 msgstr "Подключение маршрутизаторов."
 
@@ -207,7 +205,6 @@ msgid "Chat join request"
 msgstr ""
 
 #: ../../dispatcher/router.rst:172
-#, fuzzy
 msgid "Message reaction"
 msgstr "Повикмлення"
 
@@ -216,7 +213,6 @@ msgid "Message reaction count"
 msgstr ""
 
 #: ../../dispatcher/router.rst:190
-#, fuzzy
 msgid "Chat boost"
 msgstr "Пост на канали"
 
@@ -229,7 +225,6 @@ msgid "Errors"
 msgstr "Ошибки"
 
 #: ../../dispatcher/router.rst:215
-#, fuzzy
 msgid ""
 "Is useful for handling errors from other handlers, error event described "
 ":ref:`here <error-event>`"
@@ -263,7 +258,6 @@ msgid "Example:"
 msgstr "Пример:"
 
 #: ../../dispatcher/router.rst:233
-#, fuzzy
 msgid "module_1.py"
 msgstr "module_2.py"
 

@@ -25,11 +25,10 @@ msgid ""
 "Base handler is generic abstract class and should be used in all other "
 "class-based handlers."
 msgstr ""
-"Базовий обробник является загальним абстрактним класом и должен "
-"использоваться в всех других обробниках на основи класу."
+"Базовый обработчик является загальним абстрактним класом и должен "
+"использоваться в всех других обробниках на основе класса."
 
 #: ../../dispatcher/class_based_handlers/base.rst:9
-#, fuzzy
 msgid "Import: :code:`from litegram.handlers import BaseHandler`"
 msgstr "Import: :code:`from litegram.handler import BaseHandler`"
 
@@ -38,30 +37,28 @@ msgid ""
 "By default you will need to override only method :code:`async def "
 "handle(self) -> Any: ...`"
 msgstr ""
-"За замовчуванням вам потрибно буде перевизначити только метод :code:`async "
+"За замовчуванням вам нужно будет переопределить только метод :code:`async "
 "def handle(self) -> Any: ...`"
 
 #: ../../dispatcher/class_based_handlers/base.rst:13
-#, fuzzy
 msgid ""
 "This class also has a default initializer and you don't need to change "
 "it. The initializer accepts the incoming event and all contextual data, "
 "which can be accessed from the handler through attributes: :code:`event: "
 "TelegramEvent` and :code:`data: Dict[str, Any]`"
 msgstr ""
-"Этот клас також имеет инициализатор по умолчанию, и вам не потрибно его"
+"Этот класс также имеет инициализатор по умолчанию, и вам не нужно его"
 " изменять. Інициализатор принимает поточну подию и все контекстни дани, "
-"доступ к которых можна получить с обробника через атрибути: :code:`event: "
+"доступ к которых можно получить с обработчика через атрибути: :code:`event: "
 "TelegramEvent` and :code:`data: Dict[str, Any]`"
 
 #: ../../dispatcher/class_based_handlers/base.rst:17
-#, fuzzy
 msgid ""
 "If an instance of the bot is specified in context data or current context"
 " it can be accessed through *bot* class attribute."
 msgstr ""
-"Якщо екземпляр бота вказано в контекстних данных или поточному контексти, "
-"к нього можна получить доступ через атрибут класу *bot*."
+"Если экземпляр бота вказано в контекстних данных или текущему контексти, "
+"к нього можно получить доступ через атрибут класса *bot*."
 
 #: ../../dispatcher/class_based_handlers/base.rst:20
 msgid "Example"

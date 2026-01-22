@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -167,7 +166,6 @@ msgid "Another example of overriding default properties:"
 msgstr "Еще один пример переопределения синдартных свойств:"
 
 #: ../../api/defaults.rst:71
-#, fuzzy
 msgid ""
 "In this case the message will be send withoout parse mode, even if "
 "default parse mode is set it may be useful if you want to send message "

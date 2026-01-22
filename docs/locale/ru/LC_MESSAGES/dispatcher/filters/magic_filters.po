@@ -24,12 +24,12 @@ msgstr "✨ Магични 🔮 фильтри ✨"
 #: ../../dispatcher/filters/magic_filters.rst:9
 msgid "This page still in progress. Has many incorrectly worded sentences."
 msgstr ""
-"Ця сторинка все еще в разработке. Мае много неправильно сформульованих речень."
+"Эта страница все еще в разработке. Имеет много неправильно сформульованих речень."
 
 #: ../../dispatcher/filters/magic_filters.rst:11
 msgid "Is external package maintained by *litegram* core team."
 msgstr ""
-"Це зовнишний пакет, который пидтримуеться основною командою розробки *litegram*."
+"Это зовнишний пакет, который пидтримуеться основною командою розробки *litegram*."
 
 #: ../../dispatcher/filters/magic_filters.rst:13
 msgid ""
@@ -38,11 +38,11 @@ msgid ""
 "install it and use with any other libraries and in own projects without "
 "depending *litegram* installed."
 msgstr ""
-"За замовчуванням встановлюеться разом с *litegram* и, також, доступний в "
-"`PyPi - magic-filter <https://pypi.org/project/magic-filter/>`_. Це означае, "
+"За замовчуванням встановлюеться разом с *litegram* и, также, доступний в "
+"`PyPi - magic-filter <https://pypi.org/project/magic-filter/>`_. Это означае, "
 "что Вы можете встановити его и использовать с будь-которыми иншими "
-"библиотеками и в власних проектах, незалежно от того встановлено *litegram* "
-"чи ни."
+"библиотеками и в собственных проектах, независимо от того установлено *litegram* "
+"или ни."
 
 #: ../../dispatcher/filters/magic_filters.rst:17
 msgid "Usage"
@@ -54,8 +54,8 @@ msgid ""
 "`magic_filter.F` that's mean :code:`F` can be imported from :code:`litegram` "
 "or :code:`magic_filter`. :class:`F` is alias for :class:`MagicFilter`."
 msgstr ""
-"Пакет **magic_filter** реализует клас из короткою назвою :class:`magic_filter."
-"F`, тобто :code:`F` можна импортувати с :code:`litegram` или :code:"
+"Пакет **magic_filter** реализует класс из короткою названием :class:`magic_filter."
+"F`, то есть :code:`F` можно импортувати с :code:`litegram` или :code:"
 "`magic_filter`. :class:`F` является псевдонимом для :class:`MagicFilter`."
 
 #: ../../dispatcher/filters/magic_filters.rst:23
@@ -64,7 +64,7 @@ msgid ""
 "to use this extension you should import magic from *litegram* instead of "
 "*magic_filter* package"
 msgstr ""
-"Зауважте, что *litegram* имеет невелике розширення для magic-filter, и если Ви "
+"Заметьте, что *litegram* имеет невелике розширення для magic-filter, и если Ви "
 "хотите использовать это розширення, вам следует импортувати магию с *litegram* "
 "вместо пакета *magic_filter*"
 
@@ -74,7 +74,7 @@ msgid ""
 "<magic-filter-possible-actions>` and memorize the attributes chain and the "
 "action which should be checked on demand."
 msgstr ""
-"Объект классу :class:`MagicFilter` можна викликати, поддерживает :ref:`деяки "
+"Объект классу :class:`MagicFilter` можно вызывать, поддерживает :ref:`некоторые "
 "действия <magic-filter-possible-actions>` и запам’ятовуе ланцюжок атрибутив и "
 "дию, которую следует перевиряти на вимогу."
 
@@ -86,10 +86,10 @@ msgid ""
 "action ':code:`F.foo.bar.baz == 'spam'` and then call the resulted object - :"
 "code:`(F.foo.bar.baz == 'spam').resolve(obj)`"
 msgstr ""
-"Тож это означае, что вы можете ланцюжком получить атрибути, описати простые "
-"проверки данных, а потим викликати отриманий объект, передаючи один объект "
-"как аргумент, например, створити ланцюжок атрибутив :code:`F.foo.bar.baz`, а "
-"потим додати дию ':code:`F.foo.bar.baz == 'spam'`, после чого викликати "
+"Тож это означае, что вы можете ланцюжком получить атрибути, описать простые "
+"проверки данных, а потим вызывать отриманий объект, передаючи один объект "
+"как аргумент, например, создать ланцюжок атрибутив :code:`F.foo.bar.baz`, а "
+"потим добавить дию ':code:`F.foo.bar.baz == 'spam'`, после чого вызывать "
 "отриманий объект - :code:`(F.foo.bar.baz == 'spam').resolve(obj)`"
 
 #: ../../dispatcher/filters/magic_filters.rst:36
@@ -101,7 +101,7 @@ msgid ""
 "Magic filter object supports some of basic logical operations over object "
 "attributes"
 msgstr ""
-"Объект магичного фильтра поддерживает деяки основни логични операции над "
+"Объект магичного фильтра поддерживает некоторые основни логични операции над "
 "атрибутами объекта"
 
 #: ../../dispatcher/filters/magic_filters.rst:41
@@ -118,14 +118,14 @@ msgstr "Проверка на однаковисть"
 
 #: ../../dispatcher/filters/magic_filters.rst:58
 msgid "Is one of"
-msgstr "Проверка на приналежнисть"
+msgstr "Проверка на принадлежность"
 
 #: ../../dispatcher/filters/magic_filters.rst:60
 msgid ""
 "Can be used as method named :code:`in_` or as matmul operator :code:`@` with "
 "any iterable"
 msgstr ""
-"Може использоваться как метод из назвою :code:`in_` или как оператор "
+"Може использоваться как метод из названием :code:`in_` или как оператор "
 "matmul :code:`@` с будь-которым итерованим"
 
 #: ../../dispatcher/filters/magic_filters.rst:68
@@ -160,7 +160,7 @@ msgstr "Інвертування результатту"
 msgid ""
 "Any of available operation can be inverted by bitwise inversion - :code:`~`"
 msgstr ""
-"Будь-которая доступна операция может бути инвертована с помощью побитовои "
+"Будь-которая доступна операция может быть инвертована с помощью побитовои "
 "инверсии - :code:`~`"
 
 #: ../../dispatcher/filters/magic_filters.rst:111
@@ -172,7 +172,7 @@ msgid ""
 "All operations can be combined via bitwise and/or operators - :code:`&`/:"
 "code:`|`"
 msgstr ""
-"Все операции можна комбинувати с помощью побитових и/или операторив - :"
+"Все операции можно комбинувати с помощью побитовых и/или операторов - :"
 "code:`&`/:code:`|`"
 
 #: ../../dispatcher/filters/magic_filters.rst:123
@@ -181,7 +181,7 @@ msgstr "Модификатори атрибутив - манипуляции с 
 
 #: ../../dispatcher/filters/magic_filters.rst:125
 msgid "Make text upper- or lower-case"
-msgstr "Робить текст верхним или нижним регистром"
+msgstr "Делает текст верхним или нижним регистром"
 
 #: ../../dispatcher/filters/magic_filters.rst:127
 msgid "Can be used only with string attributes."
@@ -189,14 +189,14 @@ msgstr "Можна использовать только с рядковими �
 
 #: ../../dispatcher/filters/magic_filters.rst:137
 msgid "Get filter result as handler argument"
-msgstr "Отримати результатт фильтра как аргумент обробника"
+msgstr "Получить результатт фильтра как аргумент обработчика"
 
 #: ../../dispatcher/filters/magic_filters.rst:139
 msgid ""
 "This part is not available in *magic-filter* directly but can be used with "
 "*litegram*"
 msgstr ""
-"Ця частина недоступна непосредственно в *magic-filter*, але ии можна "
+"Ця часть недоступна непосредственно в *magic-filter*, но её можно "
 "использовать с *litegram*"
 
 #: ../../dispatcher/filters/magic_filters.rst:152

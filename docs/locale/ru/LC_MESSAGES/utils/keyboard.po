@@ -30,13 +30,13 @@ msgid ""
 "rather than using builder, but if you have dynamic markup configuration, "
 "feel free to use builder as you wish."
 msgstr ""
-"Зауважте, что если в вас является статична розмитка, найкраще визначити ии явно, "
-"а не использовать конструктор, але если в вас является конфигурация "
+"Заметьте, что если в вас является статична розмитка, лучше всего определить её явно, "
+"а не использовать конструктор, но если в вас является конфигурация "
 "динамичнои розмитки, смиливо используйте конструктор на свий розсуд."
 
 #: ../../utils/keyboard.rst:15
 msgid "Usage example"
-msgstr "Пример викорисиння"
+msgstr "Пример использования"
 
 #: ../../utils/keyboard.rst:17
 msgid "For example you want to generate inline keyboard with 10 buttons"
@@ -61,7 +61,6 @@ msgid "and finally you can export this markup to use it in your message"
 msgstr ""
 
 #: ../../utils/keyboard.rst:53
-#, fuzzy
 msgid "Reply keyboard builder has the same interface"
 msgstr "Конструктор клавиатуры кпомагае динамично генерувати розмитку"
 
@@ -87,7 +86,7 @@ msgstr "Додавання новои кнопки к розмитки"
 
 #: ../../utils/keyboard.rst:74
 msgid "Construct an InlineKeyboardMarkup"
-msgstr "Створення InlineKeyboardMarkup"
+msgstr "Создания InlineKeyboardMarkup"
 
 #: litegram.utils.keyboard.KeyboardBuilder.add:1 of
 msgid "Add one or many buttons to markup."
@@ -119,7 +118,6 @@ msgid "Adjust previously added buttons to specific row sizes."
 msgstr "Налаштування раньше кданных кнопок к певних розмирив рядкив."
 
 #: litegram.utils.keyboard.KeyboardBuilder.adjust:3 of
-#, fuzzy
 msgid ""
 "By default, when the sum of passed sizes is lower than buttons count the "
 "last one size will be used for tail of the markup. If repeat=True is "
@@ -127,8 +125,8 @@ msgid ""
 "all sizes"
 msgstr ""
 "За замовчуванням, когда сума переданных розмирив менша за килькисть кнопок,"
-" для хвоста розмитки буде використано останний переданий розмир. Якщо "
-"передано параметр repeat=True, уси розмири будуть повторюватися, поки является "
+" для хвоста розмитки будет використано останний переданный розмир. Если "
+"передано параметр repeat=True, уси розмири будут повторюватися, поки является "
 "доступни кнопки"
 
 #: litegram.utils.keyboard.InlineKeyboardBuilder.buttons:1
@@ -139,7 +137,7 @@ msgstr "Отримання плоского списку всех кнопок"
 #: litegram.utils.keyboard.InlineKeyboardBuilder.copy:1
 #: litegram.utils.keyboard.ReplyKeyboardBuilder.copy:1 of
 msgid "Make full copy of current builder with markup"
-msgstr "Робить повну копию текущего конструктора с розмиткою"
+msgstr "Делает повну копию текущего конструктора с разметкой"
 
 #: litegram.utils.keyboard.KeyboardBuilder.export:1 of
 msgid "Export configured markup as list of lists of buttons"
@@ -152,12 +150,12 @@ msgstr ""
 
 #: litegram.utils.keyboard.KeyboardBuilder.row:1 of
 msgid "Add row to markup"
-msgstr "Додае рякк в розмитку"
+msgstr "Додае строку в розмитку"
 
 #: litegram.utils.keyboard.KeyboardBuilder.row:3 of
 msgid "When too much buttons is passed it will be separated to many rows"
 msgstr ""
-"Коли передано занадто много кнопок, вони будуть роздилени на много "
+"Когда передано слишком много кнопок, они будут роздилени на много "
 "рядкив"
 
 #: ../../utils/keyboard.rst:77
@@ -167,7 +165,7 @@ msgstr "Клавиатура ответов"
 #: litegram.utils.keyboard.ReplyKeyboardBuilder:1 of
 msgid "Reply keyboard builder inherits all methods from generic builder"
 msgstr ""
-"Конструктор клавиатуры видповидей успадковуе все методы от "
+"Конструктор клавиатуры ответов успадковуе все методы от "
 "универсального конструктора"
 
 #: ../../utils/keyboard.rst:85
@@ -176,4 +174,4 @@ msgstr "Додавання новои кнопки к розмитки"
 
 #: ../../utils/keyboard.rst:90
 msgid "Construct an ReplyKeyboardMarkup"
-msgstr "Створення ReplyKeyboardMarkup"
+msgstr "Создания ReplyKeyboardMarkup"

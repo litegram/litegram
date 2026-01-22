@@ -23,7 +23,7 @@ msgstr "CallbackQueryHandler"
 
 #: litegram.handlers.callback_query.CallbackQueryHandler:1 of
 msgid "There is base class for callback query handlers."
-msgstr "Це базовий клас для обработчиков запитив зворотного виклику."
+msgstr "Это базовый класс для обработчиков запитив обратного вызова."
 
 #: litegram.handlers.callback_query.CallbackQueryHandler:13 of
 msgid "Example:"

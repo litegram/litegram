@@ -94,7 +94,7 @@ docs-html: docs-compile
 .PHONY: docs-html
 
 docs-clean:
-	cd $(docs_dir) && make clean
+	uv run --extra docs bash -c 'cd $(docs_dir) && make clean'
 .PHONY: docs-clean
 
 docs-serve: docs-compile
@@ -109,8 +109,10 @@ $(locale_targets): docs-serve-%:
 # Project
 # =================================================================================================
 
-ifeq (bump,$(firstword $(MAKECMDGOALS)))
-  BUMP_ARGS := $(filter-out bump,$(MAKECMDGOALS))
+LITEGRAM_VERSION = $(shell sed -n 's/__version__ = "\(.*\)"/\1/p' litegram/__meta__.py)
+
+ifneq ($(filter bump prepare-release,$(firstword $(MAKECMDGOALS))),)
+  BUMP_ARGS := $(filter-out bump prepare-release,$(MAKECMDGOALS))
 endif
 
 .PHONY: build
@@ -130,16 +132,16 @@ update-api:
 
 .PHONY: towncrier-build
 towncrier-build:
-	uv run --extra docs towncrier build --yes
+	uv run --extra docs towncrier build --yes --version $(LITEGRAM_VERSION)
 
 .PHONY: towncrier-draft
 towncrier-draft:
-	uv run --extra docs towncrier build --draft
+	uv run --extra docs towncrier build --draft --version $(LITEGRAM_VERSION)
 
 .PHONY: towncrier-draft-github
 towncrier-draft-github:
 	mkdir -p dist
-	uv run --extra docs towncrier build --draft | pandoc - -o dist/release.md
+	uv run --extra docs towncrier build --draft --version $(LITEGRAM_VERSION) | pandoc - -o dist/release.md
 
 .PHONY: prepare-release
 prepare-release: bump towncrier-build
@@ -147,8 +149,8 @@ prepare-release: bump towncrier-build
 .PHONY: release
 release:
 	git add .
-	git commit -m "Release $(shell uv run python -c 'from litegram import __version__; print(__version__)')"
-	git tag v$(shell uv run python -c 'from litegram import __version__; print(__version__)')
+	git commit -m "Release $(LITEGRAM_VERSION)"
+	git tag v$(LITEGRAM_VERSION)
 
 # Catch-all target to allow passing arguments to other targets
 %:

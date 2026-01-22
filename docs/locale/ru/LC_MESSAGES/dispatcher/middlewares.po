@@ -26,7 +26,7 @@ msgid ""
 "via middlewares."
 msgstr ""
 "**litegram** предоставляет мощный механизм для настройки обработчиков(handler)"
-" событий через промижни програми."
+" событий через промижни программы."
 
 #: ../../dispatcher/middlewares.rst:9
 msgid ""
@@ -53,7 +53,7 @@ msgid ""
 "Middleware is function that triggered on every event received from "
 "Telegram Bot API in many points on processing pipeline."
 msgstr ""
-"Middleware — это функция, которая запускается во время каждой подии, "
+"Middleware — это функция, которая запускается во время каждой события, "
 "полученной от Telegram Bot API в многих точках процесса обработки."
 
 #: ../../dispatcher/middlewares.rst:21
@@ -70,7 +70,7 @@ msgid ""
 " bridge the gap between the functional requirements of applications and "
 "the underlying operating systems, network protocol stacks, and databases."
 msgstr ""
-"Middleware — это програма, многократного використання, что "
+"Middleware — это програма, многократного использования, что "
 "використовуе шаблони и фреймворки для ликвидування разрыва между "
 "функциональними вимогами приложений и основными операцийними системами, "
 "стеками сетевых протоколив и базами данных."
@@ -92,8 +92,8 @@ msgid ""
 "Middleware instance can be applied for every type of Telegram Event "
 "(Update, Message, etc.) in two places"
 msgstr ""
-"Екземпляр промижнои програми можна застосувати для каждого типа подии "
-"Telegram (обновления, сообщения и т.д.) в двох местах"
+"Экземпляр промежуточной программы можно применить для каждого типа события "
+"Telegram (обновления, сообщения и т.д.) в двух местах"
 
 #: ../../dispatcher/middlewares.rst:36
 msgid ""
@@ -120,8 +120,8 @@ msgid ""
 "Middleware should be subclass of :code:`BaseMiddleware` (:code:`from "
 "litegram import BaseMiddleware`) or any async callable"
 msgstr ""
-"Middleware имеет бути пидкласом :code:`BaseMiddleware` (:code:`from "
-"litegram import BaseMiddleware`) или будь-которой асинхронною функциею"
+"Middleware имеет быть пидкласом :code:`BaseMiddleware` (:code:`from "
+"litegram import BaseMiddleware`) или будь-которой асинхронной функциею"
 
 #: ../../dispatcher/middlewares.rst:47
 msgid "Arguments specification"
@@ -129,11 +129,11 @@ msgstr "Спецификация аргументив"
 
 #: litegram.dispatcher.middlewares.base.BaseMiddleware:1 of
 msgid "Generic middleware class"
-msgstr "Узагальнений клас промеждуних програм"
+msgstr "Узагальнений класс промеждуних програм"
 
 #: litegram.dispatcher.middlewares.base.BaseMiddleware.__call__:1 of
 msgid "Execute middleware"
-msgstr "Виконання промеждунои програми"
+msgstr "Виконання промеждунои программы"
 
 #: ../../dispatcher/middlewares.rst
 msgid "Parameters"
@@ -145,11 +145,11 @@ msgstr "Обробник (handler), обгорнутий в ланцюжок п�
 
 #: litegram.dispatcher.middlewares.base.BaseMiddleware.__call__:4 of
 msgid "Incoming event (Subclass of :class:`litegram.types.base.TelegramObject`)"
-msgstr "Вхидна подия (пидклас :class:`litegram.types.base.TelegramObject`)"
+msgstr "Вхидна событие (пидклас :class:`litegram.types.base.TelegramObject`)"
 
 #: litegram.dispatcher.middlewares.base.BaseMiddleware.__call__:5 of
 msgid "Contextual data. Will be mapped to handler arguments"
-msgstr "Контекстни дани. Будуть зисивлени с аргуменими обробника"
+msgstr "Контекстни дани. Будуть зисивлени с аргуменими обработчика"
 
 #: ../../dispatcher/middlewares.rst
 msgid "Returns"
@@ -164,15 +164,14 @@ msgid "Examples"
 msgstr "Примери"
 
 #: ../../dispatcher/middlewares.rst:62
-#, fuzzy
 msgid ""
 "Middleware should always call :code:`await handler(event, data)` to "
 "propagate event for next middleware/handler. If you want to stop "
 "processing event in middleware you should not call :code:`await "
 "handler(event, data)`."
 msgstr ""
-"Middleware мають всегда викликати :code:`await handler(event, "
-"data)` , чтобы передавати подию для наступнои промижнои програми/обробника "
+"Middleware должны всегда вызывать :code:`await handler(event, "
+"data)` , чтобы передавати подию для наступнои промежуточной программы/обработчика "
 "(handler)"
 
 #: ../../dispatcher/middlewares.rst:67
@@ -195,7 +194,7 @@ msgstr "Факти"
 msgid "Middlewares from outer scope will be called on every incoming event"
 msgstr ""
 "Middleware из зовнишньои области викликатимуться во время каждой "
-"вхиднои подии"
+"вхиднои события"
 
 #: ../../dispatcher/middlewares.rst:115
 msgid "Middlewares from inner scope will be called only when filters pass"
@@ -210,7 +209,7 @@ msgid ""
 "updates going to specific event type handler through built in update "
 "handler"
 msgstr ""
-"Внутришни промижни програми викликають тип подии "
+"Внутришни промижни программы викликають тип события "
 ":class:`litegram.types.update.Update` , через те, что все вхидни обновления"
-" надходять к обробника (handler) певного типа событий через вбудований "
-"обробник (handler) оновлень"
+" надходять к обработчика (handler) певного типа событий через вбудований "
+"обработчик (handler) обновлений"

@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -19,19 +18,19 @@ msgstr ""
 
 #: ../../../README.rst:3
 msgid "litegram"
-msgstr ""
+msgstr "litegram"
 
 #: ../../../README.rst:5
 msgid "MIT License"
-msgstr ""
+msgstr "Лицензия MIT"
 
 #: ../../../README.rst:9
 msgid "PyPi status"
-msgstr ""
+msgstr "Статус PyPi"
 
 #: ../../../README.rst:13
 msgid "PyPi Package Version"
-msgstr ""
+msgstr "Версия пакета PyPi"
 
 #: ../../../README.rst:17
 msgid "Downloads"
@@ -43,7 +42,7 @@ msgstr "Поддерживаемые версии Python"
 
 #: ../../../README.rst:25
 msgid "Telegram Bot API"
-msgstr ""
+msgstr "Telegram Bot API"
 
 #: ../../../README.rst:29
 msgid "Tests"
@@ -54,7 +53,6 @@ msgid "Codecov"
 msgstr "Покрытие кода"
 
 #: ../../../README.rst:37
-#, fuzzy
 msgid ""
 "**litegram** is a modern and fully asynchronous framework for `Telegram "
 "Bot API <https://core.telegram.org/bots/api>`_ written in Python 3.13+ "
@@ -62,9 +60,9 @@ msgid ""
 "<https://github.com/encode/httpx>`_."
 msgstr ""
 "**litegram** — это современный и полностью асинхронный фреймворк для "
-"разработки чат-ботов `Telegram Bot API "
-"<https://core.telegram.org/bots/api>`_ на Python 3.13+ с использованием "
-"`litestar <https://github.com/litestar-org/litestar>`_ и `httpx "
+"`Telegram Bot API <https://core.telegram.org/bots/api>`_, написанный на "
+"Python 3.13+ с использованием `litestar "
+"<https://github.com/litestar-org/litestar>`_ и `httpx "
 "<https://github.com/encode/httpx>`_."
 
 #: ../../../README.rst:42
@@ -96,13 +94,12 @@ msgstr ""
 "<https://docs.python.org/3/library/asyncio.html>`_, :pep:`492`)"
 
 #: ../../../README.rst:53
-#, fuzzy
 msgid ""
 "Has type hints (:pep:`484`) and can be used with `ty <https://github.com"
 "/astral-sh/ty>`_"
 msgstr ""
-"Имеет аннотации типов (:pep:`484`) и может использоваться с `mypy <http"
-"://mypy-lang.org/>`_"
+"Имеет аннотации типов (:pep:`484`) и может использоваться с `ty <https://"
+"github.com/astral-sh/ty>`_"
 
 #: ../../../README.rst:54
 msgid ""
@@ -121,7 +118,6 @@ msgid "Has Finite State Machine"
 msgstr "Имеет встроенный конечный автомат (FSM)"
 
 #: ../../../README.rst:57
-#, fuzzy
 msgid ""
 "Uses powerful `magic filters "
 "<https://litegram.readthedocs.io/en/latest/dispatcher/filters/magic_filters.html"
@@ -166,9 +162,8 @@ msgid "🇷🇺 `@litegram_ru <https://t.me/litegram_ru>`_"
 msgstr "🇷🇺 `@litegram_ru <https://t.me/litegram_ru>`_"
 
 #: ../../../README.rst:72
-#, fuzzy
 msgid "🇺🇸 `@litegram_en <https://t.me/litegram_en>`_"
-msgstr "🇷🇺 `@litegram_ru <https://t.me/litegram_ru>`_"
+msgstr "🇺🇸 `@litegram_en <https://t.me/litegram_en>`_"
 
 #: ../../index.rst:4
 msgid "Simple usage"

@@ -19,16 +19,16 @@ msgstr ""
 
 #: ../../dispatcher/filters/callback_data.rst:3
 msgid "Callback Data Factory & Filter"
-msgstr "Фабрика миток зворотнього виклику и фильтрування"
+msgstr "Фабрика миток зворотнього вызова и фильтрування"
 
 #: litegram.filters.callback_data.CallbackData:1 of
 msgid "Base class for callback data wrapper"
-msgstr "Базовий клас для обгортки митки зворотного виклику"
+msgstr "Базовый класс для обгортки метки обратного вызова"
 
 #: litegram.filters.callback_data.CallbackData:3 of
 msgid "This class should be used as super-class of user-defined callbacks."
 msgstr ""
-"Этот клас следует использовать как супер-клас зворотних викликив, визначених "
+"Этот класс следует использовать как супер-класс зворотних викликив, визначених "
 "пользователем."
 
 #: litegram.filters.callback_data.CallbackData:5 of
@@ -36,13 +36,13 @@ msgid ""
 "The class-keyword :code:`prefix` is required to define prefix and also the "
 "argument :code:`sep` can be passed to define separator (default is :code:`:`)."
 msgstr ""
-"Ключове слово класу :code:`prefix` потрибне для визначення префикса, а також "
-"аргумент :code:`sep` можна передати для визначення роздильника (за "
+"Ключове слово класса :code:`prefix` потрибне для определения префикса, а также "
+"аргумент :code:`sep` можно передать для определения разделителя (за "
 "замовчуванням это :code:`:`)."
 
 #: litegram.filters.callback_data.CallbackData.pack:1 of
 msgid "Generate callback data string"
-msgstr "Генерування рякк митки зворотного виклику"
+msgstr "Генерування строку метки обратного вызова"
 
 #: litegram.filters.callback_data.CallbackData.filter
 #: litegram.filters.callback_data.CallbackData.pack
@@ -52,11 +52,11 @@ msgstr "Возвращает"
 
 #: litegram.filters.callback_data.CallbackData.pack:3 of
 msgid "valid callback data for Telegram Bot API"
-msgstr "дийсна митка зворотного виклику для Telegram Bot API"
+msgstr "дийсна митка обратного вызова для Telegram Bot API"
 
 #: litegram.filters.callback_data.CallbackData.unpack:1 of
 msgid "Parse callback data string"
-msgstr "Анализ рядка митки зворотного виклику"
+msgstr "Анализ рядка метки обратного вызова"
 
 #: litegram.filters.callback_data.CallbackData.filter
 #: litegram.filters.callback_data.CallbackData.unpack of
@@ -69,11 +69,11 @@ msgstr "значение с Telegram"
 
 #: litegram.filters.callback_data.CallbackData.unpack:4 of
 msgid "instance of CallbackData"
-msgstr "екземпляр митки зворотного виклику"
+msgstr "экземпляр метки обратного вызова"
 
 #: litegram.filters.callback_data.CallbackData.filter:1 of
 msgid "Generates a filter for callback query with rule"
-msgstr "Створюе фильтр для запиту зворотного виклику с правилом"
+msgstr "Створюе фильтр для запиту обратного вызова с правилом"
 
 #: litegram.filters.callback_data.CallbackData.filter:3 of
 msgid "magic rule"
@@ -81,7 +81,7 @@ msgstr "магичне правило"
 
 #: litegram.filters.callback_data.CallbackData.filter:4 of
 msgid "instance of filter"
-msgstr "екземпляр фильтру"
+msgstr "экземпляр фильтру"
 
 #: ../../dispatcher/filters/callback_data.rst:11
 msgid "Usage"
@@ -89,20 +89,20 @@ msgstr "Использование"
 
 #: ../../dispatcher/filters/callback_data.rst:13
 msgid "Create subclass of :code:`CallbackData`:"
-msgstr "Створення пидкласу :code:`CallbackData`:"
+msgstr "Создания пидкласу :code:`CallbackData`:"
 
 #: ../../dispatcher/filters/callback_data.rst:21
 msgid "After that you can generate any callback based on this class, for example:"
 msgstr ""
-"После этого вы можете створити будь-который зворотний виклик на основи этого "
-"класу, например:"
+"После этого вы можете создать будь-который зворотний виклик на основе этого "
+"класса, например:"
 
 #: ../../dispatcher/filters/callback_data.rst:29
 msgid ""
 "So... Now you can use this class to generate any callbacks with defined "
 "structure"
 msgstr ""
-"Отже... Тепер вы можете использовать этот клас для створення будь-которых "
+"Отже... Тепер вы можете использовать этот класс для создания будь-которых "
 "зворотних викликив из визначеною структурою"
 
 #: ../../dispatcher/filters/callback_data.rst:41
@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../../dispatcher/filters/callback_data.rst:63
 msgid "Another abstract example:"
-msgstr "Ще один абстрактний пример:"
+msgstr "Ещё один абстрактний пример:"
 
 #: ../../dispatcher/filters/callback_data.rst:101
 msgid "Known limitations"
@@ -167,5 +167,5 @@ msgid ""
 "Note that the integer Enum's should be always is subclasses of :code:`IntEnum` "
 "in due to parsing issues."
 msgstr ""
-"Зауважте, что целое число Enum всегда имеет бути пидкласом :code:`IntEnum` через "
+"Заметьте, что целое число Enum всегда имеет быть пидкласом :code:`IntEnum` через "
 "проблеми с синтаксичним анализом."

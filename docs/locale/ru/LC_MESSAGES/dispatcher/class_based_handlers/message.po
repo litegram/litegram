@@ -22,7 +22,7 @@ msgstr "MessageHandler"
 
 #: ../../dispatcher/class_based_handlers/message.rst:5
 msgid "There is base class for message handlers."
-msgstr "Це базовий клас для обработчиков сообщений."
+msgstr "Это базовый класс для обработчиков сообщений."
 
 #: ../../dispatcher/class_based_handlers/message.rst:8
 msgid "Simple usage"
@@ -33,12 +33,11 @@ msgid "Extension"
 msgstr "Розширення"
 
 #: ../../dispatcher/class_based_handlers/message.rst:24
-#, fuzzy
 msgid ""
 "This base handler is subclass of :ref:`BaseHandler <cbh-base-handler>` "
 "with some extensions:"
 msgstr ""
-"Этот базовий обробник является пидкласом [BaseHandler](basics.md#basehandler) с "
+"Этот базовый обработчик является пидкласом [BaseHandler](basics.md#basehandler) с "
 "деякими розширеннями:"
 
 #: ../../dispatcher/class_based_handlers/message.rst:26

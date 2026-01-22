@@ -73,7 +73,6 @@ msgid "interval between iterations"
 msgstr "интервал между итерациями"
 
 #: litegram.utils.chat_action.ChatActionSender.__init__:6 of
-#, fuzzy
 msgid "sleep before first sending of the action"
 msgstr "задержка перед первой отправкой действия"
 

@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -19,58 +18,68 @@ msgstr ""
 
 #: ../../dispatcher/index.rst:3
 msgid "Handling events"
-msgstr "Обробка событий"
+msgstr "Обработка событий"
 
 #: ../../dispatcher/index.rst:5
 msgid ""
 "*litegram* includes Dispatcher mechanism. Dispatcher is needed for "
 "handling incoming updates from Telegram."
 msgstr ""
+"*litegram* включает механизм Диспетчера. Диспетчер необходим для "
+"обработки входящих обновлений от Telegram."
 
 #: ../../dispatcher/index.rst:8
 msgid "With dispatcher you can do:"
-msgstr ""
+msgstr "С помощью диспетчера вы можете:"
 
 #: ../../dispatcher/index.rst:10
 msgid "Handle incoming updates;"
-msgstr ""
+msgstr "Обрабатывать входящие обновления;"
 
 #: ../../dispatcher/index.rst:11
 msgid "Filter incoming events before it will be processed by specific handler;"
-msgstr ""
+msgstr "Фильтровать входящие события перед их обработкой конкретным хендлером;"
 
 #: ../../dispatcher/index.rst:12
 msgid "Modify event and related data in middlewares;"
-msgstr ""
+msgstr "Изменять события и связанные данные в middlewares;"
 
 #: ../../dispatcher/index.rst:13
 msgid ""
 "Separate bot functionality between different handlers, modules and "
 "packages"
 msgstr ""
+"Разделять функциональность бота между различными хендлерами, модулями и "
+"пакетами"
 
 #: ../../dispatcher/index.rst:15
 msgid ""
 "Dispatcher is also separated into two entities - Router and Dispatcher. "
 "Dispatcher is subclass of router and should be always is root router."
 msgstr ""
+"Диспетчер также разделен на две сущности — Роутер и Диспетчер. Диспетчер "
+"является подклассом роутера и всегда должен быть корневым роутером."
 
 #: ../../dispatcher/index.rst:18
 msgid "Telegram supports two ways of receiving updates:"
-msgstr ""
+msgstr "Telegram поддерживает два способа получения обновлений:"
 
 #: ../../dispatcher/index.rst:20
 msgid ""
 ":ref:`Webhook <webhook>` - you should configure your web server to "
 "receive updates from Telegram;"
 msgstr ""
+":ref:`Вебхук <webhook>` — вы должны настроить свой веб-сервер для "
+"получения обновлений от Telegram;"
 
 #: ../../dispatcher/index.rst:21
 msgid ""
 ":ref:`Long polling <long-polling>` - you should request updates from "
 "Telegram."
 msgstr ""
+":ref:`Long polling <long-polling>` — вы должны запрашивать обновления у "
+"Telegram."
 
 #: ../../dispatcher/index.rst:23
 msgid "So, you can use both of them with *litegram*."
-msgstr ""
+msgstr "Таким образом, вы можете использовать оба способа с *litegram*."

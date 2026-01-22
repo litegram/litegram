@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -59,7 +58,6 @@ msgstr ""
 "-pull-request>`_"
 
 #: ../../contributing.rst:18
-#, fuzzy
 msgid ""
 "Also in due to this project is written in Python, you will need Python to"
 " be installed (is recommended to use latest Python versions, but any "
@@ -67,7 +65,7 @@ msgid ""
 msgstr ""
 "Так как этот проект написан на Python, вам потребуется установленный "
 "Python (рекомендуется использовать последние версии Python, но можно "
-"использовать любую версию, начиная с 3.8)"
+"использовать любую версию, начиная с 3.13)"
 
 #: ../../contributing.rst:23
 msgid "Use virtualenv"
@@ -130,7 +128,6 @@ msgid "Setup project"
 msgstr "Настройка проекта"
 
 #: ../../contributing.rst:75
-#, fuzzy
 msgid ""
 "After activating the environment install `litegram` from sources and "
 "their dependencies."
@@ -139,19 +136,20 @@ msgstr ""
 "зависимости:"
 
 #: ../../contributing.rst:83 ../../contributing.rst:112
-#, fuzzy
 msgid "Windows:"
-msgstr "Windows cmd"
+msgstr "Windows:"
 
 #: ../../contributing.rst:89
 msgid ""
 "It will install :code:`litegram` in editable mode into your virtual "
 "environment and all dependencies."
 msgstr ""
+"Это установит :code:`litegram` в редактируемом режиме в ваше виртуальное "
+"окружение вместе со всеми зависимостями."
 
 #: ../../contributing.rst:92
 msgid "Alternative: Using uv (Modern Approach)"
-msgstr ""
+msgstr "Альтернатива: Использование uv (современный подход)"
 
 #: ../../contributing.rst:94
 msgid ""
@@ -160,37 +158,41 @@ msgid ""
 " fast Python package manager that handles virtual environments, "
 "dependency resolution, and package installation."
 msgstr ""
+"В качестве альтернативы традиционному рабочему процессу с :code:`pip` и "
+":code:`venv`, вы можете использовать `uv "
+"<https://github.com/astral-sh/uv>`_ — современный быстрый менеджер "
+"пакетов Python, который управляет виртуальными окружениями, разрешением "
+"зависимостей и установкой пакетов."
 
 #: ../../contributing.rst:97
 msgid "**Benefits of using uv:**"
-msgstr ""
+msgstr "**Преимущества использования uv:**"
 
 #: ../../contributing.rst:99
 msgid "10-100x faster dependency resolution than pip"
-msgstr ""
+msgstr "В 10-100 раз более быстрое разрешение зависимостей, чем у pip"
 
 #: ../../contributing.rst:100
 msgid "Automatic virtual environment management"
-msgstr ""
+msgstr "Автоматическое управление виртуальными окружениями"
 
 #: ../../contributing.rst:101
 msgid "Reproducible builds with lockfile"
-msgstr ""
+msgstr "Воспроизводимые сборки с помощью lock-файла"
 
 #: ../../contributing.rst:102
 msgid "Single tool for all package management needs"
-msgstr ""
+msgstr "Единый инструмент для всех нужд управления пакетами"
 
 #: ../../contributing.rst:104
 msgid "**Installing uv:**"
-msgstr ""
+msgstr "**Установка uv:**"
 
 #: ../../contributing.rst:118
 msgid "Or using pip:"
-msgstr ""
+msgstr "Или через pip:"
 
 #: ../../contributing.rst:124
-#, fuzzy
 msgid "**Setup project with uv:**"
 msgstr "**Настройка проекта с помощью uv:**"
 
@@ -199,6 +201,8 @@ msgid ""
 "Instead of manually creating and activating a virtual environment, "
 ":code:`uv` handles this automatically:"
 msgstr ""
+"Вместо ручного создания и активации виртуального окружения, :code:`uv` "
+"делает это автоматически:"
 
 #: ../../contributing.rst:140
 msgid ""
@@ -207,34 +211,42 @@ msgid ""
 "development tools, and generates a :code:`uv.lock` file for reproducible "
 "builds."
 msgstr ""
+"Вот и все! Команда :code:`uv sync` создает виртуальное окружение в "
+":code:`.venv/`, устанавливает все зависимости, включая дополнительные и "
+"инструменты разработки, и генерирует файл :code:`uv.lock` для "
+"воспроизводимых сборок."
 
 #: ../../contributing.rst:144
 msgid "**Running commands with uv:**"
-msgstr ""
+msgstr "**Запуск команд с помощью uv:**"
 
 #: ../../contributing.rst:146
 msgid ""
 "When using :code:`uv`, prefix commands with :code:`uv run` to execute "
 "them in the managed environment:"
 msgstr ""
+"При использовании :code:`uv` добавляйте префикс :code:`uv run` к "
+"командам, чтобы выполнять их в управляемом окружении:"
 
 #: ../../contributing.rst:164
 msgid "Or use the Makefile commands which now support :code:`uv`:"
-msgstr ""
+msgstr "Или используйте команды Makefile, которые теперь поддерживают :code:`uv`:"
 
 #: ../../contributing.rst:174
 msgid "Making changes in code"
-msgstr ""
+msgstr "Внесение изменений в код"
 
 #: ../../contributing.rst:176
 msgid ""
 "At this point you can make any changes in the code that you want, it can "
 "be any fixes, implementing new features or experimenting."
 msgstr ""
+"На этом этапе вы можете вносить любые изменения в код: исправления, "
+"новые функции или эксперименты."
 
 #: ../../contributing.rst:181
 msgid "Format the code (code-style)"
-msgstr ""
+msgstr "Форматирование кода (стиль кода)"
 
 #: ../../contributing.rst:183
 msgid ""
@@ -242,35 +254,39 @@ msgid ""
 "should follow that code-style. To be sure you're correctly doing this, "
 "let's reformat the code automatically:"
 msgstr ""
+"Обратите внимание, что этот проект использует Ruff для форматирования и "
+"линтинга, поэтому вам следует придерживаться этого стиля кода. Чтобы "
+"убедиться, что вы все делаете правильно, давайте переформатируем код "
+"автоматически:"
 
 #: ../../contributing.rst:186 ../../contributing.rst:212
 #: ../../contributing.rst:233 ../../contributing.rst:251
 #: ../../contributing.rst:279 ../../contributing.rst:307
 msgid "Using traditional approach:"
-msgstr ""
+msgstr "Используя традиционный подход:"
 
 #: ../../contributing.rst:193 ../../contributing.rst:218
 #: ../../contributing.rst:239 ../../contributing.rst:257
 #: ../../contributing.rst:287 ../../contributing.rst:313
 msgid "Or with uv:"
-msgstr ""
+msgstr "Или с помощью uv:"
 
 #: ../../contributing.rst:200
 msgid "Or simply use Makefile:"
-msgstr ""
+msgstr "Или просто используйте Makefile:"
 
 #: ../../contributing.rst:208
 msgid "Run tests"
-msgstr ""
+msgstr "Запуск тестов"
 
 #: ../../contributing.rst:210
 msgid "All changes should be tested:"
-msgstr ""
+msgstr "Все изменения должны быть протестированы:"
 
 #: ../../contributing.rst:224 ../../contributing.rst:263
 #: ../../contributing.rst:294
 msgid "Or use Makefile:"
-msgstr ""
+msgstr "Или используйте Makefile:"
 
 #: ../../contributing.rst:230
 msgid ""
@@ -278,10 +294,12 @@ msgid ""
 "storage, you will need to test everything works with Redis or/and "
 "MongoDB:"
 msgstr ""
+"Также, если вы работаете с хранилищами Redis или MongoDB, вам нужно "
+"будет убедиться, что все работает с Redis и/или MongoDB:"
 
 #: ../../contributing.rst:246
 msgid "Docs"
-msgstr ""
+msgstr "Документация"
 
 #: ../../contributing.rst:248
 msgid ""
@@ -289,11 +307,13 @@ msgid ""
 "located in `docs` directory, you can change the sources and to test it "
 "you can start live-preview server and look what you are doing:"
 msgstr ""
+"Мы используем Sphinx для рендеринга документации на разных языках. Все "
+"исходники находятся в каталоге `docs`. Вы можете изменять их, а для "
+"тестирования запустить сервер предпросмотра в реальном времени:"
 
 #: ../../contributing.rst:271
-#, fuzzy
 msgid "Docs translations"
-msgstr "Документация"
+msgstr "Перевод документации"
 
 #: ../../contributing.rst:273
 msgid ""
@@ -301,10 +321,13 @@ msgid ""
 "without the help of the community from all over the world, so you are "
 "welcome to translate the documentation into different languages."
 msgstr ""
+"Перевод документации очень важен и не может быть выполнен без помощи "
+"сообщества со всего мира, поэтому мы приветствуем перевод документации "
+"на разные языки."
 
 #: ../../contributing.rst:277
 msgid "Before start, let's up to date all texts:"
-msgstr ""
+msgstr "Перед началом давайте обновим все тексты:"
 
 #: ../../contributing.rst:300
 msgid ""
@@ -314,14 +337,20 @@ msgid ""
 "using any text-editor or specialized utilites for GNU Gettext, for "
 "example via `poedit <https://poedit.net/>`_."
 msgstr ""
+"Замените :code:`<language_code>` в примере ниже на код целевого языка. "
+"После этого вы сможете изменять тексты внутри "
+":code:`docs/locale/<language_code>/LC_MESSAGES` в виде файлов "
+":code:`*.po`, используя любой текстовый редактор или "
+"специализированные утилиты для GNU Gettext, например, `poedit "
+"<https://poedit.net/>`_."
 
 #: ../../contributing.rst:305
 msgid "To view results:"
-msgstr ""
+msgstr "Чтобы просмотреть результаты:"
 
 #: ../../contributing.rst:321
 msgid "Describe changes"
-msgstr ""
+msgstr "Описание изменений"
 
 #: ../../contributing.rst:323
 msgid ""
@@ -329,48 +358,59 @@ msgid ""
 "know what's changed in their favorite framework - create "
 "`<code>.<category>.rst` file and write the description."
 msgstr ""
+"Опишите ваши изменения в одном или нескольких предложениях, чтобы "
+"разработчики ботов знали, что изменилось в их любимом фреймворке: "
+"создайте файл `<code>.<category>.rst` и напишите описание."
 
 #: ../../contributing.rst:326
 msgid ""
 ":code:`<code>` is Issue or Pull-request number, after release link to "
 "this issue will be published to the *Changelog* page."
 msgstr ""
+":code:`<code>` — это номер Issue или Pull-request. После релиза "
+"ссылка на эту задачу будет опубликована на странице *Changelog*."
 
 #: ../../contributing.rst:329
 msgid ":code:`<category>` is a changes category marker, it can be one of:"
 msgstr ""
+":code:`<category>` — это маркер категории изменений, он может быть "
+"одним из следующих:"
 
 #: ../../contributing.rst:331
 msgid ":code:`feature` - when you are implementing new feature"
-msgstr ""
+msgstr ":code:`feature` — когда вы реализуете новую функцию"
 
 #: ../../contributing.rst:332
 msgid ":code:`bugfix` - when you fix a bug"
-msgstr ""
+msgstr ":code:`bugfix` — когда вы исправляете ошибку"
 
 #: ../../contributing.rst:333
 msgid ":code:`doc` - when you improve the docs"
-msgstr ""
+msgstr ":code:`doc` — когда вы улучшаете документацию"
 
 #: ../../contributing.rst:334
 msgid ":code:`removal` - when you remove something from the framework"
-msgstr ""
+msgstr ":code:`removal` — когда вы удаляете что-то из фреймворка"
 
 #: ../../contributing.rst:335
 msgid ""
 ":code:`misc` - when changed something inside the Core or project "
 "configuration"
 msgstr ""
+":code:`misc` — когда изменено что-то внутри ядра или конфигурации "
+"проекта"
 
 #: ../../contributing.rst:337
 msgid ""
 "If you have troubles with changing category feel free to ask Core-"
 "contributors to help with choosing it."
 msgstr ""
+"Если у вас возникли трудности с выбором категории, не стесняйтесь "
+"обращаться к основным разработчикам (Core-contributors) за помощью."
 
 #: ../../contributing.rst:340
 msgid "Complete"
-msgstr ""
+msgstr "Завершение"
 
 #: ../../contributing.rst:342
 msgid ""
@@ -378,10 +418,13 @@ msgid ""
 "create a pull request as mentioned at the beginning of the article and "
 "wait for a review of these changes."
 msgstr ""
+"После того как вы внесли все изменения, опубликуйте их в репозитории и "
+"создайте pull request, как упоминалось в начале статьи, и дождитесь "
+"обзора (review) этих изменений."
 
 #: ../../contributing.rst:347
 msgid "Star on GitHub"
-msgstr ""
+msgstr "Поставьте звезду на GitHub"
 
 #: ../../contributing.rst:349
 msgid ""
@@ -389,16 +432,21 @@ msgid ""
 "https://github.com/litegram/litegram (click the star button at the top "
 "right)"
 msgstr ""
+"Вы можете поставить «звезду» репозиторию на GitHub — "
+"https://github.com/litegram/litegram (нажмите кнопку со звездой в "
+"правом верхнем углу)"
 
 #: ../../contributing.rst:351
 msgid ""
 "Adding stars makes it easier for other people to find this project and "
 "understand how useful it is."
 msgstr ""
+"Добавление звезд помогает другим людям легче находить этот проект и "
+"понимать, насколько он полезен."
 
 #: ../../contributing.rst:354
 msgid "Guides"
-msgstr ""
+msgstr "Руководства"
 
 #: ../../contributing.rst:356
 msgid ""
@@ -406,16 +454,21 @@ msgid ""
 "it into YouTube, Medium, GitHub Books, any Courses platform or any other "
 "platform that you know."
 msgstr ""
+"Вы можете писать руководства по разработке ботов на базе litegram и "
+"публиковать их на YouTube, Medium, GitHub Books, на платформах для "
+"курсов или любых других площадках, которые вам известны."
 
 #: ../../contributing.rst:359
 msgid ""
 "This will help more people learn about the framework and learn how to use"
 " it"
 msgstr ""
+"Это поможет большему количеству людей узнать о фреймворке и научиться "
+"им пользоваться."
 
 #: ../../contributing.rst:363
 msgid "Take answers"
-msgstr ""
+msgstr "Отвечайте на вопросы"
 
 #: ../../contributing.rst:365
 msgid ""
@@ -423,10 +476,13 @@ msgid ""
 "platforms like GitHub Discussions, StackOverflow and others, feel free to"
 " answer to this questions."
 msgstr ""
+"Разработчики часто задают вопросы в наших чатах или на других "
+"платформах, таких как GitHub Discussions, StackOverflow и других. Не "
+"стесняйтесь отвечать на эти вопросы."
 
 #: ../../contributing.rst:369
 msgid "Funding"
-msgstr ""
+msgstr "Финансирование"
 
 #: ../../contributing.rst:371
 msgid ""
@@ -435,3 +491,7 @@ msgid ""
 "<https://t.me/RussianCheese>`_) and I am engaged in the development of "
 "the project in my free time."
 msgstr ""
+"Разработка проекта бесплатна и не финансируется коммерческими "
+"организациями. Это моя личная инициатива (`@RussianCheese "
+"<https://t.me/RussianCheese>`_), и я занимаюсь развитием проекта в "
+"свободное время."

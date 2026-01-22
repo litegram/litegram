@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -19,7 +18,7 @@ msgstr ""
 
 #: ../../dispatcher/flags.rst:3
 msgid "Flags"
-msgstr "Маркери"
+msgstr "Маркеры"
 
 #: ../../dispatcher/flags.rst:5
 msgid ""
@@ -27,7 +26,7 @@ msgid ""
 "in-middlewares>`_ or special `utilities <#use-in-utilities>`_ to make "
 "classification of the handlers."
 msgstr ""
-"Маркери это, так звани митки для обработчиков, которые можна использовать "
+"Маркеры это, так звани метки для обработчиков, которые можно использовать "
 "`миддлварах <#use-in-middlewares>`_ или в специальних `утилитах <#use-in-"
 "utilities>`_ чтобы провести класификацию обработчиков."
 
@@ -37,7 +36,7 @@ msgid ""
 "`handlers registration <#via-handler-registration-method>`_ or `filters "
 "<via-filters>`_."
 msgstr ""
-"Маркери можна додати к обробника через `декоратори <#via-decorators>`_, "
+"Маркеры можно добавить к обработчика через `декоратори <#via-decorators>`_, "
 "`реестрацию обработчиков <#via-handler-registration-method>`_ или `фильтри "
 "<via-filters>`_."
 
@@ -47,15 +46,15 @@ msgstr "Через декоратори"
 
 #: ../../dispatcher/flags.rst:15
 msgid "For example mark handler with `chat_action` flag"
-msgstr "Например, отмитимо обробник маркером `chat_action`"
+msgstr "Например, отмитимо обработчик маркером `chat_action`"
 
 #: ../../dispatcher/flags.rst:24
 msgid "Or just for rate-limit or something else"
-msgstr "Або просто для рейт-лимиту чи чогось иншого"
+msgstr "Або просто для рейт-лимиту или чогось иншого"
 
 #: ../../dispatcher/flags.rst:34
 msgid "Via handler registration method"
-msgstr "Через метод реестрации обробника"
+msgstr "Через метод реестрации обработчика"
 
 #: ../../dispatcher/flags.rst:41
 msgid "Via filters"
@@ -63,7 +62,7 @@ msgstr "Через фильтри"
 
 #: ../../dispatcher/flags.rst:55
 msgid "Use in middlewares"
-msgstr "Використовувати в миддлварах"
+msgstr "Использовать в миддлварах"
 
 #: litegram.dispatcher.flags.check_flags:1 of
 msgid "Check flags via magic filter"
@@ -131,5 +130,5 @@ msgid ""
 "description and then it can be used for generating commands help"
 msgstr ""
 "Например, вы можете зибрати все зареестровани команды с описом "
-"обробника, а потим его можна использовать для створення довидки щодо "
+"обработчика, а потим его можно использовать для создания справки относительно "
 "команд"

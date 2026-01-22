@@ -25,7 +25,7 @@ msgid ""
 "In order to make you bot translatable you have to add a minimal number of"
 " hooks to your Python code."
 msgstr ""
-"Для того, чтобы Ваш бот володив декилькома мовами, необходимо додати "
+"Для того, чтобы Ваш бот володив декилькома мовами, необходимо добавить "
 "минимальну килькисть хукив к вашого Python коду"
 
 #: ../../utils/i18n.rst:7
@@ -38,7 +38,7 @@ msgid ""
 "module <https://docs.python.org/3/library/gettext.html>`_ and `Babel "
 "library <http://babel.pocoo.org/en/latest/>`_."
 msgstr ""
-"Утилити перекладу побудовани на основи модулю `GNU gettext Python "
+"Утилити перевода побудовани на основе модулю `GNU gettext Python "
 "<https://docs.python.org/3/library/gettext.html>`_ и `Babel library "
 "<http://babel.pocoo.org/en/latest/>`_."
 
@@ -51,7 +51,7 @@ msgid ""
 "Babel is required to make simple way to extract translation strings from "
 "your code"
 msgstr ""
-"Babel потрибний для забезпечення простоти експорту рядкив перекладу с "
+"Babel потрибний для забезпечення простоти експорту рядкив перевода с "
 "Вашого коду."
 
 #: ../../utils/i18n.rst:17
@@ -60,19 +60,19 @@ msgstr "Можна всиновити непосредственно с pip:"
 
 #: ../../utils/i18n.rst:24
 msgid "or as `litegram` extra dependency:"
-msgstr "чи как кдаткову залежнисть `litegram`:"
+msgstr "или как кдаткову зависимость `litegram`:"
 
 #: ../../utils/i18n.rst:32
 msgid "Make messages translatable"
-msgstr "Как зробити повикмлення перекладаваними?"
+msgstr "Как зробити сообщение переводимыми?"
 
 #: ../../utils/i18n.rst:34
 msgid ""
 "In order to gettext need to know what the strings should be translated "
 "you will need to write translation strings."
 msgstr ""
-"Для того, чтобы gettext знав которые рядки следует перекласти, Вам необходимо "
-"видмитити рядки перекладу."
+"Для того, чтобы gettext знав которые строки следует перекласти, Вам необходимо "
+"видмитити строки перевода."
 
 #: ../../utils/i18n.rst:36
 msgid "For example:"
@@ -83,24 +83,24 @@ msgid ""
 "f-strings can't be used as translations string because any dynamic "
 "variables should be added to message after getting translated message"
 msgstr ""
-"f-рядки не можна использовать как рядки перекладу, оскильки будь-которые "
-"динамични зминни следует додати к сообщения после отримання "
-"перекладеного сообщения"
+"f-строки не можно использовать как строки перевода, поскольку будь-которые "
+"динамические переменные следует добавить к сообщения после получения "
+"переведенного сообщения"
 
 #: ../../utils/i18n.rst:57
 msgid ""
 "Also if you want to use translated string in keyword- or magic- filters "
 "you will need to use lazy gettext calls:"
 msgstr ""
-"Крим того, если Ви бажаете використати перекладений рядок в фильтрах, Вам"
-" треба використати видкладений переклад (lazy gettext):"
+"Крим того, если Ви бажаете використати перекладений строку в фильтрах, Вам"
+" треба використати видкладений перевод (lazy gettext):"
 
 #: ../../utils/i18n.rst:72
 msgid ""
 "Lazy gettext calls should always be used when the current language is not"
 " know at the moment"
 msgstr ""
-"Видкладени виклики gettext следует всегда использовать, когда поточна мова"
+"Отложенные вызовы gettext следует всегда использовать, когда поточна мова"
 " на даний момент невидома."
 
 #: ../../utils/i18n.rst:77
@@ -110,7 +110,7 @@ msgid ""
 ":class:`litegram.types.inline_keyboard_button.InlineKeyboardButton` or "
 "etc.)"
 msgstr ""
-"Видкладени виклики gettext не можна использовать как значение для "
+"Отложенные вызовы gettext не можно использовать как значение для "
 "методив API или будь-которого объекта Telegram (например, "
 ":class:`litegram.types.inline_keyboard_button.InlineKeyboardButton` и т.д.)"
 
@@ -137,15 +137,15 @@ msgid ""
 "After you messages is already done to use gettext your bot should know "
 "how to detect user language"
 msgstr ""
-"Коли ваши сообщения уже готовые использовать gettext, Ваш бот "
-"должен знати, как визначити мову пользователя."
+"Когда ваши сообщения уже готовые использовать gettext, Ваш бот "
+"должен знати, как определить мову пользователя."
 
 #: ../../utils/i18n.rst:106
 msgid ""
 "On top of your application the instance of "
 ":class:`litegram.utils.i18n.I18n` should be created"
 msgstr ""
-"Поруч с мисцем инициализации диспетчера имеет бути створений екземпляр "
+"Поруч с мисцем инициализации диспетчера имеет быть созданный экземпляр "
 "перекладача:class:`litegram.utils.i18n.I18n`."
 
 #: ../../utils/i18n.rst:114
@@ -153,12 +153,12 @@ msgid ""
 "After that you will need to choose one of builtin I18n middleware or "
 "write your own."
 msgstr ""
-"После этого Вам потрибно буде вибрати одну с вбудованих промижних програм"
-" (middleware) I18n или написати власну."
+"После этого Вам нужно будет вибрати одну с встроенных промижних програм"
+" (middleware) I18n или написать власну."
 
 #: ../../utils/i18n.rst:116
 msgid "Builtin middlewares:"
-msgstr "Вбуквани промеждуни програми:"
+msgstr "Вбуквани промеждуни программы:"
 
 #: ../../utils/i18n.rst:120
 msgid "SimpleI18nMiddleware"
@@ -170,14 +170,14 @@ msgstr "Проси I18n middleware."
 
 #: litegram.utils.i18n.middleware.SimpleI18nMiddleware:3 of
 msgid "Chooses language code from the User object received in event"
-msgstr "Вибирае код языки с об’еки User, отриманого в подии."
+msgstr "Вибирае код языки с об’еки User, отриманого в события."
 
 #: litegram.utils.i18n.middleware.ConstI18nMiddleware.__init__:1
 #: litegram.utils.i18n.middleware.FSMI18nMiddleware.__init__:1
 #: litegram.utils.i18n.middleware.I18nMiddleware.__init__:1
 #: litegram.utils.i18n.middleware.SimpleI18nMiddleware.__init__:1 of
 msgid "Create an instance of middleware"
-msgstr "Створення екземпляру промеждунои програми."
+msgstr "Создания екземпляру промеждунои программы."
 
 #: litegram.utils.i18n.middleware.ConstI18nMiddleware.__init__
 #: litegram.utils.i18n.middleware.FSMI18nMiddleware.__init__
@@ -194,7 +194,7 @@ msgstr "Параметры"
 #: litegram.utils.i18n.middleware.I18nMiddleware.__init__:3
 #: litegram.utils.i18n.middleware.SimpleI18nMiddleware.__init__:3 of
 msgid "instance of I18n"
-msgstr "екземпляр I18n"
+msgstr "экземпляр I18n"
 
 #: litegram.utils.i18n.middleware.ConstI18nMiddleware.__init__:4
 #: litegram.utils.i18n.middleware.FSMI18nMiddleware.__init__:4
@@ -208,7 +208,7 @@ msgstr "ключ (название ключа) екземпляру I18n в ко
 #: litegram.utils.i18n.middleware.I18nMiddleware.__init__:5
 #: litegram.utils.i18n.middleware.SimpleI18nMiddleware.__init__:5 of
 msgid "context key for this middleware"
-msgstr "контекстний ключ для этой промеждунои програми"
+msgstr "контекстный ключ для этой промеждунои программы"
 
 #: ../../utils/i18n.rst:126
 msgid "ConstI18nMiddleware"
@@ -228,11 +228,11 @@ msgstr "Ця middleware зберигае локаль в сховищи FSM."
 
 #: litegram.utils.i18n.middleware.FSMI18nMiddleware.set_locale:1 of
 msgid "Write new locale to the storage"
-msgstr "Запис новои локали в сховище"
+msgstr "Запись новои локали в хранилище"
 
 #: litegram.utils.i18n.middleware.FSMI18nMiddleware.set_locale:3 of
 msgid "instance of FSMContext"
-msgstr "екземпляр FSMContext"
+msgstr "экземпляр FSMContext"
 
 #: litegram.utils.i18n.middleware.FSMI18nMiddleware.set_locale:4 of
 msgid "new locale"
@@ -250,15 +250,15 @@ msgstr ""
 
 #: litegram.utils.i18n.middleware.I18nMiddleware:1 of
 msgid "Abstract I18n middleware."
-msgstr "Абстракция промеждунои програми I18n"
+msgstr "Абстракция промеждунои программы I18n"
 
 #: litegram.utils.i18n.middleware.I18nMiddleware.get_locale:1 of
 msgid "Detect current user locale based on event and context."
-msgstr "Визначення поточнои языки пользователя на основи подии и контексту."
+msgstr "Визначення поточнои языки пользователя на основе события и контекста."
 
 #: litegram.utils.i18n.middleware.I18nMiddleware.get_locale:3 of
 msgid "**This method must be defined in child classes**"
-msgstr "**Этот метод должен бути перевизначеним в кчирних класах**"
+msgstr "**Этот метод должен быть перевизначеним в кчирних класах**"
 
 #: litegram.utils.i18n.middleware.I18nMiddleware.get_locale
 #: litegram.utils.i18n.middleware.I18nMiddleware.setup of
@@ -267,7 +267,7 @@ msgstr "Возвращает"
 
 #: litegram.utils.i18n.middleware.I18nMiddleware.setup:1 of
 msgid "Register middleware for all events in the Router"
-msgstr "Реестрация промеждунои програми для всех событий в Роутери"
+msgstr "Реестрация промеждунои программы для всех событий в Роутери"
 
 #: ../../utils/i18n.rst:148
 msgid "Deal with Babel"
@@ -275,7 +275,7 @@ msgstr "Працюемо с Babel"
 
 #: ../../utils/i18n.rst:151
 msgid "Step 1 Extract messages"
-msgstr "Крок 1: Викбування текстив"
+msgstr "Шаг 1: Викбування текстив"
 
 #: ../../utils/i18n.rst:158
 msgid ""
@@ -283,9 +283,9 @@ msgid ""
 ":code:`locales/messages.pot` is template where messages will be extracted"
 " and `messages` is translation domain."
 msgstr ""
-"Де :code:`--input-dirs=.`- шлях к коду, :code:`locales/messages.pot` — "
-"это шаблон, куда витягуватимуться сообщения, а `messages` — домен "
-"перекладу."
+"Где :code:`--input-dirs=.`- шлях к коду, :code:`locales/messages.pot` — "
+"это шаблон, куда будут извлекаться сообщения, а `messages` — домен "
+"перевода."
 
 #: ../../utils/i18n.rst:163
 msgid "Extracting with Pybabel all strings options:"
@@ -333,19 +333,19 @@ msgstr "Всиновлення версии :code:`--version=2.2`"
 
 #: ../../utils/i18n.rst:185
 msgid "Step 2: Init language"
-msgstr "Крок 2: Інициализация перекладу"
+msgstr "Шаг 2: Інициализация перевода"
 
 #: ../../utils/i18n.rst:191
 msgid ":code:`-i locales/messages.pot` - pre-generated template"
-msgstr ":code:`-i locales/messages.pot` - попередньо створений шаблон"
+msgstr ":code:`-i locales/messages.pot` - попередньо созданный шаблон"
 
 #: ../../utils/i18n.rst:192
 msgid ":code:`-d locales` - translations directory"
-msgstr ":code:`-d locales`- тека перекладив"
+msgstr ":code:`-d locales`- тека переводов"
 
 #: ../../utils/i18n.rst:193
 msgid ":code:`-D messages` - translations domain"
-msgstr ":code:`-D messages` - кмен перекладив"
+msgstr ":code:`-D messages` - кмен переводов"
 
 #: ../../utils/i18n.rst:194
 msgid ""
@@ -357,14 +357,14 @@ msgstr ""
 
 #: ../../utils/i18n.rst:198
 msgid "Step 3: Translate texts"
-msgstr "Крок 3: Переклад текстив"
+msgstr "Шаг 3: Переклад текстив"
 
 #: ../../utils/i18n.rst:200
 msgid ""
 "To open .po file you can use basic text editor or any PO editor, e.g. "
 "`Poedit <https://poedit.net/>`_"
 msgstr ""
-"Чтобы видкрити файл .po, вы можете использовать базовий текстовий "
+"Чтобы видкрити файл .po, вы можете использовать базовый текстовый "
 "редактор или будь-который редактор .po файлов, напр. `Poedit "
 "<https://poedit.net/>`_"
 
@@ -373,37 +373,37 @@ msgid ""
 "Just open the file named "
 ":code:`locales/{language}/LC_MESSAGES/messages.po` and write translations"
 msgstr ""
-"Просто видкрийте файл из назвою "
-":code:`locales/{language}/LC_MESSAGES/messages.po` и впишить переклади"
+"Просто видкрийте файл из названием "
+":code:`locales/{language}/LC_MESSAGES/messages.po` и впишить переводы"
 
 #: ../../utils/i18n.rst:205
 msgid "Step 4: Compile translations"
-msgstr "Крок 4: Компиляция перекладив"
+msgstr "Шаг 4: Компиляция переводов"
 
 #: ../../utils/i18n.rst:213
 msgid "Step 5: Updating messages"
-msgstr "Крок 5: Оновлення текстив"
+msgstr "Шаг 5: Оновлення текстив"
 
 #: ../../utils/i18n.rst:215
 msgid "When you change the code of your bot you need to update po & mo files"
-msgstr "Коли вы зминюете код свого бота, вам потрибно оновити файлы .po и .mo"
+msgstr "Когда вы зминюете код свого бота, вам нужно обновить файлы .po и .mo"
 
 #: ../../utils/i18n.rst:217
 msgid "Step 5.1: regenerate pot file: command from step 1"
-msgstr "Крок 5.1: отновлення файлу .pot: команда с кроку 1"
+msgstr "Шаг 5.1: отновлення файлу .pot: команда с кроку 1"
 
 #: ../../utils/i18n.rst:221
 msgid "Step 5.2: update po files"
-msgstr "Крок 5.2: обновления .po файлов"
+msgstr "Шаг 5.2: обновления .po файлов"
 
 #: ../../utils/i18n.rst:223
 msgid ""
 "Step 5.3: update your translations: location and tools you know from step"
 " 3"
 msgstr ""
-"Крок 5.3: обновления Ваших перекладив: розмищення и инструменты Ви знаете"
+"Шаг 5.3: обновления Ваших переводов: размещение и инструменты Ви знаете"
 " с кроку 3."
 
 #: ../../utils/i18n.rst:224
 msgid "Step 5.4: compile mo files: command from step 4"
-msgstr "Крок 5.4: компиляция .mo файлов : команда с кроку 4"
+msgstr "Шаг 5.4: компиляция .mo файлов : команда с кроку 4"

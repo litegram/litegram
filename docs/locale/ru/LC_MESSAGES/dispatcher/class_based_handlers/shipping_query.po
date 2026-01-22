@@ -24,7 +24,7 @@ msgstr "ShippingQueryHandler"
 #: ../../dispatcher/class_based_handlers/shipping_query.rst:5
 msgid "There is base class for callback query handlers."
 msgstr ""
-"!!! Це базовий клас для обработчиков запитив пидтвердження доставки."
+"!!! Это базовый класс для обработчиков запитив пидтвердження доставки."
 
 #: ../../dispatcher/class_based_handlers/shipping_query.rst:8
 msgid "Simple usage"
@@ -39,7 +39,7 @@ msgid ""
 "This base handler is subclass of :ref:`BaseHandler <cbh-base-handler>` "
 "with some extensions:"
 msgstr ""
-"Этот базовий обробник является пидкласом :ref:`BaseHandler <cbh-base-handler>` "
+"Этот базовый обработчик является пидкласом :ref:`BaseHandler <cbh-base-handler>` "
 "с деякими розширеннями:"
 
 #: ../../dispatcher/class_based_handlers/shipping_query.rst:25

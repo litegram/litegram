@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -19,7 +18,7 @@ msgstr ""
 
 #: ../../api/bot.rst:3
 msgid "Bot"
-msgstr ""
+msgstr "Бот"
 
 #: ../../api/bot.rst:5
 msgid ""
@@ -27,80 +26,95 @@ msgid ""
 "litegram import Bot`) and you can't use methods without instance of bot "
 "with configured token."
 msgstr ""
+"Экземпляр бота может быть создан из :code:`litegram.Bot` (:code:`from "
+"litegram import Bot`). Вы не сможете использовать методы без экземпляра "
+"бота с настроенным токеном."
 
 #: ../../api/bot.rst:8
 msgid ""
 "This class has aliases for all methods and named in "
 ":code:`lower_camel_case`."
 msgstr ""
+"Этот класс имеет псевдонимы для всех методов, именованных в "
+":code:`snake_case`."
 
 #: ../../api/bot.rst:10
 msgid ""
 "For example :code:`sendMessage` named :code:`send_message` and has the "
 "same specification with all class-based methods."
 msgstr ""
+"Например, :code:`sendMessage` называется :code:`send_message` и имеет ту"
+" же спецификацию, что и все методы на основе классов."
 
 #: ../../api/bot.rst:14
 msgid ""
 "A full list of methods can be found in the appropriate section of the "
 "documentation"
 msgstr ""
+"Полный список методов можно найти в соответствующем разделе "
+"документации"
 
 #: litegram.client.bot.Bot.__init__:1 of
 msgid "Bot class"
-msgstr ""
+msgstr "Класс Bot"
 
 #: ../../api/bot.rst
 msgid "Parameters"
-msgstr ""
+msgstr "Параметры"
 
 #: litegram.client.bot.Bot.__init__:3 of
 msgid "Telegram Bot token `Obtained from @BotFather <https://t.me/BotFather>`_"
 msgstr ""
+"Токен Telegram-бота, `полученный от @BotFather "
+"<https://t.me/BotFather>`_"
 
 #: litegram.client.bot.Bot.__init__:4 of
 msgid ""
 "HTTP Client session (For example HttpxSession). If not specified it will "
 "be automatically created."
 msgstr ""
+"Сессия HTTP-клиента (например, HttpxSession). Если не указана, она будет"
+" создана автоматически."
 
 #: litegram.client.bot.Bot.__init__:6 of
 msgid ""
 "Default bot properties. If specified it will be propagated into the API "
 "methods at runtime."
 msgstr ""
+"Свойства бота по умолчанию. Если указаны, они будут распространяться на "
+"методы API во время выполнения."
 
 #: ../../api/bot.rst
 msgid "Raises"
-msgstr ""
+msgstr "Исключения"
 
 #: litegram.client.bot.Bot.__init__:8 of
 msgid "When token has invalid format this exception will be raised"
-msgstr ""
+msgstr "Если токен имеет неверный формат, будет выброшено это исключение"
 
 #: litegram.client.bot.Bot.id:1 of
 msgid "Get bot ID from token"
-msgstr ""
+msgstr "Получить ID бота из токена"
 
 #: ../../api/bot.rst
 msgid "Returns"
-msgstr ""
+msgstr "Возвращает"
 
 #: litegram.client.bot.Bot.context:1 of
 msgid "Generate bot context"
-msgstr ""
+msgstr "Сгенерировать контекст бота"
 
 #: litegram.client.bot.Bot.context:3 of
 msgid "close session on exit"
-msgstr ""
+msgstr "закрыть сессию при выходе"
 
 #: litegram.client.bot.Bot.me:1 of
 msgid "Cached alias for getMe method"
-msgstr ""
+msgstr "Кэшированный псевдоним для метода getMe"
 
 #: litegram.client.bot.Bot.download_file:1 of
 msgid "Download file by file_path to destination."
-msgstr ""
+msgstr "Скачать файл по file_path в место назначения."
 
 #: litegram.client.bot.Bot.download:3 litegram.client.bot.Bot.download_file:3
 #: of
@@ -108,12 +122,17 @@ msgid ""
 "If you want to automatically create destination (:class:`io.BytesIO`) use"
 " default value of destination and handle result of this method."
 msgstr ""
+"Если вы хотите автоматически создать место назначения "
+"(:class:`io.BytesIO`), используйте значение по умолчанию для destination"
+" и обработайте результат этого метода."
 
 #: litegram.client.bot.Bot.download_file:6 of
 msgid ""
 "File path on Telegram server (You can get it from "
 ":obj:`litegram.types.File`)"
 msgstr ""
+"Путь к файлу на сервере Telegram (вы можете получить его из "
+":obj:`litegram.types.File`)"
 
 #: litegram.client.bot.Bot.download:7 litegram.client.bot.Bot.download_file:7
 #: of
@@ -121,16 +140,18 @@ msgid ""
 "Filename, file path or instance of :class:`io.IOBase`. For e.g. "
 ":class:`io.BytesIO`, defaults to None"
 msgstr ""
+"Имя файла, путь к файлу или экземпляр :class:`io.IOBase`. Например, "
+":class:`io.BytesIO`, по умолчанию None"
 
 #: litegram.client.bot.Bot.download:8 litegram.client.bot.Bot.download_file:8
 #: of
 msgid "Total timeout in seconds, defaults to 30"
-msgstr ""
+msgstr "Общий таймаут в секундах, по умолчанию 30"
 
 #: litegram.client.bot.Bot.download:9 litegram.client.bot.Bot.download_file:9
 #: of
 msgid "File chunks size, defaults to 64 kb"
-msgstr ""
+msgstr "Размер фрагментов файла, по умолчанию 64 КБ"
 
 #: litegram.client.bot.Bot.download:10 litegram.client.bot.Bot.download_file:10
 #: of
@@ -138,11 +159,14 @@ msgid ""
 "Go to start of file when downloading is finished. Used only for "
 "destination with :class:`typing.BinaryIO` type, defaults to True"
 msgstr ""
+"Перейти в начало файла после завершения загрузки. Используется только "
+"если destination имеет тип :class:`typing.BinaryIO`, по умолчанию True"
 
 #: litegram.client.bot.Bot.download:1 of
 msgid "Download file by file_id or Downloadable object to destination."
 msgstr ""
+"Скачать файл по file_id или объекту Downloadable в место назначения."
 
 #: litegram.client.bot.Bot.download:6 of
 msgid "file_id or Downloadable object"
-msgstr ""
+msgstr "file_id или объект Downloadable"

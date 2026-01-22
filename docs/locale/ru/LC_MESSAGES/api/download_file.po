@@ -69,7 +69,7 @@ msgid ""
 msgstr ""
 "Если вы хотите автоматически создать место назначения (io.BytesIO), "
 "используйте значение назначения по умолчанию и обработайте результат"
-" этого методу."
+" этого метода."
 
 #: litegram.client.bot.Bot.download_file:1 of
 msgid "Download file by file_path to destination."
@@ -82,7 +82,7 @@ msgid ""
 msgstr ""
 "Если вы хотите автоматически создать место назначения (io.BytesIO), "
 "используйте значение назначения по умолчанию и обработайте результат"
-" этого методу."
+" этого метода."
 
 #: litegram.client.bot.Bot.download litegram.client.bot.Bot.download_file of
 msgid "Parameters"
@@ -101,7 +101,7 @@ msgid ""
 "Filename, file path or instance of :class:`io.IOBase`. For e.g. "
 ":class:`io.BytesIO`, defaults to None"
 msgstr ""
-"Ім’я файлу, шлях к файлу или екземпляр :class:`io.IOBase`. Для напр. "
+"Ім’я файлу, шлях к файлу или экземпляр :class:`io.IOBase`. Для напр. "
 ":class:`io.BytesIO`, по умолчанию нет"
 
 #: litegram.client.bot.Bot.download:8 litegram.client.bot.Bot.download_file:8 of
@@ -164,7 +164,7 @@ msgid ""
 "If you leave the default value, an :obj:`io.BytesIO` object will be "
 "created and returned."
 msgstr ""
-"Якщо залишити значение по умолчанию, буде створено и повернено "
+"Если залишити значение по умолчанию, будет створено и повернено "
 "объект :obj:`io.BytesIO`."
 
 #: ../../api/download_file.rst:72

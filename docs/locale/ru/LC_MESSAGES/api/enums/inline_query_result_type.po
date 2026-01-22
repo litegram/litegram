@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -26,6 +25,5 @@ msgid "Type of inline query result"
 msgstr ""
 
 #: litegram.enums.inline_query_result_type.InlineQueryResultType:3 of
-#, fuzzy
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresult"
 msgstr "Источник: https://core.telegram.org/bots/api#maskposition"

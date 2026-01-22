@@ -21,7 +21,6 @@ msgid "Filtering events"
 msgstr "Фильтрация событий"
 
 #: ../../dispatcher/filters/index.rst:7
-#, fuzzy
 msgid ""
 "Filters is needed for routing updates to the specific handler. Searching "
 "of handler is always stops on first match set of filters are pass. By "
@@ -33,7 +32,6 @@ msgstr ""
 "фильтров."
 
 #: ../../dispatcher/filters/index.rst:11
-#, fuzzy
 msgid "*litegram* has some builtin useful filters or you can write own filters."
 msgstr "*litegram* имеет несколько встроенных полезных фильтров."
 
@@ -114,7 +112,6 @@ msgid "Returns"
 msgstr "Возвращает"
 
 #: litegram.filters.base.Filter.__call__:5 of
-#, fuzzy
 msgid ":class:`bool` or :class:`dict[str, Any]`"
 msgstr ":class:`bool` or :class:`Dict[str, Any]`"
 

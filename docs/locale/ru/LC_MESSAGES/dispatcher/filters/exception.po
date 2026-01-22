@@ -23,7 +23,7 @@ msgstr "Помилки"
 
 #: ../../dispatcher/filters/exception.rst:5
 msgid "This filters can be helpful for handling errors from the text messages."
-msgstr "Ци фильтри могут бути корисними для обработки помилок в текстовых повикмленнях."
+msgstr "Ци фильтри могут быть корисними для обработки помилок в текстовых повикмленнях."
 
 #: litegram.filters.exception.ExceptionTypeFilter:1 of
 msgid "Allows to match exception by type"
@@ -35,7 +35,7 @@ msgstr "Дозвол зисивляти винятки с повикмлення
 
 #: ../../dispatcher/filters/exception.rst:18
 msgid "Allowed handlers"
-msgstr "Дозволени обробники"
+msgstr "Дозволени обработчики"
 
 #: ../../dispatcher/filters/exception.rst:20
 msgid "Allowed update types for this filters:"

@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the litegram package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
@@ -53,7 +52,7 @@ msgid ""
 "In cases when you need to deserialize Telegram object to Python object, "
 "you can use this module."
 msgstr ""
-"У випадках, когда вам потрибно перетворити объект Telegram в объект Python, "
+"У випадках, когда вам нужно перетворити объект Telegram в объект Python, "
 "вы можете використати этот модуль."
 
 #: ../../utils/serialization.rst:30
@@ -88,13 +87,13 @@ msgid ""
 "Default bot properties should be passed only if you want to use custom "
 "defaults."
 msgstr ""
-"Властивости бота по умолчанию потрибно передавати только если вы хотите "
-"використати власни значение по умолчанию."
+"Властивости бота по умолчанию нужно передавати только если вы хотите "
+"використати собственные значение по умолчанию."
 
 #: litegram.utils.serialization.deserialize_telegram_object:6
 #: litegram.utils.serialization.deserialize_telegram_object_to_python:6 of
 msgid "Whether to include the API method name in the result."
-msgstr "Чи включати назву методу API в результатт."
+msgstr "Чи включати название метода API в результатт."
 
 #: ../../utils/serialization.rst
 msgid "Returns"

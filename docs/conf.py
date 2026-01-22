@@ -1,4 +1,5 @@
 import datetime
+import os
 from pathlib import Path
 
 import litegram
@@ -41,8 +42,8 @@ rst_prolog = f"""
    :language: python3
 """
 
-language = "en"
-locale_dirs = ["locale/"]
+language = os.environ.get("READTHEDOCS_LANGUAGE", "en")
+locale_dirs = ["locale"]
 gettext_compact = False
 
 exclude_patterns = []

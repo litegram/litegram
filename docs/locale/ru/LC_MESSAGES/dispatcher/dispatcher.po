@@ -21,7 +21,6 @@ msgid "Dispatcher"
 msgstr "Диспетчер"
 
 #: ../../dispatcher/dispatcher.rst:5
-#, fuzzy
 msgid ""
 "Dispatcher is root :class:`~litegram.dispatcher.router.Router` and in "
 "code Dispatcher can be used directly for routing updates or attach "
@@ -32,7 +31,6 @@ msgstr ""
 "других маршрутизаторов к диспетчеру."
 
 #: ../../dispatcher/dispatcher.rst:7
-#, fuzzy
 msgid ""
 "Here is only listed base information about Dispatcher. All about writing "
 "handlers, filters and etc. you can find in next pages:"
@@ -41,7 +39,6 @@ msgstr ""
 "обработчиков, фильтров и т.д. вы можете найти на следующих страницах:"
 
 #: ../../dispatcher/dispatcher.rst:9
-#, fuzzy
 msgid ":ref:`Router <Router>`"
 msgstr "`Маршрутизатор <router.html>`__"
 

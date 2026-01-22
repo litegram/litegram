@@ -35,20 +35,18 @@ msgid ""
 "If the file is already stored somewhere on the Telegram servers or file "
 "is available by the URL, you don't need to reupload it."
 msgstr ""
-"Якщо файл уже зберигаеться десь на серверах Telegram или файл доступний "
-"за URL-адресою, вам не потрибно его повторно завантажувати."
+"Если файл уже зберигаеться десь на серверах Telegram или файл доступний "
+"за URL-адресою, вам не нужно его повторно завантажувати."
 
 #: ../../api/upload_file.rst:13
-#, fuzzy
 msgid ""
 "But if you need to upload a new file just use subclasses of `InputFile "
 "<types/input_file.html>`__."
 msgstr ""
-"Але если вам потрибно скачать новий файл, просто используйте "
+"Но если вам нужно скачать новий файл, просто используйте "
 "пидкласи `InputFile <types/input_file.md>`__."
 
 #: ../../api/upload_file.rst:15
-#, fuzzy
 msgid "Here are the three different available builtin types of input file:"
 msgstr "Тут доступни три ризни типы вхидних файлов:"
 
@@ -77,21 +75,19 @@ msgstr ""
 "<#upload-from-url>`__"
 
 #: ../../api/upload_file.rst:23
-#, fuzzy
 msgid "**Be respectful to Telegram**"
 msgstr "**Поважайте Telegram**"
 
 #: ../../api/upload_file.rst:25
-#, fuzzy
 msgid ""
 "Instances of `InputFile` are reusable. That means you can create an "
 "instance of InputFile and send it multiple times. However, Telegram does "
 "not recommend doing this. Instead, once you upload a file, save its "
 "`file_id` and reuse that later."
 msgstr ""
-"Екземпляри `InputFile` можна использовать повторно. Це означае, что вы "
-"можете створити екземпляр InputFile и отправить этот файл килька разив, "
-"але Telegram не рекомендуе этого робити, и когда вы завантажуете файл один"
+"Экземпляры `InputFile` можно использовать повторно. Это означае, что вы "
+"можете создать экземпляр InputFile и отправить этот файл несколько разив, "
+"но Telegram не рекомендуе этого робити, и когда вы завантажуете файл один"
 " раз, просто збережить его `file_id` и используйте его наступного "
 "разу."
 
@@ -101,11 +97,11 @@ msgstr "Видваниження с файловои системи"
 
 #: ../../api/upload_file.rst:31
 msgid "By first step you will need to import InputFile wrapper:"
-msgstr "Перш за все, вам потрибно буде импортувати обгортку InputFile:"
+msgstr "Перш за все, вам нужно будет импортувати обгортку InputFile:"
 
 #: ../../api/upload_file.rst:37
 msgid "Then you can use it:"
-msgstr "Тепер вы можетте использовать ии:"
+msgstr "Тепер вы можетте использовать её:"
 
 #: litegram.types.input_file.BufferedInputFile.__init__:1
 #: litegram.types.input_file.FSInputFile.__init__:1 of
@@ -125,7 +121,7 @@ msgid ""
 "Filename to be propagated to telegram. By default, will be parsed from "
 "path"
 msgstr ""
-"Ім'я файлу, которое буде передано в telegram. За замовчуванням, буде взято зи"
+"Ім'я файлу, которое будет передано в telegram. За замовчуванням, будет взято зи"
 " шляху"
 
 #: litegram.types.input_file.BufferedInputFile.__init__:5
@@ -138,13 +134,12 @@ msgid "Upload from buffer"
 msgstr "Видваниження с буферу"
 
 #: ../../api/upload_file.rst:52
-#, fuzzy
 msgid ""
 "Files can be also passed from buffer (For example you generate image "
 "using `Pillow <https://pillow.readthedocs.io/en/stable/>`_ and you want "
 "to send it to Telegram):"
 msgstr ""
-"Файли також можна передавати с буфера (например, вы створюете зображення"
+"Файли также можно передавати с буфера (например, вы створюете зображення"
 " с помощью `Pillow <https://pillow.readthedocs.io/en/stable/>`_ и "
 "хотите отправить его в Telegram):"
 
@@ -154,7 +149,7 @@ msgstr "Імпорт обгортки:"
 
 #: ../../api/upload_file.rst:62 ../../api/upload_file.rst:84
 msgid "And then you can use it:"
-msgstr "Тепер вы можетте использовать ии:"
+msgstr "Тепер вы можетте использовать её:"
 
 #: litegram.types.input_file.BufferedInputFile.__init__:3 of
 msgid "Bytes"
@@ -162,7 +157,7 @@ msgstr "Байти"
 
 #: litegram.types.input_file.BufferedInputFile.__init__:4 of
 msgid "Filename to be propagated to telegram."
-msgstr "Ім'я файлу, которое буде передано в telegram."
+msgstr "Ім'я файлу, которое будет передано в telegram."
 
 #: ../../api/upload_file.rst:72
 msgid "Upload from url"
@@ -175,8 +170,8 @@ msgid ""
 "<https://core.telegram.org/bots/api#sending-files>`_ by URL, you can use "
 ":obj:`litegram.types.input_file.URLInputFile`."
 msgstr ""
-"Якщо вам потрибно видвантажити файл с иншого сервера, але пряме ссылку"
-" прив’язано к IP-адреси вашого сервера, или вы хотите обийти власни "
+"Если вам нужно видвантажити файл с иншого сервера, но пряме ссылку"
+" прив’язано к IP-адреси вашого сервера, или вы хотите обийти собственные "
 "`обмеження на загрузка <https://core.telegram.org/bots/api#sending-"
 "files> `_ за URL-адресою, вы можете использовать "
 ":obj:`litegram.types.input_file.URLInputFile`."

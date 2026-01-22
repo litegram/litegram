@@ -33,7 +33,7 @@ msgid ""
 "Or construct your own terms via using pre-defined set of statuses and "
 "transitions."
 msgstr ""
-"Або створить власни умови, используя попередньо визначений набир "
+"Або створить собственные умови, используя попередньо визначений набор "
 "статусив и переходив."
 
 #: ../../dispatcher/filters/chat_member_updated.rst:24
@@ -94,7 +94,7 @@ msgstr ":code:`RESTRICTED`"
 
 #: ../../dispatcher/filters/chat_member_updated.rst:46
 msgid "Restricted user (can be not member)"
-msgstr "Обмежений пользователь (может бути не учасником)"
+msgstr "Обмежений пользователь (может быть не учасником)"
 
 #: ../../dispatcher/filters/chat_member_updated.rst:48
 msgid ":code:`LEFT`"
@@ -119,7 +119,7 @@ msgid ""
 ":code:`is_member == False`) symbol, like :code:`+RESTRICTED` or "
 ":code:`-RESTRICTED`"
 msgstr ""
-"Статуси можна розширити маркером `is_member`, додавши префикс :code:`+` "
+"Статуси можно расширить маркером `is_member`, добавив префикс :code:`+` "
 "(для :code:`is_member == True)` или :code:`-` (для :code:`is_member == "
 "False`) , например :code:`+RESTRICTED` или :code:`-RESTRICTED`"
 
@@ -132,7 +132,7 @@ msgid ""
 "The particular statuses can be combined via bitwise :code:`or` operator, "
 "like :code:`CREATOR | ADMINISTRATOR`"
 msgstr ""
-"Окреми статуси можна комбинувати с помощью побитового оператора "
+"Окреми статуси можно комбинувати с помощью побитового оператора "
 ":code:`or`, например :code:`CREATOR | ADMINISTRATOR`"
 
 #: ../../dispatcher/filters/chat_member_updated.rst:65
@@ -175,10 +175,10 @@ msgid ""
 " specified on the right side for :code:`>>` operator (left side for "
 ":code:`<<`)"
 msgstr ""
-"Переходи можна визначити с помощью операторив порозрядного зсуву "
-":code:`>>` и :code:`<<`. Старий статус учасника чату имеет бути визначений "
+"Переходи можно определить с помощью операторов поразрядного сдвига "
+":code:`>>` и :code:`<<`. Старий статус учасника чату имеет быть визначений "
 "ливоруч для оператора :code:`>>` (праворуч для :code:`<<`), а новий "
-"статус имеет бути вказаний праворуч для :code:`>>` оператор (ливоруч для "
+"статус имеет быть вказаний праворуч для :code:`>>` оператор (ливоруч для "
 ":code:`<<`)"
 
 #: ../../dispatcher/filters/chat_member_updated.rst:79
@@ -187,7 +187,7 @@ msgid ""
 "operator: :code:`~JOIN_TRANSITION` will produce swap of old and new "
 "statuses."
 msgstr ""
-"Напрямок переходу можна зминити с помощью оператора побитовои "
+"Напрямок переходу можно изменить с помощью оператора побитовои "
 "инверсии: :code:`~JOIN_TRANSITION` призведе к обмину старих и нових "
 "статусив."
 
@@ -235,17 +235,17 @@ msgid ""
 "to add brackets for the statement before use shift operator in due to "
 "operator priorities."
 msgstr ""
-"Зауважте, что если вы визначаете об’еднання статусив (через :code:`|`), "
-"вам потрибно буде додати дужки для оператора перед використанням "
+"Заметьте, что если вы визначаете об’еднання статусив (через :code:`|`), "
+"вам нужно будет добавить дужки для оператора перед використанням "
 "оператора зсуву через приоритети оператора."
 
 #: ../../dispatcher/filters/chat_member_updated.rst:103
 msgid "Allowed handlers"
-msgstr "Дозволени обробники"
+msgstr "Дозволени обработчики"
 
 #: ../../dispatcher/filters/chat_member_updated.rst:105
 msgid "Allowed update types for this filter:"
-msgstr "Дозволени типы оновлень для этого фильтра:"
+msgstr "Дозволени типы обновлений для этого фильтра:"
 
 #: ../../dispatcher/filters/chat_member_updated.rst:107
 msgid "`my_chat_member`"

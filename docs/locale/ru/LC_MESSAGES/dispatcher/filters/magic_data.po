@@ -29,8 +29,8 @@ msgid ""
 ":code:`MagicData(F.event.from_user.id == F.config.admin_id)`  (Note that "
 ":code:`config` should be passed from middleware)"
 msgstr ""
-":code:`MagicData(F.event.from_user.id == F.config.admin_id)`  (Зауважте, "
-"что :code:`config` следует передати с промижнои програми)"
+":code:`MagicData(F.event.from_user.id == F.config.admin_id)`  (Заметьте, "
+"что :code:`config` следует передать с промежуточной программы)"
 
 #: ../../dispatcher/filters/magic_data.rst:11
 msgid "Explanation"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: litegram.filters.magic_data.MagicData:1 of
 msgid "This filter helps to filter event with contextual data"
-msgstr "Этот фильтр кпомагае фильтрувати подии с контекстними даними"
+msgstr "Этот фильтр кпомагае фильтрувати события с контекстними данными"
 
 #: ../../dispatcher/filters/magic_data.rst:18
 msgid "Can be imported:"
@@ -54,7 +54,7 @@ msgstr "Дозволени типы обработчиков (handler)"
 
 #: ../../dispatcher/filters/magic_data.rst:26
 msgid "Allowed update types for this filter:"
-msgstr "Дозволени типы оновлень для этого фильтра:"
+msgstr "Дозволени типы обновлений для этого фильтра:"
 
 #: ../../dispatcher/filters/magic_data.rst:28
 msgid ":code:`message`"

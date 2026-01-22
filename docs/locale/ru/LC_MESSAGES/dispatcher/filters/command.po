@@ -29,7 +29,6 @@ msgid "Filter single variant of commands: :code:`Command(\"start\")`"
 msgstr "Фильтр одиночного варианта команд: :code:`Command(\"start\")`"
 
 #: ../../dispatcher/filters/command.rst:9
-#, fuzzy
 msgid ""
 "Handle command by regexp pattern: "
 ":code:`Command(re.compile(r\"item_(\\\\d+)\"))`"
@@ -38,7 +37,6 @@ msgstr ""
 ":code:`Command(re.compile(r\"item_(\\d+)\"))`"
 
 #: ../../dispatcher/filters/command.rst:10
-#, fuzzy
 msgid ""
 "Match command by multiple variants: :code:`Command(\"item\", "
 "re.compile(r\"item_(\\\\d+)\"))`"
