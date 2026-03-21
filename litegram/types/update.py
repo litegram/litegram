@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+from functools import cached_property
 from typing import TYPE_CHECKING, Any, cast
 
-from ..utils.mypy_hacks import lru_cache
+from pydantic import ConfigDict
+
 from .base import TelegramObject
 
 if TYPE_CHECKING:
@@ -26,6 +28,7 @@ if TYPE_CHECKING:
 
 
 class Update(TelegramObject):
+    model_config = ConfigDict(ignored_types=(cached_property,))
     """
     This `object <https://core.telegram.org/bots/api#available-types>`_ represents an incoming update.
 
@@ -151,8 +154,10 @@ class Update(TelegramObject):
     def __hash__(self) -> int:
         return hash((type(self), self.update_id))
 
-    @property
-    @lru_cache()
+    @cached_property
+    # ⚡ Bolt: Using @cached_property here is much faster than @property + @lru_cache()
+    # because it replaces the property with a regular attribute on the object after the
+    # first access, entirely bypassing the function call overhead for subsequent accesses.
     def event_type(self) -> str:
         """
         Detect update type
@@ -209,7 +214,8 @@ class Update(TelegramObject):
 
         raise UpdateTypeLookupError("Update does not contain any known event type.")
 
-    @property
+    @cached_property
+    # ⚡ Bolt: Using @cached_property to cache the event instance and skip redundant lookups.
     def event(self) -> TelegramObject:
         return cast("TelegramObject", getattr(self, self.event_type))
 
