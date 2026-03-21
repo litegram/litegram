@@ -1,0 +1,3 @@
+## 2024-05-24 - Faster Caching of Properties on Pydantic Models
+**Learning:** Using `@cached_property` instead of `@property` + `@lru_cache()` for caching computed properties on `pydantic.BaseModel` objects (like `litegram.types.update.Update`) provides a significant performance boost in Python because it avoids the function call and locking overhead of `lru_cache` entirely on subsequent accesses.
+**Action:** When a property on a `pydantic.BaseModel` is accessed frequently (e.g., in a tight loop during event routing), use `@cached_property`. Remember to also update the model configuration with `model_config = ConfigDict(ignored_types=(cached_property,))` to prevent Pydantic from trying to process the cached property as a field.
