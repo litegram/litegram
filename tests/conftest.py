@@ -6,10 +6,18 @@ from pathlib import Path
 
 import pytest
 from _pytest.config import UsageError
-from pymongo.errors import InvalidURI, PyMongoError
-from pymongo.uri_parser import parse_uri as parse_mongo_url
-from redis.asyncio.connection import parse_url as parse_redis_url
-from redis.exceptions import ConnectionError as RedisConnectionError
+
+try:
+    from pymongo.errors import InvalidURI, PyMongoError
+    from pymongo.uri_parser import parse_uri as parse_mongo_url
+except ImportError:
+    InvalidURI = PyMongoError = parse_mongo_url = None
+
+try:
+    from redis.asyncio.connection import parse_url as parse_redis_url
+    from redis.exceptions import ConnectionError as RedisConnectionError
+except ImportError:
+    parse_redis_url = RedisConnectionError = None
 
 from litegram import Dispatcher
 from litegram.fsm.storage.base import StorageKey
@@ -18,9 +26,18 @@ from litegram.fsm.storage.memory import (
     MemoryStorage,
     SimpleEventIsolation,
 )
-from litegram.fsm.storage.mongo import MongoStorage
-from litegram.fsm.storage.pymongo import PyMongoStorage
-from litegram.fsm.storage.redis import RedisStorage
+
+try:
+    from litegram.fsm.storage.mongo import MongoStorage
+    from litegram.fsm.storage.pymongo import PyMongoStorage
+except ImportError:
+    MongoStorage = PyMongoStorage = None
+
+try:
+    from litegram.fsm.storage.redis import RedisStorage
+except ImportError:
+    RedisStorage = None
+
 from tests.mocked_bot import MockedBot
 
 DATA_DIR = Path(__file__).parent / "data"
@@ -61,6 +78,8 @@ def pytest_configure(config):
 
 @pytest.fixture()
 def redis_server(request):
+    if RedisStorage is None:
+        pytest.skip("redis-py is not installed")
     redis_uri = request.config.getoption("--redis")
     if redis_uri is None:
         pytest.skip(SKIP_MESSAGE_PATTERN.format(db="redis"))
@@ -89,6 +108,8 @@ async def redis_storage(redis_server):
 
 @pytest.fixture()
 def mongo_server(request):
+    if MongoStorage is None:
+        pytest.skip("motor/pymongo is not installed")
     mongo_uri = request.config.getoption("--mongo")
     if mongo_uri is None:
         pytest.skip(SKIP_MESSAGE_PATTERN.format(db="mongo"))
@@ -119,6 +140,8 @@ async def mongo_storage(mongo_server):
 
 @pytest.fixture()
 def pymongo_server(request):
+    if PyMongoStorage is None:
+        pytest.skip("pymongo is not installed")
     mongo_uri = request.config.getoption("--mongo")
     if mongo_uri is None:
         pytest.skip(SKIP_MESSAGE_PATTERN.format(db="mongo"))
