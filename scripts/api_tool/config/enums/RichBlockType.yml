@@ -1,0 +1,33 @@
+name: RichBlockType
+description: 'This object represents the type of a richblock object.
+
+
+  Source: https://core.telegram.org/bots/api#richblock'
+multi_parse:
+  attribute: type
+  regexp: always '([a-z_]+)'
+  entities:
+  - RichBlockAnchor
+  - RichBlockAnimation
+  - RichBlockAudio
+  - RichBlockBlockQuotation
+  - RichBlockButtons
+  - RichBlockCollage
+  - RichBlockDetails
+  - RichBlockDivider
+  - RichBlockDocument
+  - RichBlockExpandableBlockQuotation
+  - RichBlockFooter
+  - RichBlockList
+  - RichBlockMap
+  - RichBlockMathematicalExpression
+  - RichBlockParagraph
+  - RichBlockPhoto
+  - RichBlockPreformatted
+  - RichBlockPullQuotation
+  - RichBlockSectionHeading
+  - RichBlockSlideshow
+  - RichBlockTable
+  - RichBlockThinking
+  - RichBlockVideo
+  - RichBlockVoiceNote

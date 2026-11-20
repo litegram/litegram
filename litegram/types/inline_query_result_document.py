@@ -38,7 +38,7 @@ class InlineQueryResultDocument(InlineQueryResult):
     description: str | None = None
     """*Optional*. Short description of the result"""
     reply_markup: InlineKeyboardMarkup | None = None
-    """*Optional*. Inline keyboard attached to the message"""
+    """*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_ attached to the message"""
     input_message_content: InputMessageContentUnion | None = None
     """*Optional*. Content of the message to be sent instead of the file"""
     thumbnail_url: str | None = None
@@ -47,7 +47,6 @@ class InlineQueryResultDocument(InlineQueryResult):
     """*Optional*. Thumbnail width"""
     thumbnail_height: int | None = None
     """*Optional*. Thumbnail height"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -55,11 +54,11 @@ class InlineQueryResultDocument(InlineQueryResult):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InlineQueryResultType.DOCUMENT] = InlineQueryResultType.DOCUMENT,
             id: str,
             title: str,
             document_url: str,
             mime_type: str,
+            type: Literal[InlineQueryResultType.DOCUMENT] = InlineQueryResultType.DOCUMENT,
             caption: str | None = None,
             parse_mode: str | Default | None = Default("parse_mode"),
             caption_entities: list[MessageEntity] | None = None,
@@ -76,11 +75,11 @@ class InlineQueryResultDocument(InlineQueryResult):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                type=type,
                 id=id,
                 title=title,
                 document_url=document_url,
                 mime_type=mime_type,
+                type=type,
                 caption=caption,
                 parse_mode=parse_mode,
                 caption_entities=caption_entities,

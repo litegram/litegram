@@ -1,0 +1,57 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "sharedwidgetquery",
+    "name": "SharedWidgetQuery",
+    "description": "This object represents an incoming query from a forwarded message with a shared widget created by the bot. Use answerWidgetQuery to answer the query. Each user can send at most 5 queries per 5 seconds to the bot from all its widgets.",
+    "html_description": "<p>This object represents an incoming query from a forwarded message with a shared widget created by the bot. Use <a href=\"#answerwidgetquery\">answerWidgetQuery</a> to answer the query. Each user can send at most 5 queries per 5 seconds to the bot from all its widgets.</p>",
+    "rst_description": "This object represents an incoming query from a forwarded message with a shared widget created by the bot. Use :class:`litegram.methods.answer_widget_query.AnswerWidgetQuery` to answer the query. Each user can send at most 5 queries per 5 seconds to the bot from all its widgets.",
+    "annotations": [
+      {
+        "name": "id",
+        "type": "String",
+        "required": true,
+        "description": "Unique identifier for this query",
+        "html_description": "<td>Unique identifier for this query</td>",
+        "rst_description": "Unique identifier for this query\n"
+      },
+      {
+        "name": "from",
+        "type": "User",
+        "required": true,
+        "description": "Sender",
+        "html_description": "<td>Sender</td>",
+        "rst_description": "Sender\n"
+      },
+      {
+        "name": "type",
+        "type": "WidgetQueryType",
+        "required": true,
+        "description": "Type of the query",
+        "html_description": "<td>Type of the query</td>",
+        "rst_description": "Type of the query\n"
+      },
+      {
+        "name": "data",
+        "type": "String",
+        "required": true,
+        "description": "Data of the query, 1-64 bytes",
+        "html_description": "<td>Data of the query, 1-64 bytes</td>",
+        "rst_description": "Data of the query, 1-64 bytes\n"
+      },
+      {
+        "name": "widget_id",
+        "type": "String",
+        "required": true,
+        "description": "Unique identifier of the shared widget, which sent the query",
+        "html_description": "<td>Unique identifier of the shared widget, which sent the query</td>",
+        "rst_description": "Unique identifier of the shared widget, which sent the query\n"
+      }
+    ],
+    "category": "types"
+  }
+}

@@ -1,0 +1,12 @@
+name: WidgetQueryTypeType
+description: 'This object represents the type of a widgetquerytype object.
+
+
+  Source: https://core.telegram.org/bots/api#widgetquerytype'
+multi_parse:
+  attribute: type
+  regexp: always '([a-z_]+)'
+  entities:
+  - WidgetQueryTypeData
+  - WidgetQueryTypeSentTransaction
+  - WidgetQueryTypeSignData

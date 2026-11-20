@@ -1,0 +1,65 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "areaposition",
+    "name": "AreaPosition",
+    "description": "Describes the position of a rectangle area on a story media or a TON wallet card.",
+    "html_description": "<p>Describes the position of a rectangle area on a story media or a TON wallet card.</p>",
+    "rst_description": "Describes the position of a rectangle area on a story media or a TON wallet card.",
+    "annotations": [
+      {
+        "name": "x_percentage",
+        "type": "Float",
+        "required": true,
+        "description": "The abscissa of the area's center, as a percentage of the media or the card width",
+        "html_description": "<td>The abscissa of the area's center, as a percentage of the media or the card width</td>",
+        "rst_description": "The abscissa of the area's center, as a percentage of the media or the card width\n"
+      },
+      {
+        "name": "y_percentage",
+        "type": "Float",
+        "required": true,
+        "description": "The ordinate of the area's center, as a percentage of the media or the card height",
+        "html_description": "<td>The ordinate of the area's center, as a percentage of the media or the card height</td>",
+        "rst_description": "The ordinate of the area's center, as a percentage of the media or the card height\n"
+      },
+      {
+        "name": "width_percentage",
+        "type": "Float",
+        "required": true,
+        "description": "The width of the area's rectangle, as a percentage of the media or the card width",
+        "html_description": "<td>The width of the area's rectangle, as a percentage of the media or the card width</td>",
+        "rst_description": "The width of the area's rectangle, as a percentage of the media or the card width\n"
+      },
+      {
+        "name": "height_percentage",
+        "type": "Float",
+        "required": true,
+        "description": "The height of the area's rectangle, as a percentage of the media or the card height",
+        "html_description": "<td>The height of the area's rectangle, as a percentage of the media or the card height</td>",
+        "rst_description": "The height of the area's rectangle, as a percentage of the media or the card height\n"
+      },
+      {
+        "name": "rotation_angle",
+        "type": "Float",
+        "required": true,
+        "description": "The clockwise rotation angle of the rectangle, in degrees; 0-360",
+        "html_description": "<td>The clockwise rotation angle of the rectangle, in degrees; 0-360</td>",
+        "rst_description": "The clockwise rotation angle of the rectangle, in degrees; 0-360\n"
+      },
+      {
+        "name": "corner_radius_percentage",
+        "type": "Float",
+        "required": true,
+        "description": "The radius of the rectangle corner rounding, as a percentage of the media or the card width",
+        "html_description": "<td>The radius of the rectangle corner rounding, as a percentage of the media or the card width</td>",
+        "rst_description": "The radius of the rectangle corner rounding, as a percentage of the media or the card width\n"
+      }
+    ],
+    "category": "types"
+  }
+}

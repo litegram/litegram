@@ -10,12 +10,6 @@ class GetUpdates(TelegramMethod[list[Update]]):
     """
     Use this method to receive incoming updates using long polling (`wiki <https://en.wikipedia.org/wiki/Push_technology#Long_polling>`_). Returns an Array of :class:`litegram.types.update.Update` objects.
 
-     **Notes**
-
-     **1.** This method will not work if an outgoing webhook is set up.
-
-     **2.** In order to avoid getting duplicate updates, recalculate *offset* after each server response.
-
     Source: https://core.telegram.org/bots/api#getupdates
     """
 
@@ -29,8 +23,9 @@ class GetUpdates(TelegramMethod[list[Update]]):
     timeout: int | None = None
     """Timeout in seconds for long polling. Defaults to 0, i.e. usual short polling. Should be positive, short polling should be used for testing purposes only."""
     allowed_updates: list[str] | None = None
-    """A JSON-serialized list of the update types you want your bot to receive. For example, specify :code:`["message", "edited_channel_post", "callback_query"]` to only receive updates of these types. See :class:`litegram.types.update.Update` for a complete list of available update types. Specify an empty list to receive all update types except *chat_member*, *message_reaction*, and *message_reaction_count* (default). If not specified, the previous setting will be used."""
+    """A JSON-serialized list of the update types you want your bot to receive. For example, specify :code:`["message", "edited_channel_post", "callback_query"]` to only receive updates of these types. See :class:`litegram.types.update.Update` for a complete list of available update types. Specify an empty list to receive all update types except *chat_member*, *message_reaction*, and *message_reaction_count* (default). If not specified, the previous setting will be used.
 
+Please note that this parameter doesn't affect updates created before the call to getUpdates, so unwanted updates may be received for a short period of time."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -48,10 +43,4 @@ class GetUpdates(TelegramMethod[list[Update]]):
             # This method was auto-generated via `butcher`
             # Is needed only for type checking and IDE support without any additional plugins
 
-            super().__init__(
-                offset=offset,
-                limit=limit,
-                timeout=timeout,
-                allowed_updates=allowed_updates,
-                **__pydantic_kwargs,
-            )
+            super().__init__(offset=offset, limit=limit, timeout=timeout, allowed_updates=allowed_updates, **__pydantic_kwargs)

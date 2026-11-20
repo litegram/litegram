@@ -125,10 +125,12 @@ bump:
 	uv run python scripts/bump_versions.py
 
 update-api:
-	uv run --extra cli butcher parse
-	uv run --extra cli butcher refresh
-	uv run --extra cli butcher apply all
-	@$(MAKE) bump
+	uv run --group dev python -m scripts.api_tool.parse
+	uv run --group dev python -m scripts.api_tool.apply
+	uv run --group dev python -m scripts.api_tool.sync_router
+	uv run --group dev python -m scripts.api_tool.docs
+	uv run ruff check --fix $(package_dir)
+	uv run ruff format $(package_dir)
 
 .PHONY: towncrier-build
 towncrier-build:

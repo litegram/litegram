@@ -1,0 +1,41 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Rich messages",
+    "anchor": "rich-messages"
+  },
+  "object": {
+    "anchor": "inputrichblockvideo",
+    "name": "InputRichBlockVideo",
+    "description": "A block with a video, corresponding to the HTML tag <video>.",
+    "html_description": "<p>A block with a video, corresponding to the HTML tag <code>&lt;video&gt;</code>.</p>",
+    "rst_description": "A block with a video, corresponding to the HTML tag :code:`<video>`.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the block, always 'video'",
+        "html_description": "<td>Type of the block, always “video”</td>",
+        "rst_description": "Type of the block, always 'video'\n"
+      },
+      {
+        "name": "video",
+        "type": "InputMediaVideo",
+        "required": true,
+        "description": "The video. Caption is ignored.",
+        "html_description": "<td>The video. Caption is ignored.</td>",
+        "rst_description": "The video. Caption is ignored.\n"
+      },
+      {
+        "name": "caption",
+        "type": "RichBlockCaption",
+        "required": false,
+        "description": "Optional. Caption of the block",
+        "html_description": "<td><em>Optional</em>. Caption of the block</td>",
+        "rst_description": "*Optional*. Caption of the block\n"
+      }
+    ],
+    "category": "types"
+  }
+}

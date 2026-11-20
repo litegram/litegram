@@ -22,8 +22,7 @@ class InputChecklistTask(TelegramObject):
     parse_mode: str | None = None
     """*Optional*. Mode for parsing entities in the text. See `formatting options <https://core.telegram.org/bots/api#formatting-options>`_ for more details."""
     text_entities: list[MessageEntity] | None = None
-    """*Optional*. List of special entities that appear in the text, which can be specified instead of parse_mode. Currently, only *bold*, *italic*, *underline*, *strikethrough*, *spoiler*, and *custom_emoji* entities are allowed."""
-
+    """*Optional*. List of special entities that appear in the text, which can be specified instead of parse_mode. Currently, only *bold*, *italic*, *underline*, *strikethrough*, *spoiler*, *custom_emoji*, and *date_time* entities are allowed."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -41,10 +40,4 @@ class InputChecklistTask(TelegramObject):
             # This method was auto-generated via `butcher`
             # Is needed only for type checking and IDE support without any additional plugins
 
-            super().__init__(
-                id=id,
-                text=text,
-                parse_mode=parse_mode,
-                text_entities=text_entities,
-                **__pydantic_kwargs,
-            )
+            super().__init__(id=id, text=text, parse_mode=parse_mode, text_entities=text_entities, **__pydantic_kwargs)

@@ -11,7 +11,7 @@ if TYPE_CHECKING:
 
 class InlineQueryResultGame(InlineQueryResult):
     """
-    Represents a `Game <https://core.telegram.org/bots/api#games>`_.
+    Represents a :class:`litegram.types.game.Game`.
 
     Source: https://core.telegram.org/bots/api#inlinequeryresultgame
     """
@@ -24,7 +24,6 @@ class InlineQueryResultGame(InlineQueryResult):
     """Short name of the game"""
     reply_markup: InlineKeyboardMarkup | None = None
     """*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_ attached to the message"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -32,9 +31,9 @@ class InlineQueryResultGame(InlineQueryResult):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InlineQueryResultType.GAME] = InlineQueryResultType.GAME,
             id: str,
             game_short_name: str,
+            type: Literal[InlineQueryResultType.GAME] = InlineQueryResultType.GAME,
             reply_markup: InlineKeyboardMarkup | None = None,
             **__pydantic_kwargs: Any,
         ) -> None:
@@ -42,10 +41,4 @@ class InlineQueryResultGame(InlineQueryResult):
             # This method was auto-generated via `butcher`
             # Is needed only for type checking and IDE support without any additional plugins
 
-            super().__init__(
-                type=type,
-                id=id,
-                game_short_name=game_short_name,
-                reply_markup=reply_markup,
-                **__pydantic_kwargs,
-            )
+            super().__init__(type=type, id=id, game_short_name=game_short_name, reply_markup=reply_markup, **__pydantic_kwargs)

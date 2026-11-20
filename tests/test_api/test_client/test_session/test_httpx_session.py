@@ -37,6 +37,24 @@ class TestHttpxSession:
         await session.close()
 
     @pytest.mark.anyio
+    async def test_create_client_is_race_safe(self):
+        """Concurrent first requests must not create two separate clients."""
+        session = HttpxSession()
+        clients = await asyncio.gather(*(session.create_client() for _ in range(16)))
+        assert len({id(client) for client in clients}) == 1
+        await session.close()
+
+    @pytest.mark.anyio
+    async def test_connection_limits_configurable(self):
+        """Pool limits are forwarded to the underlying httpx client."""
+        session = HttpxSession(max_connections=42, max_keepalive_connections=13)
+        client = await session.create_client()
+        pool = client._transport._pool
+        assert pool._max_connections == 42
+        assert pool._max_keepalive_connections == 13
+        await session.close()
+
+    @pytest.mark.anyio
     async def test_create_proxy_client(self):
         # httpx handles proxy via string or Proxy object
         async with HttpxSession(proxy="http://user:password@proxy.url:1080/") as session:

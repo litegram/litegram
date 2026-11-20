@@ -1,0 +1,2669 @@
+AcceptedGiftTypes:
+  gifts_from_channels: bool
+  limited_gifts: bool
+  premium_subscription: bool
+  unique_gifts: bool
+  unlimited_gifts: bool
+AddStickerToSet:
+  name: str
+  sticker: InputSticker
+  user_id: int
+AffiliateInfo:
+  affiliate_chat: Chat | None
+  affiliate_user: User | None
+  amount: int
+  commission_per_mille: int
+  nanostar_amount: int | None
+Animation:
+  duration: int
+  file_id: str
+  file_name: str | None
+  file_size: int | None
+  file_unique_id: str
+  height: int
+  mime_type: str | None
+  thumbnail: PhotoSize | None
+  width: int
+AnswerCallbackQuery:
+  cache_time: int | None
+  callback_query_id: str
+  show_alert: bool | None
+  text: str | None
+  url: str | None
+AnswerInlineQuery:
+  button: InlineQueryResultsButton | None
+  cache_time: int | None
+  inline_query_id: str
+  is_personal: bool | None
+  next_offset: str | None
+  results: list[InlineQueryResultUnion]
+AnswerPreCheckoutQuery:
+  error_message: str | None
+  ok: bool
+  pre_checkout_query_id: str
+AnswerShippingQuery:
+  error_message: str | None
+  ok: bool
+  shipping_options: list[ShippingOption] | None
+  shipping_query_id: str
+AnswerWebAppQuery:
+  result: InlineQueryResultUnion
+  web_app_query_id: str
+ApproveChatJoinRequest:
+  chat_id: ChatIdUnion
+  user_id: int
+ApproveSuggestedPost:
+  chat_id: int
+  message_id: int
+  send_date: DateTimeUnion | None
+Audio:
+  duration: int
+  file_id: str
+  file_name: str | None
+  file_size: int | None
+  file_unique_id: str
+  mime_type: str | None
+  performer: str | None
+  thumbnail: PhotoSize | None
+  title: str | None
+BackgroundFillFreeformGradient:
+  colors: list[int]
+  type: Literal["freeform_gradient"]
+BackgroundFillGradient:
+  bottom_color: int
+  rotation_angle: int
+  top_color: int
+  type: Literal["gradient"]
+BackgroundFillSolid:
+  color: int
+  type: Literal["solid"]
+BackgroundTypeChatTheme:
+  theme_name: str
+  type: Literal["chat_theme"]
+BackgroundTypeFill:
+  dark_theme_dimming: int
+  fill: BackgroundFillUnion
+  type: Literal["fill"]
+BackgroundTypePattern:
+  document: Document
+  fill: BackgroundFillUnion
+  intensity: int
+  is_inverted: bool | None
+  is_moving: bool | None
+  type: Literal["pattern"]
+BackgroundTypeWallpaper:
+  dark_theme_dimming: int
+  document: Document
+  is_blurred: bool | None
+  is_moving: bool | None
+  type: Literal["wallpaper"]
+BanChatMember:
+  chat_id: ChatIdUnion
+  revoke_messages: bool | None
+  until_date: DateTimeUnion | None
+  user_id: int
+BanChatSenderChat:
+  chat_id: ChatIdUnion
+  sender_chat_id: int
+Birthdate:
+  day: int
+  month: int
+  year: int | None
+BotCommand:
+  command: str
+  description: str
+BotCommandScopeAllChatAdministrators:
+  type: Literal[BotCommandScopeType.ALL_CHAT_ADMINISTRATORS]
+BotCommandScopeAllGroupChats:
+  type: Literal[BotCommandScopeType.ALL_GROUP_CHATS]
+BotCommandScopeAllPrivateChats:
+  type: Literal[BotCommandScopeType.ALL_PRIVATE_CHATS]
+BotCommandScopeChat:
+  chat_id: ChatIdUnion
+  type: Literal[BotCommandScopeType.CHAT]
+BotCommandScopeChatAdministrators:
+  chat_id: ChatIdUnion
+  type: Literal[BotCommandScopeType.CHAT_ADMINISTRATORS]
+BotCommandScopeChatMember:
+  chat_id: ChatIdUnion
+  type: Literal[BotCommandScopeType.CHAT_MEMBER]
+  user_id: int
+BotCommandScopeDefault:
+  type: Literal[BotCommandScopeType.DEFAULT]
+BotDescription:
+  description: str
+BotName:
+  name: str
+BotShortDescription:
+  short_description: str
+BusinessBotRights:
+  can_change_gift_settings: bool | None
+  can_convert_gifts_to_stars: bool | None
+  can_delete_all_messages: bool | None
+  can_delete_sent_messages: bool | None
+  can_edit_bio: bool | None
+  can_edit_name: bool | None
+  can_edit_profile_photo: bool | None
+  can_edit_username: bool | None
+  can_manage_stories: bool | None
+  can_read_messages: bool | None
+  can_reply: bool | None
+  can_transfer_and_upgrade_gifts: bool | None
+  can_transfer_stars: bool | None
+  can_view_gifts_and_stars: bool | None
+BusinessConnection:
+  date: DateTime
+  id: str
+  is_enabled: bool
+  rights: BusinessBotRights | None
+  user: User
+  user_chat_id: int
+BusinessIntro:
+  message: str | None
+  sticker: Sticker | None
+  title: str | None
+BusinessLocation:
+  address: str
+  location: Location | None
+BusinessMessagesDeleted:
+  business_connection_id: str
+  chat: Chat
+  message_ids: list[int]
+BusinessOpeningHours:
+  opening_hours: list[BusinessOpeningHoursInterval]
+  time_zone_name: str
+BusinessOpeningHoursInterval:
+  closing_minute: int
+  opening_minute: int
+CallbackQuery:
+  chat_instance: str
+  data: str | None
+  game_short_name: str | None
+  id: str
+  inline_message_id: str | None
+  message: MaybeInaccessibleMessageUnion | None
+Chat:
+  first_name: str | None
+  id: int
+  is_direct_messages: bool | None
+  is_forum: bool | None
+  last_name: str | None
+  title: str | None
+  type: str
+  username: str | None
+ChatAdministratorRights:
+  can_change_info: bool
+  can_delete_messages: bool
+  can_delete_stories: bool
+  can_edit_messages: bool | None
+  can_edit_stories: bool
+  can_invite_users: bool
+  can_manage_chat: bool
+  can_manage_direct_messages: bool | None
+  can_manage_topics: bool | None
+  can_manage_video_chats: bool
+  can_pin_messages: bool | None
+  can_post_messages: bool | None
+  can_post_stories: bool
+  can_promote_members: bool
+  can_restrict_members: bool
+  is_anonymous: bool
+ChatBackground:
+  type: BackgroundTypeUnion
+ChatBoost:
+  add_date: DateTime
+  boost_id: str
+  expiration_date: DateTime
+  source: ChatBoostSourceUnion
+ChatBoostAdded:
+  boost_count: int
+ChatBoostRemoved:
+  boost_id: str
+  chat: Chat
+  remove_date: DateTime
+  source: ChatBoostSourceUnion
+ChatBoostSourceGiftCode:
+  source: Literal[ChatBoostSourceType.GIFT_CODE]
+  user: User
+ChatBoostSourceGiveaway:
+  giveaway_message_id: int
+  is_unclaimed: bool | None
+  prize_star_count: int | None
+  source: Literal[ChatBoostSourceType.GIVEAWAY]
+  user: User | None
+ChatBoostSourcePremium:
+  source: Literal[ChatBoostSourceType.PREMIUM]
+  user: User
+ChatBoostUpdated:
+  boost: ChatBoost
+  chat: Chat
+ChatFullInfo:
+  accent_color_id: int
+  accepted_gift_types: AcceptedGiftTypes
+  active_usernames: list[str] | None
+  available_reactions: list[ReactionTypeUnion] | None
+  background_custom_emoji_id: str | None
+  bio: str | None
+  birthdate: Birthdate | None
+  business_intro: BusinessIntro | None
+  business_location: BusinessLocation | None
+  business_opening_hours: BusinessOpeningHours | None
+  can_send_paid_media: bool | None
+  can_set_sticker_set: bool | None
+  custom_emoji_sticker_set_name: str | None
+  description: str | None
+  emoji_status_custom_emoji_id: str | None
+  emoji_status_expiration_date: DateTime | None
+  first_name: str | None
+  has_aggressive_anti_spam_enabled: bool | None
+  has_hidden_members: bool | None
+  has_private_forwards: bool | None
+  has_protected_content: bool | None
+  has_restricted_voice_and_video_messages: bool | None
+  has_visible_history: bool | None
+  id: int
+  invite_link: str | None
+  is_direct_messages: bool | None
+  is_forum: bool | None
+  join_by_request: bool | None
+  join_to_send_messages: bool | None
+  last_name: str | None
+  linked_chat_id: int | None
+  location: ChatLocation | None
+  max_reaction_count: int
+  message_auto_delete_time: int | None
+  paid_message_star_count: int | None
+  parent_chat: Chat | None
+  permissions: ChatPermissions | None
+  personal_chat: Chat | None
+  photo: ChatPhoto | None
+  pinned_message: Message | None
+  profile_accent_color_id: int | None
+  profile_background_custom_emoji_id: str | None
+  rating: UserRating | None
+  slow_mode_delay: int | None
+  sticker_set_name: str | None
+  title: str | None
+  type: str
+  unique_gift_colors: UniqueGiftColors | None
+  unrestrict_boost_count: int | None
+  username: str | None
+ChatInviteLink:
+  creates_join_request: bool
+  creator: User
+  expire_date: DateTime | None
+  invite_link: str
+  is_primary: bool
+  is_revoked: bool
+  member_limit: int | None
+  name: str | None
+  pending_join_request_count: int | None
+  subscription_period: int | None
+  subscription_price: int | None
+ChatJoinRequest:
+  bio: str | None
+  chat: Chat
+  date: DateTime
+  invite_link: ChatInviteLink | None
+  user_chat_id: int
+ChatLocation:
+  address: str
+  location: Location
+ChatMemberAdministrator:
+  can_be_edited: bool
+  can_change_info: bool
+  can_delete_messages: bool
+  can_delete_stories: bool
+  can_edit_messages: bool | None
+  can_edit_stories: bool
+  can_invite_users: bool
+  can_manage_chat: bool
+  can_manage_direct_messages: bool | None
+  can_manage_topics: bool | None
+  can_manage_video_chats: bool
+  can_pin_messages: bool | None
+  can_post_messages: bool | None
+  can_post_stories: bool
+  can_promote_members: bool
+  can_restrict_members: bool
+  custom_title: str | None
+  is_anonymous: bool
+  status: Literal[ChatMemberStatus.ADMINISTRATOR]
+  user: User
+ChatMemberBanned:
+  status: Literal[ChatMemberStatus.KICKED]
+  until_date: DateTime
+  user: User
+ChatMemberLeft:
+  status: Literal[ChatMemberStatus.LEFT]
+  user: User
+ChatMemberMember:
+  status: Literal[ChatMemberStatus.MEMBER]
+  until_date: DateTime | None
+  user: User
+ChatMemberOwner:
+  custom_title: str | None
+  is_anonymous: bool
+  status: Literal[ChatMemberStatus.CREATOR]
+  user: User
+ChatMemberRestricted:
+  can_add_web_page_previews: bool
+  can_change_info: bool
+  can_invite_users: bool
+  can_manage_topics: bool
+  can_pin_messages: bool
+  can_send_audios: bool
+  can_send_documents: bool
+  can_send_messages: bool
+  can_send_other_messages: bool
+  can_send_photos: bool
+  can_send_polls: bool
+  can_send_video_notes: bool
+  can_send_videos: bool
+  can_send_voice_notes: bool
+  is_member: bool
+  status: Literal[ChatMemberStatus.RESTRICTED]
+  until_date: DateTime
+  user: User
+ChatMemberUpdated:
+  chat: Chat
+  date: DateTime
+  invite_link: ChatInviteLink | None
+  new_chat_member: ChatMemberUnion
+  old_chat_member: ChatMemberUnion
+  via_chat_folder_invite_link: bool | None
+  via_join_request: bool | None
+ChatPermissions:
+  can_add_web_page_previews: bool | None
+  can_change_info: bool | None
+  can_invite_users: bool | None
+  can_manage_topics: bool | None
+  can_pin_messages: bool | None
+  can_send_audios: bool | None
+  can_send_documents: bool | None
+  can_send_messages: bool | None
+  can_send_other_messages: bool | None
+  can_send_photos: bool | None
+  can_send_polls: bool | None
+  can_send_video_notes: bool | None
+  can_send_videos: bool | None
+  can_send_voice_notes: bool | None
+ChatPhoto:
+  big_file_id: str
+  big_file_unique_id: str
+  small_file_id: str
+  small_file_unique_id: str
+ChatShared:
+  chat_id: int
+  photo: list[PhotoSize] | None
+  request_id: int
+  title: str | None
+  username: str | None
+Checklist:
+  others_can_add_tasks: bool | None
+  others_can_mark_tasks_as_done: bool | None
+  tasks: list[ChecklistTask]
+  title: str
+  title_entities: list[MessageEntity] | None
+ChecklistTask:
+  completed_by_chat: Chat | None
+  completed_by_user: User | None
+  completion_date: int | None
+  id: int
+  text: str
+  text_entities: list[MessageEntity] | None
+ChecklistTasksAdded:
+  checklist_message: Message | None
+  tasks: list[ChecklistTask]
+ChecklistTasksDone:
+  checklist_message: Message | None
+  marked_as_done_task_ids: list[int] | None
+  marked_as_not_done_task_ids: list[int] | None
+ChosenInlineResult:
+  inline_message_id: str | None
+  location: Location | None
+  query: str
+  result_id: str
+CloseForumTopic:
+  chat_id: ChatIdUnion
+  message_thread_id: int
+CloseGeneralForumTopic:
+  chat_id: ChatIdUnion
+Contact:
+  first_name: str
+  last_name: str | None
+  phone_number: str
+  user_id: int | None
+  vcard: str | None
+ConvertGiftToStars:
+  business_connection_id: str
+  owned_gift_id: str
+CopyMessage:
+  allow_paid_broadcast: bool | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  from_chat_id: ChatIdUnion
+  message_effect_id: str | None
+  message_id: int
+  message_thread_id: int | None
+  parse_mode: str | Default | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  show_caption_above_media: bool | Default | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  video_start_timestamp: DateTimeUnion | None
+CopyMessages:
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  from_chat_id: ChatIdUnion
+  message_ids: list[int]
+  message_thread_id: int | None
+  protect_content: bool | None
+  remove_caption: bool | None
+CopyTextButton:
+  text: str
+CreateChatInviteLink:
+  chat_id: ChatIdUnion
+  creates_join_request: bool | None
+  expire_date: DateTimeUnion | None
+  member_limit: int | None
+  name: str | None
+CreateChatSubscriptionInviteLink:
+  chat_id: ChatIdUnion
+  name: str | None
+  subscription_period: DateTimeUnion
+  subscription_price: int
+CreateForumTopic:
+  chat_id: ChatIdUnion
+  icon_color: int | None
+  icon_custom_emoji_id: str | None
+  name: str
+CreateInvoiceLink:
+  business_connection_id: str | None
+  currency: str
+  description: str
+  is_flexible: bool | None
+  max_tip_amount: int | None
+  need_email: bool | None
+  need_name: bool | None
+  need_phone_number: bool | None
+  need_shipping_address: bool | None
+  payload: str
+  photo_height: int | None
+  photo_size: int | None
+  photo_url: str | None
+  photo_width: int | None
+  prices: list[LabeledPrice]
+  provider_data: str | None
+  provider_token: str | None
+  send_email_to_provider: bool | None
+  send_phone_number_to_provider: bool | None
+  subscription_period: int | None
+  suggested_tip_amounts: list[int] | None
+  title: str
+CreateNewStickerSet:
+  name: str
+  needs_repainting: bool | None
+  sticker_type: str | None
+  stickers: list[InputSticker]
+  title: str
+  user_id: int
+DeclineChatJoinRequest:
+  chat_id: ChatIdUnion
+  user_id: int
+DeclineSuggestedPost:
+  chat_id: int
+  comment: str | None
+  message_id: int
+DeleteBusinessMessages:
+  business_connection_id: str
+  message_ids: list[int]
+DeleteChatPhoto:
+  chat_id: ChatIdUnion
+DeleteChatStickerSet:
+  chat_id: ChatIdUnion
+DeleteForumTopic:
+  chat_id: ChatIdUnion
+  message_thread_id: int
+DeleteMessage:
+  chat_id: ChatIdUnion
+  message_id: int
+DeleteMessages:
+  chat_id: ChatIdUnion
+  message_ids: list[int]
+DeleteMyCommands:
+  language_code: str | None
+  scope: BotCommandScopeUnion | None
+DeleteStickerFromSet:
+  sticker: str
+DeleteStickerSet:
+  name: str
+DeleteStory:
+  business_connection_id: str
+  story_id: int
+DeleteWebhook:
+  drop_pending_updates: bool | None
+Dice:
+  emoji: str
+  value: int
+DirectMessagePriceChanged:
+  are_direct_messages_enabled: bool
+  direct_message_star_count: int | None
+DirectMessagesTopic:
+  topic_id: int
+  user: User | None
+Document:
+  file_id: str
+  file_name: str | None
+  file_size: int | None
+  file_unique_id: str
+  mime_type: str | None
+  thumbnail: PhotoSize | None
+EditChatInviteLink:
+  chat_id: ChatIdUnion
+  creates_join_request: bool | None
+  expire_date: DateTimeUnion | None
+  invite_link: str
+  member_limit: int | None
+  name: str | None
+EditChatSubscriptionInviteLink:
+  chat_id: ChatIdUnion
+  invite_link: str
+  name: str | None
+EditForumTopic:
+  chat_id: ChatIdUnion
+  icon_custom_emoji_id: str | None
+  message_thread_id: int
+  name: str | None
+EditGeneralForumTopic:
+  chat_id: ChatIdUnion
+  name: str
+EditMessageCaption:
+  business_connection_id: str | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  chat_id: ChatIdUnion | None
+  inline_message_id: str | None
+  message_id: int | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  show_caption_above_media: bool | Default | None
+EditMessageChecklist:
+  business_connection_id: str
+  chat_id: int
+  checklist: InputChecklist
+  message_id: int
+  reply_markup: InlineKeyboardMarkup | None
+EditMessageLiveLocation:
+  business_connection_id: str | None
+  chat_id: ChatIdUnion | None
+  heading: int | None
+  horizontal_accuracy: float | None
+  inline_message_id: str | None
+  latitude: float
+  live_period: int | None
+  longitude: float
+  message_id: int | None
+  proximity_alert_radius: int | None
+  reply_markup: InlineKeyboardMarkup | None
+EditMessageMedia:
+  business_connection_id: str | None
+  chat_id: ChatIdUnion | None
+  inline_message_id: str | None
+  media: InputMediaUnion
+  message_id: int | None
+  reply_markup: InlineKeyboardMarkup | None
+EditMessageReplyMarkup:
+  business_connection_id: str | None
+  chat_id: ChatIdUnion | None
+  inline_message_id: str | None
+  message_id: int | None
+  reply_markup: InlineKeyboardMarkup | None
+EditMessageText:
+  business_connection_id: str | None
+  chat_id: ChatIdUnion | None
+  entities: list[MessageEntity] | None
+  inline_message_id: str | None
+  link_preview_options: LinkPreviewOptions | Default | None
+  message_id: int | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  text: str
+EditStory:
+  areas: list[StoryArea] | None
+  business_connection_id: str
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  content: InputStoryContentUnion
+  parse_mode: str | None
+  story_id: int
+EditUserStarSubscription:
+  is_canceled: bool
+  telegram_payment_charge_id: str
+  user_id: int
+EncryptedCredentials:
+  data: str
+  hash: str
+  secret: str
+EncryptedPassportElement:
+  data: str | None
+  email: str | None
+  files: list[PassportFile] | None
+  front_side: PassportFile | None
+  hash: str
+  phone_number: str | None
+  reverse_side: PassportFile | None
+  selfie: PassportFile | None
+  translation: list[PassportFile] | None
+  type: str
+ExportChatInviteLink:
+  chat_id: ChatIdUnion
+ExternalReplyInfo:
+  animation: Animation | None
+  audio: Audio | None
+  chat: Chat | None
+  checklist: Checklist | None
+  contact: Contact | None
+  dice: Dice | None
+  document: Document | None
+  game: Game | None
+  giveaway: Giveaway | None
+  giveaway_winners: GiveawayWinners | None
+  has_media_spoiler: bool | None
+  invoice: Invoice | None
+  link_preview_options: LinkPreviewOptions | None
+  location: Location | None
+  message_id: int | None
+  origin: MessageOriginUnion
+  paid_media: PaidMediaInfo | None
+  photo: list[PhotoSize] | None
+  poll: Poll | None
+  sticker: Sticker | None
+  story: Story | None
+  venue: Venue | None
+  video: Video | None
+  video_note: VideoNote | None
+  voice: Voice | None
+File:
+  file_id: str
+  file_path: str | None
+  file_size: int | None
+  file_unique_id: str
+ForceReply:
+  force_reply: Literal[True]
+  input_field_placeholder: str | None
+  selective: bool | None
+ForumTopic:
+  icon_color: int
+  icon_custom_emoji_id: str | None
+  is_name_implicit: bool | None
+  message_thread_id: int
+  name: str
+ForumTopicCreated:
+  icon_color: int
+  icon_custom_emoji_id: str | None
+  is_name_implicit: bool | None
+  name: str
+ForumTopicEdited:
+  icon_custom_emoji_id: str | None
+  name: str | None
+ForwardMessage:
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  from_chat_id: ChatIdUnion
+  message_effect_id: str | None
+  message_id: int
+  message_thread_id: int | None
+  protect_content: bool | Default | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  video_start_timestamp: DateTimeUnion | None
+ForwardMessages:
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  from_chat_id: ChatIdUnion
+  message_ids: list[int]
+  message_thread_id: int | None
+  protect_content: bool | None
+Game:
+  animation: Animation | None
+  description: str
+  photo: list[PhotoSize]
+  text: str | None
+  text_entities: list[MessageEntity] | None
+  title: str
+GameHighScore:
+  position: int
+  score: int
+  user: User
+GetBusinessAccountGifts:
+  business_connection_id: str
+  exclude_from_blockchain: bool | None
+  exclude_limited_non_upgradable: bool | None
+  exclude_limited_upgradable: bool | None
+  exclude_saved: bool | None
+  exclude_unique: bool | None
+  exclude_unlimited: bool | None
+  exclude_unsaved: bool | None
+  limit: int | None
+  offset: str | None
+  sort_by_price: bool | None
+GetBusinessAccountStarBalance:
+  business_connection_id: str
+GetBusinessConnection:
+  business_connection_id: str
+GetChat:
+  chat_id: ChatIdUnion
+GetChatAdministrators:
+  chat_id: ChatIdUnion
+GetChatGifts:
+  chat_id: ChatIdUnion
+  exclude_from_blockchain: bool | None
+  exclude_limited_non_upgradable: bool | None
+  exclude_limited_upgradable: bool | None
+  exclude_saved: bool | None
+  exclude_unique: bool | None
+  exclude_unlimited: bool | None
+  exclude_unsaved: bool | None
+  limit: int | None
+  offset: str | None
+  sort_by_price: bool | None
+GetChatMember:
+  chat_id: ChatIdUnion
+  user_id: int
+GetChatMemberCount:
+  chat_id: ChatIdUnion
+GetChatMenuButton:
+  chat_id: int | None
+GetCustomEmojiStickers:
+  custom_emoji_ids: list[str]
+GetFile:
+  file_id: str
+GetGameHighScores:
+  chat_id: int | None
+  inline_message_id: str | None
+  message_id: int | None
+  user_id: int
+GetMyCommands:
+  language_code: str | None
+  scope: BotCommandScopeUnion | None
+GetMyDefaultAdministratorRights:
+  for_channels: bool | None
+GetMyDescription:
+  language_code: str | None
+GetMyName:
+  language_code: str | None
+GetMyShortDescription:
+  language_code: str | None
+GetStarTransactions:
+  limit: int | None
+  offset: int | None
+GetStickerSet:
+  name: str
+GetUpdates:
+  allowed_updates: list[str] | None
+  limit: int | None
+  offset: int | None
+  timeout: int | None
+GetUserChatBoosts:
+  chat_id: ChatIdUnion
+  user_id: int
+GetUserGifts:
+  exclude_from_blockchain: bool | None
+  exclude_limited_non_upgradable: bool | None
+  exclude_limited_upgradable: bool | None
+  exclude_unique: bool | None
+  exclude_unlimited: bool | None
+  limit: int | None
+  offset: str | None
+  sort_by_price: bool | None
+  user_id: int
+GetUserProfilePhotos:
+  limit: int | None
+  offset: int | None
+  user_id: int
+Gift:
+  background: GiftBackground | None
+  has_colors: bool | None
+  id: str
+  is_premium: bool | None
+  personal_remaining_count: int | None
+  personal_total_count: int | None
+  publisher_chat: Chat | None
+  remaining_count: int | None
+  star_count: int
+  sticker: Sticker
+  total_count: int | None
+  unique_gift_variant_count: int | None
+  upgrade_star_count: int | None
+GiftBackground:
+  center_color: int
+  edge_color: int
+  text_color: int
+GiftInfo:
+  can_be_upgraded: bool | None
+  convert_star_count: int | None
+  entities: list[MessageEntity] | None
+  gift: Gift
+  is_private: bool | None
+  is_upgrade_separate: bool | None
+  owned_gift_id: str | None
+  prepaid_upgrade_star_count: int | None
+  text: str | None
+  unique_gift_number: int | None
+GiftPremiumSubscription:
+  month_count: int
+  star_count: int
+  text: str | None
+  text_entities: list[MessageEntity] | None
+  text_parse_mode: str | None
+  user_id: int
+Gifts:
+  gifts: list[Gift]
+Giveaway:
+  chats: list[Chat]
+  country_codes: list[str] | None
+  has_public_winners: bool | None
+  only_new_members: bool | None
+  premium_subscription_month_count: int | None
+  prize_description: str | None
+  prize_star_count: int | None
+  winner_count: int
+  winners_selection_date: DateTime
+GiveawayCompleted:
+  giveaway_message: Message | None
+  is_star_giveaway: bool | None
+  unclaimed_prize_count: int | None
+  winner_count: int
+GiveawayCreated:
+  prize_star_count: int | None
+GiveawayWinners:
+  additional_chat_count: int | None
+  chat: Chat
+  giveaway_message_id: int
+  only_new_members: bool | None
+  premium_subscription_month_count: int | None
+  prize_description: str | None
+  prize_star_count: int | None
+  unclaimed_prize_count: int | None
+  was_refunded: bool | None
+  winner_count: int
+  winners: list[User]
+  winners_selection_date: DateTime
+HideGeneralForumTopic:
+  chat_id: ChatIdUnion
+InaccessibleMessage:
+  chat: Chat
+  date: Literal[0]
+  message_id: int
+InlineKeyboardButton:
+  callback_data: str | None
+  callback_game: CallbackGame | None
+  copy_text: CopyTextButton | None
+  login_url: LoginUrl | None
+  pay: bool | None
+  switch_inline_query: str | None
+  switch_inline_query_chosen_chat: SwitchInlineQueryChosenChat | None
+  switch_inline_query_current_chat: str | None
+  text: str
+  url: str | None
+  web_app: WebAppInfo | None
+InlineKeyboardMarkup:
+  inline_keyboard: list[list[InlineKeyboardButton]]
+InlineQuery:
+  chat_type: str | None
+  id: str
+  location: Location | None
+  offset: str
+  query: str
+InlineQueryResultArticle:
+  description: str | None
+  id: str
+  input_message_content: InputMessageContentUnion
+  reply_markup: InlineKeyboardMarkup | None
+  thumbnail_height: int | None
+  thumbnail_url: str | None
+  thumbnail_width: int | None
+  title: str
+  type: Literal[InlineQueryResultType.ARTICLE]
+  url: str | None
+InlineQueryResultAudio:
+  audio_duration: int | None
+  audio_url: str
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  performer: str | None
+  reply_markup: InlineKeyboardMarkup | None
+  title: str
+  type: Literal[InlineQueryResultType.AUDIO]
+InlineQueryResultCachedAudio:
+  audio_file_id: str
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  type: Literal[InlineQueryResultType.AUDIO]
+InlineQueryResultCachedDocument:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  description: str | None
+  document_file_id: str
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  title: str
+  type: Literal[InlineQueryResultType.DOCUMENT]
+InlineQueryResultCachedGif:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  gif_file_id: str
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  show_caption_above_media: bool | Default | None
+  title: str | None
+  type: Literal[InlineQueryResultType.GIF]
+InlineQueryResultCachedMpeg4Gif:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  mpeg4_file_id: str
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  show_caption_above_media: bool | Default | None
+  title: str | None
+  type: Literal[InlineQueryResultType.MPEG4_GIF]
+InlineQueryResultCachedPhoto:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  description: str | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  photo_file_id: str
+  reply_markup: InlineKeyboardMarkup | None
+  show_caption_above_media: bool | Default | None
+  title: str | None
+  type: Literal[InlineQueryResultType.PHOTO]
+InlineQueryResultCachedSticker:
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  reply_markup: InlineKeyboardMarkup | None
+  sticker_file_id: str
+  type: Literal[InlineQueryResultType.STICKER]
+InlineQueryResultCachedVideo:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  description: str | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  show_caption_above_media: bool | Default | None
+  title: str
+  type: Literal[InlineQueryResultType.VIDEO]
+  video_file_id: str
+InlineQueryResultCachedVoice:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  title: str
+  type: Literal[InlineQueryResultType.VOICE]
+  voice_file_id: str
+InlineQueryResultContact:
+  first_name: str
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  last_name: str | None
+  phone_number: str
+  reply_markup: InlineKeyboardMarkup | None
+  thumbnail_height: int | None
+  thumbnail_url: str | None
+  thumbnail_width: int | None
+  type: Literal[InlineQueryResultType.CONTACT]
+  vcard: str | None
+InlineQueryResultDocument:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  description: str | None
+  document_url: str
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  mime_type: str
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  thumbnail_height: int | None
+  thumbnail_url: str | None
+  thumbnail_width: int | None
+  title: str
+  type: Literal[InlineQueryResultType.DOCUMENT]
+InlineQueryResultGame:
+  game_short_name: str
+  id: str
+  reply_markup: InlineKeyboardMarkup | None
+  type: Literal[InlineQueryResultType.GAME]
+InlineQueryResultGif:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  gif_duration: int | None
+  gif_height: int | None
+  gif_url: str
+  gif_width: int | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  show_caption_above_media: bool | Default | None
+  thumbnail_mime_type: str | None
+  thumbnail_url: str
+  title: str | None
+  type: Literal[InlineQueryResultType.GIF]
+InlineQueryResultLocation:
+  heading: int | None
+  horizontal_accuracy: float | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  latitude: float
+  live_period: int | None
+  longitude: float
+  proximity_alert_radius: int | None
+  reply_markup: InlineKeyboardMarkup | None
+  thumbnail_height: int | None
+  thumbnail_url: str | None
+  thumbnail_width: int | None
+  title: str
+  type: Literal[InlineQueryResultType.LOCATION]
+InlineQueryResultMpeg4Gif:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  mpeg4_duration: int | None
+  mpeg4_height: int | None
+  mpeg4_url: str
+  mpeg4_width: int | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  show_caption_above_media: bool | Default | None
+  thumbnail_mime_type: str | None
+  thumbnail_url: str
+  title: str | None
+  type: Literal[InlineQueryResultType.MPEG4_GIF]
+InlineQueryResultPhoto:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  description: str | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  photo_height: int | None
+  photo_url: str
+  photo_width: int | None
+  reply_markup: InlineKeyboardMarkup | None
+  show_caption_above_media: bool | Default | None
+  thumbnail_url: str
+  title: str | None
+  type: Literal[InlineQueryResultType.PHOTO]
+InlineQueryResultVenue:
+  address: str
+  foursquare_id: str | None
+  foursquare_type: str | None
+  google_place_id: str | None
+  google_place_type: str | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  latitude: float
+  longitude: float
+  reply_markup: InlineKeyboardMarkup | None
+  thumbnail_height: int | None
+  thumbnail_url: str | None
+  thumbnail_width: int | None
+  title: str
+  type: Literal[InlineQueryResultType.VENUE]
+InlineQueryResultVideo:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  description: str | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  mime_type: str
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  show_caption_above_media: bool | Default | None
+  thumbnail_url: str
+  title: str
+  type: Literal[InlineQueryResultType.VIDEO]
+  video_duration: int | None
+  video_height: int | None
+  video_url: str
+  video_width: int | None
+InlineQueryResultVoice:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  id: str
+  input_message_content: InputMessageContentUnion | None
+  parse_mode: str | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  title: str
+  type: Literal[InlineQueryResultType.VOICE]
+  voice_duration: int | None
+  voice_url: str
+InlineQueryResultsButton:
+  start_parameter: str | None
+  text: str
+  web_app: WebAppInfo | None
+InputChecklist:
+  others_can_add_tasks: bool | None
+  others_can_mark_tasks_as_done: bool | None
+  parse_mode: str | None
+  tasks: list[InputChecklistTask]
+  title: str
+  title_entities: list[MessageEntity] | None
+InputChecklistTask:
+  id: int
+  parse_mode: str | None
+  text: str
+  text_entities: list[MessageEntity] | None
+InputContactMessageContent:
+  first_name: str
+  last_name: str | None
+  phone_number: str
+  vcard: str | None
+InputInvoiceMessageContent:
+  currency: str
+  description: str
+  is_flexible: bool | None
+  max_tip_amount: int | None
+  need_email: bool | None
+  need_name: bool | None
+  need_phone_number: bool | None
+  need_shipping_address: bool | None
+  payload: str
+  photo_height: int | None
+  photo_size: int | None
+  photo_url: str | None
+  photo_width: int | None
+  prices: list[LabeledPrice]
+  provider_data: str | None
+  provider_token: str | None
+  send_email_to_provider: bool | None
+  send_phone_number_to_provider: bool | None
+  suggested_tip_amounts: list[int] | None
+  title: str
+InputLocationMessageContent:
+  heading: int | None
+  horizontal_accuracy: float | None
+  latitude: float
+  live_period: int | None
+  longitude: float
+  proximity_alert_radius: int | None
+InputMediaAnimation:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  duration: int | None
+  has_spoiler: bool | None
+  height: int | None
+  media: InputFileUnion
+  parse_mode: str | Default | None
+  show_caption_above_media: bool | Default | None
+  thumbnail: InputFile | None
+  type: Literal[InputMediaType.ANIMATION]
+  width: int | None
+InputMediaAudio:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  duration: int | None
+  media: InputFileUnion
+  parse_mode: str | Default | None
+  performer: str | None
+  thumbnail: InputFile | None
+  title: str | None
+  type: Literal[InputMediaType.AUDIO]
+InputMediaDocument:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  disable_content_type_detection: bool | None
+  media: InputFileUnion
+  parse_mode: str | Default | None
+  thumbnail: InputFile | None
+  type: Literal[InputMediaType.DOCUMENT]
+InputMediaPhoto:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  has_spoiler: bool | None
+  media: InputFileUnion
+  parse_mode: str | Default | None
+  show_caption_above_media: bool | Default | None
+  type: Literal[InputMediaType.PHOTO]
+InputMediaVideo:
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  cover: InputFileUnion | None
+  duration: int | None
+  has_spoiler: bool | None
+  height: int | None
+  media: InputFileUnion
+  parse_mode: str | Default | None
+  show_caption_above_media: bool | Default | None
+  start_timestamp: DateTimeUnion | None
+  supports_streaming: bool | None
+  thumbnail: InputFile | None
+  type: Literal[InputMediaType.VIDEO]
+  width: int | None
+InputPaidMediaPhoto:
+  media: InputFileUnion
+  type: Literal[InputPaidMediaType.PHOTO]
+InputPaidMediaVideo:
+  cover: InputFileUnion | None
+  duration: int | None
+  height: int | None
+  media: InputFileUnion
+  start_timestamp: DateTimeUnion | None
+  supports_streaming: bool | None
+  thumbnail: InputFile | None
+  type: Literal[InputPaidMediaType.VIDEO]
+  width: int | None
+InputPollOption:
+  text: str
+  text_entities: list[MessageEntity] | None
+  text_parse_mode: str | Default | None
+InputProfilePhotoAnimated:
+  animation: InputFileUnion
+  main_frame_timestamp: float | None
+  type: Literal[InputProfilePhotoType.ANIMATED]
+InputProfilePhotoStatic:
+  photo: InputFileUnion
+  type: Literal[InputProfilePhotoType.STATIC]
+InputSticker:
+  emoji_list: list[str]
+  format: str
+  keywords: list[str] | None
+  mask_position: MaskPosition | None
+  sticker: InputFileUnion
+InputStoryContentPhoto:
+  photo: str
+  type: Literal[InputStoryContentType.PHOTO]
+InputStoryContentVideo:
+  cover_frame_timestamp: float | None
+  duration: float | None
+  is_animation: bool | None
+  type: Literal[InputStoryContentType.VIDEO]
+  video: str
+InputTextMessageContent:
+  entities: list[MessageEntity] | None
+  link_preview_options: LinkPreviewOptions | Default | None
+  message_text: str
+  parse_mode: str | Default | None
+InputVenueMessageContent:
+  address: str
+  foursquare_id: str | None
+  foursquare_type: str | None
+  google_place_id: str | None
+  google_place_type: str | None
+  latitude: float
+  longitude: float
+  title: str
+Invoice:
+  currency: str
+  description: str
+  start_parameter: str
+  title: str
+  total_amount: int
+KeyboardButton:
+  request_chat: KeyboardButtonRequestChat | None
+  request_contact: bool | None
+  request_location: bool | None
+  request_poll: KeyboardButtonPollType | None
+  request_users: KeyboardButtonRequestUsers | None
+  text: str
+  web_app: WebAppInfo | None
+KeyboardButtonPollType:
+  type: str | None
+KeyboardButtonRequestChat:
+  bot_administrator_rights: ChatAdministratorRights | None
+  bot_is_member: bool | None
+  chat_has_username: bool | None
+  chat_is_channel: bool
+  chat_is_created: bool | None
+  chat_is_forum: bool | None
+  request_id: int
+  request_photo: bool | None
+  request_title: bool | None
+  request_username: bool | None
+  user_administrator_rights: ChatAdministratorRights | None
+KeyboardButtonRequestUsers:
+  max_quantity: int | None
+  request_id: int
+  request_name: bool | None
+  request_photo: bool | None
+  request_username: bool | None
+  user_is_bot: bool | None
+  user_is_premium: bool | None
+LabeledPrice:
+  amount: int
+  label: str
+LeaveChat:
+  chat_id: ChatIdUnion
+LinkPreviewOptions:
+  is_disabled: bool | Default | None
+  prefer_large_media: bool | Default | None
+  prefer_small_media: bool | Default | None
+  show_above_text: bool | Default | None
+  url: str | None
+Location:
+  heading: int | None
+  horizontal_accuracy: float | None
+  latitude: float
+  live_period: int | None
+  longitude: float
+  proximity_alert_radius: int | None
+LocationAddress:
+  city: str | None
+  country_code: str
+  state: str | None
+  street: str | None
+LoginUrl:
+  bot_username: str | None
+  forward_text: str | None
+  request_write_access: bool | None
+  url: str
+MaskPosition:
+  point: str
+  scale: float
+  x_shift: float
+  y_shift: float
+MenuButtonCommands:
+  type: Literal[MenuButtonType.COMMANDS]
+MenuButtonDefault:
+  type: Literal[MenuButtonType.DEFAULT]
+MenuButtonWebApp:
+  text: str
+  type: Literal[MenuButtonType.WEB_APP]
+  web_app: WebAppInfo
+Message:
+  animation: Animation | None
+  audio: Audio | None
+  author_signature: str | None
+  boost_added: ChatBoostAdded | None
+  business_connection_id: str | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  channel_chat_created: bool | None
+  chat: Chat
+  chat_background_set: ChatBackground | None
+  chat_shared: ChatShared | None
+  checklist: Checklist | None
+  checklist_tasks_added: ChecklistTasksAdded | None
+  checklist_tasks_done: ChecklistTasksDone | None
+  connected_website: str | None
+  contact: Contact | None
+  date: DateTime
+  delete_chat_photo: bool | None
+  dice: Dice | None
+  direct_message_price_changed: DirectMessagePriceChanged | None
+  direct_messages_topic: DirectMessagesTopic | None
+  document: Document | None
+  edit_date: int | None
+  effect_id: str | None
+  entities: list[MessageEntity] | None
+  external_reply: ExternalReplyInfo | None
+  forum_topic_closed: ForumTopicClosed | None
+  forum_topic_created: ForumTopicCreated | None
+  forum_topic_edited: ForumTopicEdited | None
+  forum_topic_reopened: ForumTopicReopened | None
+  forward_origin: MessageOriginUnion | None
+  game: Game | None
+  general_forum_topic_hidden: GeneralForumTopicHidden | None
+  general_forum_topic_unhidden: GeneralForumTopicUnhidden | None
+  gift: GiftInfo | None
+  gift_upgrade_sent: GiftInfo | None
+  giveaway: Giveaway | None
+  giveaway_completed: GiveawayCompleted | None
+  giveaway_created: GiveawayCreated | None
+  giveaway_winners: GiveawayWinners | None
+  group_chat_created: bool | None
+  has_media_spoiler: bool | None
+  has_protected_content: bool | None
+  invoice: Invoice | None
+  is_automatic_forward: bool | None
+  is_from_offline: bool | None
+  is_paid_post: bool | None
+  is_topic_message: bool | None
+  left_chat_member: User | None
+  link_preview_options: LinkPreviewOptions | None
+  location: Location | None
+  media_group_id: str | None
+  message_auto_delete_timer_changed: MessageAutoDeleteTimerChanged | None
+  message_id: int
+  message_thread_id: int | None
+  migrate_from_chat_id: int | None
+  migrate_to_chat_id: int | None
+  new_chat_members: list[User] | None
+  new_chat_photo: list[PhotoSize] | None
+  new_chat_title: str | None
+  paid_media: PaidMediaInfo | None
+  paid_message_price_changed: PaidMessagePriceChanged | None
+  paid_star_count: int | None
+  passport_data: PassportData | None
+  photo: list[PhotoSize] | None
+  pinned_message: MaybeInaccessibleMessageUnion | None
+  poll: Poll | None
+  proximity_alert_triggered: ProximityAlertTriggered | None
+  quote: TextQuote | None
+  refunded_payment: RefundedPayment | None
+  reply_markup: InlineKeyboardMarkup | None
+  reply_to_checklist_task_id: int | None
+  reply_to_message: Message | None
+  reply_to_story: Story | None
+  sender_boost_count: int | None
+  sender_business_bot: User | None
+  sender_chat: Chat | None
+  show_caption_above_media: bool | None
+  sticker: Sticker | None
+  story: Story | None
+  successful_payment: SuccessfulPayment | None
+  suggested_post_approval_failed: SuggestedPostApprovalFailed | None
+  suggested_post_approved: SuggestedPostApproved | None
+  suggested_post_declined: SuggestedPostDeclined | None
+  suggested_post_info: SuggestedPostInfo | None
+  suggested_post_paid: SuggestedPostPaid | None
+  suggested_post_refunded: SuggestedPostRefunded | None
+  supergroup_chat_created: bool | None
+  text: str | None
+  unique_gift: UniqueGiftInfo | None
+  users_shared: UsersShared | None
+  venue: Venue | None
+  via_bot: User | None
+  video: Video | None
+  video_chat_ended: VideoChatEnded | None
+  video_chat_participants_invited: VideoChatParticipantsInvited | None
+  video_chat_scheduled: VideoChatScheduled | None
+  video_chat_started: VideoChatStarted | None
+  video_note: VideoNote | None
+  voice: Voice | None
+  web_app_data: WebAppData | None
+  write_access_allowed: WriteAccessAllowed | None
+MessageAutoDeleteTimerChanged:
+  message_auto_delete_time: int
+MessageEntity:
+  custom_emoji_id: str | None
+  language: str | None
+  length: int
+  offset: int
+  type: str
+  url: str | None
+  user: User | None
+MessageId:
+  message_id: int
+MessageOriginChannel:
+  author_signature: str | None
+  chat: Chat
+  date: DateTime
+  message_id: int
+  type: Literal[MessageOriginType.CHANNEL]
+MessageOriginChat:
+  author_signature: str | None
+  date: DateTime
+  sender_chat: Chat
+  type: Literal[MessageOriginType.CHAT]
+MessageOriginHiddenUser:
+  date: DateTime
+  sender_user_name: str
+  type: Literal[MessageOriginType.HIDDEN_USER]
+MessageOriginUser:
+  date: DateTime
+  sender_user: User
+  type: Literal[MessageOriginType.USER]
+MessageReactionCountUpdated:
+  chat: Chat
+  date: DateTime
+  message_id: int
+  reactions: list[ReactionCount]
+MessageReactionUpdated:
+  actor_chat: Chat | None
+  chat: Chat
+  date: DateTime
+  message_id: int
+  new_reaction: list[ReactionTypeUnion]
+  old_reaction: list[ReactionTypeUnion]
+  user: User | None
+OrderInfo:
+  email: str | None
+  name: str | None
+  phone_number: str | None
+  shipping_address: ShippingAddress | None
+OwnedGiftRegular:
+  can_be_upgraded: bool | None
+  convert_star_count: int | None
+  entities: list[MessageEntity] | None
+  gift: Gift
+  is_private: bool | None
+  is_saved: bool | None
+  is_upgrade_separate: bool | None
+  owned_gift_id: str | None
+  prepaid_upgrade_star_count: int | None
+  send_date: int
+  sender_user: User | None
+  text: str | None
+  type: Literal[OwnedGiftType.REGULAR]
+  unique_gift_number: int | None
+  was_refunded: bool | None
+OwnedGiftUnique:
+  can_be_transferred: bool | None
+  gift: UniqueGift
+  is_saved: bool | None
+  next_transfer_date: DateTime | None
+  owned_gift_id: str | None
+  send_date: int
+  sender_user: User | None
+  transfer_star_count: int | None
+  type: Literal[OwnedGiftType.UNIQUE]
+OwnedGifts:
+  gifts: list[OwnedGiftUnion]
+  next_offset: str | None
+  total_count: int
+PaidMediaInfo:
+  paid_media: list[PaidMediaUnion]
+  star_count: int
+PaidMediaPhoto:
+  photo: list[PhotoSize]
+  type: Literal[PaidMediaType.PHOTO]
+PaidMediaPreview:
+  duration: int | None
+  height: int | None
+  type: Literal[PaidMediaType.PREVIEW]
+  width: int | None
+PaidMediaPurchased:
+  paid_media_payload: str
+PaidMediaVideo:
+  type: Literal[PaidMediaType.VIDEO]
+  video: Video
+PaidMessagePriceChanged:
+  paid_message_star_count: int
+PassportData:
+  credentials: EncryptedCredentials
+  data: list[EncryptedPassportElement]
+PassportElementErrorDataField:
+  data_hash: str
+  field_name: str
+  message: str
+  source: Literal[PassportElementErrorType.DATA]
+  type: str
+PassportElementErrorFile:
+  file_hash: str
+  message: str
+  source: Literal[PassportElementErrorType.FILE]
+  type: str
+PassportElementErrorFiles:
+  file_hashes: list[str]
+  message: str
+  source: Literal[PassportElementErrorType.FILES]
+  type: str
+PassportElementErrorFrontSide:
+  file_hash: str
+  message: str
+  source: Literal[PassportElementErrorType.FRONT_SIDE]
+  type: str
+PassportElementErrorReverseSide:
+  file_hash: str
+  message: str
+  source: Literal[PassportElementErrorType.REVERSE_SIDE]
+  type: str
+PassportElementErrorSelfie:
+  file_hash: str
+  message: str
+  source: Literal[PassportElementErrorType.SELFIE]
+  type: str
+PassportElementErrorTranslationFile:
+  file_hash: str
+  message: str
+  source: Literal[PassportElementErrorType.TRANSLATION_FILE]
+  type: str
+PassportElementErrorTranslationFiles:
+  file_hashes: list[str]
+  message: str
+  source: Literal[PassportElementErrorType.TRANSLATION_FILES]
+  type: str
+PassportElementErrorUnspecified:
+  element_hash: str
+  message: str
+  source: Literal[PassportElementErrorType.UNSPECIFIED]
+  type: str
+PassportFile:
+  file_date: DateTime
+  file_id: str
+  file_size: int
+  file_unique_id: str
+PhotoSize:
+  file_id: str
+  file_size: int | None
+  file_unique_id: str
+  height: int
+  width: int
+PinChatMessage:
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  disable_notification: bool | None
+  message_id: int
+Poll:
+  allows_multiple_answers: bool
+  close_date: DateTime | None
+  correct_option_id: int | None
+  explanation: str | None
+  explanation_entities: list[MessageEntity] | None
+  id: str
+  is_anonymous: bool
+  is_closed: bool
+  open_period: int | None
+  options: list[PollOption]
+  question: str
+  question_entities: list[MessageEntity] | None
+  total_voter_count: int
+  type: str
+PollAnswer:
+  option_ids: list[int]
+  poll_id: str
+  user: User | None
+  voter_chat: Chat | None
+PollOption:
+  text: str
+  text_entities: list[MessageEntity] | None
+  voter_count: int
+PostStory:
+  active_period: int
+  areas: list[StoryArea] | None
+  business_connection_id: str
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  content: InputStoryContentUnion
+  parse_mode: str | None
+  post_to_chat_page: bool | None
+  protect_content: bool | None
+PreCheckoutQuery:
+  currency: str
+  id: str
+  invoice_payload: str
+  order_info: OrderInfo | None
+  shipping_option_id: str | None
+  total_amount: int
+PreparedInlineMessage:
+  expiration_date: DateTimeUnion
+  id: str
+PromoteChatMember:
+  can_change_info: bool | None
+  can_delete_messages: bool | None
+  can_delete_stories: bool | None
+  can_edit_messages: bool | None
+  can_edit_stories: bool | None
+  can_invite_users: bool | None
+  can_manage_chat: bool | None
+  can_manage_direct_messages: bool | None
+  can_manage_topics: bool | None
+  can_manage_video_chats: bool | None
+  can_pin_messages: bool | None
+  can_post_messages: bool | None
+  can_post_stories: bool | None
+  can_promote_members: bool | None
+  can_restrict_members: bool | None
+  chat_id: ChatIdUnion
+  is_anonymous: bool | None
+  user_id: int
+ProximityAlertTriggered:
+  distance: int
+  traveler: User
+  watcher: User
+ReactionCount:
+  total_count: int
+  type: ReactionTypeUnion
+ReactionTypeCustomEmoji:
+  custom_emoji_id: str
+  type: Literal[ReactionTypeType.CUSTOM_EMOJI]
+ReactionTypeEmoji:
+  emoji: str
+  type: Literal[ReactionTypeType.EMOJI]
+ReactionTypePaid:
+  type: Literal[ReactionTypeType.PAID]
+ReadBusinessMessage:
+  business_connection_id: str
+  chat_id: int
+  message_id: int
+RefundStarPayment:
+  telegram_payment_charge_id: str
+  user_id: int
+RefundedPayment:
+  currency: Literal["XTR"]
+  invoice_payload: str
+  provider_payment_charge_id: str | None
+  telegram_payment_charge_id: str
+  total_amount: int
+RemoveBusinessAccountProfilePhoto:
+  business_connection_id: str
+  is_public: bool | None
+RemoveChatVerification:
+  chat_id: ChatIdUnion
+RemoveUserVerification:
+  user_id: int
+ReopenForumTopic:
+  chat_id: ChatIdUnion
+  message_thread_id: int
+ReopenGeneralForumTopic:
+  chat_id: ChatIdUnion
+ReplaceStickerInSet:
+  name: str
+  old_sticker: str
+  sticker: InputSticker
+  user_id: int
+ReplyKeyboardMarkup:
+  input_field_placeholder: str | None
+  is_persistent: bool | None
+  keyboard: list[list[KeyboardButton]]
+  one_time_keyboard: bool | None
+  resize_keyboard: bool | None
+  selective: bool | None
+ReplyKeyboardRemove:
+  remove_keyboard: Literal[True]
+  selective: bool | None
+ReplyParameters:
+  allow_sending_without_reply: bool | Default | None
+  chat_id: ChatIdUnion | None
+  checklist_task_id: int | None
+  message_id: int
+  quote: str | None
+  quote_entities: list[MessageEntity] | None
+  quote_parse_mode: str | Default | None
+  quote_position: int | None
+RepostStory:
+  active_period: int
+  business_connection_id: str
+  from_chat_id: int
+  from_story_id: int
+  post_to_chat_page: bool | None
+  protect_content: bool | None
+ResponseParameters:
+  migrate_to_chat_id: int | None
+  retry_after: int | None
+RestrictChatMember:
+  chat_id: ChatIdUnion
+  permissions: ChatPermissions
+  until_date: DateTimeUnion | None
+  use_independent_chat_permissions: bool | None
+  user_id: int
+RevenueWithdrawalStateFailed:
+  type: Literal[RevenueWithdrawalStateType.FAILED]
+RevenueWithdrawalStatePending:
+  type: Literal[RevenueWithdrawalStateType.PENDING]
+RevenueWithdrawalStateSucceeded:
+  date: DateTime
+  type: Literal[RevenueWithdrawalStateType.SUCCEEDED]
+  url: str
+RevokeChatInviteLink:
+  chat_id: ChatIdUnion
+  invite_link: str
+SavePreparedInlineMessage:
+  allow_bot_chats: bool | None
+  allow_channel_chats: bool | None
+  allow_group_chats: bool | None
+  allow_user_chats: bool | None
+  result: InlineQueryResultUnion
+  user_id: int
+SendAnimation:
+  allow_paid_broadcast: bool | None
+  animation: InputFileUnion
+  business_connection_id: str | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  duration: int | None
+  has_spoiler: bool | None
+  height: int | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  parse_mode: str | Default | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  show_caption_above_media: bool | Default | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  thumbnail: InputFile | None
+  width: int | None
+SendAudio:
+  allow_paid_broadcast: bool | None
+  audio: InputFileUnion
+  business_connection_id: str | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  duration: int | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  parse_mode: str | Default | None
+  performer: str | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  thumbnail: InputFile | None
+  title: str | None
+SendChatAction:
+  action: str
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  message_thread_id: int | None
+SendChecklist:
+  business_connection_id: str
+  chat_id: int
+  checklist: InputChecklist
+  disable_notification: bool | None
+  message_effect_id: str | None
+  protect_content: bool | None
+  reply_markup: InlineKeyboardMarkup | None
+  reply_parameters: ReplyParameters | None
+SendContact:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  first_name: str
+  last_name: str | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  phone_number: str
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  vcard: str | None
+SendDice:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  emoji: str | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  suggested_post_parameters: SuggestedPostParameters | None
+SendDocument:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_content_type_detection: bool | None
+  disable_notification: bool | None
+  document: InputFileUnion
+  message_effect_id: str | None
+  message_thread_id: int | None
+  parse_mode: str | Default | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  thumbnail: InputFile | None
+SendGame:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  chat_id: int
+  disable_notification: bool | None
+  game_short_name: str
+  message_effect_id: str | None
+  message_thread_id: int | None
+  protect_content: bool | Default | None
+  reply_markup: InlineKeyboardMarkup | None
+  reply_parameters: ReplyParameters | None
+SendGift:
+  chat_id: ChatIdUnion | None
+  gift_id: str
+  pay_for_upgrade: bool | None
+  text: str | None
+  text_entities: list[MessageEntity] | None
+  text_parse_mode: str | None
+  user_id: int | None
+SendInvoice:
+  allow_paid_broadcast: bool | None
+  chat_id: ChatIdUnion
+  currency: str
+  description: str
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  is_flexible: bool | None
+  max_tip_amount: int | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  need_email: bool | None
+  need_name: bool | None
+  need_phone_number: bool | None
+  need_shipping_address: bool | None
+  payload: str
+  photo_height: int | None
+  photo_size: int | None
+  photo_url: str | None
+  photo_width: int | None
+  prices: list[LabeledPrice]
+  protect_content: bool | Default | None
+  provider_data: str | None
+  provider_token: str | None
+  reply_markup: InlineKeyboardMarkup | None
+  reply_parameters: ReplyParameters | None
+  send_email_to_provider: bool | None
+  send_phone_number_to_provider: bool | None
+  start_parameter: str | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  suggested_tip_amounts: list[int] | None
+  title: str
+SendLocation:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  heading: int | None
+  horizontal_accuracy: float | None
+  latitude: float
+  live_period: int | None
+  longitude: float
+  message_effect_id: str | None
+  message_thread_id: int | None
+  protect_content: bool | Default | None
+  proximity_alert_radius: int | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  suggested_post_parameters: SuggestedPostParameters | None
+SendMediaGroup:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  media: list[MediaUnion]
+  message_effect_id: str | None
+  message_thread_id: int | None
+  protect_content: bool | Default | None
+  reply_parameters: ReplyParameters | None
+SendMessage:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  entities: list[MessageEntity] | None
+  link_preview_options: LinkPreviewOptions | Default | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  parse_mode: str | Default | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  text: str
+SendMessageDraft:
+  chat_id: int
+  draft_id: int
+  entities: list[MessageEntity] | None
+  message_thread_id: int | None
+  parse_mode: str | None
+  text: str
+SendPaidMedia:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  media: list[InputPaidMediaUnion]
+  message_thread_id: int | None
+  parse_mode: str | None
+  payload: str | None
+  protect_content: bool | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  show_caption_above_media: bool | None
+  star_count: int
+  suggested_post_parameters: SuggestedPostParameters | None
+SendPhoto:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  has_spoiler: bool | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  parse_mode: str | Default | None
+  photo: InputFileUnion
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  show_caption_above_media: bool | Default | None
+  suggested_post_parameters: SuggestedPostParameters | None
+SendPoll:
+  allow_paid_broadcast: bool | None
+  allows_multiple_answers: bool | None
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  close_date: DateTimeUnion | None
+  correct_option_id: int | None
+  disable_notification: bool | None
+  explanation: str | None
+  explanation_entities: list[MessageEntity] | None
+  explanation_parse_mode: str | Default | None
+  is_anonymous: bool | None
+  is_closed: bool | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  open_period: int | None
+  options: list[InputPollOptionUnion]
+  protect_content: bool | Default | None
+  question: str
+  question_entities: list[MessageEntity] | None
+  question_parse_mode: str | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  type: str | None
+SendSticker:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  emoji: str | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  sticker: InputFileUnion
+  suggested_post_parameters: SuggestedPostParameters | None
+SendVenue:
+  address: str
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  foursquare_id: str | None
+  foursquare_type: str | None
+  google_place_id: str | None
+  google_place_type: str | None
+  latitude: float
+  longitude: float
+  message_effect_id: str | None
+  message_thread_id: int | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  title: str
+SendVideo:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  chat_id: ChatIdUnion
+  cover: InputFileUnion | None
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  duration: int | None
+  has_spoiler: bool | None
+  height: int | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  parse_mode: str | Default | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  show_caption_above_media: bool | Default | None
+  start_timestamp: DateTimeUnion | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  supports_streaming: bool | None
+  thumbnail: InputFile | None
+  video: InputFileUnion
+  width: int | None
+SendVideoNote:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  duration: int | None
+  length: int | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  thumbnail: InputFile | None
+  video_note: InputFileUnion
+SendVoice:
+  allow_paid_broadcast: bool | None
+  business_connection_id: str | None
+  caption: str | None
+  caption_entities: list[MessageEntity] | None
+  chat_id: ChatIdUnion
+  direct_messages_topic_id: int | None
+  disable_notification: bool | None
+  duration: int | None
+  message_effect_id: str | None
+  message_thread_id: int | None
+  parse_mode: str | Default | None
+  protect_content: bool | Default | None
+  reply_markup: ReplyMarkupUnion | None
+  reply_parameters: ReplyParameters | None
+  suggested_post_parameters: SuggestedPostParameters | None
+  voice: InputFileUnion
+SentWebAppMessage:
+  inline_message_id: str | None
+SetBusinessAccountBio:
+  bio: str | None
+  business_connection_id: str
+SetBusinessAccountGiftSettings:
+  accepted_gift_types: AcceptedGiftTypes
+  business_connection_id: str
+  show_gift_button: bool
+SetBusinessAccountName:
+  business_connection_id: str
+  first_name: str
+  last_name: str | None
+SetBusinessAccountProfilePhoto:
+  business_connection_id: str
+  is_public: bool | None
+  photo: InputProfilePhotoUnion
+SetBusinessAccountUsername:
+  business_connection_id: str
+  username: str | None
+SetChatAdministratorCustomTitle:
+  chat_id: ChatIdUnion
+  custom_title: str
+  user_id: int
+SetChatDescription:
+  chat_id: ChatIdUnion
+  description: str | None
+SetChatMenuButton:
+  chat_id: int | None
+  menu_button: MenuButtonUnion | None
+SetChatPermissions:
+  chat_id: ChatIdUnion
+  permissions: ChatPermissions
+  use_independent_chat_permissions: bool | None
+SetChatPhoto:
+  chat_id: ChatIdUnion
+  photo: InputFile
+SetChatStickerSet:
+  chat_id: ChatIdUnion
+  sticker_set_name: str
+SetChatTitle:
+  chat_id: ChatIdUnion
+  title: str
+SetCustomEmojiStickerSetThumbnail:
+  custom_emoji_id: str | None
+  name: str
+SetGameScore:
+  chat_id: int | None
+  disable_edit_message: bool | None
+  force: bool | None
+  inline_message_id: str | None
+  message_id: int | None
+  score: int
+  user_id: int
+SetMessageReaction:
+  chat_id: ChatIdUnion
+  is_big: bool | None
+  message_id: int
+  reaction: list[ReactionTypeUnion] | None
+SetMyCommands:
+  commands: list[BotCommand]
+  language_code: str | None
+  scope: BotCommandScopeUnion | None
+SetMyDefaultAdministratorRights:
+  for_channels: bool | None
+  rights: ChatAdministratorRights | None
+SetMyDescription:
+  description: str | None
+  language_code: str | None
+SetMyName:
+  language_code: str | None
+  name: str | None
+SetMyShortDescription:
+  language_code: str | None
+  short_description: str | None
+SetPassportDataErrors:
+  errors: list[PassportElementErrorUnion]
+  user_id: int
+SetStickerEmojiList:
+  emoji_list: list[str]
+  sticker: str
+SetStickerKeywords:
+  keywords: list[str] | None
+  sticker: str
+SetStickerMaskPosition:
+  mask_position: MaskPosition | None
+  sticker: str
+SetStickerPositionInSet:
+  position: int
+  sticker: str
+SetStickerSetThumbnail:
+  format: str
+  name: str
+  thumbnail: InputFileUnion | None
+  user_id: int
+SetStickerSetTitle:
+  name: str
+  title: str
+SetUserEmojiStatus:
+  emoji_status_custom_emoji_id: str | None
+  emoji_status_expiration_date: DateTimeUnion | None
+  user_id: int
+SetWebhook:
+  allowed_updates: list[str] | None
+  certificate: InputFile | None
+  drop_pending_updates: bool | None
+  ip_address: str | None
+  max_connections: int | None
+  secret_token: str | None
+  url: str
+SharedUser:
+  first_name: str | None
+  last_name: str | None
+  photo: list[PhotoSize] | None
+  user_id: int
+  username: str | None
+ShippingAddress:
+  city: str
+  country_code: str
+  post_code: str
+  state: str
+  street_line1: str
+  street_line2: str
+ShippingOption:
+  id: str
+  prices: list[LabeledPrice]
+  title: str
+ShippingQuery:
+  id: str
+  invoice_payload: str
+  shipping_address: ShippingAddress
+StarAmount:
+  amount: int
+  nanostar_amount: int | None
+StarTransaction:
+  amount: int
+  date: DateTime
+  id: str
+  nanostar_amount: int | None
+  receiver: TransactionPartnerUnion | None
+  source: TransactionPartnerUnion | None
+StarTransactions:
+  transactions: list[StarTransaction]
+Sticker:
+  custom_emoji_id: str | None
+  emoji: str | None
+  file_id: str
+  file_size: int | None
+  file_unique_id: str
+  height: int
+  is_animated: bool
+  is_video: bool
+  mask_position: MaskPosition | None
+  needs_repainting: bool | None
+  premium_animation: File | None
+  set_name: str | None
+  thumbnail: PhotoSize | None
+  type: str
+  width: int
+StickerSet:
+  name: str
+  sticker_type: str
+  stickers: list[Sticker]
+  thumbnail: PhotoSize | None
+  title: str
+StopMessageLiveLocation:
+  business_connection_id: str | None
+  chat_id: ChatIdUnion | None
+  inline_message_id: str | None
+  message_id: int | None
+  reply_markup: InlineKeyboardMarkup | None
+StopPoll:
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  message_id: int
+  reply_markup: InlineKeyboardMarkup | None
+Story:
+  chat: Chat
+  id: int
+StoryArea:
+  position: StoryAreaPosition
+  type: StoryAreaTypeUnion
+StoryAreaPosition:
+  corner_radius_percentage: float
+  height_percentage: float
+  rotation_angle: float
+  width_percentage: float
+  x_percentage: float
+  y_percentage: float
+StoryAreaTypeLink:
+  type: Literal[StoryAreaTypeType.LINK]
+  url: str
+StoryAreaTypeLocation:
+  address: LocationAddress | None
+  latitude: float
+  longitude: float
+  type: Literal[StoryAreaTypeType.LOCATION]
+StoryAreaTypeSuggestedReaction:
+  is_dark: bool | None
+  is_flipped: bool | None
+  reaction_type: ReactionTypeUnion
+  type: Literal[StoryAreaTypeType.SUGGESTED_REACTION]
+StoryAreaTypeUniqueGift:
+  name: str
+  type: Literal[StoryAreaTypeType.UNIQUE_GIFT]
+StoryAreaTypeWeather:
+  background_color: int
+  emoji: str
+  temperature: float
+  type: Literal[StoryAreaTypeType.WEATHER]
+SuccessfulPayment:
+  currency: str
+  invoice_payload: str
+  is_first_recurring: bool | None
+  is_recurring: bool | None
+  order_info: OrderInfo | None
+  provider_payment_charge_id: str
+  shipping_option_id: str | None
+  subscription_expiration_date: int | None
+  telegram_payment_charge_id: str
+  total_amount: int
+SuggestedPostApprovalFailed:
+  price: SuggestedPostPrice
+  suggested_post_message: Message | None
+SuggestedPostApproved:
+  price: SuggestedPostPrice | None
+  send_date: DateTime
+  suggested_post_message: Message | None
+SuggestedPostDeclined:
+  comment: str | None
+  suggested_post_message: Message | None
+SuggestedPostInfo:
+  price: SuggestedPostPrice | None
+  send_date: DateTime | None
+  state: str
+SuggestedPostPaid:
+  amount: int | None
+  currency: str
+  star_amount: StarAmount | None
+  suggested_post_message: Message | None
+SuggestedPostParameters:
+  price: SuggestedPostPrice | None
+  send_date: DateTime | None
+SuggestedPostPrice:
+  amount: int
+  currency: str
+SuggestedPostRefunded:
+  reason: str
+  suggested_post_message: Message | None
+SwitchInlineQueryChosenChat:
+  allow_bot_chats: bool | None
+  allow_channel_chats: bool | None
+  allow_group_chats: bool | None
+  allow_user_chats: bool | None
+  query: str | None
+TextQuote:
+  entities: list[MessageEntity] | None
+  is_manual: bool | None
+  position: int
+  text: str
+TransactionPartnerAffiliateProgram:
+  commission_per_mille: int
+  sponsor_user: User | None
+  type: Literal[TransactionPartnerType.AFFILIATE_PROGRAM]
+TransactionPartnerChat:
+  chat: Chat
+  gift: Gift | None
+  type: Literal[TransactionPartnerType.CHAT]
+TransactionPartnerFragment:
+  type: Literal[TransactionPartnerType.FRAGMENT]
+  withdrawal_state: RevenueWithdrawalStateUnion | None
+TransactionPartnerOther:
+  type: Literal[TransactionPartnerType.OTHER]
+TransactionPartnerTelegramAds:
+  type: Literal[TransactionPartnerType.TELEGRAM_ADS]
+TransactionPartnerTelegramApi:
+  request_count: int
+  type: Literal[TransactionPartnerType.TELEGRAM_API]
+TransactionPartnerUser:
+  affiliate: AffiliateInfo | None
+  gift: Gift | None
+  invoice_payload: str | None
+  paid_media: list[PaidMediaUnion] | None
+  paid_media_payload: str | None
+  premium_subscription_duration: int | None
+  subscription_period: int | None
+  transaction_type: str
+  type: Literal[TransactionPartnerType.USER]
+  user: User
+TransferBusinessAccountStars:
+  business_connection_id: str
+  star_count: int
+TransferGift:
+  business_connection_id: str
+  new_owner_chat_id: int
+  owned_gift_id: str
+  star_count: int | None
+UnbanChatMember:
+  chat_id: ChatIdUnion
+  only_if_banned: bool | None
+  user_id: int
+UnbanChatSenderChat:
+  chat_id: ChatIdUnion
+  sender_chat_id: int
+UnhideGeneralForumTopic:
+  chat_id: ChatIdUnion
+UniqueGift:
+  backdrop: UniqueGiftBackdrop
+  base_name: str
+  colors: UniqueGiftColors | None
+  gift_id: str
+  is_from_blockchain: bool | None
+  is_premium: bool | None
+  model: UniqueGiftModel
+  name: str
+  number: int
+  publisher_chat: Chat | None
+  symbol: UniqueGiftSymbol
+UniqueGiftBackdrop:
+  colors: UniqueGiftBackdropColors
+  name: str
+  rarity_per_mille: int
+UniqueGiftBackdropColors:
+  center_color: int
+  edge_color: int
+  symbol_color: int
+  text_color: int
+UniqueGiftColors:
+  dark_theme_main_color: int
+  dark_theme_other_colors: list[int]
+  light_theme_main_color: int
+  light_theme_other_colors: list[int]
+  model_custom_emoji_id: str
+  symbol_custom_emoji_id: str
+UniqueGiftInfo:
+  gift: UniqueGift
+  last_resale_amount: int | None
+  last_resale_currency: str | None
+  next_transfer_date: DateTime | None
+  origin: str
+  owned_gift_id: str | None
+  transfer_star_count: int | None
+UniqueGiftModel:
+  name: str
+  rarity_per_mille: int
+  sticker: Sticker
+UniqueGiftSymbol:
+  name: str
+  rarity_per_mille: int
+  sticker: Sticker
+UnpinAllChatMessages:
+  chat_id: ChatIdUnion
+UnpinAllForumTopicMessages:
+  chat_id: ChatIdUnion
+  message_thread_id: int
+UnpinAllGeneralForumTopicMessages:
+  chat_id: ChatIdUnion
+UnpinChatMessage:
+  business_connection_id: str | None
+  chat_id: ChatIdUnion
+  message_id: int | None
+Update:
+  business_connection: BusinessConnection | None
+  business_message: Message | None
+  callback_query: CallbackQuery | None
+  channel_post: Message | None
+  chat_boost: ChatBoostUpdated | None
+  chat_join_request: ChatJoinRequest | None
+  chat_member: ChatMemberUpdated | None
+  chosen_inline_result: ChosenInlineResult | None
+  deleted_business_messages: BusinessMessagesDeleted | None
+  edited_business_message: Message | None
+  edited_channel_post: Message | None
+  edited_message: Message | None
+  inline_query: InlineQuery | None
+  message: Message | None
+  message_reaction: MessageReactionUpdated | None
+  message_reaction_count: MessageReactionCountUpdated | None
+  my_chat_member: ChatMemberUpdated | None
+  poll: Poll | None
+  poll_answer: PollAnswer | None
+  pre_checkout_query: PreCheckoutQuery | None
+  removed_chat_boost: ChatBoostRemoved | None
+  shipping_query: ShippingQuery | None
+  update_id: int
+UpgradeGift:
+  business_connection_id: str
+  keep_original_details: bool | None
+  owned_gift_id: str
+  star_count: int | None
+UploadStickerFile:
+  sticker: InputFile
+  sticker_format: str
+  user_id: int
+User:
+  added_to_attachment_menu: bool | None
+  can_connect_to_business: bool | None
+  can_join_groups: bool | None
+  can_read_all_group_messages: bool | None
+  first_name: str
+  has_main_web_app: bool | None
+  has_topics_enabled: bool | None
+  id: int
+  is_bot: bool
+  is_premium: bool | None
+  language_code: str | None
+  last_name: str | None
+  supports_inline_queries: bool | None
+  username: str | None
+UserChatBoosts:
+  boosts: list[ChatBoost]
+UserProfilePhotos:
+  photos: list[list[PhotoSize]]
+  total_count: int
+UserRating:
+  current_level_rating: int
+  level: int
+  next_level_rating: int | None
+  rating: int
+UsersShared:
+  request_id: int
+  users: list[SharedUser]
+Venue:
+  address: str
+  foursquare_id: str | None
+  foursquare_type: str | None
+  google_place_id: str | None
+  google_place_type: str | None
+  location: Location
+  title: str
+VerifyChat:
+  chat_id: ChatIdUnion
+  custom_description: str | None
+VerifyUser:
+  custom_description: str | None
+  user_id: int
+Video:
+  cover: list[PhotoSize] | None
+  duration: int
+  file_id: str
+  file_name: str | None
+  file_size: int | None
+  file_unique_id: str
+  height: int
+  mime_type: str | None
+  start_timestamp: datetime.datetime | None
+  thumbnail: PhotoSize | None
+  width: int
+VideoChatEnded:
+  duration: int
+VideoChatParticipantsInvited:
+  users: list[User]
+VideoChatScheduled:
+  start_date: DateTime
+VideoNote:
+  duration: int
+  file_id: str
+  file_size: int | None
+  file_unique_id: str
+  length: int
+  thumbnail: PhotoSize | None
+Voice:
+  duration: int
+  file_id: str
+  file_size: int | None
+  file_unique_id: str
+  mime_type: str | None
+WebAppData:
+  button_text: str
+  data: str
+WebAppInfo:
+  url: str
+WebhookInfo:
+  allowed_updates: list[str] | None
+  has_custom_certificate: bool
+  ip_address: str | None
+  last_error_date: DateTime | None
+  last_error_message: str | None
+  last_synchronization_error_date: DateTime | None
+  max_connections: int | None
+  pending_update_count: int
+  url: str
+WriteAccessAllowed:
+  from_attachment_menu: bool | None
+  from_request: bool | None
+  web_app_name: str | None

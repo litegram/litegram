@@ -1,0 +1,89 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "messageentity",
+    "name": "MessageEntity",
+    "description": "This object represents one special entity in a text message. For example, hashtags, usernames, URLs, etc.",
+    "html_description": "<p>This object represents one special entity in a text message. For example, hashtags, usernames, URLs, etc.</p>",
+    "rst_description": "This object represents one special entity in a text message. For example, hashtags, usernames, URLs, etc.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the entity. Currently, can be 'mention' (@username), 'hashtag' (#hashtag or #hashtag@chatusername), 'cashtag' ($USD or $USD@chatusername), 'bot_command' (/start@jobs_bot), 'url' (https://telegram.org), 'email' (do-not-reply@telegram.org), 'phone_number' (+1-212-555-0123), 'bank_card_number' (bank card number), 'ton_address' (address in the TON blockchain), 'bold' (bold text), 'italic' (italic text), 'underline' (underlined text), 'strikethrough' (strikethrough text), 'spoiler' (spoiler message), 'blockquote' (block quotation), 'expandable_blockquote' (collapsed-by-default block quotation), 'code' (monowidth string), 'pre' (monowidth block), 'text_link' (for clickable text URLs), 'text_mention' (for users without usernames), 'custom_emoji' (for inline custom emoji stickers), or 'date_time' (for formatted date and time).",
+        "html_description": "<td>Type of the entity. Currently, can be “mention” (<code>@username</code>), “hashtag” (<code>#hashtag</code> or <code>#hashtag@chatusername</code>), “cashtag” (<code>$USD</code> or <code>$USD@chatusername</code>), “bot_command” (<code>/start@jobs_bot</code>), “url” (<code>https://telegram.org</code>), “email” (<code>do-not-reply@telegram.org</code>), “phone_number” (<code>+1-212-555-0123</code>), “bank_card_number” (bank card number), “ton_address” (address in the TON blockchain), “bold” (<strong>bold text</strong>), “italic” (<em>italic text</em>), “underline” (underlined text), “strikethrough” (strikethrough text), “spoiler” (spoiler message), “blockquote” (block quotation), “expandable_blockquote” (collapsed-by-default block quotation), “code” (monowidth string), “pre” (monowidth block), “text_link” (for clickable text URLs), “text_mention” (for users <a href=\"https://telegram.org/blog/edit#new-mentions\">without usernames</a>), “custom_emoji” (for inline custom emoji stickers), or “date_time” (for formatted date and time).</td>",
+        "rst_description": "Type of the entity. Currently, can be 'mention' (:code:`@username`), 'hashtag' (:code:`#hashtag` or :code:`#hashtag@chatusername`), 'cashtag' (:code:`$USD` or :code:`$USD@chatusername`), 'bot_command' (:code:`/start@jobs_bot`), 'url' (:code:`https://telegram.org`), 'email' (:code:`do-not-reply@telegram.org`), 'phone_number' (:code:`+1-212-555-0123`), 'bank_card_number' (bank card number), 'ton_address' (address in the TON blockchain), 'bold' (**bold text**), 'italic' (*italic text*), 'underline' (underlined text), 'strikethrough' (strikethrough text), 'spoiler' (spoiler message), 'blockquote' (block quotation), 'expandable_blockquote' (collapsed-by-default block quotation), 'code' (monowidth string), 'pre' (monowidth block), 'text_link' (for clickable text URLs), 'text_mention' (for users `without usernames <https://telegram.org/blog/edit#new-mentions>`_), 'custom_emoji' (for inline custom emoji stickers), or 'date_time' (for formatted date and time).\n"
+      },
+      {
+        "name": "offset",
+        "type": "Integer",
+        "required": true,
+        "description": "Offset in UTF-16 code units to the start of the entity",
+        "html_description": "<td>Offset in <a href=\"/api/entities#entity-length\">UTF-16 code units</a> to the start of the entity</td>",
+        "rst_description": "Offset in `UTF-16 code units <https://core.telegram.org/api/entities#entity-length>`_ to the start of the entity\n"
+      },
+      {
+        "name": "length",
+        "type": "Integer",
+        "required": true,
+        "description": "Length of the entity in UTF-16 code units",
+        "html_description": "<td>Length of the entity in <a href=\"/api/entities#entity-length\">UTF-16 code units</a></td>",
+        "rst_description": "Length of the entity in `UTF-16 code units <https://core.telegram.org/api/entities#entity-length>`_\n"
+      },
+      {
+        "name": "url",
+        "type": "String",
+        "required": false,
+        "description": "Optional. For 'text_link' only, URL that will be opened after user taps on the text",
+        "html_description": "<td><em>Optional</em>. For “text_link” only, URL that will be opened after user taps on the text</td>",
+        "rst_description": "*Optional*. For 'text_link' only, URL that will be opened after user taps on the text\n"
+      },
+      {
+        "name": "user",
+        "type": "User",
+        "required": false,
+        "description": "Optional. For 'text_mention' only, the mentioned user",
+        "html_description": "<td><em>Optional</em>. For “text_mention” only, the mentioned user</td>",
+        "rst_description": "*Optional*. For 'text_mention' only, the mentioned user\n"
+      },
+      {
+        "name": "language",
+        "type": "String",
+        "required": false,
+        "description": "Optional. For 'pre' only, the programming language of the entity text",
+        "html_description": "<td><em>Optional</em>. For “pre” only, the programming language of the entity text</td>",
+        "rst_description": "*Optional*. For 'pre' only, the programming language of the entity text\n"
+      },
+      {
+        "name": "custom_emoji_id",
+        "type": "String",
+        "required": false,
+        "description": "Optional. For 'custom_emoji' only, unique identifier of the custom emoji. Use getCustomEmojiStickers to get full information about the sticker.",
+        "html_description": "<td><em>Optional</em>. For “custom_emoji” only, unique identifier of the custom emoji. Use <a href=\"#getcustomemojistickers\">getCustomEmojiStickers</a> to get full information about the sticker.</td>",
+        "rst_description": "*Optional*. For 'custom_emoji' only, unique identifier of the custom emoji. Use :class:`litegram.methods.get_custom_emoji_stickers.GetCustomEmojiStickers` to get full information about the sticker.\n"
+      },
+      {
+        "name": "unix_time",
+        "type": "Integer",
+        "required": false,
+        "description": "Optional. For 'date_time' only, the Unix time associated with the entity",
+        "html_description": "<td><em>Optional</em>. For “date_time” only, the Unix time associated with the entity</td>",
+        "rst_description": "*Optional*. For 'date_time' only, the Unix time associated with the entity\n"
+      },
+      {
+        "name": "date_time_format",
+        "type": "String",
+        "required": false,
+        "description": "Optional. For 'date_time' only, the string that defines the formatting of the date and time. See date-time entity formatting for more details.",
+        "html_description": "<td><em>Optional</em>. For “date_time” only, the string that defines the formatting of the date and time. See <a href=\"#date-time-entity-formatting\">date-time entity formatting</a> for more details.</td>",
+        "rst_description": "*Optional*. For 'date_time' only, the string that defines the formatting of the date and time. See `date-time entity formatting <https://core.telegram.org/bots/api#date-time-entity-formatting>`_ for more details.\n"
+      }
+    ],
+    "category": "types"
+  }
+}

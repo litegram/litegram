@@ -19,7 +19,7 @@ class RestrictChatMember(TelegramMethod[bool]):
     __api_method__ = "restrictChatMember"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target supergroup (in the format :code:`@supergroupusername`)"""
+    """Unique identifier for the target chat or username of the target supergroup in the format :code:`@username`"""
     user_id: int
     """Unique identifier of the target user"""
     permissions: ChatPermissions
@@ -27,8 +27,7 @@ class RestrictChatMember(TelegramMethod[bool]):
     use_independent_chat_permissions: bool | None = None
     """Pass :code:`True` if chat permissions are set independently. Otherwise, the *can_send_other_messages* and *can_add_web_page_previews* permissions will imply the *can_send_messages*, *can_send_audios*, *can_send_documents*, *can_send_photos*, *can_send_videos*, *can_send_video_notes*, and *can_send_voice_notes* permissions; the *can_send_polls* permission will imply the *can_send_messages* permission."""
     until_date: DateTimeUnion | None = None
-    """Date when restrictions will be lifted for the user; Unix time. If user is restricted for more than 366 days or less than 30 seconds from the current time, they are considered to be restricted forever"""
-
+    """Date when restrictions will be lifted for the user; Unix time. If user is restricted for more than 366 days or less than 30 seconds from the current time, they are considered to be restricted forever."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

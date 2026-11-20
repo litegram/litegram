@@ -1,0 +1,41 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "suggestedpostinfo",
+    "name": "SuggestedPostInfo",
+    "description": "Contains information about a suggested post.",
+    "html_description": "<p>Contains information about a suggested post.</p>",
+    "rst_description": "Contains information about a suggested post.",
+    "annotations": [
+      {
+        "name": "state",
+        "type": "String",
+        "required": true,
+        "description": "State of the suggested post. Currently, it can be one of 'pending', 'approved', 'declined'.",
+        "html_description": "<td>State of the suggested post. Currently, it can be one of “pending”, “approved”, “declined”.</td>",
+        "rst_description": "State of the suggested post. Currently, it can be one of 'pending', 'approved', 'declined'.\n"
+      },
+      {
+        "name": "price",
+        "type": "SuggestedPostPrice",
+        "required": false,
+        "description": "Optional. Proposed price of the post. If the field is omitted, then the post is unpaid.",
+        "html_description": "<td><em>Optional</em>. Proposed price of the post. If the field is omitted, then the post is unpaid.</td>",
+        "rst_description": "*Optional*. Proposed price of the post. If the field is omitted, then the post is unpaid.\n"
+      },
+      {
+        "name": "send_date",
+        "type": "Integer",
+        "required": false,
+        "description": "Optional. Proposed send date of the post. If the field is omitted, then the post can be published at any time within 30 days at the sole discretion of the user or administrator who approves it.",
+        "html_description": "<td><em>Optional</em>. Proposed send date of the post. If the field is omitted, then the post can be published at any time within 30 days at the sole discretion of the user or administrator who approves it.</td>",
+        "rst_description": "*Optional*. Proposed send date of the post. If the field is omitted, then the post can be published at any time within 30 days at the sole discretion of the user or administrator who approves it.\n"
+      }
+    ],
+    "category": "types"
+  }
+}

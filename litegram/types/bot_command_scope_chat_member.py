@@ -19,10 +19,9 @@ class BotCommandScopeChatMember(BotCommandScope):
     type: Literal[BotCommandScopeType.CHAT_MEMBER] = BotCommandScopeType.CHAT_MEMBER
     """Scope type, must be *chat_member*"""
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target supergroup (in the format :code:`@supergroupusername`). Channel direct messages chats and channel chats aren't supported."""
+    """Unique identifier for the target chat or username of the target supergroup in the format :code:`@username`. Channel direct messages chats and channel chats aren't supported."""
     user_id: int
     """Unique identifier of the target user"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -30,9 +29,9 @@ class BotCommandScopeChatMember(BotCommandScope):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[BotCommandScopeType.CHAT_MEMBER] = BotCommandScopeType.CHAT_MEMBER,
             chat_id: ChatIdUnion,
             user_id: int,
+            type: Literal[BotCommandScopeType.CHAT_MEMBER] = BotCommandScopeType.CHAT_MEMBER,
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!

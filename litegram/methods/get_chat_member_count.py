@@ -10,7 +10,7 @@ if TYPE_CHECKING:
 
 class GetChatMemberCount(TelegramMethod[int]):
     """
-    Use this method to get the number of members in a chat. Returns *Int* on success.
+    Use this method to get the number of members in a chat. Returns *Integer* on success.
 
     Source: https://core.telegram.org/bots/api#getchatmembercount
     """
@@ -19,8 +19,7 @@ class GetChatMemberCount(TelegramMethod[int]):
     __api_method__ = "getChatMemberCount"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target supergroup or channel (in the format :code:`@channelusername`)"""
-
+    """Unique identifier for the target chat or username of the target supergroup or channel in the format :code:`@username`"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

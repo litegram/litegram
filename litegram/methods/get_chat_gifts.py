@@ -17,7 +17,7 @@ class GetChatGifts(TelegramMethod[OwnedGifts]):
     __api_method__ = "getChatGifts"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target channel (in the format :code:`@channelusername`)"""
+    """Unique identifier for the target chat or username of the target channel in the format :code:`@username`"""
     exclude_unsaved: bool | None = None
     """Pass :code:`True` to exclude gifts that aren't saved to the chat's profile page. Always :code:`True`, unless the bot has the *can_post_messages* administrator right in the channel."""
     exclude_saved: bool | None = None
@@ -37,8 +37,7 @@ class GetChatGifts(TelegramMethod[OwnedGifts]):
     offset: str | None = None
     """Offset of the first entry to return as received from the previous request; use an empty string to get the first chunk of results"""
     limit: int | None = None
-    """The maximum number of gifts to be returned; 1-100. Defaults to 100"""
-
+    """The maximum number of gifts to be returned; 1-100. Defaults to 100."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

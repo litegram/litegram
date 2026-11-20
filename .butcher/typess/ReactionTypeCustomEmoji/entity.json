@@ -1,0 +1,33 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "reactiontypecustomemoji",
+    "name": "ReactionTypeCustomEmoji",
+    "description": "The reaction is based on a custom emoji.",
+    "html_description": "<p>The reaction is based on a custom emoji.</p>",
+    "rst_description": "The reaction is based on a custom emoji.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the reaction, always 'custom_emoji'",
+        "html_description": "<td>Type of the reaction, always “custom_emoji”</td>",
+        "rst_description": "Type of the reaction, always 'custom_emoji'\n"
+      },
+      {
+        "name": "custom_emoji_id",
+        "type": "String",
+        "required": true,
+        "description": "Custom emoji identifier",
+        "html_description": "<td>Custom emoji identifier</td>",
+        "rst_description": "Custom emoji identifier\n"
+      }
+    ],
+    "category": "types"
+  }
+}

@@ -18,9 +18,9 @@ class ForwardMessage(TelegramMethod[Message]):
     __api_method__ = "forwardMessage"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target channel (in the format :code:`@channelusername`)"""
+    """Unique identifier for the target chat or username of the target bot, supergroup, or channel in the format :code:`@username`"""
     from_chat_id: ChatIdUnion
-    """Unique identifier for the chat where the original message was sent (or channel username in the format :code:`@channelusername`)"""
+    """Unique identifier for the chat where the original message was sent (or username of the target bot, supergroup, or channel in the format :code:`@username`)"""
     message_id: int
     """Message identifier in the chat specified in *from_chat_id*"""
     message_thread_id: int | None = None
@@ -37,7 +37,6 @@ class ForwardMessage(TelegramMethod[Message]):
     """Unique identifier of the message effect to be added to the message; only available when forwarding to private chats"""
     suggested_post_parameters: SuggestedPostParameters | None = None
     """A JSON-serialized object containing the parameters of the suggested post to send; for direct messages chats only"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

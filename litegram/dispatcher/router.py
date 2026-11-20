@@ -82,10 +82,22 @@ class Router:
             event_name="edited_business_message",
         )
         self.business_message = TelegramEventObserver(router=self, event_name="business_message")
-        self.paid_media_purchased = TelegramEventObserver(
+        self.purchased_paid_media = TelegramEventObserver(
             router=self,
-            event_name="paid_media_purchased",
+            event_name="purchased_paid_media",
         )
+
+        self.guest_message = TelegramEventObserver(router=self, event_name="guest_message")
+
+        self.widget_query = TelegramEventObserver(router=self, event_name="widget_query")
+
+        self.shared_widget_query = TelegramEventObserver(router=self, event_name="shared_widget_query")
+
+        self.managed_bot = TelegramEventObserver(router=self, event_name="managed_bot")
+
+        self.subscription = TelegramEventObserver(router=self, event_name="subscription")
+
+        self.stopped_message_generation = TelegramEventObserver(router=self, event_name="stopped_message_generation")
 
         self.errors = self.error = TelegramEventObserver(router=self, event_name="error")
 
@@ -115,8 +127,15 @@ class Router:
             "business_connection": self.business_connection,
             "edited_business_message": self.edited_business_message,
             "business_message": self.business_message,
-            "paid_media_purchased": self.paid_media_purchased,
+            "paid_media_purchased": self.purchased_paid_media,
             "error": self.errors,
+            "guest_message": self.guest_message,
+            "widget_query": self.widget_query,
+            "shared_widget_query": self.shared_widget_query,
+            "purchased_paid_media": self.purchased_paid_media,
+            "managed_bot": self.managed_bot,
+            "subscription": self.subscription,
+            "stopped_message_generation": self.stopped_message_generation,
         }
 
     def __str__(self) -> str:

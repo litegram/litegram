@@ -20,11 +20,11 @@ class InputMediaAudio(InputMedia):
     """
 
     type: Literal[InputMediaType.AUDIO] = InputMediaType.AUDIO
-    """Type of the result, must be *audio*"""
+    """Type of the media, must be *audio*"""
     media: InputFileUnion
-    """File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass 'attach://<file_attach_name>' to upload a new one using multipart/form-data under <file_attach_name> name. :ref:`More information on Sending Files » <sending-files>`"""
+    """File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass 'attach://' to upload a new one using multipart/form-data under  name. :ref:`More information on Sending Files » <sending-files>`"""
     thumbnail: InputFile | None = None
-    """*Optional*. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass 'attach://<file_attach_name>' if the thumbnail was uploaded using multipart/form-data under <file_attach_name>. :ref:`More information on Sending Files » <sending-files>`"""
+    """*Optional*. Thumbnail of the file sent; can be ignored if thumbnail generation for the file is supported server-side. The thumbnail should be in JPEG format and less than 200 kB in size. A thumbnail's width and height should not exceed 320. Ignored if the file is not uploaded using multipart/form-data. Thumbnails can't be reused and can be only uploaded as a new file, so you can pass 'attach://' if the thumbnail was uploaded using multipart/form-data under . :ref:`More information on Sending Files » <sending-files>`"""
     caption: str | None = None
     """*Optional*. Caption of the audio to be sent, 0-1024 characters after entities parsing"""
     parse_mode: str | Default | None = Default("parse_mode")
@@ -37,7 +37,6 @@ class InputMediaAudio(InputMedia):
     """*Optional*. Performer of the audio"""
     title: str | None = None
     """*Optional*. Title of the audio"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -45,8 +44,8 @@ class InputMediaAudio(InputMedia):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InputMediaType.AUDIO] = InputMediaType.AUDIO,
             media: InputFileUnion,
+            type: Literal[InputMediaType.AUDIO] = InputMediaType.AUDIO,
             thumbnail: InputFile | None = None,
             caption: str | None = None,
             parse_mode: str | Default | None = Default("parse_mode"),
@@ -61,8 +60,8 @@ class InputMediaAudio(InputMedia):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                type=type,
                 media=media,
+                type=type,
                 thumbnail=thumbnail,
                 caption=caption,
                 parse_mode=parse_mode,

@@ -19,14 +19,13 @@ class BanChatMember(TelegramMethod[bool]):
     __api_method__ = "banChatMember"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target group or username of the target supergroup or channel (in the format :code:`@channelusername`)"""
+    """Unique identifier for the target group or username of the target supergroup or channel in the format :code:`@username`"""
     user_id: int
     """Unique identifier of the target user"""
     until_date: DateTimeUnion | None = None
     """Date when the user will be unbanned; Unix time. If user is banned for more than 366 days or less than 30 seconds from the current time they are considered to be banned forever. Applied for supergroups and channels only."""
     revoke_messages: bool | None = None
     """Pass :code:`True` to delete all messages from the chat for the user that is being removed. If :code:`False`, the user will be able to see messages in the group that were sent before the user was removed. Always :code:`True` for supergroups and channels."""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

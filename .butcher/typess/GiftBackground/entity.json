@@ -1,0 +1,41 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "giftbackground",
+    "name": "GiftBackground",
+    "description": "This object describes the background of a gift.",
+    "html_description": "<p>This object describes the background of a gift.</p>",
+    "rst_description": "This object describes the background of a gift.",
+    "annotations": [
+      {
+        "name": "center_color",
+        "type": "Integer",
+        "required": true,
+        "description": "Center color of the background in RGB format",
+        "html_description": "<td>Center color of the background in RGB format</td>",
+        "rst_description": "Center color of the background in RGB format\n"
+      },
+      {
+        "name": "edge_color",
+        "type": "Integer",
+        "required": true,
+        "description": "Edge color of the background in RGB format",
+        "html_description": "<td>Edge color of the background in RGB format</td>",
+        "rst_description": "Edge color of the background in RGB format\n"
+      },
+      {
+        "name": "text_color",
+        "type": "Integer",
+        "required": true,
+        "description": "Text color of the background in RGB format",
+        "html_description": "<td>Text color of the background in RGB format</td>",
+        "rst_description": "Text color of the background in RGB format\n"
+      }
+    ],
+    "category": "types"
+  }
+}

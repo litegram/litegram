@@ -19,21 +19,14 @@ class DeleteMessages(TelegramMethod[bool]):
     __api_method__ = "deleteMessages"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target channel (in the format :code:`@channelusername`)"""
+    """Unique identifier for the target chat or username of the target bot, supergroup, or channel in the format :code:`@username`"""
     message_ids: list[int]
-    """A JSON-serialized list of 1-100 identifiers of messages to delete. See :class:`litegram.methods.delete_message.DeleteMessage` for limitations on which messages can be deleted"""
-
+    """A JSON-serialized list of 1-100 identifiers of messages to delete. See :class:`litegram.methods.delete_message.DeleteMessage` for limitations on which messages can be deleted."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
 
-        def __init__(
-            __pydantic__self__,
-            *,
-            chat_id: ChatIdUnion,
-            message_ids: list[int],
-            **__pydantic_kwargs: Any,
-        ) -> None:
+        def __init__(__pydantic__self__, *, chat_id: ChatIdUnion, message_ids: list[int], **__pydantic_kwargs: Any) -> None:
             # DO NOT EDIT MANUALLY!!!
             # This method was auto-generated via `butcher`
             # Is needed only for type checking and IDE support without any additional plugins

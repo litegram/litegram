@@ -21,8 +21,7 @@ class File(TelegramObject):
     file_size: int | None = None
     """*Optional*. File size in bytes. It can be bigger than 2^31 and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this value."""
     file_path: str | None = None
-    """*Optional*. File path. Use :code:`https://api.telegram.org/file/bot<token>/<file_path>` to get the file."""
-
+    """*Optional*. File path. Use :code:`https://api.telegram.org/file/bot/` to get the file."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any
 
-from ..types import File, InputFile
+from ..types import File, InputFile, InputFileUnion
 from .base import TelegramMethod
 
 
@@ -19,10 +19,9 @@ class UploadStickerFile(TelegramMethod[File]):
     user_id: int
     """User identifier of sticker file owner"""
     sticker: InputFile
-    """A file with the sticker in .WEBP, .PNG, .TGS, or .WEBM format. See `https://core.telegram.org/stickers <https://core.telegram.org/stickers>`_`https://core.telegram.org/stickers <https://core.telegram.org/stickers>`_ for technical requirements. :ref:`More information on Sending Files » <sending-files>`"""
+    """A file with the sticker in .WEBP, .PNG, .TGS, or .WEBM format. See ``https://core.telegram.org/stickers <https://core.telegram.org/stickers>`_ <https://core.telegram.org/stickers>`_ for technical requirements. :ref:`More information on Sending Files » <sending-files>`"""
     sticker_format: str
     """Format of the sticker, must be one of 'static', 'animated', 'video'"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -39,9 +38,4 @@ class UploadStickerFile(TelegramMethod[File]):
             # This method was auto-generated via `butcher`
             # Is needed only for type checking and IDE support without any additional plugins
 
-            super().__init__(
-                user_id=user_id,
-                sticker=sticker,
-                sticker_format=sticker_format,
-                **__pydantic_kwargs,
-            )
+            super().__init__(user_id=user_id, sticker=sticker, sticker_format=sticker_format, **__pydantic_kwargs)

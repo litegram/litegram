@@ -1,0 +1,33 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Rich messages",
+    "anchor": "rich-messages"
+  },
+  "object": {
+    "anchor": "inputrichblockparagraph",
+    "name": "InputRichBlockParagraph",
+    "description": "A text paragraph, corresponding to the HTML tag <p>.",
+    "html_description": "<p>A text paragraph, corresponding to the HTML tag <code>&lt;p&gt;</code>.</p>",
+    "rst_description": "A text paragraph, corresponding to the HTML tag :code:`<p>`.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the block, always 'paragraph'",
+        "html_description": "<td>Type of the block, always “paragraph”</td>",
+        "rst_description": "Type of the block, always 'paragraph'\n"
+      },
+      {
+        "name": "text",
+        "type": "RichText",
+        "required": true,
+        "description": "Text of the block",
+        "html_description": "<td>Text of the block</td>",
+        "rst_description": "Text of the block\n"
+      }
+    ],
+    "category": "types"
+  }
+}

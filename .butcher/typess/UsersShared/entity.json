@@ -1,0 +1,33 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "usersshared",
+    "name": "UsersShared",
+    "description": "This object contains information about the users whose identifiers were shared with the bot using a KeyboardButtonRequestUsers button.",
+    "html_description": "<p>This object contains information about the users whose identifiers were shared with the bot using a <a href=\"#keyboardbuttonrequestusers\">KeyboardButtonRequestUsers</a> button.</p>",
+    "rst_description": "This object contains information about the users whose identifiers were shared with the bot using a :class:`litegram.types.keyboard_button_request_users.KeyboardButtonRequestUsers` button.",
+    "annotations": [
+      {
+        "name": "request_id",
+        "type": "Integer",
+        "required": true,
+        "description": "Identifier of the request",
+        "html_description": "<td>Identifier of the request</td>",
+        "rst_description": "Identifier of the request\n"
+      },
+      {
+        "name": "users",
+        "type": "Array of SharedUser",
+        "required": true,
+        "description": "Information about users shared with the bot",
+        "html_description": "<td>Information about users shared with the bot</td>",
+        "rst_description": "Information about users shared with the bot\n"
+      }
+    ],
+    "category": "types"
+  }
+}

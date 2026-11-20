@@ -54,9 +54,12 @@ class ChatMemberAdministrator(ChatMember):
     """*Optional*. :code:`True`, if the user is allowed to create, rename, close, and reopen forum topics; for supergroups only"""
     can_manage_direct_messages: bool | None = None
     """*Optional*. :code:`True`, if the administrator can manage direct messages of the channel and decline suggested posts; for channels only"""
+    can_manage_tags: bool | None = None
+    """*Optional*. :code:`True`, if the administrator can edit the tags of regular members; for groups and supergroups only"""
+    can_send_welcome_messages: bool
+    """:code:`True`, if the administrator can manage chat welcome messages or directly send them in the case of bots"""
     custom_title: str | None = None
     """*Optional*. Custom title for this user"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -64,7 +67,6 @@ class ChatMemberAdministrator(ChatMember):
         def __init__(
             __pydantic__self__,
             *,
-            status: Literal[ChatMemberStatus.ADMINISTRATOR] = ChatMemberStatus.ADMINISTRATOR,
             user: User,
             can_be_edited: bool,
             is_anonymous: bool,
@@ -78,11 +80,14 @@ class ChatMemberAdministrator(ChatMember):
             can_post_stories: bool,
             can_edit_stories: bool,
             can_delete_stories: bool,
+            can_send_welcome_messages: bool,
+            status: Literal[ChatMemberStatus.ADMINISTRATOR] = ChatMemberStatus.ADMINISTRATOR,
             can_post_messages: bool | None = None,
             can_edit_messages: bool | None = None,
             can_pin_messages: bool | None = None,
             can_manage_topics: bool | None = None,
             can_manage_direct_messages: bool | None = None,
+            can_manage_tags: bool | None = None,
             custom_title: str | None = None,
             **__pydantic_kwargs: Any,
         ) -> None:
@@ -91,7 +96,6 @@ class ChatMemberAdministrator(ChatMember):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                status=status,
                 user=user,
                 can_be_edited=can_be_edited,
                 is_anonymous=is_anonymous,
@@ -105,11 +109,14 @@ class ChatMemberAdministrator(ChatMember):
                 can_post_stories=can_post_stories,
                 can_edit_stories=can_edit_stories,
                 can_delete_stories=can_delete_stories,
+                can_send_welcome_messages=can_send_welcome_messages,
+                status=status,
                 can_post_messages=can_post_messages,
                 can_edit_messages=can_edit_messages,
                 can_pin_messages=can_pin_messages,
                 can_manage_topics=can_manage_topics,
                 can_manage_direct_messages=can_manage_direct_messages,
+                can_manage_tags=can_manage_tags,
                 custom_title=custom_title,
                 **__pydantic_kwargs,
             )

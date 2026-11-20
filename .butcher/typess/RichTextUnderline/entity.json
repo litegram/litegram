@@ -1,0 +1,33 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Rich messages",
+    "anchor": "rich-messages"
+  },
+  "object": {
+    "anchor": "richtextunderline",
+    "name": "RichTextUnderline",
+    "description": "An underlined text.",
+    "html_description": "<p>An underlined text.</p>",
+    "rst_description": "An underlined text.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the rich text, always 'underline'",
+        "html_description": "<td>Type of the rich text, always “underline”</td>",
+        "rst_description": "Type of the rich text, always 'underline'\n"
+      },
+      {
+        "name": "text",
+        "type": "RichText",
+        "required": true,
+        "description": "The text",
+        "html_description": "<td>The text</td>",
+        "rst_description": "The text\n"
+      }
+    ],
+    "category": "types"
+  }
+}

@@ -19,10 +19,9 @@ class SetChatDescription(TelegramMethod[bool]):
     __api_method__ = "setChatDescription"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target channel (in the format :code:`@channelusername`)"""
+    """Unique identifier for the target chat or username of the target channel in the format :code:`@username`"""
     description: str | None = None
     """New chat description, 0-255 characters"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

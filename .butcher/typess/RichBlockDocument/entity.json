@@ -1,0 +1,41 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Rich messages",
+    "anchor": "rich-messages"
+  },
+  "object": {
+    "anchor": "richblockdocument",
+    "name": "RichBlockDocument",
+    "description": "A block with a general file, corresponding to the custom HTML tag <tg-document>.",
+    "html_description": "<p>A block with a general file, corresponding to the custom HTML tag <code>&lt;tg-document&gt;</code>.</p>",
+    "rst_description": "A block with a general file, corresponding to the custom HTML tag :code:`<tg-document>`.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the block, always 'document'",
+        "html_description": "<td>Type of the block, always “document”</td>",
+        "rst_description": "Type of the block, always 'document'\n"
+      },
+      {
+        "name": "document",
+        "type": "Document",
+        "required": true,
+        "description": "The document",
+        "html_description": "<td>The document</td>",
+        "rst_description": "The document\n"
+      },
+      {
+        "name": "caption",
+        "type": "RichBlockCaption",
+        "required": false,
+        "description": "Optional. Caption of the block",
+        "html_description": "<td><em>Optional</em>. Caption of the block</td>",
+        "rst_description": "*Optional*. Caption of the block\n"
+      }
+    ],
+    "category": "types"
+  }
+}

@@ -17,10 +17,9 @@ class RevokeChatInviteLink(TelegramMethod[ChatInviteLink]):
     __api_method__ = "revokeChatInviteLink"
 
     chat_id: ChatIdUnion
-    """Unique identifier of the target chat or username of the target channel (in the format :code:`@channelusername`)"""
+    """Unique identifier of the target chat or username of the target channel in the format :code:`@username`"""
     invite_link: str
     """The invite link to revoke"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

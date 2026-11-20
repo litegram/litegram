@@ -55,8 +55,6 @@ class ChatMemberUpdated(TelegramObject):
 
     chat: Chat
     """Chat the user belongs to"""
-    from_user: User = Field(..., alias="from")
-    """Performer of the action, which resulted in the change"""
     date: DateTime
     """Date the change was done in Unix time"""
     old_chat_member: ChatMemberUnion
@@ -64,12 +62,13 @@ class ChatMemberUpdated(TelegramObject):
     new_chat_member: ChatMemberUnion
     """New information about the chat member"""
     invite_link: ChatInviteLink | None = None
-    """*Optional*. Chat invite link, which was used by the user to join the chat; for joining by invite link events only."""
+    """*Optional*. Chat invite link, which was used by the user to join the chat; for joining by invite link events only"""
     via_join_request: bool | None = None
     """*Optional*. :code:`True`, if the user joined the chat after sending a direct join request without using an invite link and being approved by an administrator"""
     via_chat_folder_invite_link: bool | None = None
     """*Optional*. :code:`True`, if the user joined the chat via a chat folder invite link"""
-
+    from_user: User = Field(..., alias="from")
+    """Performer of the action, which resulted in the change"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -78,10 +77,10 @@ class ChatMemberUpdated(TelegramObject):
             __pydantic__self__,
             *,
             chat: Chat,
-            from_user: User,
             date: DateTime,
             old_chat_member: ChatMemberUnion,
             new_chat_member: ChatMemberUnion,
+            from_user: User,
             invite_link: ChatInviteLink | None = None,
             via_join_request: bool | None = None,
             via_chat_folder_invite_link: bool | None = None,
@@ -93,10 +92,10 @@ class ChatMemberUpdated(TelegramObject):
 
             super().__init__(
                 chat=chat,
-                from_user=from_user,
                 date=date,
                 old_chat_member=old_chat_member,
                 new_chat_member=new_chat_member,
+                from_user=from_user,
                 invite_link=invite_link,
                 via_join_request=via_join_request,
                 via_chat_folder_invite_link=via_chat_folder_invite_link,

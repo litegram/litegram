@@ -18,19 +18,12 @@ class PreparedInlineMessage(TelegramObject):
     id: str
     """Unique identifier of the prepared message"""
     expiration_date: DateTimeUnion
-    """Expiration date of the prepared message, in Unix time. Expired prepared messages can no longer be used"""
-
+    """Expiration date of the prepared message, in Unix time. Expired prepared messages can no longer be used."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
 
-        def __init__(
-            __pydantic__self__,
-            *,
-            id: str,
-            expiration_date: DateTimeUnion,
-            **__pydantic_kwargs: Any,
-        ) -> None:
+        def __init__(__pydantic__self__, *, id: str, expiration_date: DateTimeUnion, **__pydantic_kwargs: Any) -> None:
             # DO NOT EDIT MANUALLY!!!
             # This method was auto-generated via `butcher`
             # Is needed only for type checking and IDE support without any additional plugins

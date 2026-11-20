@@ -19,14 +19,13 @@ class SetMessageReaction(TelegramMethod[bool]):
     __api_method__ = "setMessageReaction"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target channel (in the format :code:`@channelusername`)"""
+    """Unique identifier for the target chat or username of the target bot, supergroup, or channel in the format :code:`@username`"""
     message_id: int
     """Identifier of the target message. If the message belongs to a media group, the reaction is set to the first non-deleted message in the group instead."""
     reaction: list[ReactionTypeUnion] | None = None
     """A JSON-serialized list of reaction types to set on the message. Currently, as non-premium users, bots can set up to one reaction per message. A custom emoji reaction can be used if it is either already present on the message or explicitly allowed by chat administrators. Paid reactions can't be used by bots."""
     is_big: bool | None = None
     """Pass :code:`True` to set the reaction with a big animation"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -44,10 +43,4 @@ class SetMessageReaction(TelegramMethod[bool]):
             # This method was auto-generated via `butcher`
             # Is needed only for type checking and IDE support without any additional plugins
 
-            super().__init__(
-                chat_id=chat_id,
-                message_id=message_id,
-                reaction=reaction,
-                is_big=is_big,
-                **__pydantic_kwargs,
-            )
+            super().__init__(chat_id=chat_id, message_id=message_id, reaction=reaction, is_big=is_big, **__pydantic_kwargs)

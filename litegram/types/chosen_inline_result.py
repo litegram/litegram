@@ -14,22 +14,20 @@ if TYPE_CHECKING:
 class ChosenInlineResult(TelegramObject):
     """
     Represents a `result <https://core.telegram.org/bots/api#inlinequeryresult>`_ of an inline query that was chosen by the user and sent to their chat partner.
-    **Note:** It is necessary to enable `inline feedback <https://core.telegram.org/bots/inline#collecting-feedback>`_ via `@BotFather <https://t.me/botfather>`_ in order to receive these objects in updates.
 
     Source: https://core.telegram.org/bots/api#choseninlineresult
     """
 
     result_id: str
     """The unique identifier for the result that was chosen"""
-    from_user: User = Field(..., alias="from")
-    """The user that chose the result"""
     query: str
     """The query that was used to obtain the result"""
     location: Location | None = None
     """*Optional*. Sender location, only for bots that require user location"""
     inline_message_id: str | None = None
     """*Optional*. Identifier of the sent inline message. Available only if there is an `inline keyboard <https://core.telegram.org/bots/api#inlinekeyboardmarkup>`_ attached to the message. Will be also received in `callback queries <https://core.telegram.org/bots/api#callbackquery>`_ and can be used to `edit <https://core.telegram.org/bots/api#updating-messages>`_ the message."""
-
+    from_user: User = Field(..., alias="from")
+    """The user that chose the result"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -38,8 +36,8 @@ class ChosenInlineResult(TelegramObject):
             __pydantic__self__,
             *,
             result_id: str,
-            from_user: User,
             query: str,
+            from_user: User,
             location: Location | None = None,
             inline_message_id: str | None = None,
             **__pydantic_kwargs: Any,
@@ -50,8 +48,8 @@ class ChosenInlineResult(TelegramObject):
 
             super().__init__(
                 result_id=result_id,
-                from_user=from_user,
                 query=query,
+                from_user=from_user,
                 location=location,
                 inline_message_id=inline_message_id,
                 **__pydantic_kwargs,

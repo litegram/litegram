@@ -1,0 +1,11 @@
+name: ChatShareThemeType
+description: 'This object represents the type of a chatsharetheme object.
+
+
+  Source: https://core.telegram.org/bots/api#chatsharetheme'
+multi_parse:
+  attribute: type
+  regexp: always '([a-z_]+)'
+  entities:
+  - ChatShareThemeEmoji
+  - ChatShareThemeUniqueGift

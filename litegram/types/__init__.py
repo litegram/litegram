@@ -4,6 +4,7 @@ from typing import Literal, Optional, Union
 from .accepted_gift_types import AcceptedGiftTypes
 from .affiliate_info import AffiliateInfo
 from .animation import Animation
+from .area_position import AreaPosition
 from .audio import Audio
 from .background_fill import BackgroundFill
 from .background_fill_freeform_gradient import BackgroundFillFreeformGradient
@@ -18,6 +19,7 @@ from .background_type_union import BackgroundTypeUnion
 from .background_type_wallpaper import BackgroundTypeWallpaper
 from .base import UNSET_PARSE_MODE, TelegramObject
 from .birthdate import Birthdate
+from .bot_access_settings import BotAccessSettings
 from .bot_command import BotCommand
 from .bot_command_scope import BotCommandScope
 from .bot_command_scope_all_chat_administrators import (
@@ -33,6 +35,7 @@ from .bot_command_scope_union import BotCommandScopeUnion
 from .bot_description import BotDescription
 from .bot_name import BotName
 from .bot_short_description import BotShortDescription
+from .bot_subscription_updated import BotSubscriptionUpdated
 from .business_bot_rights import BusinessBotRights
 from .business_connection import BusinessConnection
 from .business_intro import BusinessIntro
@@ -68,14 +71,26 @@ from .chat_member_owner import ChatMemberOwner
 from .chat_member_restricted import ChatMemberRestricted
 from .chat_member_union import ChatMemberUnion
 from .chat_member_updated import ChatMemberUpdated
+from .chat_owner_changed import ChatOwnerChanged
+from .chat_owner_left import ChatOwnerLeft
 from .chat_permissions import ChatPermissions
 from .chat_photo import ChatPhoto
+from .chat_share_theme import ChatShareTheme
+from .chat_share_theme_backdrop import ChatShareThemeBackdrop
+from .chat_share_theme_backdrops import ChatShareThemeBackdrops
+from .chat_share_theme_emoji import ChatShareThemeEmoji
+from .chat_share_theme_union import ChatShareThemeUnion
+from .chat_share_theme_unique_gift import ChatShareThemeUniqueGift
 from .chat_shared import ChatShared
 from .checklist import Checklist
 from .checklist_task import ChecklistTask
 from .checklist_tasks_added import ChecklistTasksAdded
 from .checklist_tasks_done import ChecklistTasksDone
 from .chosen_inline_result import ChosenInlineResult
+from .community import Community
+from .community_chat_added import CommunityChatAdded
+from .community_chat_joined import CommunityChatJoined
+from .community_chat_removed import CommunityChatRemoved
 from .contact import Contact
 from .copy_text_button import CopyTextButton
 from .custom import DateTime
@@ -83,10 +98,16 @@ from .date_time_union import DateTimeUnion
 from .dice import Dice
 from .direct_message_price_changed import DirectMessagePriceChanged
 from .direct_messages_topic import DirectMessagesTopic
+from .disabled_button import DisabledButton
 from .document import Document
 from .downloadable import Downloadable
+from .emoji_type import EmojiType
+from .emoji_type_custom_emoji import EmojiTypeCustomEmoji
+from .emoji_type_emoji import EmojiTypeEmoji
+from .emoji_type_union import EmojiTypeUnion
 from .encrypted_credentials import EncryptedCredentials
 from .encrypted_passport_element import EncryptedPassportElement
+from .ephemeral_message_parameters import EphemeralMessageParameters
 from .error_event import ErrorEvent
 from .external_reply_info import ExternalReplyInfo
 from .file import File
@@ -146,21 +167,62 @@ from .input_media import InputMedia
 from .input_media_animation import InputMediaAnimation
 from .input_media_audio import InputMediaAudio
 from .input_media_document import InputMediaDocument
+from .input_media_link import InputMediaLink
+from .input_media_live_photo import InputMediaLivePhoto
+from .input_media_location import InputMediaLocation
 from .input_media_photo import InputMediaPhoto
+from .input_media_sticker import InputMediaSticker
 from .input_media_union import InputMediaUnion
+from .input_media_venue import InputMediaVenue
 from .input_media_video import InputMediaVideo
+from .input_media_voice_note import InputMediaVoiceNote
 from .input_message_content import InputMessageContent
 from .input_message_content_union import InputMessageContentUnion
 from .input_paid_media import InputPaidMedia
+from .input_paid_media_live_photo import InputPaidMediaLivePhoto
 from .input_paid_media_photo import InputPaidMediaPhoto
 from .input_paid_media_union import InputPaidMediaUnion
 from .input_paid_media_video import InputPaidMediaVideo
+from .input_poll_media import InputPollMedia
 from .input_poll_option import InputPollOption
+from .input_poll_option_media import InputPollOptionMedia
 from .input_poll_option_union import InputPollOptionUnion
 from .input_profile_photo import InputProfilePhoto
 from .input_profile_photo_animated import InputProfilePhotoAnimated
 from .input_profile_photo_static import InputProfilePhotoStatic
 from .input_profile_photo_union import InputProfilePhotoUnion
+from .input_rich_block import InputRichBlock
+from .input_rich_block_anchor import InputRichBlockAnchor
+from .input_rich_block_animation import InputRichBlockAnimation
+from .input_rich_block_audio import InputRichBlockAudio
+from .input_rich_block_block_quotation import InputRichBlockBlockQuotation
+from .input_rich_block_buttons import InputRichBlockButtons
+from .input_rich_block_collage import InputRichBlockCollage
+from .input_rich_block_details import InputRichBlockDetails
+from .input_rich_block_divider import InputRichBlockDivider
+from .input_rich_block_document import InputRichBlockDocument
+from .input_rich_block_expandable_block_quotation import InputRichBlockExpandableBlockQuotation
+from .input_rich_block_footer import InputRichBlockFooter
+from .input_rich_block_list import InputRichBlockList
+from .input_rich_block_list_item import InputRichBlockListItem
+from .input_rich_block_map import InputRichBlockMap
+from .input_rich_block_mathematical_expression import InputRichBlockMathematicalExpression
+from .input_rich_block_paragraph import InputRichBlockParagraph
+from .input_rich_block_photo import InputRichBlockPhoto
+from .input_rich_block_preformatted import InputRichBlockPreformatted
+from .input_rich_block_pull_quotation import InputRichBlockPullQuotation
+from .input_rich_block_section_heading import InputRichBlockSectionHeading
+from .input_rich_block_slideshow import InputRichBlockSlideshow
+from .input_rich_block_table import InputRichBlockTable
+from .input_rich_block_thinking import InputRichBlockThinking
+from .input_rich_block_union import InputRichBlockUnion
+from .input_rich_block_video import InputRichBlockVideo
+from .input_rich_block_voice_note import InputRichBlockVoiceNote
+from .input_rich_message import InputRichMessage
+from .input_rich_message_content import InputRichMessageContent
+from .input_rich_message_media import InputRichMessageMedia
+from .input_rich_message_media_union import InputRichMessageMediaUnion
+from .input_shared_widget_message_content import InputSharedWidgetMessageContent
 from .input_sticker import InputSticker
 from .input_story_content import InputStoryContent
 from .input_story_content_photo import InputStoryContentPhoto
@@ -168,17 +230,23 @@ from .input_story_content_union import InputStoryContentUnion
 from .input_story_content_video import InputStoryContentVideo
 from .input_text_message_content import InputTextMessageContent
 from .input_venue_message_content import InputVenueMessageContent
+from .input_widget_message_content import InputWidgetMessageContent
 from .invoice import Invoice
 from .keyboard_button import KeyboardButton
 from .keyboard_button_poll_type import KeyboardButtonPollType
 from .keyboard_button_request_chat import KeyboardButtonRequestChat
+from .keyboard_button_request_managed_bot import KeyboardButtonRequestManagedBot
 from .keyboard_button_request_user import KeyboardButtonRequestUser
 from .keyboard_button_request_users import KeyboardButtonRequestUsers
 from .labeled_price import LabeledPrice
+from .link import Link
 from .link_preview_options import LinkPreviewOptions
+from .live_photo import LivePhoto
 from .location import Location
 from .location_address import LocationAddress
 from .login_url import LoginUrl
+from .managed_bot_created import ManagedBotCreated
+from .managed_bot_updated import ManagedBotUpdated
 from .mask_position import MaskPosition
 from .maybe_inaccessible_message import MaybeInaccessibleMessage
 from .maybe_inaccessible_message_union import MaybeInaccessibleMessageUnion
@@ -191,6 +259,7 @@ from .menu_button_web_app import MenuButtonWebApp
 from .message import ContentType, Message
 from .message_auto_delete_timer_changed import MessageAutoDeleteTimerChanged
 from .message_entity import MessageEntity
+from .message_generation_stopped import MessageGenerationStopped
 from .message_id import MessageId
 from .message_origin import MessageOrigin
 from .message_origin_channel import MessageOriginChannel
@@ -208,12 +277,14 @@ from .owned_gift_unique import OwnedGiftUnique
 from .owned_gifts import OwnedGifts
 from .paid_media import PaidMedia
 from .paid_media_info import PaidMediaInfo
+from .paid_media_live_photo import PaidMediaLivePhoto
 from .paid_media_photo import PaidMediaPhoto
 from .paid_media_preview import PaidMediaPreview
 from .paid_media_purchased import PaidMediaPurchased
 from .paid_media_union import PaidMediaUnion
 from .paid_media_video import PaidMediaVideo
 from .paid_message_price_changed import PaidMessagePriceChanged
+from .paid_messages_waived import PaidMessagesWaived
 from .passport_data import PassportData
 from .passport_element_error import PassportElementError
 from .passport_element_error_data_field import PassportElementErrorDataField
@@ -232,9 +303,13 @@ from .passport_file import PassportFile
 from .photo_size import PhotoSize
 from .poll import Poll
 from .poll_answer import PollAnswer
+from .poll_media import PollMedia
 from .poll_option import PollOption
+from .poll_option_added import PollOptionAdded
+from .poll_option_deleted import PollOptionDeleted
 from .pre_checkout_query import PreCheckoutQuery
 from .prepared_inline_message import PreparedInlineMessage
+from .prepared_keyboard_button import PreparedKeyboardButton
 from .proximity_alert_triggered import ProximityAlertTriggered
 from .reaction_count import ReactionCount
 from .reaction_type import ReactionType
@@ -255,8 +330,70 @@ from .revenue_withdrawal_state_failed import RevenueWithdrawalStateFailed
 from .revenue_withdrawal_state_pending import RevenueWithdrawalStatePending
 from .revenue_withdrawal_state_succeeded import RevenueWithdrawalStateSucceeded
 from .revenue_withdrawal_state_union import RevenueWithdrawalStateUnion
+from .rich_block import RichBlock
+from .rich_block_anchor import RichBlockAnchor
+from .rich_block_animation import RichBlockAnimation
+from .rich_block_audio import RichBlockAudio
+from .rich_block_block_quotation import RichBlockBlockQuotation
+from .rich_block_buttons import RichBlockButtons
+from .rich_block_caption import RichBlockCaption
+from .rich_block_collage import RichBlockCollage
+from .rich_block_details import RichBlockDetails
+from .rich_block_divider import RichBlockDivider
+from .rich_block_document import RichBlockDocument
+from .rich_block_expandable_block_quotation import RichBlockExpandableBlockQuotation
+from .rich_block_footer import RichBlockFooter
+from .rich_block_list import RichBlockList
+from .rich_block_list_item import RichBlockListItem
+from .rich_block_map import RichBlockMap
+from .rich_block_mathematical_expression import RichBlockMathematicalExpression
+from .rich_block_paragraph import RichBlockParagraph
+from .rich_block_photo import RichBlockPhoto
+from .rich_block_preformatted import RichBlockPreformatted
+from .rich_block_pull_quotation import RichBlockPullQuotation
+from .rich_block_section_heading import RichBlockSectionHeading
+from .rich_block_slideshow import RichBlockSlideshow
+from .rich_block_table import RichBlockTable
+from .rich_block_table_cell import RichBlockTableCell
+from .rich_block_thinking import RichBlockThinking
+from .rich_block_union import RichBlockUnion
+from .rich_block_video import RichBlockVideo
+from .rich_block_voice_note import RichBlockVoiceNote
+from .rich_message import RichMessage
+from .rich_message_button import RichMessageButton
+from .rich_text import RichText
+from .rich_text_anchor import RichTextAnchor
+from .rich_text_anchor_link import RichTextAnchorLink
+from .rich_text_bank_card_number import RichTextBankCardNumber
+from .rich_text_bold import RichTextBold
+from .rich_text_bot_command import RichTextBotCommand
+from .rich_text_button import RichTextButton
+from .rich_text_cashtag import RichTextCashtag
+from .rich_text_code import RichTextCode
+from .rich_text_custom_emoji import RichTextCustomEmoji
+from .rich_text_date_time import RichTextDateTime
+from .rich_text_email_address import RichTextEmailAddress
+from .rich_text_hashtag import RichTextHashtag
+from .rich_text_italic import RichTextItalic
+from .rich_text_marked import RichTextMarked
+from .rich_text_mathematical_expression import RichTextMathematicalExpression
+from .rich_text_mention import RichTextMention
+from .rich_text_phone_number import RichTextPhoneNumber
+from .rich_text_reference import RichTextReference
+from .rich_text_reference_link import RichTextReferenceLink
+from .rich_text_spoiler import RichTextSpoiler
+from .rich_text_strikethrough import RichTextStrikethrough
+from .rich_text_subscript import RichTextSubscript
+from .rich_text_superscript import RichTextSuperscript
+from .rich_text_text_mention import RichTextTextMention
+from .rich_text_ton_address import RichTextTonAddress
+from .rich_text_underline import RichTextUnderline
+from .rich_text_union import RichTextUnion
+from .rich_text_url import RichTextUrl
+from .sent_guest_message import SentGuestMessage
 from .sent_web_app_message import SentWebAppMessage
 from .shared_user import SharedUser
+from .shared_widget_query import SharedWidgetQuery
 from .shipping_address import ShippingAddress
 from .shipping_option import ShippingOption
 from .shipping_query import ShippingQuery
@@ -286,6 +423,11 @@ from .suggested_post_price import SuggestedPostPrice
 from .suggested_post_refunded import SuggestedPostRefunded
 from .switch_inline_query_chosen_chat import SwitchInlineQueryChosenChat
 from .text_quote import TextQuote
+from .ton_nft import TonNft
+from .ton_nft_attribute import TonNftAttribute
+from .ton_wallet_card import TonWalletCard
+from .ton_wallet_card_sticker import TonWalletCardSticker
+from .ton_wallet_transfer import TonWalletTransfer
 from .transaction_partner import TransactionPartner
 from .transaction_partner_affiliate_program import TransactionPartnerAffiliateProgram
 from .transaction_partner_chat import TransactionPartnerChat
@@ -305,6 +447,7 @@ from .unique_gift_symbol import UniqueGiftSymbol
 from .update import Update
 from .user import User
 from .user_chat_boosts import UserChatBoosts
+from .user_profile_audios import UserProfileAudios
 from .user_profile_photos import UserProfilePhotos
 from .user_rating import UserRating
 from .user_shared import UserShared
@@ -316,16 +459,26 @@ from .video_chat_participants_invited import VideoChatParticipantsInvited
 from .video_chat_scheduled import VideoChatScheduled
 from .video_chat_started import VideoChatStarted
 from .video_note import VideoNote
+from .video_quality import VideoQuality
 from .voice import Voice
 from .web_app_data import WebAppData
 from .web_app_info import WebAppInfo
 from .webhook_info import WebhookInfo
+from .widget import Widget
+from .widget_query import WidgetQuery
+from .widget_query_type import WidgetQueryType
+from .widget_query_type_data import WidgetQueryTypeData
+from .widget_query_type_sent_transaction import WidgetQueryTypeSentTransaction
+from .widget_query_type_sign_data import WidgetQueryTypeSignData
+from .widget_query_type_union import WidgetQueryTypeUnion
+from .widget_query_wallet import WidgetQueryWallet
 from .write_access_allowed import WriteAccessAllowed
 
 __all__ = (
     "AcceptedGiftTypes",
     "AffiliateInfo",
     "Animation",
+    "AreaPosition",
     "Audio",
     "BackgroundFill",
     "BackgroundFillFreeformGradient",
@@ -339,6 +492,7 @@ __all__ = (
     "BackgroundTypeUnion",
     "BackgroundTypeWallpaper",
     "Birthdate",
+    "BotAccessSettings",
     "BotCommand",
     "BotCommandScope",
     "BotCommandScopeAllChatAdministrators",
@@ -352,6 +506,7 @@ __all__ = (
     "BotDescription",
     "BotName",
     "BotShortDescription",
+    "BotSubscriptionUpdated",
     "BufferedInputFile",
     "BusinessBotRights",
     "BusinessConnection",
@@ -388,14 +543,26 @@ __all__ = (
     "ChatMemberRestricted",
     "ChatMemberUnion",
     "ChatMemberUpdated",
+    "ChatOwnerChanged",
+    "ChatOwnerLeft",
     "ChatPermissions",
     "ChatPhoto",
+    "ChatShareTheme",
+    "ChatShareThemeBackdrop",
+    "ChatShareThemeBackdrops",
+    "ChatShareThemeEmoji",
+    "ChatShareThemeUnion",
+    "ChatShareThemeUniqueGift",
     "ChatShared",
     "Checklist",
     "ChecklistTask",
     "ChecklistTasksAdded",
     "ChecklistTasksDone",
     "ChosenInlineResult",
+    "Community",
+    "CommunityChatAdded",
+    "CommunityChatJoined",
+    "CommunityChatRemoved",
     "Contact",
     "ContentType",
     "CopyTextButton",
@@ -404,10 +571,16 @@ __all__ = (
     "Dice",
     "DirectMessagePriceChanged",
     "DirectMessagesTopic",
+    "DisabledButton",
     "Document",
     "Downloadable",
+    "EmojiType",
+    "EmojiTypeCustomEmoji",
+    "EmojiTypeEmoji",
+    "EmojiTypeUnion",
     "EncryptedCredentials",
     "EncryptedPassportElement",
+    "EphemeralMessageParameters",
     "ErrorEvent",
     "ExternalReplyInfo",
     "FSInputFile",
@@ -468,21 +641,62 @@ __all__ = (
     "InputMediaAnimation",
     "InputMediaAudio",
     "InputMediaDocument",
+    "InputMediaLink",
+    "InputMediaLivePhoto",
+    "InputMediaLocation",
     "InputMediaPhoto",
+    "InputMediaSticker",
     "InputMediaUnion",
+    "InputMediaVenue",
     "InputMediaVideo",
+    "InputMediaVoiceNote",
     "InputMessageContent",
     "InputMessageContentUnion",
     "InputPaidMedia",
+    "InputPaidMediaLivePhoto",
     "InputPaidMediaPhoto",
     "InputPaidMediaUnion",
     "InputPaidMediaVideo",
+    "InputPollMedia",
     "InputPollOption",
+    "InputPollOptionMedia",
     "InputPollOptionUnion",
     "InputProfilePhoto",
     "InputProfilePhotoAnimated",
     "InputProfilePhotoStatic",
     "InputProfilePhotoUnion",
+    "InputRichBlock",
+    "InputRichBlockAnchor",
+    "InputRichBlockAnimation",
+    "InputRichBlockAudio",
+    "InputRichBlockBlockQuotation",
+    "InputRichBlockButtons",
+    "InputRichBlockCollage",
+    "InputRichBlockDetails",
+    "InputRichBlockDivider",
+    "InputRichBlockDocument",
+    "InputRichBlockExpandableBlockQuotation",
+    "InputRichBlockFooter",
+    "InputRichBlockList",
+    "InputRichBlockListItem",
+    "InputRichBlockMap",
+    "InputRichBlockMathematicalExpression",
+    "InputRichBlockParagraph",
+    "InputRichBlockPhoto",
+    "InputRichBlockPreformatted",
+    "InputRichBlockPullQuotation",
+    "InputRichBlockSectionHeading",
+    "InputRichBlockSlideshow",
+    "InputRichBlockTable",
+    "InputRichBlockThinking",
+    "InputRichBlockUnion",
+    "InputRichBlockVideo",
+    "InputRichBlockVoiceNote",
+    "InputRichMessage",
+    "InputRichMessageContent",
+    "InputRichMessageMedia",
+    "InputRichMessageMediaUnion",
+    "InputSharedWidgetMessageContent",
     "InputSticker",
     "InputStoryContent",
     "InputStoryContentPhoto",
@@ -490,17 +704,23 @@ __all__ = (
     "InputStoryContentVideo",
     "InputTextMessageContent",
     "InputVenueMessageContent",
+    "InputWidgetMessageContent",
     "Invoice",
     "KeyboardButton",
     "KeyboardButtonPollType",
     "KeyboardButtonRequestChat",
+    "KeyboardButtonRequestManagedBot",
     "KeyboardButtonRequestUser",
     "KeyboardButtonRequestUsers",
     "LabeledPrice",
+    "Link",
     "LinkPreviewOptions",
+    "LivePhoto",
     "Location",
     "LocationAddress",
     "LoginUrl",
+    "ManagedBotCreated",
+    "ManagedBotUpdated",
     "MaskPosition",
     "MaybeInaccessibleMessage",
     "MaybeInaccessibleMessageUnion",
@@ -513,6 +733,7 @@ __all__ = (
     "Message",
     "MessageAutoDeleteTimerChanged",
     "MessageEntity",
+    "MessageGenerationStopped",
     "MessageId",
     "MessageOrigin",
     "MessageOriginChannel",
@@ -530,12 +751,14 @@ __all__ = (
     "OwnedGifts",
     "PaidMedia",
     "PaidMediaInfo",
+    "PaidMediaLivePhoto",
     "PaidMediaPhoto",
     "PaidMediaPreview",
     "PaidMediaPurchased",
     "PaidMediaUnion",
     "PaidMediaVideo",
     "PaidMessagePriceChanged",
+    "PaidMessagesWaived",
     "PassportData",
     "PassportElementError",
     "PassportElementErrorDataField",
@@ -552,9 +775,13 @@ __all__ = (
     "PhotoSize",
     "Poll",
     "PollAnswer",
+    "PollMedia",
     "PollOption",
+    "PollOptionAdded",
+    "PollOptionDeleted",
     "PreCheckoutQuery",
     "PreparedInlineMessage",
+    "PreparedKeyboardButton",
     "ProximityAlertTriggered",
     "ReactionCount",
     "ReactionType",
@@ -575,8 +802,70 @@ __all__ = (
     "RevenueWithdrawalStatePending",
     "RevenueWithdrawalStateSucceeded",
     "RevenueWithdrawalStateUnion",
+    "RichBlock",
+    "RichBlockAnchor",
+    "RichBlockAnimation",
+    "RichBlockAudio",
+    "RichBlockBlockQuotation",
+    "RichBlockButtons",
+    "RichBlockCaption",
+    "RichBlockCollage",
+    "RichBlockDetails",
+    "RichBlockDivider",
+    "RichBlockDocument",
+    "RichBlockExpandableBlockQuotation",
+    "RichBlockFooter",
+    "RichBlockList",
+    "RichBlockListItem",
+    "RichBlockMap",
+    "RichBlockMathematicalExpression",
+    "RichBlockParagraph",
+    "RichBlockPhoto",
+    "RichBlockPreformatted",
+    "RichBlockPullQuotation",
+    "RichBlockSectionHeading",
+    "RichBlockSlideshow",
+    "RichBlockTable",
+    "RichBlockTableCell",
+    "RichBlockThinking",
+    "RichBlockUnion",
+    "RichBlockVideo",
+    "RichBlockVoiceNote",
+    "RichMessage",
+    "RichMessageButton",
+    "RichText",
+    "RichTextAnchor",
+    "RichTextAnchorLink",
+    "RichTextBankCardNumber",
+    "RichTextBold",
+    "RichTextBotCommand",
+    "RichTextButton",
+    "RichTextCashtag",
+    "RichTextCode",
+    "RichTextCustomEmoji",
+    "RichTextDateTime",
+    "RichTextEmailAddress",
+    "RichTextHashtag",
+    "RichTextItalic",
+    "RichTextMarked",
+    "RichTextMathematicalExpression",
+    "RichTextMention",
+    "RichTextPhoneNumber",
+    "RichTextReference",
+    "RichTextReferenceLink",
+    "RichTextSpoiler",
+    "RichTextStrikethrough",
+    "RichTextSubscript",
+    "RichTextSuperscript",
+    "RichTextTextMention",
+    "RichTextTonAddress",
+    "RichTextUnderline",
+    "RichTextUnion",
+    "RichTextUrl",
+    "SentGuestMessage",
     "SentWebAppMessage",
     "SharedUser",
+    "SharedWidgetQuery",
     "ShippingAddress",
     "ShippingOption",
     "ShippingQuery",
@@ -607,6 +896,11 @@ __all__ = (
     "SwitchInlineQueryChosenChat",
     "TelegramObject",
     "TextQuote",
+    "TonNft",
+    "TonNftAttribute",
+    "TonWalletCard",
+    "TonWalletCardSticker",
+    "TonWalletTransfer",
     "TransactionPartner",
     "TransactionPartnerAffiliateProgram",
     "TransactionPartnerChat",
@@ -628,6 +922,7 @@ __all__ = (
     "Update",
     "User",
     "UserChatBoosts",
+    "UserProfileAudios",
     "UserProfilePhotos",
     "UserRating",
     "UserShared",
@@ -639,10 +934,19 @@ __all__ = (
     "VideoChatScheduled",
     "VideoChatStarted",
     "VideoNote",
+    "VideoQuality",
     "Voice",
     "WebAppData",
     "WebAppInfo",
     "WebhookInfo",
+    "Widget",
+    "WidgetQuery",
+    "WidgetQueryType",
+    "WidgetQueryTypeData",
+    "WidgetQueryTypeSentTransaction",
+    "WidgetQueryTypeSignData",
+    "WidgetQueryTypeUnion",
+    "WidgetQueryWallet",
     "WriteAccessAllowed",
 )
 

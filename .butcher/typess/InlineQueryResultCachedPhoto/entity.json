@@ -1,0 +1,105 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Inline mode",
+    "anchor": "inline-mode"
+  },
+  "object": {
+    "anchor": "inlinequeryresultcachedphoto",
+    "name": "InlineQueryResultCachedPhoto",
+    "description": "Represents a link to a photo stored on the Telegram servers. By default, this photo will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the photo.",
+    "html_description": "<p>Represents a link to a photo stored on the Telegram servers. By default, this photo will be sent by the user with an optional caption. Alternatively, you can use <em>input_message_content</em> to send a message with the specified content instead of the photo.</p>",
+    "rst_description": "Represents a link to a photo stored on the Telegram servers. By default, this photo will be sent by the user with an optional caption. Alternatively, you can use *input_message_content* to send a message with the specified content instead of the photo.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the result, must be photo",
+        "html_description": "<td>Type of the result, must be <em>photo</em></td>",
+        "rst_description": "Type of the result, must be *photo*\n"
+      },
+      {
+        "name": "id",
+        "type": "String",
+        "required": true,
+        "description": "Unique identifier for this result, 1-64 bytes",
+        "html_description": "<td>Unique identifier for this result, 1-64 bytes</td>",
+        "rst_description": "Unique identifier for this result, 1-64 bytes\n"
+      },
+      {
+        "name": "photo_file_id",
+        "type": "String",
+        "required": true,
+        "description": "A valid file identifier of the photo",
+        "html_description": "<td>A valid file identifier of the photo</td>",
+        "rst_description": "A valid file identifier of the photo\n"
+      },
+      {
+        "name": "title",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Title for the result",
+        "html_description": "<td><em>Optional</em>. Title for the result</td>",
+        "rst_description": "*Optional*. Title for the result\n"
+      },
+      {
+        "name": "description",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Short description of the result",
+        "html_description": "<td><em>Optional</em>. Short description of the result</td>",
+        "rst_description": "*Optional*. Short description of the result\n"
+      },
+      {
+        "name": "caption",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Caption of the photo to be sent, 0-1024 characters after entities parsing",
+        "html_description": "<td><em>Optional</em>. Caption of the photo to be sent, 0-1024 characters after entities parsing</td>",
+        "rst_description": "*Optional*. Caption of the photo to be sent, 0-1024 characters after entities parsing\n"
+      },
+      {
+        "name": "parse_mode",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Mode for parsing entities in the photo caption. See formatting options for more details.",
+        "html_description": "<td><em>Optional</em>. Mode for parsing entities in the photo caption. See <a href=\"#formatting-options\">formatting options</a> for more details.</td>",
+        "rst_description": "*Optional*. Mode for parsing entities in the photo caption. See `formatting options <https://core.telegram.org/bots/api#formatting-options>`_ for more details.\n"
+      },
+      {
+        "name": "caption_entities",
+        "type": "Array of MessageEntity",
+        "required": false,
+        "description": "Optional. List of special entities that appear in the caption, which can be specified instead of parse_mode",
+        "html_description": "<td><em>Optional</em>. List of special entities that appear in the caption, which can be specified instead of <em>parse_mode</em></td>",
+        "rst_description": "*Optional*. List of special entities that appear in the caption, which can be specified instead of *parse_mode*\n"
+      },
+      {
+        "name": "show_caption_above_media",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. Pass True if the caption must be shown above the message media",
+        "html_description": "<td><em>Optional</em>. Pass <em>True</em> if the caption must be shown above the message media</td>",
+        "rst_description": "*Optional*. Pass :code:`True` if the caption must be shown above the message media\n"
+      },
+      {
+        "name": "reply_markup",
+        "type": "InlineKeyboardMarkup",
+        "required": false,
+        "description": "Optional. Inline keyboard attached to the message",
+        "html_description": "<td><em>Optional</em>. <a href=\"/bots/features#inline-keyboards\">Inline keyboard</a> attached to the message</td>",
+        "rst_description": "*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_ attached to the message\n"
+      },
+      {
+        "name": "input_message_content",
+        "type": "InputMessageContent",
+        "required": false,
+        "description": "Optional. Content of the message to be sent instead of the photo",
+        "html_description": "<td><em>Optional</em>. Content of the message to be sent instead of the photo</td>",
+        "rst_description": "*Optional*. Content of the message to be sent instead of the photo\n"
+      }
+    ],
+    "category": "types"
+  }
+}

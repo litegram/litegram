@@ -34,12 +34,11 @@ class InlineQueryResultCachedMpeg4Gif(InlineQueryResult):
     caption_entities: list[MessageEntity] | None = None
     """*Optional*. List of special entities that appear in the caption, which can be specified instead of *parse_mode*"""
     show_caption_above_media: bool | Default | None = Default("show_caption_above_media")
-    """*Optional*. Pass :code:`True`, if the caption must be shown above the message media"""
+    """*Optional*. Pass :code:`True` if the caption must be shown above the message media"""
     reply_markup: InlineKeyboardMarkup | None = None
     """*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_ attached to the message"""
     input_message_content: InputMessageContentUnion | None = None
     """*Optional*. Content of the message to be sent instead of the video animation"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -47,9 +46,9 @@ class InlineQueryResultCachedMpeg4Gif(InlineQueryResult):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InlineQueryResultType.MPEG4_GIF] = InlineQueryResultType.MPEG4_GIF,
             id: str,
             mpeg4_file_id: str,
+            type: Literal[InlineQueryResultType.MPEG4_GIF] = InlineQueryResultType.MPEG4_GIF,
             title: str | None = None,
             caption: str | None = None,
             parse_mode: str | Default | None = Default("parse_mode"),
@@ -64,9 +63,9 @@ class InlineQueryResultCachedMpeg4Gif(InlineQueryResult):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                type=type,
                 id=id,
                 mpeg4_file_id=mpeg4_file_id,
+                type=type,
                 title=title,
                 caption=caption,
                 parse_mode=parse_mode,

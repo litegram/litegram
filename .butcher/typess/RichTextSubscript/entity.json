@@ -1,0 +1,33 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Rich messages",
+    "anchor": "rich-messages"
+  },
+  "object": {
+    "anchor": "richtextsubscript",
+    "name": "RichTextSubscript",
+    "description": "A subscript text.",
+    "html_description": "<p>A subscript text.</p>",
+    "rst_description": "A subscript text.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the rich text, always 'subscript'",
+        "html_description": "<td>Type of the rich text, always “subscript”</td>",
+        "rst_description": "Type of the rich text, always 'subscript'\n"
+      },
+      {
+        "name": "text",
+        "type": "RichText",
+        "required": true,
+        "description": "The text",
+        "html_description": "<td>The text</td>",
+        "rst_description": "The text\n"
+      }
+    ],
+    "category": "types"
+  }
+}

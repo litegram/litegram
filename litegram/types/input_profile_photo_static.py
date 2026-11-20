@@ -20,8 +20,7 @@ class InputProfilePhotoStatic(InputProfilePhoto):
     type: Literal[InputProfilePhotoType.STATIC] = InputProfilePhotoType.STATIC
     """Type of the profile photo, must be *static*"""
     photo: InputFileUnion
-    """The static profile photo. Profile photos can't be reused and can only be uploaded as a new file, so you can pass 'attach://<file_attach_name>' if the photo was uploaded using multipart/form-data under <file_attach_name>. :ref:`More information on Sending Files » <sending-files>`"""
-
+    """The static profile photo. Profile photos can't be reused and can only be uploaded as a new file, so you can pass 'attach://' if the photo was uploaded using multipart/form-data under . :ref:`More information on Sending Files » <sending-files>`"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -29,8 +28,8 @@ class InputProfilePhotoStatic(InputProfilePhoto):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InputProfilePhotoType.STATIC] = InputProfilePhotoType.STATIC,
             photo: InputFileUnion,
+            type: Literal[InputProfilePhotoType.STATIC] = InputProfilePhotoType.STATIC,
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!

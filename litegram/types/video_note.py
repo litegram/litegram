@@ -10,7 +10,7 @@ if TYPE_CHECKING:
 
 class VideoNote(TelegramObject):
     """
-    This object represents a `video message <https://telegram.org/blog/video-messages-and-telescope>`_ (available in Telegram apps as of `v.4.0 <https://telegram.org/blog/video-messages-and-telescope>`_).
+    This object represents a `video message <https://telegram.org/blog/video-messages-and-telescope>`_.
 
     Source: https://core.telegram.org/bots/api#videonote
     """
@@ -27,7 +27,6 @@ class VideoNote(TelegramObject):
     """*Optional*. Video thumbnail"""
     file_size: int | None = None
     """*Optional*. File size in bytes"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

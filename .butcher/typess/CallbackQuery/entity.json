@@ -1,0 +1,73 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "callbackquery",
+    "name": "CallbackQuery",
+    "description": "This object represents an incoming callback query from a callback button in an inline keyboard. If the button that originated the query was attached to a message sent by the bot, the field message will be present. If the button was attached to a message sent via the bot (in inline mode), the field inline_message_id will be present. Exactly one of the fields data or game_short_name will be present.",
+    "html_description": "<p>This object represents an incoming callback query from a callback button in an <a href=\"/bots/features#inline-keyboards\">inline keyboard</a>. If the button that originated the query was attached to a message sent by the bot, the field <em>message</em> will be present. If the button was attached to a message sent via the bot (in <a href=\"#inline-mode\">inline mode</a>), the field <em>inline_message_id</em> will be present. Exactly one of the fields <em>data</em> or <em>game_short_name</em> will be present.</p>",
+    "rst_description": "This object represents an incoming callback query from a callback button in an `inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_. If the button that originated the query was attached to a message sent by the bot, the field *message* will be present. If the button was attached to a message sent via the bot (in `inline mode <https://core.telegram.org/bots/api#inline-mode>`_), the field *inline_message_id* will be present. Exactly one of the fields *data* or *game_short_name* will be present.",
+    "annotations": [
+      {
+        "name": "id",
+        "type": "String",
+        "required": true,
+        "description": "Unique identifier for this query",
+        "html_description": "<td>Unique identifier for this query</td>",
+        "rst_description": "Unique identifier for this query\n"
+      },
+      {
+        "name": "from",
+        "type": "User",
+        "required": true,
+        "description": "Sender",
+        "html_description": "<td>Sender</td>",
+        "rst_description": "Sender\n"
+      },
+      {
+        "name": "message",
+        "type": "MaybeInaccessibleMessage",
+        "required": false,
+        "description": "Optional. Message sent by the bot with the callback button that originated the query",
+        "html_description": "<td><em>Optional</em>. Message sent by the bot with the callback button that originated the query</td>",
+        "rst_description": "*Optional*. Message sent by the bot with the callback button that originated the query\n"
+      },
+      {
+        "name": "inline_message_id",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Identifier of the message sent via the bot in inline mode, that originated the query",
+        "html_description": "<td><em>Optional</em>. Identifier of the message sent via the bot in inline mode, that originated the query</td>",
+        "rst_description": "*Optional*. Identifier of the message sent via the bot in inline mode, that originated the query\n"
+      },
+      {
+        "name": "chat_instance",
+        "type": "String",
+        "required": true,
+        "description": "Global identifier, uniquely corresponding to the chat to which the message with the callback button was sent. Useful for high scores in games.",
+        "html_description": "<td>Global identifier, uniquely corresponding to the chat to which the message with the callback button was sent. Useful for high scores in <a href=\"#games\">games</a>.</td>",
+        "rst_description": "Global identifier, uniquely corresponding to the chat to which the message with the callback button was sent. Useful for high scores in `games <https://core.telegram.org/bots/api#games>`_.\n"
+      },
+      {
+        "name": "data",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Data associated with the callback button. Be aware that the message originated the query can contain no callback buttons with this data.",
+        "html_description": "<td><em>Optional</em>. Data associated with the callback button. Be aware that the message originated the query can contain no callback buttons with this data.</td>",
+        "rst_description": "*Optional*. Data associated with the callback button. Be aware that the message originated the query can contain no callback buttons with this data.\n"
+      },
+      {
+        "name": "game_short_name",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Short name of a Game to be returned, serves as the unique identifier for the game",
+        "html_description": "<td><em>Optional</em>. Short name of a <a href=\"#game\">Game</a> to be returned, serves as the unique identifier for the game</td>",
+        "rst_description": "*Optional*. Short name of a :class:`litegram.types.game.Game` to be returned, serves as the unique identifier for the game\n"
+      }
+    ],
+    "category": "types"
+  }
+}

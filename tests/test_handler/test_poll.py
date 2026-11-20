@@ -12,9 +12,11 @@ class TestShippingQueryHandler:
     @pytest.mark.anyio
     async def test_attributes_aliases(self):
         event = Poll(
+            allows_revoting=False,
+            members_only=False,
             id="query",
             question="Q?",
-            options=[PollOption(text="A1", voter_count=1)],
+            options=[PollOption(persistent_id="pid-1", text="A1", voter_count=1)],
             is_closed=True,
             is_anonymous=False,
             type="quiz",

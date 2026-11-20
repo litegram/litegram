@@ -39,6 +39,8 @@ CHAT_MEMBER_ADMINISTRATOR = ChatMemberAdministrator(
     can_delete_stories=True,
     is_anonymous=False,
     can_manage_voice_chats=False,
+    can_manage_tags=True,
+    can_send_welcome_messages=True,
 ).model_dump()
 
 CHAT_MEMBER_BANNED = ChatMemberBanned(
@@ -72,6 +74,8 @@ CHAT_MEMBER_RESTRICTED = ChatMemberRestricted(
     can_send_polls=False,
     can_send_other_messages=False,
     can_add_web_page_previews=False,
+    can_react_to_messages=False,
+    can_edit_tag=False,
     can_change_info=False,
     can_invite_users=False,
     can_pin_messages=False,

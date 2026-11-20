@@ -22,8 +22,7 @@ class ChatMemberBanned(ChatMember):
     user: User
     """Information about the user"""
     until_date: DateTime
-    """Date when restrictions will be lifted for this user; Unix time. If 0, then the user is banned forever"""
-
+    """Date when restrictions will be lifted for this user; Unix time. If 0, then the user is banned forever."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -31,9 +30,9 @@ class ChatMemberBanned(ChatMember):
         def __init__(
             __pydantic__self__,
             *,
-            status: Literal[ChatMemberStatus.KICKED] = ChatMemberStatus.KICKED,
             user: User,
             until_date: DateTime,
+            status: Literal[ChatMemberStatus.KICKED] = ChatMemberStatus.KICKED,
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!

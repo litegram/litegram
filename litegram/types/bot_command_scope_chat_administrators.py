@@ -19,8 +19,7 @@ class BotCommandScopeChatAdministrators(BotCommandScope):
     type: Literal[BotCommandScopeType.CHAT_ADMINISTRATORS] = BotCommandScopeType.CHAT_ADMINISTRATORS
     """Scope type, must be *chat_administrators*"""
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target supergroup (in the format :code:`@supergroupusername`). Channel direct messages chats and channel chats aren't supported."""
-
+    """Unique identifier for the target chat or username of the target supergroup in the format :code:`@username`. Channel direct messages chats and channel chats aren't supported."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -28,8 +27,8 @@ class BotCommandScopeChatAdministrators(BotCommandScope):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[BotCommandScopeType.CHAT_ADMINISTRATORS] = BotCommandScopeType.CHAT_ADMINISTRATORS,
             chat_id: ChatIdUnion,
+            type: Literal[BotCommandScopeType.CHAT_ADMINISTRATORS] = BotCommandScopeType.CHAT_ADMINISTRATORS,
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!

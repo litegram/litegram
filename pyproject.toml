@@ -39,7 +39,7 @@ classifiers = [
 dependencies = [
     "httpx>=0.27,<0.29",
     "litestar>=2.19,<3.0",
-    "pydantic>=2.12,<2.13",
+    "pydantic>=2.12,<2.15",
     "aiofiles>=25.1,<26.0",
     "certifi>=2026.1.4",
     "typing-extensions>=4.15.0,<=5.0",
@@ -97,6 +97,7 @@ docs = [
 
 [dependency-groups]
 dev = [
+    "pyyaml>=6.0",
     "ruff>=0.14",
     "pre-commit>=4.5.1",
     "packaging>=25.0",
@@ -188,9 +189,12 @@ known-first-party = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"litegram/client/bot.py" = ["E501"]
 "litegram/types/*" = ["E501"]
-"litegram/methods/*" = ["E501"]
+"litegram/types/rich_text_union.py" = ["TC008", "UP035", "UP040"]
+"litegram/utils/magic_filter/attrdict.py" = ["FURB189"]
+"litegram/methods/*" = ["E501", "TC001"]
+"litegram/client/bot.py" = ["E501"]
+"scripts/api_tool/*" = ["T201"]  # CLI output
 "litegram/enums/*" = ["E501"]
 "tests/**" = ["PLR2004"]
 

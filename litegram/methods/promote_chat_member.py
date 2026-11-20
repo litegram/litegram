@@ -19,7 +19,7 @@ class PromoteChatMember(TelegramMethod[bool]):
     __api_method__ = "promoteChatMember"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target channel (in the format :code:`@channelusername`)"""
+    """Unique identifier for the target chat or username of the target channel in the format :code:`@username`"""
     user_id: int
     """Unique identifier of the target user"""
     is_anonymous: bool | None = None
@@ -31,7 +31,7 @@ class PromoteChatMember(TelegramMethod[bool]):
     can_manage_video_chats: bool | None = None
     """Pass :code:`True` if the administrator can manage video chats"""
     can_restrict_members: bool | None = None
-    """Pass :code:`True` if the administrator can restrict, ban or unban chat members, or access supergroup statistics. For backward compatibility, defaults to :code:`True` for promotions of channel administrators"""
+    """Pass :code:`True` if the administrator can restrict, ban or unban chat members, or access supergroup statistics. For backward compatibility, defaults to :code:`True` for promotions of channel administrators."""
     can_promote_members: bool | None = None
     """Pass :code:`True` if the administrator can add new administrators with a subset of their own privileges or demote administrators that they have promoted, directly or indirectly (promoted by administrators that were appointed by him)"""
     can_change_info: bool | None = None
@@ -54,7 +54,10 @@ class PromoteChatMember(TelegramMethod[bool]):
     """Pass :code:`True` if the user is allowed to create, rename, close, and reopen forum topics; for supergroups only"""
     can_manage_direct_messages: bool | None = None
     """Pass :code:`True` if the administrator can manage direct messages within the channel and decline suggested posts; for channels only"""
-
+    can_manage_tags: bool | None = None
+    """Pass :code:`True` if the administrator can edit the tags of regular members; for groups and supergroups only"""
+    can_send_welcome_messages: bool | None = None
+    """Pass :code:`True` if the administrator can manage chat welcome messages or directly send them in the case of bots"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -80,6 +83,8 @@ class PromoteChatMember(TelegramMethod[bool]):
             can_pin_messages: bool | None = None,
             can_manage_topics: bool | None = None,
             can_manage_direct_messages: bool | None = None,
+            can_manage_tags: bool | None = None,
+            can_send_welcome_messages: bool | None = None,
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
@@ -105,5 +110,7 @@ class PromoteChatMember(TelegramMethod[bool]):
                 can_pin_messages=can_pin_messages,
                 can_manage_topics=can_manage_topics,
                 can_manage_direct_messages=can_manage_direct_messages,
+                can_manage_tags=can_manage_tags,
+                can_send_welcome_messages=can_send_welcome_messages,
                 **__pydantic_kwargs,
             )

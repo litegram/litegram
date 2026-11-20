@@ -16,7 +16,7 @@ class Venue(TelegramObject):
     """
 
     location: Location
-    """Venue location. Can't be a live location"""
+    """Venue location. Can't be a live location."""
     title: str
     """Name of the venue"""
     address: str
@@ -29,7 +29,6 @@ class Venue(TelegramObject):
     """*Optional*. Google Places identifier of the venue"""
     google_place_type: str | None = None
     """*Optional*. Google Places type of the venue. (See `supported types <https://developers.google.com/places/web-service/supported_types>`_.)"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

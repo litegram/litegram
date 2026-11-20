@@ -1,0 +1,185 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "poll",
+    "name": "Poll",
+    "description": "This object contains information about a poll.",
+    "html_description": "<p>This object contains information about a poll.</p>",
+    "rst_description": "This object contains information about a poll.",
+    "annotations": [
+      {
+        "name": "id",
+        "type": "String",
+        "required": true,
+        "description": "Unique poll identifier",
+        "html_description": "<td>Unique poll identifier</td>",
+        "rst_description": "Unique poll identifier\n"
+      },
+      {
+        "name": "question",
+        "type": "String",
+        "required": true,
+        "description": "Poll question, 1-300 characters",
+        "html_description": "<td>Poll question, 1-300 characters</td>",
+        "rst_description": "Poll question, 1-300 characters\n"
+      },
+      {
+        "name": "question_entities",
+        "type": "Array of MessageEntity",
+        "required": false,
+        "description": "Optional. Special entities that appear in the question. Currently, only custom emoji entities are allowed in poll questions",
+        "html_description": "<td><em>Optional</em>. Special entities that appear in the <em>question</em>. Currently, only custom emoji entities are allowed in poll questions</td>",
+        "rst_description": "*Optional*. Special entities that appear in the *question*. Currently, only custom emoji entities are allowed in poll questions\n"
+      },
+      {
+        "name": "options",
+        "type": "Array of PollOption",
+        "required": true,
+        "description": "List of poll options",
+        "html_description": "<td>List of poll options</td>",
+        "rst_description": "List of poll options\n"
+      },
+      {
+        "name": "total_voter_count",
+        "type": "Integer",
+        "required": true,
+        "description": "Total number of users that voted in the poll",
+        "html_description": "<td>Total number of users that voted in the poll</td>",
+        "rst_description": "Total number of users that voted in the poll\n"
+      },
+      {
+        "name": "is_closed",
+        "type": "Boolean",
+        "required": true,
+        "description": "True, if the poll is closed",
+        "html_description": "<td><em>True</em>, if the poll is closed</td>",
+        "rst_description": ":code:`True`, if the poll is closed\n"
+      },
+      {
+        "name": "is_anonymous",
+        "type": "Boolean",
+        "required": true,
+        "description": "True, if the poll is anonymous",
+        "html_description": "<td><em>True</em>, if the poll is anonymous</td>",
+        "rst_description": ":code:`True`, if the poll is anonymous\n"
+      },
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Poll type, currently can be 'regular' or 'quiz'",
+        "html_description": "<td>Poll type, currently can be “regular” or “quiz”</td>",
+        "rst_description": "Poll type, currently can be 'regular' or 'quiz'\n"
+      },
+      {
+        "name": "allows_multiple_answers",
+        "type": "Boolean",
+        "required": true,
+        "description": "True, if the poll allows multiple answers",
+        "html_description": "<td><em>True</em>, if the poll allows multiple answers</td>",
+        "rst_description": ":code:`True`, if the poll allows multiple answers\n"
+      },
+      {
+        "name": "allows_revoting",
+        "type": "Boolean",
+        "required": true,
+        "description": "True, if the poll allows to change the chosen answer options",
+        "html_description": "<td><em>True</em>, if the poll allows to change the chosen answer options</td>",
+        "rst_description": ":code:`True`, if the poll allows to change the chosen answer options\n"
+      },
+      {
+        "name": "members_only",
+        "type": "Boolean",
+        "required": true,
+        "description": "True if voting is limited to users who have been members of the chat where the poll was originally sent for more than 24 hours",
+        "html_description": "<td><em>True</em> if voting is limited to users who have been members of the chat where the poll was originally sent for more than 24 hours</td>",
+        "rst_description": ":code:`True` if voting is limited to users who have been members of the chat where the poll was originally sent for more than 24 hours\n"
+      },
+      {
+        "name": "country_codes",
+        "type": "Array of String",
+        "required": false,
+        "description": "Optional. A list of two-letter ISO 3166-1 alpha-2 country codes indicating the countries from which users can vote in the poll. The country code 'FT' is used for users with anonymous numbers. If omitted, then users from any country can participate in the poll.",
+        "html_description": "<td><em>Optional</em>. A list of two-letter <a href=\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\">ISO 3166-1 alpha-2</a> country codes indicating the countries from which users can vote in the poll. The country code “FT” is used for users with anonymous numbers. If omitted, then users from any country can participate in the poll.</td>",
+        "rst_description": "*Optional*. A list of two-letter `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_ country codes indicating the countries from which users can vote in the poll. The country code 'FT' is used for users with anonymous numbers. If omitted, then users from any country can participate in the poll.\n"
+      },
+      {
+        "name": "correct_option_ids",
+        "type": "Array of Integer",
+        "required": false,
+        "description": "Optional. Array of 0-based identifiers of the correct answer options. Available only for polls in quiz mode which are closed or were sent (not forwarded) by the bot or to the private chat with the bot.",
+        "html_description": "<td><em>Optional</em>. Array of 0-based identifiers of the correct answer options. Available only for polls in quiz mode which are closed or were sent (not forwarded) by the bot or to the private chat with the bot.</td>",
+        "rst_description": "*Optional*. Array of 0-based identifiers of the correct answer options. Available only for polls in quiz mode which are closed or were sent (not forwarded) by the bot or to the private chat with the bot.\n"
+      },
+      {
+        "name": "explanation",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Text that is shown when a user chooses an incorrect answer or taps on the lamp icon in a quiz-style poll, 0-200 characters",
+        "html_description": "<td><em>Optional</em>. Text that is shown when a user chooses an incorrect answer or taps on the lamp icon in a quiz-style poll, 0-200 characters</td>",
+        "rst_description": "*Optional*. Text that is shown when a user chooses an incorrect answer or taps on the lamp icon in a quiz-style poll, 0-200 characters\n"
+      },
+      {
+        "name": "explanation_entities",
+        "type": "Array of MessageEntity",
+        "required": false,
+        "description": "Optional. Special entities like usernames, URLs, bot commands, etc. that appear in the explanation",
+        "html_description": "<td><em>Optional</em>. Special entities like usernames, URLs, bot commands, etc. that appear in the <em>explanation</em></td>",
+        "rst_description": "*Optional*. Special entities like usernames, URLs, bot commands, etc. that appear in the *explanation*\n"
+      },
+      {
+        "name": "explanation_media",
+        "type": "PollMedia",
+        "required": false,
+        "description": "Optional. Media added to the quiz explanation",
+        "html_description": "<td><em>Optional</em>. Media added to the quiz explanation</td>",
+        "rst_description": "*Optional*. Media added to the quiz explanation\n"
+      },
+      {
+        "name": "open_period",
+        "type": "Integer",
+        "required": false,
+        "description": "Optional. Amount of time in seconds the poll will be active after creation",
+        "html_description": "<td><em>Optional</em>. Amount of time in seconds the poll will be active after creation</td>",
+        "rst_description": "*Optional*. Amount of time in seconds the poll will be active after creation\n"
+      },
+      {
+        "name": "close_date",
+        "type": "Integer",
+        "required": false,
+        "description": "Optional. Point in time (Unix timestamp) when the poll will be automatically closed",
+        "html_description": "<td><em>Optional</em>. Point in time (Unix timestamp) when the poll will be automatically closed</td>",
+        "rst_description": "*Optional*. Point in time (Unix timestamp) when the poll will be automatically closed\n"
+      },
+      {
+        "name": "description",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Description of the poll; for polls inside the Message object only",
+        "html_description": "<td><em>Optional</em>. Description of the poll; for polls inside the <a href=\"#message\">Message</a> object only</td>",
+        "rst_description": "*Optional*. Description of the poll; for polls inside the :class:`litegram.types.message.Message` object only\n"
+      },
+      {
+        "name": "description_entities",
+        "type": "Array of MessageEntity",
+        "required": false,
+        "description": "Optional. Special entities like usernames, URLs, bot commands, etc. that appear in the description",
+        "html_description": "<td><em>Optional</em>. Special entities like usernames, URLs, bot commands, etc. that appear in the description</td>",
+        "rst_description": "*Optional*. Special entities like usernames, URLs, bot commands, etc. that appear in the description\n"
+      },
+      {
+        "name": "media",
+        "type": "PollMedia",
+        "required": false,
+        "description": "Optional. Media added to the poll description; for polls inside the Message object only",
+        "html_description": "<td><em>Optional</em>. Media added to the poll description; for polls inside the <a href=\"#message\">Message</a> object only</td>",
+        "rst_description": "*Optional*. Media added to the poll description; for polls inside the :class:`litegram.types.message.Message` object only\n"
+      }
+    ],
+    "category": "types"
+  }
+}

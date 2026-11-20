@@ -1,0 +1,49 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "chatmemberowner",
+    "name": "ChatMemberOwner",
+    "description": "Represents a chat member that owns the chat and has all administrator privileges.",
+    "html_description": "<p>Represents a <a href=\"#chatmember\">chat member</a> that owns the chat and has all administrator privileges.</p>",
+    "rst_description": "Represents a `chat member <https://core.telegram.org/bots/api#chatmember>`_ that owns the chat and has all administrator privileges.",
+    "annotations": [
+      {
+        "name": "status",
+        "type": "String",
+        "required": true,
+        "description": "The member's status in the chat, always 'creator'",
+        "html_description": "<td>The member's status in the chat, always “creator”</td>",
+        "rst_description": "The member's status in the chat, always 'creator'\n"
+      },
+      {
+        "name": "user",
+        "type": "User",
+        "required": true,
+        "description": "Information about the user",
+        "html_description": "<td>Information about the user</td>",
+        "rst_description": "Information about the user\n"
+      },
+      {
+        "name": "is_anonymous",
+        "type": "Boolean",
+        "required": true,
+        "description": "True, if the user's presence in the chat is hidden",
+        "html_description": "<td><em>True</em>, if the user's presence in the chat is hidden</td>",
+        "rst_description": ":code:`True`, if the user's presence in the chat is hidden\n"
+      },
+      {
+        "name": "custom_title",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Custom title for this user",
+        "html_description": "<td><em>Optional</em>. Custom title for this user</td>",
+        "rst_description": "*Optional*. Custom title for this user\n"
+      }
+    ],
+    "category": "types"
+  }
+}

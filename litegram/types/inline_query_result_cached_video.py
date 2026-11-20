@@ -36,12 +36,11 @@ class InlineQueryResultCachedVideo(InlineQueryResult):
     caption_entities: list[MessageEntity] | None = None
     """*Optional*. List of special entities that appear in the caption, which can be specified instead of *parse_mode*"""
     show_caption_above_media: bool | Default | None = Default("show_caption_above_media")
-    """*Optional*. Pass :code:`True`, if the caption must be shown above the message media"""
+    """*Optional*. Pass :code:`True` if the caption must be shown above the message media"""
     reply_markup: InlineKeyboardMarkup | None = None
     """*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_ attached to the message"""
     input_message_content: InputMessageContentUnion | None = None
     """*Optional*. Content of the message to be sent instead of the video"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -49,10 +48,10 @@ class InlineQueryResultCachedVideo(InlineQueryResult):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InlineQueryResultType.VIDEO] = InlineQueryResultType.VIDEO,
             id: str,
             video_file_id: str,
             title: str,
+            type: Literal[InlineQueryResultType.VIDEO] = InlineQueryResultType.VIDEO,
             description: str | None = None,
             caption: str | None = None,
             parse_mode: str | Default | None = Default("parse_mode"),
@@ -67,10 +66,10 @@ class InlineQueryResultCachedVideo(InlineQueryResult):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                type=type,
                 id=id,
                 video_file_id=video_file_id,
                 title=title,
+                type=type,
                 description=description,
                 caption=caption,
                 parse_mode=parse_mode,

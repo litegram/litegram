@@ -13,7 +13,7 @@ class KeyboardButtonRequestUsers(TelegramObject):
     """
 
     request_id: int
-    """Signed 32-bit identifier of the request that will be received back in the :class:`litegram.types.users_shared.UsersShared` object. Must be unique within the message"""
+    """Signed 32-bit identifier of the request that will be received back in the :class:`litegram.types.users_shared.UsersShared` object. Must be unique within the message."""
     user_is_bot: bool | None = None
     """*Optional*. Pass :code:`True` to request bots, pass :code:`False` to request regular users. If not specified, no additional restrictions are applied."""
     user_is_premium: bool | None = None
@@ -26,7 +26,6 @@ class KeyboardButtonRequestUsers(TelegramObject):
     """*Optional*. Pass :code:`True` to request the users' usernames"""
     request_photo: bool | None = None
     """*Optional*. Pass :code:`True` to request the users' photos"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

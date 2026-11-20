@@ -3,13 +3,13 @@ from __future__ import annotations
 import io
 import os
 from abc import ABC, abstractmethod
+from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
 import aiofiles
 
 if TYPE_CHECKING:
     from collections.abc import AsyncGenerator
-    from pathlib import Path
 
     from litegram.client.bot import Bot
 
@@ -70,8 +70,7 @@ class BufferedInputFile(InputFile):
         """
         if filename is None:
             filename = os.path.basename(path)
-        with open(path, "rb") as f:
-            data = f.read()
+        data = Path(path).read_bytes()
         return cls(data, filename=filename, chunk_size=chunk_size)
 
     async def read(self, bot: Bot) -> AsyncGenerator[bytes]:

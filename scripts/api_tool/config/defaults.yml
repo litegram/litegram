@@ -1,0 +1,121 @@
+CopyMessage:
+  parse_mode: parse_mode
+  protect_content: protect_content
+  show_caption_above_media: show_caption_above_media
+EditMessageCaption:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+EditMessageText:
+  link_preview_options: link_preview
+  parse_mode: parse_mode
+ForwardMessage:
+  protect_content: protect_content
+InlineQueryResultAudio:
+  parse_mode: parse_mode
+InlineQueryResultCachedAudio:
+  parse_mode: parse_mode
+InlineQueryResultCachedDocument:
+  parse_mode: parse_mode
+InlineQueryResultCachedGif:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InlineQueryResultCachedMpeg4Gif:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InlineQueryResultCachedPhoto:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InlineQueryResultCachedVideo:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InlineQueryResultCachedVoice:
+  parse_mode: parse_mode
+InlineQueryResultDocument:
+  parse_mode: parse_mode
+InlineQueryResultGif:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InlineQueryResultMpeg4Gif:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InlineQueryResultPhoto:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InlineQueryResultVideo:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InlineQueryResultVoice:
+  parse_mode: parse_mode
+InputMediaAnimation:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InputMediaAudio:
+  parse_mode: parse_mode
+InputMediaDocument:
+  parse_mode: parse_mode
+InputMediaPhoto:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InputMediaVideo:
+  parse_mode: parse_mode
+  show_caption_above_media: show_caption_above_media
+InputPollOption:
+  text_parse_mode: parse_mode
+InputTextMessageContent:
+  link_preview_options: link_preview
+  parse_mode: parse_mode
+LinkPreviewOptions:
+  is_disabled: link_preview_is_disabled
+  prefer_large_media: link_preview_prefer_large_media
+  prefer_small_media: link_preview_prefer_small_media
+  show_above_text: link_preview_show_above_text
+ReplyParameters:
+  allow_sending_without_reply: allow_sending_without_reply
+  quote_parse_mode: parse_mode
+SendAnimation:
+  parse_mode: parse_mode
+  protect_content: protect_content
+  show_caption_above_media: show_caption_above_media
+SendAudio:
+  parse_mode: parse_mode
+  protect_content: protect_content
+SendContact:
+  protect_content: protect_content
+SendDice:
+  protect_content: protect_content
+SendDocument:
+  parse_mode: parse_mode
+  protect_content: protect_content
+SendGame:
+  protect_content: protect_content
+SendInvoice:
+  protect_content: protect_content
+SendLocation:
+  protect_content: protect_content
+SendMediaGroup:
+  protect_content: protect_content
+SendMessage:
+  link_preview_options: link_preview
+  parse_mode: parse_mode
+  protect_content: protect_content
+SendPhoto:
+  parse_mode: parse_mode
+  protect_content: protect_content
+  show_caption_above_media: show_caption_above_media
+SendPoll:
+  explanation_parse_mode: parse_mode
+  protect_content: protect_content
+  question_parse_mode: parse_mode
+SendSticker:
+  protect_content: protect_content
+SendVenue:
+  protect_content: protect_content
+SendVideo:
+  parse_mode: parse_mode
+  protect_content: protect_content
+  show_caption_above_media: show_caption_above_media
+SendVideoNote:
+  protect_content: protect_content
+SendVoice:
+  parse_mode: parse_mode
+  protect_content: protect_content

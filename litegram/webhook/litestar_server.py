@@ -115,6 +115,15 @@ class SimpleRequestHandler(BaseRequestHandler):
 
 
 class TokenBasedRequestHandler(BaseRequestHandler):
+    """Request handler that resolves the bot from a token in the URL path.
+
+    .. warning::
+        Bot instances are cached per token in an unbounded in-memory dict.
+        If untrusted clients can hit this endpoint with arbitrary tokens,
+        restrict access at the reverse-proxy level or provide your own
+        bounded ``resolve_bot`` implementation to avoid unbounded growth.
+    """
+
     def __init__(
         self,
         dispatcher: Dispatcher,

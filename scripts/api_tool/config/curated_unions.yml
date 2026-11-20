@@ -1,0 +1,9 @@
+# Union aliases whose members are defined by a field's variant-list type.
+# Members are derived from the source field's type string on regeneration.
+unions:
+  MediaUnion:
+    object: sendMediaGroup
+    field: media
+  InputRichMessageMediaUnion:
+    object: InputRichMessageMedia
+    field: media

@@ -1,0 +1,97 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "pollmedia",
+    "name": "PollMedia",
+    "description": "At most one of the optional fields can be present in any given object.",
+    "html_description": "<p>At most <strong>one</strong> of the optional fields can be present in any given object.</p>",
+    "rst_description": "At most **one** of the optional fields can be present in any given object.",
+    "annotations": [
+      {
+        "name": "animation",
+        "type": "Animation",
+        "required": false,
+        "description": "Optional. Media is an animation, information about the animation",
+        "html_description": "<td><em>Optional</em>. Media is an animation, information about the animation</td>",
+        "rst_description": "*Optional*. Media is an animation, information about the animation\n"
+      },
+      {
+        "name": "audio",
+        "type": "Audio",
+        "required": false,
+        "description": "Optional. Media is an audio file, information about the file; currently, can't be received in a poll option",
+        "html_description": "<td><em>Optional</em>. Media is an audio file, information about the file; currently, can't be received in a poll option</td>",
+        "rst_description": "*Optional*. Media is an audio file, information about the file; currently, can't be received in a poll option\n"
+      },
+      {
+        "name": "document",
+        "type": "Document",
+        "required": false,
+        "description": "Optional. Media is a general file, information about the file; currently, can't be received in a poll option",
+        "html_description": "<td><em>Optional</em>. Media is a general file, information about the file; currently, can't be received in a poll option</td>",
+        "rst_description": "*Optional*. Media is a general file, information about the file; currently, can't be received in a poll option\n"
+      },
+      {
+        "name": "link",
+        "type": "Link",
+        "required": false,
+        "description": "Optional. The HTTP link attached to the poll option",
+        "html_description": "<td><em>Optional</em>. The HTTP link attached to the poll option</td>",
+        "rst_description": "*Optional*. The HTTP link attached to the poll option\n"
+      },
+      {
+        "name": "live_photo",
+        "type": "LivePhoto",
+        "required": false,
+        "description": "Optional. Media is a live photo, information about the live photo",
+        "html_description": "<td><em>Optional</em>. Media is a live photo, information about the live photo</td>",
+        "rst_description": "*Optional*. Media is a live photo, information about the live photo\n"
+      },
+      {
+        "name": "location",
+        "type": "Location",
+        "required": false,
+        "description": "Optional. Media is a shared location, information about the location",
+        "html_description": "<td><em>Optional</em>. Media is a shared location, information about the location</td>",
+        "rst_description": "*Optional*. Media is a shared location, information about the location\n"
+      },
+      {
+        "name": "photo",
+        "type": "Array of PhotoSize",
+        "required": false,
+        "description": "Optional. Media is a photo, available sizes of the photo",
+        "html_description": "<td><em>Optional</em>. Media is a photo, available sizes of the photo</td>",
+        "rst_description": "*Optional*. Media is a photo, available sizes of the photo\n"
+      },
+      {
+        "name": "sticker",
+        "type": "Sticker",
+        "required": false,
+        "description": "Optional. Media is a sticker, information about the sticker; currently, for poll options only",
+        "html_description": "<td><em>Optional</em>. Media is a sticker, information about the sticker; currently, for poll options only</td>",
+        "rst_description": "*Optional*. Media is a sticker, information about the sticker; currently, for poll options only\n"
+      },
+      {
+        "name": "venue",
+        "type": "Venue",
+        "required": false,
+        "description": "Optional. Media is a venue, information about the venue",
+        "html_description": "<td><em>Optional</em>. Media is a venue, information about the venue</td>",
+        "rst_description": "*Optional*. Media is a venue, information about the venue\n"
+      },
+      {
+        "name": "video",
+        "type": "Video",
+        "required": false,
+        "description": "Optional. Media is a video, information about the video",
+        "html_description": "<td><em>Optional</em>. Media is a video, information about the video</td>",
+        "rst_description": "*Optional*. Media is a video, information about the video\n"
+      }
+    ],
+    "category": "types"
+  }
+}

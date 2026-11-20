@@ -1,0 +1,33 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Rich messages",
+    "anchor": "rich-messages"
+  },
+  "object": {
+    "anchor": "richblockfooter",
+    "name": "RichBlockFooter",
+    "description": "A footer, corresponding to the HTML tag <footer>.",
+    "html_description": "<p>A footer, corresponding to the HTML tag <code>&lt;footer&gt;</code>.</p>",
+    "rst_description": "A footer, corresponding to the HTML tag :code:`<footer>`.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the block, always 'footer'",
+        "html_description": "<td>Type of the block, always “footer”</td>",
+        "rst_description": "Type of the block, always 'footer'\n"
+      },
+      {
+        "name": "text",
+        "type": "RichText",
+        "required": true,
+        "description": "Text of the block",
+        "html_description": "<td>Text of the block</td>",
+        "rst_description": "Text of the block\n"
+      }
+    ],
+    "category": "types"
+  }
+}

@@ -1,0 +1,5 @@
+# Schema field names that map to different python attribute names
+# (python keywords or names shadowing framework attributes).
+renames:
+  from: from_user
+  bot: bot_user

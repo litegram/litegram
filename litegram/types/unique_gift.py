@@ -24,7 +24,7 @@ class UniqueGift(TelegramObject):
     base_name: str
     """Human-readable name of the regular gift from which this unique gift was upgraded"""
     name: str
-    """Unique name of the gift. This name can be used in :code:`https://t.me/nft/...` links and story areas"""
+    """Unique name of the gift. This name can be used in :code:`https://t.me/nft/...` links and story areas."""
     number: int
     """Unique number of the upgraded gift among gifts upgraded from the same regular gift"""
     model: UniqueGiftModel
@@ -35,13 +35,14 @@ class UniqueGift(TelegramObject):
     """Backdrop of the gift"""
     is_premium: bool | None = None
     """*Optional*. :code:`True`, if the original regular gift was exclusively purchaseable by Telegram Premium subscribers"""
+    is_burned: bool | None = None
+    """*Optional*. :code:`True`, if the gift was used to craft another gift and isn't available anymore"""
     is_from_blockchain: bool | None = None
     """*Optional*. :code:`True`, if the gift is assigned from the TON blockchain and can't be resold or transferred in Telegram"""
     colors: UniqueGiftColors | None = None
     """*Optional*. The color scheme that can be used by the gift's owner for the chat's name, replies to messages and link previews; for business account gifts and gifts that are currently on sale only"""
     publisher_chat: Chat | None = None
     """*Optional*. Information about the chat that published the gift"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -57,6 +58,7 @@ class UniqueGift(TelegramObject):
             symbol: UniqueGiftSymbol,
             backdrop: UniqueGiftBackdrop,
             is_premium: bool | None = None,
+            is_burned: bool | None = None,
             is_from_blockchain: bool | None = None,
             colors: UniqueGiftColors | None = None,
             publisher_chat: Chat | None = None,
@@ -75,6 +77,7 @@ class UniqueGift(TelegramObject):
                 symbol=symbol,
                 backdrop=backdrop,
                 is_premium=is_premium,
+                is_burned=is_burned,
                 is_from_blockchain=is_from_blockchain,
                 colors=colors,
                 publisher_chat=publisher_chat,

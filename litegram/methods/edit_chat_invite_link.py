@@ -17,7 +17,7 @@ class EditChatInviteLink(TelegramMethod[ChatInviteLink]):
     __api_method__ = "editChatInviteLink"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target channel (in the format :code:`@channelusername`)"""
+    """Unique identifier for the target chat or username of the target channel in the format :code:`@username`"""
     invite_link: str
     """The invite link to edit"""
     name: str | None = None
@@ -27,8 +27,7 @@ class EditChatInviteLink(TelegramMethod[ChatInviteLink]):
     member_limit: int | None = None
     """The maximum number of users that can be members of the chat simultaneously after joining the chat via this invite link; 1-99999"""
     creates_join_request: bool | None = None
-    """:code:`True`, if users joining the chat via the link need to be approved by chat administrators. If :code:`True`, *member_limit* can't be specified"""
-
+    """:code:`True`, if users joining the chat via the link need to be approved by chat administrators. If :code:`True`, *member_limit* can't be specified."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

@@ -1,0 +1,41 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Games",
+    "anchor": "games"
+  },
+  "object": {
+    "anchor": "gamehighscore",
+    "name": "GameHighScore",
+    "description": "This object represents one row of the high scores table for a game.",
+    "html_description": "<p>This object represents one row of the high scores table for a game.</p>",
+    "rst_description": "This object represents one row of the high scores table for a game.",
+    "annotations": [
+      {
+        "name": "position",
+        "type": "Integer",
+        "required": true,
+        "description": "Position in high score table for the game",
+        "html_description": "<td>Position in high score table for the game</td>",
+        "rst_description": "Position in high score table for the game\n"
+      },
+      {
+        "name": "user",
+        "type": "User",
+        "required": true,
+        "description": "User",
+        "html_description": "<td>User</td>",
+        "rst_description": "User\n"
+      },
+      {
+        "name": "score",
+        "type": "Integer",
+        "required": true,
+        "description": "Score",
+        "html_description": "<td>Score</td>",
+        "rst_description": "Score\n"
+      }
+    ],
+    "category": "types"
+  }
+}

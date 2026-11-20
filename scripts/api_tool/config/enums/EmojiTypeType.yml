@@ -1,0 +1,11 @@
+name: EmojiTypeType
+description: 'This object represents the type of a emojitype object.
+
+
+  Source: https://core.telegram.org/bots/api#emojitype'
+multi_parse:
+  attribute: type
+  regexp: always '([a-z_]+)'
+  entities:
+  - EmojiTypeCustomEmoji
+  - EmojiTypeEmoji

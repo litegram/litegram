@@ -30,7 +30,7 @@ class InlineQueryResultLocation(InlineQueryResult):
     horizontal_accuracy: float | None = None
     """*Optional*. The radius of uncertainty for the location, measured in meters; 0-1500"""
     live_period: int | None = None
-    """*Optional*. Period in seconds during which the location can be updated, should be between 60 and 86400, or 0x7FFFFFFF for live locations that can be edited indefinitely."""
+    """*Optional*. Period in seconds during which the location can be updated, must be between 60 and 86400, or 0x7FFFFFFF for live locations that can be edited indefinitely"""
     heading: int | None = None
     """*Optional*. For live locations, a direction in which the user is moving, in degrees. Must be between 1 and 360 if specified."""
     proximity_alert_radius: int | None = None
@@ -45,7 +45,6 @@ class InlineQueryResultLocation(InlineQueryResult):
     """*Optional*. Thumbnail width"""
     thumbnail_height: int | None = None
     """*Optional*. Thumbnail height"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -53,11 +52,11 @@ class InlineQueryResultLocation(InlineQueryResult):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InlineQueryResultType.LOCATION] = InlineQueryResultType.LOCATION,
             id: str,
             latitude: float,
             longitude: float,
             title: str,
+            type: Literal[InlineQueryResultType.LOCATION] = InlineQueryResultType.LOCATION,
             horizontal_accuracy: float | None = None,
             live_period: int | None = None,
             heading: int | None = None,
@@ -74,11 +73,11 @@ class InlineQueryResultLocation(InlineQueryResult):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                type=type,
                 id=id,
                 latitude=latitude,
                 longitude=longitude,
                 title=title,
+                type=type,
                 horizontal_accuracy=horizontal_accuracy,
                 live_period=live_period,
                 heading=heading,

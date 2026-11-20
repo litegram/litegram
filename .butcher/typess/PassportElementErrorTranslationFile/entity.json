@@ -1,0 +1,49 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Telegram Passport",
+    "anchor": "telegram-passport"
+  },
+  "object": {
+    "anchor": "passportelementerrortranslationfile",
+    "name": "PassportElementErrorTranslationFile",
+    "description": "Represents an issue with one of the files that constitute the translation of a document. The error is considered resolved when the file changes.",
+    "html_description": "<p>Represents an issue with one of the files that constitute the translation of a document. The error is considered resolved when the file changes.</p>",
+    "rst_description": "Represents an issue with one of the files that constitute the translation of a document. The error is considered resolved when the file changes.",
+    "annotations": [
+      {
+        "name": "source",
+        "type": "String",
+        "required": true,
+        "description": "Error source, must be translation_file",
+        "html_description": "<td>Error source, must be <em>translation_file</em></td>",
+        "rst_description": "Error source, must be *translation_file*\n"
+      },
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of element of the user's Telegram Passport which has the issue, one of 'passport', 'driver_license', 'identity_card', 'internal_passport', 'utility_bill', 'bank_statement', 'rental_agreement', 'passport_registration', 'temporary_registration'",
+        "html_description": "<td>Type of element of the user's Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”, “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration”</td>",
+        "rst_description": "Type of element of the user's Telegram Passport which has the issue, one of 'passport', 'driver_license', 'identity_card', 'internal_passport', 'utility_bill', 'bank_statement', 'rental_agreement', 'passport_registration', 'temporary_registration'\n"
+      },
+      {
+        "name": "file_hash",
+        "type": "String",
+        "required": true,
+        "description": "Base64-encoded file hash",
+        "html_description": "<td>Base64-encoded file hash</td>",
+        "rst_description": "Base64-encoded file hash\n"
+      },
+      {
+        "name": "message",
+        "type": "String",
+        "required": true,
+        "description": "Error message",
+        "html_description": "<td>Error message</td>",
+        "rst_description": "Error message\n"
+      }
+    ],
+    "category": "types"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "user",
+    "name": "User",
+    "description": "This object represents a Telegram user or bot.",
+    "html_description": "<p>This object represents a Telegram user or bot.</p>",
+    "rst_description": "This object represents a Telegram user or bot.",
+    "annotations": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "required": true,
+        "description": "Unique identifier for this user or bot. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.",
+        "html_description": "<td>Unique identifier for this user or bot. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.</td>",
+        "rst_description": "Unique identifier for this user or bot. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.\n"
+      },
+      {
+        "name": "is_bot",
+        "type": "Boolean",
+        "required": true,
+        "description": "True, if this user is a bot",
+        "html_description": "<td><em>True</em>, if this user is a bot</td>",
+        "rst_description": ":code:`True`, if this user is a bot\n"
+      },
+      {
+        "name": "first_name",
+        "type": "String",
+        "required": true,
+        "description": "User's or bot's first name",
+        "html_description": "<td>User's or bot's first name</td>",
+        "rst_description": "User's or bot's first name\n"
+      },
+      {
+        "name": "last_name",
+        "type": "String",
+        "required": false,
+        "description": "Optional. User's or bot's last name",
+        "html_description": "<td><em>Optional</em>. User's or bot's last name</td>",
+        "rst_description": "*Optional*. User's or bot's last name\n"
+      },
+      {
+        "name": "username",
+        "type": "String",
+        "required": false,
+        "description": "Optional. User's or bot's username",
+        "html_description": "<td><em>Optional</em>. User's or bot's username</td>",
+        "rst_description": "*Optional*. User's or bot's username\n"
+      },
+      {
+        "name": "language_code",
+        "type": "String",
+        "required": false,
+        "description": "Optional. IETF language tag of the user's language",
+        "html_description": "<td><em>Optional</em>. <a href=\"https://en.wikipedia.org/wiki/IETF_language_tag\">IETF language tag</a> of the user's language</td>",
+        "rst_description": "*Optional*. `IETF language tag <https://en.wikipedia.org/wiki/IETF_language_tag>`_ of the user's language\n"
+      },
+      {
+        "name": "is_premium",
+        "type": "True",
+        "required": false,
+        "description": "Optional. True, if this user is a Telegram Premium user",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if this user is a Telegram Premium user</td>",
+        "rst_description": "*Optional*. :code:`True`, if this user is a Telegram Premium user\n"
+      },
+      {
+        "name": "added_to_attachment_menu",
+        "type": "True",
+        "required": false,
+        "description": "Optional. True, if this user added the bot to the attachment menu",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if this user added the bot to the attachment menu</td>",
+        "rst_description": "*Optional*. :code:`True`, if this user added the bot to the attachment menu\n"
+      },
+      {
+        "name": "can_join_groups",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if the bot can be invited to groups. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if the bot can be invited to groups. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if the bot can be invited to groups. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      },
+      {
+        "name": "can_read_all_group_messages",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if privacy mode is disabled for the bot. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if <a href=\"/bots/features#privacy-mode\">privacy mode</a> is disabled for the bot. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if `privacy mode <https://core.telegram.org/bots/features#privacy-mode>`_ is disabled for the bot. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      },
+      {
+        "name": "supports_guest_queries",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if the bot supports guest queries from chats it is not a member of. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if the bot supports guest queries from chats it is not a member of. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if the bot supports guest queries from chats it is not a member of. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      },
+      {
+        "name": "supports_inline_queries",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if the bot supports inline queries. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if the bot supports inline queries. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if the bot supports inline queries. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      },
+      {
+        "name": "can_connect_to_business",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if the bot can be connected to a user account to manage it. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if the bot can be connected to a user account to manage it. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if the bot can be connected to a user account to manage it. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      },
+      {
+        "name": "has_main_web_app",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if the bot has a main Web App. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if the bot has a main Web App. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if the bot has a main Web App. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      },
+      {
+        "name": "has_topics_enabled",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if the bot has forum topic mode enabled in private chats. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if the bot has forum topic mode enabled in private chats. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if the bot has forum topic mode enabled in private chats. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      },
+      {
+        "name": "allows_users_to_create_topics",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if the bot allows users to create and delete topics in private chats. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if the bot allows users to create and delete topics in private chats. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if the bot allows users to create and delete topics in private chats. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      },
+      {
+        "name": "can_manage_bots",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if other bots can be created to be controlled by the bot. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if other bots can be created to be controlled by the bot. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if other bots can be created to be controlled by the bot. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      },
+      {
+        "name": "supports_join_request_queries",
+        "type": "Boolean",
+        "required": false,
+        "description": "Optional. True, if the bot supports join request queries and can be assigned to process them. Returned only in getMe.",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if the bot supports join request queries and can be assigned to process them. Returned only in <a href=\"#getme\">getMe</a>.</td>",
+        "rst_description": "*Optional*. :code:`True`, if the bot supports join request queries and can be assigned to process them. Returned only in :class:`litegram.methods.get_me.GetMe`.\n"
+      }
+    ],
+    "category": "types"
+  }
+}

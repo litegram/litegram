@@ -40,7 +40,7 @@ class InlineQueryResultVideo(InlineQueryResult):
     caption_entities: list[MessageEntity] | None = None
     """*Optional*. List of special entities that appear in the caption, which can be specified instead of *parse_mode*"""
     show_caption_above_media: bool | Default | None = Default("show_caption_above_media")
-    """*Optional*. Pass :code:`True`, if the caption must be shown above the message media"""
+    """*Optional*. Pass :code:`True` if the caption must be shown above the message media"""
     video_width: int | None = None
     """*Optional*. Video width"""
     video_height: int | None = None
@@ -53,7 +53,6 @@ class InlineQueryResultVideo(InlineQueryResult):
     """*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_ attached to the message"""
     input_message_content: InputMessageContentUnion | None = None
     """*Optional*. Content of the message to be sent instead of the video. This field is **required** if InlineQueryResultVideo is used to send an HTML-page as a result (e.g., a YouTube video)."""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -61,12 +60,12 @@ class InlineQueryResultVideo(InlineQueryResult):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InlineQueryResultType.VIDEO] = InlineQueryResultType.VIDEO,
             id: str,
             video_url: str,
             mime_type: str,
             thumbnail_url: str,
             title: str,
+            type: Literal[InlineQueryResultType.VIDEO] = InlineQueryResultType.VIDEO,
             caption: str | None = None,
             parse_mode: str | Default | None = Default("parse_mode"),
             caption_entities: list[MessageEntity] | None = None,
@@ -84,12 +83,12 @@ class InlineQueryResultVideo(InlineQueryResult):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                type=type,
                 id=id,
                 video_url=video_url,
                 mime_type=mime_type,
                 thumbnail_url=thumbnail_url,
                 title=title,
+                type=type,
                 caption=caption,
                 parse_mode=parse_mode,
                 caption_entities=caption_entities,

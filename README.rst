@@ -51,7 +51,7 @@ Features
 
 - Asynchronous (`asyncio docs <https://docs.python.org/3/library/asyncio.html>`_, :pep:`492`)
 - Has type hints (:pep:`484`) and can be used with `ty <https://github.com/astral-sh/ty>`_
-- Supports `Telegram Bot API 9.3 <https://core.telegram.org/bots/api>`_ and gets fast updates to the latest versions of the Bot API
+- Supports `Telegram Bot API 10.4 <https://core.telegram.org/bots/api>`_ and gets fast updates to the latest versions of the Bot API
 - Updates router (Blueprints)
 - Has Finite State Machine
 - Uses powerful `magic filters <https://litegram.readthedocs.io/en/latest/dispatcher/filters/magic_filters.html#magic-filters>`_

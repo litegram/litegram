@@ -39,13 +39,12 @@ class GetBusinessAccountGifts(TelegramMethod[OwnedGifts]):
     offset: str | None = None
     """Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results"""
     limit: int | None = None
-    """The maximum number of gifts to be returned; 1-100. Defaults to 100"""
+    """The maximum number of gifts to be returned; 1-100. Defaults to 100."""
     exclude_limited: bool | None = Field(None, json_schema_extra={"deprecated": True})
     """Pass :code:`True` to exclude gifts that can be purchased a limited number of times
 
 .. deprecated:: API:9.3
    https://core.telegram.org/bots/api-changelog#december-31-2025"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

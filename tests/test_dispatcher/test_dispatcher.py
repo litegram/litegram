@@ -382,11 +382,13 @@ class TestDispatcher:
                 Update(
                     update_id=42,
                     poll=Poll(
+                        allows_revoting=False,
+                        members_only=False,
                         id="poll id",
                         question="Q?",
                         options=[
-                            PollOption(text="A1", voter_count=2),
-                            PollOption(text="A2", voter_count=3),
+                            PollOption(persistent_id="pid-2", text="A1", voter_count=2),
+                            PollOption(persistent_id="pid-3", text="A2", voter_count=3),
                         ],
                         is_closed=False,
                         is_anonymous=False,
@@ -404,6 +406,7 @@ class TestDispatcher:
                 Update(
                     update_id=42,
                     poll_answer=PollAnswer(
+                        option_persistent_ids=["pid-0", "pid-1"],
                         poll_id="poll id",
                         user=User(id=42, is_bot=False, first_name="Test"),
                         option_ids=[42],
@@ -586,10 +589,10 @@ class TestDispatcher:
                 True,
             ),
             pytest.param(
-                "paid_media_purchased",
+                "purchased_paid_media",
                 Update(
                     update_id=42,
-                    paid_media_purchased=PaidMediaPurchased(
+                    purchased_paid_media=PaidMediaPurchased(
                         paid_media_payload="payload",
                         from_user=User(id=42, is_bot=False, first_name="Test"),
                     ),
@@ -648,11 +651,13 @@ class TestDispatcher:
             Update(
                 update_id=42,
                 poll=Poll(
+                    allows_revoting=False,
+                    members_only=False,
                     id="poll id",
                     question="Q?",
                     options=[
-                        PollOption(text="A1", voter_count=2),
-                        PollOption(text="A2", voter_count=3),
+                        PollOption(persistent_id="pid-2", text="A1", voter_count=2),
+                        PollOption(persistent_id="pid-3", text="A2", voter_count=3),
                     ],
                     is_closed=False,
                     is_anonymous=False,

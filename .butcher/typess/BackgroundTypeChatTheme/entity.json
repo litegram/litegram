@@ -1,0 +1,33 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "backgroundtypechattheme",
+    "name": "BackgroundTypeChatTheme",
+    "description": "The background is taken directly from a built-in chat theme.",
+    "html_description": "<p>The background is taken directly from a built-in chat theme.</p>",
+    "rst_description": "The background is taken directly from a built-in chat theme.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the background, always 'chat_theme'",
+        "html_description": "<td>Type of the background, always “chat_theme”</td>",
+        "rst_description": "Type of the background, always 'chat_theme'\n"
+      },
+      {
+        "name": "theme_name",
+        "type": "String",
+        "required": true,
+        "description": "Name of the chat theme, which is usually an emoji",
+        "html_description": "<td>Name of the chat theme, which is usually an emoji</td>",
+        "rst_description": "Name of the chat theme, which is usually an emoji\n"
+      }
+    ],
+    "category": "types"
+  }
+}

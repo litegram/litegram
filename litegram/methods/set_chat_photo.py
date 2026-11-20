@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any
 from .base import TelegramMethod
 
 if TYPE_CHECKING:
-    from ..types import ChatIdUnion, InputFile
+    from ..types import ChatIdUnion, InputFile, InputFileUnion
 
 
 class SetChatPhoto(TelegramMethod[bool]):
@@ -19,10 +19,9 @@ class SetChatPhoto(TelegramMethod[bool]):
     __api_method__ = "setChatPhoto"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target channel (in the format :code:`@channelusername`)"""
+    """Unique identifier for the target chat or username of the target channel in the format :code:`@username`"""
     photo: InputFile
     """New chat photo, uploaded using multipart/form-data"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

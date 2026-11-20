@@ -6,6 +6,7 @@ from ..utils.mypy_hacks import lru_cache
 from .base import TelegramObject
 
 if TYPE_CHECKING:
+    from .bot_subscription_updated import BotSubscriptionUpdated
     from .business_connection import BusinessConnection
     from .business_messages_deleted import BusinessMessagesDeleted
     from .callback_query import CallbackQuery
@@ -15,21 +16,25 @@ if TYPE_CHECKING:
     from .chat_member_updated import ChatMemberUpdated
     from .chosen_inline_result import ChosenInlineResult
     from .inline_query import InlineQuery
+    from .managed_bot_updated import ManagedBotUpdated
     from .message import Message
+    from .message_generation_stopped import MessageGenerationStopped
     from .message_reaction_count_updated import MessageReactionCountUpdated
     from .message_reaction_updated import MessageReactionUpdated
     from .paid_media_purchased import PaidMediaPurchased
     from .poll import Poll
     from .poll_answer import PollAnswer
     from .pre_checkout_query import PreCheckoutQuery
+    from .shared_widget_query import SharedWidgetQuery
     from .shipping_query import ShippingQuery
+    from .widget_query import WidgetQuery
 
 
 class Update(TelegramObject):
     """
     This `object <https://core.telegram.org/bots/api#available-types>`_ represents an incoming update.
 
-    At most **one** of the optional parameters can be present in any given update.
+    At most **one** of the optional fields can be present in any given update.
 
     Source: https://core.telegram.org/bots/api#update
     """
@@ -63,13 +68,11 @@ class Update(TelegramObject):
     callback_query: CallbackQuery | None = None
     """*Optional*. New incoming callback query"""
     shipping_query: ShippingQuery | None = None
-    """*Optional*. New incoming shipping query. Only for invoices with flexible price"""
+    """*Optional*. New incoming shipping query. Only for invoices with flexible price."""
     pre_checkout_query: PreCheckoutQuery | None = None
-    """*Optional*. New incoming pre-checkout query. Contains full information about checkout"""
-    paid_media_purchased: PaidMediaPurchased | None = None
-    """*Optional*. A user purchased paid media with a non-empty payload sent by the bot in a non-channel chat"""
+    """*Optional*. New incoming pre-checkout query. Contains full information about checkout."""
     poll: Poll | None = None
-    """*Optional*. New poll state. Bots receive only updates about manually stopped polls and polls, which are sent by the bot"""
+    """*Optional*. New poll state. Bots receive only updates about manually stopped polls and polls, which are sent by the bot."""
     poll_answer: PollAnswer | None = None
     """*Optional*. A user changed their answer in a non-anonymous poll. Bots receive new votes only in polls that were sent by the bot itself."""
     my_chat_member: ChatMemberUpdated | None = None
@@ -82,7 +85,20 @@ class Update(TelegramObject):
     """*Optional*. A chat boost was added or changed. The bot must be an administrator in the chat to receive these updates."""
     removed_chat_boost: ChatBoostRemoved | None = None
     """*Optional*. A boost was removed from a chat. The bot must be an administrator in the chat to receive these updates."""
-
+    guest_message: Message | None = None
+    """*Optional*. New guest message. The bot can use the field *Message.guest_query_id* and the method :class:`litegram.methods.answer_guest_query.AnswerGuestQuery` to send a message in response."""
+    widget_query: WidgetQuery | None = None
+    """*Optional*. New incoming query from a widget in a message sent by the bot or via the bot"""
+    shared_widget_query: SharedWidgetQuery | None = None
+    """*Optional*. New incoming query from a forwarded message with a shared widget"""
+    purchased_paid_media: PaidMediaPurchased | None = None
+    """*Optional*. A user purchased paid media with a non-empty payload sent by the bot in a non-channel chat"""
+    managed_bot: ManagedBotUpdated | None = None
+    """*Optional*. A new bot was created to be managed by the bot, or token or owner of a managed bot was changed"""
+    subscription: BotSubscriptionUpdated | None = None
+    """*Optional*. User payment subscription has changed"""
+    stopped_message_generation: MessageGenerationStopped | None = None
+    """*Optional*. A user asked the bot to stop the generation of a message"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -106,7 +122,6 @@ class Update(TelegramObject):
             callback_query: CallbackQuery | None = None,
             shipping_query: ShippingQuery | None = None,
             pre_checkout_query: PreCheckoutQuery | None = None,
-            paid_media_purchased: PaidMediaPurchased | None = None,
             poll: Poll | None = None,
             poll_answer: PollAnswer | None = None,
             my_chat_member: ChatMemberUpdated | None = None,
@@ -114,6 +129,13 @@ class Update(TelegramObject):
             chat_join_request: ChatJoinRequest | None = None,
             chat_boost: ChatBoostUpdated | None = None,
             removed_chat_boost: ChatBoostRemoved | None = None,
+            guest_message: Message | None = None,
+            widget_query: WidgetQuery | None = None,
+            shared_widget_query: SharedWidgetQuery | None = None,
+            purchased_paid_media: PaidMediaPurchased | None = None,
+            managed_bot: ManagedBotUpdated | None = None,
+            subscription: BotSubscriptionUpdated | None = None,
+            stopped_message_generation: MessageGenerationStopped | None = None,
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
@@ -137,7 +159,6 @@ class Update(TelegramObject):
                 callback_query=callback_query,
                 shipping_query=shipping_query,
                 pre_checkout_query=pre_checkout_query,
-                paid_media_purchased=paid_media_purchased,
                 poll=poll,
                 poll_answer=poll_answer,
                 my_chat_member=my_chat_member,
@@ -145,6 +166,13 @@ class Update(TelegramObject):
                 chat_join_request=chat_join_request,
                 chat_boost=chat_boost,
                 removed_chat_boost=removed_chat_boost,
+                guest_message=guest_message,
+                widget_query=widget_query,
+                shared_widget_query=shared_widget_query,
+                purchased_paid_media=purchased_paid_media,
+                managed_bot=managed_bot,
+                subscription=subscription,
+                stopped_message_generation=stopped_message_generation,
                 **__pydantic_kwargs,
             )
 
@@ -204,8 +232,8 @@ class Update(TelegramObject):
             return "edited_business_message"
         if self.business_message:
             return "business_message"
-        if self.paid_media_purchased:
-            return "paid_media_purchased"
+        if self.purchased_paid_media:
+            return "purchased_paid_media"
 
         raise UpdateTypeLookupError("Update does not contain any known event type.")
 

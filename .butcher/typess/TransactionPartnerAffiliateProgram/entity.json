@@ -1,0 +1,41 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Payments",
+    "anchor": "payments"
+  },
+  "object": {
+    "anchor": "transactionpartneraffiliateprogram",
+    "name": "TransactionPartnerAffiliateProgram",
+    "description": "Describes the affiliate program that issued the affiliate commission received via this transaction.",
+    "html_description": "<p>Describes the affiliate program that issued the affiliate commission received via this transaction.</p>",
+    "rst_description": "Describes the affiliate program that issued the affiliate commission received via this transaction.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the transaction partner, always 'affiliate_program'",
+        "html_description": "<td>Type of the transaction partner, always “affiliate_program”</td>",
+        "rst_description": "Type of the transaction partner, always 'affiliate_program'\n"
+      },
+      {
+        "name": "sponsor_user",
+        "type": "User",
+        "required": false,
+        "description": "Optional. Information about the bot that sponsored the affiliate program",
+        "html_description": "<td><em>Optional</em>. Information about the bot that sponsored the affiliate program</td>",
+        "rst_description": "*Optional*. Information about the bot that sponsored the affiliate program\n"
+      },
+      {
+        "name": "commission_per_mille",
+        "type": "Integer",
+        "required": true,
+        "description": "The number of Telegram Stars received by the bot for each 1000 Telegram Stars received by the affiliate program sponsor from referred users",
+        "html_description": "<td>The number of Telegram Stars received by the bot for each 1000 Telegram Stars received by the affiliate program sponsor from referred users</td>",
+        "rst_description": "The number of Telegram Stars received by the bot for each 1000 Telegram Stars received by the affiliate program sponsor from referred users\n"
+      }
+    ],
+    "category": "types"
+  }
+}

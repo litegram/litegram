@@ -13,7 +13,7 @@ class SwitchInlineQueryChosenChat(TelegramObject):
     """
 
     query: str | None = None
-    """*Optional*. The default inline query to be inserted in the input field. If left empty, only the bot's username will be inserted"""
+    """*Optional*. The default inline query to be inserted in the input field. If left empty, only the bot's username will be inserted."""
     allow_user_chats: bool | None = None
     """*Optional*. :code:`True`, if private chats with users can be chosen"""
     allow_bot_chats: bool | None = None
@@ -22,7 +22,6 @@ class SwitchInlineQueryChosenChat(TelegramObject):
     """*Optional*. :code:`True`, if group and supergroup chats can be chosen"""
     allow_channel_chats: bool | None = None
     """*Optional*. :code:`True`, if channel chats can be chosen"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

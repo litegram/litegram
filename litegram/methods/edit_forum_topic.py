@@ -19,14 +19,13 @@ class EditForumTopic(TelegramMethod[bool]):
     __api_method__ = "editForumTopic"
 
     chat_id: ChatIdUnion
-    """Unique identifier for the target chat or username of the target supergroup (in the format :code:`@supergroupusername`)"""
+    """Unique identifier for the target chat or username of the target supergroup in the format :code:`@username`"""
     message_thread_id: int
     """Unique identifier for the target message thread of the forum topic"""
     name: str | None = None
-    """New topic name, 0-128 characters. If not specified or empty, the current name of the topic will be kept"""
+    """New topic name, 0-128 characters. If not specified or empty, the current name of the topic will be kept."""
     icon_custom_emoji_id: str | None = None
-    """New unique identifier of the custom emoji shown as the topic icon. Use :class:`litegram.methods.get_forum_topic_icon_stickers.GetForumTopicIconStickers` to get all allowed custom emoji identifiers. Pass an empty string to remove the icon. If not specified, the current icon will be kept"""
-
+    """New unique identifier of the custom emoji shown as the topic icon. Use :class:`litegram.methods.get_forum_topic_icon_stickers.GetForumTopicIconStickers` to get all allowed custom emoji identifiers. Pass an empty string to remove the icon. If not specified, the current icon will be kept."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

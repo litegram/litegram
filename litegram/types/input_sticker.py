@@ -17,7 +17,7 @@ class InputSticker(TelegramObject):
     """
 
     sticker: InputFileUnion
-    """The added sticker. Pass a *file_id* as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or pass 'attach://<file_attach_name>' to upload a new file using multipart/form-data under <file_attach_name> name. Animated and video stickers can't be uploaded via HTTP URL. :ref:`More information on Sending Files » <sending-files>`"""
+    """The added sticker. Pass a *file_id* as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or pass 'attach://' to upload a new file using multipart/form-data under  name. Animated and video stickers can't be uploaded via HTTP URL. :ref:`More information on Sending Files » <sending-files>`"""
     format: str
     """Format of the added sticker, must be one of 'static' for a **.WEBP** or **.PNG** image, 'animated' for a **.TGS** animation, 'video' for a **.WEBM** video"""
     emoji_list: list[str]
@@ -26,7 +26,6 @@ class InputSticker(TelegramObject):
     """*Optional*. Position where the mask should be placed on faces. For 'mask' stickers only."""
     keywords: list[str] | None = None
     """*Optional*. List of 0-20 search keywords for the sticker with total length of up to 64 characters. For 'regular' and 'custom_emoji' stickers only."""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`

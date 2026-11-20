@@ -48,8 +48,7 @@ class OwnedGiftRegular(OwnedGift):
     is_upgrade_separate: bool | None = None
     """*Optional*. :code:`True`, if the gift's upgrade was purchased after the gift was sent; for gifts received on behalf of business accounts only"""
     unique_gift_number: int | None = None
-    """*Optional*. Unique number reserved for this gift when upgraded. See the *number* field in :class:`litegram.types.unique_gift.UniqueGift`"""
-
+    """*Optional*. Unique number reserved for this gift when upgraded. See the *number* field in :class:`litegram.types.unique_gift.UniqueGift`."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -57,9 +56,9 @@ class OwnedGiftRegular(OwnedGift):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[OwnedGiftType.REGULAR] = OwnedGiftType.REGULAR,
             gift: Gift,
             send_date: int,
+            type: Literal[OwnedGiftType.REGULAR] = OwnedGiftType.REGULAR,
             owned_gift_id: str | None = None,
             sender_user: User | None = None,
             text: str | None = None,
@@ -79,9 +78,9 @@ class OwnedGiftRegular(OwnedGift):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                type=type,
                 gift=gift,
                 send_date=send_date,
+                type=type,
                 owned_gift_id=owned_gift_id,
                 sender_user=sender_user,
                 text=text,

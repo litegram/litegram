@@ -21,19 +21,45 @@ if TYPE_CHECKING:
 
 
 class HttpxSession(BaseSession):
-    def __init__(self, proxy: str | None = None, **kwargs: Any) -> None:
+    def __init__(
+        self,
+        proxy: str | None = None,
+        max_connections: int | None = None,
+        max_keepalive_connections: int | None = None,
+        **kwargs: Any,
+    ) -> None:
+        """Create a session with optional connection pool limits.
+
+        :param proxy: Proxy URL passed to httpx.
+        :param max_connections: Maximum number of connections in the pool
+            (None = httpx default of 100).
+        :param max_keepalive_connections: Maximum number of keep-alive
+            connections (None = httpx default of 20).
+        """
         super().__init__(**kwargs)
         self._proxy = proxy
+        self._limits = httpx.Limits(
+            max_connections=max_connections,
+            max_keepalive_connections=max_keepalive_connections,
+        )
         self._client: httpx.AsyncClient | None = None
+        self._client_lock = asyncio.Lock()
 
     async def create_client(self) -> httpx.AsyncClient:
-        if self._client is None or self._client.is_closed:
-            self._client = httpx.AsyncClient(
-                proxy=self._proxy,
-                headers={"User-Agent": f"litegram/{__version__}"},
-                timeout=self.timeout,
-            )
-        return self._client
+        # Fast path without acquiring the lock on every request.
+        if self._client is not None and not self._client.is_closed:
+            return self._client
+        # The lock prevents two concurrent first requests from creating two
+        # separate httpx clients (and leaking one of them).
+        async with self._client_lock:
+            if self._client is None or self._client.is_closed:
+                self._client = httpx.AsyncClient(
+                    proxy=self._proxy,
+                    headers={"User-Agent": f"litegram/{__version__}"},
+                    timeout=self.timeout,
+                    limits=self._limits,
+                )
+            return self._client
 
     async def close(self) -> None:
         if self._client is not None and not self._client.is_closed:

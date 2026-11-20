@@ -1,0 +1,65 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "businessconnection",
+    "name": "BusinessConnection",
+    "description": "Describes the connection of the bot with a business account.",
+    "html_description": "<p>Describes the connection of the bot with a business account.</p>",
+    "rst_description": "Describes the connection of the bot with a business account.",
+    "annotations": [
+      {
+        "name": "id",
+        "type": "String",
+        "required": true,
+        "description": "Unique identifier of the business connection",
+        "html_description": "<td>Unique identifier of the business connection</td>",
+        "rst_description": "Unique identifier of the business connection\n"
+      },
+      {
+        "name": "user",
+        "type": "User",
+        "required": true,
+        "description": "Business account user that created the business connection",
+        "html_description": "<td>Business account user that created the business connection</td>",
+        "rst_description": "Business account user that created the business connection\n"
+      },
+      {
+        "name": "user_chat_id",
+        "type": "Integer",
+        "required": true,
+        "description": "Identifier of a private chat with the user who created the business connection. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.",
+        "html_description": "<td>Identifier of a private chat with the user who created the business connection. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.</td>",
+        "rst_description": "Identifier of a private chat with the user who created the business connection. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier.\n"
+      },
+      {
+        "name": "date",
+        "type": "Integer",
+        "required": true,
+        "description": "Date the connection was established in Unix time",
+        "html_description": "<td>Date the connection was established in Unix time</td>",
+        "rst_description": "Date the connection was established in Unix time\n"
+      },
+      {
+        "name": "rights",
+        "type": "BusinessBotRights",
+        "required": false,
+        "description": "Optional. Rights of the business bot",
+        "html_description": "<td><em>Optional</em>. Rights of the business bot</td>",
+        "rst_description": "*Optional*. Rights of the business bot\n"
+      },
+      {
+        "name": "is_enabled",
+        "type": "Boolean",
+        "required": true,
+        "description": "True, if the connection is active",
+        "html_description": "<td><em>True</em>, if the connection is active</td>",
+        "rst_description": ":code:`True`, if the connection is active\n"
+      }
+    ],
+    "category": "types"
+  }
+}

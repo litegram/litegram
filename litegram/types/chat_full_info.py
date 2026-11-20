@@ -8,6 +8,7 @@ from .chat import Chat
 
 if TYPE_CHECKING:
     from .accepted_gift_types import AcceptedGiftTypes
+    from .audio import Audio
     from .birthdate import Birthdate
     from .business_intro import BusinessIntro
     from .business_location import BusinessLocation
@@ -15,10 +16,14 @@ if TYPE_CHECKING:
     from .chat_location import ChatLocation
     from .chat_permissions import ChatPermissions
     from .chat_photo import ChatPhoto
+    from .chat_share_theme_union import ChatShareThemeUnion
+    from .community import Community
     from .custom import DateTime
     from .message import Message
     from .reaction_type_union import ReactionTypeUnion
+    from .ton_wallet_card import TonWalletCard
     from .unique_gift_colors import UniqueGiftColors
+    from .user import User
     from .user_rating import UserRating
 
 
@@ -82,7 +87,7 @@ class ChatFullInfo(Chat):
     bio: str | None = None
     """*Optional*. Bio of the other party in a private chat"""
     has_private_forwards: bool | None = None
-    """*Optional*. :code:`True`, if privacy settings of the other party in the private chat allows to use :code:`tg://user?id=<user_id>` links only in chats with the user"""
+    """*Optional*. :code:`True`, if privacy settings of the other party in the private chat allows to use :code:`tg://user?id=` links only in chats with the user"""
     has_restricted_voice_and_video_messages: bool | None = None
     """*Optional*. :code:`True`, if the privacy settings of the other party restrict sending voice and video note messages in the private chat"""
     join_to_send_messages: bool | None = None
@@ -128,13 +133,22 @@ class ChatFullInfo(Chat):
     unique_gift_colors: UniqueGiftColors | None = None
     """*Optional*. The color scheme based on a unique gift that must be used for the chat's name, message replies and link previews"""
     paid_message_star_count: int | None = None
-    """*Optional*. The number of Telegram Stars a general user have to pay to send a message to the chat"""
+    """*Optional*. The number of Telegram Stars a general user has to pay to send a message to the chat"""
+    first_profile_audio: Audio | None = None
+    """*Optional*. For private chats, the first audio added to the profile of the user"""
+    guard_bot: User | None = None
+    """*Optional*. The bot that processes join request queries in the chat. The field is only available to chat administrators."""
+    community: Community | None = None
+    """*Optional*. The :class:`litegram.types.community.Community` to which the chat belongs"""
+    ton_wallet_card: TonWalletCard | None = None
+    """*Optional*. For private chats, the TON wallet card of the user, which is shown on their profile page"""
+    share_theme: ChatShareThemeUnion | None = None
+    """*Optional*. For private chats, supergroups and channels, the theme of the screen for sharing a link to the user or the chat; omitted if the default theme is used"""
     can_send_gift: bool | None = Field(None, json_schema_extra={"deprecated": True})
     """*Optional*. :code:`True`, if gifts can be sent to the chat
 
 .. deprecated:: API:9.0
    https://core.telegram.org/bots/api-changelog#april-11-2025"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -192,6 +206,11 @@ class ChatFullInfo(Chat):
             rating: UserRating | None = None,
             unique_gift_colors: UniqueGiftColors | None = None,
             paid_message_star_count: int | None = None,
+            first_profile_audio: Audio | None = None,
+            guard_bot: User | None = None,
+            community: Community | None = None,
+            ton_wallet_card: TonWalletCard | None = None,
+            share_theme: ChatShareThemeUnion | None = None,
             can_send_gift: bool | None = None,
             **__pydantic_kwargs: Any,
         ) -> None:
@@ -250,6 +269,11 @@ class ChatFullInfo(Chat):
                 rating=rating,
                 unique_gift_colors=unique_gift_colors,
                 paid_message_star_count=paid_message_star_count,
+                first_profile_audio=first_profile_audio,
+                guard_bot=guard_bot,
+                community=community,
+                ton_wallet_card=ton_wallet_card,
+                share_theme=share_theme,
                 can_send_gift=can_send_gift,
                 **__pydantic_kwargs,
             )

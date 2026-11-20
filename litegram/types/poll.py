@@ -7,6 +7,7 @@ from .base import TelegramObject
 if TYPE_CHECKING:
     from .custom import DateTime
     from .message_entity import MessageEntity
+    from .poll_media import PollMedia
     from .poll_option import PollOption
 
 
@@ -35,8 +36,6 @@ class Poll(TelegramObject):
     """:code:`True`, if the poll allows multiple answers"""
     question_entities: list[MessageEntity] | None = None
     """*Optional*. Special entities that appear in the *question*. Currently, only custom emoji entities are allowed in poll questions"""
-    correct_option_id: int | None = None
-    """*Optional*. 0-based identifier of the correct answer option. Available only for polls in the quiz mode, which are closed, or was sent (not forwarded) by the bot or to the private chat with the bot."""
     explanation: str | None = None
     """*Optional*. Text that is shown when a user chooses an incorrect answer or taps on the lamp icon in a quiz-style poll, 0-200 characters"""
     explanation_entities: list[MessageEntity] | None = None
@@ -45,7 +44,22 @@ class Poll(TelegramObject):
     """*Optional*. Amount of time in seconds the poll will be active after creation"""
     close_date: DateTime | None = None
     """*Optional*. Point in time (Unix timestamp) when the poll will be automatically closed"""
-
+    allows_revoting: bool
+    """:code:`True`, if the poll allows to change the chosen answer options"""
+    members_only: bool
+    """:code:`True` if voting is limited to users who have been members of the chat where the poll was originally sent for more than 24 hours"""
+    country_codes: list[str] | None = None
+    """*Optional*. A list of two-letter `ISO 3166-1 alpha-2 <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_ country codes indicating the countries from which users can vote in the poll. The country code 'FT' is used for users with anonymous numbers. If omitted, then users from any country can participate in the poll."""
+    correct_option_ids: list[int] | None = None
+    """*Optional*. Array of 0-based identifiers of the correct answer options. Available only for polls in quiz mode which are closed or were sent (not forwarded) by the bot or to the private chat with the bot."""
+    explanation_media: PollMedia | None = None
+    """*Optional*. Media added to the quiz explanation"""
+    description: str | None = None
+    """*Optional*. Description of the poll; for polls inside the :class:`litegram.types.message.Message` object only"""
+    description_entities: list[MessageEntity] | None = None
+    """*Optional*. Special entities like usernames, URLs, bot commands, etc. that appear in the description"""
+    media: PollMedia | None = None
+    """*Optional*. Media added to the poll description; for polls inside the :class:`litegram.types.message.Message` object only"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -61,12 +75,19 @@ class Poll(TelegramObject):
             is_anonymous: bool,
             type: str,
             allows_multiple_answers: bool,
+            allows_revoting: bool,
+            members_only: bool,
             question_entities: list[MessageEntity] | None = None,
-            correct_option_id: int | None = None,
             explanation: str | None = None,
             explanation_entities: list[MessageEntity] | None = None,
             open_period: int | None = None,
             close_date: DateTime | None = None,
+            country_codes: list[str] | None = None,
+            correct_option_ids: list[int] | None = None,
+            explanation_media: PollMedia | None = None,
+            description: str | None = None,
+            description_entities: list[MessageEntity] | None = None,
+            media: PollMedia | None = None,
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
@@ -82,11 +103,18 @@ class Poll(TelegramObject):
                 is_anonymous=is_anonymous,
                 type=type,
                 allows_multiple_answers=allows_multiple_answers,
+                allows_revoting=allows_revoting,
+                members_only=members_only,
                 question_entities=question_entities,
-                correct_option_id=correct_option_id,
                 explanation=explanation,
                 explanation_entities=explanation_entities,
                 open_period=open_period,
                 close_date=close_date,
+                country_codes=country_codes,
+                correct_option_ids=correct_option_ids,
+                explanation_media=explanation_media,
+                description=description,
+                description_entities=description_entities,
+                media=media,
                 **__pydantic_kwargs,
             )

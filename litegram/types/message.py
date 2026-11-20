@@ -54,10 +54,15 @@ if TYPE_CHECKING:
     from .chat_background import ChatBackground
     from .chat_boost_added import ChatBoostAdded
     from .chat_id_union import ChatIdUnion
+    from .chat_owner_changed import ChatOwnerChanged
+    from .chat_owner_left import ChatOwnerLeft
     from .chat_shared import ChatShared
     from .checklist import Checklist
     from .checklist_tasks_added import ChecklistTasksAdded
     from .checklist_tasks_done import ChecklistTasksDone
+    from .community_chat_added import CommunityChatAdded
+    from .community_chat_joined import CommunityChatJoined
+    from .community_chat_removed import CommunityChatRemoved
     from .contact import Contact
     from .custom import DateTime
     from .date_time_union import DateTimeUnion
@@ -87,7 +92,9 @@ if TYPE_CHECKING:
     from .invoice import Invoice
     from .labeled_price import LabeledPrice
     from .link_preview_options import LinkPreviewOptions
+    from .live_photo import LivePhoto
     from .location import Location
+    from .managed_bot_created import ManagedBotCreated
     from .maybe_inaccessible_message_union import MaybeInaccessibleMessageUnion
     from .media_union import MediaUnion
     from .message_auto_delete_timer_changed import MessageAutoDeleteTimerChanged
@@ -95,14 +102,18 @@ if TYPE_CHECKING:
     from .message_origin_union import MessageOriginUnion
     from .paid_media_info import PaidMediaInfo
     from .paid_message_price_changed import PaidMessagePriceChanged
+    from .paid_messages_waived import PaidMessagesWaived
     from .passport_data import PassportData
     from .photo_size import PhotoSize
     from .poll import Poll
+    from .poll_option_added import PollOptionAdded
+    from .poll_option_deleted import PollOptionDeleted
     from .proximity_alert_triggered import ProximityAlertTriggered
     from .reaction_type_union import ReactionTypeUnion
     from .refunded_payment import RefundedPayment
     from .reply_keyboard_markup import ReplyKeyboardMarkup
     from .reply_markup_union import ReplyMarkupUnion
+    from .rich_message import RichMessage
     from .sticker import Sticker
     from .story import Story
     from .successful_payment import SuccessfulPayment
@@ -114,6 +125,7 @@ if TYPE_CHECKING:
     from .suggested_post_parameters import SuggestedPostParameters
     from .suggested_post_refunded import SuggestedPostRefunded
     from .text_quote import TextQuote
+    from .ton_wallet_transfer import TonWalletTransfer
     from .unique_gift_info import UniqueGiftInfo
     from .user import User
     from .user_shared import UserShared
@@ -127,6 +139,7 @@ if TYPE_CHECKING:
     from .video_note import VideoNote
     from .voice import Voice
     from .web_app_data import WebAppData
+    from .widget import Widget
     from .write_access_allowed import WriteAccessAllowed
 
 
@@ -138,7 +151,7 @@ class Message(MaybeInaccessibleMessage):
     """
 
     message_id: int
-    """Unique message identifier inside this chat. In specific instances (e.g., message containing a video sent to a big chat), the server might automatically schedule a message instead of sending it immediately. In such cases, this field will be 0 and the relevant message will be unusable until it is actually sent"""
+    """Unique message identifier inside this chat; 0 for ephemeral messages. In specific instances (e.g., a message containing a video sent to a big chat), the server might automatically schedule a message instead of sending it immediately. In such cases, this field will be 0 and the relevant message will be unusable until it is actually sent."""
     date: DateTime
     """Date the message was sent in Unix time. It is always a positive number, representing a valid date."""
     chat: Chat
@@ -147,8 +160,6 @@ class Message(MaybeInaccessibleMessage):
     """*Optional*. Unique identifier of a message thread or forum topic to which the message belongs; for supergroups and private chats only"""
     direct_messages_topic: DirectMessagesTopic | None = None
     """*Optional*. Information about the direct messages chat topic that contains the message"""
-    from_user: User | None = Field(None, alias="from")
-    """*Optional*. Sender of the message; may be empty for messages sent to channels. For backward compatibility, if the message was sent on behalf of a chat, the field contains a fake sender user in non-channel chats"""
     sender_chat: Chat | None = None
     """*Optional*. Sender of the message when sent on behalf of a chat. For example, the supergroup itself for messages sent by its anonymous administrators or a linked channel for messages automatically forwarded to the channel's discussion group. For backward compatibility, if the message was sent on behalf of a chat, the field *from* contains a fake sender user in non-channel chats."""
     sender_boost_count: int | None = None
@@ -164,7 +175,7 @@ class Message(MaybeInaccessibleMessage):
     is_automatic_forward: bool | None = None
     """*Optional*. :code:`True`, if the message is a channel post that was automatically forwarded to the connected discussion group"""
     reply_to_message: Message | None = None
-    """*Optional*. For replies in the same chat and message thread, the original message. Note that the :class:`litegram.types.message.Message` object in this field will not contain further *reply_to_message* fields even if it itself is a reply."""
+    """*Optional*. For replies in the same chat and message thread, the original message. Note that the :class:`litegram.types.message.Message` object in this field will not contain further *reply_to_message* fields even if it itself is a reply. If the message is a reply to an ephemeral message, then this field may be omitted."""
     external_reply: ExternalReplyInfo | None = None
     """*Optional*. Information about the message that is being replied to, which may come from another chat or forum topic"""
     quote: TextQuote | None = None
@@ -184,7 +195,7 @@ class Message(MaybeInaccessibleMessage):
     is_paid_post: bool | None = None
     """*Optional*. :code:`True`, if the message is a paid post. Note that such posts must not be deleted for 24 hours to receive the payment and can't be edited."""
     media_group_id: str | None = None
-    """*Optional*. The unique identifier of a media message group this message belongs to"""
+    """*Optional*. The unique identifier inside this chat of a media message group this message belongs to"""
     author_signature: str | None = None
     """*Optional*. Signature of the post author for messages in channels, or the custom title of an anonymous group administrator"""
     paid_star_count: int | None = None
@@ -200,7 +211,7 @@ class Message(MaybeInaccessibleMessage):
     effect_id: str | None = None
     """*Optional*. Unique identifier of the message effect added to the message"""
     animation: Animation | None = None
-    """*Optional*. Message is an animation, information about the animation. For backward compatibility, when this field is set, the *document* field will also be set"""
+    """*Optional*. Message is an animation, information about the animation. For backward compatibility, when this field is set, the *document* field will also be set."""
     audio: Audio | None = None
     """*Optional*. Message is an audio file, information about the file"""
     document: Document | None = None
@@ -220,11 +231,11 @@ class Message(MaybeInaccessibleMessage):
     voice: Voice | None = None
     """*Optional*. Message is a voice message, information about the file"""
     caption: str | None = None
-    """*Optional*. Caption for the animation, audio, document, paid media, photo, video or voice"""
+    """*Optional*. Caption for the animation, audio, document, live photo, paid media, photo, video, voice, or widget"""
     caption_entities: list[MessageEntity] | None = None
     """*Optional*. For messages with a caption, special entities like usernames, URLs, bot commands, etc. that appear in the caption"""
     show_caption_above_media: bool | None = None
-    """*Optional*. :code:`True`, if the caption must be shown above the message media"""
+    """*Optional*. :code:`True`, if the caption must be shown above the message media or the widget"""
     has_media_spoiler: bool | None = None
     """*Optional*. :code:`True`, if the message media is covered by a spoiler animation"""
     checklist: Checklist | None = None
@@ -238,7 +249,7 @@ class Message(MaybeInaccessibleMessage):
     poll: Poll | None = None
     """*Optional*. Message is a native poll, information about the poll"""
     venue: Venue | None = None
-    """*Optional*. Message is a venue, information about the venue. For backward compatibility, when this field is set, the *location* field will also be set"""
+    """*Optional*. Message is a venue, information about the venue. For backward compatibility, when this field is set, the *location* field will also be set."""
     location: Location | None = None
     """*Optional*. Message is a shared location, information about the location"""
     new_chat_members: list[User] | None = None
@@ -288,7 +299,7 @@ class Message(MaybeInaccessibleMessage):
     passport_data: PassportData | None = None
     """*Optional*. Telegram Passport data"""
     proximity_alert_triggered: ProximityAlertTriggered | None = None
-    """*Optional*. Service message. A user in the chat triggered another user's proximity alert while sharing Live Location."""
+    """*Optional*. Service message: a user in the chat triggered another user's proximity alert while sharing Live Location"""
     boost_added: ChatBoostAdded | None = None
     """*Optional*. Service message: user boosted the chat"""
     chat_background_set: ChatBackground | None = None
@@ -342,7 +353,49 @@ class Message(MaybeInaccessibleMessage):
     web_app_data: WebAppData | None = None
     """*Optional*. Service message: data sent by a Web App"""
     reply_markup: InlineKeyboardMarkup | None = None
-    """*Optional*. Inline keyboard attached to the message. :code:`login_url` buttons are represented as ordinary :code:`url` buttons."""
+    """*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_ attached to the message. :code:`login_url` buttons are represented as ordinary :code:`url` buttons."""
+    from_user: User | None = Field(None, alias="from")
+    """*Optional*. Sender of the message; may be empty for messages sent to channels. For backward compatibility, if the message was sent on behalf of a chat, the field contains a fake sender user in non-channel chats."""
+    sender_tag: str | None = None
+    """*Optional*. Tag or custom title of the sender of the message; for supergroups only"""
+    receiver_user: User | None = None
+    """*Optional*. For ephemeral messages, the user who received the message"""
+    ephemeral_message_id: int | None = None
+    """*Optional*. For ephemeral messages, identifier of the ephemeral message inside this chat. The identifier may be reused for another ephemeral message after the message is deleted or expires."""
+    guest_query_id: str | None = None
+    """*Optional*. The unique identifier for the guest query. Use this identifier with the method :class:`litegram.methods.answer_guest_query.AnswerGuestQuery` to send a response message. If non-empty, the message belongs to the chat where the guest bot was summoned, which may not coincide with other existing bot chats sharing the same identifier."""
+    reply_to_poll_option_id: str | None = None
+    """*Optional*. Persistent identifier of the specific poll option that is being replied to"""
+    guest_bot_caller_user: User | None = None
+    """*Optional*. For a message sent by a guest bot, this is the user whose original message triggered the bot's response"""
+    guest_bot_caller_chat: Chat | None = None
+    """*Optional*. For a message sent by a guest bot, this is the chat whose original message triggered the bot's response"""
+    rich_message: RichMessage | None = None
+    """*Optional*. Message is a rich formatted message"""
+    live_photo: LivePhoto | None = None
+    """*Optional*. Message is a live photo, information about the live photo. For backward compatibility, when this field is set, the *photo* field will also be set."""
+    widget: Widget | None = None
+    """*Optional*. Message is an HTML widget, information about the widget"""
+    chat_owner_left: ChatOwnerLeft | None = None
+    """*Optional*. Service message: chat owner has left"""
+    chat_owner_changed: ChatOwnerChanged | None = None
+    """*Optional*. Service message: chat owner has changed"""
+    community_chat_added: CommunityChatAdded | None = None
+    """*Optional*. Service message: chat or bot added to a :class:`litegram.types.community.Community`"""
+    community_chat_joined: CommunityChatJoined | None = None
+    """*Optional*. Service message: chat was joined by a user from a :class:`litegram.types.community.Community`"""
+    community_chat_removed: CommunityChatRemoved | None = None
+    """*Optional*. Service message: chat or bot removed from a :class:`litegram.types.community.Community`"""
+    managed_bot_created: ManagedBotCreated | None = None
+    """*Optional*. Service message: user created a bot that will be managed by the current bot"""
+    paid_messages_waived: PaidMessagesWaived | None = None
+    """*Optional*. Service message: the sender of the message used a link of the other user, which allows sending messages to the user without paying Telegram Stars"""
+    poll_option_added: PollOptionAdded | None = None
+    """*Optional*. Service message: answer option was added to a poll"""
+    poll_option_deleted: PollOptionDeleted | None = None
+    """*Optional*. Service message: answer option was deleted from a poll"""
+    ton_wallet_transfer: TonWalletTransfer | None = None
+    """*Optional*. Service message: a transfer with a TON wallet"""
     forward_date: DateTime | None = Field(None, json_schema_extra={"deprecated": True})
     """*Optional*. For forwarded messages, date the original message was sent in Unix time
 
@@ -378,7 +431,6 @@ class Message(MaybeInaccessibleMessage):
 
 .. deprecated:: API:7.0
    https://core.telegram.org/bots/api-changelog#december-29-2023"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -391,7 +443,6 @@ class Message(MaybeInaccessibleMessage):
             chat: Chat,
             message_thread_id: int | None = None,
             direct_messages_topic: DirectMessagesTopic | None = None,
-            from_user: User | None = None,
             sender_chat: Chat | None = None,
             sender_boost_count: int | None = None,
             sender_business_bot: User | None = None,
@@ -489,6 +540,27 @@ class Message(MaybeInaccessibleMessage):
             video_chat_participants_invited: VideoChatParticipantsInvited | None = None,
             web_app_data: WebAppData | None = None,
             reply_markup: InlineKeyboardMarkup | None = None,
+            from_user: User | None = None,
+            sender_tag: str | None = None,
+            receiver_user: User | None = None,
+            ephemeral_message_id: int | None = None,
+            guest_query_id: str | None = None,
+            reply_to_poll_option_id: str | None = None,
+            guest_bot_caller_user: User | None = None,
+            guest_bot_caller_chat: Chat | None = None,
+            rich_message: RichMessage | None = None,
+            live_photo: LivePhoto | None = None,
+            widget: Widget | None = None,
+            chat_owner_left: ChatOwnerLeft | None = None,
+            chat_owner_changed: ChatOwnerChanged | None = None,
+            community_chat_added: CommunityChatAdded | None = None,
+            community_chat_joined: CommunityChatJoined | None = None,
+            community_chat_removed: CommunityChatRemoved | None = None,
+            managed_bot_created: ManagedBotCreated | None = None,
+            paid_messages_waived: PaidMessagesWaived | None = None,
+            poll_option_added: PollOptionAdded | None = None,
+            poll_option_deleted: PollOptionDeleted | None = None,
+            ton_wallet_transfer: TonWalletTransfer | None = None,
             forward_date: DateTime | None = None,
             forward_from: User | None = None,
             forward_from_chat: Chat | None = None,
@@ -508,7 +580,6 @@ class Message(MaybeInaccessibleMessage):
                 chat=chat,
                 message_thread_id=message_thread_id,
                 direct_messages_topic=direct_messages_topic,
-                from_user=from_user,
                 sender_chat=sender_chat,
                 sender_boost_count=sender_boost_count,
                 sender_business_bot=sender_business_bot,
@@ -606,6 +677,27 @@ class Message(MaybeInaccessibleMessage):
                 video_chat_participants_invited=video_chat_participants_invited,
                 web_app_data=web_app_data,
                 reply_markup=reply_markup,
+                from_user=from_user,
+                sender_tag=sender_tag,
+                receiver_user=receiver_user,
+                ephemeral_message_id=ephemeral_message_id,
+                guest_query_id=guest_query_id,
+                reply_to_poll_option_id=reply_to_poll_option_id,
+                guest_bot_caller_user=guest_bot_caller_user,
+                guest_bot_caller_chat=guest_bot_caller_chat,
+                rich_message=rich_message,
+                live_photo=live_photo,
+                widget=widget,
+                chat_owner_left=chat_owner_left,
+                chat_owner_changed=chat_owner_changed,
+                community_chat_added=community_chat_added,
+                community_chat_joined=community_chat_joined,
+                community_chat_removed=community_chat_removed,
+                managed_bot_created=managed_bot_created,
+                paid_messages_waived=paid_messages_waived,
+                poll_option_added=poll_option_added,
+                poll_option_deleted=poll_option_deleted,
+                ton_wallet_transfer=ton_wallet_transfer,
                 forward_date=forward_date,
                 forward_from=forward_from,
                 forward_from_chat=forward_from_chat,

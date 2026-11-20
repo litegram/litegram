@@ -1,0 +1,119 @@
+mutable:
+- BotCommand
+- ChatPermissions
+- ForceReply
+- InlineKeyboardButton
+- InlineKeyboardMarkup
+- InlineQueryResult
+- InputMedia
+- InputMessageContent
+- KeyboardButton
+- KeyboardButtonPollType
+- LabeledPrice
+- MenuButton
+- MessageEntity
+- PassportElementError
+- ReplyKeyboardMarkup
+- ReplyKeyboardRemove
+special:
+  BackgroundFillFreeformGradient: BackgroundFill
+  BackgroundFillGradient: BackgroundFill
+  BackgroundFillSolid: BackgroundFill
+  BackgroundTypeChatTheme: BackgroundType
+  BackgroundTypeFill: BackgroundType
+  BackgroundTypePattern: BackgroundType
+  BackgroundTypeWallpaper: BackgroundType
+  BotCommandScopeAllChatAdministrators: BotCommandScope
+  BotCommandScopeAllGroupChats: BotCommandScope
+  BotCommandScopeAllPrivateChats: BotCommandScope
+  BotCommandScopeChat: BotCommandScope
+  BotCommandScopeChatAdministrators: BotCommandScope
+  BotCommandScopeChatMember: BotCommandScope
+  BotCommandScopeDefault: BotCommandScope
+  ChatBoostSourceGiftCode: ChatBoostSource
+  ChatBoostSourceGiveaway: ChatBoostSource
+  ChatBoostSourcePremium: ChatBoostSource
+  ChatFullInfo: Chat
+  ChatMemberAdministrator: ChatMember
+  ChatMemberBanned: ChatMember
+  ChatMemberLeft: ChatMember
+  ChatMemberMember: ChatMember
+  ChatMemberOwner: ChatMember
+  ChatMemberRestricted: ChatMember
+  InaccessibleMessage: MaybeInaccessibleMessage
+  InlineQueryResultArticle: InlineQueryResult
+  InlineQueryResultAudio: InlineQueryResult
+  InlineQueryResultCachedAudio: InlineQueryResult
+  InlineQueryResultCachedDocument: InlineQueryResult
+  InlineQueryResultCachedGif: InlineQueryResult
+  InlineQueryResultCachedMpeg4Gif: InlineQueryResult
+  InlineQueryResultCachedPhoto: InlineQueryResult
+  InlineQueryResultCachedSticker: InlineQueryResult
+  InlineQueryResultCachedVideo: InlineQueryResult
+  InlineQueryResultCachedVoice: InlineQueryResult
+  InlineQueryResultContact: InlineQueryResult
+  InlineQueryResultDocument: InlineQueryResult
+  InlineQueryResultGame: InlineQueryResult
+  InlineQueryResultGif: InlineQueryResult
+  InlineQueryResultLocation: InlineQueryResult
+  InlineQueryResultMpeg4Gif: InlineQueryResult
+  InlineQueryResultPhoto: InlineQueryResult
+  InlineQueryResultVenue: InlineQueryResult
+  InlineQueryResultVideo: InlineQueryResult
+  InlineQueryResultVoice: InlineQueryResult
+  InputContactMessageContent: InputMessageContent
+  InputInvoiceMessageContent: InputMessageContent
+  InputLocationMessageContent: InputMessageContent
+  InputMediaAnimation: InputMedia
+  InputMediaAudio: InputMedia
+  InputMediaDocument: InputMedia
+  InputMediaPhoto: InputMedia
+  InputMediaVideo: InputMedia
+  InputPaidMediaPhoto: InputPaidMedia
+  InputPaidMediaVideo: InputPaidMedia
+  InputProfilePhotoAnimated: InputProfilePhoto
+  InputProfilePhotoStatic: InputProfilePhoto
+  InputStoryContentPhoto: InputStoryContent
+  InputStoryContentVideo: InputStoryContent
+  InputTextMessageContent: InputMessageContent
+  InputVenueMessageContent: InputMessageContent
+  MenuButtonCommands: MenuButton
+  MenuButtonDefault: MenuButton
+  MenuButtonWebApp: MenuButton
+  Message: MaybeInaccessibleMessage
+  MessageOriginChannel: MessageOrigin
+  MessageOriginChat: MessageOrigin
+  MessageOriginHiddenUser: MessageOrigin
+  MessageOriginUser: MessageOrigin
+  OwnedGiftRegular: OwnedGift
+  OwnedGiftUnique: OwnedGift
+  PaidMediaPhoto: PaidMedia
+  PaidMediaPreview: PaidMedia
+  PaidMediaVideo: PaidMedia
+  PassportElementErrorDataField: PassportElementError
+  PassportElementErrorFile: PassportElementError
+  PassportElementErrorFiles: PassportElementError
+  PassportElementErrorFrontSide: PassportElementError
+  PassportElementErrorReverseSide: PassportElementError
+  PassportElementErrorSelfie: PassportElementError
+  PassportElementErrorTranslationFile: PassportElementError
+  PassportElementErrorTranslationFiles: PassportElementError
+  PassportElementErrorUnspecified: PassportElementError
+  ReactionTypeCustomEmoji: ReactionType
+  ReactionTypeEmoji: ReactionType
+  ReactionTypePaid: ReactionType
+  RevenueWithdrawalStateFailed: RevenueWithdrawalState
+  RevenueWithdrawalStatePending: RevenueWithdrawalState
+  RevenueWithdrawalStateSucceeded: RevenueWithdrawalState
+  StoryAreaTypeLink: StoryAreaType
+  StoryAreaTypeLocation: StoryAreaType
+  StoryAreaTypeSuggestedReaction: StoryAreaType
+  StoryAreaTypeUniqueGift: StoryAreaType
+  StoryAreaTypeWeather: StoryAreaType
+  TransactionPartnerAffiliateProgram: TransactionPartner
+  TransactionPartnerChat: TransactionPartner
+  TransactionPartnerFragment: TransactionPartner
+  TransactionPartnerOther: TransactionPartner
+  TransactionPartnerTelegramAds: TransactionPartner
+  TransactionPartnerTelegramApi: TransactionPartner
+  TransactionPartnerUser: TransactionPartner

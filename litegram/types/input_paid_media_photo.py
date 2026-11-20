@@ -19,8 +19,7 @@ class InputPaidMediaPhoto(InputPaidMedia):
     type: Literal[InputPaidMediaType.PHOTO] = InputPaidMediaType.PHOTO
     """Type of the media, must be *photo*"""
     media: InputFileUnion
-    """File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass 'attach://<file_attach_name>' to upload a new one using multipart/form-data under <file_attach_name> name. :ref:`More information on Sending Files » <sending-files>`"""
-
+    """File to send. Pass a file_id to send a file that exists on the Telegram servers (recommended), pass an HTTP URL for Telegram to get a file from the Internet, or pass 'attach://' to upload a new one using multipart/form-data under  name. :ref:`More information on Sending Files » <sending-files>`"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -28,8 +27,8 @@ class InputPaidMediaPhoto(InputPaidMedia):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InputPaidMediaType.PHOTO] = InputPaidMediaType.PHOTO,
             media: InputFileUnion,
+            type: Literal[InputPaidMediaType.PHOTO] = InputPaidMediaType.PHOTO,
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!

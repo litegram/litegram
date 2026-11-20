@@ -1,0 +1,33 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Payments",
+    "anchor": "payments"
+  },
+  "object": {
+    "anchor": "transactionpartnerfragment",
+    "name": "TransactionPartnerFragment",
+    "description": "Describes a withdrawal transaction with Fragment.",
+    "html_description": "<p>Describes a withdrawal transaction with Fragment.</p>",
+    "rst_description": "Describes a withdrawal transaction with Fragment.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the transaction partner, always 'fragment'",
+        "html_description": "<td>Type of the transaction partner, always “fragment”</td>",
+        "rst_description": "Type of the transaction partner, always 'fragment'\n"
+      },
+      {
+        "name": "withdrawal_state",
+        "type": "RevenueWithdrawalState",
+        "required": false,
+        "description": "Optional. State of the transaction if the transaction is outgoing",
+        "html_description": "<td><em>Optional</em>. State of the transaction if the transaction is outgoing</td>",
+        "rst_description": "*Optional*. State of the transaction if the transaction is outgoing\n"
+      }
+    ],
+    "category": "types"
+  }
+}

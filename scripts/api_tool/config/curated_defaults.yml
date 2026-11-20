@@ -1,0 +1,1732 @@
+AffiliateInfo:
+  affiliate_chat: None
+  affiliate_user: None
+  nanostar_amount: None
+Animation:
+  file_name: None
+  file_size: None
+  mime_type: None
+  thumbnail: None
+AnswerCallbackQuery:
+  cache_time: None
+  show_alert: None
+  text: None
+  url: None
+AnswerInlineQuery:
+  button: None
+  cache_time: None
+  is_personal: None
+  next_offset: None
+AnswerPreCheckoutQuery:
+  error_message: None
+AnswerShippingQuery:
+  error_message: None
+  shipping_options: None
+ApproveSuggestedPost:
+  send_date: None
+Audio:
+  file_name: None
+  file_size: None
+  mime_type: None
+  performer: None
+  thumbnail: None
+  title: None
+BackgroundFillFreeformGradient:
+  type: '"freeform_gradient"'
+BackgroundFillGradient:
+  type: '"gradient"'
+BackgroundFillSolid:
+  type: '"solid"'
+BackgroundTypeChatTheme:
+  type: '"chat_theme"'
+BackgroundTypeFill:
+  type: '"fill"'
+BackgroundTypePattern:
+  is_inverted: None
+  is_moving: None
+  type: '"pattern"'
+BackgroundTypeWallpaper:
+  is_blurred: None
+  is_moving: None
+  type: '"wallpaper"'
+BanChatMember:
+  revoke_messages: None
+  until_date: None
+Birthdate:
+  year: None
+BotCommandScopeAllChatAdministrators:
+  type: BotCommandScopeType.ALL_CHAT_ADMINISTRATORS
+BotCommandScopeAllGroupChats:
+  type: BotCommandScopeType.ALL_GROUP_CHATS
+BotCommandScopeAllPrivateChats:
+  type: BotCommandScopeType.ALL_PRIVATE_CHATS
+BotCommandScopeChat:
+  type: BotCommandScopeType.CHAT
+BotCommandScopeChatAdministrators:
+  type: BotCommandScopeType.CHAT_ADMINISTRATORS
+BotCommandScopeChatMember:
+  type: BotCommandScopeType.CHAT_MEMBER
+BotCommandScopeDefault:
+  type: BotCommandScopeType.DEFAULT
+BusinessBotRights:
+  can_change_gift_settings: None
+  can_convert_gifts_to_stars: None
+  can_delete_all_messages: None
+  can_delete_sent_messages: None
+  can_edit_bio: None
+  can_edit_name: None
+  can_edit_profile_photo: None
+  can_edit_username: None
+  can_manage_stories: None
+  can_read_messages: None
+  can_reply: None
+  can_transfer_and_upgrade_gifts: None
+  can_transfer_stars: None
+  can_view_gifts_and_stars: None
+BusinessConnection:
+  rights: None
+BusinessIntro:
+  message: None
+  sticker: None
+  title: None
+BusinessLocation:
+  location: None
+CallbackQuery:
+  data: None
+  game_short_name: None
+  inline_message_id: None
+  message: None
+Chat:
+  first_name: None
+  is_direct_messages: None
+  is_forum: None
+  last_name: None
+  title: None
+  username: None
+ChatAdministratorRights:
+  can_edit_messages: None
+  can_manage_direct_messages: None
+  can_manage_topics: None
+  can_pin_messages: None
+  can_post_messages: None
+ChatBoostSourceGiftCode:
+  source: ChatBoostSourceType.GIFT_CODE
+ChatBoostSourceGiveaway:
+  is_unclaimed: None
+  prize_star_count: None
+  source: ChatBoostSourceType.GIVEAWAY
+  user: None
+ChatBoostSourcePremium:
+  source: ChatBoostSourceType.PREMIUM
+ChatFullInfo:
+  active_usernames: None
+  available_reactions: None
+  background_custom_emoji_id: None
+  bio: None
+  birthdate: None
+  business_intro: None
+  business_location: None
+  business_opening_hours: None
+  can_send_paid_media: None
+  can_set_sticker_set: None
+  custom_emoji_sticker_set_name: None
+  description: None
+  emoji_status_custom_emoji_id: None
+  emoji_status_expiration_date: None
+  first_name: None
+  has_aggressive_anti_spam_enabled: None
+  has_hidden_members: None
+  has_private_forwards: None
+  has_protected_content: None
+  has_restricted_voice_and_video_messages: None
+  has_visible_history: None
+  invite_link: None
+  is_direct_messages: None
+  is_forum: None
+  join_by_request: None
+  join_to_send_messages: None
+  last_name: None
+  linked_chat_id: None
+  location: None
+  message_auto_delete_time: None
+  paid_message_star_count: None
+  parent_chat: None
+  permissions: None
+  personal_chat: None
+  photo: None
+  pinned_message: None
+  profile_accent_color_id: None
+  profile_background_custom_emoji_id: None
+  rating: None
+  slow_mode_delay: None
+  sticker_set_name: None
+  title: None
+  unique_gift_colors: None
+  unrestrict_boost_count: None
+  username: None
+ChatInviteLink:
+  expire_date: None
+  member_limit: None
+  name: None
+  pending_join_request_count: None
+  subscription_period: None
+  subscription_price: None
+ChatJoinRequest:
+  bio: None
+  invite_link: None
+ChatMemberAdministrator:
+  can_edit_messages: None
+  can_manage_direct_messages: None
+  can_manage_topics: None
+  can_pin_messages: None
+  can_post_messages: None
+  custom_title: None
+  status: ChatMemberStatus.ADMINISTRATOR
+ChatMemberBanned:
+  status: ChatMemberStatus.KICKED
+ChatMemberLeft:
+  status: ChatMemberStatus.LEFT
+ChatMemberMember:
+  status: ChatMemberStatus.MEMBER
+  until_date: None
+ChatMemberOwner:
+  custom_title: None
+  status: ChatMemberStatus.CREATOR
+ChatMemberRestricted:
+  status: ChatMemberStatus.RESTRICTED
+ChatMemberUpdated:
+  invite_link: None
+  via_chat_folder_invite_link: None
+  via_join_request: None
+ChatPermissions:
+  can_add_web_page_previews: None
+  can_change_info: None
+  can_invite_users: None
+  can_manage_topics: None
+  can_pin_messages: None
+  can_send_audios: None
+  can_send_documents: None
+  can_send_messages: None
+  can_send_other_messages: None
+  can_send_photos: None
+  can_send_polls: None
+  can_send_video_notes: None
+  can_send_videos: None
+  can_send_voice_notes: None
+ChatShared:
+  photo: None
+  title: None
+  username: None
+Checklist:
+  others_can_add_tasks: None
+  others_can_mark_tasks_as_done: None
+  title_entities: None
+ChecklistTask:
+  completed_by_chat: None
+  completed_by_user: None
+  completion_date: None
+  text_entities: None
+ChecklistTasksAdded:
+  checklist_message: None
+ChecklistTasksDone:
+  checklist_message: None
+  marked_as_done_task_ids: None
+  marked_as_not_done_task_ids: None
+ChosenInlineResult:
+  inline_message_id: None
+  location: None
+Contact:
+  last_name: None
+  user_id: None
+  vcard: None
+CopyMessage:
+  allow_paid_broadcast: None
+  caption: None
+  caption_entities: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  message_effect_id: None
+  message_thread_id: None
+  parse_mode: Default("parse_mode")
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  show_caption_above_media: Default("show_caption_above_media")
+  suggested_post_parameters: None
+  video_start_timestamp: None
+CopyMessages:
+  direct_messages_topic_id: None
+  disable_notification: None
+  message_thread_id: None
+  protect_content: None
+  remove_caption: None
+CreateChatInviteLink:
+  creates_join_request: None
+  expire_date: None
+  member_limit: None
+  name: None
+CreateChatSubscriptionInviteLink:
+  name: None
+CreateForumTopic:
+  icon_color: None
+  icon_custom_emoji_id: None
+CreateInvoiceLink:
+  business_connection_id: None
+  is_flexible: None
+  max_tip_amount: None
+  need_email: None
+  need_name: None
+  need_phone_number: None
+  need_shipping_address: None
+  photo_height: None
+  photo_size: None
+  photo_url: None
+  photo_width: None
+  provider_data: None
+  provider_token: None
+  send_email_to_provider: None
+  send_phone_number_to_provider: None
+  subscription_period: None
+  suggested_tip_amounts: None
+CreateNewStickerSet:
+  needs_repainting: None
+  sticker_type: None
+DeclineSuggestedPost:
+  comment: None
+DeleteMyCommands:
+  language_code: None
+  scope: None
+DeleteWebhook:
+  drop_pending_updates: None
+DirectMessagePriceChanged:
+  direct_message_star_count: None
+DirectMessagesTopic:
+  user: None
+Document:
+  file_name: None
+  file_size: None
+  mime_type: None
+  thumbnail: None
+EditChatInviteLink:
+  creates_join_request: None
+  expire_date: None
+  member_limit: None
+  name: None
+EditChatSubscriptionInviteLink:
+  name: None
+EditForumTopic:
+  icon_custom_emoji_id: None
+  name: None
+EditMessageCaption:
+  business_connection_id: None
+  caption: None
+  caption_entities: None
+  chat_id: None
+  inline_message_id: None
+  message_id: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  show_caption_above_media: Default("show_caption_above_media")
+EditMessageChecklist:
+  reply_markup: None
+EditMessageLiveLocation:
+  business_connection_id: None
+  chat_id: None
+  heading: None
+  horizontal_accuracy: None
+  inline_message_id: None
+  live_period: None
+  message_id: None
+  proximity_alert_radius: None
+  reply_markup: None
+EditMessageMedia:
+  business_connection_id: None
+  chat_id: None
+  inline_message_id: None
+  message_id: None
+  reply_markup: None
+EditMessageReplyMarkup:
+  business_connection_id: None
+  chat_id: None
+  inline_message_id: None
+  message_id: None
+  reply_markup: None
+EditMessageText:
+  business_connection_id: None
+  chat_id: None
+  entities: None
+  inline_message_id: None
+  link_preview_options: Default("link_preview")
+  message_id: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+EditStory:
+  areas: None
+  caption: None
+  caption_entities: None
+  parse_mode: None
+EncryptedPassportElement:
+  data: None
+  email: None
+  files: None
+  front_side: None
+  phone_number: None
+  reverse_side: None
+  selfie: None
+  translation: None
+ExternalReplyInfo:
+  animation: None
+  audio: None
+  chat: None
+  checklist: None
+  contact: None
+  dice: None
+  document: None
+  game: None
+  giveaway: None
+  giveaway_winners: None
+  has_media_spoiler: None
+  invoice: None
+  link_preview_options: None
+  location: None
+  message_id: None
+  paid_media: None
+  photo: None
+  poll: None
+  sticker: None
+  story: None
+  venue: None
+  video: None
+  video_note: None
+  voice: None
+File:
+  file_path: None
+  file_size: None
+ForceReply:
+  force_reply: 'True'
+  input_field_placeholder: None
+  selective: None
+ForumTopic:
+  icon_custom_emoji_id: None
+  is_name_implicit: None
+ForumTopicCreated:
+  icon_custom_emoji_id: None
+  is_name_implicit: None
+ForumTopicEdited:
+  icon_custom_emoji_id: None
+  name: None
+ForwardMessage:
+  direct_messages_topic_id: None
+  disable_notification: None
+  message_effect_id: None
+  message_thread_id: None
+  protect_content: Default("protect_content")
+  suggested_post_parameters: None
+  video_start_timestamp: None
+ForwardMessages:
+  direct_messages_topic_id: None
+  disable_notification: None
+  message_thread_id: None
+  protect_content: None
+Game:
+  animation: None
+  text: None
+  text_entities: None
+GetBusinessAccountGifts:
+  exclude_from_blockchain: None
+  exclude_limited_non_upgradable: None
+  exclude_limited_upgradable: None
+  exclude_saved: None
+  exclude_unique: None
+  exclude_unlimited: None
+  exclude_unsaved: None
+  limit: None
+  offset: None
+  sort_by_price: None
+GetChatGifts:
+  exclude_from_blockchain: None
+  exclude_limited_non_upgradable: None
+  exclude_limited_upgradable: None
+  exclude_saved: None
+  exclude_unique: None
+  exclude_unlimited: None
+  exclude_unsaved: None
+  limit: None
+  offset: None
+  sort_by_price: None
+GetChatMenuButton:
+  chat_id: None
+GetGameHighScores:
+  chat_id: None
+  inline_message_id: None
+  message_id: None
+GetMyCommands:
+  language_code: None
+  scope: None
+GetMyDefaultAdministratorRights:
+  for_channels: None
+GetMyDescription:
+  language_code: None
+GetMyName:
+  language_code: None
+GetMyShortDescription:
+  language_code: None
+GetStarTransactions:
+  limit: None
+  offset: None
+GetUpdates:
+  allowed_updates: None
+  limit: None
+  offset: None
+  timeout: None
+GetUserGifts:
+  exclude_from_blockchain: None
+  exclude_limited_non_upgradable: None
+  exclude_limited_upgradable: None
+  exclude_unique: None
+  exclude_unlimited: None
+  limit: None
+  offset: None
+  sort_by_price: None
+GetUserProfilePhotos:
+  limit: None
+  offset: None
+Gift:
+  background: None
+  has_colors: None
+  is_premium: None
+  personal_remaining_count: None
+  personal_total_count: None
+  publisher_chat: None
+  remaining_count: None
+  total_count: None
+  unique_gift_variant_count: None
+  upgrade_star_count: None
+GiftInfo:
+  can_be_upgraded: None
+  convert_star_count: None
+  entities: None
+  is_private: None
+  is_upgrade_separate: None
+  owned_gift_id: None
+  prepaid_upgrade_star_count: None
+  text: None
+  unique_gift_number: None
+GiftPremiumSubscription:
+  text: None
+  text_entities: None
+  text_parse_mode: None
+Giveaway:
+  country_codes: None
+  has_public_winners: None
+  only_new_members: None
+  premium_subscription_month_count: None
+  prize_description: None
+  prize_star_count: None
+GiveawayCompleted:
+  giveaway_message: None
+  is_star_giveaway: None
+  unclaimed_prize_count: None
+GiveawayCreated:
+  prize_star_count: None
+GiveawayWinners:
+  additional_chat_count: None
+  only_new_members: None
+  premium_subscription_month_count: None
+  prize_description: None
+  prize_star_count: None
+  unclaimed_prize_count: None
+  was_refunded: None
+InaccessibleMessage:
+  date: '0'
+InlineKeyboardButton:
+  callback_data: None
+  callback_game: None
+  copy_text: None
+  login_url: None
+  pay: None
+  switch_inline_query: None
+  switch_inline_query_chosen_chat: None
+  switch_inline_query_current_chat: None
+  url: None
+  web_app: None
+InlineQuery:
+  chat_type: None
+  location: None
+InlineQueryResultArticle:
+  description: None
+  reply_markup: None
+  thumbnail_height: None
+  thumbnail_url: None
+  thumbnail_width: None
+  type: InlineQueryResultType.ARTICLE
+  url: None
+InlineQueryResultAudio:
+  audio_duration: None
+  caption: None
+  caption_entities: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  performer: None
+  reply_markup: None
+  type: InlineQueryResultType.AUDIO
+InlineQueryResultCachedAudio:
+  caption: None
+  caption_entities: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  type: InlineQueryResultType.AUDIO
+InlineQueryResultCachedDocument:
+  caption: None
+  caption_entities: None
+  description: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  type: InlineQueryResultType.DOCUMENT
+InlineQueryResultCachedGif:
+  caption: None
+  caption_entities: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  show_caption_above_media: Default("show_caption_above_media")
+  title: None
+  type: InlineQueryResultType.GIF
+InlineQueryResultCachedMpeg4Gif:
+  caption: None
+  caption_entities: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  show_caption_above_media: Default("show_caption_above_media")
+  title: None
+  type: InlineQueryResultType.MPEG4_GIF
+InlineQueryResultCachedPhoto:
+  caption: None
+  caption_entities: None
+  description: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  show_caption_above_media: Default("show_caption_above_media")
+  title: None
+  type: InlineQueryResultType.PHOTO
+InlineQueryResultCachedSticker:
+  input_message_content: None
+  reply_markup: None
+  type: InlineQueryResultType.STICKER
+InlineQueryResultCachedVideo:
+  caption: None
+  caption_entities: None
+  description: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  show_caption_above_media: Default("show_caption_above_media")
+  type: InlineQueryResultType.VIDEO
+InlineQueryResultCachedVoice:
+  caption: None
+  caption_entities: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  type: InlineQueryResultType.VOICE
+InlineQueryResultContact:
+  input_message_content: None
+  last_name: None
+  reply_markup: None
+  thumbnail_height: None
+  thumbnail_url: None
+  thumbnail_width: None
+  type: InlineQueryResultType.CONTACT
+  vcard: None
+InlineQueryResultDocument:
+  caption: None
+  caption_entities: None
+  description: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  thumbnail_height: None
+  thumbnail_url: None
+  thumbnail_width: None
+  type: InlineQueryResultType.DOCUMENT
+InlineQueryResultGame:
+  reply_markup: None
+  type: InlineQueryResultType.GAME
+InlineQueryResultGif:
+  caption: None
+  caption_entities: None
+  gif_duration: None
+  gif_height: None
+  gif_width: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  show_caption_above_media: Default("show_caption_above_media")
+  thumbnail_mime_type: None
+  title: None
+  type: InlineQueryResultType.GIF
+InlineQueryResultLocation:
+  heading: None
+  horizontal_accuracy: None
+  input_message_content: None
+  live_period: None
+  proximity_alert_radius: None
+  reply_markup: None
+  thumbnail_height: None
+  thumbnail_url: None
+  thumbnail_width: None
+  type: InlineQueryResultType.LOCATION
+InlineQueryResultMpeg4Gif:
+  caption: None
+  caption_entities: None
+  input_message_content: None
+  mpeg4_duration: None
+  mpeg4_height: None
+  mpeg4_width: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  show_caption_above_media: Default("show_caption_above_media")
+  thumbnail_mime_type: None
+  title: None
+  type: InlineQueryResultType.MPEG4_GIF
+InlineQueryResultPhoto:
+  caption: None
+  caption_entities: None
+  description: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  photo_height: None
+  photo_width: None
+  reply_markup: None
+  show_caption_above_media: Default("show_caption_above_media")
+  title: None
+  type: InlineQueryResultType.PHOTO
+InlineQueryResultVenue:
+  foursquare_id: None
+  foursquare_type: None
+  google_place_id: None
+  google_place_type: None
+  input_message_content: None
+  reply_markup: None
+  thumbnail_height: None
+  thumbnail_url: None
+  thumbnail_width: None
+  type: InlineQueryResultType.VENUE
+InlineQueryResultVideo:
+  caption: None
+  caption_entities: None
+  description: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  show_caption_above_media: Default("show_caption_above_media")
+  type: InlineQueryResultType.VIDEO
+  video_duration: None
+  video_height: None
+  video_width: None
+InlineQueryResultVoice:
+  caption: None
+  caption_entities: None
+  input_message_content: None
+  parse_mode: Default("parse_mode")
+  reply_markup: None
+  type: InlineQueryResultType.VOICE
+  voice_duration: None
+InlineQueryResultsButton:
+  start_parameter: None
+  web_app: None
+InputChecklist:
+  others_can_add_tasks: None
+  others_can_mark_tasks_as_done: None
+  parse_mode: None
+  title_entities: None
+InputChecklistTask:
+  parse_mode: None
+  text_entities: None
+InputContactMessageContent:
+  last_name: None
+  vcard: None
+InputInvoiceMessageContent:
+  is_flexible: None
+  max_tip_amount: None
+  need_email: None
+  need_name: None
+  need_phone_number: None
+  need_shipping_address: None
+  photo_height: None
+  photo_size: None
+  photo_url: None
+  photo_width: None
+  provider_data: None
+  provider_token: None
+  send_email_to_provider: None
+  send_phone_number_to_provider: None
+  suggested_tip_amounts: None
+InputLocationMessageContent:
+  heading: None
+  horizontal_accuracy: None
+  live_period: None
+  proximity_alert_radius: None
+InputMediaAnimation:
+  caption: None
+  caption_entities: None
+  duration: None
+  has_spoiler: None
+  height: None
+  parse_mode: Default("parse_mode")
+  show_caption_above_media: Default("show_caption_above_media")
+  thumbnail: None
+  type: InputMediaType.ANIMATION
+  width: None
+InputMediaAudio:
+  caption: None
+  caption_entities: None
+  duration: None
+  parse_mode: Default("parse_mode")
+  performer: None
+  thumbnail: None
+  title: None
+  type: InputMediaType.AUDIO
+InputMediaDocument:
+  caption: None
+  caption_entities: None
+  disable_content_type_detection: None
+  parse_mode: Default("parse_mode")
+  thumbnail: None
+  type: InputMediaType.DOCUMENT
+InputMediaPhoto:
+  caption: None
+  caption_entities: None
+  has_spoiler: None
+  parse_mode: Default("parse_mode")
+  show_caption_above_media: Default("show_caption_above_media")
+  type: InputMediaType.PHOTO
+InputMediaVideo:
+  caption: None
+  caption_entities: None
+  cover: None
+  duration: None
+  has_spoiler: None
+  height: None
+  parse_mode: Default("parse_mode")
+  show_caption_above_media: Default("show_caption_above_media")
+  start_timestamp: None
+  supports_streaming: None
+  thumbnail: None
+  type: InputMediaType.VIDEO
+  width: None
+InputPaidMediaPhoto:
+  type: InputPaidMediaType.PHOTO
+InputPaidMediaVideo:
+  cover: None
+  duration: None
+  height: None
+  start_timestamp: None
+  supports_streaming: None
+  thumbnail: None
+  type: InputPaidMediaType.VIDEO
+  width: None
+InputPollOption:
+  text_entities: None
+  text_parse_mode: Default("parse_mode")
+InputProfilePhotoAnimated:
+  main_frame_timestamp: None
+  type: InputProfilePhotoType.ANIMATED
+InputProfilePhotoStatic:
+  type: InputProfilePhotoType.STATIC
+InputSticker:
+  keywords: None
+  mask_position: None
+InputStoryContentPhoto:
+  type: InputStoryContentType.PHOTO
+InputStoryContentVideo:
+  cover_frame_timestamp: None
+  duration: None
+  is_animation: None
+  type: InputStoryContentType.VIDEO
+InputTextMessageContent:
+  entities: None
+  link_preview_options: Default("link_preview")
+  parse_mode: Default("parse_mode")
+InputVenueMessageContent:
+  foursquare_id: None
+  foursquare_type: None
+  google_place_id: None
+  google_place_type: None
+KeyboardButton:
+  request_chat: None
+  request_contact: None
+  request_location: None
+  request_poll: None
+  request_users: None
+  web_app: None
+KeyboardButtonPollType:
+  type: None
+KeyboardButtonRequestChat:
+  bot_administrator_rights: None
+  bot_is_member: None
+  chat_has_username: None
+  chat_is_created: None
+  chat_is_forum: None
+  request_photo: None
+  request_title: None
+  request_username: None
+  user_administrator_rights: None
+KeyboardButtonRequestUsers:
+  max_quantity: None
+  request_name: None
+  request_photo: None
+  request_username: None
+  user_is_bot: None
+  user_is_premium: None
+LinkPreviewOptions:
+  is_disabled: Default("link_preview_is_disabled")
+  prefer_large_media: Default("link_preview_prefer_large_media")
+  prefer_small_media: Default("link_preview_prefer_small_media")
+  show_above_text: Default("link_preview_show_above_text")
+  url: None
+Location:
+  heading: None
+  horizontal_accuracy: None
+  live_period: None
+  proximity_alert_radius: None
+LocationAddress:
+  city: None
+  state: None
+  street: None
+LoginUrl:
+  bot_username: None
+  forward_text: None
+  request_write_access: None
+MenuButtonCommands:
+  type: MenuButtonType.COMMANDS
+MenuButtonDefault:
+  type: MenuButtonType.DEFAULT
+MenuButtonWebApp:
+  type: MenuButtonType.WEB_APP
+Message:
+  animation: None
+  audio: None
+  author_signature: None
+  boost_added: None
+  business_connection_id: None
+  caption: None
+  caption_entities: None
+  channel_chat_created: None
+  chat_background_set: None
+  chat_shared: None
+  checklist: None
+  checklist_tasks_added: None
+  checklist_tasks_done: None
+  connected_website: None
+  contact: None
+  delete_chat_photo: None
+  dice: None
+  direct_message_price_changed: None
+  direct_messages_topic: None
+  document: None
+  edit_date: None
+  effect_id: None
+  entities: None
+  external_reply: None
+  forum_topic_closed: None
+  forum_topic_created: None
+  forum_topic_edited: None
+  forum_topic_reopened: None
+  forward_origin: None
+  game: None
+  general_forum_topic_hidden: None
+  general_forum_topic_unhidden: None
+  gift: None
+  gift_upgrade_sent: None
+  giveaway: None
+  giveaway_completed: None
+  giveaway_created: None
+  giveaway_winners: None
+  group_chat_created: None
+  has_media_spoiler: None
+  has_protected_content: None
+  invoice: None
+  is_automatic_forward: None
+  is_from_offline: None
+  is_paid_post: None
+  is_topic_message: None
+  left_chat_member: None
+  link_preview_options: None
+  location: None
+  media_group_id: None
+  message_auto_delete_timer_changed: None
+  message_thread_id: None
+  migrate_from_chat_id: None
+  migrate_to_chat_id: None
+  new_chat_members: None
+  new_chat_photo: None
+  new_chat_title: None
+  paid_media: None
+  paid_message_price_changed: None
+  paid_star_count: None
+  passport_data: None
+  photo: None
+  pinned_message: None
+  poll: None
+  proximity_alert_triggered: None
+  quote: None
+  refunded_payment: None
+  reply_markup: None
+  reply_to_checklist_task_id: None
+  reply_to_message: None
+  reply_to_story: None
+  sender_boost_count: None
+  sender_business_bot: None
+  sender_chat: None
+  show_caption_above_media: None
+  sticker: None
+  story: None
+  successful_payment: None
+  suggested_post_approval_failed: None
+  suggested_post_approved: None
+  suggested_post_declined: None
+  suggested_post_info: None
+  suggested_post_paid: None
+  suggested_post_refunded: None
+  supergroup_chat_created: None
+  text: None
+  unique_gift: None
+  users_shared: None
+  venue: None
+  via_bot: None
+  video: None
+  video_chat_ended: None
+  video_chat_participants_invited: None
+  video_chat_scheduled: None
+  video_chat_started: None
+  video_note: None
+  voice: None
+  web_app_data: None
+  write_access_allowed: None
+MessageEntity:
+  custom_emoji_id: None
+  language: None
+  url: None
+  user: None
+MessageOriginChannel:
+  author_signature: None
+  type: MessageOriginType.CHANNEL
+MessageOriginChat:
+  author_signature: None
+  type: MessageOriginType.CHAT
+MessageOriginHiddenUser:
+  type: MessageOriginType.HIDDEN_USER
+MessageOriginUser:
+  type: MessageOriginType.USER
+MessageReactionUpdated:
+  actor_chat: None
+  user: None
+OrderInfo:
+  email: None
+  name: None
+  phone_number: None
+  shipping_address: None
+OwnedGiftRegular:
+  can_be_upgraded: None
+  convert_star_count: None
+  entities: None
+  is_private: None
+  is_saved: None
+  is_upgrade_separate: None
+  owned_gift_id: None
+  prepaid_upgrade_star_count: None
+  sender_user: None
+  text: None
+  type: OwnedGiftType.REGULAR
+  unique_gift_number: None
+  was_refunded: None
+OwnedGiftUnique:
+  can_be_transferred: None
+  is_saved: None
+  next_transfer_date: None
+  owned_gift_id: None
+  sender_user: None
+  transfer_star_count: None
+  type: OwnedGiftType.UNIQUE
+OwnedGifts:
+  next_offset: None
+PaidMediaPhoto:
+  type: PaidMediaType.PHOTO
+PaidMediaPreview:
+  duration: None
+  height: None
+  type: PaidMediaType.PREVIEW
+  width: None
+PaidMediaVideo:
+  type: PaidMediaType.VIDEO
+PassportElementErrorDataField:
+  source: PassportElementErrorType.DATA
+PassportElementErrorFile:
+  source: PassportElementErrorType.FILE
+PassportElementErrorFiles:
+  source: PassportElementErrorType.FILES
+PassportElementErrorFrontSide:
+  source: PassportElementErrorType.FRONT_SIDE
+PassportElementErrorReverseSide:
+  source: PassportElementErrorType.REVERSE_SIDE
+PassportElementErrorSelfie:
+  source: PassportElementErrorType.SELFIE
+PassportElementErrorTranslationFile:
+  source: PassportElementErrorType.TRANSLATION_FILE
+PassportElementErrorTranslationFiles:
+  source: PassportElementErrorType.TRANSLATION_FILES
+PassportElementErrorUnspecified:
+  source: PassportElementErrorType.UNSPECIFIED
+PhotoSize:
+  file_size: None
+PinChatMessage:
+  business_connection_id: None
+  disable_notification: None
+Poll:
+  close_date: None
+  correct_option_id: None
+  explanation: None
+  explanation_entities: None
+  open_period: None
+  question_entities: None
+PollAnswer:
+  user: None
+  voter_chat: None
+PollOption:
+  text_entities: None
+PostStory:
+  areas: None
+  caption: None
+  caption_entities: None
+  parse_mode: None
+  post_to_chat_page: None
+  protect_content: None
+PreCheckoutQuery:
+  order_info: None
+  shipping_option_id: None
+PromoteChatMember:
+  can_change_info: None
+  can_delete_messages: None
+  can_delete_stories: None
+  can_edit_messages: None
+  can_edit_stories: None
+  can_invite_users: None
+  can_manage_chat: None
+  can_manage_direct_messages: None
+  can_manage_topics: None
+  can_manage_video_chats: None
+  can_pin_messages: None
+  can_post_messages: None
+  can_post_stories: None
+  can_promote_members: None
+  can_restrict_members: None
+  is_anonymous: None
+ReactionTypeCustomEmoji:
+  type: ReactionTypeType.CUSTOM_EMOJI
+ReactionTypeEmoji:
+  type: ReactionTypeType.EMOJI
+ReactionTypePaid:
+  type: ReactionTypeType.PAID
+RefundedPayment:
+  currency: '"XTR"'
+  provider_payment_charge_id: None
+RemoveBusinessAccountProfilePhoto:
+  is_public: None
+ReplyKeyboardMarkup:
+  input_field_placeholder: None
+  is_persistent: None
+  one_time_keyboard: None
+  resize_keyboard: None
+  selective: None
+ReplyKeyboardRemove:
+  remove_keyboard: 'True'
+  selective: None
+ReplyParameters:
+  allow_sending_without_reply: Default("allow_sending_without_reply")
+  chat_id: None
+  checklist_task_id: None
+  quote: None
+  quote_entities: None
+  quote_parse_mode: Default("parse_mode")
+  quote_position: None
+RepostStory:
+  post_to_chat_page: None
+  protect_content: None
+ResponseParameters:
+  migrate_to_chat_id: None
+  retry_after: None
+RestrictChatMember:
+  until_date: None
+  use_independent_chat_permissions: None
+RevenueWithdrawalStateFailed:
+  type: RevenueWithdrawalStateType.FAILED
+RevenueWithdrawalStatePending:
+  type: RevenueWithdrawalStateType.PENDING
+RevenueWithdrawalStateSucceeded:
+  type: RevenueWithdrawalStateType.SUCCEEDED
+SavePreparedInlineMessage:
+  allow_bot_chats: None
+  allow_channel_chats: None
+  allow_group_chats: None
+  allow_user_chats: None
+SendAnimation:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  caption: None
+  caption_entities: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  duration: None
+  has_spoiler: None
+  height: None
+  message_effect_id: None
+  message_thread_id: None
+  parse_mode: Default("parse_mode")
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  show_caption_above_media: Default("show_caption_above_media")
+  suggested_post_parameters: None
+  thumbnail: None
+  width: None
+SendAudio:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  caption: None
+  caption_entities: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  duration: None
+  message_effect_id: None
+  message_thread_id: None
+  parse_mode: Default("parse_mode")
+  performer: None
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+  thumbnail: None
+  title: None
+SendChatAction:
+  business_connection_id: None
+  message_thread_id: None
+SendChecklist:
+  disable_notification: None
+  message_effect_id: None
+  protect_content: None
+  reply_markup: None
+  reply_parameters: None
+SendContact:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  last_name: None
+  message_effect_id: None
+  message_thread_id: None
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+  vcard: None
+SendDice:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  emoji: None
+  message_effect_id: None
+  message_thread_id: None
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+SendDocument:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  caption: None
+  caption_entities: None
+  direct_messages_topic_id: None
+  disable_content_type_detection: None
+  disable_notification: None
+  message_effect_id: None
+  message_thread_id: None
+  parse_mode: Default("parse_mode")
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+  thumbnail: None
+SendGame:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  disable_notification: None
+  message_effect_id: None
+  message_thread_id: None
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+SendGift:
+  chat_id: None
+  pay_for_upgrade: None
+  text: None
+  text_entities: None
+  text_parse_mode: None
+  user_id: None
+SendInvoice:
+  allow_paid_broadcast: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  is_flexible: None
+  max_tip_amount: None
+  message_effect_id: None
+  message_thread_id: None
+  need_email: None
+  need_name: None
+  need_phone_number: None
+  need_shipping_address: None
+  photo_height: None
+  photo_size: None
+  photo_url: None
+  photo_width: None
+  protect_content: Default("protect_content")
+  provider_data: None
+  provider_token: None
+  reply_markup: None
+  reply_parameters: None
+  send_email_to_provider: None
+  send_phone_number_to_provider: None
+  start_parameter: None
+  suggested_post_parameters: None
+  suggested_tip_amounts: None
+SendLocation:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  heading: None
+  horizontal_accuracy: None
+  live_period: None
+  message_effect_id: None
+  message_thread_id: None
+  protect_content: Default("protect_content")
+  proximity_alert_radius: None
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+SendMediaGroup:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  message_effect_id: None
+  message_thread_id: None
+  protect_content: Default("protect_content")
+  reply_parameters: None
+SendMessage:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  entities: None
+  link_preview_options: Default("link_preview")
+  message_effect_id: None
+  message_thread_id: None
+  parse_mode: Default("parse_mode")
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+SendMessageDraft:
+  entities: None
+  message_thread_id: None
+  parse_mode: None
+SendPaidMedia:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  caption: None
+  caption_entities: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  message_thread_id: None
+  parse_mode: None
+  payload: None
+  protect_content: None
+  reply_markup: None
+  reply_parameters: None
+  show_caption_above_media: None
+  suggested_post_parameters: None
+SendPhoto:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  caption: None
+  caption_entities: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  has_spoiler: None
+  message_effect_id: None
+  message_thread_id: None
+  parse_mode: Default("parse_mode")
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  show_caption_above_media: Default("show_caption_above_media")
+  suggested_post_parameters: None
+SendPoll:
+  allow_paid_broadcast: None
+  allows_multiple_answers: None
+  business_connection_id: None
+  close_date: None
+  correct_option_id: None
+  disable_notification: None
+  explanation: None
+  explanation_entities: None
+  explanation_parse_mode: Default("parse_mode")
+  is_anonymous: None
+  is_closed: None
+  message_effect_id: None
+  message_thread_id: None
+  open_period: None
+  protect_content: Default("protect_content")
+  question_entities: None
+  question_parse_mode: Default("parse_mode")
+  reply_markup: None
+  reply_parameters: None
+  type: None
+SendSticker:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  emoji: None
+  message_effect_id: None
+  message_thread_id: None
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+SendVenue:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  foursquare_id: None
+  foursquare_type: None
+  google_place_id: None
+  google_place_type: None
+  message_effect_id: None
+  message_thread_id: None
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+SendVideo:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  caption: None
+  caption_entities: None
+  cover: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  duration: None
+  has_spoiler: None
+  height: None
+  message_effect_id: None
+  message_thread_id: None
+  parse_mode: Default("parse_mode")
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  show_caption_above_media: Default("show_caption_above_media")
+  start_timestamp: None
+  suggested_post_parameters: None
+  supports_streaming: None
+  thumbnail: None
+  width: None
+SendVideoNote:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  duration: None
+  length: None
+  message_effect_id: None
+  message_thread_id: None
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+  thumbnail: None
+SendVoice:
+  allow_paid_broadcast: None
+  business_connection_id: None
+  caption: None
+  caption_entities: None
+  direct_messages_topic_id: None
+  disable_notification: None
+  duration: None
+  message_effect_id: None
+  message_thread_id: None
+  parse_mode: Default("parse_mode")
+  protect_content: Default("protect_content")
+  reply_markup: None
+  reply_parameters: None
+  suggested_post_parameters: None
+SentWebAppMessage:
+  inline_message_id: None
+SetBusinessAccountBio:
+  bio: None
+SetBusinessAccountName:
+  last_name: None
+SetBusinessAccountProfilePhoto:
+  is_public: None
+SetBusinessAccountUsername:
+  username: None
+SetChatDescription:
+  description: None
+SetChatMenuButton:
+  chat_id: None
+  menu_button: None
+SetChatPermissions:
+  use_independent_chat_permissions: None
+SetCustomEmojiStickerSetThumbnail:
+  custom_emoji_id: None
+SetGameScore:
+  chat_id: None
+  disable_edit_message: None
+  force: None
+  inline_message_id: None
+  message_id: None
+SetMessageReaction:
+  is_big: None
+  reaction: None
+SetMyCommands:
+  language_code: None
+  scope: None
+SetMyDefaultAdministratorRights:
+  for_channels: None
+  rights: None
+SetMyDescription:
+  description: None
+  language_code: None
+SetMyName:
+  language_code: None
+  name: None
+SetMyShortDescription:
+  language_code: None
+  short_description: None
+SetStickerKeywords:
+  keywords: None
+SetStickerMaskPosition:
+  mask_position: None
+SetStickerSetThumbnail:
+  thumbnail: None
+SetUserEmojiStatus:
+  emoji_status_custom_emoji_id: None
+  emoji_status_expiration_date: None
+SetWebhook:
+  allowed_updates: None
+  certificate: None
+  drop_pending_updates: None
+  ip_address: None
+  max_connections: None
+  secret_token: None
+SharedUser:
+  first_name: None
+  last_name: None
+  photo: None
+  username: None
+StarAmount:
+  nanostar_amount: None
+StarTransaction:
+  nanostar_amount: None
+  receiver: None
+  source: None
+Sticker:
+  custom_emoji_id: None
+  emoji: None
+  file_size: None
+  mask_position: None
+  needs_repainting: None
+  premium_animation: None
+  set_name: None
+  thumbnail: None
+StickerSet:
+  thumbnail: None
+StopMessageLiveLocation:
+  business_connection_id: None
+  chat_id: None
+  inline_message_id: None
+  message_id: None
+  reply_markup: None
+StopPoll:
+  business_connection_id: None
+  reply_markup: None
+StoryAreaTypeLink:
+  type: StoryAreaTypeType.LINK
+StoryAreaTypeLocation:
+  address: None
+  type: StoryAreaTypeType.LOCATION
+StoryAreaTypeSuggestedReaction:
+  is_dark: None
+  is_flipped: None
+  type: StoryAreaTypeType.SUGGESTED_REACTION
+StoryAreaTypeUniqueGift:
+  type: StoryAreaTypeType.UNIQUE_GIFT
+StoryAreaTypeWeather:
+  type: StoryAreaTypeType.WEATHER
+SuccessfulPayment:
+  is_first_recurring: None
+  is_recurring: None
+  order_info: None
+  shipping_option_id: None
+  subscription_expiration_date: None
+SuggestedPostApprovalFailed:
+  suggested_post_message: None
+SuggestedPostApproved:
+  price: None
+  suggested_post_message: None
+SuggestedPostDeclined:
+  comment: None
+  suggested_post_message: None
+SuggestedPostInfo:
+  price: None
+  send_date: None
+SuggestedPostPaid:
+  amount: None
+  star_amount: None
+  suggested_post_message: None
+SuggestedPostParameters:
+  price: None
+  send_date: None
+SuggestedPostRefunded:
+  suggested_post_message: None
+SwitchInlineQueryChosenChat:
+  allow_bot_chats: None
+  allow_channel_chats: None
+  allow_group_chats: None
+  allow_user_chats: None
+  query: None
+TextQuote:
+  entities: None
+  is_manual: None
+TransactionPartnerAffiliateProgram:
+  sponsor_user: None
+  type: TransactionPartnerType.AFFILIATE_PROGRAM
+TransactionPartnerChat:
+  gift: None
+  type: TransactionPartnerType.CHAT
+TransactionPartnerFragment:
+  type: TransactionPartnerType.FRAGMENT
+  withdrawal_state: None
+TransactionPartnerOther:
+  type: TransactionPartnerType.OTHER
+TransactionPartnerTelegramAds:
+  type: TransactionPartnerType.TELEGRAM_ADS
+TransactionPartnerTelegramApi:
+  type: TransactionPartnerType.TELEGRAM_API
+TransactionPartnerUser:
+  affiliate: None
+  gift: None
+  invoice_payload: None
+  paid_media: None
+  paid_media_payload: None
+  premium_subscription_duration: None
+  subscription_period: None
+  type: TransactionPartnerType.USER
+TransferGift:
+  star_count: None
+UnbanChatMember:
+  only_if_banned: None
+UniqueGift:
+  colors: None
+  is_from_blockchain: None
+  is_premium: None
+  publisher_chat: None
+UniqueGiftInfo:
+  last_resale_amount: None
+  last_resale_currency: None
+  next_transfer_date: None
+  owned_gift_id: None
+  transfer_star_count: None
+UnpinChatMessage:
+  business_connection_id: None
+  message_id: None
+Update:
+  business_connection: None
+  business_message: None
+  callback_query: None
+  channel_post: None
+  chat_boost: None
+  chat_join_request: None
+  chat_member: None
+  chosen_inline_result: None
+  deleted_business_messages: None
+  edited_business_message: None
+  edited_channel_post: None
+  edited_message: None
+  inline_query: None
+  message: None
+  message_reaction: None
+  message_reaction_count: None
+  my_chat_member: None
+  poll: None
+  poll_answer: None
+  pre_checkout_query: None
+  removed_chat_boost: None
+  shipping_query: None
+UpgradeGift:
+  keep_original_details: None
+  star_count: None
+User:
+  added_to_attachment_menu: None
+  can_connect_to_business: None
+  can_join_groups: None
+  can_read_all_group_messages: None
+  has_main_web_app: None
+  has_topics_enabled: None
+  is_premium: None
+  language_code: None
+  last_name: None
+  supports_inline_queries: None
+  username: None
+UserRating:
+  next_level_rating: None
+Venue:
+  foursquare_id: None
+  foursquare_type: None
+  google_place_id: None
+  google_place_type: None
+VerifyChat:
+  custom_description: None
+VerifyUser:
+  custom_description: None
+Video:
+  cover: None
+  file_name: None
+  file_size: None
+  mime_type: None
+  start_timestamp: None
+  thumbnail: None
+VideoNote:
+  file_size: None
+  thumbnail: None
+Voice:
+  file_size: None
+  mime_type: None
+WebhookInfo:
+  allowed_updates: None
+  ip_address: None
+  last_error_date: None
+  last_error_message: None
+  last_synchronization_error_date: None
+  max_connections: None
+WriteAccessAllowed:
+  from_attachment_menu: None
+  from_request: None
+  web_app_name: None

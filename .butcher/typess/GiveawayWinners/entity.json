@@ -1,0 +1,113 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Available types",
+    "anchor": "available-types"
+  },
+  "object": {
+    "anchor": "giveawaywinners",
+    "name": "GiveawayWinners",
+    "description": "This object represents a message about the completion of a giveaway with public winners.",
+    "html_description": "<p>This object represents a message about the completion of a giveaway with public winners.</p>",
+    "rst_description": "This object represents a message about the completion of a giveaway with public winners.",
+    "annotations": [
+      {
+        "name": "chat",
+        "type": "Chat",
+        "required": true,
+        "description": "The chat that created the giveaway",
+        "html_description": "<td>The chat that created the giveaway</td>",
+        "rst_description": "The chat that created the giveaway\n"
+      },
+      {
+        "name": "giveaway_message_id",
+        "type": "Integer",
+        "required": true,
+        "description": "Identifier of the message with the giveaway in the chat",
+        "html_description": "<td>Identifier of the message with the giveaway in the chat</td>",
+        "rst_description": "Identifier of the message with the giveaway in the chat\n"
+      },
+      {
+        "name": "winners_selection_date",
+        "type": "Integer",
+        "required": true,
+        "description": "Point in time (Unix timestamp) when winners of the giveaway were selected",
+        "html_description": "<td>Point in time (Unix timestamp) when winners of the giveaway were selected</td>",
+        "rst_description": "Point in time (Unix timestamp) when winners of the giveaway were selected\n"
+      },
+      {
+        "name": "winner_count",
+        "type": "Integer",
+        "required": true,
+        "description": "Total number of winners in the giveaway",
+        "html_description": "<td>Total number of winners in the giveaway</td>",
+        "rst_description": "Total number of winners in the giveaway\n"
+      },
+      {
+        "name": "winners",
+        "type": "Array of User",
+        "required": true,
+        "description": "List of up to 100 winners of the giveaway",
+        "html_description": "<td>List of up to 100 winners of the giveaway</td>",
+        "rst_description": "List of up to 100 winners of the giveaway\n"
+      },
+      {
+        "name": "additional_chat_count",
+        "type": "Integer",
+        "required": false,
+        "description": "Optional. The number of other chats the user had to join in order to be eligible for the giveaway",
+        "html_description": "<td><em>Optional</em>. The number of other chats the user had to join in order to be eligible for the giveaway</td>",
+        "rst_description": "*Optional*. The number of other chats the user had to join in order to be eligible for the giveaway\n"
+      },
+      {
+        "name": "prize_star_count",
+        "type": "Integer",
+        "required": false,
+        "description": "Optional. The number of Telegram Stars that were split between giveaway winners; for Telegram Star giveaways only",
+        "html_description": "<td><em>Optional</em>. The number of Telegram Stars that were split between giveaway winners; for Telegram Star giveaways only</td>",
+        "rst_description": "*Optional*. The number of Telegram Stars that were split between giveaway winners; for Telegram Star giveaways only\n"
+      },
+      {
+        "name": "premium_subscription_month_count",
+        "type": "Integer",
+        "required": false,
+        "description": "Optional. The number of months the Telegram Premium subscription won from the giveaway will be active for; for Telegram Premium giveaways only",
+        "html_description": "<td><em>Optional</em>. The number of months the Telegram Premium subscription won from the giveaway will be active for; for Telegram Premium giveaways only</td>",
+        "rst_description": "*Optional*. The number of months the Telegram Premium subscription won from the giveaway will be active for; for Telegram Premium giveaways only\n"
+      },
+      {
+        "name": "unclaimed_prize_count",
+        "type": "Integer",
+        "required": false,
+        "description": "Optional. Number of undistributed prizes",
+        "html_description": "<td><em>Optional</em>. Number of undistributed prizes</td>",
+        "rst_description": "*Optional*. Number of undistributed prizes\n"
+      },
+      {
+        "name": "only_new_members",
+        "type": "True",
+        "required": false,
+        "description": "Optional. True, if only users who had joined the chats after the giveaway started were eligible to win",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if only users who had joined the chats after the giveaway started were eligible to win</td>",
+        "rst_description": "*Optional*. :code:`True`, if only users who had joined the chats after the giveaway started were eligible to win\n"
+      },
+      {
+        "name": "was_refunded",
+        "type": "True",
+        "required": false,
+        "description": "Optional. True, if the giveaway was canceled because the payment for it was refunded",
+        "html_description": "<td><em>Optional</em>. <em>True</em>, if the giveaway was canceled because the payment for it was refunded</td>",
+        "rst_description": "*Optional*. :code:`True`, if the giveaway was canceled because the payment for it was refunded\n"
+      },
+      {
+        "name": "prize_description",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Description of additional giveaway prize",
+        "html_description": "<td><em>Optional</em>. Description of additional giveaway prize</td>",
+        "rst_description": "*Optional*. Description of additional giveaway prize\n"
+      }
+    ],
+    "category": "types"
+  }
+}

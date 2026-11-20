@@ -36,8 +36,7 @@ class OwnedGiftUnique(OwnedGift):
     transfer_star_count: int | None = None
     """*Optional*. Number of Telegram Stars that must be paid to transfer the gift; omitted if the bot cannot transfer the gift"""
     next_transfer_date: DateTime | None = None
-    """*Optional*. Point in time (Unix timestamp) when the gift can be transferred. If it is in the past, then the gift can be transferred now"""
-
+    """*Optional*. Point in time (Unix timestamp) when the gift can be transferred. If it is in the past, then the gift can be transferred now."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -45,9 +44,9 @@ class OwnedGiftUnique(OwnedGift):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[OwnedGiftType.UNIQUE] = OwnedGiftType.UNIQUE,
             gift: UniqueGift,
             send_date: int,
+            type: Literal[OwnedGiftType.UNIQUE] = OwnedGiftType.UNIQUE,
             owned_gift_id: str | None = None,
             sender_user: User | None = None,
             is_saved: bool | None = None,
@@ -61,9 +60,9 @@ class OwnedGiftUnique(OwnedGift):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                type=type,
                 gift=gift,
                 send_date=send_date,
+                type=type,
                 owned_gift_id=owned_gift_id,
                 sender_user=sender_user,
                 is_saved=is_saved,

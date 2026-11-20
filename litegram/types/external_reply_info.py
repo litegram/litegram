@@ -17,6 +17,7 @@ if TYPE_CHECKING:
     from .giveaway_winners import GiveawayWinners
     from .invoice import Invoice
     from .link_preview_options import LinkPreviewOptions
+    from .live_photo import LivePhoto
     from .location import Location
     from .message_origin_union import MessageOriginUnion
     from .paid_media_info import PaidMediaInfo
@@ -28,6 +29,7 @@ if TYPE_CHECKING:
     from .video import Video
     from .video_note import VideoNote
     from .voice import Voice
+    from .widget import Widget
 
 
 class ExternalReplyInfo(TelegramObject):
@@ -51,6 +53,8 @@ class ExternalReplyInfo(TelegramObject):
     """*Optional*. Message is an audio file, information about the file"""
     document: Document | None = None
     """*Optional*. Message is a general file, information about the file"""
+    live_photo: LivePhoto | None = None
+    """*Optional*. Message is a live photo, information about the live photo"""
     paid_media: PaidMediaInfo | None = None
     """*Optional*. Message contains paid media; information about the paid media"""
     photo: list[PhotoSize] | None = None
@@ -65,6 +69,8 @@ class ExternalReplyInfo(TelegramObject):
     """*Optional*. Message is a `video note <https://telegram.org/blog/video-messages-and-telescope>`_, information about the video message"""
     voice: Voice | None = None
     """*Optional*. Message is a voice message, information about the file"""
+    widget: Widget | None = None
+    """*Optional*. Message is an HTML widget, information about the widget"""
     has_media_spoiler: bool | None = None
     """*Optional*. :code:`True`, if the message media is covered by a spoiler animation"""
     checklist: Checklist | None = None
@@ -87,7 +93,6 @@ class ExternalReplyInfo(TelegramObject):
     """*Optional*. Message is a native poll, information about the poll"""
     venue: Venue | None = None
     """*Optional*. Message is a venue, information about the venue"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -102,6 +107,7 @@ class ExternalReplyInfo(TelegramObject):
             animation: Animation | None = None,
             audio: Audio | None = None,
             document: Document | None = None,
+            live_photo: LivePhoto | None = None,
             paid_media: PaidMediaInfo | None = None,
             photo: list[PhotoSize] | None = None,
             sticker: Sticker | None = None,
@@ -109,6 +115,7 @@ class ExternalReplyInfo(TelegramObject):
             video: Video | None = None,
             video_note: VideoNote | None = None,
             voice: Voice | None = None,
+            widget: Widget | None = None,
             has_media_spoiler: bool | None = None,
             checklist: Checklist | None = None,
             contact: Contact | None = None,
@@ -134,6 +141,7 @@ class ExternalReplyInfo(TelegramObject):
                 animation=animation,
                 audio=audio,
                 document=document,
+                live_photo=live_photo,
                 paid_media=paid_media,
                 photo=photo,
                 sticker=sticker,
@@ -141,6 +149,7 @@ class ExternalReplyInfo(TelegramObject):
                 video=video,
                 video_note=video_note,
                 voice=voice,
+                widget=widget,
                 has_media_spoiler=has_media_spoiler,
                 checklist=checklist,
                 contact=contact,

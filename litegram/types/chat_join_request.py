@@ -56,17 +56,18 @@ class ChatJoinRequest(TelegramObject):
 
     chat: Chat
     """Chat to which the request was sent"""
-    from_user: User = Field(..., alias="from")
-    """User that sent the join request"""
     user_chat_id: int
     """Identifier of a private chat with the user who sent the join request. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a 64-bit integer or double-precision float type are safe for storing this identifier. The bot can use this identifier for 5 minutes to send messages until the join request is processed, assuming no other administrator contacted the user."""
     date: DateTime
     """Date the request was sent in Unix time"""
     bio: str | None = None
-    """*Optional*. Bio of the user."""
+    """*Optional*. Bio of the user"""
     invite_link: ChatInviteLink | None = None
     """*Optional*. Chat invite link that was used by the user to send the join request"""
-
+    from_user: User = Field(..., alias="from")
+    """User that sent the join request"""
+    query_id: str | None = None
+    """*Optional*. Identifier of the join request query; for bots assigned to process join requests only. If present, then the bot must call :class:`litegram.methods.send_chat_join_request_web_app.SendChatJoinRequestWebApp` or directly call :class:`litegram.methods.answer_chat_join_request_query.AnswerChatJoinRequestQuery` within 10 seconds."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -75,11 +76,12 @@ class ChatJoinRequest(TelegramObject):
             __pydantic__self__,
             *,
             chat: Chat,
-            from_user: User,
             user_chat_id: int,
             date: DateTime,
+            from_user: User,
             bio: str | None = None,
             invite_link: ChatInviteLink | None = None,
+            query_id: str | None = None,
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
@@ -88,11 +90,12 @@ class ChatJoinRequest(TelegramObject):
 
             super().__init__(
                 chat=chat,
-                from_user=from_user,
                 user_chat_id=user_chat_id,
                 date=date,
+                from_user=from_user,
                 bio=bio,
                 invite_link=invite_link,
+                query_id=query_id,
                 **__pydantic_kwargs,
             )
 

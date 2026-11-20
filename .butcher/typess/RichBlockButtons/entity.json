@@ -1,0 +1,41 @@
+{
+  "meta": {},
+  "group": {
+    "title": "Rich messages",
+    "anchor": "rich-messages"
+  },
+  "object": {
+    "anchor": "richblockbuttons",
+    "name": "RichBlockButtons",
+    "description": "A block containing a list of buttons that are shown in one row, corresponding to the custom HTML tag <tg-button-row>.",
+    "html_description": "<p>A block containing a list of buttons that are shown in one row, corresponding to the custom HTML tag <code>&lt;tg-button-row&gt;</code>.</p>",
+    "rst_description": "A block containing a list of buttons that are shown in one row, corresponding to the custom HTML tag :code:`<tg-button-row>`.",
+    "annotations": [
+      {
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "description": "Type of the block, always 'buttons'",
+        "html_description": "<td>Type of the block, always “buttons”</td>",
+        "rst_description": "Type of the block, always 'buttons'\n"
+      },
+      {
+        "name": "buttons",
+        "type": "Array of RichMessageButton",
+        "required": true,
+        "description": "The buttons",
+        "html_description": "<td>The buttons</td>",
+        "rst_description": "The buttons\n"
+      },
+      {
+        "name": "align",
+        "type": "String",
+        "required": false,
+        "description": "Optional. Horizontal alignment of the buttons. Currently, must be one of 'left', 'center', or 'right'.",
+        "html_description": "<td><em>Optional</em>. Horizontal alignment of the buttons. Currently, must be one of “left”, “center”, or “right”.</td>",
+        "rst_description": "*Optional*. Horizontal alignment of the buttons. Currently, must be one of 'left', 'center', or 'right'.\n"
+      }
+    ],
+    "category": "types"
+  }
+}

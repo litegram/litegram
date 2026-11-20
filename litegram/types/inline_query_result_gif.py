@@ -34,7 +34,7 @@ class InlineQueryResultGif(InlineQueryResult):
     gif_duration: int | None = None
     """*Optional*. Duration of the GIF in seconds"""
     thumbnail_mime_type: str | None = None
-    """*Optional*. MIME type of the thumbnail, must be one of 'image/jpeg', 'image/gif', or 'video/mp4'. Defaults to 'image/jpeg'"""
+    """*Optional*. MIME type of the thumbnail, must be one of 'image/jpeg', 'image/gif', or 'video/mp4'. Defaults to 'image/jpeg'."""
     title: str | None = None
     """*Optional*. Title for the result"""
     caption: str | None = None
@@ -44,12 +44,11 @@ class InlineQueryResultGif(InlineQueryResult):
     caption_entities: list[MessageEntity] | None = None
     """*Optional*. List of special entities that appear in the caption, which can be specified instead of *parse_mode*"""
     show_caption_above_media: bool | Default | None = Default("show_caption_above_media")
-    """*Optional*. Pass :code:`True`, if the caption must be shown above the message media"""
+    """*Optional*. Pass :code:`True` if the caption must be shown above the message media"""
     reply_markup: InlineKeyboardMarkup | None = None
     """*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_ attached to the message"""
     input_message_content: InputMessageContentUnion | None = None
     """*Optional*. Content of the message to be sent instead of the GIF animation"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -57,10 +56,10 @@ class InlineQueryResultGif(InlineQueryResult):
         def __init__(
             __pydantic__self__,
             *,
-            type: Literal[InlineQueryResultType.GIF] = InlineQueryResultType.GIF,
             id: str,
             gif_url: str,
             thumbnail_url: str,
+            type: Literal[InlineQueryResultType.GIF] = InlineQueryResultType.GIF,
             gif_width: int | None = None,
             gif_height: int | None = None,
             gif_duration: int | None = None,
@@ -79,10 +78,10 @@ class InlineQueryResultGif(InlineQueryResult):
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
-                type=type,
                 id=id,
                 gif_url=gif_url,
                 thumbnail_url=thumbnail_url,
+                type=type,
                 gif_width=gif_width,
                 gif_height=gif_height,
                 gif_duration=gif_duration,

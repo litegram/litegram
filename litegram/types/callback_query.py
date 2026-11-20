@@ -16,26 +16,23 @@ class CallbackQuery(TelegramObject):
     """
     This object represents an incoming callback query from a callback button in an `inline keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_. If the button that originated the query was attached to a message sent by the bot, the field *message* will be present. If the button was attached to a message sent via the bot (in `inline mode <https://core.telegram.org/bots/api#inline-mode>`_), the field *inline_message_id* will be present. Exactly one of the fields *data* or *game_short_name* will be present.
 
-     **NOTE:** After the user presses a callback button, Telegram clients will display a progress bar until you call :class:`litegram.methods.answer_callback_query.AnswerCallbackQuery`. It is, therefore, necessary to react by calling :class:`litegram.methods.answer_callback_query.AnswerCallbackQuery` even if no notification to the user is needed (e.g., without specifying any of the optional parameters).
-
     Source: https://core.telegram.org/bots/api#callbackquery
     """
 
     id: str
     """Unique identifier for this query"""
-    from_user: User = Field(..., alias="from")
-    """Sender"""
     chat_instance: str
-    """Global identifier, uniquely corresponding to the chat to which the message with the callback button was sent. Useful for high scores in :class:`litegram.methods.games.Games`."""
+    """Global identifier, uniquely corresponding to the chat to which the message with the callback button was sent. Useful for high scores in `games <https://core.telegram.org/bots/api#games>`_."""
     message: MaybeInaccessibleMessageUnion | None = None
     """*Optional*. Message sent by the bot with the callback button that originated the query"""
     inline_message_id: str | None = None
-    """*Optional*. Identifier of the message sent via the bot in inline mode, that originated the query."""
+    """*Optional*. Identifier of the message sent via the bot in inline mode, that originated the query"""
     data: str | None = None
     """*Optional*. Data associated with the callback button. Be aware that the message originated the query can contain no callback buttons with this data."""
     game_short_name: str | None = None
-    """*Optional*. Short name of a `Game <https://core.telegram.org/bots/api#games>`_ to be returned, serves as the unique identifier for the game"""
-
+    """*Optional*. Short name of a :class:`litegram.types.game.Game` to be returned, serves as the unique identifier for the game"""
+    from_user: User = Field(..., alias="from")
+    """Sender"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
@@ -44,8 +41,8 @@ class CallbackQuery(TelegramObject):
             __pydantic__self__,
             *,
             id: str,
-            from_user: User,
             chat_instance: str,
+            from_user: User,
             message: MaybeInaccessibleMessageUnion | None = None,
             inline_message_id: str | None = None,
             data: str | None = None,
@@ -58,8 +55,8 @@ class CallbackQuery(TelegramObject):
 
             super().__init__(
                 id=id,
-                from_user=from_user,
                 chat_instance=chat_instance,
+                from_user=from_user,
                 message=message,
                 inline_message_id=inline_message_id,
                 data=data,

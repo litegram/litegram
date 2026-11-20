@@ -23,7 +23,7 @@ class CreateNewStickerSet(TelegramMethod[bool]):
     user_id: int
     """User identifier of created sticker set owner"""
     name: str
-    """Short name of sticker set, to be used in :code:`t.me/addstickers/` URLs (e.g., *animals*). Can contain only English letters, digits and underscores. Must begin with a letter, can't contain consecutive underscores and must end in :code:`"_by_<bot_username>"`. :code:`<bot_username>` is case insensitive. 1-64 characters."""
+    """Short name of sticker set, to be used in :code:`t.me/addstickers/` URLs (e.g., *animals*). Can contain only English letters, digits and underscores. Must begin with a letter, can't contain consecutive underscores and must end in :code:`"_by_"`. :code:`` is case insensitive. 1-64 characters."""
     title: str
     """Sticker set title, 1-64 characters"""
     stickers: list[InputSticker]
@@ -37,7 +37,6 @@ class CreateNewStickerSet(TelegramMethod[bool]):
 
 .. deprecated:: API:7.2
    https://core.telegram.org/bots/api-changelog#march-31-2024"""
-
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
         # This section was auto-generated via `butcher`
