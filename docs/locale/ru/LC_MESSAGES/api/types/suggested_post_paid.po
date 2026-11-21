@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -36,8 +36,10 @@ msgstr ""
 #: litegram.types.suggested_post_paid.SuggestedPostPaid.currency:1 of
 msgid ""
 "Currency in which the payment was made. Currently, one of 'XTR' for "
-"Telegram Stars or 'TON' for toncoins"
+"Telegram Stars or 'TON' for TON grams."
 msgstr ""
+"Валюта, в которой произведена оплата. Сейчас одно из значений: 'XTR' "
+"(звёзды Telegram) или 'TON' (граммы TON)."
 
 #: litegram.types.suggested_post_paid.SuggestedPostPaid.suggested_post_message:1
 #: of
@@ -50,11 +52,27 @@ msgstr ""
 #: litegram.types.suggested_post_paid.SuggestedPostPaid.amount:1 of
 msgid ""
 "*Optional*. The amount of the currency that was received by the channel "
-"in nanotoncoins; for payments in toncoins only"
+"in nanograms; for payments in TON grams only"
 msgstr ""
+"*Необязательно*. Сумма валюты, полученная каналом, в нанограммах; только "
+"для оплаты в граммах TON"
 
 #: litegram.types.suggested_post_paid.SuggestedPostPaid.star_amount:1 of
 msgid ""
 "*Optional*. The amount of Telegram Stars that was received by the "
 "channel; for payments in Telegram Stars only"
 msgstr ""
+
+#~ msgid ""
+#~ "Currency in which the payment was "
+#~ "made. Currently, one of 'XTR' for "
+#~ "Telegram Stars or 'TON' for toncoins"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. The amount of the currency"
+#~ " that was received by the channel "
+#~ "in nanotoncoins; for payments in "
+#~ "toncoins only"
+#~ msgstr ""
+

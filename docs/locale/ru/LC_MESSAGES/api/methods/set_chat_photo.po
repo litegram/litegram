@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 00:47+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/methods/set_chat_photo.rst:3
 msgid "setChatPhoto"
@@ -36,48 +36,55 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#setchatphoto"
 msgstr ""
 
-#: ../../docstring litegram.methods.set_chat_photo.SetChatPhoto.chat_id:1 of
+#: litegram.methods.set_chat_photo.SetChatPhoto.chat_id:1 of
 msgid ""
 "Unique identifier for the target chat or username of the target channel "
-"(in the format :code:`@channelusername`)"
+"in the format :code:`@username`"
 msgstr ""
 
-#: ../../docstring litegram.methods.set_chat_photo.SetChatPhoto.photo:1 of
+#: litegram.methods.set_chat_photo.SetChatPhoto.photo:1 of
 msgid "New chat photo, uploaded using multipart/form-data"
 msgstr ""
 
-#: ../../api/methods/set_chat_photo.rst:14
+#: ../../api/methods/set_chat_photo.rst:15
 msgid "Usage"
 msgstr ""
 
-#: ../../api/methods/set_chat_photo.rst:17
+#: ../../api/methods/set_chat_photo.rst:18
 msgid "As bot method"
 msgstr ""
 
-#: ../../api/methods/set_chat_photo.rst:25
+#: ../../api/methods/set_chat_photo.rst:26
 msgid "Method as object"
 msgstr ""
 
-#: ../../api/methods/set_chat_photo.rst:27
+#: ../../api/methods/set_chat_photo.rst:28
 msgid "Imports:"
 msgstr ""
 
-#: ../../api/methods/set_chat_photo.rst:29
+#: ../../api/methods/set_chat_photo.rst:30
 msgid ":code:`from litegram.methods.set_chat_photo import SetChatPhoto`"
 msgstr ""
 
-#: ../../api/methods/set_chat_photo.rst:30
+#: ../../api/methods/set_chat_photo.rst:31
 msgid "alias: :code:`from litegram.methods import SetChatPhoto`"
 msgstr ""
 
-#: ../../api/methods/set_chat_photo.rst:33
+#: ../../api/methods/set_chat_photo.rst:34
 msgid "With specific bot"
 msgstr ""
 
-#: ../../api/methods/set_chat_photo.rst:43
+#: ../../api/methods/set_chat_photo.rst:44
 msgid "As shortcut from received object"
 msgstr ""
 
-#: ../../api/methods/set_chat_photo.rst:45
+#: ../../api/methods/set_chat_photo.rst:46
 msgid ":meth:`litegram.types.chat.Chat.set_photo`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target channel"
+#~ " (in the format :code:`@channelusername`)"
+#~ msgstr ""
+

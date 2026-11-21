@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/methods/get_chat_administrators.rst:3
 msgid "getChatAdministrators"
@@ -26,20 +26,26 @@ msgstr ""
 
 #: litegram.methods.get_chat_administrators.GetChatAdministrators:1 of
 msgid ""
-"Use this method to get a list of administrators in a chat, which aren't "
-"bots. Returns an Array of :class:`litegram.types.chat_member.ChatMember` "
-"objects."
+"Use this method to get a list of administrators in a chat. Returns an "
+"Array of :class:`litegram.types.chat_member.ChatMember` objects."
 msgstr ""
 
 #: litegram.methods.get_chat_administrators.GetChatAdministrators:3 of
 msgid "Source: https://core.telegram.org/bots/api#getchatadministrators"
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.get_chat_administrators.GetChatAdministrators.chat_id:1 of
 msgid ""
 "Unique identifier for the target chat or username of the target "
-"supergroup or channel (in the format :code:`@channelusername`)"
+"supergroup or channel in the format :code:`@username`"
+msgstr ""
+
+#: litegram.methods.get_chat_administrators.GetChatAdministrators.return_bots:1
+#: of
+msgid ""
+"Pass :code:`True` to additionally receive all bots that are "
+"administrators of the chat. By default, bots other than the current bot "
+"are omitted."
 msgstr ""
 
 #: ../../api/methods/get_chat_administrators.rst:15
@@ -79,3 +85,18 @@ msgstr ""
 #: ../../api/methods/get_chat_administrators.rst:46
 msgid ":meth:`litegram.types.chat.Chat.get_administrators`"
 msgstr ""
+
+#~ msgid ""
+#~ "Use this method to get a list "
+#~ "of administrators in a chat, which "
+#~ "aren't bots. Returns an Array of "
+#~ ":class:`litegram.types.chat_member.ChatMember` objects."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target supergroup"
+#~ " or channel (in the format "
+#~ ":code:`@channelusername`)"
+#~ msgstr ""
+

@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/ton_wallet_transfer.rst:3
+msgid "TonWalletTransfer"
+msgstr "TonWalletTransfer"
+
+#: litegram.types.ton_wallet_transfer.TonWalletTransfer:1 of
+msgid "Describes a service message about a transfer with a TON wallet."
+msgstr "Описывает сервисное сообщение о переводе через TON-кошелёк."
+
+#: litegram.types.ton_wallet_transfer.TonWalletTransfer:3 of
+msgid "Source: https://core.telegram.org/bots/api#tonwallettransfer"
+msgstr "Источник: https://core.telegram.org/bots/api#tonwallettransfer"
+
+#: litegram.types.ton_wallet_transfer.TonWalletTransfer.transaction_id:1 of
+msgid ""
+"Unique identifier of the transaction; may be empty if the transfer hasn't"
+" been sent yet"
+msgstr ""
+"Уникальный идентификатор транзакции; может быть пустым, если перевод ещё "
+"не отправлен"
+
+#: litegram.types.ton_wallet_transfer.TonWalletTransfer.peer_address:1 of
+msgid "Address of the transfer peer in the TON blockchain"
+msgstr "Адрес контрагента перевода в блокчейне TON"
+
+#: litegram.types.ton_wallet_transfer.TonWalletTransfer.amount:1 of
+msgid ""
+"The amount of transferred cryptocurrency, in the *smallest units* of the "
+"cryptocurrency, as a decimal number; negative for outgoing transfers"
+msgstr ""
+"Количество переведённой криптовалюты в *наименьших единицах* "
+"криптовалюты, десятичное число; отрицательное для исходящих переводов"
+
+#: litegram.types.ton_wallet_transfer.TonWalletTransfer.comment:1 of
+msgid ""
+"*Optional*. Comment added to the transfer; omitted if the comment is "
+"encrypted"
+msgstr ""
+"*Необязательно*. Комментарий к переводу; отсутствует, если комментарий "
+"зашифрован"
+

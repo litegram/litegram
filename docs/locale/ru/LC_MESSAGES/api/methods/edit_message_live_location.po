@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,22 +60,22 @@ msgstr ""
 #: of
 msgid ""
 "Required if *inline_message_id* is not specified. Unique identifier for "
-"the target chat or username of the target channel (in the format "
-":code:`@channelusername`)"
+"the target chat or username of the target bot, supergroup, or channel in "
+"the format :code:`@username`."
 msgstr ""
 
 #: litegram.methods.edit_message_live_location.EditMessageLiveLocation.message_id:1
 #: of
 msgid ""
 "Required if *inline_message_id* is not specified. Identifier of the "
-"message to edit"
+"message to edit."
 msgstr ""
 
 #: litegram.methods.edit_message_live_location.EditMessageLiveLocation.inline_message_id:1
 #: of
 msgid ""
 "Required if *chat_id* and *message_id* are not specified. Identifier of "
-"the inline message"
+"the inline message."
 msgstr ""
 
 #: litegram.methods.edit_message_live_location.EditMessageLiveLocation.live_period:1
@@ -86,7 +86,7 @@ msgid ""
 " can be updated forever. Otherwise, the new value must not exceed the "
 "current *live_period* by more than a day, and the live location "
 "expiration date must remain within the next 90 days. If not specified, "
-"then *live_period* remains unchanged"
+"then *live_period* remains unchanged."
 msgstr ""
 
 #: litegram.methods.edit_message_live_location.EditMessageLiveLocation.horizontal_accuracy:1
@@ -112,7 +112,7 @@ msgstr ""
 #: of
 msgid ""
 "A JSON-serialized object for a new `inline keyboard "
-"<https://core.telegram.org/bots/features#inline-keyboards>`_."
+"<https://core.telegram.org/bots/features#inline-keyboards>`_"
 msgstr ""
 
 #: ../../api/methods/edit_message_live_location.rst:15
@@ -156,3 +156,45 @@ msgstr ""
 #: ../../api/methods/edit_message_live_location.rst:51
 msgid ":meth:`litegram.types.message.Message.edit_live_location`"
 msgstr ""
+
+#~ msgid ""
+#~ "Required if *inline_message_id* is not "
+#~ "specified. Unique identifier for the "
+#~ "target chat or username of the "
+#~ "target channel (in the format "
+#~ ":code:`@channelusername`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Required if *inline_message_id* is not "
+#~ "specified. Identifier of the message to"
+#~ " edit"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Required if *chat_id* and *message_id* "
+#~ "are not specified. Identifier of the "
+#~ "inline message"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "New period in seconds during which "
+#~ "the location can be updated, starting"
+#~ " from the message send date. If "
+#~ "0x7FFFFFFF is specified, then the "
+#~ "location can be updated forever. "
+#~ "Otherwise, the new value must not "
+#~ "exceed the current *live_period* by more"
+#~ " than a day, and the live "
+#~ "location expiration date must remain "
+#~ "within the next 90 days. If not"
+#~ " specified, then *live_period* remains "
+#~ "unchanged"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A JSON-serialized object for a new"
+#~ " `inline keyboard "
+#~ "<https://core.telegram.org/bots/features#inline-keyboards>`_."
+#~ msgstr ""
+

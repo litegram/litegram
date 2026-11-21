@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -53,7 +53,7 @@ msgstr ""
 #: of
 msgid ""
 "Unique identifier for the target channel chat or username of the target "
-"channel (in the format :code:`@channelusername`)"
+"channel in the format :code:`@username`"
 msgstr ""
 
 #: litegram.methods.create_chat_subscription_invite_link.CreateChatSubscriptionInviteLink.subscription_period:1
@@ -110,3 +110,11 @@ msgstr ""
 #: ../../api/methods/create_chat_subscription_invite_link.rst:41
 msgid "As reply into Webhook in handler"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target channel"
+#~ " chat or username of the target "
+#~ "channel (in the format "
+#~ ":code:`@channelusername`)"
+#~ msgstr ""
+

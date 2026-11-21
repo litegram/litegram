@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_rich_block_map.rst:3
+msgid "InputRichBlockMap"
+msgstr "InputRichBlockMap"
+
+#: litegram.types.input_rich_block_map.InputRichBlockMap:1 of
+msgid ""
+"A block with a map, corresponding to the custom HTML tag :code:`<tg-"
+"map>`. The map's width and height must not exceed 10000 in total. The "
+"width and height ratio must be at most 20."
+msgstr ""
+"Блок с картой; соответствует пользовательскому HTML-тегу :code:`<tg-"
+"map>`. Сумма ширины и высоты карты не должна превышать 10000. Отношение "
+"ширины к высоте должно быть не более 20."
+
+#: litegram.types.input_rich_block_map.InputRichBlockMap:3 of
+msgid "Source: https://core.telegram.org/bots/api#inputrichblockmap"
+msgstr "Источник: https://core.telegram.org/bots/api#inputrichblockmap"
+
+#: litegram.types.input_rich_block_map.InputRichBlockMap.type:1 of
+msgid "Type of the block, always 'map'"
+msgstr "Тип блока, всегда 'map'"
+
+#: litegram.types.input_rich_block_map.InputRichBlockMap.location:1 of
+msgid "Location of the center of the map"
+msgstr "Геолокация центра карты"
+
+#: litegram.types.input_rich_block_map.InputRichBlockMap.zoom:1 of
+msgid "*Optional*. Map zoom level; 0-24"
+msgstr "*Необязательно*. Уровень масштабирования карты; от 0 до 24"
+
+#: litegram.types.input_rich_block_map.InputRichBlockMap.width:1 of
+msgid "*Optional*. Map width; 0-10000"
+msgstr "*Необязательно*. Ширина карты; от 0 до 10000"
+
+#: litegram.types.input_rich_block_map.InputRichBlockMap.height:1 of
+msgid "*Optional*. Map height; 0-10000"
+msgstr "*Необязательно*. Высота карты; от 0 до 10000"
+
+#: litegram.types.input_rich_block_map.InputRichBlockMap.caption:1 of
+msgid "*Optional*. Caption of the block"
+msgstr "*Необязательно*. Подпись блока"
+

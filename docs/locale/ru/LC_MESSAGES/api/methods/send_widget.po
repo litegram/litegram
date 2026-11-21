@@ -2,59 +2,78 @@
 # Distributed under the same license as litegram.
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram\n"
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
+#: ../../api/methods/send_widget.rst:3
+msgid "sendWidget"
+msgstr ""
+
+#: litegram.methods.send_widget.SendWidget:1 of
 msgid ""
 "Use this method to send a message with an `HTML widget "
 "<https://core.telegram.org/bots/widgets>`_. Currently, in the production "
 "environment, widgets can be sent only to private chats, and sent widgets "
-"automatically have protected content and therefore can't be forwarded. On "
-"success, the sent :class:`litegram.types.message.Message` is returned."
+"automatically have protected content and therefore can't be forwarded. On"
+" success, the sent :class:`litegram.types.message.Message` is returned."
 msgstr ""
 "Отправляет сообщение с `HTML-виджетом "
-"<https://core.telegram.org/bots/widgets>`_. В рабочей среде виджеты сейчас "
-"можно отправлять только в личные чаты. Отправленные виджеты автоматически "
-"защищены от пересылки. При успехе возвращает отправленное сообщение "
-":class:`litegram.types.message.Message`."
+"<https://core.telegram.org/bots/widgets>`_. В рабочей среде виджеты "
+"сейчас можно отправлять только в личные чаты. Отправленные виджеты "
+"автоматически защищены от пересылки. При успехе возвращает отправленное "
+"сообщение :class:`litegram.types.message.Message`."
 
+#: litegram.methods.send_widget.SendWidget:3 of
 msgid "Source: https://core.telegram.org/bots/api#sendwidget"
 msgstr "Источник: https://core.telegram.org/bots/api#sendwidget"
 
+#: litegram.methods.send_widget.SendWidget.chat_id:1 of
 msgid ""
-"Unique identifier for the target chat or username of the target supergroup "
-"in the format :code:`@username`"
+"Unique identifier for the target chat or username of the target "
+"supergroup in the format :code:`@username`"
 msgstr ""
-"Уникальный идентификатор целевого чата или имя целевой супергруппы в формате"
-" :code:`@username`"
+"Уникальный идентификатор целевого чата или имя целевой супергруппы в "
+"формате :code:`@username`"
 
+#: litegram.methods.send_widget.SendWidget.message_thread_id:1 of
 msgid ""
 "Unique identifier for the target message thread (topic) of a forum; for "
-"forum supergroups and private chats of bots with forum topic mode enabled "
-"only"
+"forum supergroups and private chats of bots with forum topic mode enabled"
+" only"
 msgstr ""
-"Уникальный идентификатор темы форума. Только для супергрупп-форумов и личных"
-" чатов ботов с включённым режимом тем."
+"Уникальный идентификатор темы форума. Только для супергрупп-форумов и "
+"личных чатов ботов с включённым режимом тем."
 
+#: litegram.methods.send_widget.SendWidget.html:1 of
 msgid ""
-"HTML code of the widget, 1-32768 bytes. The code must not exceed 4096 bytes "
-"when compressed by zlib with the maximum compression level."
+"HTML code of the widget, 1-32768 bytes. The code must not exceed 4096 "
+"bytes when compressed by zlib with the maximum compression level."
 msgstr ""
 "HTML-код виджета, от 1 до 32 768 байт. После сжатия zlib с максимальным "
 "уровнем сжатия код не должен превышать 4096 байт."
 
+#: litegram.methods.send_widget.SendWidget.width:1 of
 msgid ""
-"Width of the widget in logical pixels; omit if the widget must occupy the "
-"whole width of the message bubble. The width is clamped by the app to the "
-"range from 200 to the maximum width of the message bubble."
+"Width of the widget in logical pixels; omit if the widget must occupy the"
+" whole width of the message bubble. The width is clamped by the app to "
+"the range from 200 to the maximum width of the message bubble."
 msgstr ""
 "Ширина виджета в логических пикселях. Не задавайте, если виджет должен "
-"занимать всю ширину сообщения. Приложение ограничивает ширину диапазоном от "
-"200 пикселей до максимальной ширины сообщения."
+"занимать всю ширину сообщения. Приложение ограничивает ширину диапазоном "
+"от 200 пикселей до максимальной ширины сообщения."
 
+#: litegram.methods.send_widget.SendWidget.height:1 of
 msgid ""
 "Height of the widget in logical pixels; omit if the height of the widget "
 "isn't fixed. The height is clamped by the app to the range 50-600."
@@ -63,78 +82,95 @@ msgstr ""
 "фиксирована. Приложение ограничивает высоту диапазоном от 50 до 600 "
 "пикселей."
 
+#: litegram.methods.send_widget.SendWidget.public_data:1 of
 msgid ""
-"Public data of the widget, 0-1024 bytes, which will be available wherever "
-"the widget is shown. If the widget is shared, then all messages with it will"
-" have the same public data."
+"Public data of the widget, 0-1024 bytes, which will be available wherever"
+" the widget is shown. If the widget is shared, then all messages with it "
+"will have the same public data."
 msgstr ""
 "Публичные данные виджета, от 0 до 1024 байт. Доступны везде, где "
 "отображается виджет. Для переиспользуемого виджета они одинаковы во всех "
 "сообщениях."
 
+#: litegram.methods.send_widget.SendWidget.chat_data:1 of
 msgid "Data of the widget, which is specific to the message, 0-1024 bytes"
 msgstr "Данные виджета для конкретного сообщения, от 0 до 1024 байт"
 
+#: litegram.methods.send_widget.SendWidget.caption:1 of
 msgid "Widget caption, 0-1024 characters after entities parsing"
 msgstr "Подпись виджета, от 0 до 1024 символов после разбора сущностей"
 
+#: litegram.methods.send_widget.SendWidget.parse_mode:1 of
 msgid ""
 "Mode for parsing entities in the widget caption. See `formatting options "
-"<https://core.telegram.org/bots/api#formatting-options>`_ for more details."
+"<https://core.telegram.org/bots/api#formatting-options>`_ for more "
+"details."
 msgstr ""
 "Режим разбора сущностей в подписи виджета. Подробнее см. `варианты "
 "форматирования <https://core.telegram.org/bots/api#formatting-options>`_."
 
+#: litegram.methods.send_widget.SendWidget.caption_entities:1 of
 msgid ""
-"A JSON-serialized list of special entities that appear in the caption, which"
-" can be specified instead of *parse_mode*"
+"A JSON-serialized list of special entities that appear in the caption, "
+"which can be specified instead of *parse_mode*"
 msgstr ""
-"Список специальных сущностей в подписи в формате JSON; его можно передать "
-"вместо *parse_mode*"
+"Список специальных сущностей в подписи в формате JSON; его можно передать"
+" вместо *parse_mode*"
 
+#: litegram.methods.send_widget.SendWidget.show_caption_above_media:1 of
 msgid "Pass :code:`True` if the caption must be shown above the widget"
 msgstr "Передайте :code:`True`, чтобы показать подпись над виджетом"
 
+#: litegram.methods.send_widget.SendWidget.allow_queries:1 of
 msgid "Pass :code:`True` to allow the widget to send queries to the bot"
 msgstr "Передайте :code:`True`, чтобы разрешить виджету отправлять запросы боту"
 
+#: litegram.methods.send_widget.SendWidget.is_shared:1 of
 msgid ""
-"Pass :code:`True` to create a shared widget, which can be sent again using "
-"the method :class:`litegram.methods.send_shared_widget.SendSharedWidget`"
+"Pass :code:`True` to create a shared widget, which can be sent again "
+"using the method "
+":class:`litegram.methods.send_shared_widget.SendSharedWidget`"
 msgstr ""
-"Передайте :code:`True`, чтобы создать переиспользуемый виджет, который можно"
-" отправить повторно методом "
+"Передайте :code:`True`, чтобы создать переиспользуемый виджет, который "
+"можно отправить повторно методом "
 ":class:`litegram.methods.send_shared_widget.SendSharedWidget`"
 
+#: litegram.methods.send_widget.SendWidget.disable_notification:1 of
 msgid ""
-"Sends the message `silently <https://telegram.org/blog/channels-2-0#silent-"
-"messages>`_. Users will receive a notification with no sound."
+"Sends the message `silently <https://telegram.org/blog/channels-2-0"
+"#silent-messages>`_. Users will receive a notification with no sound."
 msgstr ""
 "Отправляет сообщение `без звука <https://telegram.org/blog/channels-2-0"
 "#silent-messages>`_. Пользователи получат уведомление без звука."
 
+#: litegram.methods.send_widget.SendWidget.protect_content:1 of
 msgid "Protects the contents of the sent message from forwarding and saving"
 msgstr "Защищает содержимое отправленного сообщения от пересылки и сохранения"
 
+#: litegram.methods.send_widget.SendWidget.allow_paid_broadcast:1 of
 msgid ""
 "Pass :code:`True` to allow up to 1000 messages per second, ignoring "
-"`broadcasting limits <https://core.telegram.org/bots/faq#how-can-i-message-"
-"all-of-my-bot-39s-subscribers-at-once>`_ for a fee of 0.1 Telegram Stars per"
-" message. The relevant Stars will be withdrawn from the bot's balance."
+"`broadcasting limits <https://core.telegram.org/bots/faq#how-can-i"
+"-message-all-of-my-bot-39s-subscribers-at-once>`_ for a fee of 0.1 "
+"Telegram Stars per message. The relevant Stars will be withdrawn from the"
+" bot's balance."
 msgstr ""
 "Передайте :code:`True`, чтобы отправлять до 1000 сообщений в секунду без "
 "учёта `лимитов рассылки <https://core.telegram.org/bots/faq#how-can-i"
-"-message-all-of-my-bot-39s-subscribers-at-once>`_. Стоимость — 0,1 звезды "
-"Telegram за сообщение; звёзды списываются с баланса бота."
+"-message-all-of-my-bot-39s-subscribers-at-once>`_. Стоимость — 0,1 звезды"
+" Telegram за сообщение; звёзды списываются с баланса бота."
 
+#: litegram.methods.send_widget.SendWidget.message_effect_id:1 of
 msgid ""
 "Unique identifier of the message effect to be added to the message; for "
 "private chats only"
 msgstr "Уникальный идентификатор эффекта сообщения; только для личных чатов"
 
+#: litegram.methods.send_widget.SendWidget.reply_parameters:1 of
 msgid "Description of the message to reply to"
 msgstr "Параметры сообщения, на которое отправляется ответ"
 
+#: litegram.methods.send_widget.SendWidget.reply_markup:1 of
 msgid ""
 "Additional interface options. A JSON-serialized object for an `inline "
 "keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_, "
@@ -145,6 +181,6 @@ msgstr ""
 "Дополнительные настройки интерфейса. Объект в формате JSON для "
 "`inline-клавиатуры <https://core.telegram.org/bots/features#inline-"
 "keyboards>`_, `пользовательской клавиатуры ответов "
-"<https://core.telegram.org/bots/features#keyboards>`_, удаления клавиатуры "
-"ответов или запроса обязательного ответа пользователя."
+"<https://core.telegram.org/bots/features#keyboards>`_, удаления "
+"клавиатуры ответов или запроса обязательного ответа пользователя."
 

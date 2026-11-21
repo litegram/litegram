@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_paid_media_live_photo.rst:3
+msgid "InputPaidMediaLivePhoto"
+msgstr "InputPaidMediaLivePhoto"
+
+#: litegram.types.input_paid_media_live_photo.InputPaidMediaLivePhoto:1 of
+msgid "The paid media to send is a live photo."
+msgstr "Отправляемое платное медиа — живое фото."
+
+#: litegram.types.input_paid_media_live_photo.InputPaidMediaLivePhoto:3 of
+msgid "Source: https://core.telegram.org/bots/api#inputpaidmedialivephoto"
+msgstr "Источник: https://core.telegram.org/bots/api#inputpaidmedialivephoto"
+
+#: litegram.types.input_paid_media_live_photo.InputPaidMediaLivePhoto.type:1 of
+msgid "Type of the media, must be *live_photo*"
+msgstr "Тип медиа, должен быть *live_photo*"
+
+#: litegram.types.input_paid_media_live_photo.InputPaidMediaLivePhoto.media:1
+#: of
+msgid ""
+"Video of the live photo to send. Pass a file_id to send a file that "
+"exists on the Telegram servers (recommended) or pass 'attach://' to "
+"upload a new one using multipart/form-data under  name. :ref:`More "
+"information on Sending Files » <sending-files>`. Sending live photos by a"
+" URL is currently unsupported."
+msgstr ""
+"Видео живого фото для отправки. Передайте file_id, чтобы отправить файл, "
+"уже находящийся на серверах Telegram (рекомендуется), или 'attach://', "
+"чтобы загрузить новый файл через multipart/form-data под этим именем. "
+":ref:`Подробнее об отправке файлов <sending-files>`. Отправка живых фото "
+"по URL пока не поддерживается."
+
+#: litegram.types.input_paid_media_live_photo.InputPaidMediaLivePhoto.photo:1
+#: of
+msgid ""
+"The static photo to send. Pass a file_id to send a file that exists on "
+"the Telegram servers (recommended) or pass 'attach://' to upload a new "
+"one using multipart/form-data under  name. :ref:`More information on "
+"Sending Files » <sending-files>`. Sending live photos by a URL is "
+"currently unsupported."
+msgstr ""
+"Статичное фото для отправки. Передайте file_id, чтобы отправить файл, уже"
+" находящийся на серверах Telegram (рекомендуется), или 'attach://', чтобы"
+" загрузить новый файл через multipart/form-data под этим именем. "
+":ref:`Подробнее об отправке файлов <sending-files>`. Отправка живых фото "
+"по URL пока не поддерживается."
+

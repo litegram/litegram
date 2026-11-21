@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -83,7 +83,7 @@ msgid ""
 msgstr ""
 
 #: litegram.methods.get_user_gifts.GetUserGifts.limit:1 of
-msgid "The maximum number of gifts to be returned; 1-100. Defaults to 100"
+msgid "The maximum number of gifts to be returned; 1-100. Defaults to 100."
 msgstr ""
 
 #: ../../api/methods/get_user_gifts.rst:15
@@ -113,3 +113,7 @@ msgstr ""
 #: ../../api/methods/get_user_gifts.rst:34
 msgid "With specific bot"
 msgstr ""
+
+#~ msgid "The maximum number of gifts to be returned; 1-100. Defaults to 100"
+#~ msgstr ""
+

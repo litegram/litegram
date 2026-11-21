@@ -7,14 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/poll.rst:3
 msgid "Poll"
@@ -28,71 +31,139 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#poll"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.id:1 of
+#: litegram.types.poll.Poll.id:1 of
 msgid "Unique poll identifier"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.question:1 of
+#: litegram.types.poll.Poll.question:1 of
 msgid "Poll question, 1-300 characters"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.options:1 of
+#: litegram.types.poll.Poll.options:1 of
 msgid "List of poll options"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.total_voter_count:1 of
+#: litegram.types.poll.Poll.total_voter_count:1 of
 msgid "Total number of users that voted in the poll"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.is_closed:1 of
+#: litegram.types.poll.Poll.is_closed:1 of
 msgid ":code:`True`, if the poll is closed"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.is_anonymous:1 of
+#: litegram.types.poll.Poll.is_anonymous:1 of
 msgid ":code:`True`, if the poll is anonymous"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.type:1 of
+#: litegram.types.poll.Poll.type:1 of
 msgid "Poll type, currently can be 'regular' or 'quiz'"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.allows_multiple_answers:1 of
+#: litegram.types.poll.Poll.allows_multiple_answers:1 of
 msgid ":code:`True`, if the poll allows multiple answers"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.question_entities:1 of
+#: litegram.types.poll.Poll.question_entities:1 of
 msgid ""
 "*Optional*. Special entities that appear in the *question*. Currently, "
 "only custom emoji entities are allowed in poll questions"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.correct_option_id:1 of
-msgid ""
-"*Optional*. 0-based identifier of the correct answer option. Available "
-"only for polls in the quiz mode, which are closed, or was sent (not "
-"forwarded) by the bot or to the private chat with the bot."
-msgstr ""
-
-#: ../../docstring litegram.types.poll.Poll.explanation:1 of
+#: litegram.types.poll.Poll.explanation:1 of
 msgid ""
 "*Optional*. Text that is shown when a user chooses an incorrect answer or"
 " taps on the lamp icon in a quiz-style poll, 0-200 characters"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.explanation_entities:1 of
+#: litegram.types.poll.Poll.explanation_entities:1 of
 msgid ""
 "*Optional*. Special entities like usernames, URLs, bot commands, etc. "
 "that appear in the *explanation*"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.open_period:1 of
+#: litegram.types.poll.Poll.open_period:1 of
 msgid ""
 "*Optional*. Amount of time in seconds the poll will be active after "
 "creation"
 msgstr ""
 
-#: ../../docstring litegram.types.poll.Poll.close_date:1 of
+#: litegram.types.poll.Poll.close_date:1 of
 msgid ""
 "*Optional*. Point in time (Unix timestamp) when the poll will be "
 "automatically closed"
 msgstr ""
+
+#: litegram.types.poll.Poll.allows_revoting:1 of
+msgid ":code:`True`, if the poll allows to change the chosen answer options"
+msgstr ":code:`True`, если опрос позволяет изменять выбранные варианты ответа"
+
+#: litegram.types.poll.Poll.members_only:1 of
+msgid ""
+":code:`True` if voting is limited to users who have been members of the "
+"chat where the poll was originally sent for more than 24 hours"
+msgstr ""
+":code:`True`, если голосовать могут только пользователи, состоящие в "
+"чате, где опрос был изначально отправлен, более 24 часов"
+
+#: litegram.types.poll.Poll.country_codes:1 of
+msgid ""
+"*Optional*. A list of two-letter `ISO 3166-1 alpha-2 "
+"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_ country codes "
+"indicating the countries from which users can vote in the poll. The "
+"country code 'FT' is used for users with anonymous numbers. If omitted, "
+"then users from any country can participate in the poll."
+msgstr ""
+"*Необязательно*. Список двухбуквенных кодов стран `ISO 3166-1 alpha-2 "
+"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_, жители которых "
+"могут участвовать в опросе. Код страны 'FT' используется для "
+"пользователей с анонимными номерами. Если не задан, в опросе могут "
+"участвовать пользователи из любых стран."
+
+#: litegram.types.poll.Poll.correct_option_ids:1 of
+msgid ""
+"*Optional*. Array of 0-based identifiers of the correct answer options. "
+"Available only for polls in quiz mode which are closed or were sent (not "
+"forwarded) by the bot or to the private chat with the bot."
+msgstr ""
+"*Необязательно*. Массив идентификаторов правильных вариантов ответа "
+"(нумерация с нуля). Доступен только для опросов в режиме викторины, "
+"которые закрыты или были отправлены (не пересланы) ботом либо в личный "
+"чат с ботом."
+
+#: litegram.types.poll.Poll.explanation_media:1 of
+msgid "*Optional*. Media added to the quiz explanation"
+msgstr "*Необязательно*. Медиа, добавленное к пояснению викторины"
+
+#: litegram.types.poll.Poll.description:1 of
+msgid ""
+"*Optional*. Description of the poll; for polls inside the "
+":class:`litegram.types.message.Message` object only"
+msgstr ""
+"*Необязательно*. Описание опроса; только для опросов внутри объекта "
+":class:`litegram.types.message.Message`"
+
+#: litegram.types.poll.Poll.description_entities:1 of
+msgid ""
+"*Optional*. Special entities like usernames, URLs, bot commands, etc. "
+"that appear in the description"
+msgstr ""
+"*Необязательно*. Специальные сущности, такие как имена пользователей, "
+"URL, команды ботов и т.д., в описании"
+
+#: litegram.types.poll.Poll.media:1 of
+msgid ""
+"*Optional*. Media added to the poll description; for polls inside the "
+":class:`litegram.types.message.Message` object only"
+msgstr ""
+"*Необязательно*. Медиа, добавленное к описанию опроса; только для опросов"
+" внутри объекта :class:`litegram.types.message.Message`"
+
+#~ msgid ""
+#~ "*Optional*. 0-based identifier of the "
+#~ "correct answer option. Available only "
+#~ "for polls in the quiz mode, which"
+#~ " are closed, or was sent (not "
+#~ "forwarded) by the bot or to the"
+#~ " private chat with the bot."
+#~ msgstr ""
+

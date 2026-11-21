@@ -7,14 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/input_invoice_message_content.rst:3
 msgid "InputInvoiceMessageContent"
@@ -31,19 +34,16 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#inputinvoicemessagecontent"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.title:1
 #: of
 msgid "Product name, 1-32 characters"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.description:1
 #: of
 msgid "Product description, 1-255 characters"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.payload:1
 #: of
 msgid ""
@@ -51,7 +51,6 @@ msgid ""
 "the user, use it for your internal processes."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.currency:1
 #: of
 msgid ""
@@ -60,7 +59,6 @@ msgid ""
 "'XTR' for payments in `Telegram Stars <https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.prices:1
 #: of
 msgid ""
@@ -70,7 +68,6 @@ msgid ""
 "<https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.provider_token:1
 #: of
 msgid ""
@@ -79,7 +76,6 @@ msgid ""
 "`Telegram Stars <https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.max_tip_amount:1
 #: of
 msgid ""
@@ -93,18 +89,20 @@ msgid ""
 "`Telegram Stars <https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.suggested_tip_amounts:1
 #: of
 msgid ""
-"*Optional*. A JSON-serialized array of suggested amounts of tip in the "
+"*Optional*. A JSON-serialized Array of suggested amounts of tip in the "
 "*smallest units* of the currency (integer, **not** float/double). At most"
 " 4 suggested tip amounts can be specified. The suggested tip amounts must"
 " be positive, passed in a strictly increased order and must not exceed "
 "*max_tip_amount*."
 msgstr ""
+"*Необязательно*. Массив предлагаемых сумм чаевых в *наименьших единицах* "
+"валюты в формате JSON (целые числа, **не** float/double). Можно указать "
+"не более 4 сумм чаевых. Они должны быть положительными, перечисляться в "
+"строго возрастающем порядке и не превышать *max_tip_amount*."
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.provider_data:1
 #: of
 msgid ""
@@ -113,7 +111,6 @@ msgid ""
 "required fields should be provided by the payment provider."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.photo_url:1
 #: of
 msgid ""
@@ -121,25 +118,21 @@ msgid ""
 "the goods or a marketing image for a service."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.photo_size:1
 #: of
 msgid "*Optional*. Photo size in bytes"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.photo_width:1
 #: of
 msgid "*Optional*. Photo width"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.photo_height:1
 #: of
 msgid "*Optional*. Photo height"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.need_name:1
 #: of
 msgid ""
@@ -148,7 +141,6 @@ msgid ""
 "<https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.need_phone_number:1
 #: of
 msgid ""
@@ -157,7 +149,6 @@ msgid ""
 "<https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.need_email:1
 #: of
 msgid ""
@@ -166,7 +157,6 @@ msgid ""
 "<https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.need_shipping_address:1
 #: of
 msgid ""
@@ -175,7 +165,6 @@ msgid ""
 "<https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.send_phone_number_to_provider:1
 #: of
 msgid ""
@@ -184,7 +173,6 @@ msgid ""
 "<https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.send_email_to_provider:1
 #: of
 msgid ""
@@ -193,7 +181,6 @@ msgid ""
 "<https://t.me/BotNews/90>`_."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_invoice_message_content.InputInvoiceMessageContent.is_flexible:1
 #: of
 msgid ""
@@ -201,3 +188,16 @@ msgid ""
 "method. Ignored for payments in `Telegram Stars "
 "<https://t.me/BotNews/90>`_."
 msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. A JSON-serialized array of"
+#~ " suggested amounts of tip in the "
+#~ "*smallest units* of the currency "
+#~ "(integer, **not** float/double). At most "
+#~ "4 suggested tip amounts can be "
+#~ "specified. The suggested tip amounts "
+#~ "must be positive, passed in a "
+#~ "strictly increased order and must not"
+#~ " exceed *max_tip_amount*."
+#~ msgstr ""
+

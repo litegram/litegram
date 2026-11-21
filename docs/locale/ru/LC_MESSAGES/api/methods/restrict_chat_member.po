@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-08 19:04+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/methods/restrict_chat_member.rst:3
 msgid "restrictChatMember"
@@ -36,24 +36,20 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#restrictchatmember"
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.restrict_chat_member.RestrictChatMember.chat_id:1 of
 msgid ""
 "Unique identifier for the target chat or username of the target "
-"supergroup (in the format :code:`@supergroupusername`)"
+"supergroup in the format :code:`@username`"
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.restrict_chat_member.RestrictChatMember.user_id:1 of
 msgid "Unique identifier of the target user"
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.restrict_chat_member.RestrictChatMember.permissions:1 of
 msgid "A JSON-serialized object for new user permissions"
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.restrict_chat_member.RestrictChatMember.use_independent_chat_permissions:1
 #: of
 msgid ""
@@ -66,12 +62,11 @@ msgid ""
 "permission."
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.restrict_chat_member.RestrictChatMember.until_date:1 of
 msgid ""
 "Date when restrictions will be lifted for the user; Unix time. If user is"
 " restricted for more than 366 days or less than 30 seconds from the "
-"current time, they are considered to be restricted forever"
+"current time, they are considered to be restricted forever."
 msgstr ""
 
 #: ../../api/methods/restrict_chat_member.rst:15
@@ -115,3 +110,19 @@ msgstr ""
 #: ../../api/methods/restrict_chat_member.rst:51
 msgid ":meth:`litegram.types.chat.Chat.restrict`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target supergroup"
+#~ " (in the format :code:`@supergroupusername`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Date when restrictions will be lifted"
+#~ " for the user; Unix time. If "
+#~ "user is restricted for more than "
+#~ "366 days or less than 30 seconds"
+#~ " from the current time, they are "
+#~ "considered to be restricted forever"
+#~ msgstr ""
+

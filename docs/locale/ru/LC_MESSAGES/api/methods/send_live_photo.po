@@ -2,12 +2,25 @@
 # Distributed under the same license as litegram.
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram\n"
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
+#: ../../api/methods/send_live_photo.rst:3
+msgid "sendLivePhoto"
+msgstr ""
+
+#: litegram.methods.send_live_photo.SendLivePhoto:1 of
 msgid ""
 "Use this method to send live photos. On success, the sent "
 ":class:`litegram.types.message.Message` is returned."
@@ -15,134 +28,161 @@ msgstr ""
 "Отправляет живое фото. При успехе возвращает отправленное сообщение "
 ":class:`litegram.types.message.Message`."
 
+#: litegram.methods.send_live_photo.SendLivePhoto:3 of
 msgid "Source: https://core.telegram.org/bots/api#sendlivephoto"
 msgstr "Источник: https://core.telegram.org/bots/api#sendlivephoto"
 
+#: litegram.methods.send_live_photo.SendLivePhoto.business_connection_id:1 of
 msgid ""
-"Unique identifier of the business connection on behalf of which the message "
-"will be sent"
+"Unique identifier of the business connection on behalf of which the "
+"message will be sent"
 msgstr ""
 "Уникальный идентификатор бизнес-подключения, от имени которого будет "
 "отправлено сообщение"
 
+#: litegram.methods.send_live_photo.SendLivePhoto.chat_id:1 of
 msgid ""
 "Unique identifier for the target chat or username of the target bot, "
-"supergroup, or channel in the format :code:`@username`; required unless the "
-"message is sent as an ephemeral reply to a callback query"
+"supergroup, or channel in the format :code:`@username`; required unless "
+"the message is sent as an ephemeral reply to a callback query"
 msgstr ""
-"Уникальный идентификатор целевого чата или имя целевого бота, супергруппы "
-"либо канала в формате :code:`@username`. Обязателен, кроме случая, когда "
-"сообщение отправляется как эфемерный ответ на callback-запрос."
+"Уникальный идентификатор целевого чата или имя целевого бота, супергруппы"
+" либо канала в формате :code:`@username`. Обязателен, кроме случая, когда"
+" сообщение отправляется как эфемерный ответ на callback-запрос."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.message_thread_id:1 of
 msgid ""
 "Unique identifier for the target message thread (topic) of a forum; for "
-"forum supergroups and private chats of bots with forum topic mode enabled "
-"only"
+"forum supergroups and private chats of bots with forum topic mode enabled"
+" only"
 msgstr ""
-"Уникальный идентификатор темы форума. Только для супергрупп-форумов и личных"
-" чатов ботов с включённым режимом тем."
+"Уникальный идентификатор темы форума. Только для супергрупп-форумов и "
+"личных чатов ботов с включённым режимом тем."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.direct_messages_topic_id:1 of
 msgid ""
-"Identifier of the direct messages topic to which the message will be sent; "
-"required if the message is sent to a direct messages chat"
+"Identifier of the direct messages topic to which the message will be "
+"sent; required if the message is sent to a direct messages chat"
 msgstr ""
-"Идентификатор темы личных сообщений, в которую будет отправлено сообщение. "
-"Обязателен при отправке в чат личных сообщений канала."
+"Идентификатор темы личных сообщений, в которую будет отправлено "
+"сообщение. Обязателен при отправке в чат личных сообщений канала."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.ephemeral_message_parameters:1
+#: of
 msgid ""
-"A JSON-serialized object containing the parameters of the ephemeral message "
-"to send"
+"A JSON-serialized object containing the parameters of the ephemeral "
+"message to send"
 msgstr "Объект в формате JSON с параметрами отправляемого эфемерного сообщения"
 
+#: litegram.methods.send_live_photo.SendLivePhoto.live_photo:1 of
 msgid ""
-"Live photo video to send. The video must be no longer than 10 seconds and "
-"must not exceed 10 MB in size. Pass a file_id as String to send a video that"
-" exists on the Telegram servers (recommended) or upload a new video using "
-"multipart/form-data. :ref:`More information on Sending Files » <sending-"
-"files>`. Sending live photos by a URL is currently unsupported."
+"Live photo video to send. The video must be no longer than 10 seconds and"
+" must not exceed 10 MB in size. Pass a file_id as String to send a video "
+"that exists on the Telegram servers (recommended) or upload a new video "
+"using multipart/form-data. :ref:`More information on Sending Files » "
+"<sending-files>`. Sending live photos by a URL is currently unsupported."
 msgstr ""
 "Видео для живого фото, не длиннее 10 секунд и не больше 10 МБ. Передайте "
 "*file_id* строкой для видео, уже загруженного на серверы Telegram "
 "(рекомендуется), или загрузите новое видео через multipart/form-data. "
-":ref:`Подробнее об отправке файлов <sending-files>`. Отправка живого фото по"
-" URL пока не поддерживается."
+":ref:`Подробнее об отправке файлов <sending-files>`. Отправка живого фото"
+" по URL пока не поддерживается."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.photo:1 of
 msgid ""
 "The static photo to send. Pass a file_id as String to send a photo that "
 "exists on the Telegram servers (recommended) or upload a new video using "
 "multipart/form-data. :ref:`More information on Sending Files » <sending-"
 "files>`. Sending live photos by a URL is currently unsupported."
 msgstr ""
-"Статичная фотография. Передайте *file_id* строкой для фото, уже загруженного"
-" на серверы Telegram (рекомендуется), или загрузите новое фото через "
-"multipart/form-data. :ref:`Подробнее об отправке файлов <sending-files>`. "
-"Отправка живого фото по URL пока не поддерживается."
+"Статичная фотография. Передайте *file_id* строкой для фото, уже "
+"загруженного на серверы Telegram (рекомендуется), или загрузите новое "
+"фото через multipart/form-data. :ref:`Подробнее об отправке файлов "
+"<sending-files>`. Отправка живого фото по URL пока не поддерживается."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.caption:1 of
 msgid ""
-"Video caption (may also be used when resending videos by *file_id*), 0-1024 "
-"characters after entities parsing"
+"Video caption (may also be used when resending videos by *file_id*), "
+"0-1024 characters after entities parsing"
 msgstr ""
 "Подпись к видео, от 0 до 1024 символов после разбора сущностей. Можно "
 "использовать и при повторной отправке видео по *file_id*."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.parse_mode:1 of
 msgid ""
 "Mode for parsing entities in the video caption. See `formatting options "
-"<https://core.telegram.org/bots/api#formatting-options>`_ for more details."
+"<https://core.telegram.org/bots/api#formatting-options>`_ for more "
+"details."
 msgstr ""
 "Режим разбора сущностей в подписи к видео. Подробнее см. `варианты "
 "форматирования <https://core.telegram.org/bots/api#formatting-options>`_."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.caption_entities:1 of
 msgid ""
-"A JSON-serialized list of special entities that appear in the caption, which"
-" can be specified instead of *parse_mode*"
+"A JSON-serialized list of special entities that appear in the caption, "
+"which can be specified instead of *parse_mode*"
 msgstr ""
-"Список специальных сущностей в подписи в формате JSON; его можно передать "
-"вместо *parse_mode*"
+"Список специальных сущностей в подписи в формате JSON; его можно передать"
+" вместо *parse_mode*"
 
+#: litegram.methods.send_live_photo.SendLivePhoto.show_caption_above_media:1 of
 msgid "Pass :code:`True` if the caption must be shown above the message media"
 msgstr "Передайте :code:`True`, чтобы показать подпись над медиа сообщения"
 
-msgid "Pass :code:`True` if the video needs to be covered with a spoiler animation"
+#: litegram.methods.send_live_photo.SendLivePhoto.has_spoiler:1 of
+msgid ""
+"Pass :code:`True` if the video needs to be covered with a spoiler "
+"animation"
 msgstr "Передайте :code:`True`, чтобы скрыть видео под анимацией спойлера"
 
+#: litegram.methods.send_live_photo.SendLivePhoto.disable_notification:1 of
 msgid ""
-"Sends the message `silently <https://telegram.org/blog/channels-2-0#silent-"
-"messages>`_. Users will receive a notification with no sound."
+"Sends the message `silently <https://telegram.org/blog/channels-2-0"
+"#silent-messages>`_. Users will receive a notification with no sound."
 msgstr ""
 "Отправляет сообщение `без звука <https://telegram.org/blog/channels-2-0"
 "#silent-messages>`_. Пользователи получат уведомление без звука."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.protect_content:1 of
 msgid "Protects the contents of the sent message from forwarding and saving"
 msgstr "Защищает содержимое отправленного сообщения от пересылки и сохранения"
 
+#: litegram.methods.send_live_photo.SendLivePhoto.allow_paid_broadcast:1 of
 msgid ""
 "Pass :code:`True` to allow up to 1000 messages per second, ignoring "
-"`broadcasting limits <https://core.telegram.org/bots/faq#how-can-i-message-"
-"all-of-my-bot-39s-subscribers-at-once>`_ for a fee of 0.1 Telegram Stars per"
-" message. The relevant Stars will be withdrawn from the bot's balance."
+"`broadcasting limits <https://core.telegram.org/bots/faq#how-can-i"
+"-message-all-of-my-bot-39s-subscribers-at-once>`_ for a fee of 0.1 "
+"Telegram Stars per message. The relevant Stars will be withdrawn from the"
+" bot's balance."
 msgstr ""
 "Передайте :code:`True`, чтобы отправлять до 1000 сообщений в секунду без "
 "учёта `лимитов рассылки <https://core.telegram.org/bots/faq#how-can-i"
-"-message-all-of-my-bot-39s-subscribers-at-once>`_. Стоимость — 0,1 звезды "
-"Telegram за сообщение; звёзды списываются с баланса бота."
+"-message-all-of-my-bot-39s-subscribers-at-once>`_. Стоимость — 0,1 звезды"
+" Telegram за сообщение; звёзды списываются с баланса бота."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.message_effect_id:1 of
 msgid ""
 "Unique identifier of the message effect to be added to the message; for "
 "private chats only"
 msgstr "Уникальный идентификатор эффекта сообщения; только для личных чатов"
 
+#: litegram.methods.send_live_photo.SendLivePhoto.suggested_post_parameters:1
+#: of
 msgid ""
-"A JSON-serialized object containing the parameters of the suggested post to "
-"send; for direct messages chats only. If the message is sent as a reply to "
-"another suggested post, then that suggested post is automatically declined."
+"A JSON-serialized object containing the parameters of the suggested post "
+"to send; for direct messages chats only. If the message is sent as a "
+"reply to another suggested post, then that suggested post is "
+"automatically declined."
 msgstr ""
 "Объект в формате JSON с параметрами предлагаемой публикации; только для "
-"чатов личных сообщений канала. Если сообщение отправляется в ответ на другую"
-" предлагаемую публикацию, та автоматически отклоняется."
+"чатов личных сообщений канала. Если сообщение отправляется в ответ на "
+"другую предлагаемую публикацию, та автоматически отклоняется."
 
+#: litegram.methods.send_live_photo.SendLivePhoto.reply_parameters:1 of
 msgid "Description of the message to reply to"
 msgstr "Параметры сообщения, на которое отправляется ответ"
 
+#: litegram.methods.send_live_photo.SendLivePhoto.reply_markup:1 of
 msgid ""
 "Additional interface options. A JSON-serialized object for an `inline "
 "keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_, "
@@ -153,6 +193,6 @@ msgstr ""
 "Дополнительные настройки интерфейса. Объект в формате JSON для "
 "`inline-клавиатуры <https://core.telegram.org/bots/features#inline-"
 "keyboards>`_, `пользовательской клавиатуры ответов "
-"<https://core.telegram.org/bots/features#keyboards>`_, удаления клавиатуры "
-"ответов или запроса обязательного ответа пользователя."
+"<https://core.telegram.org/bots/features#keyboards>`_, удаления "
+"клавиатуры ответов или запроса обязательного ответа пользователя."
 

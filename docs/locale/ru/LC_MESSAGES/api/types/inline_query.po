@@ -7,14 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-02 15:10+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/inline_query.rst:3
 msgid "InlineQuery"
@@ -30,33 +33,38 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#inlinequery"
 msgstr ""
 
-#: ../../docstring litegram.types.inline_query.InlineQuery.id:1 of
+#: litegram.types.inline_query.InlineQuery.id:1 of
 msgid "Unique identifier for this query"
 msgstr ""
 
-#: ../../docstring litegram.types.inline_query.InlineQuery.from_user:1 of
-msgid "Sender"
-msgstr ""
-
-#: ../../docstring litegram.types.inline_query.InlineQuery.query:1 of
+#: litegram.types.inline_query.InlineQuery.query:1 of
 msgid "Text of the query (up to 256 characters)"
 msgstr ""
 
-#: ../../docstring litegram.types.inline_query.InlineQuery.offset:1 of
+#: litegram.types.inline_query.InlineQuery.offset:1 of
 msgid "Offset of the results to be returned, can be controlled by the bot"
 msgstr ""
 
-#: ../../docstring litegram.types.inline_query.InlineQuery.chat_type:1 of
+#: litegram.types.inline_query.InlineQuery.chat_type:1 of
 msgid ""
 "*Optional*. Type of the chat from which the inline query was sent. Can be"
 " either 'sender' for a private chat with the inline query sender, "
 "'private', 'group', 'supergroup', or 'channel'. The chat type should be "
 "always known for requests sent from official clients and most third-party"
-" clients, unless the request was sent from a secret chat"
+" clients, unless the request was sent from a secret chat."
+msgstr ""
+"*Необязательно*. Тип чата, из которого отправлен inline-запрос. Одно из "
+"значений: 'sender' для личного чата с отправителем inline-запроса, "
+"'private', 'group', 'supergroup' или 'channel'. Тип чата всегда известен "
+"для запросов, отправленных из официальных и большинства сторонних "
+"клиентов, если только запрос не отправлен из секретного чата."
+
+#: litegram.types.inline_query.InlineQuery.location:1 of
+msgid "*Optional*. Sender location, only for bots that request user location"
 msgstr ""
 
-#: ../../docstring litegram.types.inline_query.InlineQuery.location:1 of
-msgid "*Optional*. Sender location, only for bots that request user location"
+#: litegram.types.inline_query.InlineQuery.from_user:1 of
+msgid "Sender"
 msgstr ""
 
 #: litegram.types.inline_query.InlineQuery.answer:1 of
@@ -84,7 +92,7 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#answerinlinequery"
 msgstr ""
 
-#: litegram.types.inline_query.InlineQuery.answer of
+#: ../../api/types/inline_query.rst
 msgid "Parameters"
 msgstr ""
 
@@ -134,7 +142,7 @@ msgid ""
 "start message with the parameter *switch_pm_parameter*"
 msgstr ""
 
-#: litegram.types.inline_query.InlineQuery.answer of
+#: ../../api/types/inline_query.rst
 msgid "Returns"
 msgstr ""
 
@@ -143,3 +151,17 @@ msgid ""
 "instance of method "
 ":class:`litegram.methods.answer_inline_query.AnswerInlineQuery`"
 msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Type of the chat from "
+#~ "which the inline query was sent. "
+#~ "Can be either 'sender' for a "
+#~ "private chat with the inline query "
+#~ "sender, 'private', 'group', 'supergroup', or"
+#~ " 'channel'. The chat type should be"
+#~ " always known for requests sent from"
+#~ " official clients and most third-"
+#~ "party clients, unless the request was"
+#~ " sent from a secret chat"
+#~ msgstr ""
+

@@ -7,14 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-08 19:04+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/inline_query_results_button.rst:3
 msgid "InlineQueryResultsButton"
@@ -30,12 +33,11 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultsbutton"
 msgstr ""
 
-#: ../../docstring
-#: litegram.types.inline_query_results_button.InlineQueryResultsButton.text:1 of
+#: litegram.types.inline_query_results_button.InlineQueryResultsButton.text:1
+#: of
 msgid "Label text on the button"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.inline_query_results_button.InlineQueryResultsButton.web_app:1
 #: of
 msgid ""
@@ -47,7 +49,6 @@ msgid ""
 "the Web App."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.inline_query_results_button.InlineQueryResultsButton.start_parameter:1
 #: of
 msgid ""
@@ -56,3 +57,29 @@ msgid ""
 "presses the button. 1-64 characters, only :code:`A-Z`, :code:`a-z`, "
 ":code:`0-9`, :code:`_` and :code:`-` are allowed."
 msgstr ""
+
+#: litegram.types.inline_query_results_button.InlineQueryResultsButton.start_parameter:3
+#: of
+msgid ""
+"*Example:* An inline bot that sends YouTube videos can ask the user to "
+"connect the bot to their YouTube account to adapt search results "
+"accordingly. To do this, it displays a 'Connect your YouTube account' "
+"button above the results, or even before showing any. The user presses "
+"the button, switches to a private chat with the bot and, in doing so, "
+"passes a start parameter that instructs the bot to return an OAuth link. "
+"Once done, the bot can offer a `*switch_inline* "
+"<https://core.telegram.org/bots/api#inlinekeyboardmarkup>`_ button so "
+"that the user can easily return to the chat where they wanted to use the "
+"bot's inline capabilities."
+msgstr ""
+"*Пример:* inline-бот, отправляющий видео с YouTube, может попросить "
+"пользователя подключить бота к своему аккаунту YouTube, чтобы "
+"адаптировать результаты поиска. Для этого он показывает над результатами "
+"(или ещё до их показа) кнопку «Подключите ваш аккаунт YouTube». "
+"Пользователь нажимает кнопку и переходит в личный чат с ботом, передавая "
+"start-параметр, который предписывает боту вернуть ссылку OAuth. После "
+"этого бот может предложить кнопку `*switch_inline* "
+"<https://core.telegram.org/bots/api#inlinekeyboardmarkup>`_, чтобы "
+"пользователь мог легко вернуться в чат, где он хотел использовать "
+"inline-возможности бота."
+

@@ -2,66 +2,100 @@
 # Distributed under the same license as litegram.
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram\n"
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
+#: ../../api/methods/edit_ephemeral_message_text.rst:3
+#, fuzzy
+msgid "editEphemeralMessageText"
+msgstr "Идентификатор эфемерного сообщения, которое нужно изменить"
+
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText:1 of
 msgid ""
-"Use this method to edit an ephemeral text or rich message. Note that it is "
-"not guaranteed that the user will receive the message edit event, especially"
-" if they are offline. On success, :code:`True` is returned."
+"Use this method to edit an ephemeral text or rich message. Note that it "
+"is not guaranteed that the user will receive the message edit event, "
+"especially if they are offline. On success, :code:`True` is returned."
 msgstr ""
 "Редактирует эфемерное текстовое или форматированное (rich) сообщение. "
-"Получение пользователем события об изменении не гарантируется, особенно если"
-" он не в сети. При успехе возвращает :code:`True`."
+"Получение пользователем события об изменении не гарантируется, особенно "
+"если он не в сети. При успехе возвращает :code:`True`."
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText:3 of
 msgid "Source: https://core.telegram.org/bots/api#editephemeralmessagetext"
 msgstr "Источник: https://core.telegram.org/bots/api#editephemeralmessagetext"
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText.chat_id:1
+#: of
 msgid ""
-"Unique identifier for the target chat or username of the target supergroup "
-"in the format :code:`@username`"
+"Unique identifier for the target chat or username of the target "
+"supergroup in the format :code:`@username`"
 msgstr ""
-"Уникальный идентификатор целевого чата или имя целевой супергруппы в формате"
-" :code:`@username`"
+"Уникальный идентификатор целевого чата или имя целевой супергруппы в "
+"формате :code:`@username`"
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText.receiver_user_id:1
+#: of
 msgid "Identifier of the user who received the message"
 msgstr "Идентификатор пользователя, получившего сообщение"
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText.ephemeral_message_id:1
+#: of
 msgid "Identifier of the ephemeral message to edit"
 msgstr "Идентификатор эфемерного сообщения, которое нужно изменить"
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText.text:1
+#: of
 msgid ""
-"New text of the message, 1-4096 characters after entity parsing; required if"
-" *rich_message* isn't specified"
+"New text of the message, 1-4096 characters after entity parsing; required"
+" if *rich_message* isn't specified"
 msgstr ""
 "Новый текст сообщения, от 1 до 4096 символов после разбора сущностей; "
 "обязателен, если не задан *rich_message*"
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText.parse_mode:1
+#: of
 msgid ""
 "Mode for parsing entities in the message text. See `formatting options "
-"<https://core.telegram.org/bots/api#formatting-options>`_ for more details."
+"<https://core.telegram.org/bots/api#formatting-options>`_ for more "
+"details."
 msgstr ""
 "Режим разбора сущностей в тексте сообщения. Подробнее см. `варианты "
 "форматирования <https://core.telegram.org/bots/api#formatting-options>`_."
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText.entities:1
+#: of
 msgid ""
 "A JSON-serialized list of special entities that appear in message text, "
 "which can be specified instead of *parse_mode*"
 msgstr ""
-"Список специальных сущностей в тексте сообщения в формате JSON; его можно "
-"передать вместо *parse_mode*"
+"Список специальных сущностей в тексте сообщения в формате JSON; его можно"
+" передать вместо *parse_mode*"
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText.rich_message:1
+#: of
 msgid "New rich content of the message; required if *text* isn't specified"
 msgstr ""
 "Новое форматированное (rich) содержимое сообщения; обязательно, если не "
 "задан *text*"
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText.link_preview_options:1
+#: of
 msgid "Link preview generation options for the message"
 msgstr "Настройки предпросмотра ссылок в сообщении"
 
+#: litegram.methods.edit_ephemeral_message_text.EditEphemeralMessageText.reply_markup:1
+#: of
 msgid ""
 "A JSON-serialized object for an `inline keyboard "
 "<https://core.telegram.org/bots/features#inline-keyboards>`_"

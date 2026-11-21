@@ -7,10 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,12 +33,18 @@ msgstr ""
 
 #: litegram.types.message.Message.message_id:1 of
 msgid ""
-"Unique message identifier inside this chat. In specific instances (e.g., "
-"message containing a video sent to a big chat), the server might "
-"automatically schedule a message instead of sending it immediately. In "
-"such cases, this field will be 0 and the relevant message will be "
-"unusable until it is actually sent"
+"Unique message identifier inside this chat; 0 for ephemeral messages. In "
+"specific instances (e.g., a message containing a video sent to a big "
+"chat), the server might automatically schedule a message instead of "
+"sending it immediately. In such cases, this field will be 0 and the "
+"relevant message will be unusable until it is actually sent."
 msgstr ""
+"Уникальный идентификатор сообщения в этом чате; для эфемерных сообщений —"
+" 0. В отдельных случаях (например, для сообщения с видео, отправляемого в"
+" большой чат) сервер может автоматически отложить отправку сообщения "
+"вместо немедленной отправки. В таких случаях это поле будет равно 0, и "
+"сообщение нельзя будет использовать, пока оно фактически не будет "
+"отправлено."
 
 #: litegram.types.message.Message.date:1 of
 msgid ""
@@ -57,13 +66,6 @@ msgstr ""
 msgid ""
 "*Optional*. Information about the direct messages chat topic that "
 "contains the message"
-msgstr ""
-
-#: litegram.types.message.Message.from_user:1 of
-msgid ""
-"*Optional*. Sender of the message; may be empty for messages sent to "
-"channels. For backward compatibility, if the message was sent on behalf "
-"of a chat, the field contains a fake sender user in non-channel chats"
 msgstr ""
 
 #: litegram.types.message.Message.sender_chat:1 of
@@ -118,8 +120,14 @@ msgid ""
 "*Optional*. For replies in the same chat and message thread, the original"
 " message. Note that the :class:`litegram.types.message.Message` object in"
 " this field will not contain further *reply_to_message* fields even if it"
-" itself is a reply."
+" itself is a reply. If the message is a reply to an ephemeral message, "
+"then this field may be omitted."
 msgstr ""
+"*Необязательно*. Для ответов в том же чате и той же теме — исходное "
+"сообщение. Обратите внимание: объект "
+":class:`litegram.types.message.Message` в этом поле не содержит "
+"дальнейших полей *reply_to_message*, даже если сам является ответом. Если"
+" сообщение — ответ на эфемерное сообщение, это поле может отсутствовать."
 
 #: litegram.types.message.Message.external_reply:1 of
 msgid ""
@@ -171,9 +179,11 @@ msgstr ""
 
 #: litegram.types.message.Message.media_group_id:1 of
 msgid ""
-"*Optional*. The unique identifier of a media message group this message "
-"belongs to"
+"*Optional*. The unique identifier inside this chat of a media message "
+"group this message belongs to"
 msgstr ""
+"*Необязательно*. Уникальный внутри этого чата идентификатор группы "
+"медиа-сообщений, к которой относится сообщение"
 
 #: litegram.types.message.Message.author_signature:1 of
 msgid ""
@@ -218,8 +228,11 @@ msgstr ""
 msgid ""
 "*Optional*. Message is an animation, information about the animation. For"
 " backward compatibility, when this field is set, the *document* field "
-"will also be set"
+"will also be set."
 msgstr ""
+"*Необязательно*. Сообщение — анимация, информация об анимации. Для "
+"обратной совместимости при заполнении этого поля также заполняется поле "
+"*document*."
 
 #: litegram.types.message.Message.audio:1 of
 msgid "*Optional*. Message is an audio file, information about the file"
@@ -261,9 +274,11 @@ msgstr ""
 
 #: litegram.types.message.Message.caption:1 of
 msgid ""
-"*Optional*. Caption for the animation, audio, document, paid media, "
-"photo, video or voice"
+"*Optional*. Caption for the animation, audio, document, live photo, paid "
+"media, photo, video, voice, or widget"
 msgstr ""
+"*Необязательно*. Подпись для анимации, аудио, документа, живого фото, "
+"платного медиа, фотографии, видео, голосового сообщения или виджета"
 
 #: litegram.types.message.Message.caption_entities:1 of
 msgid ""
@@ -274,8 +289,10 @@ msgstr ""
 #: litegram.types.message.Message.show_caption_above_media:1 of
 msgid ""
 "*Optional*. :code:`True`, if the caption must be shown above the message "
-"media"
+"media or the widget"
 msgstr ""
+"*Необязательно*. :code:`True`, если подпись нужно показать над медиа "
+"сообщения или виджетом"
 
 #: litegram.types.message.Message.has_media_spoiler:1 of
 msgid ""
@@ -309,8 +326,11 @@ msgstr ""
 msgid ""
 "*Optional*. Message is a venue, information about the venue. For backward"
 " compatibility, when this field is set, the *location* field will also be"
-" set"
+" set."
 msgstr ""
+"*Необязательно*. Сообщение — место, информация о месте. Для обратной "
+"совместимости при заполнении этого поля также заполняется поле "
+"*location*."
 
 #: litegram.types.message.Message.location:1 of
 msgid "*Optional*. Message is a shared location, information about the location"
@@ -460,9 +480,11 @@ msgstr ""
 
 #: litegram.types.message.Message.proximity_alert_triggered:1 of
 msgid ""
-"*Optional*. Service message. A user in the chat triggered another user's "
-"proximity alert while sharing Live Location."
+"*Optional*. Service message: a user in the chat triggered another user's "
+"proximity alert while sharing Live Location"
 msgstr ""
+"*Необязательно*. Сервисное сообщение: пользователь в чате приблизился к "
+"другому пользователю при трансляции live-локации"
 
 #: litegram.types.message.Message.boost_added:1 of
 msgid "*Optional*. Service message: user boosted the chat"
@@ -578,9 +600,170 @@ msgstr ""
 
 #: litegram.types.message.Message.reply_markup:1 of
 msgid ""
-"*Optional*. Inline keyboard attached to the message. :code:`login_url` "
-"buttons are represented as ordinary :code:`url` buttons."
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
+"#inline-keyboards>`_ attached to the message. :code:`login_url` buttons "
+"are represented as ordinary :code:`url` buttons."
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, "
+"прикреплённая к сообщению. Кнопки :code:`login_url` отображаются как "
+"обычные кнопки :code:`url`."
+
+#: litegram.types.message.Message.from_user:1 of
+msgid ""
+"*Optional*. Sender of the message; may be empty for messages sent to "
+"channels. For backward compatibility, if the message was sent on behalf "
+"of a chat, the field contains a fake sender user in non-channel chats."
+msgstr ""
+"*Необязательно*. Отправитель сообщения; может отсутствовать для "
+"сообщений, отправленных в каналы. Для обратной совместимости, если "
+"сообщение отправлено от имени чата, в чатах, кроме каналов, поле содержит"
+" фиктивного отправителя-пользователя."
+
+#: litegram.types.message.Message.sender_tag:1 of
+msgid ""
+"*Optional*. Tag or custom title of the sender of the message; for "
+"supergroups only"
+msgstr ""
+"*Необязательно*. Тег или пользовательский титул отправителя сообщения; "
+"только для супергрупп"
+
+#: litegram.types.message.Message.receiver_user:1 of
+msgid "*Optional*. For ephemeral messages, the user who received the message"
+msgstr ""
+"*Необязательно*. Для эфемерных сообщений — пользователь, получивший "
+"сообщение"
+
+#: litegram.types.message.Message.ephemeral_message_id:1 of
+msgid ""
+"*Optional*. For ephemeral messages, identifier of the ephemeral message "
+"inside this chat. The identifier may be reused for another ephemeral "
+"message after the message is deleted or expires."
+msgstr ""
+"*Необязательно*. Для эфемерных сообщений — идентификатор эфемерного "
+"сообщения в этом чате. Идентификатор может быть повторно использован для "
+"другого эфемерного сообщения после удаления или истечения срока действия "
+"текущего."
+
+#: litegram.types.message.Message.guest_query_id:1 of
+msgid ""
+"*Optional*. The unique identifier for the guest query. Use this "
+"identifier with the method "
+":class:`litegram.methods.answer_guest_query.AnswerGuestQuery` to send a "
+"response message. If non-empty, the message belongs to the chat where the"
+" guest bot was summoned, which may not coincide with other existing bot "
+"chats sharing the same identifier."
+msgstr ""
+"*Необязательно*. Уникальный идентификатор гостевого запроса. Используйте "
+"его с методом "
+":class:`litegram.methods.answer_guest_query.AnswerGuestQuery`, чтобы "
+"отправить ответное сообщение. Если не пуст, сообщение относится к чату, "
+"куда был приглашён гостевой бот; этот чат может не совпадать с другими "
+"существующими чатами бота с тем же идентификатором."
+
+#: litegram.types.message.Message.reply_to_poll_option_id:1 of
+msgid ""
+"*Optional*. Persistent identifier of the specific poll option that is "
+"being replied to"
+msgstr ""
+"*Необязательно*. Постоянный идентификатор конкретного варианта ответа, на"
+" который отправляется ответ"
+
+#: litegram.types.message.Message.guest_bot_caller_user:1 of
+msgid ""
+"*Optional*. For a message sent by a guest bot, this is the user whose "
+"original message triggered the bot's response"
+msgstr ""
+"*Необязательно*. Для сообщения, отправленного гостевым ботом, — "
+"пользователь, чьё исходное сообщение вызвало ответ бота"
+
+#: litegram.types.message.Message.guest_bot_caller_chat:1 of
+msgid ""
+"*Optional*. For a message sent by a guest bot, this is the chat whose "
+"original message triggered the bot's response"
+msgstr ""
+"*Необязательно*. Для сообщения, отправленного гостевым ботом, — чат, чьё "
+"исходное сообщение вызвало ответ бота"
+
+#: litegram.types.message.Message.rich_message:1 of
+msgid "*Optional*. Message is a rich formatted message"
+msgstr "*Необязательно*. Сообщение — форматированное (rich) сообщение"
+
+#: litegram.types.message.Message.live_photo:1 of
+msgid ""
+"*Optional*. Message is a live photo, information about the live photo. "
+"For backward compatibility, when this field is set, the *photo* field "
+"will also be set."
+msgstr ""
+"*Необязательно*. Сообщение — живое фото, информация о живом фото. Для "
+"обратной совместимости при заполнении этого поля также заполняется поле "
+"*photo*."
+
+#: litegram.types.message.Message.widget:1 of
+msgid "*Optional*. Message is an HTML widget, information about the widget"
+msgstr "*Необязательно*. Сообщение содержит HTML-виджет; информация о виджете"
+
+#: litegram.types.message.Message.chat_owner_left:1 of
+msgid "*Optional*. Service message: chat owner has left"
+msgstr "*Необязательно*. Сервисное сообщение: владелец чата покинул чат"
+
+#: litegram.types.message.Message.chat_owner_changed:1 of
+msgid "*Optional*. Service message: chat owner has changed"
+msgstr "*Необязательно*. Сервисное сообщение: владелец чата изменился"
+
+#: litegram.types.message.Message.community_chat_added:1 of
+msgid ""
+"*Optional*. Service message: chat or bot added to a "
+":class:`litegram.types.community.Community`"
+msgstr ""
+"*Необязательно*. Сервисное сообщение: чат или бот добавлен в "
+":class:`litegram.types.community.Community`"
+
+#: litegram.types.message.Message.community_chat_joined:1 of
+msgid ""
+"*Optional*. Service message: chat was joined by a user from a "
+":class:`litegram.types.community.Community`"
+msgstr ""
+"*Необязательно*. Сервисное сообщение: пользователь присоединился к чату "
+"из :class:`litegram.types.community.Community`"
+
+#: litegram.types.message.Message.community_chat_removed:1 of
+msgid ""
+"*Optional*. Service message: chat or bot removed from a "
+":class:`litegram.types.community.Community`"
+msgstr ""
+"*Необязательно*. Сервисное сообщение: чат или бот удалён из "
+":class:`litegram.types.community.Community`"
+
+#: litegram.types.message.Message.managed_bot_created:1 of
+msgid ""
+"*Optional*. Service message: user created a bot that will be managed by "
+"the current bot"
+msgstr ""
+"*Необязательно*. Сервисное сообщение: пользователь создал бота, который "
+"будет управляться текущим ботом"
+
+#: litegram.types.message.Message.paid_messages_waived:1 of
+msgid ""
+"*Optional*. Service message: the sender of the message used a link of the"
+" other user, which allows sending messages to the user without paying "
+"Telegram Stars"
+msgstr ""
+"*Необязательно*. Сервисное сообщение: отправитель сообщения "
+"воспользовался ссылкой другого пользователя, позволяющей отправлять ему "
+"сообщения без оплаты звёздами Telegram"
+
+#: litegram.types.message.Message.poll_option_added:1 of
+msgid "*Optional*. Service message: answer option was added to a poll"
+msgstr "*Необязательно*. Сервисное сообщение: в опрос добавлен вариант ответа"
+
+#: litegram.types.message.Message.poll_option_deleted:1 of
+msgid "*Optional*. Service message: answer option was deleted from a poll"
+msgstr "*Необязательно*. Сервисное сообщение: из опроса удалён вариант ответа"
+
+#: litegram.types.message.Message.ton_wallet_transfer:1 of
+msgid "*Optional*. Service message: a transfer with a TON wallet"
+msgstr "*Необязательно*. Сервисное сообщение: перевод через TON-кошелёк"
 
 #: litegram.types.message.Message.forward_date:1 of
 msgid ""
@@ -3067,3 +3250,83 @@ msgstr ""
 #: litegram.types.message.Message.reply_paid_media:26 of
 msgid "instance of method :class:`litegram.methods.send_paid_media.SendPaidMedia`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique message identifier inside this "
+#~ "chat. In specific instances (e.g., "
+#~ "message containing a video sent to "
+#~ "a big chat), the server might "
+#~ "automatically schedule a message instead "
+#~ "of sending it immediately. In such "
+#~ "cases, this field will be 0 and"
+#~ " the relevant message will be "
+#~ "unusable until it is actually sent"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Sender of the message; may"
+#~ " be empty for messages sent to "
+#~ "channels. For backward compatibility, if "
+#~ "the message was sent on behalf of"
+#~ " a chat, the field contains a "
+#~ "fake sender user in non-channel "
+#~ "chats"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. For replies in the same "
+#~ "chat and message thread, the original"
+#~ " message. Note that the "
+#~ ":class:`litegram.types.message.Message` object in "
+#~ "this field will not contain further "
+#~ "*reply_to_message* fields even if it "
+#~ "itself is a reply."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. The unique identifier of a"
+#~ " media message group this message "
+#~ "belongs to"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Message is an animation, "
+#~ "information about the animation. For "
+#~ "backward compatibility, when this field "
+#~ "is set, the *document* field will "
+#~ "also be set"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Caption for the animation, "
+#~ "audio, document, paid media, photo, "
+#~ "video or voice"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. :code:`True`, if the caption "
+#~ "must be shown above the message "
+#~ "media"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Message is a venue, "
+#~ "information about the venue. For "
+#~ "backward compatibility, when this field "
+#~ "is set, the *location* field will "
+#~ "also be set"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Service message. A user in"
+#~ " the chat triggered another user's "
+#~ "proximity alert while sharing Live "
+#~ "Location."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Inline keyboard attached to "
+#~ "the message. :code:`login_url` buttons are "
+#~ "represented as ordinary :code:`url` buttons."
+#~ msgstr ""
+

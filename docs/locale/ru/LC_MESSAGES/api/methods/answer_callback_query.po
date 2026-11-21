@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 00:47+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/methods/answer_callback_query.rst:3
 msgid "answerCallbackQuery"
@@ -45,84 +45,120 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#answercallbackquery"
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.answer_callback_query.AnswerCallbackQuery.callback_query_id:1
 #: of
 msgid "Unique identifier for the query to be answered"
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.answer_callback_query.AnswerCallbackQuery.text:1 of
 msgid ""
 "Text of the notification. If not specified, nothing will be shown to the "
-"user, 0-200 characters"
+"user, 0-200 characters."
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.answer_callback_query.AnswerCallbackQuery.show_alert:1 of
 msgid ""
 "If :code:`True`, an alert will be shown by the client instead of a "
-"notification at the top of the chat screen. Defaults to *false*."
+"notification at the top of the chat screen. Defaults to :code:`False`."
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.answer_callback_query.AnswerCallbackQuery.url:1 of
 msgid ""
 "URL that will be opened by the user's client. If you have created a "
 ":class:`litegram.types.game.Game` and accepted the conditions via "
 "`@BotFather <https://t.me/botfather>`_, specify the URL that opens your "
 "game - note that this will only work if the query comes from a "
-"`https://core.telegram.org/bots/api#inlinekeyboardbutton "
-"<https://core.telegram.org/bots/api#inlinekeyboardbutton>`_ "
-"*callback_game* button."
+"`*callback_game* "
+"<https://core.telegram.org/bots/api#inlinekeyboardbutton>`_ button."
 msgstr ""
 
-#: ../../docstring
+#: litegram.methods.answer_callback_query.AnswerCallbackQuery.url:3 of
+msgid ""
+"Otherwise, you may use links like :code:`t.me/your_bot?start=XXXX` that "
+"open your bot with a parameter."
+msgstr ""
+
 #: litegram.methods.answer_callback_query.AnswerCallbackQuery.cache_time:1 of
 msgid ""
 "The maximum amount of time in seconds that the result of the callback "
-"query may be cached client-side. Telegram apps will support caching "
-"starting in version 3.14. Defaults to 0."
+"query may be cached client-side. Defaults to 0."
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:14
+#: ../../api/methods/answer_callback_query.rst:15
 msgid "Usage"
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:17
+#: ../../api/methods/answer_callback_query.rst:18
 msgid "As bot method"
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:25
+#: ../../api/methods/answer_callback_query.rst:26
 msgid "Method as object"
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:27
+#: ../../api/methods/answer_callback_query.rst:28
 msgid "Imports:"
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:29
+#: ../../api/methods/answer_callback_query.rst:30
 msgid ""
 ":code:`from litegram.methods.answer_callback_query import "
 "AnswerCallbackQuery`"
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:30
+#: ../../api/methods/answer_callback_query.rst:31
 msgid "alias: :code:`from litegram.methods import AnswerCallbackQuery`"
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:33
+#: ../../api/methods/answer_callback_query.rst:34
 msgid "With specific bot"
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:40
+#: ../../api/methods/answer_callback_query.rst:41
 msgid "As reply into Webhook in handler"
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:48
+#: ../../api/methods/answer_callback_query.rst:49
 msgid "As shortcut from received object"
 msgstr ""
 
-#: ../../api/methods/answer_callback_query.rst:50
+#: ../../api/methods/answer_callback_query.rst:51
 msgid ":meth:`litegram.types.callback_query.CallbackQuery.answer`"
 msgstr ""
+
+#~ msgid ""
+#~ "Text of the notification. If not "
+#~ "specified, nothing will be shown to "
+#~ "the user, 0-200 characters"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If :code:`True`, an alert will be "
+#~ "shown by the client instead of a"
+#~ " notification at the top of the "
+#~ "chat screen. Defaults to *false*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "URL that will be opened by the "
+#~ "user's client. If you have created "
+#~ "a :class:`litegram.types.game.Game` and accepted "
+#~ "the conditions via `@BotFather "
+#~ "<https://t.me/botfather>`_, specify the URL "
+#~ "that opens your game - note that"
+#~ " this will only work if the "
+#~ "query comes from a "
+#~ "`https://core.telegram.org/bots/api#inlinekeyboardbutton "
+#~ "<https://core.telegram.org/bots/api#inlinekeyboardbutton>`_ "
+#~ "*callback_game* button."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The maximum amount of time in "
+#~ "seconds that the result of the "
+#~ "callback query may be cached client-"
+#~ "side. Telegram apps will support caching"
+#~ " starting in version 3.14. Defaults "
+#~ "to 0."
+#~ msgstr ""
+

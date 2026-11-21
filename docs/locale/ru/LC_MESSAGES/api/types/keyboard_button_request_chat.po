@@ -7,14 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/keyboard_button_request_chat.rst:3
 msgid "KeyboardButtonRequestChat"
@@ -33,24 +36,26 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#keyboardbuttonrequestchat"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.request_id:1
 #: of
 msgid ""
 "Signed 32-bit identifier of the request, which will be received back in "
-"the :class:`litegram.types.chat_shared.ChatShared` object. Must be unique "
-"within the message"
+"the :class:`litegram.types.chat_shared.ChatShared` object. Must be unique"
+" within the message."
 msgstr ""
+"Знаковый 32-битный идентификатор запроса, который будет возвращён в "
+"объекте :class:`litegram.types.chat_shared.ChatShared`. Должен быть "
+"уникальным в пределах сообщения."
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.chat_is_channel:1
 #: of
 msgid ""
 "Pass :code:`True` to request a channel chat, pass :code:`False` to "
-"request a group or a supergroup chat."
+"request a group or a supergroup chat"
 msgstr ""
+"Передайте :code:`True`, чтобы запросить канал, или :code:`False`, чтобы "
+"запросить группу или супергруппу"
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.chat_is_forum:1
 #: of
 msgid ""
@@ -59,7 +64,6 @@ msgid ""
 "additional restrictions are applied."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.chat_has_username:1
 #: of
 msgid ""
@@ -68,7 +72,6 @@ msgid ""
 "not specified, no additional restrictions are applied."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.chat_is_created:1
 #: of
 msgid ""
@@ -76,7 +79,6 @@ msgid ""
 "Otherwise, no additional restrictions are applied."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.user_administrator_rights:1
 #: of
 msgid ""
@@ -86,7 +88,6 @@ msgid ""
 "are applied."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.bot_administrator_rights:1
 #: of
 msgid ""
@@ -96,7 +97,6 @@ msgid ""
 " are applied."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.bot_is_member:1
 #: of
 msgid ""
@@ -104,20 +104,31 @@ msgid ""
 " Otherwise, no additional restrictions are applied."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.request_title:1
 #: of
 msgid "*Optional*. Pass :code:`True` to request the chat's title"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.request_username:1
 #: of
 msgid "*Optional*. Pass :code:`True` to request the chat's username"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.request_photo:1
 #: of
 msgid "*Optional*. Pass :code:`True` to request the chat's photo"
 msgstr ""
+
+#~ msgid ""
+#~ "Signed 32-bit identifier of the request,"
+#~ " which will be received back in "
+#~ "the :class:`litegram.types.chat_shared.ChatShared` object."
+#~ " Must be unique within the message"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pass :code:`True` to request a channel"
+#~ " chat, pass :code:`False` to request "
+#~ "a group or a supergroup chat."
+#~ msgstr ""
+

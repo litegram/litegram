@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -48,7 +48,7 @@ msgstr ""
 #: litegram.methods.set_business_account_gift_settings.SetBusinessAccountGiftSettings.show_gift_button:1
 #: of
 msgid ""
-"Pass :code:`True`, if a button for sending a gift to the user or by the "
+"Pass :code:`True` if a button for sending a gift to the user or by the "
 "business account must always be shown in the input field"
 msgstr ""
 
@@ -90,3 +90,11 @@ msgstr ""
 #: ../../api/methods/set_business_account_gift_settings.rst:41
 msgid "As reply into Webhook in handler"
 msgstr ""
+
+#~ msgid ""
+#~ "Pass :code:`True`, if a button for "
+#~ "sending a gift to the user or "
+#~ "by the business account must always "
+#~ "be shown in the input field"
+#~ msgstr ""
+

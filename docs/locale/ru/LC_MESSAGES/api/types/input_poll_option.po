@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/input_poll_option.rst:3
 msgid "InputPollOption"
@@ -33,21 +33,44 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#inputpolloption"
 msgstr ""
 
-#: ../../docstring litegram.types.input_poll_option.InputPollOption.text:1 of
+#: litegram.types.input_poll_option.InputPollOption.text:1 of
 msgid "Option text, 1-100 characters"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_poll_option.InputPollOption.text_parse_mode:1 of
 msgid ""
 "*Optional*. Mode for parsing entities in the text. See `formatting "
 "options <https://core.telegram.org/bots/api#formatting-options>`_ for "
-"more details. Currently, only custom emoji entities are allowed"
+"more details. Currently, only custom emoji entities are allowed."
 msgstr ""
+"*Необязательно*. Режим разбора сущностей в тексте. Подробнее см. "
+"`варианты форматирования <https://core.telegram.org/bots/api#formatting-"
+"options>`_. Сейчас допускаются только сущности пользовательских эмодзи."
 
-#: ../../docstring
 #: litegram.types.input_poll_option.InputPollOption.text_entities:1 of
 msgid ""
 "*Optional*. A JSON-serialized list of special entities that appear in the"
-" poll option text. It can be specified instead of *text_parse_mode*"
+" poll option text. It can be specified instead of *text_parse_mode*."
 msgstr ""
+"*Необязательно*. Список специальных сущностей в тексте варианта ответа в "
+"формате JSON; можно передать вместо *text_parse_mode*."
+
+#: litegram.types.input_poll_option.InputPollOption.media:1 of
+msgid "*Optional*. Media added to the poll option"
+msgstr "*Необязательно*. Медиа, добавленное к варианту ответа"
+
+#~ msgid ""
+#~ "*Optional*. Mode for parsing entities in"
+#~ " the text. See `formatting options "
+#~ "<https://core.telegram.org/bots/api#formatting-options>`_ "
+#~ "for more details. Currently, only custom"
+#~ " emoji entities are allowed"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. A JSON-serialized list of"
+#~ " special entities that appear in the"
+#~ " poll option text. It can be "
+#~ "specified instead of *text_parse_mode*"
+#~ msgstr ""
+

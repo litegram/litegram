@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -46,7 +46,9 @@ msgid ""
 msgstr ""
 
 #: litegram.methods.edit_message_checklist.EditMessageChecklist.chat_id:1 of
-msgid "Unique identifier for the target chat"
+msgid ""
+"Unique identifier for the target chat or username of the target bot in "
+"the format :code:`@username`"
 msgstr ""
 
 #: litegram.methods.edit_message_checklist.EditMessageChecklist.message_id:1 of
@@ -59,7 +61,10 @@ msgstr ""
 
 #: litegram.methods.edit_message_checklist.EditMessageChecklist.reply_markup:1
 #: of
-msgid "A JSON-serialized object for the new inline keyboard for the message"
+msgid ""
+"A JSON-serialized object for the new `inline keyboard "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_ for the "
+"message"
 msgstr ""
 
 #: ../../api/methods/edit_message_checklist.rst:15
@@ -95,3 +100,10 @@ msgstr ""
 #: ../../api/methods/edit_message_checklist.rst:41
 msgid "As reply into Webhook in handler"
 msgstr ""
+
+#~ msgid "Unique identifier for the target chat"
+#~ msgstr ""
+
+#~ msgid "A JSON-serialized object for the new inline keyboard for the message"
+#~ msgstr ""
+

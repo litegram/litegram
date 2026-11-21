@@ -2,35 +2,55 @@
 # Distributed under the same license as litegram.
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram\n"
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
+#: ../../api/methods/send_chat_join_request_web_app.rst:3
+msgid "sendChatJoinRequestWebApp"
+msgstr ""
+
+#: litegram.methods.send_chat_join_request_web_app.SendChatJoinRequestWebApp:1
+#: of
 msgid ""
-"Use this method to process a received chat join request query by showing a "
-"Mini App to the user before deciding the outcome. Call "
+"Use this method to process a received chat join request query by showing "
+"a Mini App to the user before deciding the outcome. Call "
 ":class:`litegram.methods.answer_chat_join_request_query.AnswerChatJoinRequestQuery`"
-" to resolve the join request query based on the user interaction with the "
-"Mini App. Returns :code:`True` on success."
+" to resolve the join request query based on the user interaction with the"
+" Mini App. Returns :code:`True` on success."
 msgstr ""
 "Показывает пользователю Mini App перед принятием решения по заявке на "
-"вступление. Чтобы завершить обработку запроса с учётом действий пользователя"
-" в Mini App, вызовите "
+"вступление. Чтобы завершить обработку запроса с учётом действий "
+"пользователя в Mini App, вызовите "
 ":class:`litegram.methods.answer_chat_join_request_query.AnswerChatJoinRequestQuery`."
 " При успехе возвращает :code:`True`."
 
+#: litegram.methods.send_chat_join_request_web_app.SendChatJoinRequestWebApp:3
+#: of
 msgid "Source: https://core.telegram.org/bots/api#sendchatjoinrequestwebapp"
 msgstr "Источник: https://core.telegram.org/bots/api#sendchatjoinrequestwebapp"
 
+#: litegram.methods.send_chat_join_request_web_app.SendChatJoinRequestWebApp.chat_join_request_query_id:1
+#: of
 msgid "Unique identifier of the join request query"
 msgstr "Уникальный идентификатор запроса на вступление в чат"
 
+#: litegram.methods.send_chat_join_request_web_app.SendChatJoinRequestWebApp.web_app_url:1
+#: of
 msgid ""
-"An HTTPS URL of a Web App to be opened with additional data as specified in "
-"`Initializing Web Apps <https://core.telegram.org/bots/webapps#initializing-"
-"mini-apps>`_"
+"An HTTPS URL of a Web App to be opened with additional data as specified "
+"in `Initializing Web Apps <https://core.telegram.org/bots/webapps"
+"#initializing-mini-apps>`_"
 msgstr ""
 "HTTPS-адрес Mini App, который откроется с дополнительными данными, "
 "описанными в разделе `Инициализация Mini Apps "

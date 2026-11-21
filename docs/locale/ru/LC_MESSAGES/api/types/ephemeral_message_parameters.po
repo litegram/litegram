@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/ephemeral_message_parameters.rst:3
+msgid "EphemeralMessageParameters"
+msgstr "EphemeralMessageParameters"
+
+#: litegram.types.ephemeral_message_parameters.EphemeralMessageParameters:1 of
+msgid "Source: https://core.telegram.org/bots/api#ephemeralmessageparameters"
+msgstr "Источник: https://core.telegram.org/bots/api#ephemeralmessageparameters"
+
+#: litegram.types.ephemeral_message_parameters.EphemeralMessageParameters.receiver_user_id:1
+#: of
+msgid ""
+"*Optional*. Identifier of the user who will receive the message; required"
+" unless the message is sent as an ephemeral reply to a callback query. If"
+" omitted, then the parameter *chat_id* of the method is ignored. If "
+"specified together with *callback_query_id*, then it must be the "
+"identifier of the user who pressed the button. Must be omitted for "
+"messages sent in chats where the bot isn't a member, unless the message "
+"is a reply to an ephemeral message. It is not guaranteed that the user "
+"will receive the message, especially if they are offline. See `here "
+"<https://core.telegram.org/bots/api#ephemeral-messages-and-commands>`_ "
+"for more details."
+msgstr ""
+"*Необязательно*. Идентификатор пользователя, который получит сообщение; "
+"обязателен, если только сообщение не отправляется как эфемерный ответ на "
+"callback-запрос. Если не задан, параметр *chat_id* метода игнорируется. "
+"Если задан вместе с *callback_query_id*, это должен быть идентификатор "
+"пользователя, нажавшего кнопку. Должен отсутствовать для сообщений, "
+"отправляемых в чаты, где бот не является участником, кроме случая, когда "
+"сообщение является ответом на эфемерное сообщение. Гарантии, что "
+"пользователь получит сообщение, нет, особенно если он не в сети. "
+"Подробнее см. `здесь <https://core.telegram.org/bots/api#ephemeral-"
+"messages-and-commands>`_."
+
+#: litegram.types.ephemeral_message_parameters.EphemeralMessageParameters.callback_query_id:1
+#: of
+msgid ""
+"*Optional*. Identifier of the callback query which triggered the message,"
+" if any. If specified and *receiver_user_id* is omitted, then the message"
+" is sent as an ephemeral reply to the callback query and will be shown "
+"only to the user who pressed the button. Ephemeral replies can't be sent "
+"to callback queries from messages in channel direct messages chats. The "
+"bot must still answer the callback query using "
+":class:`litegram.methods.answer_callback_query.AnswerCallbackQuery`."
+msgstr ""
+"*Необязательно*. Идентификатор callback-запроса, вызвавшего сообщение, "
+"если он был. Если задан и *receiver_user_id* не указан, сообщение "
+"отправляется как эфемерный ответ на callback-запрос и будет показано "
+"только пользователю, нажавшему кнопку. Эфемерные ответы нельзя отправлять"
+" на callback-запросы из сообщений в чатах личных сообщений канала. Бот "
+"всё равно должен ответить на callback-запрос методом "
+":class:`litegram.methods.answer_callback_query.AnswerCallbackQuery`."
+
+#: litegram.types.ephemeral_message_parameters.EphemeralMessageParameters.replace_callback_query_message:1
+#: of
+msgid ""
+"*Optional*. Pass :code:`True` if the ephemeral message must be shown in "
+"place of the original message. Must be :code:`False` for callback queries"
+" from ephemeral messages, which must be edited using regular "
+"*editEphemeralMessage…* methods."
+msgstr ""
+"*Необязательно*. Передайте :code:`True`, если эфемерное сообщение должно "
+"быть показано на месте исходного сообщения. Для callback-запросов из "
+"эфемерных сообщений должно быть :code:`False`; такие сообщения изменяются"
+" обычными методами *editEphemeralMessage…*."
+

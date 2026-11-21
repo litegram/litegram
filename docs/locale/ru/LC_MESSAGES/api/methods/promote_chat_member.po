@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 #: litegram.methods.promote_chat_member.PromoteChatMember.chat_id:1 of
 msgid ""
 "Unique identifier for the target chat or username of the target channel "
-"(in the format :code:`@channelusername`)"
+"in the format :code:`@username`"
 msgstr ""
 
 #: litegram.methods.promote_chat_member.PromoteChatMember.user_id:1 of
@@ -73,7 +73,7 @@ msgstr ""
 msgid ""
 "Pass :code:`True` if the administrator can restrict, ban or unban chat "
 "members, or access supergroup statistics. For backward compatibility, "
-"defaults to :code:`True` for promotions of channel administrators"
+"defaults to :code:`True` for promotions of channel administrators."
 msgstr ""
 
 #: litegram.methods.promote_chat_member.PromoteChatMember.can_promote_members:1
@@ -147,6 +147,19 @@ msgid ""
 "the channel and decline suggested posts; for channels only"
 msgstr ""
 
+#: litegram.methods.promote_chat_member.PromoteChatMember.can_manage_tags:1 of
+msgid ""
+"Pass :code:`True` if the administrator can edit the tags of regular "
+"members; for groups and supergroups only"
+msgstr ""
+
+#: litegram.methods.promote_chat_member.PromoteChatMember.can_send_welcome_messages:1
+#: of
+msgid ""
+"Pass :code:`True` if the administrator can manage chat welcome messages "
+"or directly send them in the case of bots"
+msgstr ""
+
 #: ../../api/methods/promote_chat_member.rst:15
 msgid "Usage"
 msgstr ""
@@ -186,3 +199,19 @@ msgstr ""
 #: ../../api/methods/promote_chat_member.rst:51
 msgid ":meth:`litegram.types.chat.Chat.promote`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target channel"
+#~ " (in the format :code:`@channelusername`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pass :code:`True` if the administrator "
+#~ "can restrict, ban or unban chat "
+#~ "members, or access supergroup statistics. "
+#~ "For backward compatibility, defaults to "
+#~ ":code:`True` for promotions of channel "
+#~ "administrators"
+#~ msgstr ""
+

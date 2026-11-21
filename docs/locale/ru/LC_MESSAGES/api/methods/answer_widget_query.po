@@ -2,33 +2,50 @@
 # Distributed under the same license as litegram.
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram\n"
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
+#: ../../api/methods/answer_widget_query.rst:3
+msgid "answerWidgetQuery"
+msgstr ""
+
+#: litegram.methods.answer_widget_query.AnswerWidgetQuery:1 of
 msgid ""
-"Use this method to send an answer to a query from a widget. The query must "
-"be answered within 15 seconds. The answer is received only by the widget "
-"that sent the query and doesn't change data of the widget; use "
-":class:`litegram.methods.edit_message_widget_data.EditMessageWidgetData` or "
-":class:`litegram.methods.edit_shared_widget_data.EditSharedWidgetData` to "
-"change it. On success, :code:`True` is returned."
+"Use this method to send an answer to a query from a widget. The query "
+"must be answered within 15 seconds. The answer is received only by the "
+"widget that sent the query and doesn't change data of the widget; use "
+":class:`litegram.methods.edit_message_widget_data.EditMessageWidgetData` "
+"or :class:`litegram.methods.edit_shared_widget_data.EditSharedWidgetData`"
+" to change it. On success, :code:`True` is returned."
 msgstr ""
 "Отправляет ответ на запрос виджета. Ответ нужно отправить в течение 15 "
-"секунд. Его получает только виджет, отправивший запрос; данные виджета при "
-"этом не меняются. Для изменения данных используйте "
-":class:`litegram.methods.edit_message_widget_data.EditMessageWidgetData` или"
-" :class:`litegram.methods.edit_shared_widget_data.EditSharedWidgetData`. При"
-" успехе возвращает :code:`True`."
+"секунд. Его получает только виджет, отправивший запрос; данные виджета "
+"при этом не меняются. Для изменения данных используйте "
+":class:`litegram.methods.edit_message_widget_data.EditMessageWidgetData` "
+"или "
+":class:`litegram.methods.edit_shared_widget_data.EditSharedWidgetData`. "
+"При успехе возвращает :code:`True`."
 
+#: litegram.methods.answer_widget_query.AnswerWidgetQuery:3 of
 msgid "Source: https://core.telegram.org/bots/api#answerwidgetquery"
 msgstr "Источник: https://core.telegram.org/bots/api#answerwidgetquery"
 
+#: litegram.methods.answer_widget_query.AnswerWidgetQuery.widget_query_id:1 of
 msgid "Unique identifier for the query to be answered"
 msgstr "Уникальный идентификатор запроса, на который нужно ответить"
 
+#: litegram.methods.answer_widget_query.AnswerWidgetQuery.data:1 of
 msgid "Data to be returned to the widget, 0-1024 bytes"
 msgstr "Данные для возврата виджету, от 0 до 1024 байт"
 

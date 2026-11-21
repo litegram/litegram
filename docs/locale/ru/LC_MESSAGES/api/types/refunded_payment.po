@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/refunded_payment.rst:3
 msgid "RefundedPayment"
@@ -31,14 +31,17 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#refundedpayment"
 msgstr ""
 
-#: ../../docstring litegram.types.refunded_payment.RefundedPayment.currency:1 of
+#: litegram.types.refunded_payment.RefundedPayment.currency:1 of
 msgid ""
 "Three-letter ISO 4217 `currency <https://core.telegram.org/bots/payments"
 "#supported-currencies>`_ code, or 'XTR' for payments in `Telegram Stars "
-"<https://t.me/BotNews/90>`_. Currently, always 'XTR'"
+"<https://t.me/BotNews/90>`_. Currently, always 'XTR'."
 msgstr ""
+"Трёхбуквенный код валюты `ISO 4217 "
+"<https://core.telegram.org/bots/payments#supported-currencies>`_ или "
+"'XTR' для оплаты в `звёздах Telegram <https://t.me/BotNews/90>`_. Сейчас "
+"всегда 'XTR'."
 
-#: ../../docstring
 #: litegram.types.refunded_payment.RefundedPayment.total_amount:1 of
 msgid ""
 "Total refunded price in the *smallest units* of the currency (integer, "
@@ -49,19 +52,25 @@ msgid ""
 "majority of currencies)."
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.refunded_payment.RefundedPayment.invoice_payload:1 of
 msgid "Bot-specified invoice payload"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.refunded_payment.RefundedPayment.telegram_payment_charge_id:1
 #: of
 msgid "Telegram payment identifier"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.refunded_payment.RefundedPayment.provider_payment_charge_id:1
 #: of
 msgid "*Optional*. Provider payment identifier"
 msgstr ""
+
+#~ msgid ""
+#~ "Three-letter ISO 4217 `currency "
+#~ "<https://core.telegram.org/bots/payments#supported-currencies>`_"
+#~ " code, or 'XTR' for payments in "
+#~ "`Telegram Stars <https://t.me/BotNews/90>`_. "
+#~ "Currently, always 'XTR'"
+#~ msgstr ""
+

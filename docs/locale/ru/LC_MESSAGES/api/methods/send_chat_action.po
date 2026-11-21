@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,9 +53,9 @@ msgstr ""
 
 #: litegram.methods.send_chat_action.SendChatAction.chat_id:1 of
 msgid ""
-"Unique identifier for the target chat or username of the target "
-"supergroup (in the format :code:`@supergroupusername`). Channel chats and"
-" channel direct messages chats aren't supported."
+"Unique identifier for the target chat or username of the target bot or "
+"supergroup in the format :code:`@username`. Channel chats and channel "
+"direct messages chats aren't supported."
 msgstr ""
 
 #: litegram.methods.send_chat_action.SendChatAction.action:1 of
@@ -127,3 +127,12 @@ msgstr ""
 #: ../../api/methods/send_chat_action.rst:51
 msgid ":meth:`litegram.types.chat.Chat.do`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target supergroup"
+#~ " (in the format :code:`@supergroupusername`). "
+#~ "Channel chats and channel direct "
+#~ "messages chats aren't supported."
+#~ msgstr ""
+

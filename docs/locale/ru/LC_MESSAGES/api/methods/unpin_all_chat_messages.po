@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 #: litegram.methods.unpin_all_chat_messages.UnpinAllChatMessages.chat_id:1 of
 msgid ""
 "Unique identifier for the target chat or username of the target channel "
-"(in the format :code:`@channelusername`)"
+"in the format :code:`@username`"
 msgstr ""
 
 #: ../../api/methods/unpin_all_chat_messages.rst:15
@@ -85,3 +85,10 @@ msgstr ""
 #: ../../api/methods/unpin_all_chat_messages.rst:51
 msgid ":meth:`litegram.types.chat.Chat.unpin_all_messages`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target channel"
+#~ " (in the format :code:`@channelusername`)"
+#~ msgstr ""
+

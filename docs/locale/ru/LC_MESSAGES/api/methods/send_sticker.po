@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,8 +39,9 @@ msgstr ""
 
 #: litegram.methods.send_sticker.SendSticker.chat_id:1 of
 msgid ""
-"Unique identifier for the target chat or username of the target channel "
-"(in the format :code:`@channelusername`)"
+"Unique identifier for the target chat or username of the target bot, "
+"supergroup, or channel in the format :code:`@username`; required unless "
+"the message is sent as an ephemeral reply to a callback query"
 msgstr ""
 
 #: litegram.methods.send_sticker.SendSticker.sticker:1 of
@@ -92,7 +93,7 @@ msgid ""
 "`broadcasting limits <https://core.telegram.org/bots/faq#how-can-i"
 "-message-all-of-my-bot-39s-subscribers-at-once>`_ for a fee of 0.1 "
 "Telegram Stars per message. The relevant Stars will be withdrawn from the"
-" bot's balance"
+" bot's balance."
 msgstr ""
 
 #: litegram.methods.send_sticker.SendSticker.message_effect_id:1 of
@@ -119,7 +120,13 @@ msgid ""
 "keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_, "
 "`custom reply keyboard "
 "<https://core.telegram.org/bots/features#keyboards>`_, instructions to "
-"remove a reply keyboard or to force a reply from the user"
+"remove a reply keyboard or to force a reply from the user."
+msgstr ""
+
+#: litegram.methods.send_sticker.SendSticker.ephemeral_message_parameters:1 of
+msgid ""
+"A JSON-serialized object containing the parameters of the ephemeral "
+"message to send"
 msgstr ""
 
 #: litegram.methods.send_sticker.SendSticker.allow_sending_without_reply:1 of
@@ -200,3 +207,32 @@ msgstr ""
 #: ../../api/methods/send_sticker.rst:57
 msgid ":meth:`litegram.types.inaccessible_message.InaccessibleMessage.reply_sticker`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target channel"
+#~ " (in the format :code:`@channelusername`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pass :code:`True` to allow up to "
+#~ "1000 messages per second, ignoring "
+#~ "`broadcasting limits <https://core.telegram.org/bots/faq"
+#~ "#how-can-i-message-all-of-my-bot-"
+#~ "39s-subscribers-at-once>`_ for a fee"
+#~ " of 0.1 Telegram Stars per message."
+#~ " The relevant Stars will be withdrawn"
+#~ " from the bot's balance"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional interface options. A JSON-"
+#~ "serialized object for an `inline "
+#~ "keyboard <https://core.telegram.org/bots/features#inline-"
+#~ "keyboards>`_, `custom reply keyboard "
+#~ "<https://core.telegram.org/bots/features#keyboards>`_, "
+#~ "instructions to remove a reply keyboard"
+#~ " or to force a reply from the"
+#~ " user"
+#~ msgstr ""
+

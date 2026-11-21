@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/input_paid_media_video.rst:3
 msgid "InputPaidMediaVideo"
@@ -31,22 +31,24 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#inputpaidmediavideo"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_paid_media_video.InputPaidMediaVideo.type:1 of
 msgid "Type of the media, must be *video*"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_paid_media_video.InputPaidMediaVideo.media:1 of
 msgid ""
 "File to send. Pass a file_id to send a file that exists on the Telegram "
 "servers (recommended), pass an HTTP URL for Telegram to get a file from "
-"the Internet, or pass 'attach://<file_attach_name>' to upload a new one "
-"using multipart/form-data under <file_attach_name> name. :ref:`More "
-"information on Sending Files » <sending-files>`"
+"the Internet, or pass 'attach://' to upload a new one using multipart"
+"/form-data under  name. :ref:`More information on Sending Files » "
+"<sending-files>`"
 msgstr ""
+"Файл для отправки. Передайте file_id, чтобы отправить файл, уже "
+"находящийся на серверах Telegram (рекомендуется); HTTP URL, чтобы "
+"Telegram скачал файл из интернета; или 'attach://', чтобы загрузить новый"
+" файл через multipart/form-data под этим именем. :ref:`Подробнее об "
+"отправке файлов <sending-files>`"
 
-#: ../../docstring
 #: litegram.types.input_paid_media_video.InputPaidMediaVideo.thumbnail:1 of
 msgid ""
 "*Optional*. Thumbnail of the file sent; can be ignored if thumbnail "
@@ -54,48 +56,98 @@ msgid ""
 " in JPEG format and less than 200 kB in size. A thumbnail's width and "
 "height should not exceed 320. Ignored if the file is not uploaded using "
 "multipart/form-data. Thumbnails can't be reused and can be only uploaded "
-"as a new file, so you can pass 'attach://<file_attach_name>' if the "
-"thumbnail was uploaded using multipart/form-data under "
-"<file_attach_name>. :ref:`More information on Sending Files » <sending-"
-"files>`"
+"as a new file, so you can pass 'attach://' if the thumbnail was uploaded "
+"using multipart/form-data under . :ref:`More information on Sending Files"
+" » <sending-files>`"
 msgstr ""
+"*Необязательно*. Превью отправляемого файла; можно не указывать, если "
+"превью для файла генерируется на стороне сервера. Превью должно быть в "
+"формате JPEG и весить меньше 200 КБ. Ширина и высота превью не должны "
+"превышать 320. Игнорируется, если файл загружен не через multipart/form-"
+"data. Превью нельзя переиспользовать, его можно отправить только новым "
+"файлом, поэтому можно передать 'attach://', если превью загружено через "
+"multipart/form-data под этим именем. :ref:`Подробнее об отправке файлов "
+"<sending-files>`"
 
-#: ../../docstring
 #: litegram.types.input_paid_media_video.InputPaidMediaVideo.cover:1 of
 msgid ""
 "*Optional*. Cover for the video in the message. Pass a file_id to send a "
 "file that exists on the Telegram servers (recommended), pass an HTTP URL "
-"for Telegram to get a file from the Internet, or pass "
-"'attach://<file_attach_name>' to upload a new one using multipart/form-"
-"data under <file_attach_name> name. :ref:`More information on Sending "
-"Files » <sending-files>`"
+"for Telegram to get a file from the Internet, or pass 'attach://' to "
+"upload a new one using multipart/form-data under  name. :ref:`More "
+"information on Sending Files » <sending-files>`"
 msgstr ""
+"*Необязательно*. Обложка видео в сообщении. Передайте file_id, чтобы "
+"отправить файл, уже находящийся на серверах Telegram (рекомендуется); "
+"HTTP URL, чтобы Telegram скачал файл из интернета; или 'attach://', чтобы"
+" загрузить новый файл через multipart/form-data под этим именем. "
+":ref:`Подробнее об отправке файлов <sending-files>`"
 
-#: ../../docstring
 #: litegram.types.input_paid_media_video.InputPaidMediaVideo.start_timestamp:1
 #: of
 msgid "*Optional*. Start timestamp for the video in the message"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_paid_media_video.InputPaidMediaVideo.width:1 of
 msgid "*Optional*. Video width"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_paid_media_video.InputPaidMediaVideo.height:1 of
 msgid "*Optional*. Video height"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_paid_media_video.InputPaidMediaVideo.duration:1 of
 msgid "*Optional*. Video duration in seconds"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.input_paid_media_video.InputPaidMediaVideo.supports_streaming:1
 #: of
 msgid ""
 "*Optional*. Pass :code:`True` if the uploaded video is suitable for "
 "streaming"
 msgstr ""
+
+#~ msgid ""
+#~ "File to send. Pass a file_id to"
+#~ " send a file that exists on the"
+#~ " Telegram servers (recommended), pass an"
+#~ " HTTP URL for Telegram to get a"
+#~ " file from the Internet, or pass "
+#~ "'attach://<file_attach_name>' to upload a new"
+#~ " one using multipart/form-data under "
+#~ "<file_attach_name> name. :ref:`More information "
+#~ "on Sending Files » <sending-files>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Thumbnail of the file sent;"
+#~ " can be ignored if thumbnail "
+#~ "generation for the file is supported "
+#~ "server-side. The thumbnail should be "
+#~ "in JPEG format and less than 200"
+#~ " kB in size. A thumbnail's width "
+#~ "and height should not exceed 320. "
+#~ "Ignored if the file is not "
+#~ "uploaded using multipart/form-data. Thumbnails"
+#~ " can't be reused and can be "
+#~ "only uploaded as a new file, so"
+#~ " you can pass 'attach://<file_attach_name>' "
+#~ "if the thumbnail was uploaded using "
+#~ "multipart/form-data under <file_attach_name>. "
+#~ ":ref:`More information on Sending Files "
+#~ "» <sending-files>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Cover for the video in "
+#~ "the message. Pass a file_id to "
+#~ "send a file that exists on the "
+#~ "Telegram servers (recommended), pass an "
+#~ "HTTP URL for Telegram to get a "
+#~ "file from the Internet, or pass "
+#~ "'attach://<file_attach_name>' to upload a new"
+#~ " one using multipart/form-data under "
+#~ "<file_attach_name> name. :ref:`More information "
+#~ "on Sending Files » <sending-files>`"
+#~ msgstr ""
+

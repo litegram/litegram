@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/emoji_type.rst:3
+msgid "EmojiType"
+msgstr "EmojiType"
+
+#: litegram.types.emoji_type.EmojiType:1 of
+msgid "This object describes an emoji. Currently, it can be one of"
+msgstr "Этот объект описывает эмодзи. Сейчас он может быть одним из"
+
+#: litegram.types.emoji_type.EmojiType:3 of
+msgid ":class:`litegram.types.emoji_type_emoji.EmojiTypeEmoji`"
+msgstr ":class:`litegram.types.emoji_type_emoji.EmojiTypeEmoji`"
+
+#: litegram.types.emoji_type.EmojiType:4 of
+msgid ":class:`litegram.types.emoji_type_custom_emoji.EmojiTypeCustomEmoji`"
+msgstr ":class:`litegram.types.emoji_type_custom_emoji.EmojiTypeCustomEmoji`"
+
+#: litegram.types.emoji_type.EmojiType:6 of
+msgid "Source: https://core.telegram.org/bots/api#emojitype"
+msgstr "Источник: https://core.telegram.org/bots/api#emojitype"
+

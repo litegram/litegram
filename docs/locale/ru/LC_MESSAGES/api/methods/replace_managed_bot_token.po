@@ -2,22 +2,38 @@
 # Distributed under the same license as litegram.
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram\n"
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
+#: ../../api/methods/replace_managed_bot_token.rst:3
+msgid "replaceManagedBotToken"
+msgstr ""
+
+#: litegram.methods.replace_managed_bot_token.ReplaceManagedBotToken:1 of
 msgid ""
-"Use this method to revoke the current token of a managed bot and generate a "
-"new one. Returns the new token as *String* on success."
+"Use this method to revoke the current token of a managed bot and generate"
+" a new one. Returns the new token as *String* on success."
 msgstr ""
 "Отзывает текущий токен управляемого бота и создаёт новый. При успехе "
 "возвращает новый токен строкой."
 
+#: litegram.methods.replace_managed_bot_token.ReplaceManagedBotToken:3 of
 msgid "Source: https://core.telegram.org/bots/api#replacemanagedbottoken"
 msgstr "Источник: https://core.telegram.org/bots/api#replacemanagedbottoken"
 
+#: litegram.methods.replace_managed_bot_token.ReplaceManagedBotToken.user_id:1
+#: of
 msgid "User identifier of the managed bot whose token will be replaced"
 msgstr ""
 "Идентификатор пользователя, соответствующего управляемому боту, токен "

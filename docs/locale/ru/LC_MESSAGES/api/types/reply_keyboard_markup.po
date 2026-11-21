@@ -7,14 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/reply_keyboard_markup.rst:3
 msgid "ReplyKeyboardMarkup"
@@ -27,38 +30,48 @@ msgid ""
 "(see `Introduction to bots "
 "<https://core.telegram.org/bots/features#keyboards>`_ for details and "
 "examples). Not supported in channels and for messages sent on behalf of a"
-" Telegram Business account."
+" business account."
 msgstr ""
+"Этот объект представляет `пользовательскую клавиатуру "
+"<https://core.telegram.org/bots/features#keyboards>`_ с вариантами ответа"
+" (подробности и примеры см. в `введении о ботах "
+"<https://core.telegram.org/bots/features#keyboards>`_). Не поддерживается"
+" в каналах и для сообщений, отправленных от имени бизнес-аккаунта."
 
 #: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup:3 of
 msgid "Source: https://core.telegram.org/bots/api#replykeyboardmarkup"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup.keyboard:1 of
 msgid ""
 "Array of button rows, each represented by an Array of "
 ":class:`litegram.types.keyboard_button.KeyboardButton` objects"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup.is_persistent:1 of
 msgid ""
 "*Optional*. Requests clients to always show the keyboard when the regular"
-" keyboard is hidden. Defaults to *false*, in which case the custom "
+" keyboard is hidden. Defaults to :code:`False`, in which case the custom "
 "keyboard can be hidden and opened with a keyboard icon."
 msgstr ""
+"*Необязательно*. Просит клиентов всегда показывать клавиатуру, когда "
+"обычная клавиатура скрыта. По умолчанию :code:`False` — в этом случае "
+"пользовательскую клавиатуру можно скрыть и открыть значком клавиатуры."
 
-#: ../../docstring
-#: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup.resize_keyboard:1 of
+#: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup.resize_keyboard:1
+#: of
 msgid ""
 "*Optional*. Requests clients to resize the keyboard vertically for "
 "optimal fit (e.g., make the keyboard smaller if there are just two rows "
-"of buttons). Defaults to *false*, in which case the custom keyboard is "
-"always of the same height as the app's standard keyboard."
+"of buttons). Defaults to :code:`False`, in which case the custom keyboard"
+" is always of the same height as the app's standard keyboard."
 msgstr ""
+"*Необязательно*. Просит клиентов изменить размер клавиатуры по вертикали "
+"для оптимального размещения (например, сделать клавиатуру компактнее, "
+"если в ней всего два ряда кнопок). По умолчанию :code:`False` — в этом "
+"случае пользовательская клавиатура всегда той же высоты, что и "
+"стандартная клавиатура приложения."
 
-#: ../../docstring
 #: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup.one_time_keyboard:1
 #: of
 msgid ""
@@ -66,10 +79,14 @@ msgid ""
 "used. The keyboard will still be available, but clients will "
 "automatically display the usual letter-keyboard in the chat - the user "
 "can press a special button in the input field to see the custom keyboard "
-"again. Defaults to *false*."
+"again. Defaults to :code:`False`."
 msgstr ""
+"*Необязательно*. Просит клиентов скрыть клавиатуру сразу после "
+"использования. Клавиатура останется доступной, но клиенты будут "
+"автоматически показывать в чате обычную буквенную клавиатуру — "
+"пользователь может нажать специальную кнопку в поле ввода, чтобы снова "
+"открыть пользовательскую клавиатуру. По умолчанию :code:`False`."
 
-#: ../../docstring
 #: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup.input_field_placeholder:1
 #: of
 msgid ""
@@ -77,7 +94,6 @@ msgid ""
 "keyboard is active; 1-64 characters"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup.selective:1 of
 msgid ""
 "*Optional*. Use this parameter if you want to show the keyboard to "
@@ -86,3 +102,68 @@ msgid ""
 "message is a reply to a message in the same chat and forum topic, sender "
 "of the original message."
 msgstr ""
+
+#: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup.selective:3 of
+msgid ""
+"*Example:* A user requests to change the bot's language, bot replies to "
+"the request with a keyboard to select the new language. Other users in "
+"the group don't see the keyboard."
+msgstr ""
+"*Пример:* пользователь просит сменить язык бота, и бот отвечает на запрос"
+" клавиатурой для выбора нового языка. Другие участники группы эту "
+"клавиатуру не видят."
+
+#: litegram.types.reply_keyboard_markup.ReplyKeyboardMarkup.force_reply:1 of
+msgid ""
+"*Optional*. Pass :code:`True` if the reply interface must be shown to the"
+" user, as if they had manually selected the bot's message and tapped "
+"'Reply'"
+msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы показать пользователю "
+"интерфейс ответа, как будто он сам выбрал сообщение бота и нажал "
+"«Ответить»"
+
+#~ msgid ""
+#~ "This object represents a `custom "
+#~ "keyboard <https://core.telegram.org/bots/features#keyboards>`_"
+#~ " with reply options (see `Introduction "
+#~ "to bots "
+#~ "<https://core.telegram.org/bots/features#keyboards>`_ for "
+#~ "details and examples). Not supported in"
+#~ " channels and for messages sent on"
+#~ " behalf of a Telegram Business "
+#~ "account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Requests clients to always "
+#~ "show the keyboard when the regular "
+#~ "keyboard is hidden. Defaults to *false*,"
+#~ " in which case the custom keyboard"
+#~ " can be hidden and opened with "
+#~ "a keyboard icon."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Requests clients to resize "
+#~ "the keyboard vertically for optimal fit"
+#~ " (e.g., make the keyboard smaller if"
+#~ " there are just two rows of "
+#~ "buttons). Defaults to *false*, in which"
+#~ " case the custom keyboard is always"
+#~ " of the same height as the "
+#~ "app's standard keyboard."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Requests clients to hide the"
+#~ " keyboard as soon as it's been "
+#~ "used. The keyboard will still be "
+#~ "available, but clients will automatically "
+#~ "display the usual letter-keyboard in "
+#~ "the chat - the user can press "
+#~ "a special button in the input "
+#~ "field to see the custom keyboard "
+#~ "again. Defaults to *false*."
+#~ msgstr ""
+

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -68,6 +68,10 @@ msgstr ""
 msgid "*Optional*. Message is a general file, information about the file"
 msgstr ""
 
+#: litegram.types.external_reply_info.ExternalReplyInfo.live_photo:1 of
+msgid "*Optional*. Message is a live photo, information about the live photo"
+msgstr "*Необязательно*. Сообщение — живое фото, информация о живом фото"
+
 #: litegram.types.external_reply_info.ExternalReplyInfo.paid_media:1 of
 msgid "*Optional*. Message contains paid media; information about the paid media"
 msgstr ""
@@ -97,6 +101,10 @@ msgstr ""
 #: litegram.types.external_reply_info.ExternalReplyInfo.voice:1 of
 msgid "*Optional*. Message is a voice message, information about the file"
 msgstr ""
+
+#: litegram.types.external_reply_info.ExternalReplyInfo.widget:1 of
+msgid "*Optional*. Message is an HTML widget, information about the widget"
+msgstr "*Необязательно*. Сообщение содержит HTML-виджет; информация о виджете"
 
 #: litegram.types.external_reply_info.ExternalReplyInfo.has_media_spoiler:1 of
 msgid ""
@@ -151,3 +159,4 @@ msgstr ""
 #: litegram.types.external_reply_info.ExternalReplyInfo.venue:1 of
 msgid "*Optional*. Message is a venue, information about the venue"
 msgstr ""
+

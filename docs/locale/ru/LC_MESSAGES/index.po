@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-21 19:27+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -61,9 +61,8 @@ msgid ""
 msgstr ""
 "**litegram** — это современный и полностью асинхронный фреймворк для "
 "`Telegram Bot API <https://core.telegram.org/bots/api>`_, написанный на "
-"Python 3.13+ с использованием `litestar "
-"<https://github.com/litestar-org/litestar>`_ и `httpx "
-"<https://github.com/encode/httpx>`_."
+"Python 3.13+ с использованием `litestar <https://github.com/litestar-"
+"org/litestar>`_ и `httpx <https://github.com/encode/httpx>`_."
 
 #: ../../../README.rst:42
 msgid "Make your bots faster and more powerful!"
@@ -98,15 +97,15 @@ msgid ""
 "Has type hints (:pep:`484`) and can be used with `ty <https://github.com"
 "/astral-sh/ty>`_"
 msgstr ""
-"Имеет аннотации типов (:pep:`484`) и может использоваться с `ty <https://"
-"github.com/astral-sh/ty>`_"
+"Имеет аннотации типов (:pep:`484`) и может использоваться с `ty "
+"<https://github.com/astral-sh/ty>`_"
 
 #: ../../../README.rst:54
 msgid ""
-"Supports `Telegram Bot API 9.3 <https://core.telegram.org/bots/api>`_ and"
-" gets fast updates to the latest versions of the Bot API"
+"Supports `Telegram Bot API 10.4 <https://core.telegram.org/bots/api>`_ "
+"and gets fast updates to the latest versions of the Bot API"
 msgstr ""
-"Поддерживает `Telegram Bot API 9.3 <https://core.telegram.org/bots/api>`_"
+"Поддерживает `Telegram Bot API 10.4 <https://core.telegram.org/bots/api>`_"
 " и быстро получает обновления к последним версиям API"
 
 #: ../../../README.rst:55
@@ -180,3 +179,4 @@ msgstr "Только взаимодействие с API, без обработ�
 #: ../../index.rst:18
 msgid "Contents"
 msgstr "Содержание"
+

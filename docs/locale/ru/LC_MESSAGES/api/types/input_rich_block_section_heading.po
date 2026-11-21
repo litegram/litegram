@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_rich_block_section_heading.rst:3
+msgid "InputRichBlockSectionHeading"
+msgstr "InputRichBlockSectionHeading"
+
+#: litegram.types.input_rich_block_section_heading.InputRichBlockSectionHeading:1
+#: of
+msgid ""
+"A section heading, corresponding to the HTML tags :code:`<h1>`, "
+":code:`<h2>`, :code:`<h3>`, :code:`<h4>`, :code:`<h5>`, or :code:`<h6>`."
+msgstr ""
+"Заголовок раздела; соответствует HTML-тегам :code:`<h1>`, :code:`<h2>`, "
+":code:`<h3>`, :code:`<h4>`, :code:`<h5>` или :code:`<h6>`."
+
+#: litegram.types.input_rich_block_section_heading.InputRichBlockSectionHeading:3
+#: of
+msgid "Source: https://core.telegram.org/bots/api#inputrichblocksectionheading"
+msgstr "Источник: https://core.telegram.org/bots/api#inputrichblocksectionheading"
+
+#: litegram.types.input_rich_block_section_heading.InputRichBlockSectionHeading.type:1
+#: of
+msgid "Type of the block, always 'heading'"
+msgstr "Тип блока, всегда 'heading'"
+
+#: litegram.types.input_rich_block_section_heading.InputRichBlockSectionHeading.text:1
+#: of
+msgid "Text of the block"
+msgstr "Текст блока"
+
+#: litegram.types.input_rich_block_section_heading.InputRichBlockSectionHeading.size:1
+#: of
+msgid "Relative size of the text font; 1-6, 1 is the largest, 6 is the smallest"
+msgstr ""
+"Относительный размер шрифта текста; от 1 до 6, где 1 — самый крупный, 6 —"
+" самый мелкий"
+

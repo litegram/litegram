@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 16:43+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,6 +89,20 @@ msgstr ""
 
 #: ../../dispatcher/webhook.rst:39
 msgid "You can use it as is or inherit from it and override some methods."
+msgstr ""
+
+#: litegram.webhook.litestar_server.TokenBasedRequestHandler:1 of
+msgid "Request handler that resolves the bot from a token in the URL path."
+msgstr ""
+
+#: litegram.webhook.litestar_server.TokenBasedRequestHandler:3 of
+msgid ""
+"By default the set of acceptable tokens must be provided up front via "
+"``bot_tokens``; requests with any other token are rejected with 404 so "
+"untrusted callers cannot make the handler instantiate arbitrary bots. "
+"Passing ``accept_any_token=True`` restores the legacy behavior of "
+"creating (and caching) a bot for every token seen in the URL, which is "
+"only safe behind a reverse proxy that restricts the path space."
 msgstr ""
 
 #: ../../dispatcher/webhook.rst:51
@@ -193,3 +207,4 @@ msgstr ""
 #~ " the IP filtering middleware for "
 #~ "httpx."
 #~ msgstr ""
+

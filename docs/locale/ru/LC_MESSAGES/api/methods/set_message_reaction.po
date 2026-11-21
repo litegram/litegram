@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/methods/set_message_reaction.rst:3
 msgid "setMessageReaction"
@@ -40,14 +40,12 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#setmessagereaction"
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.set_message_reaction.SetMessageReaction.chat_id:1 of
 msgid ""
-"Unique identifier for the target chat or username of the target channel "
-"(in the format :code:`@channelusername`)"
+"Unique identifier for the target chat or username of the target bot, "
+"supergroup, or channel in the format :code:`@username`"
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.set_message_reaction.SetMessageReaction.message_id:1 of
 msgid ""
 "Identifier of the target message. If the message belongs to a media "
@@ -55,7 +53,6 @@ msgid ""
 "instead."
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.set_message_reaction.SetMessageReaction.reaction:1 of
 msgid ""
 "A JSON-serialized list of reaction types to set on the message. "
@@ -65,7 +62,6 @@ msgid ""
 " reactions can't be used by bots."
 msgstr ""
 
-#: ../../docstring
 #: litegram.methods.set_message_reaction.SetMessageReaction.is_big:1 of
 msgid "Pass :code:`True` to set the reaction with a big animation"
 msgstr ""
@@ -111,3 +107,10 @@ msgstr ""
 #: ../../api/methods/set_message_reaction.rst:51
 msgid ":meth:`litegram.types.message.Message.react`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target channel"
+#~ " (in the format :code:`@channelusername`)"
+#~ msgstr ""
+

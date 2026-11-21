@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/widget.rst:3
+msgid "Widget"
+msgstr "Widget"
+
+#: litegram.types.widget.Widget:1 of
+msgid ""
+"This object describes an `HTML widget "
+"<https://core.telegram.org/bots/widgets>`_."
+msgstr ""
+"Этот объект описывает `HTML-виджет "
+"<https://core.telegram.org/bots/widgets>`_."
+
+#: litegram.types.widget.Widget:3 of
+msgid "Source: https://core.telegram.org/bots/api#widget"
+msgstr "Источник: https://core.telegram.org/bots/api#widget"
+
+#: litegram.types.widget.Widget.id:1 of
+msgid ""
+"*Optional*. Unique identifier of the shared widget, which can be used to "
+"send the widget again using the method "
+":class:`litegram.methods.send_shared_widget.SendSharedWidget`; omitted if"
+" the widget isn't shared"
+msgstr ""
+"*Необязательно*. Уникальный идентификатор переиспользуемого виджета; с "
+"его помощью виджет можно отправить повторно методом "
+":class:`litegram.methods.send_shared_widget.SendSharedWidget`; "
+"отсутствует, если виджет не переиспользуемый"
+
+#: litegram.types.widget.Widget.width:1 of
+msgid ""
+"*Optional*. Width of the widget in logical pixels; omitted if the widget "
+"must occupy the whole width of the message bubble"
+msgstr ""
+"*Необязательно*. Ширина виджета в логических пикселях; отсутствует, если "
+"виджет занимает всю ширину «пузыря» сообщения"
+
+#: litegram.types.widget.Widget.height:1 of
+msgid ""
+"*Optional*. Height of the widget in logical pixels; omitted if the height"
+" of the widget isn't fixed"
+msgstr ""
+"*Необязательно*. Высота виджета в логических пикселях; отсутствует, если "
+"высота виджета не фиксирована"
+
+#: litegram.types.widget.Widget.html:1 of
+msgid "HTML code of the widget"
+msgstr "HTML-код виджета"
+
+#: litegram.types.widget.Widget.public_data:1 of
+msgid ""
+"*Optional*. Public data of the widget, which is available wherever the "
+"widget is shown. All messages with a shared widget have the same public "
+"data."
+msgstr ""
+"*Необязательно*. Публичные данные виджета, доступные везде, где виджет "
+"отображается. Все сообщения с переиспользуемым виджетом имеют одинаковые "
+"публичные данные."
+
+#: litegram.types.widget.Widget.chat_data:1 of
+msgid "*Optional*. Data of the widget, which is specific to the message"
+msgstr "*Необязательно*. Данные виджета для конкретного сообщения"
+

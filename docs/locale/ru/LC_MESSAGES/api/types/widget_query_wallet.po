@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/widget_query_wallet.rst:3
+msgid "WidgetQueryWallet"
+msgstr "WidgetQueryWallet"
+
+#: litegram.types.widget_query_wallet.WidgetQueryWallet:1 of
+msgid ""
+"This object describes a TON wallet of the user, which is used in a query "
+"from a widget."
+msgstr ""
+"Этот объект описывает TON-кошелёк пользователя, используемый в запросе от"
+" виджета."
+
+#: litegram.types.widget_query_wallet.WidgetQueryWallet:3 of
+msgid "Source: https://core.telegram.org/bots/api#widgetquerywallet"
+msgstr "Источник: https://core.telegram.org/bots/api#widgetquerywallet"
+
+#: litegram.types.widget_query_wallet.WidgetQueryWallet.address:1 of
+msgid "Address of the wallet"
+msgstr "Адрес кошелька"
+
+#: litegram.types.widget_query_wallet.WidgetQueryWallet.amount:1 of
+msgid ""
+"Balance of the wallet, in the *smallest units* of the cryptocurrency, as "
+"a decimal number"
+msgstr "Баланс кошелька в *наименьших единицах* криптовалюты, десятичное число"
+
+#: litegram.types.widget_query_wallet.WidgetQueryWallet.public_key:1 of
+msgid "*Optional*. Hex-encoded public key of the wallet; omitted if unknown"
+msgstr ""
+"*Необязательно*. Публичный ключ кошелька в шестнадцатеричной кодировке; "
+"отсутствует, если неизвестен"
+
+#: litegram.types.widget_query_wallet.WidgetQueryWallet.state_init:1 of
+msgid ""
+"*Optional*. Base64-encoded serialized StateInit of the wallet contract; "
+"omitted if and only if *public_key* is omitted"
+msgstr ""
+"*Необязательно*. Сериализованный StateInit контракта кошелька в кодировке"
+" Base64; отсутствует тогда и только тогда, когда отсутствует *public_key*"
+

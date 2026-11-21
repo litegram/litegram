@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/ton_wallet_card.rst:3
+msgid "TonWalletCard"
+msgstr "TonWalletCard"
+
+#: litegram.types.ton_wallet_card.TonWalletCard:1 of
+msgid ""
+"This object describes a TON wallet card, which is shown on the profile "
+"page of a user to everyone."
+msgstr ""
+"Этот объект описывает карточку TON-кошелька, которая отображается на "
+"странице профиля пользователя для всех."
+
+#: litegram.types.ton_wallet_card.TonWalletCard:3 of
+msgid "Source: https://core.telegram.org/bots/api#tonwalletcard"
+msgstr "Источник: https://core.telegram.org/bots/api#tonwalletcard"
+
+#: litegram.types.ton_wallet_card.TonWalletCard.address:1 of
+msgid "Address of the wallet"
+msgstr "Адрес кошелька"
+
+#: litegram.types.ton_wallet_card.TonWalletCard.amount:1 of
+msgid ""
+"Balance of the wallet, in the *smallest units* of the cryptocurrency, as "
+"a decimal number"
+msgstr "Баланс кошелька в *наименьших единицах* криптовалюты, десятичное число"
+
+#: litegram.types.ton_wallet_card.TonWalletCard.stickers:1 of
+msgid "Stickers placed on the card"
+msgstr "Стикеры, размещённые на карточке"
+
+#: litegram.types.ton_wallet_card.TonWalletCard.background_nft_address:1 of
+msgid ""
+"*Optional*. Address of the NFT of one of the stickers, whose colors must "
+"be used for the card background; omitted if the default background must "
+"be used"
+msgstr ""
+"*Необязательно*. Адрес NFT одного из стикеров, цвета которого нужно "
+"использовать для фона карточки; отсутствует, если должен использоваться "
+"фон по умолчанию"
+

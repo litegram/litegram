@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/rich_text_custom_emoji.rst:3
+msgid "RichTextCustomEmoji"
+msgstr "RichTextCustomEmoji"
+
+#: litegram.types.rich_text_custom_emoji.RichTextCustomEmoji:1 of
+msgid "A custom emoji."
+msgstr "Пользовательский эмодзи."
+
+#: litegram.types.rich_text_custom_emoji.RichTextCustomEmoji:3 of
+msgid "Source: https://core.telegram.org/bots/api#richtextcustomemoji"
+msgstr "Источник: https://core.telegram.org/bots/api#richtextcustomemoji"
+
+#: litegram.types.rich_text_custom_emoji.RichTextCustomEmoji.type:1 of
+msgid "Type of the rich text, always 'custom_emoji'"
+msgstr "Тип форматированного (rich) текста, всегда 'custom_emoji'"
+
+#: litegram.types.rich_text_custom_emoji.RichTextCustomEmoji.custom_emoji_id:1
+#: of
+msgid ""
+"Unique identifier of the custom emoji. Use "
+":class:`litegram.methods.get_custom_emoji_stickers.GetCustomEmojiStickers`"
+" to get full information about the sticker."
+msgstr ""
+"Уникальный идентификатор пользовательского эмодзи. Используйте "
+":class:`litegram.methods.get_custom_emoji_stickers.GetCustomEmojiStickers`,"
+" чтобы получить полную информацию о стикере."
+
+#: litegram.types.rich_text_custom_emoji.RichTextCustomEmoji.alternative_text:1
+#: of
+msgid "Alternative emoji for the custom emoji"
+msgstr "Альтернативный эмодзи для пользовательского эмодзи"
+

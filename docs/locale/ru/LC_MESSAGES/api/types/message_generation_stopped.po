@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/message_generation_stopped.rst:3
+msgid "MessageGenerationStopped"
+msgstr "MessageGenerationStopped"
+
+#: litegram.types.message_generation_stopped.MessageGenerationStopped:1 of
+msgid "This object describes an update about a user stopping message generation."
+msgstr ""
+"Этот объект описывает обновление об остановке пользователем генерации "
+"сообщения."
+
+#: litegram.types.message_generation_stopped.MessageGenerationStopped:3 of
+msgid "Source: https://core.telegram.org/bots/api#messagegenerationstopped"
+msgstr "Источник: https://core.telegram.org/bots/api#messagegenerationstopped"
+
+#: litegram.types.message_generation_stopped.MessageGenerationStopped.chat:1 of
+msgid "Chat in which the message is generated"
+msgstr "Чат, в котором генерируется сообщение"
+
+#: litegram.types.message_generation_stopped.MessageGenerationStopped.message_thread_id:1
+#: of
+msgid ""
+"*Optional*. Unique identifier of the message thread in which the message "
+"is generated"
+msgstr ""
+"*Необязательно*. Уникальный идентификатор темы, в которой генерируется "
+"сообщение"
+
+#: litegram.types.message_generation_stopped.MessageGenerationStopped.draft_id:1
+#: of
+msgid "Unique identifier of the message draft which was stopped"
+msgstr "Уникальный идентификатор остановленного черновика сообщения"
+

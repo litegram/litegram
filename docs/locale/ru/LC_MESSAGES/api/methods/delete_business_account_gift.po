@@ -2,31 +2,50 @@
 # Distributed under the same license as litegram.
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram\n"
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
-msgid ""
-"Deletes a regular gift owned by a managed business account without receiving"
-" Telegram Stars for it. Requires the *can_convert_gifts_to_stars* business "
-"bot right. The gift can be deleted only if it isn't limited (the field "
-"*total_count* of the :class:`litegram.types.gift.Gift` is omitted) and "
-"wasn't refunded. Returns :code:`True` on success."
+#: ../../api/methods/delete_business_account_gift.rst:3
+msgid "deleteBusinessAccountGift"
 msgstr ""
-"Удаляет обычный подарок управляемого бизнес-аккаунта без начисления звёзд "
-"Telegram. Требуется право бизнес-бота *can_convert_gifts_to_stars*. Удалить "
-"можно только подарок без ограничения тиража (поле *total_count* объекта "
-":class:`litegram.types.gift.Gift` отсутствует), за который не был оформлен "
-"возврат. При успехе возвращает :code:`True`."
 
+#: litegram.methods.delete_business_account_gift.DeleteBusinessAccountGift:1 of
+msgid ""
+"Deletes a regular gift owned by a managed business account without "
+"receiving Telegram Stars for it. Requires the "
+"*can_convert_gifts_to_stars* business bot right. The gift can be deleted "
+"only if it isn't limited (the field *total_count* of the "
+":class:`litegram.types.gift.Gift` is omitted) and wasn't refunded. "
+"Returns :code:`True` on success."
+msgstr ""
+"Удаляет обычный подарок управляемого бизнес-аккаунта без начисления звёзд"
+" Telegram. Требуется право бизнес-бота *can_convert_gifts_to_stars*. "
+"Удалить можно только подарок без ограничения тиража (поле *total_count* "
+"объекта :class:`litegram.types.gift.Gift` отсутствует), за который не был"
+" оформлен возврат. При успехе возвращает :code:`True`."
+
+#: litegram.methods.delete_business_account_gift.DeleteBusinessAccountGift:3 of
 msgid "Source: https://core.telegram.org/bots/api#deletebusinessaccountgift"
 msgstr "Источник: https://core.telegram.org/bots/api#deletebusinessaccountgift"
 
+#: litegram.methods.delete_business_account_gift.DeleteBusinessAccountGift.business_connection_id:1
+#: of
 msgid "Unique identifier of the business connection"
 msgstr "Уникальный идентификатор бизнес-подключения"
 
+#: litegram.methods.delete_business_account_gift.DeleteBusinessAccountGift.owned_gift_id:1
+#: of
 msgid "Unique identifier of the regular gift that should be deleted"
 msgstr "Уникальный идентификатор обычного подарка, который нужно удалить"
 

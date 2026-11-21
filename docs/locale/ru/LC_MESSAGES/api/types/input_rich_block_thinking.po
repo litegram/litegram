@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_rich_block_thinking.rst:3
+msgid "InputRichBlockThinking"
+msgstr "InputRichBlockThinking"
+
+#: litegram.types.input_rich_block_thinking.InputRichBlockThinking:1 of
+msgid ""
+"A block with a 'Thinking…' placeholder, corresponding to the custom HTML "
+"tag :code:`<tg-thinking>`. The block may be used only in "
+":class:`litegram.methods.send_rich_message_draft.SendRichMessageDraft`, "
+"therefore it can't be received in messages. See "
+"``https://t.me/addemoji/AIActions <https://t.me/addemoji/AIActions>`_ "
+"<https://t.me/addemoji/AIActions>`_ for examples of custom emoji that are"
+" recommended for usage in the block."
+msgstr ""
+"Блок с заглушкой «Думаю…»; соответствует пользовательскому HTML-тегу "
+":code:`<tg-thinking>`. Блок можно использовать только в "
+":class:`litegram.methods.send_rich_message_draft.SendRichMessageDraft`, "
+"поэтому в полученных сообщениях он не встречается. Примеры "
+"пользовательских эмодзи, рекомендуемых для этого блока: "
+"``https://t.me/addemoji/AIActions <https://t.me/addemoji/AIActions>`_ "
+"<https://t.me/addemoji/AIActions>`_."
+
+#: litegram.types.input_rich_block_thinking.InputRichBlockThinking:3 of
+msgid "Source: https://core.telegram.org/bots/api#inputrichblockthinking"
+msgstr "Источник: https://core.telegram.org/bots/api#inputrichblockthinking"
+
+#: litegram.types.input_rich_block_thinking.InputRichBlockThinking.type:1 of
+msgid "Type of the block, always 'thinking'"
+msgstr "Тип блока, всегда 'thinking'"
+
+#: litegram.types.input_rich_block_thinking.InputRichBlockThinking.text:1 of
+msgid ""
+"Text of the block. See ``https://t.me/addemoji/AIActions "
+"<https://t.me/addemoji/AIActions>`_ <https://t.me/addemoji/AIActions>`_ "
+"for examples of custom emoji that are recommended for usage in the block."
+msgstr ""
+"Текст блока. Примеры пользовательских эмодзи, рекомендуемых для этого "
+"блока: ``https://t.me/addemoji/AIActions "
+"<https://t.me/addemoji/AIActions>`_ <https://t.me/addemoji/AIActions>`_."
+

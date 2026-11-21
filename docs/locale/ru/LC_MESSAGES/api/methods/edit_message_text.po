@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: litegram.methods.edit_message_text.EditMessageText:1 of
 msgid ""
-"Use this method to edit text and `game "
+"Use this method to edit text, rich and `game "
 "<https://core.telegram.org/bots/api#games>`_ messages. On success, if the"
 " edited message is not an inline message, the edited "
 ":class:`litegram.types.message.Message` is returned, otherwise "
@@ -40,7 +40,9 @@ msgid "Source: https://core.telegram.org/bots/api#editmessagetext"
 msgstr ""
 
 #: litegram.methods.edit_message_text.EditMessageText.text:1 of
-msgid "New text of the message, 1-4096 characters after entities parsing"
+msgid ""
+"New text of the message, 1-4096 characters after entity parsing; required"
+" if *rich_message* isn't specified"
 msgstr ""
 
 #: litegram.methods.edit_message_text.EditMessageText.business_connection_id:1
@@ -53,20 +55,20 @@ msgstr ""
 #: litegram.methods.edit_message_text.EditMessageText.chat_id:1 of
 msgid ""
 "Required if *inline_message_id* is not specified. Unique identifier for "
-"the target chat or username of the target channel (in the format "
-":code:`@channelusername`)"
+"the target chat or username of the target bot, supergroup, or channel in "
+"the format :code:`@username`."
 msgstr ""
 
 #: litegram.methods.edit_message_text.EditMessageText.message_id:1 of
 msgid ""
 "Required if *inline_message_id* is not specified. Identifier of the "
-"message to edit"
+"message to edit."
 msgstr ""
 
 #: litegram.methods.edit_message_text.EditMessageText.inline_message_id:1 of
 msgid ""
 "Required if *chat_id* and *message_id* are not specified. Identifier of "
-"the inline message"
+"the inline message."
 msgstr ""
 
 #: litegram.methods.edit_message_text.EditMessageText.parse_mode:1 of
@@ -89,17 +91,14 @@ msgstr ""
 #: litegram.methods.edit_message_text.EditMessageText.reply_markup:1 of
 msgid ""
 "A JSON-serialized object for an `inline keyboard "
-"<https://core.telegram.org/bots/features#inline-keyboards>`_."
+"<https://core.telegram.org/bots/features#inline-keyboards>`_"
 msgstr ""
 
-#: litegram.methods.edit_message_text.EditMessageText.disable_web_page_preview:1
-#: of
-msgid "Disables link previews for links in this message"
-msgstr ""
-
-#: litegram.methods.edit_message_text.EditMessageText.disable_web_page_preview:3
-#: of
-msgid "https://core.telegram.org/bots/api-changelog#december-29-2023"
+#: litegram.methods.edit_message_text.EditMessageText.rich_message:1 of
+msgid ""
+"New rich content of the message; required if *text* isn't specified. "
+"Direct upload of new files and explicit upload of files by a URL isn't "
+"supported when an inline message is edited."
 msgstr ""
 
 #: ../../api/methods/edit_message_text.rst:15
@@ -141,3 +140,54 @@ msgstr ""
 #: ../../api/methods/edit_message_text.rst:51
 msgid ":meth:`litegram.types.message.Message.edit_text`"
 msgstr ""
+
+#~ msgid ""
+#~ "Use this method to edit text and"
+#~ " `game <https://core.telegram.org/bots/api#games>`_ "
+#~ "messages. On success, if the edited "
+#~ "message is not an inline message, "
+#~ "the edited :class:`litegram.types.message.Message` "
+#~ "is returned, otherwise :code:`True` is "
+#~ "returned. Note that business messages "
+#~ "that were not sent by the bot "
+#~ "and do not contain an inline "
+#~ "keyboard can only be edited within "
+#~ "**48 hours** from the time they "
+#~ "were sent."
+#~ msgstr ""
+
+#~ msgid "New text of the message, 1-4096 characters after entities parsing"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Required if *inline_message_id* is not "
+#~ "specified. Unique identifier for the "
+#~ "target chat or username of the "
+#~ "target channel (in the format "
+#~ ":code:`@channelusername`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Required if *inline_message_id* is not "
+#~ "specified. Identifier of the message to"
+#~ " edit"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Required if *chat_id* and *message_id* "
+#~ "are not specified. Identifier of the "
+#~ "inline message"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A JSON-serialized object for an "
+#~ "`inline keyboard <https://core.telegram.org/bots/features"
+#~ "#inline-keyboards>`_."
+#~ msgstr ""
+
+#~ msgid "Disables link previews for links in this message"
+#~ msgstr ""
+
+#~ msgid "https://core.telegram.org/bots/api-changelog#december-29-2023"
+#~ msgstr ""
+

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -36,9 +36,11 @@ msgstr ""
 #: litegram.types.direct_message_price_changed.DirectMessagePriceChanged.are_direct_messages_enabled:1
 #: of
 msgid ""
-":code:`True`, if direct messages are enabled for the channel chat; false "
-"otherwise"
+":code:`True`, if direct messages are enabled for the channel chat; "
+":code:`False` otherwise"
 msgstr ""
+":code:`True`, если личные сообщения включены для чата канала; иначе "
+":code:`False`"
 
 #: litegram.types.direct_message_price_changed.DirectMessagePriceChanged.direct_message_star_count:1
 #: of
@@ -47,3 +49,10 @@ msgid ""
 "for each direct message sent to the channel. Does not apply to users who "
 "have been exempted by administrators. Defaults to 0."
 msgstr ""
+
+#~ msgid ""
+#~ ":code:`True`, if direct messages are "
+#~ "enabled for the channel chat; false "
+#~ "otherwise"
+#~ msgstr ""
+

@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/rich_block_preformatted.rst:3
+msgid "RichBlockPreformatted"
+msgstr "RichBlockPreformatted"
+
+#: litegram.types.rich_block_preformatted.RichBlockPreformatted:1 of
+msgid ""
+"A preformatted text block, corresponding to the nested HTML tags "
+":code:`<pre>` and :code:`<code>`."
+msgstr ""
+"Блок предварительно отформатированного текста; соответствует вложенным "
+"HTML-тегам :code:`<pre>` и :code:`<code>`."
+
+#: litegram.types.rich_block_preformatted.RichBlockPreformatted:3 of
+msgid "Source: https://core.telegram.org/bots/api#richblockpreformatted"
+msgstr "Источник: https://core.telegram.org/bots/api#richblockpreformatted"
+
+#: litegram.types.rich_block_preformatted.RichBlockPreformatted.type:1 of
+msgid "Type of the block, always 'pre'"
+msgstr "Тип блока, всегда 'pre'"
+
+#: litegram.types.rich_block_preformatted.RichBlockPreformatted.text:1 of
+msgid "Text of the block"
+msgstr "Текст блока"
+
+#: litegram.types.rich_block_preformatted.RichBlockPreformatted.language:1 of
+msgid "*Optional*. The programming language of the text"
+msgstr "*Необязательно*. Язык программирования текста"
+

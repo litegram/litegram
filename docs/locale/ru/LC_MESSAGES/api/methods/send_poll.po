@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,9 +36,9 @@ msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.chat_id:1 of
 msgid ""
-"Unique identifier for the target chat or username of the target channel "
-"(in the format :code:`@channelusername`). Polls can't be sent to channel "
-"direct messages chats."
+"Unique identifier for the target chat or username of the target bot, "
+"supergroup, or channel in the format :code:`@username`. Polls can't be "
+"sent to channel direct messages chats."
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.question:1 of
@@ -46,7 +46,7 @@ msgid "Poll question, 1-300 characters"
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.options:1 of
-msgid "A JSON-serialized list of 2-12 answer options"
+msgid "A JSON-serialized list of 1-12 answer options"
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.business_connection_id:1 of
@@ -66,13 +66,13 @@ msgstr ""
 msgid ""
 "Mode for parsing entities in the question. See `formatting options "
 "<https://core.telegram.org/bots/api#formatting-options>`_ for more "
-"details. Currently, only custom emoji entities are allowed"
+"details. Currently, only custom emoji entities are allowed."
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.question_entities:1 of
 msgid ""
 "A JSON-serialized list of special entities that appear in the poll "
-"question. It can be specified instead of *question_parse_mode*"
+"question. It can be specified instead of *question_parse_mode*."
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.is_anonymous:1 of
@@ -85,14 +85,8 @@ msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.allows_multiple_answers:1 of
 msgid ""
-":code:`True`, if the poll allows multiple answers, ignored for polls in "
-"quiz mode, defaults to :code:`False`"
-msgstr ""
-
-#: litegram.methods.send_poll.SendPoll.correct_option_id:1 of
-msgid ""
-"0-based identifier of the correct answer option, required for polls in "
-"quiz mode"
+"Pass :code:`True` if the poll allows multiple answers, defaults to "
+":code:`False`"
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.explanation:1 of
@@ -112,20 +106,20 @@ msgstr ""
 #: litegram.methods.send_poll.SendPoll.explanation_entities:1 of
 msgid ""
 "A JSON-serialized list of special entities that appear in the poll "
-"explanation. It can be specified instead of *explanation_parse_mode*"
+"explanation. It can be specified instead of *explanation_parse_mode*."
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.open_period:1 of
 msgid ""
-"Amount of time in seconds the poll will be active after creation, 5-600. "
-"Can't be used together with *close_date*."
+"Amount of time in seconds the poll will be active after creation, "
+"5-2628000. Can't be used together with *close_date*."
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.close_date:1 of
 msgid ""
 "Point in time (Unix timestamp) when the poll will be automatically "
-"closed. Must be at least 5 and no more than 600 seconds in the future. "
-"Can't be used together with *open_period*."
+"closed. Must be at least 5 and no more than 2628000 seconds in the "
+"future. Can't be used together with *open_period*."
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.is_closed:1 of
@@ -150,7 +144,7 @@ msgid ""
 "`broadcasting limits <https://core.telegram.org/bots/faq#how-can-i"
 "-message-all-of-my-bot-39s-subscribers-at-once>`_ for a fee of 0.1 "
 "Telegram Stars per message. The relevant Stars will be withdrawn from the"
-" bot's balance"
+" bot's balance."
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.message_effect_id:1 of
@@ -169,7 +163,78 @@ msgid ""
 "keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_, "
 "`custom reply keyboard "
 "<https://core.telegram.org/bots/features#keyboards>`_, instructions to "
-"remove a reply keyboard or to force a reply from the user"
+"remove a reply keyboard or to force a reply from the user."
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.allows_revoting:1 of
+msgid ""
+"Pass :code:`True` if the poll allows to change chosen answer options, "
+"defaults to :code:`False` for quizzes and to :code:`True` for regular "
+"polls"
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.shuffle_options:1 of
+msgid "Pass :code:`True` if the poll options must be shown in random order"
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.allow_adding_options:1 of
+msgid ""
+"Pass :code:`True` if answer options can be added to the poll after "
+"creation; not supported for anonymous polls and quizzes"
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.hide_results_until_closes:1 of
+msgid "Pass :code:`True` if poll results must be shown only after the poll closes"
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.members_only:1 of
+msgid ""
+"Pass :code:`True` if voting is limited to users who have been members of "
+"the chat where the poll is being sent for more than 24 hours; for channel"
+" chats only"
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.country_codes:1 of
+msgid ""
+"A JSON-serialized list of 0-12 two-letter `ISO 3166-1 alpha-2 "
+"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_ country codes "
+"indicating the countries from which users can vote in the poll; for "
+"channel chats only. Use 'FT' as a country code to allow users with "
+"anonymous numbers to vote. If omitted or empty, then users from any "
+"country can participate in the poll."
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.correct_option_ids:1 of
+msgid ""
+"A JSON-serialized list of monotonically increasing 0-based identifiers of"
+" the correct answer options, required for polls in quiz mode"
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.explanation_media:1 of
+msgid "Media added to the quiz explanation"
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.description:1 of
+msgid ""
+"Description of the poll to be sent, 0-1024 characters after entities "
+"parsing"
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.description_parse_mode:1 of
+msgid ""
+"Mode for parsing entities in the poll description. See `formatting "
+"options <https://core.telegram.org/bots/api#formatting-options>`_ for "
+"more details."
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.description_entities:1 of
+msgid ""
+"A JSON-serialized list of special entities that appear in the poll "
+"description, which can be specified instead of *description_parse_mode*"
+msgstr ""
+
+#: litegram.methods.send_poll.SendPoll.media:1 of
+msgid "Media added to the poll description"
 msgstr ""
 
 #: litegram.methods.send_poll.SendPoll.allow_sending_without_reply:1 of
@@ -250,3 +315,87 @@ msgstr ""
 #: ../../api/methods/send_poll.rst:57
 msgid ":meth:`litegram.types.inaccessible_message.InaccessibleMessage.reply_poll`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target channel"
+#~ " (in the format :code:`@channelusername`). "
+#~ "Polls can't be sent to channel "
+#~ "direct messages chats."
+#~ msgstr ""
+
+#~ msgid "A JSON-serialized list of 2-12 answer options"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Mode for parsing entities in the "
+#~ "question. See `formatting options "
+#~ "<https://core.telegram.org/bots/api#formatting-options>`_ "
+#~ "for more details. Currently, only custom"
+#~ " emoji entities are allowed"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A JSON-serialized list of special "
+#~ "entities that appear in the poll "
+#~ "question. It can be specified instead"
+#~ " of *question_parse_mode*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":code:`True`, if the poll allows "
+#~ "multiple answers, ignored for polls in"
+#~ " quiz mode, defaults to :code:`False`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "0-based identifier of the correct answer"
+#~ " option, required for polls in quiz"
+#~ " mode"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A JSON-serialized list of special "
+#~ "entities that appear in the poll "
+#~ "explanation. It can be specified instead"
+#~ " of *explanation_parse_mode*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Amount of time in seconds the poll"
+#~ " will be active after creation, "
+#~ "5-600. Can't be used together with "
+#~ "*close_date*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Point in time (Unix timestamp) when "
+#~ "the poll will be automatically closed."
+#~ " Must be at least 5 and no "
+#~ "more than 600 seconds in the "
+#~ "future. Can't be used together with "
+#~ "*open_period*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pass :code:`True` to allow up to "
+#~ "1000 messages per second, ignoring "
+#~ "`broadcasting limits <https://core.telegram.org/bots/faq"
+#~ "#how-can-i-message-all-of-my-bot-"
+#~ "39s-subscribers-at-once>`_ for a fee"
+#~ " of 0.1 Telegram Stars per message."
+#~ " The relevant Stars will be withdrawn"
+#~ " from the bot's balance"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional interface options. A JSON-"
+#~ "serialized object for an `inline "
+#~ "keyboard <https://core.telegram.org/bots/features#inline-"
+#~ "keyboards>`_, `custom reply keyboard "
+#~ "<https://core.telegram.org/bots/features#keyboards>`_, "
+#~ "instructions to remove a reply keyboard"
+#~ " or to force a reply from the"
+#~ " user"
+#~ msgstr ""
+

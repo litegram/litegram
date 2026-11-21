@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/methods/delete_messages.rst:3
 msgid "deleteMessages"
@@ -38,18 +38,17 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#deletemessages"
 msgstr ""
 
-#: ../../docstring litegram.methods.delete_messages.DeleteMessages.chat_id:1 of
+#: litegram.methods.delete_messages.DeleteMessages.chat_id:1 of
 msgid ""
-"Unique identifier for the target chat or username of the target channel "
-"(in the format :code:`@channelusername`)"
+"Unique identifier for the target chat or username of the target bot, "
+"supergroup, or channel in the format :code:`@username`"
 msgstr ""
 
-#: ../../docstring litegram.methods.delete_messages.DeleteMessages.message_ids:1
-#: of
+#: litegram.methods.delete_messages.DeleteMessages.message_ids:1 of
 msgid ""
 "A JSON-serialized list of 1-100 identifiers of messages to delete. See "
-":class:`litegram.methods.delete_message.DeleteMessage` for limitations on "
-"which messages can be deleted"
+":class:`litegram.methods.delete_message.DeleteMessage` for limitations on"
+" which messages can be deleted."
 msgstr ""
 
 #: ../../api/methods/delete_messages.rst:15
@@ -83,3 +82,18 @@ msgstr ""
 #: ../../api/methods/delete_messages.rst:41
 msgid "As reply into Webhook in handler"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target channel"
+#~ " (in the format :code:`@channelusername`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A JSON-serialized list of 1-100 "
+#~ "identifiers of messages to delete. See"
+#~ " :class:`litegram.methods.delete_message.DeleteMessage` for"
+#~ " limitations on which messages can be"
+#~ " deleted"
+#~ msgstr ""
+

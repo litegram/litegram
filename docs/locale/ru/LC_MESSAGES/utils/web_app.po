@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  litegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-20 16:50+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: 2024-03-04 17:30+0200\n"
 "Last-Translator: Leroy-Bit\n"
 "Language: ru\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "WebApp"
 msgstr "Веб Приложение (WebApp)"
 
-#: ../../utils/web_app.rst:5
+#: ../../utils/web_app.rst:7
 msgid ""
 "Telegram Bot API 6.0 announces a revolution in the development of "
 "chatbots using WebApp feature."
@@ -31,7 +31,7 @@ msgstr ""
 "Telegram Bot API 6.0 произвел революцию в разработке чат-ботов, используя"
 " особенности Веб Приложений."
 
-#: ../../utils/web_app.rst:7
+#: ../../utils/web_app.rst:9
 msgid ""
 "You can read more details on it in the official `blog "
 "<https://telegram.org/blog/notifications-bots#bot-revolution>`_ and "
@@ -41,7 +41,7 @@ msgstr ""
 "<https://telegram.org/blog/notifications-bots#bot-revolution>`_ и "
 "`документации <https://core.telegram.org/bots/webapps>`_."
 
-#: ../../utils/web_app.rst:10
+#: ../../utils/web_app.rst:12
 msgid ""
 "`litegram` implements simple utils to remove headache with the data "
 "validation from Telegram WebApp on the backend side."
@@ -50,11 +50,11 @@ msgstr ""
 "предоставляя готовые инструменты проверки данных из Веб Застосунку "
 "Telegram на серверной стороне."
 
-#: ../../utils/web_app.rst:13
+#: ../../utils/web_app.rst:15
 msgid "Usage"
 msgstr "Использование"
 
-#: ../../utils/web_app.rst:15
+#: ../../utils/web_app.rst:17
 msgid ""
 "For example from frontend you will pass :code:`application/x-www-form-"
 "urlencoded` POST request with :code:`_auth` field in body and wants to "
@@ -64,7 +64,7 @@ msgstr ""
 "urlencoded` в POST запросе  из полем :code:`_auth` в теле и хотите "
 "вернуть информацию о пользователя в ответ как :code:`application/json`"
 
-#: ../../utils/web_app.rst:35
+#: ../../utils/web_app.rst:37
 msgid "Functions"
 msgstr "Функции"
 
@@ -124,7 +124,13 @@ msgstr ""
 msgid "data from frontend to be parsed and validated"
 msgstr ""
 
-#: ../../utils/web_app.rst:45
+#: litegram.utils.web_app.safe_parse_webapp_init_data:8 of
+msgid ""
+"maximum age of the data in seconds; when set, data with an older "
+"``auth_date`` is rejected (replay protection)"
+msgstr ""
+
+#: ../../utils/web_app.rst:47
 msgid "Types"
 msgstr "Типы"
 
@@ -501,3 +507,4 @@ msgstr ""
 #~ "formats. Only returned for Web Apps "
 #~ "launched from the attachment menu."
 #~ msgstr ""
+

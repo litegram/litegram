@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_media_sticker.rst:3
+msgid "InputMediaSticker"
+msgstr "InputMediaSticker"
+
+#: litegram.types.input_media_sticker.InputMediaSticker:1 of
+msgid "Represents a sticker file to be sent."
+msgstr "Представляет отправляемый файл стикера."
+
+#: litegram.types.input_media_sticker.InputMediaSticker:3 of
+msgid "Source: https://core.telegram.org/bots/api#inputmediasticker"
+msgstr "Источник: https://core.telegram.org/bots/api#inputmediasticker"
+
+#: litegram.types.input_media_sticker.InputMediaSticker.type:1 of
+msgid "Type of the media, must be *sticker*"
+msgstr "Тип медиа, должен быть *sticker*"
+
+#: litegram.types.input_media_sticker.InputMediaSticker.media:1 of
+msgid ""
+"File to send. Pass a file_id to send a file that exists on the Telegram "
+"servers (recommended), pass an HTTP URL for Telegram to get a .WEBP "
+"sticker from the Internet, or pass 'attach://' to upload a new .WEBP, "
+".TGS, or .WEBM sticker using multipart/form-data under  name. :ref:`More "
+"information on Sending Files » <sending-files>`"
+msgstr ""
+"Файл стикера для отправки. Передайте file_id, чтобы отправить файл, уже "
+"находящийся на серверах Telegram (рекомендуется); HTTP URL, чтобы "
+"Telegram скачал стикер .WEBP из интернета; или 'attach://', чтобы "
+"загрузить новый стикер .WEBP, .TGS или .WEBM через multipart/form-data "
+"под этим именем. :ref:`Подробнее об отправке файлов <sending-files>`"
+
+#: litegram.types.input_media_sticker.InputMediaSticker.emoji:1 of
+msgid ""
+"*Optional*. Emoji associated with the sticker; only for just uploaded "
+"stickers"
+msgstr ""
+"*Необязательно*. Эмодзи, связанный со стикером; только для только что "
+"загруженных стикеров"
+

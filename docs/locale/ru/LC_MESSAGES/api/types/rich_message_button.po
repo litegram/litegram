@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/rich_message_button.rst:3
+msgid "RichMessageButton"
+msgstr "RichMessageButton"
+
+#: litegram.types.rich_message_button.RichMessageButton:1 of
+msgid ""
+"This object represents a button in a "
+":class:`litegram.types.rich_message.RichMessage`. Exactly one of the "
+"fields other than *text* and *style* must be used to specify the type of "
+"the button."
+msgstr ""
+"Этот объект представляет кнопку в "
+":class:`litegram.types.rich_message.RichMessage`. Тип кнопки задаётся "
+"ровно одним из полей, кроме *text* и *style*."
+
+#: litegram.types.rich_message_button.RichMessageButton:3 of
+msgid "Source: https://core.telegram.org/bots/api#richmessagebutton"
+msgstr "Источник: https://core.telegram.org/bots/api#richmessagebutton"
+
+#: litegram.types.rich_message_button.RichMessageButton.text:1 of
+msgid ""
+"Text of the button. May contain only plain text, "
+":class:`litegram.types.rich_text_custom_emoji.RichTextCustomEmoji` and "
+":class:`litegram.types.rich_text_date_time.RichTextDateTime` entities."
+msgstr ""
+"Текст кнопки. Может содержать только обычный текст и сущности "
+":class:`litegram.types.rich_text_custom_emoji.RichTextCustomEmoji` и "
+":class:`litegram.types.rich_text_date_time.RichTextDateTime`."
+
+#: litegram.types.rich_message_button.RichMessageButton.style:1 of
+msgid ""
+"*Optional*. Style of the button. Must be one of 'danger', 'success', "
+"'primary', or 'link' (the button is shown as a regular link without "
+"borders). Apps may use theme-specific colors for the button background "
+"and text based on the style. The style 'link' is allowed only for "
+"callback buttons."
+msgstr ""
+"*Необязательно*. Стиль кнопки. Допустимые значения: 'danger', 'success', "
+"'primary' или 'link' (кнопка отображается как обычная ссылка без рамок). "
+"Приложения могут использовать цвета темы для фона и текста кнопки в "
+"зависимости от стиля. Стиль 'link' допускается только для "
+"callback-кнопок."
+
+#: litegram.types.rich_message_button.RichMessageButton.url:1 of
+msgid ""
+"*Optional*. HTTP or tg:// URL to be opened when the button is pressed. "
+"Links :code:`tg://user?id=` can be used to mention a user by their "
+"identifier without using a username, if this is allowed by their privacy "
+"settings."
+msgstr ""
+"*Необязательно*. HTTP или tg:// URL, который открывается при нажатии "
+"кнопки. Ссылки :code:`tg://user?id=` позволяют упомянуть пользователя по "
+"его идентификатору без имени, если это разрешено его настройками "
+"конфиденциальности."
+
+#: litegram.types.rich_message_button.RichMessageButton.callback_data:1 of
+msgid ""
+"*Optional*. Data to be sent in a `callback query "
+"<https://core.telegram.org/bots/api#callbackquery>`_ to the bot when the "
+"button is pressed, 1-64 bytes"
+msgstr ""
+"*Необязательно*. Данные, которые будут отправлены боту в "
+"`callback-запросе <https://core.telegram.org/bots/api#callbackquery>`_ "
+"при нажатии кнопки, от 1 до 64 байт"
+
+#: litegram.types.rich_message_button.RichMessageButton.web_app:1 of
+msgid ""
+"*Optional*. Description of the `Web App "
+"<https://core.telegram.org/bots/webapps>`_ that will be launched when the"
+" user presses the button. The Web App will be able to send an arbitrary "
+"message on behalf of the user using the method "
+":class:`litegram.methods.answer_web_app_query.AnswerWebAppQuery`. "
+"Available only in private chats between a user and the bot. Not supported"
+" for messages sent on behalf of a business account."
+msgstr ""
+"*Необязательно*. Описание `Web App "
+"<https://core.telegram.org/bots/webapps>`_, которое запустится при "
+"нажатии кнопки. Web App сможет отправлять произвольные сообщения от имени"
+" пользователя методом "
+":class:`litegram.methods.answer_web_app_query.AnswerWebAppQuery`. "
+"Доступно только в личных чатах пользователя с ботом. Не поддерживается "
+"для сообщений, отправленных от имени бизнес-аккаунта."
+
+#: litegram.types.rich_message_button.RichMessageButton.login_url:1 of
+msgid ""
+"*Optional*. An HTTPS URL used to automatically authorize the user. Can be"
+" used as a replacement for the `Telegram Login Widget "
+"<https://core.telegram.org/widgets/login>`_. Not supported for ephemeral "
+"messages."
+msgstr ""
+"*Необязательно*. HTTPS URL для автоматической авторизации пользователя. "
+"Может использоваться вместо `Telegram Login Widget "
+"<https://core.telegram.org/widgets/login>`_. Не поддерживается в "
+"эфемерных сообщениях."
+
+#: litegram.types.rich_message_button.RichMessageButton.switch_inline_query:1
+#: of
+msgid ""
+"*Optional*. If set, pressing the button will prompt the user to select "
+"one of their chats, open that chat and insert the bot's username and the "
+"specified inline query in the input field. May be empty, in which case "
+"just the bot's username will be inserted. Not supported for messages sent"
+" in channel direct messages chats and on behalf of a business account."
+msgstr ""
+"*Необязательно*. Если задано, при нажатии кнопки пользователю будет "
+"предложено выбрать один из своих чатов, открыть его, и в поле ввода будут"
+" вставлены имя бота и указанный inline-запрос. Может быть пустой строкой "
+"— в этом случае будет вставлено только имя бота. Не поддерживается для "
+"сообщений, отправленных в чаты личных сообщений канала и от имени "
+"бизнес-аккаунта."
+
+#: litegram.types.rich_message_button.RichMessageButton.switch_inline_query_current_chat:1
+#: of
+msgid ""
+"*Optional*. If set, pressing the button will insert the bot's username "
+"and the specified inline query in the current chat's input field. May be "
+"empty, in which case only the bot's username will be inserted. Not "
+"supported in channels and for messages sent in channel direct messages "
+"chats and on behalf of a business account."
+msgstr ""
+"*Необязательно*. Если задано, при нажатии кнопки в поле ввода текущего "
+"чата будут вставлены имя бота и указанный inline-запрос. Может быть "
+"пустой строкой — в этом случае будет вставлено только имя бота. Не "
+"поддерживается в каналах и для сообщений, отправленных в чаты личных "
+"сообщений канала и от имени бизнес-аккаунта."
+
+#: litegram.types.rich_message_button.RichMessageButton.switch_inline_query_chosen_chat:1
+#: of
+msgid ""
+"*Optional*. If set, pressing the button will prompt the user to select "
+"one of their chats of the specified type, open that chat and insert the "
+"bot's username and the specified inline query in the input field. Not "
+"supported for messages sent in channel direct messages chats and on "
+"behalf of a business account."
+msgstr ""
+"*Необязательно*. Если задано, при нажатии кнопки пользователю будет "
+"предложено выбрать один из своих чатов указанного типа, открыть его, и в "
+"поле ввода будут вставлены имя бота и указанный inline-запрос. Не "
+"поддерживается для сообщений, отправленных в чаты личных сообщений канала"
+" и от имени бизнес-аккаунта."
+
+#: litegram.types.rich_message_button.RichMessageButton.copy_text:1 of
+msgid "*Optional*. A button that copies the specified text to the clipboard"
+msgstr "*Необязательно*. Кнопка, копирующая указанный текст в буфер обмена"
+
+#: litegram.types.rich_message_button.RichMessageButton.disabled:1 of
+msgid "*Optional*. If set, then the button is disabled and does nothing"
+msgstr "*Необязательно*. Если задано, кнопка отключена и ничего не делает"
+

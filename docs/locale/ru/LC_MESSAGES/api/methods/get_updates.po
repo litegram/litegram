@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/methods/get_updates.rst:3
 msgid "getUpdates"
@@ -32,24 +32,10 @@ msgid ""
 msgstr ""
 
 #: litegram.methods.get_updates.GetUpdates:3 of
-msgid "**Notes**"
-msgstr ""
-
-#: litegram.methods.get_updates.GetUpdates:5 of
-msgid "**1.** This method will not work if an outgoing webhook is set up."
-msgstr ""
-
-#: litegram.methods.get_updates.GetUpdates:7 of
-msgid ""
-"**2.** In order to avoid getting duplicate updates, recalculate *offset* "
-"after each server response."
-msgstr ""
-
-#: litegram.methods.get_updates.GetUpdates:9 of
 msgid "Source: https://core.telegram.org/bots/api#getupdates"
 msgstr ""
 
-#: ../../docstring litegram.methods.get_updates.GetUpdates.offset:1 of
+#: litegram.methods.get_updates.GetUpdates.offset:1 of
 msgid ""
 "Identifier of the first update to be returned. Must be greater by one "
 "than the highest among the identifiers of previously received updates. By"
@@ -61,20 +47,20 @@ msgid ""
 " of the updates queue. All previous updates will be forgotten."
 msgstr ""
 
-#: ../../docstring litegram.methods.get_updates.GetUpdates.limit:1 of
+#: litegram.methods.get_updates.GetUpdates.limit:1 of
 msgid ""
 "Limits the number of updates to be retrieved. Values between 1-100 are "
 "accepted. Defaults to 100."
 msgstr ""
 
-#: ../../docstring litegram.methods.get_updates.GetUpdates.timeout:1 of
+#: litegram.methods.get_updates.GetUpdates.timeout:1 of
 msgid ""
 "Timeout in seconds for long polling. Defaults to 0, i.e. usual short "
 "polling. Should be positive, short polling should be used for testing "
 "purposes only."
 msgstr ""
 
-#: ../../docstring litegram.methods.get_updates.GetUpdates.allowed_updates:1 of
+#: litegram.methods.get_updates.GetUpdates.allowed_updates:1 of
 msgid ""
 "A JSON-serialized list of the update types you want your bot to receive. "
 "For example, specify :code:`[\"message\", \"edited_channel_post\", "
@@ -83,6 +69,13 @@ msgid ""
 "update types. Specify an empty list to receive all update types except "
 "*chat_member*, *message_reaction*, and *message_reaction_count* "
 "(default). If not specified, the previous setting will be used."
+msgstr ""
+
+#: litegram.methods.get_updates.GetUpdates.allowed_updates:3 of
+msgid ""
+"Please note that this parameter doesn't affect updates created before the"
+" call to getUpdates, so unwanted updates may be received for a short "
+"period of time."
 msgstr ""
 
 #: ../../api/methods/get_updates.rst:15
@@ -112,3 +105,16 @@ msgstr ""
 #: ../../api/methods/get_updates.rst:34
 msgid "With specific bot"
 msgstr ""
+
+#~ msgid "**Notes**"
+#~ msgstr ""
+
+#~ msgid "**1.** This method will not work if an outgoing webhook is set up."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**2.** In order to avoid getting "
+#~ "duplicate updates, recalculate *offset* after"
+#~ " each server response."
+#~ msgstr ""
+

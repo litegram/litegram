@@ -2,31 +2,52 @@
 # Distributed under the same license as litegram.
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram\n"
+"Project-Id-Version:  litegram\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
+#: ../../api/methods/save_prepared_keyboard_button.rst:3
+msgid "savePreparedKeyboardButton"
+msgstr ""
+
+#: litegram.methods.save_prepared_keyboard_button.SavePreparedKeyboardButton:1
+#: of
 msgid ""
 "Stores a keyboard button that can be used by a user within a Mini App. "
 "Returns a "
 ":class:`litegram.types.prepared_keyboard_button.PreparedKeyboardButton` "
 "object."
 msgstr ""
-"Сохраняет кнопку клавиатуры, которую пользователь сможет использовать в Mini"
-" App. Возвращает объект "
+"Сохраняет кнопку клавиатуры, которую пользователь сможет использовать в "
+"Mini App. Возвращает объект "
 ":class:`litegram.types.prepared_keyboard_button.PreparedKeyboardButton`."
 
+#: litegram.methods.save_prepared_keyboard_button.SavePreparedKeyboardButton:3
+#: of
 msgid "Source: https://core.telegram.org/bots/api#savepreparedkeyboardbutton"
 msgstr "Источник: https://core.telegram.org/bots/api#savepreparedkeyboardbutton"
 
+#: litegram.methods.save_prepared_keyboard_button.SavePreparedKeyboardButton.user_id:1
+#: of
 msgid "Unique identifier of the target user that can use the button"
 msgstr "Уникальный идентификатор пользователя, который сможет использовать кнопку"
 
+#: litegram.methods.save_prepared_keyboard_button.SavePreparedKeyboardButton.button:1
+#: of
 msgid ""
-"A JSON-serialized object describing the button to be saved. The button must "
-"be of the type *request_users*, *request_chat*, or *request_managed_bot*."
+"A JSON-serialized object describing the button to be saved. The button "
+"must be of the type *request_users*, *request_chat*, or "
+"*request_managed_bot*."
 msgstr ""
 "Объект в формате JSON, описывающий сохраняемую кнопку. Допустимые типы "
 "кнопки: *request_users*, *request_chat* или *request_managed_bot*."

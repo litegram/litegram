@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_media_voice_note.rst:3
+msgid "InputMediaVoiceNote"
+msgstr "InputMediaVoiceNote"
+
+#: litegram.types.input_media_voice_note.InputMediaVoiceNote:1 of
+msgid "Represents a voice message file to be sent."
+msgstr "Представляет отправляемый файл голосового сообщения."
+
+#: litegram.types.input_media_voice_note.InputMediaVoiceNote:3 of
+msgid "Source: https://core.telegram.org/bots/api#inputmediavoicenote"
+msgstr "Источник: https://core.telegram.org/bots/api#inputmediavoicenote"
+
+#: litegram.types.input_media_voice_note.InputMediaVoiceNote.type:1 of
+msgid "Type of the media, must be *voice_note*"
+msgstr "Тип медиа, должен быть *voice_note*"
+
+#: litegram.types.input_media_voice_note.InputMediaVoiceNote.media:1 of
+msgid ""
+"File to send. Pass a file_id to send a file that exists on the Telegram "
+"servers (recommended), pass an HTTP URL for Telegram to get a file from "
+"the Internet, or pass \"attach://\" to upload a new one using multipart"
+"/form-data under  name. :ref:`More information on Sending Files » "
+"<sending-files>`"
+msgstr ""
+"Файл для отправки. Передайте file_id, чтобы отправить файл, уже "
+"находящийся на серверах Telegram (рекомендуется); HTTP URL, чтобы "
+"Telegram скачал файл из интернета; или \"attach://\", чтобы загрузить "
+"новый файл через multipart/form-data под этим именем. :ref:`Подробнее об "
+"отправке файлов <sending-files>`"
+
+#: litegram.types.input_media_voice_note.InputMediaVoiceNote.caption:1 of
+msgid ""
+"*Optional*. Caption of the voice message to be sent, 0-1024 characters "
+"after entities parsing"
+msgstr ""
+"*Необязательно*. Подпись отправляемого голосового сообщения, от 0 до 1024"
+" символов после разбора сущностей"
+
+#: litegram.types.input_media_voice_note.InputMediaVoiceNote.parse_mode:1 of
+msgid ""
+"*Optional*. Mode for parsing entities in the voice message caption. See "
+"`formatting options <https://core.telegram.org/bots/api#formatting-"
+"options>`_ for more details."
+msgstr ""
+"*Необязательно*. Режим разбора сущностей в подписи голосового сообщения. "
+"Подробнее см. `варианты форматирования "
+"<https://core.telegram.org/bots/api#formatting-options>`_."
+
+#: litegram.types.input_media_voice_note.InputMediaVoiceNote.caption_entities:1
+#: of
+msgid ""
+"*Optional*. List of special entities that appear in the caption, which "
+"can be specified instead of *parse_mode*"
+msgstr ""
+"*Необязательно*. Список специальных сущностей в подписи; можно передать "
+"вместо *parse_mode*"
+
+#: litegram.types.input_media_voice_note.InputMediaVoiceNote.duration:1 of
+msgid "*Optional*. Duration of the voice message in seconds"
+msgstr "*Необязательно*. Длительность голосового сообщения в секундах"
+

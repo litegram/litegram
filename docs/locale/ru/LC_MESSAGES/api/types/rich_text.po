@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/rich_text.rst:3
+msgid "RichText"
+msgstr "RichText"
+
+#: litegram.types.rich_text.RichText:1 of
+msgid ""
+"This object represents a rich formatted text. Currently, it can be either"
+" a String for plain text, an Array of "
+":class:`litegram.types.rich_text.RichText`, or any of the following "
+"types:"
+msgstr ""
+"Этот объект представляет форматированный (rich) текст. Сейчас он может "
+"быть строкой для обычного текста, массивом "
+":class:`litegram.types.rich_text.RichText` или любым из следующих типов:"
+
+#: litegram.types.rich_text.RichText:3 of
+msgid ":class:`litegram.types.rich_text_bold.RichTextBold`"
+msgstr ":class:`litegram.types.rich_text_bold.RichTextBold`"
+
+#: litegram.types.rich_text.RichText:4 of
+msgid ":class:`litegram.types.rich_text_italic.RichTextItalic`"
+msgstr ":class:`litegram.types.rich_text_italic.RichTextItalic`"
+
+#: litegram.types.rich_text.RichText:5 of
+msgid ":class:`litegram.types.rich_text_underline.RichTextUnderline`"
+msgstr ":class:`litegram.types.rich_text_underline.RichTextUnderline`"
+
+#: litegram.types.rich_text.RichText:6 of
+msgid ":class:`litegram.types.rich_text_strikethrough.RichTextStrikethrough`"
+msgstr ":class:`litegram.types.rich_text_strikethrough.RichTextStrikethrough`"
+
+#: litegram.types.rich_text.RichText:7 of
+msgid ":class:`litegram.types.rich_text_spoiler.RichTextSpoiler`"
+msgstr ":class:`litegram.types.rich_text_spoiler.RichTextSpoiler`"
+
+#: litegram.types.rich_text.RichText:8 of
+msgid ":class:`litegram.types.rich_text_date_time.RichTextDateTime`"
+msgstr ":class:`litegram.types.rich_text_date_time.RichTextDateTime`"
+
+#: litegram.types.rich_text.RichText:9 of
+msgid ":class:`litegram.types.rich_text_text_mention.RichTextTextMention`"
+msgstr ":class:`litegram.types.rich_text_text_mention.RichTextTextMention`"
+
+#: litegram.types.rich_text.RichText:10 of
+msgid ":class:`litegram.types.rich_text_subscript.RichTextSubscript`"
+msgstr ":class:`litegram.types.rich_text_subscript.RichTextSubscript`"
+
+#: litegram.types.rich_text.RichText:11 of
+msgid ":class:`litegram.types.rich_text_superscript.RichTextSuperscript`"
+msgstr ":class:`litegram.types.rich_text_superscript.RichTextSuperscript`"
+
+#: litegram.types.rich_text.RichText:12 of
+msgid ":class:`litegram.types.rich_text_marked.RichTextMarked`"
+msgstr ":class:`litegram.types.rich_text_marked.RichTextMarked`"
+
+#: litegram.types.rich_text.RichText:13 of
+msgid ":class:`litegram.types.rich_text_code.RichTextCode`"
+msgstr ":class:`litegram.types.rich_text_code.RichTextCode`"
+
+#: litegram.types.rich_text.RichText:14 of
+msgid ":class:`litegram.types.rich_text_custom_emoji.RichTextCustomEmoji`"
+msgstr ":class:`litegram.types.rich_text_custom_emoji.RichTextCustomEmoji`"
+
+#: litegram.types.rich_text.RichText:15 of
+msgid ":class:`litegram.types.rich_text_mathematical_expression.RichTextMathematicalExpression`"
+msgstr ":class:`litegram.types.rich_text_mathematical_expression.RichTextMathematicalExpression`"
+
+#: litegram.types.rich_text.RichText:16 of
+msgid ":class:`litegram.types.rich_text_url.RichTextUrl`"
+msgstr ":class:`litegram.types.rich_text_url.RichTextUrl`"
+
+#: litegram.types.rich_text.RichText:17 of
+msgid ":class:`litegram.types.rich_text_email_address.RichTextEmailAddress`"
+msgstr ":class:`litegram.types.rich_text_email_address.RichTextEmailAddress`"
+
+#: litegram.types.rich_text.RichText:18 of
+msgid ":class:`litegram.types.rich_text_phone_number.RichTextPhoneNumber`"
+msgstr ":class:`litegram.types.rich_text_phone_number.RichTextPhoneNumber`"
+
+#: litegram.types.rich_text.RichText:19 of
+msgid ":class:`litegram.types.rich_text_bank_card_number.RichTextBankCardNumber`"
+msgstr ":class:`litegram.types.rich_text_bank_card_number.RichTextBankCardNumber`"
+
+#: litegram.types.rich_text.RichText:20 of
+msgid ":class:`litegram.types.rich_text_ton_address.RichTextTonAddress`"
+msgstr ":class:`litegram.types.rich_text_ton_address.RichTextTonAddress`"
+
+#: litegram.types.rich_text.RichText:21 of
+msgid ":class:`litegram.types.rich_text_mention.RichTextMention`"
+msgstr ":class:`litegram.types.rich_text_mention.RichTextMention`"
+
+#: litegram.types.rich_text.RichText:22 of
+msgid ":class:`litegram.types.rich_text_hashtag.RichTextHashtag`"
+msgstr ":class:`litegram.types.rich_text_hashtag.RichTextHashtag`"
+
+#: litegram.types.rich_text.RichText:23 of
+msgid ":class:`litegram.types.rich_text_cashtag.RichTextCashtag`"
+msgstr ":class:`litegram.types.rich_text_cashtag.RichTextCashtag`"
+
+#: litegram.types.rich_text.RichText:24 of
+msgid ":class:`litegram.types.rich_text_bot_command.RichTextBotCommand`"
+msgstr ":class:`litegram.types.rich_text_bot_command.RichTextBotCommand`"
+
+#: litegram.types.rich_text.RichText:25 of
+msgid ":class:`litegram.types.rich_text_button.RichTextButton`"
+msgstr ":class:`litegram.types.rich_text_button.RichTextButton`"
+
+#: litegram.types.rich_text.RichText:26 of
+msgid ":class:`litegram.types.rich_text_anchor.RichTextAnchor`"
+msgstr ":class:`litegram.types.rich_text_anchor.RichTextAnchor`"
+
+#: litegram.types.rich_text.RichText:27 of
+msgid ":class:`litegram.types.rich_text_anchor_link.RichTextAnchorLink`"
+msgstr ":class:`litegram.types.rich_text_anchor_link.RichTextAnchorLink`"
+
+#: litegram.types.rich_text.RichText:28 of
+msgid ":class:`litegram.types.rich_text_reference.RichTextReference`"
+msgstr ":class:`litegram.types.rich_text_reference.RichTextReference`"
+
+#: litegram.types.rich_text.RichText:29 of
+msgid ":class:`litegram.types.rich_text_reference_link.RichTextReferenceLink`"
+msgstr ":class:`litegram.types.rich_text_reference_link.RichTextReferenceLink`"
+
+#: litegram.types.rich_text.RichText:31 of
+msgid "Source: https://core.telegram.org/bots/api#richtext"
+msgstr "Источник: https://core.telegram.org/bots/api#richtext"
+

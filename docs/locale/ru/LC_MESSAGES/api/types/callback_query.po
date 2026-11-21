@@ -7,14 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-16 01:15+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/callback_query.rst:3
 msgid "CallbackQuery"
@@ -33,62 +36,54 @@ msgid ""
 msgstr ""
 
 #: litegram.types.callback_query.CallbackQuery:3 of
-msgid ""
-"**NOTE:** After the user presses a callback button, Telegram clients will"
-" display a progress bar until you call "
-":class:`litegram.methods.answer_callback_query.AnswerCallbackQuery`. It "
-"is, therefore, necessary to react by calling "
-":class:`litegram.methods.answer_callback_query.AnswerCallbackQuery` even "
-"if no notification to the user is needed (e.g., without specifying any of"
-" the optional parameters)."
-msgstr ""
-
-#: litegram.types.callback_query.CallbackQuery:5 of
 msgid "Source: https://core.telegram.org/bots/api#callbackquery"
 msgstr ""
 
-#: ../../docstring litegram.types.callback_query.CallbackQuery.id:1 of
+#: litegram.types.callback_query.CallbackQuery.id:1 of
 msgid "Unique identifier for this query"
 msgstr ""
 
-#: ../../docstring litegram.types.callback_query.CallbackQuery.from_user:1 of
-msgid "Sender"
-msgstr ""
-
-#: ../../docstring litegram.types.callback_query.CallbackQuery.chat_instance:1
-#: of
+#: litegram.types.callback_query.CallbackQuery.chat_instance:1 of
 msgid ""
 "Global identifier, uniquely corresponding to the chat to which the "
 "message with the callback button was sent. Useful for high scores in "
-":class:`litegram.methods.games.Games`."
+"`games <https://core.telegram.org/bots/api#games>`_."
 msgstr ""
+"Глобальный идентификатор, однозначно соответствующий чату, в который было"
+" отправлено сообщение с callback-кнопкой. Полезен для рекордов в `играх "
+"<https://core.telegram.org/bots/api#games>`_."
 
-#: ../../docstring litegram.types.callback_query.CallbackQuery.message:1 of
+#: litegram.types.callback_query.CallbackQuery.message:1 of
 msgid ""
 "*Optional*. Message sent by the bot with the callback button that "
 "originated the query"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.callback_query.CallbackQuery.inline_message_id:1 of
 msgid ""
 "*Optional*. Identifier of the message sent via the bot in inline mode, "
-"that originated the query."
+"that originated the query"
 msgstr ""
+"*Необязательно*. Идентификатор сообщения, отправленного через бота в "
+"inline-режиме, из которого поступил запрос"
 
-#: ../../docstring litegram.types.callback_query.CallbackQuery.data:1 of
+#: litegram.types.callback_query.CallbackQuery.data:1 of
 msgid ""
 "*Optional*. Data associated with the callback button. Be aware that the "
 "message originated the query can contain no callback buttons with this "
 "data."
 msgstr ""
 
-#: ../../docstring litegram.types.callback_query.CallbackQuery.game_short_name:1
-#: of
+#: litegram.types.callback_query.CallbackQuery.game_short_name:1 of
 msgid ""
-"*Optional*. Short name of a `Game "
-"<https://core.telegram.org/bots/api#games>`_ to be returned, serves as "
-"the unique identifier for the game"
+"*Optional*. Short name of a :class:`litegram.types.game.Game` to be "
+"returned, serves as the unique identifier for the game"
+msgstr ""
+"*Необязательно*. Короткое имя :class:`litegram.types.game.Game`, которое "
+"нужно вернуть; служит уникальным идентификатором игры"
+
+#: litegram.types.callback_query.CallbackQuery.from_user:1 of
+msgid "Sender"
 msgstr ""
 
 #: litegram.types.callback_query.CallbackQuery.answer:1 of
@@ -123,7 +118,7 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#answercallbackquery"
 msgstr ""
 
-#: litegram.types.callback_query.CallbackQuery.answer of
+#: ../../api/types/callback_query.rst
 msgid "Parameters"
 msgstr ""
 
@@ -157,7 +152,7 @@ msgid ""
 "starting in version 3.14. Defaults to 0."
 msgstr ""
 
-#: litegram.types.callback_query.CallbackQuery.answer of
+#: ../../api/types/callback_query.rst
 msgid "Returns"
 msgstr ""
 
@@ -166,3 +161,39 @@ msgid ""
 "instance of method "
 ":class:`litegram.methods.answer_callback_query.AnswerCallbackQuery`"
 msgstr ""
+
+#~ msgid ""
+#~ "**NOTE:** After the user presses a "
+#~ "callback button, Telegram clients will "
+#~ "display a progress bar until you "
+#~ "call "
+#~ ":class:`litegram.methods.answer_callback_query.AnswerCallbackQuery`."
+#~ " It is, therefore, necessary to react"
+#~ " by calling "
+#~ ":class:`litegram.methods.answer_callback_query.AnswerCallbackQuery`"
+#~ " even if no notification to the "
+#~ "user is needed (e.g., without specifying"
+#~ " any of the optional parameters)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Global identifier, uniquely corresponding to"
+#~ " the chat to which the message "
+#~ "with the callback button was sent. "
+#~ "Useful for high scores in "
+#~ ":class:`litegram.methods.games.Games`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Identifier of the message "
+#~ "sent via the bot in inline mode,"
+#~ " that originated the query."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. Short name of a `Game "
+#~ "<https://core.telegram.org/bots/api#games>`_ to be "
+#~ "returned, serves as the unique "
+#~ "identifier for the game"
+#~ msgstr ""
+

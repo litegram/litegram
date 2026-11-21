@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/rich_text_date_time.rst:3
+msgid "RichTextDateTime"
+msgstr "RichTextDateTime"
+
+#: litegram.types.rich_text_date_time.RichTextDateTime:1 of
+msgid "Formatted date and time."
+msgstr "Отформатированные дата и время."
+
+#: litegram.types.rich_text_date_time.RichTextDateTime:3 of
+msgid "Source: https://core.telegram.org/bots/api#richtextdatetime"
+msgstr "Источник: https://core.telegram.org/bots/api#richtextdatetime"
+
+#: litegram.types.rich_text_date_time.RichTextDateTime.type:1 of
+msgid "Type of the rich text, always 'date_time'"
+msgstr "Тип форматированного (rich) текста, всегда 'date_time'"
+
+#: litegram.types.rich_text_date_time.RichTextDateTime.text:1 of
+msgid "The text"
+msgstr "Текст"
+
+#: litegram.types.rich_text_date_time.RichTextDateTime.unix_time:1 of
+msgid "The Unix time associated with the entity"
+msgstr "Время Unix, связанное с сущностью"
+
+#: litegram.types.rich_text_date_time.RichTextDateTime.date_time_format:1 of
+msgid ""
+"The string that defines the formatting of the date and time. See `date-"
+"time entity formatting <https://core.telegram.org/bots/api#date-time-"
+"entity-formatting>`_ for more details."
+msgstr ""
+"Строка, задающая формат даты и времени. Подробнее см. `форматирование "
+"сущностей даты и времени <https://core.telegram.org/bots/api#date-time-"
+"entity-formatting>`_."
+

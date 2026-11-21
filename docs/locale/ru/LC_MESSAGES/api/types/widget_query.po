@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/widget_query.rst:3
+msgid "WidgetQuery"
+msgstr "WidgetQuery"
+
+#: litegram.types.widget_query.WidgetQuery:1 of
+msgid ""
+"This object represents an incoming query from a widget in a message sent "
+"by the bot or via the bot. Use "
+":class:`litegram.methods.answer_widget_query.AnswerWidgetQuery` to answer"
+" the query. Each user can send at most 5 queries per 5 seconds to the bot"
+" from all its widgets."
+msgstr ""
+"Этот объект представляет входящий запрос из виджета в сообщении, "
+"отправленном ботом или через него. Для ответа на запрос используйте "
+":class:`litegram.methods.answer_widget_query.AnswerWidgetQuery`. Каждый "
+"пользователь может отправить боту не более 5 запросов за 5 секунд со всех"
+" его виджетов."
+
+#: litegram.types.widget_query.WidgetQuery:3 of
+msgid "Source: https://core.telegram.org/bots/api#widgetquery"
+msgstr "Источник: https://core.telegram.org/bots/api#widgetquery"
+
+#: litegram.types.widget_query.WidgetQuery.id:1 of
+msgid "Unique identifier for this query"
+msgstr "Уникальный идентификатор этого запроса"
+
+#: litegram.types.widget_query.WidgetQuery.from_user:1 of
+msgid "Sender"
+msgstr "Sender"
+
+#: litegram.types.widget_query.WidgetQuery.chat:1 of
+msgid ""
+"*Optional*. Chat with the message containing the widget; omitted if the "
+"widget is in an inline message"
+msgstr ""
+"*Необязательно*. Чат с сообщением, содержащим виджет; отсутствует, если "
+"виджет находится в inline-сообщении"
+
+#: litegram.types.widget_query.WidgetQuery.message_id:1 of
+msgid ""
+"*Optional*. Identifier of the message containing the widget; omitted if "
+"the widget is in an inline message"
+msgstr ""
+"*Необязательно*. Идентификатор сообщения, содержащего виджет; "
+"отсутствует, если виджет находится в inline-сообщении"
+
+#: litegram.types.widget_query.WidgetQuery.inline_message_id:1 of
+msgid "*Optional*. Identifier of the inline message containing the widget"
+msgstr "*Необязательно*. Идентификатор inline-сообщения, содержащего виджет"
+
+#: litegram.types.widget_query.WidgetQuery.chat_instance:1 of
+msgid ""
+"Global identifier, uniquely corresponding to the chat to which the "
+"message with the widget was sent"
+msgstr ""
+"Глобальный идентификатор, однозначно соответствующий чату, в который было"
+" отправлено сообщение с виджетом"
+
+#: litegram.types.widget_query.WidgetQuery.chat_type:1 of
+msgid ""
+"*Optional*. For widgets in inline messages, type of the chat to which the"
+" message was sent. Can be either 'sender' for a private chat with the "
+"inline query sender, 'private', 'group', 'supergroup', or 'channel'."
+msgstr ""
+"*Необязательно*. Для виджетов в inline-сообщениях — тип чата, в который "
+"было отправлено сообщение. Одно из значений: 'sender' для личного чата с "
+"отправителем inline-запроса, 'private', 'group', 'supergroup' или "
+"'channel'."
+
+#: litegram.types.widget_query.WidgetQuery.type:1 of
+msgid "Type of the query"
+msgstr "Тип запроса"
+
+#: litegram.types.widget_query.WidgetQuery.data:1 of
+msgid "Data of the query, 1-64 bytes"
+msgstr "Данные запроса, от 1 до 64 байт"
+
+#: litegram.types.widget_query.WidgetQuery.widget_id:1 of
+msgid ""
+"*Optional*. Unique identifier of the shared widget, which sent the query;"
+" omitted if the widget isn't shared"
+msgstr ""
+"*Необязательно*. Уникальный идентификатор переиспользуемого виджета, "
+"отправившего запрос; отсутствует, если виджет не переиспользуемый"
+

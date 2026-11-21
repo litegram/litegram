@@ -5,19 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram\n"
+"Project-Id-Version:  litegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 22:51+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: 2022-10-25 18:31+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
-"X-Generator: Poedit 3.1.1\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: ../../dispatcher/filters/callback_data.rst:3
+#: ../../dispatcher/filters/callback_data.rst:5
 msgid "Callback Data Factory & Filter"
 msgstr "Фабрика миток зворотнього вызова и фильтрування"
 
@@ -28,25 +27,34 @@ msgstr "Базовый класс для обгортки метки обрат�
 #: litegram.filters.callback_data.CallbackData:3 of
 msgid "This class should be used as super-class of user-defined callbacks."
 msgstr ""
-"Этот класс следует использовать как супер-класс зворотних викликив, визначених "
-"пользователем."
+"Этот класс следует использовать как супер-класс зворотних викликив, "
+"визначених пользователем."
 
 #: litegram.filters.callback_data.CallbackData:5 of
 msgid ""
-"The class-keyword :code:`prefix` is required to define prefix and also the "
-"argument :code:`sep` can be passed to define separator (default is :code:`:`)."
+"The class-keyword :code:`prefix` is required to define prefix and also "
+"the argument :code:`sep` can be passed to define separator (default is "
+":code:`:`)."
 msgstr ""
-"Ключове слово класса :code:`prefix` потрибне для определения префикса, а также "
-"аргумент :code:`sep` можно передать для определения разделителя (за "
-"замовчуванням это :code:`:`)."
+"Ключове слово класса :code:`prefix` потрибне для определения префикса, а "
+"также аргумент :code:`sep` можно передать для определения разделителя (за"
+" замовчуванням это :code:`:`)."
+
+#: litegram.filters.callback_data.CallbackData:9 of
+msgid ""
+"Callback data is a positional string: there is no reliable way to "
+"distinguish an explicitly packed ``None`` from an empty string. An empty "
+"field unpacks to the field's default when one is defined, otherwise to "
+"``None`` — so ``MyCallback(value=None)`` on a field with ``value: int | "
+"None = 7`` round-trips as ``value=7``. Do not pack explicit ``None`` into"
+" fields that carry a non-empty default."
+msgstr ""
 
 #: litegram.filters.callback_data.CallbackData.pack:1 of
 msgid "Generate callback data string"
 msgstr "Генерування строку метки обратного вызова"
 
-#: litegram.filters.callback_data.CallbackData.filter
-#: litegram.filters.callback_data.CallbackData.pack
-#: litegram.filters.callback_data.CallbackData.unpack of
+#: ../../dispatcher/filters/callback_data.rst
 msgid "Returns"
 msgstr "Возвращает"
 
@@ -58,8 +66,7 @@ msgstr "дийсна митка обратного вызова для Telegram 
 msgid "Parse callback data string"
 msgstr "Анализ рядка метки обратного вызова"
 
-#: litegram.filters.callback_data.CallbackData.filter
-#: litegram.filters.callback_data.CallbackData.unpack of
+#: ../../dispatcher/filters/callback_data.rst
 msgid "Parameters"
 msgstr "Параметры"
 
@@ -83,89 +90,91 @@ msgstr "магичне правило"
 msgid "instance of filter"
 msgstr "экземпляр фильтру"
 
-#: ../../dispatcher/filters/callback_data.rst:11
+#: ../../dispatcher/filters/callback_data.rst:14
 msgid "Usage"
 msgstr "Использование"
 
-#: ../../dispatcher/filters/callback_data.rst:13
+#: ../../dispatcher/filters/callback_data.rst:16
 msgid "Create subclass of :code:`CallbackData`:"
 msgstr "Создания пидкласу :code:`CallbackData`:"
 
-#: ../../dispatcher/filters/callback_data.rst:21
+#: ../../dispatcher/filters/callback_data.rst:24
 msgid "After that you can generate any callback based on this class, for example:"
 msgstr ""
-"После этого вы можете создать будь-который зворотний виклик на основе этого "
-"класса, например:"
+"После этого вы можете создать будь-который зворотний виклик на основе "
+"этого класса, например:"
 
-#: ../../dispatcher/filters/callback_data.rst:29
+#: ../../dispatcher/filters/callback_data.rst:32
 msgid ""
 "So... Now you can use this class to generate any callbacks with defined "
 "structure"
 msgstr ""
-"Отже... Тепер вы можете использовать этот класс для создания будь-которых "
-"зворотних викликив из визначеною структурою"
+"Отже... Тепер вы можете использовать этот класс для создания будь-которых"
+" зворотних викликив из визначеною структурою"
 
-#: ../../dispatcher/filters/callback_data.rst:41
+#: ../../dispatcher/filters/callback_data.rst:44
 msgid "... and handle by specific rules"
 msgstr "... и обробляти за певними правилами"
 
-#: ../../dispatcher/filters/callback_data.rst:52
+#: ../../dispatcher/filters/callback_data.rst:55
 msgid "Also can be used in :doc:`Keyboard builder </utils/keyboard>`:"
 msgstr ""
 
-#: ../../dispatcher/filters/callback_data.rst:63
+#: ../../dispatcher/filters/callback_data.rst:66
 msgid "Another abstract example:"
 msgstr "Ещё один абстрактний пример:"
 
-#: ../../dispatcher/filters/callback_data.rst:101
+#: ../../dispatcher/filters/callback_data.rst:104
 msgid "Known limitations"
 msgstr "Викми обмеження"
 
-#: ../../dispatcher/filters/callback_data.rst:103
+#: ../../dispatcher/filters/callback_data.rst:106
 msgid "Allowed types and their subclasses:"
 msgstr "Дозволени типы и их пидкласи:"
 
-#: ../../dispatcher/filters/callback_data.rst:105
+#: ../../dispatcher/filters/callback_data.rst:108
 msgid ":code:`str`"
 msgstr ":code:`str`"
 
-#: ../../dispatcher/filters/callback_data.rst:106
+#: ../../dispatcher/filters/callback_data.rst:109
 msgid ":code:`int`"
 msgstr ":code:`int`"
 
-#: ../../dispatcher/filters/callback_data.rst:107
+#: ../../dispatcher/filters/callback_data.rst:110
 msgid ":code:`bool`"
 msgstr ":code:`bool`"
 
-#: ../../dispatcher/filters/callback_data.rst:108
+#: ../../dispatcher/filters/callback_data.rst:111
 msgid ":code:`float`"
 msgstr ":code:`float`"
 
-#: ../../dispatcher/filters/callback_data.rst:109
+#: ../../dispatcher/filters/callback_data.rst:112
 msgid ":code:`Decimal`  (:code:`from decimal import Decimal`)"
 msgstr ":code:`Decimal`  (:code:`from decimal import Decimal`)"
 
-#: ../../dispatcher/filters/callback_data.rst:110
+#: ../../dispatcher/filters/callback_data.rst:113
 msgid ":code:`Fraction`  (:code:`from fractions import Fraction`)"
 msgstr ":code:`Fraction`  (:code:`from fractions import Fraction`)"
 
-#: ../../dispatcher/filters/callback_data.rst:111
+#: ../../dispatcher/filters/callback_data.rst:114
 msgid ":code:`UUID` (:code:`from uuid import UUID`)"
 msgstr ":code:`UUID` (:code:`from uuid import UUID`)"
 
-#: ../../dispatcher/filters/callback_data.rst:112
+#: ../../dispatcher/filters/callback_data.rst:115
 msgid ":code:`Enum` (:code:`from enum import Enum`, only for string enums)"
 msgstr ":code:`Enum` (:code:`from enum import Enum`, только для переликив рядкив)"
 
-#: ../../dispatcher/filters/callback_data.rst:113
+#: ../../dispatcher/filters/callback_data.rst:116
 msgid ":code:`IntEnum` (:code:`from enum import IntEnum`, only for int enums)"
 msgstr ""
-":code:`IntEnum` (:code:`from enum import IntEnum`, только для переликив int)"
+":code:`IntEnum` (:code:`from enum import IntEnum`, только для переликив "
+"int)"
 
-#: ../../dispatcher/filters/callback_data.rst:118
+#: ../../dispatcher/filters/callback_data.rst:121
 msgid ""
-"Note that the integer Enum's should be always is subclasses of :code:`IntEnum` "
-"in due to parsing issues."
+"Note that the integer Enum's should be always is subclasses of "
+":code:`IntEnum` in due to parsing issues."
 msgstr ""
-"Заметьте, что целое число Enum всегда имеет быть пидкласом :code:`IntEnum` через "
-"проблеми с синтаксичним анализом."
+"Заметьте, что целое число Enum всегда имеет быть пидкласом "
+":code:`IntEnum` через проблеми с синтаксичним анализом."
+

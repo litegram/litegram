@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -44,8 +44,10 @@ msgstr ""
 #: litegram.types.unique_gift.UniqueGift.name:1 of
 msgid ""
 "Unique name of the gift. This name can be used in "
-":code:`https://t.me/nft/...` links and story areas"
+":code:`https://t.me/nft/...` links and story areas."
 msgstr ""
+"Уникальное имя подарка. Это имя можно использовать в ссылках "
+":code:`https://t.me/nft/...` и областях сторис."
 
 #: litegram.types.unique_gift.UniqueGift.number:1 of
 msgid ""
@@ -71,6 +73,14 @@ msgid ""
 "purchaseable by Telegram Premium subscribers"
 msgstr ""
 
+#: litegram.types.unique_gift.UniqueGift.is_burned:1 of
+msgid ""
+"*Optional*. :code:`True`, if the gift was used to craft another gift and "
+"isn't available anymore"
+msgstr ""
+"*Необязательно*. :code:`True`, если подарок был использован для создания "
+"другого подарка и больше недоступен"
+
 #: litegram.types.unique_gift.UniqueGift.is_from_blockchain:1 of
 msgid ""
 "*Optional*. :code:`True`, if the gift is assigned from the TON blockchain"
@@ -87,3 +97,11 @@ msgstr ""
 #: litegram.types.unique_gift.UniqueGift.publisher_chat:1 of
 msgid "*Optional*. Information about the chat that published the gift"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique name of the gift. This name"
+#~ " can be used in "
+#~ ":code:`https://t.me/nft/...` links and story "
+#~ "areas"
+#~ msgstr ""
+

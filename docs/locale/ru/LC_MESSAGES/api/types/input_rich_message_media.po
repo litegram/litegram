@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_rich_message_media.rst:3
+msgid "InputRichMessageMedia"
+msgstr "InputRichMessageMedia"
+
+#: litegram.types.input_rich_message_media.InputRichMessageMedia:1 of
+msgid "Describes a media element embedded in an outgoing rich message."
+msgstr ""
+"Описывает медиа-элемент, встроенный в исходящее форматированное (rich) "
+"сообщение."
+
+#: litegram.types.input_rich_message_media.InputRichMessageMedia:3 of
+msgid "Source: https://core.telegram.org/bots/api#inputrichmessagemedia"
+msgstr "Источник: https://core.telegram.org/bots/api#inputrichmessagemedia"
+
+#: litegram.types.input_rich_message_media.InputRichMessageMedia.id:1 of
+msgid ""
+"Unique identifier of the media used in a :code:`tg://photo?id=`, "
+":code:`tg://video?id=`, :code:`tg://document?id=`, or "
+":code:`tg://audio?id=` link. 1-64 characters, only :code:`A-Z`, "
+":code:`a-z`, :code:`0-9`, :code:`_` and :code:`-` are allowed."
+msgstr ""
+"Уникальный идентификатор медиа, используемый в ссылке "
+":code:`tg://photo?id=`, :code:`tg://video?id=`, :code:`tg://document?id=`"
+" или :code:`tg://audio?id=`. От 1 до 64 символов, допускаются только "
+":code:`A-Z`, :code:`a-z`, :code:`0-9`, :code:`_` и :code:`-`."
+
+#: litegram.types.input_rich_message_media.InputRichMessageMedia.media:1 of
+msgid ""
+"The media to be sent. Everything except the media itself and its "
+"properties is ignored."
+msgstr "Отправляемое медиа. Всё, кроме самого медиа и его свойств, игнорируется."
+

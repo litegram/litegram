@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,21 +48,21 @@ msgstr ""
 #: litegram.methods.edit_message_caption.EditMessageCaption.chat_id:1 of
 msgid ""
 "Required if *inline_message_id* is not specified. Unique identifier for "
-"the target chat or username of the target channel (in the format "
-":code:`@channelusername`)"
+"the target chat or username of the target bot, supergroup, or channel in "
+"the format :code:`@username`."
 msgstr ""
 
 #: litegram.methods.edit_message_caption.EditMessageCaption.message_id:1 of
 msgid ""
 "Required if *inline_message_id* is not specified. Identifier of the "
-"message to edit"
+"message to edit."
 msgstr ""
 
 #: litegram.methods.edit_message_caption.EditMessageCaption.inline_message_id:1
 #: of
 msgid ""
 "Required if *chat_id* and *message_id* are not specified. Identifier of "
-"the inline message"
+"the inline message."
 msgstr ""
 
 #: litegram.methods.edit_message_caption.EditMessageCaption.caption:1 of
@@ -86,14 +86,14 @@ msgstr ""
 #: litegram.methods.edit_message_caption.EditMessageCaption.show_caption_above_media:1
 #: of
 msgid ""
-"Pass :code:`True`, if the caption must be shown above the message media. "
+"Pass :code:`True` if the caption must be shown above the message media. "
 "Supported only for animation, photo and video messages."
 msgstr ""
 
 #: litegram.methods.edit_message_caption.EditMessageCaption.reply_markup:1 of
 msgid ""
 "A JSON-serialized object for an `inline keyboard "
-"<https://core.telegram.org/bots/features#inline-keyboards>`_."
+"<https://core.telegram.org/bots/features#inline-keyboards>`_"
 msgstr ""
 
 #: ../../api/methods/edit_message_caption.rst:15
@@ -137,3 +137,37 @@ msgstr ""
 #: ../../api/methods/edit_message_caption.rst:51
 msgid ":meth:`litegram.types.message.Message.edit_caption`"
 msgstr ""
+
+#~ msgid ""
+#~ "Required if *inline_message_id* is not "
+#~ "specified. Unique identifier for the "
+#~ "target chat or username of the "
+#~ "target channel (in the format "
+#~ ":code:`@channelusername`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Required if *inline_message_id* is not "
+#~ "specified. Identifier of the message to"
+#~ " edit"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Required if *chat_id* and *message_id* "
+#~ "are not specified. Identifier of the "
+#~ "inline message"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pass :code:`True`, if the caption must"
+#~ " be shown above the message media."
+#~ " Supported only for animation, photo "
+#~ "and video messages."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A JSON-serialized object for an "
+#~ "`inline keyboard <https://core.telegram.org/bots/features"
+#~ "#inline-keyboards>`_."
+#~ msgstr ""
+

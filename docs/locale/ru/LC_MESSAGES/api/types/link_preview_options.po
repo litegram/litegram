@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-08 02:28+0200\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/link_preview_options.rst:3
 msgid "LinkPreviewOptions"
@@ -31,19 +31,18 @@ msgstr ""
 msgid "Source: https://core.telegram.org/bots/api#linkpreviewoptions"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.link_preview_options.LinkPreviewOptions.is_disabled:1 of
 msgid "*Optional*. :code:`True`, if the link preview is disabled"
 msgstr ""
 
-#: ../../docstring litegram.types.link_preview_options.LinkPreviewOptions.url:1
-#: of
+#: litegram.types.link_preview_options.LinkPreviewOptions.url:1 of
 msgid ""
 "*Optional*. URL to use for the link preview. If empty, then the first URL"
-" found in the message text will be used"
+" found in the message text will be used."
 msgstr ""
+"*Необязательно*. URL для предпросмотра ссылки. Если пусто, будет "
+"использован первый URL, найденный в тексте сообщения."
 
-#: ../../docstring
 #: litegram.types.link_preview_options.LinkPreviewOptions.prefer_small_media:1
 #: of
 msgid ""
@@ -52,7 +51,6 @@ msgid ""
 "change isn't supported for the preview"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.link_preview_options.LinkPreviewOptions.prefer_large_media:1
 #: of
 msgid ""
@@ -61,10 +59,17 @@ msgid ""
 " change isn't supported for the preview"
 msgstr ""
 
-#: ../../docstring
 #: litegram.types.link_preview_options.LinkPreviewOptions.show_above_text:1 of
 msgid ""
 "*Optional*. :code:`True`, if the link preview must be shown above the "
 "message text; otherwise, the link preview will be shown below the message"
 " text"
 msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. URL to use for the "
+#~ "link preview. If empty, then the "
+#~ "first URL found in the message "
+#~ "text will be used"
+#~ msgstr ""
+

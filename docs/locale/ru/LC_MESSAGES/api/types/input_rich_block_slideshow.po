@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_rich_block_slideshow.rst:3
+msgid "InputRichBlockSlideshow"
+msgstr "InputRichBlockSlideshow"
+
+#: litegram.types.input_rich_block_slideshow.InputRichBlockSlideshow:1 of
+msgid "A slideshow, corresponding to the custom HTML tag :code:`<tg-slideshow>`."
+msgstr ""
+"Слайд-шоу; соответствует пользовательскому HTML-тегу :code:`<tg-"
+"slideshow>`."
+
+#: litegram.types.input_rich_block_slideshow.InputRichBlockSlideshow:3 of
+msgid "Source: https://core.telegram.org/bots/api#inputrichblockslideshow"
+msgstr "Источник: https://core.telegram.org/bots/api#inputrichblockslideshow"
+
+#: litegram.types.input_rich_block_slideshow.InputRichBlockSlideshow.type:1 of
+msgid "Type of the block, always 'slideshow'"
+msgstr "Тип блока, всегда 'slideshow'"
+
+#: litegram.types.input_rich_block_slideshow.InputRichBlockSlideshow.blocks:1
+#: of
+msgid "Elements of the slideshow"
+msgstr "Элементы слайд-шоу"
+
+#: litegram.types.input_rich_block_slideshow.InputRichBlockSlideshow.caption:1
+#: of
+msgid "*Optional*. Caption of the block"
+msgstr "*Необязательно*. Подпись блока"
+

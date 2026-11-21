@@ -35,6 +35,6 @@ All 31 new methods have offline wrapper coverage. This does not prove that every
 
 ## Docs and performance
 
-The English reference and Russian migration guide are supplemented by Russian translations for all 31 new method pages. The type reference and existing catalog are not fully translated.
+The English reference and the Russian migration guide are complete. Russian localization of the reference covers: the 31 new method pages, all 145 new type pages (973/973 entries), and 254 new 10.4 field entries across 97 existing type catalogs (1227 msgstr entries filled, no fuzzy flags left, RU build verified against the EN warning baseline). The pre-10.4 untranslated backlog in old type catalogs (1735 entries) remains by scope.
 
 Run `uv run python -B -m scripts.benchmark_runtime` from the repository root. A local CPython 3.13.15 / Pydantic 2.14.4 run measured **25.22 µs/update** (**39,658 updates/s**). This is the median of five repeated means for sequential `feed_raw_update` from a decoded dictionary, with one async handler and FSM/event logging disabled. It excludes HTTP, JSON parsing, Redis/Mongo, logging, concurrency and application work. Measure p95/p99 latency, memory, queue growth and shutdown under representative traffic before sizing a deployment.

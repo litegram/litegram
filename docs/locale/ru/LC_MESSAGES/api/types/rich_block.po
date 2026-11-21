@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/rich_block.rst:3
+msgid "RichBlock"
+msgstr "RichBlock"
+
+#: litegram.types.rich_block.RichBlock:1 of
+msgid ""
+"This object represents a block in a rich formatted message. Currently, it"
+" can be any of the following types:"
+msgstr ""
+"Этот объект представляет блок в форматированном (rich) сообщении. Сейчас "
+"он может быть любого из следующих типов:"
+
+#: litegram.types.rich_block.RichBlock:3 of
+msgid ":class:`litegram.types.rich_block_paragraph.RichBlockParagraph`"
+msgstr ":class:`litegram.types.rich_block_paragraph.RichBlockParagraph`"
+
+#: litegram.types.rich_block.RichBlock:4 of
+msgid ":class:`litegram.types.rich_block_section_heading.RichBlockSectionHeading`"
+msgstr ":class:`litegram.types.rich_block_section_heading.RichBlockSectionHeading`"
+
+#: litegram.types.rich_block.RichBlock:5 of
+msgid ":class:`litegram.types.rich_block_preformatted.RichBlockPreformatted`"
+msgstr ":class:`litegram.types.rich_block_preformatted.RichBlockPreformatted`"
+
+#: litegram.types.rich_block.RichBlock:6 of
+msgid ":class:`litegram.types.rich_block_footer.RichBlockFooter`"
+msgstr ":class:`litegram.types.rich_block_footer.RichBlockFooter`"
+
+#: litegram.types.rich_block.RichBlock:7 of
+msgid ":class:`litegram.types.rich_block_divider.RichBlockDivider`"
+msgstr ":class:`litegram.types.rich_block_divider.RichBlockDivider`"
+
+#: litegram.types.rich_block.RichBlock:8 of
+msgid ":class:`litegram.types.rich_block_mathematical_expression.RichBlockMathematicalExpression`"
+msgstr ":class:`litegram.types.rich_block_mathematical_expression.RichBlockMathematicalExpression`"
+
+#: litegram.types.rich_block.RichBlock:9 of
+msgid ":class:`litegram.types.rich_block_anchor.RichBlockAnchor`"
+msgstr ":class:`litegram.types.rich_block_anchor.RichBlockAnchor`"
+
+#: litegram.types.rich_block.RichBlock:10 of
+msgid ":class:`litegram.types.rich_block_list.RichBlockList`"
+msgstr ":class:`litegram.types.rich_block_list.RichBlockList`"
+
+#: litegram.types.rich_block.RichBlock:11 of
+msgid ":class:`litegram.types.rich_block_block_quotation.RichBlockBlockQuotation`"
+msgstr ":class:`litegram.types.rich_block_block_quotation.RichBlockBlockQuotation`"
+
+#: litegram.types.rich_block.RichBlock:12 of
+msgid ":class:`litegram.types.rich_block_expandable_block_quotation.RichBlockExpandableBlockQuotation`"
+msgstr ":class:`litegram.types.rich_block_expandable_block_quotation.RichBlockExpandableBlockQuotation`"
+
+#: litegram.types.rich_block.RichBlock:13 of
+msgid ":class:`litegram.types.rich_block_pull_quotation.RichBlockPullQuotation`"
+msgstr ":class:`litegram.types.rich_block_pull_quotation.RichBlockPullQuotation`"
+
+#: litegram.types.rich_block.RichBlock:14 of
+msgid ":class:`litegram.types.rich_block_collage.RichBlockCollage`"
+msgstr ":class:`litegram.types.rich_block_collage.RichBlockCollage`"
+
+#: litegram.types.rich_block.RichBlock:15 of
+msgid ":class:`litegram.types.rich_block_slideshow.RichBlockSlideshow`"
+msgstr ":class:`litegram.types.rich_block_slideshow.RichBlockSlideshow`"
+
+#: litegram.types.rich_block.RichBlock:16 of
+msgid ":class:`litegram.types.rich_block_table.RichBlockTable`"
+msgstr ":class:`litegram.types.rich_block_table.RichBlockTable`"
+
+#: litegram.types.rich_block.RichBlock:17 of
+msgid ":class:`litegram.types.rich_block_details.RichBlockDetails`"
+msgstr ":class:`litegram.types.rich_block_details.RichBlockDetails`"
+
+#: litegram.types.rich_block.RichBlock:18 of
+msgid ":class:`litegram.types.rich_block_map.RichBlockMap`"
+msgstr ":class:`litegram.types.rich_block_map.RichBlockMap`"
+
+#: litegram.types.rich_block.RichBlock:19 of
+msgid ":class:`litegram.types.rich_block_buttons.RichBlockButtons`"
+msgstr ":class:`litegram.types.rich_block_buttons.RichBlockButtons`"
+
+#: litegram.types.rich_block.RichBlock:20 of
+msgid ":class:`litegram.types.rich_block_animation.RichBlockAnimation`"
+msgstr ":class:`litegram.types.rich_block_animation.RichBlockAnimation`"
+
+#: litegram.types.rich_block.RichBlock:21 of
+msgid ":class:`litegram.types.rich_block_audio.RichBlockAudio`"
+msgstr ":class:`litegram.types.rich_block_audio.RichBlockAudio`"
+
+#: litegram.types.rich_block.RichBlock:22 of
+msgid ":class:`litegram.types.rich_block_document.RichBlockDocument`"
+msgstr ":class:`litegram.types.rich_block_document.RichBlockDocument`"
+
+#: litegram.types.rich_block.RichBlock:23 of
+msgid ":class:`litegram.types.rich_block_photo.RichBlockPhoto`"
+msgstr ":class:`litegram.types.rich_block_photo.RichBlockPhoto`"
+
+#: litegram.types.rich_block.RichBlock:24 of
+msgid ":class:`litegram.types.rich_block_video.RichBlockVideo`"
+msgstr ":class:`litegram.types.rich_block_video.RichBlockVideo`"
+
+#: litegram.types.rich_block.RichBlock:25 of
+msgid ":class:`litegram.types.rich_block_voice_note.RichBlockVoiceNote`"
+msgstr ":class:`litegram.types.rich_block_voice_note.RichBlockVoiceNote`"
+
+#: litegram.types.rich_block.RichBlock:26 of
+msgid ":class:`litegram.types.rich_block_thinking.RichBlockThinking`"
+msgstr ":class:`litegram.types.rich_block_thinking.RichBlockThinking`"
+
+#: litegram.types.rich_block.RichBlock:28 of
+msgid "Source: https://core.telegram.org/bots/api#richblock"
+msgstr "Источник: https://core.telegram.org/bots/api#richblock"
+

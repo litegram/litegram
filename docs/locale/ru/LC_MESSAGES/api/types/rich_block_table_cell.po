@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/rich_block_table_cell.rst:3
+msgid "RichBlockTableCell"
+msgstr "RichBlockTableCell"
+
+#: litegram.types.rich_block_table_cell.RichBlockTableCell:1 of
+msgid "Cell in a table."
+msgstr "Ячейка таблицы."
+
+#: litegram.types.rich_block_table_cell.RichBlockTableCell:3 of
+msgid "Source: https://core.telegram.org/bots/api#richblocktablecell"
+msgstr "Источник: https://core.telegram.org/bots/api#richblocktablecell"
+
+#: litegram.types.rich_block_table_cell.RichBlockTableCell.text:1 of
+msgid "*Optional*. Text in the cell. If omitted, then the cell is invisible."
+msgstr "*Необязательно*. Текст в ячейке. Если не задан, ячейка невидима."
+
+#: litegram.types.rich_block_table_cell.RichBlockTableCell.is_header:1 of
+msgid "*Optional*. :code:`True`, if the cell is a header cell"
+msgstr "*Необязательно*. :code:`True`, если ячейка является заголовочной"
+
+#: litegram.types.rich_block_table_cell.RichBlockTableCell.colspan:1 of
+msgid "*Optional*. The number of columns the cell spans if it is bigger than 1"
+msgstr ""
+"*Необязательно*. Количество столбцов, занимаемых ячейкой, если оно больше"
+" 1"
+
+#: litegram.types.rich_block_table_cell.RichBlockTableCell.rowspan:1 of
+msgid "*Optional*. The number of rows the cell spans if it is bigger than 1"
+msgstr "*Необязательно*. Количество строк, занимаемых ячейкой, если оно больше 1"
+
+#: litegram.types.rich_block_table_cell.RichBlockTableCell.align:1 of
+msgid ""
+"Horizontal cell content alignment. Currently, must be one of 'left', "
+"'center', or 'right'."
+msgstr ""
+"Горизонтальное выравнивание содержимого ячейки. Допустимые значения: "
+"'left', 'center' или 'right'."
+
+#: litegram.types.rich_block_table_cell.RichBlockTableCell.valign:1 of
+msgid ""
+"Vertical cell content alignment. Currently, must be one of 'top', "
+"'middle', or 'bottom'."
+msgstr ""
+"Вертикальное выравнивание содержимого ячейки. Допустимые значения: 'top',"
+" 'middle' или 'bottom'."
+

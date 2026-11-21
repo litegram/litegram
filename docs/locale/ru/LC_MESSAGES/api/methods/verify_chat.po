@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -40,9 +40,9 @@ msgstr ""
 
 #: litegram.methods.verify_chat.VerifyChat.chat_id:1 of
 msgid ""
-"Unique identifier for the target chat or username of the target channel "
-"(in the format :code:`@channelusername`). Channel direct messages chats "
-"can't be verified."
+"Unique identifier for the target chat or username of the target bot, "
+"supergroup, or channel in the format :code:`@username`. Channel direct "
+"messages chats can't be verified."
 msgstr ""
 
 #: litegram.methods.verify_chat.VerifyChat.custom_description:1 of
@@ -50,6 +50,20 @@ msgid ""
 "Custom description for the verification; 0-70 characters. Must be empty "
 "if the organization isn't allowed to provide a custom verification "
 "description."
+msgstr ""
+
+#: litegram.methods.verify_chat.VerifyChat.custom_description_parse_mode:1 of
+msgid ""
+"Mode for parsing entities in the custom description. See `formatting "
+"options <https://core.telegram.org/bots/api#formatting-options>`_ for "
+"more details. Only 'text_link' entities are supported."
+msgstr ""
+
+#: litegram.methods.verify_chat.VerifyChat.custom_description_entities:1 of
+msgid ""
+"A JSON-serialized list of special entities that appear in the custom "
+"description, which can be specified instead of "
+"*custom_description_parse_mode*. Only 'text_link' entities are supported."
 msgstr ""
 
 #: ../../api/methods/verify_chat.rst:15
@@ -83,3 +97,12 @@ msgstr ""
 #: ../../api/methods/verify_chat.rst:41
 msgid "As reply into Webhook in handler"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target channel"
+#~ " (in the format :code:`@channelusername`). "
+#~ "Channel direct messages chats can't be"
+#~ " verified."
+#~ msgstr ""
+

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -184,9 +184,12 @@ msgstr ""
 #: litegram.types.chat_full_info.ChatFullInfo.has_private_forwards:1 of
 msgid ""
 "*Optional*. :code:`True`, if privacy settings of the other party in the "
-"private chat allows to use :code:`tg://user?id=<user_id>` links only in "
-"chats with the user"
+"private chat allows to use :code:`tg://user?id=` links only in chats with"
+" the user"
 msgstr ""
+"*Необязательно*. :code:`True`, если настройки конфиденциальности "
+"собеседника в личном чате разрешают использовать ссылки "
+":code:`tg://user?id=` только в чатах с ним"
 
 #: litegram.types.chat_full_info.ChatFullInfo.has_restricted_voice_and_video_messages:1
 #: of
@@ -318,9 +321,53 @@ msgstr ""
 
 #: litegram.types.chat_full_info.ChatFullInfo.paid_message_star_count:1 of
 msgid ""
-"*Optional*. The number of Telegram Stars a general user have to pay to "
+"*Optional*. The number of Telegram Stars a general user has to pay to "
 "send a message to the chat"
 msgstr ""
+"*Необязательно*. Количество звёзд Telegram, которое должен заплатить "
+"обычный пользователь за отправку сообщения в чат"
+
+#: litegram.types.chat_full_info.ChatFullInfo.first_profile_audio:1 of
+msgid ""
+"*Optional*. For private chats, the first audio added to the profile of "
+"the user"
+msgstr ""
+"*Необязательно*. Для личных чатов — первая аудиозапись, добавленная в "
+"профиль пользователя"
+
+#: litegram.types.chat_full_info.ChatFullInfo.guard_bot:1 of
+msgid ""
+"*Optional*. The bot that processes join request queries in the chat. The "
+"field is only available to chat administrators."
+msgstr ""
+"*Необязательно*. Бот, обрабатывающий запросы на вступление в чат. Поле "
+"доступно только администраторам чата."
+
+#: litegram.types.chat_full_info.ChatFullInfo.community:1 of
+msgid ""
+"*Optional*. The :class:`litegram.types.community.Community` to which the "
+"chat belongs"
+msgstr ""
+"*Необязательно*. :class:`litegram.types.community.Community`, к которой "
+"принадлежит чат"
+
+#: litegram.types.chat_full_info.ChatFullInfo.ton_wallet_card:1 of
+msgid ""
+"*Optional*. For private chats, the TON wallet card of the user, which is "
+"shown on their profile page"
+msgstr ""
+"*Необязательно*. Для личных чатов — карточка TON-кошелька пользователя, "
+"отображаемая на его странице профиля"
+
+#: litegram.types.chat_full_info.ChatFullInfo.share_theme:1 of
+msgid ""
+"*Optional*. For private chats, supergroups and channels, the theme of the"
+" screen for sharing a link to the user or the chat; omitted if the "
+"default theme is used"
+msgstr ""
+"*Необязательно*. Для личных чатов, супергрупп и каналов — тема экрана "
+"отправки ссылки на пользователя или чат; отсутствует, если используется "
+"тема по умолчанию"
 
 #: litegram.types.chat_full_info.ChatFullInfo.can_send_gift:1 of
 msgid "*Optional*. :code:`True`, if gifts can be sent to the chat"
@@ -329,3 +376,18 @@ msgstr ""
 #: litegram.types.chat_full_info.ChatFullInfo.can_send_gift:3 of
 msgid "https://core.telegram.org/bots/api-changelog#april-11-2025"
 msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. :code:`True`, if privacy settings"
+#~ " of the other party in the "
+#~ "private chat allows to use "
+#~ ":code:`tg://user?id=<user_id>` links only in "
+#~ "chats with the user"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "*Optional*. The number of Telegram Stars"
+#~ " a general user have to pay to"
+#~ " send a message to the chat"
+#~ msgstr ""
+

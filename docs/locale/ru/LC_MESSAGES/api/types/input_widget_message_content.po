@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_widget_message_content.rst:3
+msgid "InputWidgetMessageContent"
+msgstr "InputWidgetMessageContent"
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent:1 of
+msgid ""
+"Represents the `content "
+"<https://core.telegram.org/bots/api#inputmessagecontent>`_ of a message "
+"with an `HTML widget <https://core.telegram.org/bots/widgets>`_ to be "
+"sent as the result of an inline query. Currently, widgets can't be sent "
+"in response to inline queries in the production environment."
+msgstr ""
+"Представляет `содержимое "
+"<https://core.telegram.org/bots/api#inputmessagecontent>`_ сообщения с "
+"`HTML-виджетом <https://core.telegram.org/bots/widgets>`_, отправляемого "
+"как результат inline-запроса. Сейчас виджеты нельзя отправлять в ответ на"
+" inline-запросы в рабочем окружении."
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent:3 of
+msgid "Source: https://core.telegram.org/bots/api#inputwidgetmessagecontent"
+msgstr "Источник: https://core.telegram.org/bots/api#inputwidgetmessagecontent"
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.html:1
+#: of
+msgid ""
+"HTML code of the widget, 1-32768 bytes. The code must not exceed 4096 "
+"bytes when compressed by zlib with the maximum compression level."
+msgstr ""
+"HTML-код виджета, от 1 до 32768 байт. В сжатом виде (zlib с максимальным "
+"уровнем сжатия) код не должен превышать 4096 байт."
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.width:1
+#: of
+msgid ""
+"*Optional*. Width of the widget in logical pixels; omit if the widget "
+"must occupy the whole width of the message bubble. The width is clamped "
+"by the app to the range from 200 to the maximum width of the message "
+"bubble."
+msgstr ""
+"*Необязательно*. Ширина виджета в логических пикселях; не задавайте, если"
+" виджет должен занимать всю ширину «пузыря» сообщения. Приложение "
+"ограничивает ширину диапазоном от 200 до максимальной ширины «пузыря» "
+"сообщения."
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.height:1
+#: of
+msgid ""
+"*Optional*. Height of the widget in logical pixels; omit if the height of"
+" the widget isn't fixed. The height is clamped by the app to the range "
+"50-600."
+msgstr ""
+"*Необязательно*. Высота виджета в логических пикселях; не задавайте, если"
+" высота виджета не фиксирована. Приложение ограничивает высоту диапазоном"
+" 50–600."
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.public_data:1
+#: of
+msgid ""
+"*Optional*. Public data of the widget, 0-1024 bytes, which will be "
+"available wherever the widget is shown. If the widget is shared, then all"
+" messages with it will have the same public data."
+msgstr ""
+"*Необязательно*. Публичные данные виджета, от 0 до 1024 байт, доступные "
+"везде, где виджет отображается. Если виджет переиспользуемый, все "
+"сообщения с ним будут иметь одинаковые публичные данные."
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.chat_data:1
+#: of
+msgid ""
+"*Optional*. Data of the widget, which is specific to the message, 0-1024 "
+"bytes"
+msgstr ""
+"*Необязательно*. Данные виджета для конкретного сообщения, от 0 до 1024 "
+"байт"
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.caption:1
+#: of
+msgid "*Optional*. Widget caption, 0-1024 characters after entities parsing"
+msgstr ""
+"*Необязательно*. Подпись виджета, от 0 до 1024 символов после разбора "
+"сущностей"
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.parse_mode:1
+#: of
+msgid ""
+"*Optional*. Mode for parsing entities in the widget caption. See "
+"`formatting options <https://core.telegram.org/bots/api#formatting-"
+"options>`_ for more details."
+msgstr ""
+"*Необязательно*. Режим разбора сущностей в подписи виджета. Подробнее см."
+" `варианты форматирования <https://core.telegram.org/bots/api#formatting-"
+"options>`_."
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.caption_entities:1
+#: of
+msgid ""
+"*Optional*. List of special entities that appear in the caption, which "
+"can be specified instead of *parse_mode*"
+msgstr ""
+"*Необязательно*. Список специальных сущностей в подписи; можно передать "
+"вместо *parse_mode*"
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.show_caption_above_media:1
+#: of
+msgid ""
+"*Optional*. Pass :code:`True` if the caption must be shown above the "
+"widget"
+msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы показать подпись над "
+"виджетом"
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.allow_queries:1
+#: of
+msgid ""
+"*Optional*. Pass :code:`True` to allow the widget to send queries to the "
+"bot"
+msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы разрешить виджету "
+"отправлять запросы боту"
+
+#: litegram.types.input_widget_message_content.InputWidgetMessageContent.is_shared:1
+#: of
+msgid ""
+"*Optional*. Pass :code:`True` to create a shared widget. Each message "
+"sent from the result creates a separate shared widget, whose identifier "
+"is received by the bot only in the field *widget_id* of queries from the "
+"widget. To send an existing shared widget in response to an inline query,"
+" use "
+":class:`litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent`"
+" instead."
+msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы создать переиспользуемый "
+"виджет. Каждое сообщение, отправленное из результата, создаёт отдельный "
+"переиспользуемый виджет, идентификатор которого бот получает только в "
+"поле *widget_id* запросов от виджета. Чтобы отправить существующий "
+"переиспользуемый виджет в ответ на inline-запрос, используйте вместо "
+"этого "
+":class:`litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent`."
+

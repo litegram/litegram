@@ -1,0 +1,341 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api_10_4_ru.rst:4
+msgid "Telegram Bot API 10.4: новые возможности и переход с 9.3"
+msgstr ""
+
+#: ../../api_10_4_ru.rst:6
+msgid ""
+"В litegram 1.1.0 появились возможности Telegram Bot API с 9.4 по 10.4. "
+"Это руководство объясняет, когда использовать новые методы и что "
+"проверить в коде, написанном для 9.3. Имена методов в Python записаны в "
+"``snake_case``; заголовки страниц справочника используют имена Telegram в"
+" ``camelCase``. Полный перечень изменений Telegram приведён в "
+"`официальном журнале Bot API <https://core.telegram.org/bots/api-"
+"changelog>`_."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:14
+msgid "Форматированные сообщения (rich messages)"
+msgstr ""
+
+#: ../../api_10_4_ru.rst:16
+msgid ""
+"Простой текст с выделениями и ссылками по-прежнему можно отправлять через"
+" :doc:`api/methods/send_message` с ``parse_mode`` или ``entities``. Для "
+"сообщения с отдельными блоками (например, таблицей, списком, цитатой или "
+"галереей) используйте :doc:`api/methods/send_rich_message` и "
+":doc:`api/types/input_rich_message`. Выберите способ описания "
+"содержимого: ``blocks`` для структурированных объектов, ``html`` для HTML"
+" или ``markdown`` для Markdown. У rich-сообщений свои `правила разметки "
+"<https://core.telegram.org/bots/api#rich-message-formatting-options>`_; "
+"не переносите в них старый ``parse_mode`` без проверки. Для медиа по "
+"ссылкам ``tg://…?id=`` в HTML или Markdown передайте соответствующие "
+"объекты в ``media``; боту нужны права на отправку соответствующих типов "
+"медиа в чат."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:37
+msgid ""
+"Исходящие блоки описываются типами ``InputRichBlock*``. Во входящем "
+"сообщении читайте ``Message.rich_message`` (тип "
+":doc:`api/types/rich_message`) и блоки ``RichBlock*``; не ожидайте, что "
+"это содержимое придёт в ``Message.text``. Внутри блока форматированный "
+"текст может быть строкой, списком фрагментов или объектом ``RichText*``. "
+"Для редактирования уже отправленного сообщения передайте ``rich_message``"
+" вместо ``text`` в :doc:`api/methods/edit_message_text`. Для результатов "
+"inline-запроса есть :doc:`api/types/input_rich_message_content`; он "
+"допускает только ранее загруженные файлы."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:46
+msgid ""
+":doc:`api/methods/send_rich_message_draft` показывает пользователю "
+"временный предпросмотр на 30 секунд, а не сохраняет сообщение. "
+"Используйте один и тот же ненулевой ``draft_id`` для кадров одного "
+"черновика. Если пользователь может остановить генерацию "
+"(``can_stop=True``), Telegram присылает обновление "
+"``stopped_message_generation``. Для сохранения законченного текста "
+"вызовите ``send_rich_message`` с полным содержимым."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:54
+msgid "HTML-виджеты"
+msgstr ""
+
+#: ../../api_10_4_ru.rst:56
+msgid ""
+":doc:`api/methods/send_widget` создаёт сообщение с HTML-виджетом. По "
+"правилам Bot API в продакшене сейчас отправка доступна только в личные "
+"чаты; отправленные виджеты автоматически защищены от пересылки. С "
+"``is_shared=True`` бот может переиспользовать виджет через "
+":doc:`api/methods/send_shared_widget`, передав ``widget_id`` из "
+"``Message.widget.id``. Для inline-результатов есть "
+":doc:`api/types/input_widget_message_content` и "
+":doc:`api/types/input_shared_widget_message_content`."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:64
+msgid ""
+"``public_data`` видны везде, где отображается виджет, и общие для всех "
+"сообщений с одним переиспользуемым виджетом. ``chat_data`` относятся к "
+"конкретному сообщению. Не передавайте в этих полях секреты."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:67
+msgid ""
+"Включите ``allow_queries``, чтобы виджет мог отправлять запросы. Telegram"
+" различает ``widget_query`` (из конкретного сообщения, в том числе "
+"inline) и ``shared_widget_query`` (из пересланного сообщения с общим "
+"виджетом). :doc:`api/methods/answer_widget_query` принимает ``query.id``;"
+" ответ нужно отправить в течение 15 секунд. Он приходит только "
+"отправившему запрос виджету и не меняет его данные."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:73
+msgid ""
+"Для изменения данных сообщения используйте "
+":doc:`api/methods/edit_message_widget_data` с парой ``chat_id`` и "
+"``message_id`` либо с ``inline_message_id``. Для общих данных по "
+"``widget_id`` используйте :doc:`api/methods/edit_shared_widget_data`. "
+"Общие данные одного виджета можно менять не чаще раза в секунду."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:80
+msgid "Эфемерные сообщения и гостевой режим"
+msgstr ""
+
+#: ../../api_10_4_ru.rst:82
+msgid ""
+"Эфемерное сообщение видно только указанному получателю, а его доставка не"
+" гарантирована, особенно если пользователь не в сети. Передайте "
+":doc:`api/types/ephemeral_message_parameters` в "
+"``ephemeral_message_parameters`` поддерживающего этот параметр метода "
+"отправки. В обычном случае укажите ``receiver_user_id``; для ответа на "
+"нажатие кнопки можно передать ``callback_query_id`` без получателя, тогда"
+" ``chat_id`` игнорируется. Отдельный вызов "
+":doc:`api/methods/answer_callback_query` всё равно нужен."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:90
+msgid ""
+"Не подменяйте ``ephemeral_message_id`` обычным ``message_id``: "
+"идентификатор может быть использован повторно после удаления или "
+"истечения срока сообщения. Для правки и удаления передавайте ``chat_id``,"
+" ``receiver_user_id`` и ``ephemeral_message_id`` в специализированные "
+"методы: :doc:`api/methods/edit_ephemeral_message_text`, "
+":doc:`api/methods/edit_ephemeral_message_caption`, "
+":doc:`api/methods/edit_ephemeral_message_media`, "
+":doc:`api/methods/edit_ephemeral_message_reply_markup`, "
+":doc:`api/methods/delete_ephemeral_message`. Успех вызова не гарантирует "
+"доставку самого изменения. Ответ на эфемерное сообщение тоже должен быть "
+"эфемерным: используйте ``ReplyParameters(ephemeral_message_id=...)`` в "
+"течение 15 секунд. Эфемерный предпросмотр черновика rich-сообщения — "
+"отдельный сценарий."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:103
+msgid ""
+"``guest_message`` — отдельное обновление типа ``Message``, а не обычное "
+"``message``. Чтобы ответить в гостевом режиме, передайте "
+"``Message.guest_query_id`` и результат типа ``InlineQueryResult`` в "
+":doc:`api/methods/answer_guest_query`; метод возвращает "
+"``SentGuestMessage``. Не используйте один только ``chat.id``, чтобы "
+"отождествить гостевой чат с уже известным боту чатом."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:111
+msgid "Управляемые боты и заявки на вступление"
+msgstr ""
+
+#: ../../api_10_4_ru.rst:113
+msgid ""
+"Управляемого бота можно запросить у пользователя кнопкой "
+"``KeyboardButton.request_managed_bot`` (тип "
+":doc:`api/types/keyboard_button_request_managed_bot`). Telegram сообщает "
+"о создании бота или смене токена либо владельца обновлением "
+"``managed_bot`` (тип ``ManagedBotUpdated``). Для методов управления "
+"берите ``event.bot_user.id``, а не ``event.user.id``. Первый — "
+"идентификатор бота, второй — пользователя, создавшего его."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:120
+msgid ""
+":doc:`api/methods/get_managed_bot_token` возвращает текущий токен; "
+":doc:`api/methods/replace_managed_bot_token` отзывает его и выдаёт новый."
+" Храните токены отдельно от журналов и обновляйте потребителей при "
+"ротации. Для чтения и настройки списка доступа используйте "
+":doc:`api/methods/get_managed_bot_access_settings` и "
+":doc:`api/methods/set_managed_bot_access_settings`. Владелец всегда "
+"сохраняет доступ; при ограничении можно добавить до 10 пользователей."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:127
+msgid ""
+"Заявки на вступление по-прежнему приходят как ``chat_join_request``. Если"
+" есть ``ChatJoinRequest.query_id``, бот назначен обрабатывать такие "
+"запросы: в течение 10 секунд вызовите "
+":doc:`api/methods/answer_chat_join_request_query` с ``approve``, "
+"``decline`` или ``queue`` (передать решение другим администраторам) либо "
+"покажите Mini App через :doc:`api/methods/send_chat_join_request_web_app`"
+" и затем завершите запрос через ``answer_chat_join_request_query``. Если "
+"``query_id`` нет, для обычной модерации используйте прежние "
+"``approve_chat_join_request`` и ``decline_chat_join_request`` с "
+"идентификаторами чата и пользователя."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:138
+msgid "Опросы и викторины"
+msgstr ""
+
+#: ../../api_10_4_ru.rst:140
+msgid ""
+":doc:`api/methods/send_poll` принимает описание и медиа опроса, медиа "
+"вариантов и пояснения, перемешивание вариантов (``shuffle_options``), "
+"переголосование (``allows_revoting``), добавление вариантов участниками "
+"(``allow_adding_options``), скрытие результатов до закрытия "
+"(``hide_results_until_closes``) и ограничения голосования по участию в "
+"чате или стране (``members_only``, ``country_codes``). Доступность "
+"настроек зависит от типа опроса; см. ограничения в справочнике."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:147
+msgid ""
+"У викторин ``correct_option_id`` заменён на ``correct_option_ids`` как в "
+"``send_poll``, так и в ответе ``Poll``. Для одного правильного ответа "
+"вместо ``correct_option_id=0`` передайте ``correct_option_ids=[0]``. Это "
+"индексы с нуля, не постоянные идентификаторы. Для сопоставления вариантов"
+" между обновлениями храните ``PollOption.persistent_id`` и читайте "
+"``PollAnswer.option_persistent_ids``; ``PollAnswer.option_ids`` остаётся "
+"списком индексов. Добавление и удаление вариантов могут приходить как "
+"служебные сообщения ``poll_option_added`` и ``poll_option_deleted``, а не"
+" как отдельные типы ``Update``."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:157
+msgid "Другие новые возможности"
+msgstr ""
+
+#: ../../api_10_4_ru.rst:159
+msgid ""
+"**Медиа и профиль.** :doc:`api/methods/send_live_photo` требует и "
+"видеоклип (``live_photo``), и статичное фото (``photo``); используйте "
+"``file_id`` или загрузку файла, не URL. Видео — не более 10 секунд и 10 "
+"МБ. Для других сценариев есть ``InputMediaLivePhoto`` и "
+"``InputPaidMediaLivePhoto``. См. также методы "
+":doc:`api/methods/set_my_profile_photo`, "
+":doc:`api/methods/remove_my_profile_photo`, "
+":doc:`api/methods/get_user_profile_audios` и "
+":doc:`api/methods/get_user_personal_chat_messages`."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:166
+msgid ""
+"**Модерация и сообщества.** :doc:`api/methods/set_chat_member_tag` меняет"
+" тег обычного участника группы или супергруппы. Метод "
+":doc:`api/methods/delete_message_reaction` удаляет реакцию указанного "
+"пользователя или чата с одного сообщения, а "
+":doc:`api/methods/delete_all_message_reactions` — до 10 000 их недавних "
+"реакций в группе или супергруппе. События смены владельца и изменения "
+"состава сообщества представлены полями служебных ``Message`` "
+"(``chat_owner_changed``, ``chat_owner_left``, ``community_chat_added``, "
+"``community_chat_joined``, ``community_chat_removed``)."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:175
+msgid ""
+"**Кнопки и Mini Apps.** Кнопки поддерживают ``style`` и "
+"``icon_custom_emoji_id``; у inline-кнопки есть ``disabled``. Метод "
+":doc:`api/methods/save_prepared_keyboard_button` сохраняет кнопку для "
+"использования в Mini App."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:179
+msgid ""
+"**Подарки, оформление и TON.** См. :doc:`api/methods/get_unique_gift`, "
+":doc:`api/methods/delete_business_account_gift` и "
+":doc:`api/methods/get_chat_share_theme_backdrops`. Карточка кошелька "
+":doc:`api/types/ton_wallet_card` доступна в "
+"``ChatFullInfo.ton_wallet_card``; ``amount`` — десятичная строка в "
+"минимальных единицах валюты. Перевод TON приходит как "
+"``Message.ton_wallet_transfer``, а изменение подписки бота — как "
+"обновление ``subscription``."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:188
+msgid "Что проверить при обновлении"
+msgstr ""
+
+#: ../../api_10_4_ru.rst:190
+msgid ""
+"**Покупка платного медиа.** Замените ``Update.paid_media_purchased`` на "
+"``Update.purchased_paid_media``. Используйте ``purchased_paid_media`` в "
+"обработчиках, в явно заданном ``allowed_updates`` и в тестовых JSON: это "
+"имя поля в данных Telegram. Класс события по-прежнему называется "
+"``PaidMediaPurchased``."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:195
+msgid ""
+"**Получение обновлений.** Если задаёте ``allowed_updates`` у polling или "
+"webhook вручную, добавьте только нужные новые типы: ``guest_message``, "
+"``widget_query``, ``shared_widget_query``, ``managed_bot``, "
+"``subscription``, ``stopped_message_generation``. Поля служебных "
+"``Message`` и ``query_id`` заявки не добавляются в список как отдельные "
+"обновления. Для каждого из шести новых типов можно зарегистрировать "
+"одноимённый обработчик на ``Router``."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:201
+msgid ""
+"**Викторины и тестовые данные.** Перенесите код на ``correct_option_ids``"
+" и обновите сохранённые JSON и вручную собранные модели. У ``Poll`` "
+"теперь обязательны поля ``allows_revoting`` и ``members_only``, у "
+"``PollOption`` — ``persistent_id``, у ``PollAnswer`` — "
+"``option_persistent_ids``."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:205
+msgid ""
+"**Отправка и правка сообщений.** Если ваш код проверял, что ``chat_id`` "
+"при отправке всегда обязателен, учтите исключение для эфемерного ответа "
+"на callback. Если ваша обёртка над ``edit_message_text`` требовала "
+"строку, разрешите ``rich_message`` как альтернативу. При создании "
+"``ReplyParameters`` по-прежнему указывайте ``message_id`` для обычного "
+"ответа; для эфемерного ответа вместо него нужен ``ephemeral_message_id``."
+" Вместо удалённого ``disable_web_page_preview=True`` в ``send_message`` и"
+" ``edit_message_text`` передавайте "
+"``link_preview_options=LinkPreviewOptions(is_disabled=True)``."
+msgstr ""
+
+#: ../../api_10_4_ru.rst:213
+msgid ""
+"**Передача сведений о пользователях, области историй и права.** Вместо "
+"удалённого ``UsersShared.user_ids`` извлекайте ``user_id`` из каждого "
+"элемента ``UsersShared.users``. Для ``StoryArea.position`` используйте "
+"``AreaPosition`` вместо ``StoryAreaPosition``. При ручном создании "
+"моделей прав и тестовых данных учитывайте новые обязательные поля: "
+"``can_send_welcome_messages`` в ``ChatAdministratorRights`` и "
+"``ChatMemberAdministrator``, ``can_react_to_messages`` и ``can_edit_tag``"
+" в ``ChatMemberRestricted``."
+msgstr ""
+

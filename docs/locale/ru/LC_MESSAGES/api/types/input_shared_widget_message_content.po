@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, litegram Team
+# This file is distributed under the same license as the litegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: ../../api/types/input_shared_widget_message_content.rst:3
+msgid "InputSharedWidgetMessageContent"
+msgstr "InputSharedWidgetMessageContent"
+
+#: litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent:1
+#: of
+msgid ""
+"Represents the `content "
+"<https://core.telegram.org/bots/api#inputmessagecontent>`_ of a message "
+"with a shared widget to be sent as the result of an inline query. "
+"Currently, widgets can't be sent in response to inline queries in the "
+"production environment."
+msgstr ""
+"Представляет `содержимое "
+"<https://core.telegram.org/bots/api#inputmessagecontent>`_ сообщения с "
+"переиспользуемым виджетом, отправляемого как результат inline-запроса. "
+"Сейчас виджеты нельзя отправлять в ответ на inline-запросы в рабочем "
+"окружении."
+
+#: litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent:3
+#: of
+msgid "Source: https://core.telegram.org/bots/api#inputsharedwidgetmessagecontent"
+msgstr ""
+"Источник: "
+"https://core.telegram.org/bots/api#inputsharedwidgetmessagecontent"
+
+#: litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent.widget_id:1
+#: of
+msgid "Unique identifier of the shared widget created by the bot"
+msgstr "Уникальный идентификатор переиспользуемого виджета, созданного ботом"
+
+#: litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent.chat_data:1
+#: of
+msgid ""
+"*Optional*. Data of the widget, which is specific to the message, 0-1024 "
+"bytes"
+msgstr ""
+"*Необязательно*. Данные виджета для конкретного сообщения, от 0 до 1024 "
+"байт"
+
+#: litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent.caption:1
+#: of
+msgid "*Optional*. Widget caption, 0-1024 characters after entities parsing"
+msgstr ""
+"*Необязательно*. Подпись виджета, от 0 до 1024 символов после разбора "
+"сущностей"
+
+#: litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent.parse_mode:1
+#: of
+msgid ""
+"*Optional*. Mode for parsing entities in the widget caption. See "
+"`formatting options <https://core.telegram.org/bots/api#formatting-"
+"options>`_ for more details."
+msgstr ""
+"*Необязательно*. Режим разбора сущностей в подписи виджета. Подробнее см."
+" `варианты форматирования <https://core.telegram.org/bots/api#formatting-"
+"options>`_."
+
+#: litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent.caption_entities:1
+#: of
+msgid ""
+"*Optional*. List of special entities that appear in the caption, which "
+"can be specified instead of *parse_mode*"
+msgstr ""
+"*Необязательно*. Список специальных сущностей в подписи; можно передать "
+"вместо *parse_mode*"
+
+#: litegram.types.input_shared_widget_message_content.InputSharedWidgetMessageContent.show_caption_above_media:1
+#: of
+msgid ""
+"*Optional*. Pass :code:`True` if the caption must be shown above the "
+"widget"
+msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы показать подпись над "
+"виджетом"
+

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -39,10 +39,11 @@ msgstr ""
 
 #: litegram.methods.send_paid_media.SendPaidMedia.chat_id:1 of
 msgid ""
-"Unique identifier for the target chat or username of the target channel "
-"(in the format :code:`@channelusername`). If the chat is a channel, all "
-"Telegram Star proceeds from this media will be credited to the chat's "
-"balance. Otherwise, they will be credited to the bot's balance."
+"Unique identifier for the target chat or username of the target bot, "
+"supergroup, or channel in the format :code:`@username`. If the chat is a "
+"channel, all Telegram Star proceeds from this media will be credited to "
+"the chat's balance. Otherwise, they will be credited to the bot's "
+"balance."
 msgstr ""
 
 #: litegram.methods.send_paid_media.SendPaidMedia.star_count:1 of
@@ -52,7 +53,7 @@ msgid ""
 msgstr ""
 
 #: litegram.methods.send_paid_media.SendPaidMedia.media:1 of
-msgid "A JSON-serialized array describing the media to be sent; up to 10 items"
+msgid "A JSON-serialized Array describing the media to be sent; up to 10 items"
 msgstr ""
 
 #: litegram.methods.send_paid_media.SendPaidMedia.business_connection_id:1 of
@@ -98,7 +99,7 @@ msgid ""
 msgstr ""
 
 #: litegram.methods.send_paid_media.SendPaidMedia.show_caption_above_media:1 of
-msgid "Pass :code:`True`, if the caption must be shown above the message media"
+msgid "Pass :code:`True` if the caption must be shown above the message media"
 msgstr ""
 
 #: litegram.methods.send_paid_media.SendPaidMedia.disable_notification:1 of
@@ -117,7 +118,7 @@ msgid ""
 "`broadcasting limits <https://core.telegram.org/bots/faq#how-can-i"
 "-message-all-of-my-bot-39s-subscribers-at-once>`_ for a fee of 0.1 "
 "Telegram Stars per message. The relevant Stars will be withdrawn from the"
-" bot's balance"
+" bot's balance."
 msgstr ""
 
 #: litegram.methods.send_paid_media.SendPaidMedia.suggested_post_parameters:1
@@ -139,7 +140,7 @@ msgid ""
 "keyboard <https://core.telegram.org/bots/features#inline-keyboards>`_, "
 "`custom reply keyboard "
 "<https://core.telegram.org/bots/features#keyboards>`_, instructions to "
-"remove a reply keyboard or to force a reply from the user"
+"remove a reply keyboard or to force a reply from the user."
 msgstr ""
 
 #: ../../api/methods/send_paid_media.rst:15
@@ -193,3 +194,43 @@ msgstr ""
 #: ../../api/methods/send_paid_media.rst:54
 msgid ":meth:`litegram.types.inaccessible_message.InaccessibleMessage.reply_paid_media`"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target channel"
+#~ " (in the format :code:`@channelusername`). "
+#~ "If the chat is a channel, all "
+#~ "Telegram Star proceeds from this media"
+#~ " will be credited to the chat's "
+#~ "balance. Otherwise, they will be "
+#~ "credited to the bot's balance."
+#~ msgstr ""
+
+#~ msgid "A JSON-serialized array describing the media to be sent; up to 10 items"
+#~ msgstr ""
+
+#~ msgid "Pass :code:`True`, if the caption must be shown above the message media"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pass :code:`True` to allow up to "
+#~ "1000 messages per second, ignoring "
+#~ "`broadcasting limits <https://core.telegram.org/bots/faq"
+#~ "#how-can-i-message-all-of-my-bot-"
+#~ "39s-subscribers-at-once>`_ for a fee"
+#~ " of 0.1 Telegram Stars per message."
+#~ " The relevant Stars will be withdrawn"
+#~ " from the bot's balance"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional interface options. A JSON-"
+#~ "serialized object for an `inline "
+#~ "keyboard <https://core.telegram.org/bots/features#inline-"
+#~ "keyboards>`_, `custom reply keyboard "
+#~ "<https://core.telegram.org/bots/features#keyboards>`_, "
+#~ "instructions to remove a reply keyboard"
+#~ " or to force a reply from the"
+#~ " user"
+#~ msgstr ""
+

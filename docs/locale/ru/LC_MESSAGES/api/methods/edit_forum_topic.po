@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: litegram \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-18 10:46+0300\n"
+"POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr ""
 #: litegram.methods.edit_forum_topic.EditForumTopic.chat_id:1 of
 msgid ""
 "Unique identifier for the target chat or username of the target "
-"supergroup (in the format :code:`@supergroupusername`)"
+"supergroup in the format :code:`@username`"
 msgstr ""
 
 #: litegram.methods.edit_forum_topic.EditForumTopic.message_thread_id:1 of
@@ -50,7 +50,7 @@ msgstr ""
 #: litegram.methods.edit_forum_topic.EditForumTopic.name:1 of
 msgid ""
 "New topic name, 0-128 characters. If not specified or empty, the current "
-"name of the topic will be kept"
+"name of the topic will be kept."
 msgstr ""
 
 #: litegram.methods.edit_forum_topic.EditForumTopic.icon_custom_emoji_id:1 of
@@ -58,7 +58,7 @@ msgid ""
 "New unique identifier of the custom emoji shown as the topic icon. Use "
 ":class:`litegram.methods.get_forum_topic_icon_stickers.GetForumTopicIconStickers`"
 " to get all allowed custom emoji identifiers. Pass an empty string to "
-"remove the icon. If not specified, the current icon will be kept"
+"remove the icon. If not specified, the current icon will be kept."
 msgstr ""
 
 #: ../../api/methods/edit_forum_topic.rst:15
@@ -92,3 +92,27 @@ msgstr ""
 #: ../../api/methods/edit_forum_topic.rst:41
 msgid "As reply into Webhook in handler"
 msgstr ""
+
+#~ msgid ""
+#~ "Unique identifier for the target chat"
+#~ " or username of the target supergroup"
+#~ " (in the format :code:`@supergroupusername`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "New topic name, 0-128 characters. If "
+#~ "not specified or empty, the current "
+#~ "name of the topic will be kept"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "New unique identifier of the custom "
+#~ "emoji shown as the topic icon. Use"
+#~ " "
+#~ ":class:`litegram.methods.get_forum_topic_icon_stickers.GetForumTopicIconStickers`"
+#~ " to get all allowed custom emoji "
+#~ "identifiers. Pass an empty string to "
+#~ "remove the icon. If not specified, "
+#~ "the current icon will be kept"
+#~ msgstr ""
+
