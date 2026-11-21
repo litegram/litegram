@@ -20,7 +20,7 @@ class InputStoryContentPhoto(InputStoryContent):
     """The photo to post as a story. The photo must be of the size 1080x1920 and must not exceed 10 MB. The photo can't be reused and can only be uploaded as a new file, so you can pass 'attach://' if the photo was uploaded using multipart/form-data under . :ref:`More information on Sending Files » <sending-files>`"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -30,7 +30,7 @@ class InputStoryContentPhoto(InputStoryContent):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(type=type, photo=photo, **__pydantic_kwargs)

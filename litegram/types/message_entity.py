@@ -36,7 +36,7 @@ class MessageEntity(MutableTelegramObject):
     """*Optional*. For 'date_time' only, the string that defines the formatting of the date and time. See `date-time entity formatting <https://core.telegram.org/bots/api#date-time-entity-formatting>`_ for more details."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -53,7 +53,7 @@ class MessageEntity(MutableTelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(

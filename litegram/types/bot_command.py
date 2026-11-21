@@ -20,7 +20,7 @@ class BotCommand(MutableTelegramObject):
     """*Optional*. :code:`True`, if the command sends an ephemeral message, which can be seen only by the sender of the message and the bot"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -31,7 +31,7 @@ class BotCommand(MutableTelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(command=command, description=description, is_ephemeral=is_ephemeral, **__pydantic_kwargs)

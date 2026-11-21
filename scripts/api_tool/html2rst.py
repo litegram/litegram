@@ -4,7 +4,7 @@ The Bot API page is the single source of truth for both generated code
 docstrings and the Sphinx docs, so descriptions are converted to RST once
 at parse time and stored in the schema.
 
-The rules mirror the legacy ``butcher`` converter so that the diff against
+The rules mirror the original generator's converter so that the diff against
 previously generated content stays minimal:
 
 - ``<a href="#anchor">``          -> ``:class:`litegram.types.x.Y`` for known

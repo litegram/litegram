@@ -25,7 +25,7 @@ class InlineQueryResultsButton(TelegramObject):
 *Example:* An inline bot that sends YouTube videos can ask the user to connect the bot to their YouTube account to adapt search results accordingly. To do this, it displays a 'Connect your YouTube account' button above the results, or even before showing any. The user presses the button, switches to a private chat with the bot and, in doing so, passes a start parameter that instructs the bot to return an OAuth link. Once done, the bot can offer a `*switch_inline* <https://core.telegram.org/bots/api#inlinekeyboardmarkup>`_ button so that the user can easily return to the chat where they wanted to use the bot's inline capabilities."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -36,7 +36,7 @@ class InlineQueryResultsButton(TelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(text=text, web_app=web_app, start_parameter=start_parameter, **__pydantic_kwargs)

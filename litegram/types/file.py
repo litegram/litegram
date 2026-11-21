@@ -24,7 +24,7 @@ class File(TelegramObject):
     """*Optional*. File path. Use :code:`https://api.telegram.org/file/bot/` to get the file."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -36,7 +36,7 @@ class File(TelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(

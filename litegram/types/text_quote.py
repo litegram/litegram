@@ -28,7 +28,7 @@ class TextQuote(TelegramObject):
     """*Optional*. Rich text of the quote if it was chosen from a `rich message <https://core.telegram.org/bots/api#richmessage>`_. May contain only plain text, :class:`litegram.types.rich_text_bold.RichTextBold`, :class:`litegram.types.rich_text_italic.RichTextItalic`, :class:`litegram.types.rich_text_underline.RichTextUnderline`, :class:`litegram.types.rich_text_strikethrough.RichTextStrikethrough`, :class:`litegram.types.rich_text_spoiler.RichTextSpoiler`, :class:`litegram.types.rich_text_subscript.RichTextSubscript`, :class:`litegram.types.rich_text_superscript.RichTextSuperscript`, :class:`litegram.types.rich_text_date_time.RichTextDateTime`, :class:`litegram.types.rich_text_custom_emoji.RichTextCustomEmoji`, :class:`litegram.types.rich_text_mathematical_expression.RichTextMathematicalExpression`, and arrays of them."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -41,7 +41,7 @@ class TextQuote(TelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(

@@ -433,7 +433,7 @@ class Message(MaybeInaccessibleMessage):
    https://core.telegram.org/bots/api-changelog#december-29-2023"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -571,7 +571,7 @@ class Message(MaybeInaccessibleMessage):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
@@ -937,7 +937,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_animation.SendAnimation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendAnimation
 
@@ -1028,7 +1028,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_animation.SendAnimation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendAnimation
 
@@ -1114,7 +1114,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_audio.SendAudio`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendAudio
 
@@ -1200,7 +1200,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_audio.SendAudio`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendAudio
 
@@ -1275,7 +1275,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_contact.SendContact`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendContact
 
@@ -1348,7 +1348,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_contact.SendContact`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendContact
 
@@ -1423,7 +1423,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_document.SendDocument`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendDocument
 
@@ -1502,7 +1502,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_document.SendDocument`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendDocument
 
@@ -1565,7 +1565,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_game.SendGame`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendGame
 
@@ -1623,7 +1623,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_game.SendGame`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendGame
 
@@ -1723,7 +1723,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_invoice.SendInvoice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendInvoice
 
@@ -1847,7 +1847,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_invoice.SendInvoice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendInvoice
 
@@ -1939,7 +1939,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_location.SendLocation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendLocation
 
@@ -2018,7 +2018,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_location.SendLocation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendLocation
 
@@ -2081,7 +2081,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_media_group.SendMediaGroup`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendMediaGroup
 
@@ -2139,7 +2139,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_media_group.SendMediaGroup`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendMediaGroup
 
@@ -2207,7 +2207,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_message.SendMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendMessage
 
@@ -2283,7 +2283,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_message.SendMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendMessage
 
@@ -2359,7 +2359,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_photo.SendPhoto`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPhoto
 
@@ -2438,7 +2438,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_photo.SendPhoto`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPhoto
 
@@ -2527,7 +2527,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_poll.SendPoll`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPoll
 
@@ -2624,7 +2624,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_poll.SendPoll`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPoll
 
@@ -2697,7 +2697,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_dice.SendDice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendDice
 
@@ -2761,7 +2761,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_dice.SendDice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendDice
 
@@ -2825,7 +2825,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_sticker.SendSticker`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendSticker
 
@@ -2892,7 +2892,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_sticker.SendSticker`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendSticker
 
@@ -2969,7 +2969,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_venue.SendVenue`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVenue
 
@@ -3054,7 +3054,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_venue.SendVenue`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVenue
 
@@ -3147,7 +3147,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_video.SendVideo`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVideo
 
@@ -3247,7 +3247,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_video.SendVideo`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVideo
 
@@ -3327,7 +3327,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_video_note.SendVideoNote`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVideoNote
 
@@ -3400,7 +3400,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_video_note.SendVideoNote`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVideoNote
 
@@ -3473,7 +3473,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_voice.SendVoice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVoice
 
@@ -3549,7 +3549,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_voice.SendVoice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVoice
 
@@ -3826,7 +3826,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.copy_message.CopyMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import CopyMessage
 
@@ -3888,7 +3888,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.edit_message_text.EditMessageText`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import EditMessageText
 
@@ -3942,7 +3942,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.forward_message.ForwardMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import ForwardMessage
 
@@ -3987,7 +3987,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.edit_message_media.EditMessageMedia`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import EditMessageMedia
 
@@ -4026,7 +4026,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.edit_message_reply_markup.EditMessageReplyMarkup`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import EditMessageReplyMarkup
 
@@ -4063,7 +4063,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.edit_message_reply_markup.EditMessageReplyMarkup`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import EditMessageReplyMarkup
 
@@ -4113,7 +4113,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.edit_message_live_location.EditMessageLiveLocation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import EditMessageLiveLocation
 
@@ -4157,7 +4157,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.stop_message_live_location.StopMessageLiveLocation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import StopMessageLiveLocation
 
@@ -4203,7 +4203,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.edit_message_caption.EditMessageCaption`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import EditMessageCaption
 
@@ -4261,7 +4261,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.delete_message.DeleteMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import DeleteMessage
 
@@ -4295,7 +4295,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.pin_chat_message.PinChatMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import PinChatMessage
 
@@ -4328,7 +4328,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.unpin_chat_message.UnpinChatMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import UnpinChatMessage
 
@@ -4387,7 +4387,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.set_message_reaction.SetMessageReaction`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SetMessageReaction
 
@@ -4449,7 +4449,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_paid_media.SendPaidMedia`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPaidMedia
 
@@ -4522,7 +4522,7 @@ class Message(MaybeInaccessibleMessage):
         :return: instance of method :class:`litegram.methods.send_paid_media.SendPaidMedia`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPaidMedia
 

@@ -22,7 +22,7 @@ litegram
     :target: https://pypi.python.org/pypi/litegram
     :alt: Supported python versions
 
-.. image:: https://img.shields.io/badge/dynamic/json?color=blue&logo=telegram&label=Telegram%20Bot%20API&query=%24.api.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flitegram%2Flitegram%2Fmaster%2F.butcher%2Fschema%2Fschema.json&style=flat-square
+.. image:: https://img.shields.io/badge/dynamic/json?color=blue&logo=telegram&label=Telegram%20Bot%20API&query=%24.api.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flitegram%2Flitegram%2Fmaster%2F.api%2Fschema.json&style=flat-square
     :target: https://core.telegram.org/bots/api
     :alt: Telegram Bot API
 

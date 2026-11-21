@@ -38,7 +38,7 @@ class GiftInfo(TelegramObject):
     """*Optional*. Unique number reserved for this gift when upgraded. See the *number* field in :class:`litegram.types.unique_gift.UniqueGift`."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -56,7 +56,7 @@ class GiftInfo(TelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(

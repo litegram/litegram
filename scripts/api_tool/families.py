@@ -16,7 +16,6 @@ from pathlib import Path
 import yaml
 
 CONFIG_DIR = Path(__file__).resolve().parent / "config" / "enums"
-LEGACY_CONFIG_DIR = Path(__file__).resolve().parents[2] / ".butcher" / "enums"
 
 
 VALUE_PATTERNS = (
@@ -33,7 +32,7 @@ VALUE_PATTERNS = (
 def extract_family_value(text: str, regexp: str | None) -> str | None:
     """Extract the discriminator value from a variant field description.
 
-    Tries the configured regexp first (mirrors the legacy butcher configs),
+    Tries the configured regexp first (mirrors the original configs),
     then a cascade of description phrasings used across API versions.
     """
     if regexp:
@@ -74,13 +73,10 @@ class EnumRegistry:
     @classmethod
     def load(cls) -> EnumRegistry:
         configs: dict[str, dict] = {}
-        for source in (LEGACY_CONFIG_DIR, CONFIG_DIR):
-            if not source.is_dir():
-                continue
-            for path in sorted(source.glob("*.yml")):
-                data = yaml.safe_load(path.read_text(encoding="utf-8"))
-                data["_source"] = path
-                configs[data["name"]] = data
+        for path in sorted(CONFIG_DIR.glob("*.yml")):
+            data = yaml.safe_load(path.read_text(encoding="utf-8"))
+            data["_source"] = path
+            configs[data["name"]] = data
         return cls(configs)
 
     @cached_property

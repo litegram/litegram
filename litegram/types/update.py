@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, cast
 
-from ..utils.mypy_hacks import lru_cache
 from .base import TelegramObject
 
 if TYPE_CHECKING:
@@ -101,7 +100,7 @@ class Update(TelegramObject):
     """*Optional*. A user asked the bot to stop the generation of a message"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -139,7 +138,7 @@ class Update(TelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
@@ -180,7 +179,6 @@ class Update(TelegramObject):
         return hash((type(self), self.update_id))
 
     @property
-    @lru_cache()
     def event_type(self) -> str:
         """
         Detect update type

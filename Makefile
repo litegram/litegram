@@ -125,8 +125,9 @@ bump:
 	uv run python scripts/bump_versions.py
 
 update-api:
-	uv run --group dev python -m scripts.api_tool.parse
+	uv run --group dev python -m scripts.api_tool.parse --output .api/new
 	uv run --group dev python -m scripts.api_tool.apply
+	rm -rf .api/new
 	uv run --group dev python -m scripts.api_tool.sync_router
 	uv run --group dev python -m scripts.api_tool.docs
 	uv run ruff check --fix $(package_dir)

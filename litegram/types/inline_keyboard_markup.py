@@ -21,7 +21,7 @@ class InlineKeyboardMarkup(MutableTelegramObject):
     """*Optional*. Pass :code:`True` if the reply interface must be shown to the user, as if they had manually selected the bot's message and tapped 'Reply'. The value of the field can't be changed when the inline keyboard is edited."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -31,7 +31,7 @@ class InlineKeyboardMarkup(MutableTelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(inline_keyboard=inline_keyboard, force_reply=force_reply, **__pydantic_kwargs)

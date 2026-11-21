@@ -93,7 +93,7 @@ def snake_case_to_class(module: str) -> str:
 
 
 def main() -> None:
-    schema = Schema.load(REPO_ROOT / ".butcher" / "schema" / "schema.json")
+    schema = Schema.load(REPO_ROOT / ".api" / "schema.json")
     config_dir = Path(__file__).resolve().parent / "config"
     config_dir.mkdir(exist_ok=True)
 
@@ -123,7 +123,7 @@ def main() -> None:
 
     deprecations = scan_code_deprecations()
 
-    # Field order as present in the code (aiogram-legacy curation, differs
+    # Field order as present in the code (historical curation, differs
     # from the docs page order for many objects).
     field_order: dict[str, list[str]] = {}
     for obj in schema.all_objects():

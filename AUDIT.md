@@ -8,6 +8,7 @@ A Mimosa deep scan (`scan-2026-11-21T06-05-22.736Z-77d00af05764`, seal `sha256:5
 
 ## Fixed and tested
 
+- Legacy `.butcher/` infrastructure removed entirely: enum configs merged into `scripts/api_tool/config/enums/`, the schema baseline moved to `.api/schema.json` (a fresh parse lands in `.api/new/`), and generated-file provenance comments were rebranded from the old external generator to the litegram api tool. Also dropped the `mypy_hacks` wrapper and the `lru_cache` on `Update.event_type` (it retained every processed `Update` forever — an unbounded memory leak under load).
 - Route all six new update types from raw JSON through the dispatcher and supply their user/chat context when available.
 - Decode `answerGuestQuery` as `SentGuestMessage`, and managed-bot token responses as strings. The guest-query regression checks a JSON response at the HTTP boundary.
 - Await async callable instances, expose the underlying exception in class-based error handlers, and allow non-scene handlers to run with a scene registry and FSM disabled.

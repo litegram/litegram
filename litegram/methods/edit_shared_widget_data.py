@@ -24,7 +24,7 @@ class EditSharedWidgetData(TelegramMethod[bool]):
 
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -35,7 +35,7 @@ class EditSharedWidgetData(TelegramMethod[bool]):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(widget_id=widget_id, public_data=public_data, cache_time=cache_time, **__pydantic_kwargs)

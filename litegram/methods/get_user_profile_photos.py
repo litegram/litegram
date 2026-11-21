@@ -25,7 +25,7 @@ class GetUserProfilePhotos(TelegramMethod[UserProfilePhotos]):
 
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -36,7 +36,7 @@ class GetUserProfilePhotos(TelegramMethod[UserProfilePhotos]):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(user_id=user_id, offset=offset, limit=limit, **__pydantic_kwargs)

@@ -224,7 +224,7 @@ def sync_family_unions_and_enums(generator: Generator, new_schema: Schema, old_s
             continue
         cfg_path = Path(__file__).resolve().parent / "config" / "enums" / f"{family.enum_name}.yml"
         if not cfg_path.exists():
-            cfg_path = REPO_ROOT / ".butcher" / "enums" / f"{family.enum_name}.yml"
+            cfg_path = Path(__file__).resolve().parent / "config" / "enums" / f"{family.enum_name}.yml"
         if cfg_path.exists():
             cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8"))
             cfg["multi_parse"]["entities"] = sorted(variants)
@@ -251,10 +251,8 @@ def sync_family_unions_and_enums(generator: Generator, new_schema: Schema, old_s
 
 
 def main() -> None:  # noqa: PLR0914 — CLI entry point orchestrates the full pipeline
-    old_path = REPO_ROOT / ".butcher" / "schema.json"
-    new_path = REPO_ROOT / ".api" / "schema.json"
-    if not old_path.exists():
-        old_path = REPO_ROOT / ".butcher" / "schema" / "schema.json"  # legacy layout
+    old_path = REPO_ROOT / ".api" / "schema.json"
+    new_path = REPO_ROOT / ".api" / "new" / "schema.json"
     old_schema = Schema.load(old_path)
     new_schema = Schema.load(new_path)
     if old_schema.version == new_schema.version:
@@ -329,12 +327,7 @@ def main() -> None:  # noqa: PLR0914 — CLI entry point orchestrates the full p
     regen_enums_exports([])
 
     # Promote the applied schema to the diff baseline for the next update.
-    baseline_path = REPO_ROOT / ".butcher" / "schema.json"
-    baseline_path.parent.mkdir(exist_ok=True)
-    shutil.copyfile(new_path, baseline_path)
-    legacy_dir = REPO_ROOT / ".butcher" / "schema" / "schema.json"
-    if legacy_dir.exists():
-        shutil.copyfile(new_path, legacy_dir)
+    shutil.copyfile(new_path, REPO_ROOT / ".api" / "schema.json")
 
     print(
         f"added types: {len(added_types)}, added methods: {len(added_methods)}, "

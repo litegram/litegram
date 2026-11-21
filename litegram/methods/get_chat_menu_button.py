@@ -20,11 +20,11 @@ class GetChatMenuButton(TelegramMethod[ResultMenuButtonUnion]):
     """Unique identifier for the target private chat. If not specified, the bot's default menu button will be returned."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(__pydantic__self__, *, chat_id: int | None = None, **__pydantic_kwargs: Any) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(chat_id=chat_id, **__pydantic_kwargs)

@@ -21,6 +21,7 @@ site/
 reports
 
 .mimosa/
+.api/new/
 
 dev/
 .venv/

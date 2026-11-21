@@ -47,7 +47,7 @@ class GetBusinessAccountGifts(TelegramMethod[OwnedGifts]):
    https://core.telegram.org/bots/api-changelog#december-31-2025"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -67,7 +67,7 @@ class GetBusinessAccountGifts(TelegramMethod[OwnedGifts]):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(

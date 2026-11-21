@@ -25,7 +25,7 @@ class LinkPreviewOptions(TelegramObject):
     """*Optional*. :code:`True`, if the link preview must be shown above the message text; otherwise, the link preview will be shown below the message text"""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -38,7 +38,7 @@ class LinkPreviewOptions(TelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(

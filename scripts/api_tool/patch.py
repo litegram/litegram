@@ -16,7 +16,9 @@ from .gen import Generator  # noqa: TC001 — used at runtime
 from .model import ObjectSpec  # noqa: TC001 — used at runtime
 
 AUTO_INIT_START = (
-    "    if TYPE_CHECKING:\n        # DO NOT EDIT MANUALLY!!!\n        # This section was auto-generated via `butcher`\n"
+    "    if TYPE_CHECKING:\n"
+    "        # DO NOT EDIT MANUALLY!!!\n"
+    "        # This section was auto-generated via the litegram api tool\n"
 )
 
 CUSTOM_SECTION_RE = re.compile(r"^    (?:@|def |async def |if TYPE_CHECKING:)", re.MULTILINE)

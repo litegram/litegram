@@ -26,7 +26,7 @@ CONFIG_DIR = Path(__file__).resolve().parent / "config"
 AUTO_INIT_INTRO = (
     "    if TYPE_CHECKING:\n"
     "        # DO NOT EDIT MANUALLY!!!\n"
-    "        # This section was auto-generated via `butcher`\n"
+    "        # This section was auto-generated via the litegram api tool\n"
     "\n"
     "        def __init__(\n"
     "            __pydantic__self__,\n"
@@ -36,7 +36,7 @@ AUTO_INIT_OUTRO = (
     "            **__pydantic_kwargs: Any\n"
     "        ) -> None:\n"
     "            # DO NOT EDIT MANUALLY!!!\n"
-    "            # This method was auto-generated via `butcher`\n"
+    "            # This method was auto-generated via the litegram api tool\n"
     "            # Is needed only for type checking and IDE support without any additional plugins\n"
     "\n"
 )
@@ -180,9 +180,9 @@ def render_auto_init(fields: list[FieldRender]) -> str:
     return (
         "    if TYPE_CHECKING:\n"
         "        # DO NOT EDIT MANUALLY!!!\n"
-        "        # This section was auto-generated via `butcher`\n"
+        "        # This section was auto-generated via the litegram api tool\n"
         "\n" + def_line + "\n" + "            # DO NOT EDIT MANUALLY!!!\n"
-        "            # This method was auto-generated via `butcher`\n"
+        "            # This method was auto-generated via the litegram api tool\n"
         "            # Is needed only for type checking and IDE support without any additional plugins\n"
         "\n" + call_block + "\n"
     )

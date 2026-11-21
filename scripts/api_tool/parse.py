@@ -5,9 +5,9 @@ Produces:
     - ``.api/{types,methods}/<name>/entity.json`` — per-object caches used by
       the docs generator
 
-The schema format is intentionally close to the legacy ``butcher`` cache so
-that the previous schema (``.butcher/schema/schema.json``) can be diffed
-against the new one.
+The previous schema (``.api/schema.json``) is the diff baseline: ``apply``
+compares it against the freshly parsed page and promotes the new one after
+a successful run.
 """
 
 from __future__ import annotations

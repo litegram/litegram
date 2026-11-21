@@ -70,7 +70,7 @@ class ChatJoinRequest(TelegramObject):
     """*Optional*. Identifier of the join request query; for bots assigned to process join requests only. If present, then the bot must call :class:`litegram.methods.send_chat_join_request_web_app.SendChatJoinRequestWebApp` or directly call :class:`litegram.methods.answer_chat_join_request_query.AnswerChatJoinRequestQuery` within 10 seconds."""
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -85,7 +85,7 @@ class ChatJoinRequest(TelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
@@ -117,7 +117,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.approve_chat_join_request.ApproveChatJoinRequest`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import ApproveChatJoinRequest
 
@@ -145,7 +145,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.decline_chat_join_request.DeclineChatJoinRequest`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import DeclineChatJoinRequest
 
@@ -206,7 +206,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_message.SendMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendMessage
 
@@ -283,7 +283,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_message.SendMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendMessage
 
@@ -370,7 +370,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_animation.SendAnimation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendAnimation
 
@@ -462,7 +462,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_animation.SendAnimation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendAnimation
 
@@ -551,7 +551,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_audio.SendAudio`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendAudio
 
@@ -638,7 +638,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_audio.SendAudio`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendAudio
 
@@ -716,7 +716,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_contact.SendContact`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendContact
 
@@ -790,7 +790,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_contact.SendContact`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendContact
 
@@ -868,7 +868,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_document.SendDocument`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendDocument
 
@@ -948,7 +948,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_document.SendDocument`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendDocument
 
@@ -1014,7 +1014,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_game.SendGame`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendGame
 
@@ -1073,7 +1073,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_game.SendGame`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendGame
 
@@ -1174,7 +1174,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_invoice.SendInvoice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendInvoice
 
@@ -1296,7 +1296,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_invoice.SendInvoice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendInvoice
 
@@ -1390,7 +1390,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_location.SendLocation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendLocation
 
@@ -1470,7 +1470,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_location.SendLocation`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendLocation
 
@@ -1536,7 +1536,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_media_group.SendMediaGroup`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendMediaGroup
 
@@ -1595,7 +1595,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_media_group.SendMediaGroup`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendMediaGroup
 
@@ -1668,7 +1668,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_photo.SendPhoto`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPhoto
 
@@ -1748,7 +1748,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_photo.SendPhoto`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPhoto
 
@@ -1840,7 +1840,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_poll.SendPoll`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPoll
 
@@ -1938,7 +1938,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_poll.SendPoll`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendPoll
 
@@ -2014,7 +2014,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_dice.SendDice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendDice
 
@@ -2079,7 +2079,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_dice.SendDice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendDice
 
@@ -2146,7 +2146,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_sticker.SendSticker`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendSticker
 
@@ -2214,7 +2214,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_sticker.SendSticker`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendSticker
 
@@ -2294,7 +2294,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_venue.SendVenue`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVenue
 
@@ -2380,7 +2380,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_venue.SendVenue`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVenue
 
@@ -2476,7 +2476,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_video.SendVideo`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVideo
 
@@ -2577,7 +2577,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_video.SendVideo`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVideo
 
@@ -2660,7 +2660,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_video_note.SendVideoNote`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVideoNote
 
@@ -2734,7 +2734,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_video_note.SendVideoNote`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVideoNote
 
@@ -2810,7 +2810,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_voice.SendVoice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVoice
 
@@ -2887,7 +2887,7 @@ class ChatJoinRequest(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_voice.SendVoice`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendVoice
 

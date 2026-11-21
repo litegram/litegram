@@ -252,7 +252,7 @@ class Chat(TelegramObject):
 
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!
-        # This section was auto-generated via `butcher`
+        # This section was auto-generated via the litegram api tool
 
         def __init__(
             __pydantic__self__,
@@ -303,7 +303,7 @@ class Chat(TelegramObject):
             **__pydantic_kwargs: Any,
         ) -> None:
             # DO NOT EDIT MANUALLY!!!
-            # This method was auto-generated via `butcher`
+            # This method was auto-generated via the litegram api tool
             # Is needed only for type checking and IDE support without any additional plugins
 
             super().__init__(
@@ -403,7 +403,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.ban_chat_sender_chat.BanChatSenderChat`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import BanChatSenderChat
 
@@ -432,7 +432,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.unban_chat_sender_chat.UnbanChatSenderChat`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import UnbanChatSenderChat
 
@@ -459,7 +459,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.get_chat_administrators.GetChatAdministrators`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import GetChatAdministrators
 
@@ -507,7 +507,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.delete_message.DeleteMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import DeleteMessage
 
@@ -536,7 +536,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.revoke_chat_invite_link.RevokeChatInviteLink`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import RevokeChatInviteLink
 
@@ -573,7 +573,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.edit_chat_invite_link.EditChatInviteLink`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import EditChatInviteLink
 
@@ -612,7 +612,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.create_chat_invite_link.CreateChatInviteLink`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import CreateChatInviteLink
 
@@ -644,7 +644,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.export_chat_invite_link.ExportChatInviteLink`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import ExportChatInviteLink
 
@@ -680,7 +680,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.send_chat_action.SendChatAction`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SendChatAction
 
@@ -709,7 +709,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.delete_chat_sticker_set.DeleteChatStickerSet`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import DeleteChatStickerSet
 
@@ -737,7 +737,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.set_chat_sticker_set.SetChatStickerSet`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SetChatStickerSet
 
@@ -766,7 +766,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.get_chat_member.GetChatMember`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import GetChatMember
 
@@ -793,7 +793,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.get_chat_member_count.GetChatMemberCount`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import GetChatMemberCount
 
@@ -819,7 +819,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.leave_chat.LeaveChat`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import LeaveChat
 
@@ -845,7 +845,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.unpin_all_chat_messages.UnpinAllChatMessages`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import UnpinAllChatMessages
 
@@ -875,7 +875,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.unpin_chat_message.UnpinChatMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import UnpinChatMessage
 
@@ -909,7 +909,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.pin_chat_message.PinChatMessage`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import PinChatMessage
 
@@ -942,7 +942,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.set_chat_administrator_custom_title.SetChatAdministratorCustomTitle`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SetChatAdministratorCustomTitle
 
@@ -974,7 +974,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.set_chat_permissions.SetChatPermissions`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SetChatPermissions
 
@@ -1036,7 +1036,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.promote_chat_member.PromoteChatMember`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import PromoteChatMember
 
@@ -1087,7 +1087,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.restrict_chat_member.RestrictChatMember`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import RestrictChatMember
 
@@ -1121,7 +1121,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.unban_chat_member.UnbanChatMember`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import UnbanChatMember
 
@@ -1155,7 +1155,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.ban_chat_member.BanChatMember`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import BanChatMember
 
@@ -1186,7 +1186,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.set_chat_description.SetChatDescription`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SetChatDescription
 
@@ -1215,7 +1215,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.set_chat_title.SetChatTitle`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SetChatTitle
 
@@ -1242,7 +1242,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.delete_chat_photo.DeleteChatPhoto`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import DeleteChatPhoto
 
@@ -1270,7 +1270,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.set_chat_photo.SetChatPhoto`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import SetChatPhoto
 
@@ -1297,7 +1297,7 @@ class Chat(TelegramObject):
         :return: instance of method :class:`litegram.methods.unpin_all_general_forum_topic_messages.UnpinAllGeneralForumTopicMessages`
         """
         # DO NOT EDIT MANUALLY!!!
-        # This method was auto-generated via `butcher`
+        # This method was auto-generated via the litegram api tool
 
         from litegram.methods import UnpinAllGeneralForumTopicMessages
 
