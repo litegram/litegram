@@ -20,7 +20,43 @@ class TestGetUniqueGift:
         prepare_result = bot.add_result_for(
             GetUniqueGift,
             ok=True,
-            result=UniqueGift(gift_id="g1", base_name="base", name="gift", number=1, model={"name": "m", "sticker": {"file_id": "f", "file_unique_id": "fu", "type": "regular", "width": 512, "height": 512, "is_animated": False, "is_video": False}, "rarity_per_mille": 1}, symbol={"name": "s", "sticker": {"file_id": "f", "file_unique_id": "fu", "type": "regular", "width": 512, "height": 512, "is_animated": False, "is_video": False}, "rarity_per_mille": 1}, backdrop={"name": "b", "colors": {"center_color": 0, "edge_color": 0, "symbol_color": 0, "text_color": 0}, "rarity_per_mille": 1}),
+            result=UniqueGift(
+                gift_id="g1",
+                base_name="base",
+                name="gift",
+                number=1,
+                model={
+                    "name": "m",
+                    "sticker": {
+                        "file_id": "f",
+                        "file_unique_id": "fu",
+                        "type": "regular",
+                        "width": 512,
+                        "height": 512,
+                        "is_animated": False,
+                        "is_video": False,
+                    },
+                    "rarity_per_mille": 1,
+                },
+                symbol={
+                    "name": "s",
+                    "sticker": {
+                        "file_id": "f",
+                        "file_unique_id": "fu",
+                        "type": "regular",
+                        "width": 512,
+                        "height": 512,
+                        "is_animated": False,
+                        "is_video": False,
+                    },
+                    "rarity_per_mille": 1,
+                },
+                backdrop={
+                    "name": "b",
+                    "colors": {"center_color": 0, "edge_color": 0, "symbol_color": 0, "text_color": 0},
+                    "rarity_per_mille": 1,
+                },
+            ),
         )
 
         response = await bot.get_unique_gift(name="gift")

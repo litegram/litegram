@@ -20,7 +20,9 @@ class TestSendWidget:
         prepare_result = bot.add_result_for(
             SendWidget,
             ok=True,
-            result=Message(message_id=42, date=datetime.datetime.now(datetime.UTC), chat=Chat(id=42, type="private"), text="test"),
+            result=Message(
+                message_id=42, date=datetime.datetime.now(datetime.UTC), chat=Chat(id=42, type="private"), text="test"
+            ),
         )
 
         response = await bot.send_widget(chat_id=42, html="<b>test</b>")

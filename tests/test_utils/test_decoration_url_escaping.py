@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from litegram.utils.markdown import hlink, hide_link, link
+from litegram.utils.markdown import hide_link, hlink, link
 from litegram.utils.text_decorations import HtmlDecoration, MarkdownDecoration
 
 
@@ -18,7 +18,7 @@ class TestUrlEscaping:
         result = hide_link(url)
         # The raw quote must be escaped inside the href attribute.
         assert 'href="https://example.test&quot;' in result
-        assert 'style=&quot;x' in result
+        assert "style=&quot;x" in result
 
     def test_markdown_link_escapes_closing_paren(self):
         url = "https://example.test/a)b"

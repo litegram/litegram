@@ -41,6 +41,8 @@ class TestSendPoll:
             ),
         )
 
-        response: Message = await bot.send_poll(chat_id=42, question="Q?", options=["A", "B"], correct_option_ids=[0], type="quiz")
+        response: Message = await bot.send_poll(
+            chat_id=42, question="Q?", options=["A", "B"], correct_option_ids=[0], type="quiz"
+        )
         bot.get_request()
         assert response == prepare_result.result

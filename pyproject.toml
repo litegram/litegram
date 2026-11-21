@@ -195,6 +195,7 @@ known-first-party = [
 "litegram/methods/*" = ["E501", "TC001"]
 "litegram/client/bot.py" = ["E501"]
 "scripts/api_tool/*" = ["T201"]  # CLI output
+"scripts/verify_live.py" = ["T201"]  # CLI output
 "litegram/enums/*" = ["E501"]
 "tests/**" = ["PLR2004"]
 

@@ -20,7 +20,9 @@ class TestGetUserPersonalChatMessages:
         prepare_result = bot.add_result_for(
             GetUserPersonalChatMessages,
             ok=True,
-            result=[Message(message_id=42, date=datetime.datetime.now(datetime.UTC), chat=Chat(id=42, type="private"), text="test")],
+            result=[
+                Message(message_id=42, date=datetime.datetime.now(datetime.UTC), chat=Chat(id=42, type="private"), text="test")
+            ],
         )
 
         response = await bot.get_user_personal_chat_messages(user_id=42, limit=10)

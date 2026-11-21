@@ -9,8 +9,8 @@ from litegram.types import (
     User,
     WidgetQuery,
     WidgetQueryTypeData,
-    WidgetQueryTypeSignData,
     WidgetQueryTypeSentTransaction,
+    WidgetQueryTypeSignData,
 )
 
 

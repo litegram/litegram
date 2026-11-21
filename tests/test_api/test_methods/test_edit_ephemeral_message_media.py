@@ -23,6 +23,8 @@ class TestEditEphemeralMessageMedia:
             result=True,
         )
 
-        response = await bot.edit_ephemeral_message_media(chat_id=42, receiver_user_id=42, ephemeral_message_id=42, media={"type": "photo", "media": "photo-id"})
+        response = await bot.edit_ephemeral_message_media(
+            chat_id=42, receiver_user_id=42, ephemeral_message_id=42, media={"type": "photo", "media": "photo-id"}
+        )
         bot.get_request()
         assert response == prepare_result.result

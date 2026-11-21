@@ -34,6 +34,4 @@ class TestMiniAppFreshness:
 
     def test_stale_data_rejected_with_timeout(self):
         with pytest.raises(ValueError, match="too old"):
-            safe_check_webapp_init_data_from_signature(
-                42, VALID_INIT_DATA, PUBLIC_KEY, auth_date_timeout=60
-            )
+            safe_check_webapp_init_data_from_signature(42, VALID_INIT_DATA, PUBLIC_KEY, auth_date_timeout=60)

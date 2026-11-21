@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+from pydantic import TypeAdapter
+
 from litegram.enums import RichTextType
 from litegram.types import (
     RichTextBold,
     RichTextItalic,
     RichTextUnion,
 )
-from pydantic import TypeAdapter
 
 
 class TestRichTextUnion:

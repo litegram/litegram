@@ -22,7 +22,10 @@ class TestStopPoll:
                 members_only=False,
                 id="QA",
                 question="Q",
-                options=[PollOption(persistent_id="pid-0", text="A", voter_count=0), PollOption(persistent_id="pid-0", text="B", voter_count=0)],
+                options=[
+                    PollOption(persistent_id="pid-0", text="A", voter_count=0),
+                    PollOption(persistent_id="pid-0", text="B", voter_count=0),
+                ],
                 is_closed=False,
                 is_anonymous=False,
                 type="quiz",

@@ -10,9 +10,9 @@ from litegram.fsm.scene import SceneRegistry
 from litegram.fsm.state import State, StatesGroup
 from litegram.fsm.strategy import FSMStrategy
 from litegram.handlers import ErrorHandler
-from litegram.types import Message
 
 if TYPE_CHECKING:
+    from litegram.types import Message
     from tests.mocked_bot import MockedBot
 
 

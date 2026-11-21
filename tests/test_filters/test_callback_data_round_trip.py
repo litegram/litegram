@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from litegram.filters.callback_data import CallbackData, MAX_CALLBACK_LENGTH
+from litegram.filters.callback_data import MAX_CALLBACK_LENGTH, CallbackData
 
 
 class Shipping(CallbackData, prefix="ship"):

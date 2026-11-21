@@ -23,6 +23,8 @@ class TestSendRichMessageDraft:
             result=True,
         )
 
-        response = await bot.send_rich_message_draft(chat_id=42, draft_id=42, rich_message={"blocks": [{"type": "paragraph", "text": "hello"}]})
+        response = await bot.send_rich_message_draft(
+            chat_id=42, draft_id=42, rich_message={"blocks": [{"type": "paragraph", "text": "hello"}]}
+        )
         bot.get_request()
         assert response == prepare_result.result

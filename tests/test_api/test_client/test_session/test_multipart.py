@@ -34,13 +34,18 @@ async def test_upload_multipart(tmp_path: Path) -> None:
             assert parts[key].get_filename() == filename
             assert parts[key].get_content_type() == "text/plain"
             assert parts[key].get_payload(decode=True) == payload
-        return httpx.Response(200, json={"ok": True, "result": {"message_id": 1, "date": 1, "chat": {"id": 42, "type": "private"}}})
+        return httpx.Response(
+            200,
+            json={"ok": True, "result": {"message_id": 1, "date": 1, "chat": {"id": 42, "type": "private"}}},
+        )
 
     session = HttpxSession()
     async with httpx.AsyncClient(transport=httpx.MockTransport(capture)) as client:
         session._client = client
         bot = Bot("42:TEST", session=session)
-        result = await bot(SendDocument(chat_id=42, document=BufferedInputFile(b"data", "sample.txt"), thumbnail=FSInputFile(path)))
+        result = await bot(
+            SendDocument(chat_id=42, document=BufferedInputFile(b"data", "sample.txt"), thumbnail=FSInputFile(path))
+        )
     assert result.message_id == 1
 
 

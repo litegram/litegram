@@ -65,7 +65,6 @@ async def verify(bot: Bot) -> None:
     print(f"4. send_message(form)                 OK  {time.monotonic() - start:.2f}s")
 
     # 5. File download through the same session.
-    file_id = doc.document.file_id
     destination = Path(gettempdir()) / "litegram-download.txt"
     await bot.download(file=doc.document, destination=destination)
     downloaded = destination.read_bytes()

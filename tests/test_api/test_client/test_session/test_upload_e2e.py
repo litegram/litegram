@@ -70,7 +70,7 @@ class _Handler(BaseHTTPRequestHandler):
 
 
 @pytest.fixture()
-def capture_server() -> Generator[tuple[_Capture, int], None, None]:
+def capture_server() -> Generator[tuple[_Capture, int]]:
     capture = _Capture()
     handler = type("BoundHandler", (_Handler,), {"capture": capture})
     server = ThreadingHTTPServer(("127.0.0.1", 0), handler)

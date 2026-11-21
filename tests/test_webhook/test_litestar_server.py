@@ -167,9 +167,7 @@ class TestTokenBasedRequestHandler:
     @pytest.mark.anyio
     async def test_resolve_bot(self):
         dispatcher = Dispatcher()
-        handler = TokenBasedRequestHandler(
-            dispatcher=dispatcher, bot_tokens=["42:TEST", "1337:TEST"]
-        )
+        handler = TokenBasedRequestHandler(dispatcher=dispatcher, bot_tokens=["42:TEST", "1337:TEST"])
 
         class FakeRequest:
             def __init__(self, bot_token):

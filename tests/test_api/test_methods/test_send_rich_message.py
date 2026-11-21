@@ -20,7 +20,9 @@ class TestSendRichMessage:
         prepare_result = bot.add_result_for(
             SendRichMessage,
             ok=True,
-            result=Message(message_id=42, date=datetime.datetime.now(datetime.UTC), chat=Chat(id=42, type="private"), text="test"),
+            result=Message(
+                message_id=42, date=datetime.datetime.now(datetime.UTC), chat=Chat(id=42, type="private"), text="test"
+            ),
         )
 
         response = await bot.send_rich_message(rich_message={"blocks": [{"type": "paragraph", "text": "hello"}]})
