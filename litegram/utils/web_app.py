@@ -178,6 +178,7 @@ def safe_parse_webapp_init_data(
     init_data: str,
     *,
     loads: Callable[..., Any] = json.loads,
+    auth_date_timeout: float | None = None,
 ) -> WebAppInitData:
     """
     Validate raw WebApp init data and return it as WebAppInitData object
@@ -187,9 +188,18 @@ def safe_parse_webapp_init_data(
     :param token: bot token
     :param init_data: data from frontend to be parsed and validated
     :param loads:
+    :param auth_date_timeout: maximum age of the data in seconds; when set,
+        data with an older ``auth_date`` is rejected (replay protection)
     :return:
     """
-    if check_webapp_signature(token, init_data):
-        return parse_webapp_init_data(init_data, loads=loads)
-    msg = "Invalid init data signature"
-    raise ValueError(msg)
+    if not check_webapp_signature(token, init_data):
+        msg = "Invalid init data signature"
+        raise ValueError(msg)
+
+    parsed = parse_webapp_init_data(init_data, loads=loads)
+    if auth_date_timeout is not None:
+        age = datetime.datetime.now(datetime.UTC) - parsed.auth_date.replace(tzinfo=datetime.UTC)
+        if age.total_seconds() > auth_date_timeout:
+            msg = f"Init data is too old: {age.total_seconds():.0f}s > {auth_date_timeout}s"
+            raise ValueError(msg)
+    return parsed

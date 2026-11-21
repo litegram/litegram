@@ -1,0 +1,28 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
+import pytest
+
+from litegram.methods import AnswerWebAppQuery
+from litegram.types import InlineQueryResultPhoto, SentWebAppMessage
+
+if TYPE_CHECKING:
+    from tests.mocked_bot import MockedBot
+
+
+class TestAnswerWebAppQuery:
+    @pytest.mark.anyio
+    async def test_bot_method(self, bot: MockedBot):
+        prepare_result = bot.add_result_for(AnswerWebAppQuery, ok=True, result=SentWebAppMessage())
+
+        response: SentWebAppMessage = await bot.answer_web_app_query(
+            web_app_query_id="test",
+            result=InlineQueryResultPhoto(
+                id="test",
+                photo_url="test",
+                thumbnail_url="test",
+            ),
+        )
+        bot.get_request()
+        assert response == prepare_result.result

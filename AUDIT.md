@@ -16,6 +16,9 @@ A Mimosa deep scan (`scan-2026-11-21T06-05-22.736Z-77d00af05764`, seal `sha256:5
 - Reject malformed encoded start links and malformed third-party Mini App signatures without propagating a decoding error. Keep HTTPX pool defaults bounded when callers do not override them.
 - Escape URLs in HTML attributes and Markdown destinations (`hlink`/`hide_link`/`link`), validate `pre_language` tags, use constant-time comparison in Login Widget validation, generate `?startchannel` links from `create_channel_bot_link`, apply the 512-char payload limit to `startapp` links, and propagate `business_connection_id` through `ChatActionSender` and its middleware.
 - Document callback-data `None` round-trip semantics (positional format: an explicit `None` on a field with a default unpacks as the default).
+- Mini App init-data validators accept an optional `auth_date_timeout` (seconds): stale data is rejected with `ValueError`, replaying captured init data no longer passes indefinitely.
+- Handler attempts run on isolated context copies in `TelegramEventObserver.trigger`: data injected by a skipped handler's filters no longer leaks into later handlers or outer middlewares (regression-tested).
+- The `ChatActionSender` worker logs its own failures and its final result is retrieved on stop, so background Telegram errors no longer linger as unobserved task exceptions.
 - Stream uploads through a Litegram-owned async multipart encoder (`litegram/client/session/multipart.py`): bounded memory, source generators closed on success, write errors and cancellation; verified against a parsed multipart body, plus lazy-read and cleanup tests.
 - Drain in-flight update handlers on polling shutdown before sessions and FSM storage close (`drain_timeout`, default 30 s; stuck handlers are cancelled after the timeout).
 - Token-based webhook now requires the acceptable token set up front and rejects unknown URL tokens with 404; `accept_any_token=True` opts back into legacy behavior explicitly.
@@ -28,7 +31,7 @@ All 31 new methods have offline wrapper coverage. This does not prove that every
 | Priority | Finding | Next step |
 |---|---|---|
 | High | The multipart path sends chunked bodies without `Content-Length`. A real-socket e2e now proves our wire format (chunked framing, multipart structure, closing delimiter) is correct end-to-end, but whether a deployed Telegram endpoint or proxy accepts chunked uploads still needs one live call; a nested `URLInputFile` download also shares the POST's connection pool. | One live-API verification with a real bot token; document/provide a separate source session; add a disk-backed staging mode if `Content-Length` proves mandatory. |
-| Medium | Review of utilities surfaced outstanding concerns: callback-data `None` round-trips (now documented with tests), Mini App freshness policy, and skipped-handler filter data leaking to later handlers; scene history updates are not transactions; background chat-action errors may not be collected. | Mini App freshness: optional `auth_date` window parameter. Handler-data isolation: define semantics before changing. Scene/chat-action items: exercise the selected production backends. |
+| Medium | Scene history updates are not storage transactions; concurrent processing outside the isolation scope can lose history entries. | Decide on transactional semantics and exercise the selected production backends. |
 
 ## Docs and performance
 

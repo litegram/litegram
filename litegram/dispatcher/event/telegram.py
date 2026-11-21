@@ -110,18 +110,22 @@ class TelegramEventObserver:
         """
         Propagate event to handlers and stops propagation on first match.
         Handler will be called when all its filters are pass.
+
+        Each handler attempt works on an isolated copy of the context: data
+        injected by a skipped handler's filters does not leak into subsequent
+        handler attempts.
         """
         for handler in self.handlers:
-            kwargs["handler"] = handler
-            result, data = await handler.check(event, **kwargs)
+            attempt_kwargs = {**kwargs, "handler": handler}
+            result, data = await handler.check(event, **attempt_kwargs)
             if result:
-                kwargs.update(data)
+                attempt_kwargs.update(data)
                 try:
                     wrapped_inner = self.outer_middleware.wrap_middlewares(
                         self._resolve_middlewares(),
                         handler.call,
                     )
-                    return await wrapped_inner(event, kwargs)
+                    return await wrapped_inner(event, attempt_kwargs)
                 except SkipHandler:
                     continue
 

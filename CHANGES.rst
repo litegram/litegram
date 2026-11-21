@@ -27,6 +27,9 @@ Features
   ephemeral messages, managed bots, chat join request queries, poll voting enhancements,
   TON wallet cards and the rest of the new types and methods.
 - ``HttpxSession`` now accepts ``max_connections`` and ``max_keepalive_connections`` for connection-pool tuning in high-load production.
+- File uploads stream through a Litegram-owned async multipart encoder: bounded memory and guaranteed source cleanup instead of the incompatible ``files=`` path.
+- Mini App init-data validators accept ``auth_date_timeout`` to reject stale init data (replay protection).
+- Polling shutdown drains in-flight update handlers (``drain_timeout``, default 30 s) before closing sessions and FSM storage.
 
 Bugfixes
 --------
@@ -38,6 +41,11 @@ Bugfixes
 - Decode ``answerGuestQuery`` as ``SentGuestMessage`` and managed-bot token responses as strings.
 - Fix async callable dispatch, class-based error reporting, chat-scoped FSM resolution, nested state names, and keyboard markup option round-trips.
 - Reject malformed encoded deep links and third-party Mini App signatures without propagating decoding errors.
+- Isolate per-handler context: data injected by a skipped handler's filters no longer leaks into subsequent handlers or outer middlewares.
+- Escape URLs in HTML attributes and Markdown link destinations; validate ``pre_language`` tags.
+- Use constant-time comparison in Login Widget signature validation.
+- ``create_channel_bot_link`` generates ``?startchannel`` links; ``startapp`` payloads follow the 512-character limit.
+- ``ChatActionSender`` propagates ``business_connection_id`` and collects background worker failures.
 
 Improved Documentation
 ----------------------

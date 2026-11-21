@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import datetime
 from operator import itemgetter
 from urllib.parse import parse_qsl
 
@@ -61,6 +62,7 @@ def safe_check_webapp_init_data_from_signature(
     bot_id: int,
     init_data: str,
     public_key_bytes: bytes = PRODUCTION_PUBLIC_KEY,
+    auth_date_timeout: float | None = None,
 ) -> WebAppInitData:
     """
     Validate raw WebApp init data using only bot id and return it as WebAppInitData object
@@ -68,9 +70,18 @@ def safe_check_webapp_init_data_from_signature(
     :param bot_id: bot id
     :param init_data: data from frontend to be parsed and validated
     :param public_key_bytes: public key
+    :param auth_date_timeout: maximum age of the data in seconds; when set,
+        data with an older ``auth_date`` is rejected (replay protection)
     :return: WebAppInitData object
     """
-    if check_webapp_signature(bot_id, init_data, public_key_bytes):
-        return parse_webapp_init_data(init_data)
-    msg = "Invalid init data signature"
-    raise ValueError(msg)
+    if not check_webapp_signature(bot_id, init_data, public_key_bytes):
+        msg = "Invalid init data signature"
+        raise ValueError(msg)
+
+    parsed = parse_webapp_init_data(init_data)
+    if auth_date_timeout is not None:
+        age = datetime.datetime.now(datetime.UTC) - parsed.auth_date.replace(tzinfo=datetime.UTC)
+        if age.total_seconds() > auth_date_timeout:
+            msg = f"Init data is too old: {age.total_seconds():.0f}s > {auth_date_timeout}s"
+            raise ValueError(msg)
+    return parsed

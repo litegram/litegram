@@ -65,6 +65,7 @@ class ChatActionSender:
         self._close_event = Event()
         self._closed_event = Event()
         self._task: asyncio.Task[Any] | None = None
+        self._worker_error: BaseException | None = None
 
     @property
     def running(self) -> bool:
@@ -81,6 +82,7 @@ class ChatActionSender:
             self.chat_id,
             self.bot.id,
         )
+        error: BaseException | None = None
         try:
             counter = 0
             await self._wait(self.initial_sleep)
@@ -103,6 +105,16 @@ class ChatActionSender:
 
                 interval = self.interval - (time.monotonic() - start)
                 await self._wait(interval)
+        except asyncio.CancelledError:
+            raise
+        except Exception as e:
+            error = e
+            logger.exception(
+                "Chat action %r sender failed in chat_id=%s via bot id=%d",
+                self.action,
+                self.chat_id,
+                self.bot.id,
+            )
         finally:
             logger.debug(
                 "Finished chat action %r sender in chat_id=%s via bot id=%d",
@@ -111,11 +123,13 @@ class ChatActionSender:
                 self.bot.id,
             )
             self._closed_event.set()
+            self._worker_error = error
 
     async def _run(self) -> None:
         async with self._lock:
             self._close_event.clear()
             self._closed_event.clear()
+            self._worker_error = None
             if self.running:
                 msg = "Already running"
                 raise RuntimeError(msg)
@@ -128,6 +142,9 @@ class ChatActionSender:
             if not self._close_event.is_set():  # pragma: no branches
                 self._close_event.set()
                 await self._closed_event.wait()
+            # Retrieve the worker's result so a finished-with-error task does
+            # not linger as "exception was never retrieved" in the event loop.
+            self._task.result()
             self._task = None
 
     async def __aenter__(self) -> ChatActionSender:
