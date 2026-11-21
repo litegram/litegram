@@ -42,13 +42,17 @@ class TestLink:
 
 class TestCreateChannelBotLink:
     def test_without_params(self):
-        assert create_channel_bot_link("test_bot") == "https://t.me/test_bot"
+        assert create_channel_bot_link("test_bot") == "https://t.me/test_bot?startchannel"
 
     def test_parameter(self):
         assert (
             create_channel_bot_link("test_bot", parameter="parameter in group")
             == "https://t.me/test_bot?startgroup=parameter+in+group"
         )
+
+    def test_startchannel_with_permissions(self):
+        link = create_channel_bot_link("test_bot", post_messages=True, edit_messages=True)
+        assert link == "https://t.me/test_bot?startchannel&admin=post_messages+edit_messages"
 
     def test_permissions(self):
         # Is bad idea to put over 2k cases into parameterized test,
@@ -76,7 +80,10 @@ class TestCreateChannelBotLink:
                 continue
 
             link = create_channel_bot_link("test", **kwargs)
-            query = parse_qs(link.split("?", maxsplit=1)[-1], max_num_fields=1)
-            assert "admin" in query
-            admin = query["admin"][0]
+            query = parse_qs(link.split("?", maxsplit=1)[-1], max_num_fields=2, keep_blank_values=True)
+            assert "startchannel" in query
+            assert "admin" in link
+            # A literal "+" in the query decodes to a space via parse_qs,
+            # so compare against the raw query part.
+            admin = link.split("admin=", maxsplit=1)[-1]
             assert set(admin.split("+")) == set(kwargs)

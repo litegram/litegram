@@ -65,6 +65,7 @@ class TestChatActionSender:
                     action="typing",
                     chat_id=42,
                     message_thread_id=None,
+                    business_connection_id=None,
                 )
 
     @pytest.mark.anyio

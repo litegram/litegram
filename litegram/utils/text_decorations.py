@@ -185,7 +185,7 @@ class HtmlDecoration(TextDecoration):
     BLOCKQUOTE_TAG = "blockquote"
 
     def link(self, value: str, link: str) -> str:
-        return f'<a href="{link}">{value}</a>'
+        return f'<a href="{html.escape(link, quote=True)}">{value}</a>'
 
     def bold(self, value: str) -> str:
         return f"<{self.BOLD_TAG}>{value}</{self.BOLD_TAG}>"
@@ -200,6 +200,10 @@ class HtmlDecoration(TextDecoration):
         return f"<pre>{value}</pre>"
 
     def pre_language(self, value: str, language: str) -> str:
+        # The language tag goes into an HTML attribute and a Markdown fence:
+        # only a safe subset is allowed, anything else falls back to plain pre.
+        if not language or not re.fullmatch(r"[a-zA-Z0-9+#._-]+", language):
+            return self.pre(value)
         return f'<pre><code class="language-{language}">{value}</code></pre>'
 
     def underline(self, value: str) -> str:
@@ -215,7 +219,8 @@ class HtmlDecoration(TextDecoration):
         return html.escape(value, quote=False)
 
     def custom_emoji(self, value: str, custom_emoji_id: str) -> str:
-        return f'<{self.EMOJI_TAG} emoji-id="{custom_emoji_id}">{value}</{self.EMOJI_TAG}>'
+        emoji_id = html.escape(custom_emoji_id, quote=True)
+        return f'<{self.EMOJI_TAG} emoji-id="{emoji_id}">{value}</{self.EMOJI_TAG}>'
 
     def blockquote(self, value: str) -> str:
         return f"<{self.BLOCKQUOTE_TAG}>{value}</{self.BLOCKQUOTE_TAG}>"
@@ -228,7 +233,10 @@ class MarkdownDecoration(TextDecoration):
     MARKDOWN_QUOTE_PATTERN: Pattern[str] = re.compile(r"([_*\[\]()~`>#+\-=|{}.!\\])")
 
     def link(self, value: str, link: str) -> str:
-        return f"[{value}]({link})"
+        # Markdown link destinations must escape backslashes and closing
+        # parentheses, otherwise the URL can break out of the (...) group.
+        escaped = link.replace("\\", "\\\\").replace(")", "\\)")
+        return f"[{value}]({escaped})"
 
     def bold(self, value: str) -> str:
         return f"*{value}*"
@@ -243,6 +251,10 @@ class MarkdownDecoration(TextDecoration):
         return f"```\n{value}\n```"
 
     def pre_language(self, value: str, language: str) -> str:
+        # The language tag becomes part of the Markdown fence: only a safe
+        # subset is allowed, anything else falls back to a plain fence.
+        if not language or not re.fullmatch(r"[a-zA-Z0-9+#._-]+", language):
+            return self.pre(value)
         return f"```{language}\n{value}\n```"
 
     def underline(self, value: str) -> str:

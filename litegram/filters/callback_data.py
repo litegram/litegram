@@ -38,6 +38,14 @@ class CallbackData(BaseModel):
 
     The class-keyword :code:`prefix` is required to define prefix
     and also the argument :code:`sep` can be passed to define separator (default is :code:`:`).
+
+    .. note::
+        Callback data is a positional string: there is no reliable way to
+        distinguish an explicitly packed ``None`` from an empty string.
+        An empty field unpacks to the field's default when one is defined,
+        otherwise to ``None`` — so ``MyCallback(value=None)`` on a field with
+        ``value: int | None = 7`` round-trips as ``value=7``. Do not pack
+        explicit ``None`` into fields that carry a non-empty default.
     """
 
     if TYPE_CHECKING:

@@ -45,9 +45,12 @@ def create_channel_bot_link(
     anonymous: bool = False,
     manage_chat: bool = False,
 ) -> str:
-    params = {}
-    if parameter is not None:
-        params["startgroup"] = parameter
+    """Create an administrator link for adding the bot to a channel.
+
+    Without permissions this generates a plain ``?startchannel`` deep link;
+    with permissions the ``admin`` parameter is added on top. The deprecated
+    ``parameter`` argument produces a legacy ``startgroup`` link instead.
+    """
     permissions = []
     if change_info:
         permissions.append("change_info")
@@ -71,6 +74,14 @@ def create_channel_bot_link(
         permissions.append("anonymous")
     if manage_chat:
         permissions.append("manage_chat")
+
+    params: list[str] = []
+    if parameter is not None:
+        # Legacy behavior: group deep link with a payload.
+        params.append("startgroup=" + urlencode({"v": parameter}).removeprefix("v="))
+    else:
+        params.append("startchannel")
     if permissions:
-        params["admin"] = "+".join(permissions)
-    return create_telegram_link(username, **params)
+        params.append("admin=" + "+".join(permissions))
+    query = "&".join(params)
+    return create_telegram_link(username) + (f"?{query}" if query else "")

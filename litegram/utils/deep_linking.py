@@ -23,6 +23,8 @@ if TYPE_CHECKING:
 
 BAD_PATTERN = re.compile(r"[^a-zA-Z0-9-_]")
 DEEPLINK_PAYLOAD_LENGTH = 64
+# Mini App payloads use a different limit than /start deep links.
+STARTAPP_PAYLOAD_LENGTH = 512
 
 
 async def create_start_link(
@@ -143,8 +145,9 @@ def create_deep_link(
         msg = "Wrong payload! Only A-Z, a-z, 0-9, _ and - are allowed. Pass `encode=True` or encode payload manually."
         raise ValueError(msg)
 
-    if len(payload) > DEEPLINK_PAYLOAD_LENGTH:
-        msg = f"Payload must be up to {DEEPLINK_PAYLOAD_LENGTH} characters long."
+    payload_limit = STARTAPP_PAYLOAD_LENGTH if link_type == "startapp" else DEEPLINK_PAYLOAD_LENGTH
+    if len(payload) > payload_limit:
+        msg = f"Payload must be up to {payload_limit} characters long."
         raise ValueError(msg)
 
     if not app_name:

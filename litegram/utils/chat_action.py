@@ -42,6 +42,7 @@ class ChatActionSender:
         action: str = "typing",
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> None:
         """
         :param bot: instance of the bot
@@ -50,12 +51,14 @@ class ChatActionSender:
         :param action: chat action type
         :param interval: interval between iterations
         :param initial_sleep: sleep before first sending of the action
+        :param business_connection_id: unique identifier of the business connection
         """
         self.chat_id = chat_id
         self.message_thread_id = message_thread_id
         self.action = action
         self.interval = interval
         self.initial_sleep = initial_sleep
+        self.business_connection_id = business_connection_id
         self.bot = bot
 
         self._lock = Lock()
@@ -94,6 +97,7 @@ class ChatActionSender:
                     chat_id=self.chat_id,
                     action=self.action,
                     message_thread_id=self.message_thread_id,
+                    business_connection_id=self.business_connection_id,
                 )
                 counter += 1
 
@@ -146,12 +150,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `typing` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="typing",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -165,12 +171,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `upload_photo` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="upload_photo",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -184,12 +192,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `record_video` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="record_video",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -203,12 +213,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `upload_video` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="upload_video",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -222,12 +234,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `record_voice` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="record_voice",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -241,12 +255,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `upload_voice` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="upload_voice",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -260,12 +276,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `upload_document` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="upload_document",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -279,12 +297,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `choose_sticker` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="choose_sticker",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -298,12 +318,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `find_location` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="find_location",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -317,12 +339,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `record_video_note` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="record_video_note",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -336,12 +360,14 @@ class ChatActionSender:
         message_thread_id: int | None = None,
         interval: float = DEFAULT_INTERVAL,
         initial_sleep: float = DEFAULT_INITIAL_SLEEP,
+        business_connection_id: str | None = None,
     ) -> ChatActionSender:
         """Create instance of the sender with `upload_video_note` action"""
         return cls(
             bot=bot,
             chat_id=chat_id,
             message_thread_id=message_thread_id,
+            business_connection_id=business_connection_id,
             action="upload_video_note",
             interval=interval,
             initial_sleep=initial_sleep,
@@ -377,5 +403,6 @@ class ChatActionMiddleware(BaseMiddleware):
         else:
             kwargs["action"] = chat_action
         kwargs["message_thread_id"] = event.message_thread_id if isinstance(event, Message) and event.is_topic_message else None
+        kwargs["business_connection_id"] = event.business_connection_id
         async with ChatActionSender(bot=bot, chat_id=event.chat.id, **kwargs):
             return await handler(event, data)
