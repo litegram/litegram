@@ -1,0 +1,42 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Use this method to edit only the reply markup of an ephemeral message. Note "
+"that it is not guaranteed that the user will receive the message edit event,"
+" especially if they are offline. On success, :code:`True` is returned."
+msgstr ""
+"Изменяет только клавиатуру эфемерного сообщения. Получение пользователем "
+"события об изменении не гарантируется, особенно если он не в сети. При "
+"успехе возвращает :code:`True`."
+
+msgid "Source: https://core.telegram.org/bots/api#editephemeralmessagereplymarkup"
+msgstr "Источник: https://core.telegram.org/bots/api#editephemeralmessagereplymarkup"
+
+msgid ""
+"Unique identifier for the target chat or username of the target supergroup "
+"in the format :code:`@username`"
+msgstr ""
+"Уникальный идентификатор целевого чата или имя целевой супергруппы в формате"
+" :code:`@username`"
+
+msgid "Identifier of the user who received the message"
+msgstr "Идентификатор пользователя, получившего сообщение"
+
+msgid "Identifier of the ephemeral message to edit"
+msgstr "Идентификатор эфемерного сообщения, которое нужно изменить"
+
+msgid ""
+"A JSON-serialized object for an `inline keyboard "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_"
+msgstr ""
+"Объект в формате JSON, описывающий `inline-клавиатуру "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_"
+

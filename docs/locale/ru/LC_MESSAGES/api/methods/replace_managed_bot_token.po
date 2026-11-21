@@ -1,0 +1,25 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Use this method to revoke the current token of a managed bot and generate a "
+"new one. Returns the new token as *String* on success."
+msgstr ""
+"Отзывает текущий токен управляемого бота и создаёт новый. При успехе "
+"возвращает новый токен строкой."
+
+msgid "Source: https://core.telegram.org/bots/api#replacemanagedbottoken"
+msgstr "Источник: https://core.telegram.org/bots/api#replacemanagedbottoken"
+
+msgid "User identifier of the managed bot whose token will be replaced"
+msgstr ""
+"Идентификатор пользователя, соответствующего управляемому боту, токен "
+"которого нужно заменить"
+

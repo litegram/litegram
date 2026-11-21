@@ -1,9 +1,7 @@
 from __future__ import annotations
 
 import io
-import os
 from pathlib import Path
-from tempfile import mkstemp
 from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -185,14 +183,10 @@ class TestBot:
             await mocked_bot.download([PhotoSize(file_id="file id", file_unique_id="file id", width=123, height=123)])
 
     @pytest.mark.anyio
-    async def test_download_local_file(self, bot: MockedBot):
+    async def test_download_local_file(self, bot: MockedBot, tmp_path: Path):
         bot.session.api = TelegramAPIServer.from_base("http://localhost:8081", is_local=True)
-        fd, tmp = mkstemp(prefix="test-", suffix=".txt")
+        tmp = tmp_path / "test-download.txt"
         value = b"KABOOM"
-        try:
-            with open(fd, "wb") as f:
-                f.write(value)
-            content = await bot.download_file(tmp)
-            assert content.getvalue() == value
-        finally:
-            os.unlink(tmp)
+        tmp.write_bytes(value)
+        content = await bot.download_file(tmp)
+        assert content.getvalue() == value

@@ -235,6 +235,19 @@ class Update(TelegramObject):
         if self.purchased_paid_media:
             return "purchased_paid_media"
 
+        if self.guest_message is not None:
+            return "guest_message"
+        if self.widget_query is not None:
+            return "widget_query"
+        if self.shared_widget_query is not None:
+            return "shared_widget_query"
+        if self.managed_bot is not None:
+            return "managed_bot"
+        if self.subscription is not None:
+            return "subscription"
+        if self.stopped_message_generation is not None:
+            return "stopped_message_generation"
+
         raise UpdateTypeLookupError("Update does not contain any known event type.")
 
     @property

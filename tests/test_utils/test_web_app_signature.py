@@ -37,6 +37,7 @@ class TestWebAppSignature:
                 False,
             ],
             [42, "test&foo=bar=baz", False],
+            [42, "auth_date=1650385342&signature=a", False],
         ],
     )
     def test_check_webapp_signature(self, bot_id: int, case: str, result: bool):

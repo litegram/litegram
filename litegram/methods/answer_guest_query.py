@@ -2,20 +2,18 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any
 
-from ..types import (
-    InlineQueryResultUnion,
-)
+from ..types import InlineQueryResultUnion, SentGuestMessage
 from .base import TelegramMethod
 
 
-class AnswerGuestQuery(TelegramMethod[bool]):
+class AnswerGuestQuery(TelegramMethod[SentGuestMessage]):
     """
     Use this method to reply to a received guest message. On success, a :class:`litegram.types.sent_guest_message.SentGuestMessage` object is returned.
 
     Source: https://core.telegram.org/bots/api#answerguestquery
     """
 
-    __returning__ = bool
+    __returning__ = SentGuestMessage
     __api_method__ = "answerGuestQuery"
 
     guest_query_id: str

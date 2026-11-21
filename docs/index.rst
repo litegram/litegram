@@ -21,6 +21,7 @@ Contents
     :maxdepth: 3
 
     install
+    api_10_4_ru
     api/index
     dispatcher/index
     utils/index

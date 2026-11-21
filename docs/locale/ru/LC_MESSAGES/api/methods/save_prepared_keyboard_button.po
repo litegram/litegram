@@ -1,0 +1,33 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Stores a keyboard button that can be used by a user within a Mini App. "
+"Returns a "
+":class:`litegram.types.prepared_keyboard_button.PreparedKeyboardButton` "
+"object."
+msgstr ""
+"Сохраняет кнопку клавиатуры, которую пользователь сможет использовать в Mini"
+" App. Возвращает объект "
+":class:`litegram.types.prepared_keyboard_button.PreparedKeyboardButton`."
+
+msgid "Source: https://core.telegram.org/bots/api#savepreparedkeyboardbutton"
+msgstr "Источник: https://core.telegram.org/bots/api#savepreparedkeyboardbutton"
+
+msgid "Unique identifier of the target user that can use the button"
+msgstr "Уникальный идентификатор пользователя, который сможет использовать кнопку"
+
+msgid ""
+"A JSON-serialized object describing the button to be saved. The button must "
+"be of the type *request_users*, *request_chat*, or *request_managed_bot*."
+msgstr ""
+"Объект в формате JSON, описывающий сохраняемую кнопку. Допустимые типы "
+"кнопки: *request_users*, *request_chat* или *request_managed_bot*."
+

@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import re
+import shutil
 import subprocess
 import sys
 from dataclasses import replace as dc_replace
@@ -247,10 +248,18 @@ def sync_family_unions_and_enums(generator: Generator, new_schema: Schema, old_s
 
 
 def main() -> None:  # noqa: PLR0914 — CLI entry point orchestrates the full pipeline
-    old_path = REPO_ROOT / ".butcher" / "schema" / "schema.json"
+    old_path = REPO_ROOT / ".butcher" / "schema.json"
     new_path = REPO_ROOT / ".api" / "schema.json"
+    if not old_path.exists():
+        old_path = REPO_ROOT / ".butcher" / "schema" / "schema.json"  # legacy layout
     old_schema = Schema.load(old_path)
     new_schema = Schema.load(new_path)
+    if old_schema.version == new_schema.version:
+        msg = (
+            f"Baseline schema is already {old_schema.version}; parse the newer page into "
+            f"{new_path} first (make update-api does this) before applying."
+        )
+        raise SystemExit(msg)
     generator = Generator(new_schema, old_schema)
     registry = EnumRegistry.load()
     # Pre-register union aliases for new families so field annotations
@@ -315,6 +324,14 @@ def main() -> None:  # noqa: PLR0914 — CLI entry point orchestrates the full p
     regen_types_exports(new_schema)
     regen_methods_exports(new_schema)
     regen_enums_exports([])
+
+    # Promote the applied schema to the diff baseline for the next update.
+    baseline_path = REPO_ROOT / ".butcher" / "schema.json"
+    baseline_path.parent.mkdir(exist_ok=True)
+    shutil.copyfile(new_path, baseline_path)
+    legacy_dir = REPO_ROOT / ".butcher" / "schema" / "schema.json"
+    if legacy_dir.exists():
+        shutil.copyfile(new_path, legacy_dir)
 
     print(
         f"added types: {len(added_types)}, added methods: {len(added_methods)}, "

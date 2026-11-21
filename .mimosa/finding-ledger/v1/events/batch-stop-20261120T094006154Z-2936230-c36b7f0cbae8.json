@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "mimosa-finding-ledger-batch/v1",
+  "batchId": "stop-20261120T094006154Z-2936230-c36b7f0cbae8",
+  "runId": "20261120T094006154Z-2936230-c36b7f0cbae8",
+  "runStatus": "inconclusive",
+  "coverage": {
+    "status": "partial",
+    "reasons": [
+      {
+        "code": "baseline_partial",
+        "stage": "baseline",
+        "target": ".",
+        "detail": "baseline capture had enumeration or snapshot errors",
+        "affectsCompletion": true
+      },
+      {
+        "code": "project_check_failed",
+        "stage": "baseline",
+        "target": ".",
+        "detail": "baseline_partial: baseline capture had enumeration or snapshot errors",
+        "affectsCompletion": true
+      }
+    ]
+  },
+  "source": {
+    "component": "zcode-hook",
+    "operationId": "Stop"
+  },
+  "revision": "82fc83b53e14a74e5c21759870dd9c6daa8bd23e",
+  "diffHash": "976d4a4de4d6a03b47b5716d0095e46f84531e414a82c06a3fc4004c5472f9e1",
+  "rulesVersion": "unavailable",
+  "sessionHash": "465623b80e7609c6526618c12b370e3ed570297f3d33b5a8d70b091df82acedf",
+  "reportRef": ".mimosa/reports/task-review-sess_73d002f1-dfc5-422e-828a-baf84af938a3-20261120T094006154Z-2936230-c36b7f0cbae8.json",
+  "events": [],
+  "observedFindingIds": [],
+  "verifiedFiles": [
+    {
+      "file": "tests/test_api/test_methods/test_answer_guest_query.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "tests/test_dispatcher/test_api_10_4_routing.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "litegram/handlers/error.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "tests/test_dispatcher/test_audit_regressions.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "litegram/dispatcher/event/handler.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "litegram/fsm/middleware.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "litegram/utils/keyboard.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "litegram/utils/web_app_signature.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "tests/test_api/test_methods/test_send_widget.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "tests/test_utils/test_keyboard_markup_options.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "tests/test_utils/test_web_app_signature.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    },
+    {
+      "file": "tests/test_filters/test_command.py",
+      "direct": "complete",
+      "projectContext": "partial"
+    }
+  ],
+  "recordedAt": "2026-11-20T09:40:06.391Z"
+}

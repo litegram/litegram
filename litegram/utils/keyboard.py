@@ -245,7 +245,7 @@ class KeyboardBuilder[ButtonType: (InlineKeyboardButton, KeyboardButton)](ABC):
             keyboard = cast("list[list[KeyboardButton]]", self.export())  # type: ignore
             return ReplyKeyboardMarkup(keyboard=keyboard, **kwargs)
         inline_keyboard = cast("list[list[InlineKeyboardButton]]", self.export())  # type: ignore
-        return InlineKeyboardMarkup(inline_keyboard=inline_keyboard)
+        return InlineKeyboardMarkup(inline_keyboard=inline_keyboard, **kwargs)
 
     def attach(self, builder: KeyboardBuilder[ButtonType]) -> KeyboardBuilder[ButtonType]:
         if not isinstance(builder, KeyboardBuilder):
@@ -324,10 +324,13 @@ class InlineKeyboardBuilder(KeyboardBuilder[InlineKeyboardButton]):
 
     def as_markup(self, **kwargs: Any) -> InlineKeyboardMarkup:
         """Construct an InlineKeyboardMarkup"""
-        return cast("InlineKeyboardMarkup", super().as_markup(**kwargs))
+        return cast("InlineKeyboardMarkup", super().as_markup(**(self._markup_options | kwargs)))
 
     def __init__(self, markup: list[list[InlineKeyboardButton]] | None = None) -> None:
         super().__init__(button_type=InlineKeyboardButton, markup=markup)
+        # Options of the markup this builder was created from (preserved on
+        # as_markup() round-trips).
+        self._markup_options: dict[str, Any] = {}
 
     def copy(self: InlineKeyboardBuilder) -> InlineKeyboardBuilder:
         """
@@ -335,7 +338,9 @@ class InlineKeyboardBuilder(KeyboardBuilder[InlineKeyboardButton]):
 
         :return:
         """
-        return InlineKeyboardBuilder(markup=self.export())
+        builder = InlineKeyboardBuilder(markup=self.export())
+        builder._markup_options = dict(self._markup_options)
+        return builder
 
     @classmethod
     def from_markup(
@@ -348,7 +353,9 @@ class InlineKeyboardBuilder(KeyboardBuilder[InlineKeyboardButton]):
         :param markup:
         :return:
         """
-        return cls(markup=markup.inline_keyboard)
+        builder = cls(markup=markup.inline_keyboard)
+        builder._markup_options = markup.model_dump(exclude={"inline_keyboard"}, exclude_none=True)
+        return builder
 
 
 class ReplyKeyboardBuilder(KeyboardBuilder[KeyboardButton]):
@@ -388,10 +395,11 @@ class ReplyKeyboardBuilder(KeyboardBuilder[KeyboardButton]):
 
     def as_markup(self, **kwargs: Any) -> ReplyKeyboardMarkup:
         """Construct a ReplyKeyboardMarkup"""
-        return cast("ReplyKeyboardMarkup", super().as_markup(**kwargs))
+        return cast("ReplyKeyboardMarkup", super().as_markup(**(self._markup_options | kwargs)))
 
     def __init__(self, markup: list[list[KeyboardButton]] | None = None) -> None:
         super().__init__(button_type=KeyboardButton, markup=markup)
+        self._markup_options: dict[str, Any] = {}
 
     def copy(self: ReplyKeyboardBuilder) -> ReplyKeyboardBuilder:
         """
@@ -399,7 +407,9 @@ class ReplyKeyboardBuilder(KeyboardBuilder[KeyboardButton]):
 
         :return:
         """
-        return ReplyKeyboardBuilder(markup=self.export())
+        builder = ReplyKeyboardBuilder(markup=self.export())
+        builder._markup_options = dict(self._markup_options)
+        return builder
 
     @classmethod
     def from_markup(cls, markup: ReplyKeyboardMarkup) -> ReplyKeyboardBuilder:
@@ -409,4 +419,6 @@ class ReplyKeyboardBuilder(KeyboardBuilder[KeyboardButton]):
         :param markup:
         :return:
         """
-        return cls(markup=markup.keyboard)
+        builder = cls(markup=markup.keyboard)
+        builder._markup_options = markup.model_dump(exclude={"keyboard"}, exclude_none=True)
+        return builder

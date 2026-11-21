@@ -1,0 +1,27 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Use this method to reply to a received guest message. On success, a "
+":class:`litegram.types.sent_guest_message.SentGuestMessage` object is "
+"returned."
+msgstr ""
+"Отвечает на полученное гостевое сообщение. При успехе возвращает объект "
+":class:`litegram.types.sent_guest_message.SentGuestMessage`."
+
+msgid "Source: https://core.telegram.org/bots/api#answerguestquery"
+msgstr "Источник: https://core.telegram.org/bots/api#answerguestquery"
+
+msgid "Unique identifier for the query to be answered"
+msgstr "Уникальный идентификатор запроса, на который нужно ответить"
+
+msgid "A JSON-serialized object describing the message to be sent"
+msgstr "Объект в формате JSON, описывающий отправляемое сообщение"
+

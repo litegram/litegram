@@ -1,0 +1,41 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Use this method to edit public data of a shared widget created by the bot. A"
+" shared widget can be edited at most once per second. On success, "
+":code:`True` is returned."
+msgstr ""
+"Изменяет публичные данные переиспользуемого виджета, созданного ботом. Такой"
+" виджет можно редактировать не чаще одного раза в секунду. При успехе "
+"возвращает :code:`True`."
+
+msgid "Source: https://core.telegram.org/bots/api#editsharedwidgetdata"
+msgstr "Источник: https://core.telegram.org/bots/api#editsharedwidgetdata"
+
+msgid "Unique identifier of the shared widget"
+msgstr "Уникальный идентификатор переиспользуемого виджета"
+
+msgid ""
+"New public data of the widget, 0-1024 bytes; pass an empty string to remove "
+"the public data"
+msgstr ""
+"Новые публичные данные виджета, от 0 до 1024 байт; передайте пустую строку, "
+"чтобы их удалить"
+
+msgid ""
+"The maximum amount of time in seconds that the public data of the widget may"
+" be cached client-side; 5-3600. If omitted, then the current value is kept, "
+"which is 30 by default."
+msgstr ""
+"Максимальное время кеширования публичных данных виджета на клиенте, от 5 до "
+"3600 секунд. Если параметр не задан, сохраняется текущее значение (по "
+"умолчанию — 30 секунд)."
+

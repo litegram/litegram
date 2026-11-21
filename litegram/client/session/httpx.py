@@ -1,16 +1,17 @@
 from __future__ import annotations
 
 import asyncio
+from contextlib import aclosing
+from secrets import token_hex
 from typing import TYPE_CHECKING, Any, Self, cast
 
 import httpx
 
 from litegram.__meta__ import __version__
 from litegram.exceptions import TelegramNetworkError
-from litegram.methods.base import Request
 
-# Removed TelegramType import as we'll use PEP 695 type parameters
 from .base import BaseSession
+from .multipart import iter_multipart
 
 if TYPE_CHECKING:
     from collections.abc import AsyncGenerator
@@ -24,17 +25,18 @@ class HttpxSession(BaseSession):
     def __init__(
         self,
         proxy: str | None = None,
-        max_connections: int | None = None,
-        max_keepalive_connections: int | None = None,
+        *,
+        max_connections: int | None = 100,
+        max_keepalive_connections: int | None = 20,
         **kwargs: Any,
     ) -> None:
         """Create a session with optional connection pool limits.
 
         :param proxy: Proxy URL passed to httpx.
         :param max_connections: Maximum number of connections in the pool
-            (None = httpx default of 100).
+            (default 100; None disables this limit).
         :param max_keepalive_connections: Maximum number of keep-alive
-            connections (None = httpx default of 20).
+            connections (default 20; None disables this separate limit).
         """
         super().__init__(**kwargs)
         self._proxy = proxy
@@ -67,7 +69,7 @@ class HttpxSession(BaseSession):
 
     def build_request_data[TelegramType](
         self, bot: Bot, method: TelegramMethod[TelegramType]
-    ) -> tuple[dict[str, Any], dict[str, Any]]:
+    ) -> tuple[dict[str, str], dict[str, tuple[str, AsyncGenerator[bytes]]]]:
         data = {}
         files = {}
         input_files: dict[str, InputFile] = {}
@@ -89,13 +91,19 @@ class HttpxSession(BaseSession):
         url = self.api.api_url(token=bot.token, method=method.__api_method__)
         data, files = self.build_request_data(bot=bot, method=method)
 
+        request_timeout = self.timeout if timeout is None else timeout
         try:
-            response = await client.post(
-                url,
-                data=data,
-                files=files,
-                timeout=self.timeout if timeout is None else timeout,
-            )
+            if files:
+                boundary = token_hex(16)
+                async with aclosing(iter_multipart(boundary, data, files)) as body:
+                    response = await client.post(
+                        url,
+                        content=body,
+                        headers={"Content-Type": f"multipart/form-data; boundary={boundary}"},
+                        timeout=request_timeout,
+                    )
+            else:
+                response = await client.post(url, data=data, timeout=request_timeout)
             raw_result = response.text
         except httpx.TimeoutException as e:
             raise TelegramNetworkError(method=method, message="Request timeout error") from e

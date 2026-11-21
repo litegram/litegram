@@ -1,0 +1,24 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Use this method to get the list of backdrops, which can be used as the "
+"background of a theme of the screen for sharing a link to a user or a chat. "
+"Requires no parameters. Returns a "
+":class:`litegram.types.chat_share_theme_backdrops.ChatShareThemeBackdrops` "
+"object."
+msgstr ""
+"Возвращает список фонов для темы экрана отправки ссылки на пользователя или "
+"чат. Параметры не требуются. Возвращает объект "
+":class:`litegram.types.chat_share_theme_backdrops.ChatShareThemeBackdrops`."
+
+msgid "Source: https://core.telegram.org/bots/api#getchatsharethemebackdrops"
+msgstr "Источник: https://core.telegram.org/bots/api#getchatsharethemebackdrops"
+

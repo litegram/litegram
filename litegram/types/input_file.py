@@ -3,6 +3,7 @@ from __future__ import annotations
 import io
 import os
 from abc import ABC, abstractmethod
+from contextlib import aclosing
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
@@ -146,5 +147,6 @@ class URLInputFile(InputFile):
             raise_for_status=True,
         )
 
-        async for chunk in stream:
-            yield chunk
+        async with aclosing(stream):
+            async for chunk in stream:
+                yield chunk

@@ -273,6 +273,7 @@ if TYPE_CHECKING:
         ReplyParameters,
         ResultChatMemberUnion,
         ResultMenuButtonUnion,
+        SentGuestMessage,
         SentWebAppMessage,
         ShippingOption,
         StarAmount,
@@ -6361,7 +6362,7 @@ class Bot:
         guest_query_id: str,
         result: InlineQueryResultUnion,
         request_timeout: int | None = None,
-    ) -> bool:
+    ) -> SentGuestMessage:
         """
         Use this method to reply to a received guest message. On success, a :class:`litegram.types.sent_guest_message.SentGuestMessage` object is returned.
 
@@ -6382,7 +6383,7 @@ class Bot:
         self,
         user_id: int,
         request_timeout: int | None = None,
-    ) -> bool:
+    ) -> str:
         """
         Use this method to get the token of a managed bot. Returns the token as *String* on success.
 
@@ -6401,7 +6402,7 @@ class Bot:
         self,
         user_id: int,
         request_timeout: int | None = None,
-    ) -> bool:
+    ) -> str:
         """
         Use this method to revoke the current token of a managed bot and generate a new one. Returns the new token as *String* on success.
 

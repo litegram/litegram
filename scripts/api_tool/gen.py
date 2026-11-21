@@ -479,7 +479,7 @@ class Generator:
         """Return type derived from the method description."""
         desc = obj.rst_description
         m = re.search(
-            r"the sent :class:`litegram\.types\.[a-z_0-9]+\.([A-Za-z0-9]+)` is returned",
+            r"(?:the sent |an? ):class:`litegram\.types\.[a-z_0-9]+\.([A-Za-z0-9]+)`(?: object)? is returned",
             desc,
         )
         if m:
@@ -502,6 +502,10 @@ class Generator:
         )
         if m:
             return f"list[{m.group(1)}]"
+        if re.search(r"[Rr]eturns .* as \*String\*", desc):
+            return "str"
+        if re.search(r"[Rr]eturns .* as \*Integer\*", desc):
+            return "int"
         return "bool"
 
     # --- unions and enums -----------------------------------------------------------

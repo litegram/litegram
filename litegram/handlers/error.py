@@ -3,17 +3,22 @@ from __future__ import annotations
 from abc import ABC
 
 from litegram.handlers.base import BaseHandler
+from litegram.types import ErrorEvent
 
 
-class ErrorHandler(BaseHandler[Exception], ABC):
+class ErrorHandler(BaseHandler[ErrorEvent | Exception], ABC):
     """
     Base class for errors handlers
     """
 
     @property
+    def exception(self) -> Exception:
+        return self.event.exception if isinstance(self.event, ErrorEvent) else self.event
+
+    @property
     def exception_name(self) -> str:
-        return self.event.__class__.__name__
+        return type(self.exception).__name__
 
     @property
     def exception_message(self) -> str:
-        return str(self.event)
+        return str(self.exception)

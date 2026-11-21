@@ -533,6 +533,7 @@ class Dispatcher(Router):
         handle_signals: bool = True,
         close_bot_session: bool = True,
         tasks_concurrency_limit: int | None = None,
+        drain_timeout: float = 30.0,
         **kwargs: Any,
     ) -> None:
         """
@@ -548,6 +549,8 @@ class Dispatcher(Router):
         :param close_bot_session: close bot sessions on shutdown
         :param tasks_concurrency_limit: Maximum number of concurrent updates to process
             (None = no limit), used only if handle_as_tasks is True
+        :param drain_timeout: Maximum time in seconds to wait for in-flight update
+            handlers on shutdown before cancelling them
         :param kwargs: contextual data
         :return:
         """
@@ -622,6 +625,24 @@ class Dispatcher(Router):
                         await task
                 # Wait finished tasks to propagate unhandled exceptions
                 await asyncio.gather(*done)
+
+                # Drain update handlers that are still running before the
+                # bot sessions and FSM storage are closed below, so tasks
+                # don't lose their storage/session underneath them.
+                if self._handle_update_tasks:
+                    loggers.dispatcher.info(
+                        "Waiting for %d pending update handler(s)",
+                        len(self._handle_update_tasks),
+                    )
+                    await asyncio.wait(set(self._handle_update_tasks), timeout=drain_timeout)
+                    for update_task in list(self._handle_update_tasks):
+                        if not update_task.done():
+                            loggers.dispatcher.warning(
+                                "Update handler did not finish in %.1f seconds and was cancelled",
+                                drain_timeout,
+                            )
+                            update_task.cancel()
+                    await asyncio.gather(*self._handle_update_tasks, return_exceptions=True)
 
             finally:
                 loggers.dispatcher.info("Polling stopped")

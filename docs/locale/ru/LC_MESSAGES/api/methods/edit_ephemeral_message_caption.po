@@ -1,0 +1,66 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Use this method to edit the caption of an ephemeral message. Note that it is"
+" not guaranteed that the user will receive the message edit event, "
+"especially if they are offline. On success, :code:`True` is returned."
+msgstr ""
+"Изменяет подпись эфемерного сообщения. Получение пользователем события об "
+"изменении не гарантируется, особенно если он не в сети. При успехе "
+"возвращает :code:`True`."
+
+msgid "Source: https://core.telegram.org/bots/api#editephemeralmessagecaption"
+msgstr "Источник: https://core.telegram.org/bots/api#editephemeralmessagecaption"
+
+msgid ""
+"Unique identifier for the target chat or username of the target supergroup "
+"in the format :code:`@username`"
+msgstr ""
+"Уникальный идентификатор целевого чата или имя целевой супергруппы в формате"
+" :code:`@username`"
+
+msgid "Identifier of the user who received the message"
+msgstr "Идентификатор пользователя, получившего сообщение"
+
+msgid "Identifier of the ephemeral message to edit"
+msgstr "Идентификатор эфемерного сообщения, которое нужно изменить"
+
+msgid "New caption of the message, 0-1024 characters after entities parsing"
+msgstr "Новая подпись сообщения, от 0 до 1024 символов после разбора сущностей"
+
+msgid ""
+"Mode for parsing entities in the message caption. See `formatting options "
+"<https://core.telegram.org/bots/api#formatting-options>`_ for more details."
+msgstr ""
+"Режим разбора сущностей в подписи сообщения. Подробнее см. `варианты "
+"форматирования <https://core.telegram.org/bots/api#formatting-options>`_."
+
+msgid ""
+"A JSON-serialized list of special entities that appear in the caption, which"
+" can be specified instead of *parse_mode*"
+msgstr ""
+"Список специальных сущностей в подписи в формате JSON; его можно передать "
+"вместо *parse_mode*"
+
+msgid ""
+"Pass :code:`True` if the caption must be shown above the message media. "
+"Supported only for animation, photo and video messages."
+msgstr ""
+"Передайте :code:`True`, чтобы показать подпись над медиа. Поддерживается "
+"только для сообщений с анимацией, фото или видео."
+
+msgid ""
+"A JSON-serialized object for an `inline keyboard "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_"
+msgstr ""
+"Объект в формате JSON, описывающий `inline-клавиатуру "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_"
+

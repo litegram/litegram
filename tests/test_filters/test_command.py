@@ -93,6 +93,7 @@ class TestCommandFilter:
             ["/start", CommandStart(deep_link=True), False],
             ["/start test", CommandStart(deep_link=True), True],
             ["/start test", CommandStart(deep_link=True, deep_link_encoded=True), False],
+            ["/start a", CommandStart(deep_link=True, deep_link_encoded=True), False],
             ["/start dGVzdA", CommandStart(deep_link=True, deep_link_encoded=True), True],
             ["/TeSt", Command("test", ignore_case=True), True],
             ["/TeSt", Command("TeSt", ignore_case=True), True],

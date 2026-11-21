@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+from binascii import Error as Base64Error
 from collections.abc import Iterable, Sequence
 from dataclasses import dataclass, field, replace
 from re import Match, Pattern
@@ -285,7 +286,7 @@ class CommandStart(Command):
         if self.deep_link_encoded:
             try:
                 args = decode_payload(args)
-            except UnicodeDecodeError as e:
+            except (Base64Error, UnicodeDecodeError) as e:
                 msg = f"Failed to decode Base64: {e}"
                 raise CommandException(msg) from e
             return replace(command, args=args)

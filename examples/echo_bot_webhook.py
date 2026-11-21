@@ -35,8 +35,9 @@ WEB_SERVER_PORT = 8080
 
 # Path to webhook route, on which Telegram will send requests
 WEBHOOK_PATH = "/webhook"
-# Secret key to validate requests from Telegram (optional)
-WEBHOOK_SECRET = "my-secret"
+# Secret key to validate requests from Telegram (optional);
+# generate one with: python -c "import secrets; print(secrets.token_urlsafe(32))"
+WEBHOOK_SECRET = getenv("WEBHOOK_SECRET", "")
 # Base URL for webhook will be used to generate webhook URL for Telegram,
 # in this example it is used public DNS with HTTPS support
 BASE_WEBHOOK_URL = "https://litegram.dev"

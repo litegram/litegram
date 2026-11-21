@@ -1,0 +1,71 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Use this method to edit an ephemeral text or rich message. Note that it is "
+"not guaranteed that the user will receive the message edit event, especially"
+" if they are offline. On success, :code:`True` is returned."
+msgstr ""
+"Редактирует эфемерное текстовое или форматированное (rich) сообщение. "
+"Получение пользователем события об изменении не гарантируется, особенно если"
+" он не в сети. При успехе возвращает :code:`True`."
+
+msgid "Source: https://core.telegram.org/bots/api#editephemeralmessagetext"
+msgstr "Источник: https://core.telegram.org/bots/api#editephemeralmessagetext"
+
+msgid ""
+"Unique identifier for the target chat or username of the target supergroup "
+"in the format :code:`@username`"
+msgstr ""
+"Уникальный идентификатор целевого чата или имя целевой супергруппы в формате"
+" :code:`@username`"
+
+msgid "Identifier of the user who received the message"
+msgstr "Идентификатор пользователя, получившего сообщение"
+
+msgid "Identifier of the ephemeral message to edit"
+msgstr "Идентификатор эфемерного сообщения, которое нужно изменить"
+
+msgid ""
+"New text of the message, 1-4096 characters after entity parsing; required if"
+" *rich_message* isn't specified"
+msgstr ""
+"Новый текст сообщения, от 1 до 4096 символов после разбора сущностей; "
+"обязателен, если не задан *rich_message*"
+
+msgid ""
+"Mode for parsing entities in the message text. See `formatting options "
+"<https://core.telegram.org/bots/api#formatting-options>`_ for more details."
+msgstr ""
+"Режим разбора сущностей в тексте сообщения. Подробнее см. `варианты "
+"форматирования <https://core.telegram.org/bots/api#formatting-options>`_."
+
+msgid ""
+"A JSON-serialized list of special entities that appear in message text, "
+"which can be specified instead of *parse_mode*"
+msgstr ""
+"Список специальных сущностей в тексте сообщения в формате JSON; его можно "
+"передать вместо *parse_mode*"
+
+msgid "New rich content of the message; required if *text* isn't specified"
+msgstr ""
+"Новое форматированное (rich) содержимое сообщения; обязательно, если не "
+"задан *text*"
+
+msgid "Link preview generation options for the message"
+msgstr "Настройки предпросмотра ссылок в сообщении"
+
+msgid ""
+"A JSON-serialized object for an `inline keyboard "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_"
+msgstr ""
+"Объект в формате JSON, описывающий `inline-клавиатуру "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_"
+

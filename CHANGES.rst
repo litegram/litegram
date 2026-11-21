@@ -26,7 +26,6 @@ Features
   rich messages (RichMessage/RichText/RichBlock families), widgets (Widget/WidgetQuery/SharedWidgetQuery),
   ephemeral messages, managed bots, chat join request queries, poll voting enhancements,
   TON wallet cards and the rest of the new types and methods.
-  `#176.api <https://github.com/litegram/litegram/issues/176.api>`_
 - ``HttpxSession`` now accepts ``max_connections`` and ``max_keepalive_connections`` for connection-pool tuning in high-load production.
 
 Bugfixes
@@ -34,7 +33,11 @@ Bugfixes
 
 - Fixed ``Update.purchased_paid_media`` field name (was ``paid_media_purchased``), so the field now correctly deserializes real Telegram payloads and the dispatcher routes the update.
 - Fixed deprecated field handling (``Default``/``Field(alias=...)``) across the API layer and preserved curated defaults (e.g. ``RefundedPayment.currency``).
-- Fixed ``HttpxSession.create_client`` race condition: concurrent first requests now share one httpx client.
+- Restore bounded defaults for the HTTPX connection pool while allowing explicit overrides.
+- Route all six new update types through the dispatcher and populate their event context where available.
+- Decode ``answerGuestQuery`` as ``SentGuestMessage`` and managed-bot token responses as strings.
+- Fix async callable dispatch, class-based error reporting, chat-scoped FSM resolution, nested state names, and keyboard markup option round-trips.
+- Reject malformed encoded deep links and third-party Mini App signatures without propagating decoding errors.
 
 Improved Documentation
 ----------------------

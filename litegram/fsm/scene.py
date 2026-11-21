@@ -766,6 +766,10 @@ class SceneRegistry:
     ) -> Any:
         assert isinstance(event, Update), "Event must be an Update instance"
 
+        # Scenes require FSM state; with disable_fsm=True there is none.
+        if "state" not in data:
+            return await handler(event, data)
+
         data["scenes"] = ScenesManager(
             registry=self,
             update_type=event.event_type,
@@ -781,6 +785,10 @@ class SceneRegistry:
         event: TelegramObject,
         data: dict[str, Any],
     ) -> Any:
+        # Scenes require FSM state; with disable_fsm=True there is none.
+        if "state" not in data:
+            return await handler(event, data)
+
         update: Update = data["event_update"]
         data["scenes"] = ScenesManager(
             registry=self,

@@ -33,7 +33,13 @@ class CallableObject:
 
     def __post_init__(self) -> None:
         callback = inspect.unwrap(self.callback)
-        self.awaitable = inspect.isawaitable(callback) or inspect.iscoroutinefunction(callback)
+        # Async callable objects (instances with async __call__) are not
+        # coroutine functions themselves — inspect their __call__ too.
+        self.awaitable = (
+            inspect.isawaitable(callback)
+            or inspect.iscoroutinefunction(callback)
+            or (not inspect.isclass(callback) and inspect.iscoroutinefunction(type(callback).__call__))
+        )
 
         kwargs: dict[str, Any] = {}
         if sys.version_info >= (3, 14):  # noqa: UP036

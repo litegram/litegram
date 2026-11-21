@@ -5,14 +5,14 @@ from typing import TYPE_CHECKING, Any
 from .base import TelegramMethod
 
 
-class GetManagedBotToken(TelegramMethod[bool]):
+class GetManagedBotToken(TelegramMethod[str]):
     """
     Use this method to get the token of a managed bot. Returns the token as *String* on success.
 
     Source: https://core.telegram.org/bots/api#getmanagedbottoken
     """
 
-    __returning__ = bool
+    __returning__ = str
     __api_method__ = "getManagedBotToken"
 
     user_id: int

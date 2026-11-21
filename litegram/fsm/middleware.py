@@ -76,6 +76,12 @@ class FSMContextMiddleware(BaseMiddleware):
         if chat_id is None:
             chat_id = user_id
 
+        # Chat-scoped strategies must also work for chat-only events
+        # (channel posts and similar updates have no user): the storage key
+        # uses the chat identifier as the user slot.
+        if user_id is None and chat_id is not None and self.strategy in {FSMStrategy.CHAT, FSMStrategy.CHAT_TOPIC}:
+            user_id = chat_id
+
         if chat_id is not None and user_id is not None:
             chat_id, user_id, thread_id = apply_strategy(
                 chat_id=chat_id,

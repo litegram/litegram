@@ -5,14 +5,14 @@ from typing import TYPE_CHECKING, Any
 from .base import TelegramMethod
 
 
-class ReplaceManagedBotToken(TelegramMethod[bool]):
+class ReplaceManagedBotToken(TelegramMethod[str]):
     """
     Use this method to revoke the current token of a managed bot and generate a new one. Returns the new token as *String* on success.
 
     Source: https://core.telegram.org/bots/api#replacemanagedbottoken
     """
 
-    __returning__ = bool
+    __returning__ = str
     __api_method__ = "replaceManagedBotToken"
 
     user_id: int

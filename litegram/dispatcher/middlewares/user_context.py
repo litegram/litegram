@@ -171,6 +171,18 @@ class UserContextMiddleware(BaseMiddleware):
                 ),
                 business_connection_id=event.edited_business_message.business_connection_id,
             )
+        if guest := event.guest_message:
+            return EventContext(chat=guest.chat, user=guest.from_user)
+        if query := event.widget_query:
+            return EventContext(chat=query.chat, user=query.from_user)
+        if shared_query := event.shared_widget_query:
+            return EventContext(user=shared_query.from_user)
+        if managed_bot := event.managed_bot:
+            return EventContext(user=managed_bot.user)
+        if subscription := event.subscription:
+            return EventContext(user=subscription.user)
+        if stopped := event.stopped_message_generation:
+            return EventContext(chat=stopped.chat, thread_id=stopped.message_thread_id)
         if event.purchased_paid_media:
             return EventContext(
                 user=event.purchased_paid_media.from_user,

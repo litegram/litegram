@@ -8,13 +8,16 @@ from typing import TYPE_CHECKING, Any, cast
 
 from litestar import Request, Response, post
 from litestar.background_tasks import BackgroundTask
-from litestar.status_codes import HTTP_401_UNAUTHORIZED
+from litestar.exceptions import HTTPException
+from litestar.status_codes import HTTP_401_UNAUTHORIZED, HTTP_404_NOT_FOUND
 
 from litegram import Bot, Dispatcher
 from litegram.types import Update
 
 if TYPE_CHECKING:
     # Removed TelegramType import
+    from collections.abc import Iterable
+
     from litegram.methods import TelegramMethod
 
     pass
@@ -117,11 +120,12 @@ class SimpleRequestHandler(BaseRequestHandler):
 class TokenBasedRequestHandler(BaseRequestHandler):
     """Request handler that resolves the bot from a token in the URL path.
 
-    .. warning::
-        Bot instances are cached per token in an unbounded in-memory dict.
-        If untrusted clients can hit this endpoint with arbitrary tokens,
-        restrict access at the reverse-proxy level or provide your own
-        bounded ``resolve_bot`` implementation to avoid unbounded growth.
+    By default the set of acceptable tokens must be provided up front via
+    ``bot_tokens``; requests with any other token are rejected with 404 so
+    untrusted callers cannot make the handler instantiate arbitrary bots.
+    Passing ``accept_any_token=True`` restores the legacy behavior of
+    creating (and caching) a bot for every token seen in the URL, which is
+    only safe behind a reverse proxy that restricts the path space.
     """
 
     def __init__(
@@ -129,13 +133,18 @@ class TokenBasedRequestHandler(BaseRequestHandler):
         dispatcher: Dispatcher,
         handle_in_background: bool = True,
         bot_settings: dict[str, Any] | None = None,
+        bot_tokens: Iterable[str] | None = None,
+        accept_any_token: bool = False,
         **data: Any,
     ) -> None:
         super().__init__(dispatcher=dispatcher, handle_in_background=handle_in_background, **data)
         if bot_settings is None:
             bot_settings = {}
         self.bot_settings = bot_settings
+        self.accept_any_token = accept_any_token
         self.bots: dict[str, Bot] = {}
+        for token in bot_tokens or ():
+            self.bots[token] = Bot(token=token, **self.bot_settings)
 
     def verify_secret(self, telegram_secret_token: str, bot: Bot) -> bool:
         return True
@@ -147,6 +156,8 @@ class TokenBasedRequestHandler(BaseRequestHandler):
     async def resolve_bot(self, request: Request) -> Bot:
         token = request.path_parameters["bot_token"]
         if token not in self.bots:
+            if not self.accept_any_token:
+                raise HTTPException(status_code=HTTP_404_NOT_FOUND)
             self.bots[token] = Bot(token=token, **self.bot_settings)
         return self.bots[token]
 

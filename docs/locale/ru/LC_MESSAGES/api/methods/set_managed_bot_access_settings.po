@@ -1,0 +1,41 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Use this method to change the access settings of a managed bot. Returns "
+":code:`True` on success."
+msgstr ""
+"Изменяет настройки доступа к управляемому боту. При успехе возвращает "
+":code:`True`."
+
+msgid "Source: https://core.telegram.org/bots/api#setmanagedbotaccesssettings"
+msgstr "Источник: https://core.telegram.org/bots/api#setmanagedbotaccesssettings"
+
+msgid "User identifier of the managed bot whose access settings will be changed"
+msgstr ""
+"Идентификатор пользователя, соответствующего управляемому боту, настройки "
+"доступа к которому нужно изменить"
+
+msgid ""
+"Pass :code:`True` if only selected users can access the bot. The bot's owner"
+" can always access it."
+msgstr ""
+"Передайте :code:`True`, чтобы ограничить доступ к боту выбранными "
+"пользователями. Владелец бота всегда сохраняет доступ."
+
+msgid ""
+"A JSON-serialized list of up to 10 identifiers of users who will have access"
+" to the bot in addition to its owner. Ignored if *is_access_restricted* is "
+":code:`False`."
+msgstr ""
+"Список в формате JSON, не более 10 идентификаторов пользователей, которым "
+"разрешён доступ к боту помимо владельца. Не учитывается, если "
+"*is_access_restricted* равно :code:`False`."
+

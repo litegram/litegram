@@ -47,13 +47,11 @@ def check_webapp_signature(
     message = data_check_string.encode()
 
     padding = "=" * (-len(signature_b64) % 4)
-    signature = base64.urlsafe_b64decode(signature_b64 + padding)
-
-    public_key = Ed25519PublicKey.from_public_bytes(public_key_bytes)
-
     try:
+        signature = base64.b64decode(signature_b64 + padding, altchars=b"-_", validate=True)
+        public_key = Ed25519PublicKey.from_public_bytes(public_key_bytes)
         public_key.verify(signature, message)
-    except InvalidSignature:
+    except (InvalidSignature, ValueError):
         return False
     else:
         return True

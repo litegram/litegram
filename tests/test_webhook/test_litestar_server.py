@@ -7,6 +7,8 @@ from unittest.mock import AsyncMock, patch
 
 import pytest
 from litestar import Litestar, Request, post
+from litestar.exceptions import HTTPException
+from litestar.status_codes import HTTP_404_NOT_FOUND
 from litestar.testing import TestClient
 
 from litegram import Bot, Dispatcher, F
@@ -165,7 +167,9 @@ class TestTokenBasedRequestHandler:
     @pytest.mark.anyio
     async def test_resolve_bot(self):
         dispatcher = Dispatcher()
-        handler = TokenBasedRequestHandler(dispatcher=dispatcher)
+        handler = TokenBasedRequestHandler(
+            dispatcher=dispatcher, bot_tokens=["42:TEST", "1337:TEST"]
+        )
 
         class FakeRequest:
             def __init__(self, bot_token):
@@ -182,3 +186,29 @@ class TestTokenBasedRequestHandler:
 
         assert bot2 == bot3
         assert len(handler.bots) == 2
+
+    @pytest.mark.anyio
+    async def test_resolve_bot_rejects_unknown_token(self):
+        dispatcher = Dispatcher()
+        handler = TokenBasedRequestHandler(dispatcher=dispatcher, bot_tokens=["42:TEST"])
+
+        class FakeRequest:
+            def __init__(self, bot_token):
+                self.path_parameters = {"bot_token": bot_token}
+
+        with pytest.raises(HTTPException) as exc_info:
+            await handler.resolve_bot(request=FakeRequest(bot_token="999:EVIL"))
+        assert exc_info.value.status_code == HTTP_404_NOT_FOUND
+        assert handler.bots.keys() == {"42:TEST"}
+
+    @pytest.mark.anyio
+    async def test_resolve_bot_accept_any_token_is_opt_in(self):
+        dispatcher = Dispatcher()
+        handler = TokenBasedRequestHandler(dispatcher=dispatcher, accept_any_token=True)
+
+        class FakeRequest:
+            def __init__(self, bot_token):
+                self.path_parameters = {"bot_token": bot_token}
+
+        bot = await handler.resolve_bot(request=FakeRequest(bot_token="999:EVIL"))
+        assert bot.id == 999

@@ -14,6 +14,8 @@ from __future__ import annotations
 
 import json
 import re
+import urllib.parse
+import urllib.request
 from pathlib import Path
 from typing import Any
 
@@ -273,6 +275,17 @@ def write_schema(schema: dict[str, Any], out_dir: Path) -> None:
             )
 
 
+def _no_redirects(request: urllib.request.Request, _code: int, _headers: dict, response) -> None:
+    # The documentation URL is pinned; following redirects to another host
+    # would defeat the allowlist above.
+    del request, _code, _headers
+    raise SystemExit(f"Refusing to follow redirect away from {PAGE_URL}: {response.geturl()}")
+
+
+class _NoRedirects(urllib.request.HTTPRedirectHandler):
+    redirect_request = _no_redirects
+
+
 def main() -> None:
     """CLI entry point: read the page (cached file or network) and parse it."""
     import argparse
@@ -296,8 +309,13 @@ def main() -> None:
     if args.input is not None:
         html = args.input.read_text(encoding="utf-8")
     else:
+        parsed_url = urllib.parse.urlparse(PAGE_URL)
+        if parsed_url.scheme != "https" or parsed_url.hostname != "core.telegram.org":
+            msg = f"Refusing to fetch a non-official documentation URL: {PAGE_URL}"
+            raise SystemExit(msg)
         request = urllib.request.Request(PAGE_URL, headers={"User-Agent": "litegram-api-tool/1.0"})
-        with urllib.request.urlopen(request, timeout=60) as response:
+        opener = urllib.request.build_opener(_NoRedirects())
+        with opener.open(request, timeout=60) as response:
             html = response.read().decode("utf-8")
 
     schema = parse_page(html)

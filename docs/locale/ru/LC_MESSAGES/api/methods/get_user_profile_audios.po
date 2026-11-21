@@ -1,0 +1,37 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Use this method to get a list of profile audios for a user. Returns a "
+":class:`litegram.types.user_profile_audios.UserProfileAudios` object."
+msgstr ""
+"Получает список аудиозаписей профиля пользователя. Возвращает объект "
+":class:`litegram.types.user_profile_audios.UserProfileAudios`."
+
+msgid "Source: https://core.telegram.org/bots/api#getuserprofileaudios"
+msgstr "Источник: https://core.telegram.org/bots/api#getuserprofileaudios"
+
+msgid "Unique identifier of the target user"
+msgstr "Уникальный идентификатор целевого пользователя"
+
+msgid ""
+"Sequential number of the first audio to be returned. By default, all audios "
+"are returned."
+msgstr ""
+"Порядковый номер первой возвращаемой аудиозаписи. По умолчанию возвращаются "
+"все аудиозаписи."
+
+msgid ""
+"Limits the number of audios to be retrieved. Values between 1-100 are "
+"accepted. Defaults to 100."
+msgstr ""
+"Максимальное число возвращаемых аудиозаписей, от 1 до 100. По умолчанию — "
+"100."
+

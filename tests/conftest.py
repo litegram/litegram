@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import sys
+import weakref
 from pathlib import Path
 
 import pytest
@@ -31,10 +32,39 @@ USER_ID = 42
 SKIP_MESSAGE_PATTERN = 'Need "--{db}" option with {db} URI to run'
 INVALID_URI_PATTERN = "Invalid {db} URI {uri!r}: {err}"
 
+# Track every selector loop created in the test process so orphaned ones
+# (left by the anyio pytest plugin) can be closed promptly.
+_TRACKED_LOOPS: weakref.WeakSet = weakref.WeakSet()
+_SELECTOR_LOOP_INIT = asyncio.selector_events.BaseSelectorEventLoop.__init__
+
+
+def _track_selector_loop(self, *args, **kwargs) -> None:
+    _SELECTOR_LOOP_INIT(self, *args, **kwargs)
+    _TRACKED_LOOPS.add(self)
+
+
+asyncio.selector_events.BaseSelectorEventLoop.__init__ = _track_selector_loop
+
 
 def pytest_addoption(parser):
     parser.addoption("--redis", default=None, help="run tests which require redis connection")
     parser.addoption("--mongo", default=None, help="run tests which require mongo connection")
+
+
+@pytest.fixture(autouse=True)
+def close_orphan_event_loops():
+    """Close event loops abandoned by the test runner after each test.
+
+    The anyio pytest plugin leaves one unclosed selector loop behind per
+    session; when the garbage collector collects it inside a test that uses
+    ``pytest.warns``, the unrelated ResourceWarning breaks the assertion
+    under ``filterwarnings = error``.
+    """
+    yield
+    for loop in list(_TRACKED_LOOPS):
+        if not loop.is_closed() and not loop.is_running():
+            loop.close()
+            _TRACKED_LOOPS.discard(loop)
 
 
 def pytest_configure(config):

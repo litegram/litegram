@@ -1,0 +1,20 @@
+# Russian translation of the litegram documentation.
+# Distributed under the same license as litegram.
+msgid ""
+msgstr ""
+"Project-Id-Version: litegram\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"Removes the profile photo of the bot. Requires no parameters. Returns "
+":code:`True` on success."
+msgstr ""
+"Удаляет фотографию профиля бота. Параметры не требуются. При успехе "
+"возвращает :code:`True`."
+
+msgid "Source: https://core.telegram.org/bots/api#removemyprofilephoto"
+msgstr "Источник: https://core.telegram.org/bots/api#removemyprofilephoto"
+
