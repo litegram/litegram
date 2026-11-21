@@ -24,7 +24,7 @@ from litegram.utils.formatting import (
     TextMention,
     Underline,
     Url,
-    _apply_entity,
+    _apply_entity,  # noqa: PLC2701 — internal entity-application helper under test
     as_key_value,
     as_line,
     as_list,

@@ -11,7 +11,7 @@ from pathlib import Path
 def bump_version(part: str) -> str:
     """Bump version in __meta__.py."""
     meta_path = Path("litegram/__meta__.py")
-    content = meta_path.read_text()
+    content = meta_path.read_text(encoding="utf-8")
 
     # Extract current version
     version_match = re.search(r'__version__ = "(\d+)\.(\d+)\.(\d+)"', content)
@@ -33,14 +33,14 @@ def bump_version(part: str) -> str:
     elif part.startswith("to:"):
         new_version = part.replace("to:", "")
         content = re.sub(r'__version__ = "\d+\.\d+\.\d+"', f'__version__ = "{new_version}"', content)
-        meta_path.write_text(content)
+        meta_path.write_text(content, encoding="utf-8")
         return new_version
     else:
         raise ValueError(f"Unknown part: {part}. Use major, minor, patch, or to:X.Y.Z")
 
     new_version = f"{major}.{minor}.{patch}"
     content = re.sub(r'__version__ = "\d+\.\d+\.\d+"', f'__version__ = "{new_version}"', content)
-    meta_path.write_text(content)
+    meta_path.write_text(content, encoding="utf-8")
     return new_version
 
 

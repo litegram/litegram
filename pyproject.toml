@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "litegram"
 description = 'Modern and fully asynchronous framework for Telegram Bot API'
 readme = "README.rst"
-requires-python = ">=3.13,<3.15"
+requires-python = ">=3.13,<3.16"
 license = "MIT"
 authors = [
     { name = "Ruslan Samoylov", email = "ruslan@samoylov.tech" },
@@ -32,6 +32,7 @@ classifiers = [
     "Intended Audience :: System Administrators",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
     "Topic :: Software Development :: Libraries :: Application Frameworks",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Communications :: Chat",
@@ -103,6 +104,7 @@ dev = [
     "packaging>=25.0",
     "motor-types>=1.0.0b4",
     "ty>=0.0.12",
+    "watchfiles==1.2.0",
 ]
 test = [
     "pytest==9.0.2",
@@ -197,6 +199,8 @@ known-first-party = [
 "scripts/api_tool/*" = ["T201"]  # CLI output
 "scripts/verify_live.py" = ["T201"]  # CLI output
 "litegram/enums/*" = ["E501"]
+"tests/test_filters/test_chat_member_updated.py" = ["PLC2701"]  # private helpers under explicit test
+"tests/test_filters/test_logic.py" = ["PLC2701"]  # private composition types under explicit test
 "tests/**" = ["PLR2004"]
 
 

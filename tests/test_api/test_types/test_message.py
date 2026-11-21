@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import datetime
+import math
 from typing import Any
 
 import pytest
@@ -226,7 +227,7 @@ TEST_MESSAGE_VENUE = Message(
     message_id=42,
     date=datetime.datetime.now(datetime.UTC),
     venue=Venue(
-        location=Location(latitude=3.14, longitude=3.14),
+        location=Location(latitude=math.pi, longitude=math.pi),
         title="Cupboard Under the Stairs",
         address="Under the stairs, 4 Privet Drive, Little Whinging, Surrey, England, Great Britain",
     ),
@@ -236,7 +237,7 @@ TEST_MESSAGE_VENUE = Message(
 TEST_MESSAGE_LOCATION = Message(
     message_id=42,
     date=datetime.datetime.now(datetime.UTC),
-    location=Location(longitude=3.14, latitude=3.14),
+    location=Location(longitude=math.pi, latitude=math.pi),
     chat=Chat(id=42, type="private"),
     from_user=User(id=42, is_bot=False, first_name="Test"),
 )

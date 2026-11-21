@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 from typing import TYPE_CHECKING
 
 import pytest
@@ -16,6 +17,6 @@ class TestEditMessageLiveLocation:
     async def test_bot_method(self, bot: MockedBot):
         prepare_result = bot.add_result_for(EditMessageLiveLocation, ok=True, result=True)
 
-        response: Message | bool = await bot.edit_message_live_location(latitude=3.141592, longitude=3.141592)
+        response: Message | bool = await bot.edit_message_live_location(latitude=math.pi, longitude=math.pi)
         bot.get_request()
         assert response == prepare_result.result

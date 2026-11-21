@@ -27,7 +27,7 @@ from litegram.fsm.scene import (
     SceneRegistry,
     ScenesManager,
     SceneWizard,
-    _empty_handler,
+    _empty_handler,  # noqa: PLC2701 — empty callback helper for scenes
     on,
 )
 from litegram.fsm.state import State, StatesGroup
@@ -580,11 +580,11 @@ class TestScene:
         for handler in SubScene.__scene_config__.handlers:
             assert isinstance(handler, HandlerContainer)
             assert handler.name == "message"
-            assert handler.handler in (
+            assert handler.handler in {
                 ParentScene.parent_handler,
                 SubScene.sub_handler,
                 _empty_handler,
-            )
+            }
             assert handler.filters == (F.text,)
 
         # Assert actions are correctly set
@@ -1526,7 +1526,7 @@ class TestSceneRegistry:
         registry._setup_middleware(outer_router)
 
         for name, observer in outer_router.observers.items():
-            if name in ("update", "error"):
+            if name in {"update", "error"}:
                 continue
             assert registry._middleware in observer.outer_middleware
 

@@ -3,7 +3,11 @@ from __future__ import annotations
 import pytest
 
 from litegram.filters import Command, and_f, invert_f, or_f
-from litegram.filters.logic import _AndFilter, _InvertFilter, _OrFilter
+from litegram.filters.logic import (
+    _AndFilter,
+    _InvertFilter,
+    _OrFilter,
+)  # noqa: PLC2701
 
 
 class TestLogic:

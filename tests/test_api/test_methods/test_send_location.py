@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import datetime
+import math
 from typing import TYPE_CHECKING
 
 import pytest
@@ -21,11 +22,11 @@ class TestSendLocation:
             result=Message(
                 message_id=42,
                 date=datetime.datetime.now(datetime.UTC),
-                location=Location(longitude=3.14, latitude=3.14),
+                location=Location(longitude=math.pi, latitude=math.pi),
                 chat=Chat(id=42, type="private"),
             ),
         )
 
-        response: Message = await bot.send_location(chat_id=42, latitude=3.14, longitude=3.14)
+        response: Message = await bot.send_location(chat_id=42, latitude=math.pi, longitude=math.pi)
         bot.get_request()
         assert response == prepare_result.result

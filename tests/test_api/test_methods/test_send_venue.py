@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import datetime
+import math
 from typing import TYPE_CHECKING
 
 import pytest
@@ -22,7 +23,7 @@ class TestSendVenue:
                 message_id=42,
                 date=datetime.datetime.now(datetime.UTC),
                 venue=Venue(
-                    location=Location(latitude=3.14, longitude=3.14),
+                    location=Location(latitude=math.pi, longitude=math.pi),
                     title="Cupboard Under the Stairs",
                     address="Under the stairs, 4 Privet Drive, Little Whinging, Surrey, England, Great Britain",
                 ),
@@ -32,8 +33,8 @@ class TestSendVenue:
 
         response: Message = await bot.send_venue(
             chat_id=42,
-            latitude=3.14,
-            longitude=3.14,
+            latitude=math.pi,
+            longitude=math.pi,
             title="Cupboard Under the Stairs",
             address="Under the stairs, 4 Privet Drive, Little Whinging, Surrey, England, Great Britain",
         )

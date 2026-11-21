@@ -16,7 +16,23 @@ Changelog
 
 .. towncrier release notes start
 
+1.2.1 (2026-11-21)
+===================
+
+Features
+--------
+
+- Added official Python 3.15 support (``requires-python = ">=3.13,<3.16"`` and the corresponding classifier).
+- Upgraded ``hiredis`` to 3.5.0 and ``watchfiles`` to 1.2.0, whose wheels provide CPython 3.15 binaries; the complete dependency set, including test and documentation extras, now installs on 3.15.
+
+Misc
+----
+
+- Cleaned up small test-lint issues, including an explicit timeout in the FSM isolation test and explicit file encodings in ``scripts/bump_version.py``.
+
+
 1.2.0 (2026-11-21)
+===================
 ===================
 
 Features

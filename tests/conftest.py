@@ -6,7 +6,7 @@ import weakref
 from pathlib import Path
 
 import pytest
-from _pytest.config import UsageError
+from _pytest.config import UsageError  # noqa: PLC2701 — pytest's documented helper
 from pymongo.errors import InvalidURI, PyMongoError
 from pymongo.uri_parser import parse_uri as parse_mongo_url
 from redis.asyncio.connection import parse_url as parse_redis_url
@@ -250,8 +250,7 @@ def pytest_generate_tests(metafunc):
         if metafunc.config.getoption("--redis"):
             params.append("redis_storage")
         if metafunc.config.getoption("--mongo"):
-            params.append("mongo_storage")
-            params.append("pymongo_storage")
+            params.extend(["mongo_storage", "pymongo_storage"])
         metafunc.parametrize("storage", params, indirect=True)
     if "isolation" in metafunc.fixturenames:
         params = ["lock_isolation", "disabled_isolation"]

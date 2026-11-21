@@ -13,7 +13,7 @@ from litegram.filters.chat_member_updated import (
     _MemberStatusGroupMarker,
     _MemberStatusMarker,
     _MemberStatusTransition,
-)
+)  # noqa: PLC2701 — private helpers exercised explicitly
 from litegram.types import (
     Chat,
     ChatMember,

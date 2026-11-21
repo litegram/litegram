@@ -73,7 +73,7 @@ class TestCreateChannelBotLink:
         }
 
         variants = product([True, False], repeat=len(params))
-        for _index, variant in enumerate(variants):
+        for variant in variants:
             kwargs = {k: v for k, v in zip(params, variant, strict=False) if v}
             if not kwargs:
                 # Variant without additional arguments is already covered

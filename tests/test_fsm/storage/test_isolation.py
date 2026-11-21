@@ -30,7 +30,8 @@ class TestIsolations:
 
             # Verify that we cannot acquire the lock again (non-reentrant)
             with pytest.raises((asyncio.TimeoutError, TimeoutError)):
-                await asyncio.wait_for(isolation.lock(key=storage_key).__aenter__(), timeout=0.1)
+                async with asyncio.timeout(0.1), isolation.lock(key=storage_key):
+                    pass
 
 
 class TestRedisEventIsolation:
