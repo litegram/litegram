@@ -26,10 +26,11 @@ class TelegramObject(BotContextController, BaseModel):
         """
         Remove UNSET before fields validation.
 
-        We use UNSET as a sentinel value for `parse_mode` and replace it to real value later.
-        It isn't a problem when it's just default value for a model field,
-        but UNSET might be passed to a model initialization from `Bot.method_name`,
-        so we must take care of it and remove it before fields validation.
+        UNSET is the historical sentinel kept for backward compatibility with
+        external libraries working with framework internals; framework code
+        itself uses the :class:`Default` sentinel. Either way, a sentinel
+        might be passed to a model initialization from `Bot.method_name`,
+        so it must be removed before fields validation.
         """
         if not isinstance(values, dict):
             return values
