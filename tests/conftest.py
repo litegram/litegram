@@ -72,7 +72,10 @@ def pytest_configure(config):
     config.addinivalue_line("markers", "mongo: marked tests require mongo connection to run")
 
     if sys.platform == "win32" and sys.version_info < (3, 14):
-        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+        # Deprecated in 3.14, but still needed for Windows on Python 3.13.
+        asyncio.set_event_loop_policy(  # ty: ignore[deprecated]
+            asyncio.WindowsSelectorEventLoopPolicy()
+        )
 
     # Compile locales
     try:
