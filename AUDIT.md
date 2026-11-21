@@ -30,7 +30,7 @@ All 31 new methods have offline wrapper coverage. This does not prove that every
 
 | Priority | Finding | Next step |
 |---|---|---|
-| High | The multipart path sends chunked bodies without `Content-Length`. A real-socket e2e now proves our wire format (chunked framing, multipart structure, closing delimiter) is correct end-to-end, but whether a deployed Telegram endpoint or proxy accepts chunked uploads still needs one live call; a nested `URLInputFile` download also shares the POST's connection pool. | One live-API verification with a real bot token; document/provide a separate source session; add a disk-backed staging mode if `Content-Length` proves mandatory. |
+| Closed | The multipart path sends chunked bodies without `Content-Length` — verified live against the real Telegram API (2026-11-21, bot `@honorfixesbot`, script `scripts/verify_live.py`, token via `BOT_TOKEN` env): chunked multipart with `BufferedInputFile`, `FSInputFile`, `URLInputFile` (download + re-upload), form-only request and file download round-trip all accepted and returned valid responses. | Optional follow-up: a nested `URLInputFile` download shares the POST's connection pool (irrelevant at default pool size); a disk-backed staging mode can be added if a specific proxy ever rejects chunked bodies. |
 | Medium | Scene history updates are not storage transactions; concurrent processing outside the isolation scope can lose history entries. | Decide on transactional semantics and exercise the selected production backends. |
 
 ## Docs and performance
