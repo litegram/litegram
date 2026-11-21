@@ -64,6 +64,13 @@ class TestHttpxSession:
             assert session._proxy == "http://user:password@proxy.url:1080/"
 
     @pytest.mark.anyio
+    async def test_create_socks_proxy_client(self):
+        async with HttpxSession(proxy="socks5://user:password@proxy.url:1080") as session:
+            client = await session.create_client()
+            assert isinstance(client, httpx.AsyncClient)
+            assert session._proxy == "socks5://user:password@proxy.url:1080"
+
+    @pytest.mark.anyio
     async def test_close_client(self):
         session = HttpxSession()
         await session.create_client()

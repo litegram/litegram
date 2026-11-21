@@ -26,7 +26,8 @@ msgid ""
 "code Dispatcher can be used directly for routing updates or attach "
 "another routers into dispatcher."
 msgstr ""
-"Диспетчер — это корневой маршрутизатор, и в коде диспетчер может "
+"Диспетчер — это корневой :class:`~litegram.dispatcher.router.Router`, и в "
+"коде диспетчер может "
 "использоваться непосредственно для маршрутизации событий или подключения "
 "других маршрутизаторов к диспетчеру."
 
@@ -40,11 +41,11 @@ msgstr ""
 
 #: ../../dispatcher/dispatcher.rst:9
 msgid ":ref:`Router <Router>`"
-msgstr "`Маршрутизатор <router.html>`__"
+msgstr ":ref:`Маршрутизатор <Router>`"
 
 #: ../../dispatcher/dispatcher.rst:10
 msgid ":ref:`Filtering events`"
-msgstr ":ref:`Фильтрация событий`"
+msgstr ":ref:`Фильтрация событий <Filtering events>`"
 
 #: litegram.dispatcher.dispatcher.Dispatcher:1
 #: litegram.dispatcher.dispatcher.Dispatcher.__init__:1 of

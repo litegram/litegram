@@ -137,14 +137,14 @@ class ChatActionSender:
 
     async def _stop(self) -> None:
         async with self._lock:
-            if not self.running:
+            if (task := self._task) is None:
                 return
             if not self._close_event.is_set():  # pragma: no branches
                 self._close_event.set()
                 await self._closed_event.wait()
             # Retrieve the worker's result so a finished-with-error task does
             # not linger as "exception was never retrieved" in the event loop.
-            self._task.result()
+            task.result()
             self._task = None
 
     async def __aenter__(self) -> ChatActionSender:

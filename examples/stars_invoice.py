@@ -45,9 +45,14 @@ async def pre_checkout_query(query: PreCheckoutQuery) -> None:
 
 @invoices_router.message(F.successful_payment)
 async def successful_payment(message: Message, bot: Bot) -> None:
+    from_user = message.from_user
+    payment = message.successful_payment
+    assert from_user is not None
+    assert payment is not None
+
     await bot.refund_star_payment(
-        user_id=message.from_user.id,
-        telegram_payment_charge_id=message.successful_payment.telegram_payment_charge_id,
+        user_id=from_user.id,
+        telegram_payment_charge_id=payment.telegram_payment_charge_id,
     )
     await message.answer("Thanks. Your payment has been refunded.")
 

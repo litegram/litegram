@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import asyncio
+import asyncio.selector_events
 import sys
 import weakref
 from pathlib import Path

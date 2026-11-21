@@ -146,7 +146,7 @@ msgid ""
 ":class:`litegram.utils.i18n.I18n` should be created"
 msgstr ""
 "Поруч с мисцем инициализации диспетчера имеет быть созданный экземпляр "
-"перекладача:class:`litegram.utils.i18n.I18n`."
+"перекладача :class:`litegram.utils.i18n.I18n`."
 
 #: ../../utils/i18n.rst:114
 msgid ""

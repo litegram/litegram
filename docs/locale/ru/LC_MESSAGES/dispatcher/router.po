@@ -228,7 +228,9 @@ msgstr "Ошибки"
 msgid ""
 "Is useful for handling errors from other handlers, error event described "
 ":ref:`here <error-event>`"
-msgstr "Полезно для обработки ошибок других обработчиков"
+msgstr ""
+"Полезно для обработки ошибок других обработчиков, событие ошибки описано "
+":ref:`здесь <error-event>`"
 
 #: ../../dispatcher/router.rst:222
 msgid "Nested routers"

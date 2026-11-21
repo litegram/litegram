@@ -21,75 +21,47 @@ Usage example
 
 
 Proxy requests in HttpxSession
-================================
+==============================
 
-In order to use HttpxSession with proxy connector you have to install `httpx-socks <https://pypi.org/project/httpx-socks>`_
+HTTP and HTTPS proxies work with the base HTTPX installation. For SOCKS5 proxies,
+install the optional native HTTPX SOCKS support:
 
-Binding session to bot:
+.. code-block:: bash
+
+    pip install "litegram[proxy]"
+
+Bind the session to the bot and pass a proxy URL:
 
 .. code-block::
 
     from litegram import Bot
     from litegram.client.session.httpx import HttpxSession
 
-    session = HttpxSession(proxy="protocol://host:port/")
+    session = HttpxSession(proxy="http://host:port")
     bot = Bot(token="bot token", session=session)
 
+For a SOCKS5 proxy, use a ``socks5`` or ``socks5h`` URL:
+
+.. code-block::
+
+    session = HttpxSession(proxy="socks5://host:port")
 
 .. note::
 
-    Only following protocols are supported: http(tunneling), socks4(a), socks5
-    as httpx_socks `documentation <https://github.com/romis2012/httpx-socks/blob/master/README.md>`_ claims.
+    HTTPX supports the ``http``, ``https``, ``socks5`` and ``socks5h`` proxy
+    schemes. The ``socks5h`` scheme delegates DNS resolution to the proxy.
+    SOCKS4 and proxy chains are not supported by this session.
 
 
 Authorization
 -------------
 
-Proxy authorization credentials can be specified in proxy URL or come as an instance of :obj:`httpx.BasicAuth` containing
-login and password.
-
-Consider examples:
+Include the proxy username and password in the URL. Percent-encode special
+characters in credentials:
 
 .. code-block::
 
-    from httpx import BasicAuth
-    from litegram.client.session.httpx import HttpxSession
+    session = HttpxSession(proxy="http://user:password@host:port")
+    socks_session = HttpxSession(proxy="socks5://user:password@host:port")
 
-    auth = BasicAuth(login="user", password="password")
-    session = HttpxSession(proxy=("protocol://host:port", auth))
-
-
-or simply include your basic auth credential in URL
-
-.. code-block::
-
-    session = HttpxSession(proxy="protocol://user:password@host:port")
-
-
-.. note::
-
-    Litegram prefers `BasicAuth` over username and password in URL, so
-    if proxy URL contains login and password and `BasicAuth` object is passed at the same time
-    litegram will use login and password from `BasicAuth` instance.
-
-
-Proxy chains
-------------
-
-Since `httpx-socks <https://pypi.org/project/httpx-socks/>`_ supports proxy chains, you're able to use them in litegram
-
-Example of chain proxies:
-
-.. code-block::
-
-    from httpx import BasicAuth
-    from litegram.client.session.httpx import HttpxSession
-
-    auth = BasicAuth(login="user", password="password")
-    session = HttpxSession(
-        proxy={
-            "protocol0://host0:port0",
-            "protocol1://user:password@host1:port1",
-            ("protocol2://host2:port2", auth),
-        }  # can be any iterable if not set
-    )
+``HttpxSession`` passes this URL directly to :class:`httpx.AsyncClient`.

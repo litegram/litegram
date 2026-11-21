@@ -4,7 +4,7 @@ import operator
 import re
 from functools import wraps
 from re import Pattern
-from typing import TYPE_CHECKING, Any, Optional, TypeVar, Union
+from typing import TYPE_CHECKING, Any, Optional, TypeVar, Union, cast
 from warnings import warn
 
 from .exceptions import (
@@ -31,7 +31,7 @@ from .operations import (
 from .util import and_op, contains_op, in_op, not_contains_op, not_in_op, or_op
 
 if TYPE_CHECKING:
-    from collections.abc import Callable, Container
+    from collections.abc import Callable, Container, Iterable
 
 MagicT = TypeVar("MagicT", bound="MagicFilter")
 
@@ -102,9 +102,11 @@ class MagicFilter:
             try:
                 value = operation.resolve(value=value, initial_value=initial_value)
             except SwitchModeToAll:
-                return all(self._resolve(value=item, operations=operations[index + 1 :]) for item in value)
+                items = cast("Iterable[Any]", value)
+                return all(self._resolve(value=item, operations=operations[index + 1 :]) for item in items)
             except SwitchModeToAny:
-                return any(self._resolve(value=item, operations=operations[index + 1 :]) for item in value)
+                items = cast("Iterable[Any]", value)
+                return any(self._resolve(value=item, operations=operations[index + 1 :]) for item in items)
             except RejectOperations:
                 rejected = True
                 value = None
@@ -133,10 +135,10 @@ class MagicFilter:
     def __len__(self) -> int:
         raise TypeError(f"Length can't be taken using len() function. Use {type(self).__name__}.len() instead.")
 
-    def __eq__(self: MagicT, other: Any) -> MagicT:  # type: ignore
+    def __eq__(self: MagicT, other: Any) -> MagicT:
         return self._extend(ComparatorOperation(right=other, comparator=operator.eq))
 
-    def __ne__(self: MagicT, other: Any) -> MagicT:  # type: ignore
+    def __ne__(self: MagicT, other: Any) -> MagicT:
         return self._extend(ComparatorOperation(right=other, comparator=operator.ne))
 
     def __lt__(self: MagicT, other: Any) -> MagicT:

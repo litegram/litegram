@@ -6,9 +6,9 @@ from typing import TYPE_CHECKING, Any
 try:
     from babel import Locale, UnknownLocaleError
 except ImportError:  # pragma: no cover
-    Locale = None  # type: ignore
+    Locale = None
 
-    class UnknownLocaleError(Exception):  # type: ignore
+    class UnknownLocaleError(Exception):
         pass
 
 

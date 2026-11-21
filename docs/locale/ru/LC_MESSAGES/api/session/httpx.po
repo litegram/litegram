@@ -39,61 +39,46 @@ msgstr ""
 
 #: ../../api/session/httpx.rst:24
 msgid "Proxy requests in HttpxSession"
-msgstr ""
+msgstr "Использование прокси в HttpxSession"
 
 #: ../../api/session/httpx.rst:26
 msgid ""
-"In order to use HttpxSession with proxy connector you have to install "
-"`httpx-socks <https://pypi.org/project/httpx-socks>`_"
+"HTTP and HTTPS proxies work with the base HTTPX installation. For SOCKS5 "
+"proxies, install the optional native HTTPX SOCKS support:"
 msgstr ""
+"HTTP- и HTTPS-прокси работают с базовой установкой HTTPX. Для SOCKS5-прокси "
+"установите необязательную штатную поддержку SOCKS в HTTPX:"
 
-#: ../../api/session/httpx.rst:28
-msgid "Binding session to bot:"
-msgstr ""
+#: ../../api/session/httpx.rst:34
+msgid "Bind the session to the bot and pass a proxy URL:"
+msgstr "Привяжите сессию к боту и передайте URL прокси:"
 
-#: ../../api/session/httpx.rst:41
+#: ../../api/session/httpx.rst:44
+msgid "For a SOCKS5 proxy, use a ``socks5`` or ``socks5h`` URL:"
+msgstr "Для SOCKS5-прокси используйте URL со схемой ``socks5`` или ``socks5h``:"
+
+#: ../../api/session/httpx.rst:50
 msgid ""
-"Only following protocols are supported: http(tunneling), socks4(a), "
-"socks5 as httpx_socks `documentation <https://github.com/romis2012/httpx-"
-"socks/blob/master/README.md>`_ claims."
+"HTTPX supports the ``http``, ``https``, ``socks5`` and ``socks5h`` proxy "
+"schemes. The ``socks5h`` scheme delegates DNS resolution to the proxy. "
+"SOCKS4 and proxy chains are not supported by this session."
 msgstr ""
+"HTTPX поддерживает схемы прокси ``http``, ``https``, ``socks5`` и "
+"``socks5h``. Схема ``socks5h`` делегирует разрешение DNS-имён прокси. "
+"SOCKS4 и цепочки прокси этой сессией не поддерживаются."
 
-#: ../../api/session/httpx.rst:46
+#: ../../api/session/httpx.rst:58
 msgid "Authorization"
-msgstr ""
+msgstr "Авторизация"
 
-#: ../../api/session/httpx.rst:48
+#: ../../api/session/httpx.rst:60
 msgid ""
-"Proxy authorization credentials can be specified in proxy URL or come as "
-"an instance of :obj:`httpx.BasicAuth` containing login and password."
+"Include the proxy username and password in the URL. Percent-encode special "
+"characters in credentials:"
 msgstr ""
+"Укажите имя пользователя и пароль прокси в URL. Специальные символы в "
+"учётных данных необходимо закодировать в percent-encoding:"
 
-#: ../../api/session/httpx.rst:51
-msgid "Consider examples:"
-msgstr ""
-
-#: ../../api/session/httpx.rst:62
-msgid "or simply include your basic auth credential in URL"
-msgstr ""
-
-#: ../../api/session/httpx.rst:71
-msgid ""
-"Litegram prefers `BasicAuth` over username and password in URL, so if "
-"proxy URL contains login and password and `BasicAuth` object is passed at"
-" the same time litegram will use login and password from `BasicAuth` "
-"instance."
-msgstr ""
-
-#: ../../api/session/httpx.rst:77
-msgid "Proxy chains"
-msgstr ""
-
-#: ../../api/session/httpx.rst:79
-msgid ""
-"Since `httpx-socks <https://pypi.org/project/httpx-socks/>`_ supports "
-"proxy chains, you're able to use them in litegram"
-msgstr ""
-
-#: ../../api/session/httpx.rst:81
-msgid "Example of chain proxies:"
-msgstr ""
+#: ../../api/session/httpx.rst:68
+msgid "``HttpxSession`` passes this URL directly to :class:`httpx.AsyncClient`."
+msgstr "``HttpxSession`` передаёт этот URL напрямую в :class:`httpx.AsyncClient`."

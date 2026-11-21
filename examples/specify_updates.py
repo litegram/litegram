@@ -32,8 +32,12 @@ async def command_start_handler(message: Message) -> None:
     This handler receives messages with `/start` command
     """
 
+    from_user = message.from_user
+    if from_user is None:
+        return
+
     await message.answer(
-        f"Hello, {hbold(message.from_user.full_name)}!",
+        f"Hello, {hbold(from_user.full_name)}!",
         reply_markup=InlineKeyboardMarkup(
             inline_keyboard=[[InlineKeyboardButton(text="Tap me, bro", callback_data="*")]],
         ),

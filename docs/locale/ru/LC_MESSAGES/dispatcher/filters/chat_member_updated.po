@@ -46,7 +46,7 @@ msgid ""
 "`statuses`_, `status groups`_ or `transitions`_:"
 msgstr ""
 "Вы можете импортувати с :code:`litegram.filters` уси доступни варианта "
-"`statuses`_, `status group`_ или `transitions`_:"
+"`statuses`_, `status groups`_ или `transitions`_:"
 
 #: ../../dispatcher/filters/chat_member_updated.rst:35
 msgid "Statuses"

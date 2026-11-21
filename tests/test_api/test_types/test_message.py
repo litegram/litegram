@@ -1011,7 +1011,11 @@ class TestAllMessageTypesTested:
 
         Also relies on the previous test (both should be green)
         """
-        checked_content_types = {m[0].content_type for m in MESSAGES_AND_COPY_METHODS}
+        checked_content_types = set()
+        for m in MESSAGES_AND_COPY_METHODS:
+            message = m[0]
+            assert isinstance(message, Message)
+            checked_content_types.add(message.content_type)
         assert checked_content_types == known_content_types
 
 
@@ -1173,7 +1177,7 @@ class TestMessage:
     def test_send_copy_custom_parse_mode(
         self,
         message: Message,
-        expected_method: type[TelegramMethod] | None,
+        expected_method: type[SendMessage | SendAudio | SendAnimation | SendDocument | SendPhoto | SendVideo | SendVoice],
         custom_parse_mode: str | None,
     ):
         method = message.send_copy(

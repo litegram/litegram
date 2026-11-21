@@ -113,7 +113,7 @@ msgstr "Возвращает"
 
 #: litegram.filters.base.Filter.__call__:5 of
 msgid ":class:`bool` or :class:`dict[str, Any]`"
-msgstr ":class:`bool` or :class:`Dict[str, Any]`"
+msgstr ":class:`bool` or :class:`dict[str, Any]`"
 
 #: litegram.filters.base.Filter.update_handler_flags:1 of
 msgid ""

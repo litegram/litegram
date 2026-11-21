@@ -1,11 +1,15 @@
 from __future__ import annotations
 
 from contextlib import contextmanager
+from typing import TYPE_CHECKING
 
 import pytest
 from packaging import version
 
 import litegram
+
+if TYPE_CHECKING:
+    from collections.abc import Generator
 
 
 @contextmanager
@@ -13,7 +17,7 @@ def check_deprecated(
     max_version: str,
     exception: type[Exception],
     warning: type[Warning] = DeprecationWarning,
-) -> None:
+) -> Generator[None]:
     """
     Should be used for modules that are being deprecated or already removed from litegram
     """

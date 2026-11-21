@@ -30,7 +30,9 @@ async def test_upload_multipart(tmp_path: Path) -> None:
         parts = {part.get_param("name", header="content-disposition"): part for part in message.iter_parts()}
         assert parts["chat_id"].get_payload(decode=True) == b"42"
         for field, filename, payload in (("document", "sample.txt", b"data"), ("thumbnail", "empty.txt", b"")):
-            key = parts[field].get_payload(decode=True).decode().removeprefix("attach://")
+            payload_value = parts[field].get_payload(decode=True)
+            assert isinstance(payload_value, bytes)
+            key = payload_value.decode().removeprefix("attach://")
             assert parts[key].get_filename() == filename
             assert parts[key].get_content_type() == "text/plain"
             assert parts[key].get_payload(decode=True) == payload

@@ -7,7 +7,9 @@ from unittest.mock import AsyncMock, patch
 
 import pytest
 from litestar import Litestar, Request, post
+from litestar.di import NamedDependency  # noqa: TC002 — Litestar resolves annotations at runtime
 from litestar.exceptions import HTTPException
+from litestar.params import JSONBody  # noqa: TC002 — Litestar resolves annotations at runtime
 from litestar.status_codes import HTTP_404_NOT_FOUND
 from litestar.testing import TestClient
 
@@ -121,7 +123,12 @@ class TestOptimizedWebhookHandler:
         from litestar.di import Provide
 
         @post("/webhook")
-        async def handle(data: Update, request: Request, dispatcher: Dispatcher, bot: Bot) -> Any:
+        async def handle(
+            data: JSONBody[Update],
+            request: Request,
+            dispatcher: NamedDependency[Dispatcher],
+            bot: NamedDependency[Bot],
+        ) -> Any:
             return await webhook_handler(data=data, request=request, dispatcher=dispatcher, bot=bot)
 
         app = Litestar(

@@ -18,9 +18,9 @@ litegram
     :target: https://pypi.python.org/pypi/litegram
     :alt: Downloads
 
-.. image:: https://img.shields.io/pypi/pyversions/litegram?style=flat-square
+.. image:: https://img.shields.io/badge/Python-3.13%20%7C%203.14%20%7C%203.15-blue?logo=python&style=flat-square
     :target: https://pypi.python.org/pypi/litegram
-    :alt: Supported python versions
+    :alt: Python 3.13 | 3.14 | 3.15
 
 .. image:: https://img.shields.io/badge/dynamic/json?color=blue&logo=telegram&label=Telegram%20Bot%20API&query=%24.api.version&url=https%3A%2F%2Fraw.githubusercontent.com%2Flitegram%2Flitegram%2Fmaster%2F.api%2Fschema.json&style=flat-square
     :target: https://core.telegram.org/bots/api

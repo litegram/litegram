@@ -32,7 +32,11 @@ async def command_start_handler(message: Message) -> None:
     # and the target chat will be passed to :ref:`litegram.methods.send_message.SendMessage`
     # method automatically or call API method directly via
     # Bot instance: `bot.send_message(chat_id=message.chat.id, ...)`
-    await message.answer(f"Hello, {html.bold(message.from_user.full_name)}!")
+    from_user = message.from_user
+    if from_user is None:
+        return
+
+    await message.answer(f"Hello, {html.bold(from_user.full_name)}!")
 
 
 @dp.message()

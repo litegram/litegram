@@ -8,7 +8,9 @@ from typing import TYPE_CHECKING, Any, cast
 
 from litestar import Request, Response, post
 from litestar.background_tasks import BackgroundTask
+from litestar.di import NamedDependency  # noqa: TC002 — Litestar resolves annotations at runtime
 from litestar.exceptions import HTTPException
+from litestar.params import JSONBody  # noqa: TC002 — Litestar resolves annotations at runtime
 from litestar.status_codes import HTTP_401_UNAUTHORIZED, HTTP_404_NOT_FOUND
 
 from litegram import Bot, Dispatcher
@@ -163,10 +165,10 @@ class TokenBasedRequestHandler(BaseRequestHandler):
 
 
 async def webhook_handler(
-    data: Update | dict[str, Any],
+    data: JSONBody[Update | dict[str, Any]],
     request: Request,
-    dispatcher: Dispatcher,
-    bot: Bot,
+    dispatcher: NamedDependency[Dispatcher],
+    bot: NamedDependency[Bot],
     **kwargs: Any,
 ) -> Any:
     """

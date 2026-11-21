@@ -6,9 +6,6 @@ the ``index.rst`` toctrees of both sections.
 
 from __future__ import annotations
 
-import re
-from pathlib import Path
-
 from .gen import REPO_ROOT
 from .model import Schema, snake_case
 
@@ -23,6 +20,18 @@ PAGE_TEMPLATE = """{underline}
     :undoc-members: True
     :exclude-members: model_config,model_fields
 """
+
+
+def render_index(category: str, pages: list[str]) -> str:
+    title = category.capitalize()
+    heading = f"Available {category}"
+    entries = "\n".join(f"    {page}" for page in sorted(pages))
+    return (
+        f"{'#' * len(title)}\n{title}\n{'#' * len(title)}\n\n"
+        f"Here is list of all available API {category}:\n\n\n"
+        f"{heading}\n{'=' * len(heading)}\n\n"
+        f".. toctree::\n    :maxdepth: 1\n\n{entries}\n"
+    )
 
 
 def render_page(name: str, category: str) -> str:
@@ -45,28 +54,10 @@ def sync_docs(schema: Schema) -> int:
             if not page.exists():
                 page.write_text(render_page(obj.name, category), encoding="utf-8")
                 created += 1
-        # sync toctree: list every page in the section
-        index = out_dir / "index.rst"
-        if index.exists():
-            text = index.read_text(encoding="utf-8")
-            m = re.search(r"\.\. toctree::\n(?:    .*\n)*\n", text)
-            if m:
-                body = m.group(0)
-                present = set(re.findall(r"^    ([a-z_0-9]+)$", body, re.MULTILINE))
-                wanted = {snake_case(o.name) for o in objects}
-                missing = sorted(wanted - present)
-                if missing:
-                    # insert missing entries into the alphabetical list
-                    all_entries = sorted(present | wanted)
-                    entries_text = "".join(f"    {name}\n" for name in all_entries)
-                    new_body = re.sub(
-                        r"(\.\. toctree::\n(?:    .*\n)*\n)(?:.*?)(?=\n\S|\Z)",
-                        lambda mm, entries_text=entries_text: mm.group(1) + entries_text,
-                        body,
-                        flags=re.DOTALL,
-                    )
-                    text = text.replace(body, new_body, 1)
-                    index.write_text(text, encoding="utf-8")
+        # A single deterministic toctree avoids duplicate pages in the general
+        # list and the old manually maintained category lists.
+        pages = [page.stem for page in out_dir.glob("*.rst") if page.stem != "index"]
+        (out_dir / "index.rst").write_text(render_index(category, pages), encoding="utf-8")
     return created
 
 

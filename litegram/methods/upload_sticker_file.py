@@ -19,7 +19,7 @@ class UploadStickerFile(TelegramMethod[File]):
     user_id: int
     """User identifier of sticker file owner"""
     sticker: InputFile
-    """A file with the sticker in .WEBP, .PNG, .TGS, or .WEBM format. See ``https://core.telegram.org/stickers <https://core.telegram.org/stickers>`_ <https://core.telegram.org/stickers>`_ for technical requirements. :ref:`More information on Sending Files » <sending-files>`"""
+    """A file with the sticker in .WEBP, .PNG, .TGS, or .WEBM format. See `https://core.telegram.org/stickers <https://core.telegram.org/stickers>`_ for technical requirements. :ref:`More information on Sending Files » <sending-files>`"""
     sticker_format: str
     """Format of the sticker, must be one of 'static', 'animated', 'video'"""
     if TYPE_CHECKING:

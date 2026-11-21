@@ -48,7 +48,7 @@ class MockedSession(BaseSession):
             status_code=response.error_code,
             content=response.model_dump_json(),
         )
-        return response.result  # type: ignore
+        return response.result
 
     async def stream_content(
         self,
@@ -86,7 +86,7 @@ class MockedBot(Bot):
         migrate_to_chat_id: int | None = None,
         retry_after: int | None = None,
     ) -> Response[T]:
-        response = Response[T](  # type: ignore
+        response = Response[T](
             ok=ok,
             result=result,
             description=description,

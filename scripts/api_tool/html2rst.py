@@ -79,6 +79,13 @@ class _TreeBuilder(HTMLParser):
         self.stack = [self.root]
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        # Nested anchors are invalid HTML. Browsers implicitly close the outer
+        # link, and the Bot API page occasionally relies on that behavior.
+        if tag == "a":
+            for i in range(len(self.stack) - 1, 0, -1):
+                if self.stack[i].tag == "a":
+                    del self.stack[i:]
+                    break
         node = _Node(tag, attrs)
         self.stack[-1].children.append(node)
         if tag not in _VOID_TAGS:
@@ -184,6 +191,8 @@ class RstConverter:
     def _render_link(self, node: _Node) -> str:
         href = (node.attrs.get("href") or "").strip()
         text = "".join(self._render_children(node.children)).strip()
+        if not text:
+            return ""
         if href.startswith("#"):
             anchor = href[1:].lower()
             if anchor == "sending-files" and text.startswith("More information on Sending Files"):

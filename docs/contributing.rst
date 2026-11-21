@@ -170,6 +170,33 @@ Or use the Makefile commands which now support :code:`uv`:
     make reformat   # Uses uv run
     make test       # Uses uv run
 
+Dependency policy
+-----------------
+
+Direct runtime and optional dependencies use the latest tested version as their
+minimum supported version. For packages with stable major versions, the upper
+bound is the next major release; for ``0.x`` packages, it is the next minor
+release. ``certifi`` has no upper bound because it ships CA certificate data
+rather than an API used by litegram. Test tools are pinned exactly, and
+``uv.lock`` pins the complete transitive graph.
+
+Prefer direct dependencies over another framework's extras. For example,
+litegram's Redis, CLI and cryptography extras depend directly on the packages
+imported by litegram instead of inheriting unrelated Litestar constraints.
+
+After upgrading dependencies, run the full test suite on the minimum and
+maximum supported Python versions, check coverage, lint and types, and build
+both documentation languages:
+
+.. code-block:: bash
+
+    uv lock --upgrade
+    uv sync --all-extras --all-groups
+    make test-coverage
+    uv run ruff check .
+    uv run ty check litegram tests examples scripts
+
+
 Making changes in code
 ----------------------
 

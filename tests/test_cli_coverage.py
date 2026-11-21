@@ -31,7 +31,7 @@ class TestCliErrorPaths:
         assert "token is required" in result.output
 
     @patch("asyncio.run", side_effect=KeyboardInterrupt)
-    @patch("litegram.cli.main.import_string", return_value=lambda: Dispatcher())
+    @patch("litegram.cli.main.import_string", return_value=Dispatcher)
     def test_polling_factory_and_keyboard_interrupt(self, _mock_import, mock_run):
         result = CliRunner().invoke(litegram_group, ["run", "polling", "app:make_dp", "--token", "42:TEST"])
         assert result.exit_code == 0

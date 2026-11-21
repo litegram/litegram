@@ -21,6 +21,8 @@ ROUTER_PATH = REPO_ROOT / "litegram" / "dispatcher" / "router.py"
 
 def sync_router(schema: Schema) -> list[str]:  # noqa: PLR0914 — sync tracks many local accumulators
     update = schema.object("Update")
+    if update is None:
+        raise RuntimeError("Update object not found in schema")
     field_names = [f.name for f in update.annotations if f.name != "update_id"]
 
     src = ROUTER_PATH.read_text(encoding="utf-8")

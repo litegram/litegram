@@ -214,11 +214,11 @@ def sync_family_unions_and_enums(generator: Generator, new_schema: Schema, old_s
         if base_obj is None:
             continue
         variants = [
-            name
-            for name in new_schema.all_names()
-            if name.startswith(base)
-            and new_schema.object(name).category == "types"
-            and any(a.name == family.attribute and "always '" in a.rst_description for a in new_schema.object(name).annotations)
+            obj.name
+            for obj in new_schema.all_objects()
+            if obj.name.startswith(base)
+            and obj.category == "types"
+            and any(a.name == family.attribute and "always '" in a.rst_description for a in obj.annotations)
         ]
         if not variants or set(variants) == set(family.variants):
             continue
@@ -232,6 +232,7 @@ def sync_family_unions_and_enums(generator: Generator, new_schema: Schema, old_s
         values = {}
         for variant in variants:
             vo = new_schema.object(variant)
+            assert vo is not None
             fld = vo.field(family.attribute)
             value = extract_family_value(fld.rst_description, family.regexp) if fld else None
             if value:

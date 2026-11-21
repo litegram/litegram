@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from typing import Any, cast
+
 from pydantic import TypeAdapter
 
 from litegram.enums import RichTextType
@@ -21,11 +23,14 @@ class TestRichTextUnion:
 
     def test_list_of_variants(self):
         adapter = TypeAdapter(RichTextUnion)
-        result = adapter.validate_python(
-            [
-                "plain ",
-                {"type": "bold", "text": "bold text"},
-            ]
+        result = cast(
+            "list[Any]",
+            adapter.validate_python(
+                [
+                    "plain ",
+                    {"type": "bold", "text": "bold text"},
+                ]
+            ),
         )
         assert isinstance(result[0], str)
         assert isinstance(result[1], RichTextBold)
@@ -43,7 +48,8 @@ class TestRichTextUnion:
             }
         )
         assert isinstance(result, RichTextItalic)
-        assert isinstance(result.text[0], RichTextBold)
+        text = cast("list[Any]", result.text)
+        assert isinstance(text[0], RichTextBold)
 
     def test_discriminator_field_is_literal(self):
         bold = RichTextBold(text="x")

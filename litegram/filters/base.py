@@ -52,6 +52,6 @@ class Filter(ABC):  # noqa: B024
 
         return f"{type(self).__name__}({', '.join(items)})"
 
-    def __await__(self):  # type: ignore # pragma: no cover
+    def __await__(self):  # pragma: no cover
         # Is needed only for inspection and this method is never be called
         return self.__call__

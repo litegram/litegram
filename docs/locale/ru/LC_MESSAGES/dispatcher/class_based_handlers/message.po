@@ -37,7 +37,7 @@ msgid ""
 "This base handler is subclass of :ref:`BaseHandler <cbh-base-handler>` "
 "with some extensions:"
 msgstr ""
-"Этот базовый обработчик является пидкласом [BaseHandler](basics.md#basehandler) с "
+"Этот базовый обработчик является пидкласом :ref:`BaseHandler <cbh-base-handler>` с "
 "деякими розширеннями:"
 
 #: ../../dispatcher/class_based_handlers/message.rst:26

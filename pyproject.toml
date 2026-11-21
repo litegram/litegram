@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.33.0,<2"]
 build-backend = "hatchling.build"
 
 [project]
@@ -38,12 +38,12 @@ classifiers = [
     "Topic :: Communications :: Chat",
 ]
 dependencies = [
-    "httpx>=0.27,<0.29",
-    "litestar>=2.19,<3.0",
-    "pydantic>=2.12,<2.15",
-    "aiofiles>=25.1,<26.0",
-    "certifi>=2026.1.4",
-    "typing-extensions>=4.15.0,<=5.0",
+    "httpx>=0.28.1,<0.29",
+    "litestar>=2.25.0,<3.0",
+    "pydantic>=2.14.4,<3.0",
+    "aiofiles>=25.1.0,<26.0",
+    "certifi>=2026.11.20",
+    "typing-extensions>=4.16.0,<5.0",
 ]
 dynamic = ["version"]
 
@@ -52,70 +52,69 @@ path = "litegram/__meta__.py"
 
 [project.optional-dependencies]
 fast = [
-    "uvloop>=0.22.1; (sys_platform == 'darwin' or sys_platform == 'linux') and platform_python_implementation != 'PyPy'",
-    "httptools>=0.6.4",
+    "uvloop>=0.23.0,<0.24; (sys_platform == 'darwin' or sys_platform == 'linux') and platform_python_implementation != 'PyPy'",
+    "httptools>=0.9.0,<0.10",
 ]
 speedups = [
     "litegram[fast]",
 ]
 redis = [
-    "litestar[redis]",
+    "redis[hiredis]>=8.1.0,<9.0",
 ]
 mongo = [
-    "motor>=3.7,<3.8",
-    "pymongo>=4.10,<4.17",
+    "motor>=3.7.1,<3.8",
+    "pymongo>=4.20.1,<5.0",
 ]
 proxy = [
-    "httpx-socks~=0.11",
+    "httpx[socks]>=0.28.1,<0.29",
 ]
 i18n = [
-    "Babel>=2.17,<3",
+    "Babel>=2.18.0,<3",
 ]
 cli = [
-    "litestar[cli]",
-    "rich-click>=1.8.5",
-    "shellingham>=1.5.4",
+    "uvicorn[standard]>=0.54.0,<0.55",
+    "rich-click>=1.9.9,<2.0",
 ]
 cryptography = [
-    "litestar[cryptography]",
+    "cryptography>=50.0.2,<51.0",
 ]
 signature = [
     "litegram[cryptography]",
 ]
 docs = [
-    "Sphinx>=9.1",
-    "sphinx-intl>=2.3",
-    "sphinx-autobuild>=2025.8.25",
-    "sphinx-copybutton>=0.5.2",
-    "furo>=2025.12.19",
-    "Sphinx-Substitution-Extensions>=2026.1.12",
-    "towncrier>=25.8.0",
-    "pygments>=2.19",
-    "pymdown-extensions>=10.20",
-    "markdown-include>=0.8.1",
-    "sphinxcontrib-towncrier>=0.5.0a0",
+    "Sphinx>=9.2.0,<10",
+    "sphinx-intl>=2.4.0,<3",
+    "sphinx-autobuild>=2025.8.25,<2026",
+    "sphinx-copybutton>=0.5.2,<0.6",
+    "furo>=2025.12.19,<2026",
+    "Sphinx-Substitution-Extensions>=2026.10.9,<2027",
+    "towncrier>=26.9.0,<27",
+    "pygments>=2.21.0,<3",
+    "pymdown-extensions>=13.1.2,<14",
+    "markdown-include>=0.8.1,<0.9",
+    "sphinxcontrib-towncrier>=0.5.0a0,<0.6",
 ]
 
 [dependency-groups]
 dev = [
-    "pyyaml>=6.0",
-    "ruff>=0.14",
-    "pre-commit>=4.5.1",
-    "packaging>=25.0",
-    "motor-types>=1.0.0b4",
-    "ty>=0.0.12",
-    "watchfiles==1.2.0",
+    "pyyaml>=6.0.4,<7",
+    "ruff>=0.17.6,<0.18",
+    "pre-commit>=4.7.0,<5",
+    "packaging>=26.3,<27",
+    "motor-types>=1.0.0b4,<2",
+    "ty==0.0.107",
+    "watchfiles>=1.3.0,<1.4",
 ]
 test = [
-    "pytest==9.0.2",
-    "pytest-html==4.1.1",
-    "pytest-mock==3.15.1",
-    "pytest-cov==7.0.0",
-    "pytest-httpx==0.36.0",
-    "pytest-asyncio>=0.25.0",
-    "polyfactory==3.2.0",
-    "pytz==2025.2",
-    "pycryptodomex==3.23.0",
+    "pytest==9.2.0",
+    "pytest-html==4.2.0",
+    "pytest-mock==3.17.0",
+    "pytest-cov==7.1.0",
+    "pytest-httpx==0.36.2",
+    "pytest-asyncio==1.5.0",
+    "polyfactory==3.5.0",
+    "pytz==2026.6",
+    "pycryptodomex==3.24.2",
 ]
 
 [project.urls]
@@ -128,7 +127,7 @@ litegram = "litegram.cli.main:litegram_group"
 
 [tool.ruff]
 line-length = 128
-target-version = "py314"
+target-version = "py313"
 src = ["litegram", "tests"]
 exclude = [
     ".git",
@@ -212,6 +211,8 @@ markers = [
     "mongo: marked tests require mongo connection to run",
 ]
 asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+asyncio_default_test_loop_scope = "function"
 testpaths = [
     "tests",
 ]
@@ -245,17 +246,19 @@ exclude_lines = [
 ]
 
 [tool.ty]
-environment.python-version = "3.14"
+environment.python-version = "3.13"
 
 [tool.ty.rules]
 unused-ignore-comment = "ignore"
 unknown-argument = "ignore"
 possibly-missing-attribute = "ignore"
-unresolved-attribute = "ignore"
+missing-attribute = "ignore"
 invalid-argument-type = "ignore"
 invalid-parameter-default = "ignore"
-invalid-method-override = "ignore"
-invalid-return-type = "ignore"
+incompatible-method-override = "ignore"
+# Filter call signatures and generated Pydantic discriminator fields intentionally narrow their base declarations.
+incompatible-mutable-override = "ignore"
+invalid-explicit-return = "ignore"
 invalid-assignment = "ignore"
 redundant-cast = "ignore"
 

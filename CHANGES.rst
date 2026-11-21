@@ -16,6 +16,36 @@ Changelog
 
 .. towncrier release notes start
 
+1.3.0 (2026-11-21)
+===================
+
+Features
+--------
+
+- Refreshed the complete dependency graph and established explicit version-bound policy: lower bounds track tested releases, stable packages allow the current major, and ``0.x`` packages remain within the tested minor. Redis, uvicorn and cryptography are now direct dependencies instead of inherited Litestar extras.
+
+Bugfixes
+--------
+
+- Added Litestar 2.25-compatible webhook dependency and JSON-body annotations, explicit pytest-asyncio loop scopes, and Python 3.13-aligned Ruff/ty configuration. Fixed malformed RST generated from nested Telegram links and tightened optional-value handling in examples and tooling.
+
+Improved Documentation
+----------------------
+
+- Added an explicit Python 3.13 / 3.14 / 3.15 README badge, documented dependency maintenance, made API indexes deterministic and duplicate-free, corrected Russian cross-references, and verified clean English and Russian Sphinx builds.
+
+Deprecations and Removals
+-------------------------
+
+- Switched the ``proxy`` extra to native ``httpx[socks]``. HTTP and HTTPS proxies need no extra; SOCKS5 and SOCKS5H use the extra. Removed unused dependencies and corrected the documentation: ``HttpxSession`` does not support SOCKS4 or proxy chains.
+
+Misc
+----
+
+- Reached 100% statement coverage (17,542 statements), added edge-case and regression tests, and verified the full suite on CPython 3.13 and 3.15 with Redis and MongoDB integration backends.
+
+
+
 1.2.1 (2026-11-21)
 ===================
 
@@ -32,7 +62,6 @@ Misc
 
 
 1.2.0 (2026-11-21)
-===================
 ===================
 
 Features

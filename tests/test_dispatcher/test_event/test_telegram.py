@@ -208,7 +208,7 @@ class TestTelegramEventObserver:
 
         router.message._handler.filters = None
         router.message.filter(my_filter)
-        assert len(router.message._handler.filters) == 1  # type: ignore
+        assert len(router.message._handler.filters) == 1
         assert router.message._handler.filters[0].callback is my_filter  # type: ignore
 
     @pytest.mark.anyio

@@ -176,7 +176,7 @@ class TestObserverDecorator:
         assert isinstance(wrapped.__litegram_action__, dict)
         assert len(wrapped.__litegram_action__) == 1
         assert SceneAction.enter in wrapped.__litegram_action__
-        assert "test" in wrapped.__litegram_action__[SceneAction.enter]  # type: ignore
+        assert "test" in wrapped.__litegram_action__[SceneAction.enter]
 
     def test_observer_decorator_leave(self):
         observer_decorator = ObserverDecorator("Test Name", (F.text,))

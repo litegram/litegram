@@ -215,7 +215,7 @@ from .default import Default, DefaultBotProperties
 from .session.httpx import HttpxSession
 
 if TYPE_CHECKING:
-    from collections.abc import AsyncGenerator, AsyncIterator
+    from collections.abc import AsyncGenerator
     from types import TracebackType
 
     from ..types import (
@@ -371,7 +371,7 @@ class Bot:
         return extract_bot_id(self.__token)
 
     @asynccontextmanager
-    async def context(self, auto_close: bool = True) -> AsyncIterator[Bot]:
+    async def context(self, auto_close: bool = True) -> AsyncGenerator[Bot]:
         """
         Generate bot context
 
@@ -485,7 +485,7 @@ class Bot:
         else:
             # type is ignored in due to:
             # Incompatible types in assignment (expression has type "Any | None", variable has type "str")
-            file_id = getattr(file, "file_id", None)  # type: ignore
+            file_id = getattr(file, "file_id", None)
             if file_id is None:
                 raise TypeError("file can only be of the string or Downloadable type")
 
@@ -4163,7 +4163,7 @@ class Bot:
 
                 Source: https://core.telegram.org/bots/api#uploadstickerfile
                 :param user_id: User identifier of sticker file owner
-                :param sticker: A file with the sticker in .WEBP, .PNG, .TGS, or .WEBM format. See ``https://core.telegram.org/stickers <https://core.telegram.org/stickers>`_ <https://core.telegram.org/stickers>`_ for technical requirements. :ref:`More information on Sending Files » <sending-files>`
+                :param sticker: A file with the sticker in .WEBP, .PNG, .TGS, or .WEBM format. See `https://core.telegram.org/stickers <https://core.telegram.org/stickers>`_ for technical requirements. :ref:`More information on Sending Files » <sending-files>`
                 :param sticker_format: Format of the sticker, must be one of 'static', 'animated', 'video'
                 :param request_timeout: Request timeout
                 :return: Use this method to upload a file with a sticker for later use in the :class:`litegram.methods.create_new_sticker_set.CreateNewStickerSet`, :class:`litegram.methods.add_sticker_to_set.AddStickerToSet`, or :class:`litegram.methods.replace_sticker_in_set.ReplaceStickerInSet` methods (the file can be used multiple times). Returns the uploaded :class:`litegram.types.file.File` on success.
@@ -4486,7 +4486,7 @@ class Bot:
                 :param name: Sticker set name
                 :param user_id: User identifier of the sticker set owner
                 :param format: Format of the thumbnail, must be one of 'static' for a **.WEBP** or **.PNG** image, 'animated' for a **.TGS** animation, or 'video' for a **.WEBM** video
-                :param thumbnail: A **.WEBP** or **.PNG** image with the thumbnail, must be up to 128 kilobytes in size and have a width and height of exactly 100px, or a **.TGS** animation with a thumbnail up to 32 kilobytes in size (see ``https://core.telegram.org/stickers#animation-requirements <https://core.telegram.org/stickers#animation-requirements>`_ <https://core.telegram.org/stickers#animation-requirements>`_ for animated sticker technical requirements), or a **.WEBM** video with the thumbnail up to 32 kilobytes in size; see ``https://core.telegram.org/stickers#video-requirements <https://core.telegram.org/stickers#video-requirements>`_ <https://core.telegram.org/stickers#video-requirements>`_ for video sticker technical requirements. Pass a *file_id* as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. :ref:`More information on Sending Files » <sending-files>`. Animated and video sticker set thumbnails can't be uploaded via HTTP URL. If omitted, then the thumbnail is dropped and the first sticker is used as the thumbnail.
+                :param thumbnail: A **.WEBP** or **.PNG** image with the thumbnail, must be up to 128 kilobytes in size and have a width and height of exactly 100px, or a **.TGS** animation with a thumbnail up to 32 kilobytes in size (see `https://core.telegram.org/stickers#animation-requirements <https://core.telegram.org/stickers#animation-requirements>`_ for animated sticker technical requirements), or a **.WEBM** video with the thumbnail up to 32 kilobytes in size; see `https://core.telegram.org/stickers#video-requirements <https://core.telegram.org/stickers#video-requirements>`_ for video sticker technical requirements. Pass a *file_id* as a String to send a file that already exists on the Telegram servers, pass an HTTP URL as a String for Telegram to get a file from the Internet, or upload a new one using multipart/form-data. :ref:`More information on Sending Files » <sending-files>`. Animated and video sticker set thumbnails can't be uploaded via HTTP URL. If omitted, then the thumbnail is dropped and the first sticker is used as the thumbnail.
                 :param request_timeout: Request timeout
                 :return: Use this method to set the thumbnail of a regular or mask sticker set. The format of the thumbnail file must match the format of the stickers in the set. Returns :code:`True` on success.
         """

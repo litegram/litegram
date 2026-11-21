@@ -80,6 +80,7 @@ class TestWebAppTimeout:
 
     def test_valid_data_without_timeout(self):
         result = safe_parse_webapp_init_data("42:TEST", self.VALID)
+        assert result.user is not None
         assert result.user.id == 42
 
     def test_old_data_rejected_with_timeout(self):

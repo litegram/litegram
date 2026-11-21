@@ -242,9 +242,9 @@ class KeyboardBuilder[ButtonType: (InlineKeyboardButton, KeyboardButton)](ABC):
 
     def as_markup(self, **kwargs: Any) -> InlineKeyboardMarkup | ReplyKeyboardMarkup:
         if self._button_type is KeyboardButton:
-            keyboard = cast("list[list[KeyboardButton]]", self.export())  # type: ignore
+            keyboard = cast("list[list[KeyboardButton]]", self.export())
             return ReplyKeyboardMarkup(keyboard=keyboard, **kwargs)
-        inline_keyboard = cast("list[list[InlineKeyboardButton]]", self.export())  # type: ignore
+        inline_keyboard = cast("list[list[InlineKeyboardButton]]", self.export())
         return InlineKeyboardMarkup(inline_keyboard=inline_keyboard, **kwargs)
 
     def attach(self, builder: KeyboardBuilder[ButtonType]) -> KeyboardBuilder[ButtonType]:

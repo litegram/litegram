@@ -91,7 +91,7 @@ class BaseSession(abc.ABC):
             raise ClientDecodeError(msg, e, content) from e
 
         try:
-            response_type = Response[method.__returning__]  # type: ignore
+            response_type = Response[method.__returning__]
             response = response_type.model_validate(json_data, context={"bot": bot})
         except ValidationError as e:
             msg = "Failed to deserialize object"

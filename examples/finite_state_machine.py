@@ -105,10 +105,14 @@ async def process_unknown_write_bots(message: Message) -> None:
 
 @form_router.message(Form.language)
 async def process_language(message: Message, state: FSMContext) -> None:
-    data = await state.update_data(language=message.text)
+    text = message.text
+    if text is None:
+        return
+
+    data = await state.update_data(language=text)
     await state.clear()
 
-    if message.text.casefold() == "python":
+    if text.casefold() == "python":
         await message.reply(
             "Python, you say? That's the language that makes my circuits light up! 😉",
         )

@@ -103,6 +103,7 @@ def parse_table(table_html: str) -> tuple[list[str], list[list[str]]]:
     builder.feed(table_html)
     builder.close()
     table = builder.root.children[0]
+    assert isinstance(table, _Node)
     headers: list[str] = []
     rows: list[list[str]] = []
     thead = next(

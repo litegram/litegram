@@ -46,7 +46,7 @@ class CustomSession(BaseSession):
         token: str,
         method: TelegramMethod[T],
         timeout: int | None = UNSET_PARSE_MODE,
-    ) -> None:  # type: ignore
+    ) -> None:
         assert isinstance(token, str)
         assert isinstance(method, TelegramMethod)
 

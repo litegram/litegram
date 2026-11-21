@@ -313,7 +313,11 @@ def _merge_imports(src: str, rendered: str, obj: ObjectSpec) -> str:  # noqa: PL
         return src
     # merge into the longest run
     run_start, run_end = max(runs, key=lambda r: r[1] - r[0])
-    present_pairs = {SORTABLE.match(lines[k]).groups() for k in range(run_start, run_end)}
+    present_pairs = set()
+    for k in range(run_start, run_end):
+        match = SORTABLE.match(lines[k])
+        assert match is not None
+        present_pairs.add(match.groups())
     missing_pairs = rendered_pairs - present_pairs
     if not missing_pairs:
         return src

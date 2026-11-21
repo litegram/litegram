@@ -6,7 +6,7 @@ try:
     from babel.support import LazyProxy
 except ImportError:  # pragma: no cover
 
-    class LazyProxy:  # type: ignore
+    class LazyProxy:
         def __init__(self, func: Any, *args: Any, **kwargs: Any) -> None:
             msg = (
                 "LazyProxy can be used only when Babel installed\n"

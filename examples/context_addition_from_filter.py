@@ -21,7 +21,11 @@ class HelloFilter(Filter):
         event_from_user: User,
         # Filters also can accept keyword parameters like in handlers
     ) -> bool | dict[str, Any]:
-        if message.text.casefold() == "hello":
+        text = message.text
+        if text is None:
+            return False
+
+        if text.casefold() == "hello":
             # Returning a dictionary that will update the context data
             return {"name": event_from_user.mention_html(name=self.name)}
         return False

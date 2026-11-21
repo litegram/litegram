@@ -13,4 +13,4 @@ class AttrDict(dict[KT, VT]):
 
     def __init__(self, *args: Any, **kwargs: Any) -> None:
         super().__init__(*args, **kwargs)
-        self.__dict__ = self  # type: ignore
+        self.__dict__ = self

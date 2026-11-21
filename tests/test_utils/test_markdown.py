@@ -80,4 +80,4 @@ class TestMarkdown:
         ],
     )
     def test_formatter(self, func: Callable[[Any], Any], args: tuple[str], sep: str | None, result: str):
-        assert func(*args, **({"sep": sep} if sep is not None else {})) == result  # type: ignore
+        assert func(*args, **({"sep": sep} if sep is not None else {})) == result

@@ -30,7 +30,7 @@ class FlagDecorator:
         return self._with_flag(new_flag)
 
     @overload
-    def __call__(self, value: Callable[..., Any], /) -> Callable[..., Any]:  # type: ignore
+    def __call__(self, value: Callable[..., Any], /) -> Callable[..., Any]:
         pass
 
     @overload

@@ -1074,6 +1074,8 @@ class TestDispatcher:
             task = asyncio.ensure_future(dispatcher.start_polling(bot))
             await running.wait()
 
+            assert dispatcher._stop_signal is not None
+            assert dispatcher._stopped_signal is not None
             assert not dispatcher._stop_signal.is_set()
             assert not dispatcher._stopped_signal.is_set()
 
@@ -1106,6 +1108,8 @@ class TestDispatcher:
             task = asyncio.ensure_future(dispatcher.start_polling(bot))
             await running.wait()
 
+            assert dispatcher._stop_signal is not None
+            assert dispatcher._stopped_signal is not None
             assert not dispatcher._stop_signal.is_set()
             assert not dispatcher._stopped_signal.is_set()
 

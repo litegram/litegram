@@ -11,7 +11,7 @@ if TYPE_CHECKING:
 
 class InputRichBlockThinking(InputRichBlock):
     """
-    A block with a 'Thinking…' placeholder, corresponding to the custom HTML tag :code:`<tg-thinking>`. The block may be used only in :class:`litegram.methods.send_rich_message_draft.SendRichMessageDraft`, therefore it can't be received in messages. See ``https://t.me/addemoji/AIActions <https://t.me/addemoji/AIActions>`_ <https://t.me/addemoji/AIActions>`_ for examples of custom emoji that are recommended for usage in the block.
+    A block with a 'Thinking…' placeholder, corresponding to the custom HTML tag :code:`<tg-thinking>`. The block may be used only in :class:`litegram.methods.send_rich_message_draft.SendRichMessageDraft`, therefore it can't be received in messages. See `https://t.me/addemoji/AIActions <https://t.me/addemoji/AIActions>`_ for examples of custom emoji that are recommended for usage in the block.
 
     Source: https://core.telegram.org/bots/api#inputrichblockthinking
     """
@@ -19,7 +19,7 @@ class InputRichBlockThinking(InputRichBlock):
     type: Literal[InputRichBlockType.THINKING] = InputRichBlockType.THINKING
     """Type of the block, always 'thinking'"""
     text: RichTextUnion
-    """Text of the block. See ``https://t.me/addemoji/AIActions <https://t.me/addemoji/AIActions>`_ <https://t.me/addemoji/AIActions>`_ for examples of custom emoji that are recommended for usage in the block."""
+    """Text of the block. See `https://t.me/addemoji/AIActions <https://t.me/addemoji/AIActions>`_ for examples of custom emoji that are recommended for usage in the block."""
 
     if TYPE_CHECKING:
         # DO NOT EDIT MANUALLY!!!

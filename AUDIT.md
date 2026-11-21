@@ -29,8 +29,10 @@ All 31 new methods have offline wrapper coverage. This does not prove that every
 
 ## Test verification (2026-11-21)
 
-- `make test-coverage`: **1861 passed, 1 skipped**; **17,538 statements, 0 missed, 100% statement coverage**. Redis and MongoDB integration tests ran against the local Docker services.
+- `make test-coverage` on CPython 3.13.15: **1864 passed, 1 skipped**; **17,542 statements, 0 missed, 100% statement coverage**. Redis and MongoDB integration tests ran against the local Docker services.
+- The same suite on CPython 3.15.1: **1865 passed** (the version-specific forward-reference test is not skipped there).
 - `uv run ruff check .`, `uv run ruff format --check .` and `uv run ty check litegram tests examples scripts`: all passed.
+- `uv pip list --outdated`: no outdated packages after the refresh; `uv lock --check` and `uv build` passed. The full dependency set installed on both Python 3.13 and 3.15.
 
 The coverage result uses the repository's existing configuration (`branch = false`, configured omissions and exclusions). It is not branch coverage, a load test, or proof that all behavior and optional API combinations are correct.
 
@@ -43,6 +45,6 @@ The coverage result uses the repository's existing configuration (`branch = fals
 
 ## Docs and performance
 
-Docs localization is complete: the entire api/types reference (430 catalogs, ~5000 entries) plus the 31 new method pages and the Russian migration guide are translated; RU HTML build verified against the EN warning baseline (24 pre-existing RU-only warnings, none from new translations). The methods/dispatcher/utils sections keep their earlier state.
+Docs localization is complete: the entire api/types reference (430 catalogs, ~5000 entries) plus the 31 new method pages and the Russian migration guide are translated. Clean full EN and RU HTML builds pass with Sphinx 9.2 and **0 warnings**. API indexes now list each page exactly once, native HTTPX proxy documentation matches the implementation, nested-anchor RST conversion has a regression test, and the previously inconsistent Russian cross-references were corrected.
 
 Run `uv run python -B -m scripts.benchmark_runtime` from the repository root. A local CPython 3.13.15 / Pydantic 2.14.4 run measured **25.22 µs/update** (**39,658 updates/s**). This is the median of five repeated means for sequential `feed_raw_update` from a decoded dictionary, with one async handler and FSM/event logging disabled. It excludes HTTP, JSON parsing, Redis/Mongo, logging, concurrency and application work. Measure p95/p99 latency, memory, queue growth and shutdown under representative traffic before sizing a deployment.

@@ -117,7 +117,9 @@ async def test_upload_over_real_socket_is_well_formed(capture_server: Any):
     parts = {part.get_param("name", header="content-disposition"): part for part in message.iter_parts()}
     assert parts["chat_id"].get_payload(decode=True) == b"42"
     assert parts["caption"].get_payload(decode=True) == b"caption <safe>"
-    key = parts["document"].get_payload(decode=True).decode().removeprefix("attach://")
+    payload = parts["document"].get_payload(decode=True)
+    assert isinstance(payload, bytes)
+    key = payload.decode().removeprefix("attach://")
     assert parts[key].get_filename() == "sample.txt"
     assert parts[key].get_payload(decode=True) == b"file payload"
     # The body ends with the multipart closing delimiter.
