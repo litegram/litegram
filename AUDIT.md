@@ -27,6 +27,13 @@ A Mimosa deep scan (`scan-2026-11-21T06-05-22.736Z-77d00af05764`, seal `sha256:5
 
 All 31 new methods have offline wrapper coverage. This does not prove that every optional argument combination, result variant or wire payload is correct.
 
+## Test verification (2026-11-21)
+
+- `make test-coverage`: **1861 passed, 1 skipped**; **17,538 statements, 0 missed, 100% statement coverage**. Redis and MongoDB integration tests ran against the local Docker services.
+- `uv run ruff check .`, `uv run ruff format --check .` and `uv run ty check litegram tests examples scripts`: all passed.
+
+The coverage result uses the repository's existing configuration (`branch = false`, configured omissions and exclusions). It is not branch coverage, a load test, or proof that all behavior and optional API combinations are correct.
+
 ## Release gates still open
 
 | Priority | Finding | Next step |

@@ -396,20 +396,22 @@ __all__ = (
     "VerifyUser",
 )
 
-# Load typing forward refs for every TelegramMethod
-for _entity_name in __all__:
-    _entity = globals()[_entity_name]
-    if not hasattr(_entity, "model_rebuild"):
-        continue
-    _entity.model_rebuild(
-        _types_namespace={
-            "datetime": datetime,
-            "Optional": Optional,
-            "Union": Union,
-            **{k: v for k, v in globals().items() if k in __all__},
-            **{k: v for k, v in types.__dict__.items() if k in types.__all__},
-        }
-    )
 
-del _entity
-del _entity_name
+# Load typing forward refs for every TelegramMethod
+def _rebuild_models() -> None:
+    for _entity_name in __all__:
+        _entity = globals()[_entity_name]
+        if not hasattr(_entity, "model_rebuild"):
+            continue
+        _entity.model_rebuild(
+            _types_namespace={
+                "datetime": datetime,
+                "Optional": Optional,
+                "Union": Union,
+                **{k: v for k, v in globals().items() if k in __all__},
+                **{k: v for k, v in types.__dict__.items() if k in types.__all__},
+            }
+        )
+
+
+_rebuild_models()
