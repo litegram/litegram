@@ -5,38 +5,39 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/chat_member_member.rst:3
 msgid "ChatMemberMember"
-msgstr ""
+msgstr "ChatMemberMember"
 
 #: litegram.types.chat_member_member.ChatMemberMember:1 of
 msgid ""
-"Represents a `chat member "
-"<https://core.telegram.org/bots/api#chatmember>`_ that has no additional "
-"privileges or restrictions."
+"Represents a `chat member <https://core.telegram.org/bots/api#chatmember>`_ "
+"that has no additional privileges or restrictions."
 msgstr ""
+"Представляет `участника чата "
+"<https://core.telegram.org/bots/api#chatmember>`_ без дополнительных прав или"
+" ограничений."
 
 #: litegram.types.chat_member_member.ChatMemberMember:3 of
 msgid "Source: https://core.telegram.org/bots/api#chatmembermember"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#chatmembermember"
 
 #: litegram.types.chat_member_member.ChatMemberMember.status:1 of
 msgid "The member's status in the chat, always 'member'"
-msgstr ""
+msgstr "Статус участника в чате, всегда 'member'"
 
 #: litegram.types.chat_member_member.ChatMemberMember.tag:1 of
 msgid "*Optional*. Tag of the member"
@@ -44,9 +45,8 @@ msgstr "*Необязательно*. Тег участника"
 
 #: litegram.types.chat_member_member.ChatMemberMember.user:1 of
 msgid "Information about the user"
-msgstr ""
+msgstr "Информация о пользователе"
 
 #: litegram.types.chat_member_member.ChatMemberMember.until_date:1 of
 msgid "*Optional*. Date when the user's subscription will expire; Unix time"
-msgstr ""
-
+msgstr "*Необязательно*. Дата окончания подписки пользователя; Unix time"

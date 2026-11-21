@@ -5,60 +5,59 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/bot_command_scope_chat_administrators.rst:3
 msgid "BotCommandScopeChatAdministrators"
-msgstr ""
+msgstr "BotCommandScopeChatAdministrators"
 
 #: litegram.types.bot_command_scope_chat_administrators.BotCommandScopeChatAdministrators:1
 #: of
 msgid ""
-"Represents the `scope "
-"<https://core.telegram.org/bots/api#botcommandscope>`_ of bot commands, "
-"covering all administrators of a specific group or supergroup chat."
+"Represents the `scope <https://core.telegram.org/bots/api#botcommandscope>`_ "
+"of bot commands, covering all administrators of a specific group or "
+"supergroup chat."
 msgstr ""
+"Представляет `область действия "
+"<https://core.telegram.org/bots/api#botcommandscope>`_ команд бота, "
+"охватывающую всех администраторов конкретной группы или супергруппы."
 
 #: litegram.types.bot_command_scope_chat_administrators.BotCommandScopeChatAdministrators:3
 #: of
 msgid ""
-"Source: "
-"https://core.telegram.org/bots/api#botcommandscopechatadministrators"
+"Source: https://core.telegram.org/bots/api#botcommandscopechatadministrators"
 msgstr ""
+"Источник: "
+"https://core.telegram.org/bots/api#botcommandscopechatadministrators"
 
 #: litegram.types.bot_command_scope_chat_administrators.BotCommandScopeChatAdministrators.type:1
 #: of
 msgid "Scope type, must be *chat_administrators*"
-msgstr ""
+msgstr "Тип области действия, должно быть *chat_administrators*"
 
 #: litegram.types.bot_command_scope_chat_administrators.BotCommandScopeChatAdministrators.chat_id:1
 #: of
 msgid ""
-"Unique identifier for the target chat or username of the target "
-"supergroup in the format :code:`@username`. Channel direct messages chats"
-" and channel chats aren't supported."
+"Unique identifier for the target chat or username of the target supergroup in"
+" the format :code:`@username`. Channel direct messages chats and channel "
+"chats aren't supported."
 msgstr ""
-"Уникальный идентификатор целевого чата или имя целевой супергруппы в "
-"формате :code:`@username`. Чаты личных сообщений канала и каналы не "
-"поддерживаются."
+"Уникальный идентификатор целевого чата или имя целевой супергруппы в формате "
+":code:`@username`. Чаты личных сообщений канала и каналы не поддерживаются."
 
 #~ msgid ""
-#~ "Unique identifier for the target chat"
-#~ " or username of the target supergroup"
-#~ " (in the format :code:`@supergroupusername`). "
-#~ "Channel direct messages chats and "
-#~ "channel chats aren't supported."
+#~ "Unique identifier for the target chat or username of the target supergroup "
+#~ "(in the format :code:`@supergroupusername`). Channel direct messages chats "
+#~ "and channel chats aren't supported."
 #~ msgstr ""
-

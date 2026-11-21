@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,100 +18,141 @@ msgstr ""
 
 #: ../../api/types/inline_query_result.rst:3
 msgid "InlineQueryResult"
-msgstr ""
+msgstr "InlineQueryResult"
 
 #: litegram.types.inline_query_result.InlineQueryResult:1 of
 msgid ""
 "This object represents one result of an inline query. Telegram clients "
 "currently support results of the following 20 types:"
 msgstr ""
+"Этот объект представляет один результат inline-запроса. Telegram-клиенты "
+"сейчас поддерживают результаты следующих 20 типов:"
 
 #: litegram.types.inline_query_result.InlineQueryResult:3 of
-msgid ":class:`litegram.types.inline_query_result_cached_audio.InlineQueryResultCachedAudio`"
+msgid ""
+":class:`litegram.types.inline_query_result_cached_audio.InlineQueryResultCachedAudio`"
 msgstr ""
+":class:`litegram.types.inline_query_result_cached_audio.InlineQueryResultCachedAudio`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:4 of
-msgid ":class:`litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument`"
+msgid ""
+":class:`litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument`"
 msgstr ""
+":class:`litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:5 of
-msgid ":class:`litegram.types.inline_query_result_cached_gif.InlineQueryResultCachedGif`"
+msgid ""
+":class:`litegram.types.inline_query_result_cached_gif.InlineQueryResultCachedGif`"
 msgstr ""
+":class:`litegram.types.inline_query_result_cached_gif.InlineQueryResultCachedGif`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:6 of
-msgid ":class:`litegram.types.inline_query_result_cached_mpeg4_gif.InlineQueryResultCachedMpeg4Gif`"
+msgid ""
+":class:`litegram.types.inline_query_result_cached_mpeg4_gif.InlineQueryResultCachedMpeg4Gif`"
 msgstr ""
+":class:`litegram.types.inline_query_result_cached_mpeg4_gif.InlineQueryResultCachedMpeg4Gif`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:7 of
-msgid ":class:`litegram.types.inline_query_result_cached_photo.InlineQueryResultCachedPhoto`"
+msgid ""
+":class:`litegram.types.inline_query_result_cached_photo.InlineQueryResultCachedPhoto`"
 msgstr ""
+":class:`litegram.types.inline_query_result_cached_photo.InlineQueryResultCachedPhoto`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:8 of
-msgid ":class:`litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker`"
+msgid ""
+":class:`litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker`"
 msgstr ""
+":class:`litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:9 of
-msgid ":class:`litegram.types.inline_query_result_cached_video.InlineQueryResultCachedVideo`"
+msgid ""
+":class:`litegram.types.inline_query_result_cached_video.InlineQueryResultCachedVideo`"
 msgstr ""
+":class:`litegram.types.inline_query_result_cached_video.InlineQueryResultCachedVideo`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:10 of
-msgid ":class:`litegram.types.inline_query_result_cached_voice.InlineQueryResultCachedVoice`"
+msgid ""
+":class:`litegram.types.inline_query_result_cached_voice.InlineQueryResultCachedVoice`"
 msgstr ""
+":class:`litegram.types.inline_query_result_cached_voice.InlineQueryResultCachedVoice`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:11 of
-msgid ":class:`litegram.types.inline_query_result_article.InlineQueryResultArticle`"
+msgid ""
+":class:`litegram.types.inline_query_result_article.InlineQueryResultArticle`"
 msgstr ""
+":class:`litegram.types.inline_query_result_article.InlineQueryResultArticle`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:12 of
-msgid ":class:`litegram.types.inline_query_result_audio.InlineQueryResultAudio`"
+msgid ""
+":class:`litegram.types.inline_query_result_audio.InlineQueryResultAudio`"
 msgstr ""
+":class:`litegram.types.inline_query_result_audio.InlineQueryResultAudio`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:13 of
-msgid ":class:`litegram.types.inline_query_result_contact.InlineQueryResultContact`"
+msgid ""
+":class:`litegram.types.inline_query_result_contact.InlineQueryResultContact`"
 msgstr ""
+":class:`litegram.types.inline_query_result_contact.InlineQueryResultContact`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:14 of
 msgid ":class:`litegram.types.inline_query_result_game.InlineQueryResultGame`"
-msgstr ""
+msgstr ":class:`litegram.types.inline_query_result_game.InlineQueryResultGame`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:15 of
-msgid ":class:`litegram.types.inline_query_result_document.InlineQueryResultDocument`"
+msgid ""
+":class:`litegram.types.inline_query_result_document.InlineQueryResultDocument`"
 msgstr ""
+":class:`litegram.types.inline_query_result_document.InlineQueryResultDocument`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:16 of
 msgid ":class:`litegram.types.inline_query_result_gif.InlineQueryResultGif`"
-msgstr ""
+msgstr ":class:`litegram.types.inline_query_result_gif.InlineQueryResultGif`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:17 of
-msgid ":class:`litegram.types.inline_query_result_location.InlineQueryResultLocation`"
+msgid ""
+":class:`litegram.types.inline_query_result_location.InlineQueryResultLocation`"
 msgstr ""
+":class:`litegram.types.inline_query_result_location.InlineQueryResultLocation`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:18 of
-msgid ":class:`litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif`"
+msgid ""
+":class:`litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif`"
 msgstr ""
+":class:`litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:19 of
-msgid ":class:`litegram.types.inline_query_result_photo.InlineQueryResultPhoto`"
+msgid ""
+":class:`litegram.types.inline_query_result_photo.InlineQueryResultPhoto`"
 msgstr ""
+":class:`litegram.types.inline_query_result_photo.InlineQueryResultPhoto`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:20 of
-msgid ":class:`litegram.types.inline_query_result_venue.InlineQueryResultVenue`"
+msgid ""
+":class:`litegram.types.inline_query_result_venue.InlineQueryResultVenue`"
 msgstr ""
+":class:`litegram.types.inline_query_result_venue.InlineQueryResultVenue`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:21 of
-msgid ":class:`litegram.types.inline_query_result_video.InlineQueryResultVideo`"
+msgid ""
+":class:`litegram.types.inline_query_result_video.InlineQueryResultVideo`"
 msgstr ""
+":class:`litegram.types.inline_query_result_video.InlineQueryResultVideo`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:22 of
-msgid ":class:`litegram.types.inline_query_result_voice.InlineQueryResultVoice`"
+msgid ""
+":class:`litegram.types.inline_query_result_voice.InlineQueryResultVoice`"
 msgstr ""
+":class:`litegram.types.inline_query_result_voice.InlineQueryResultVoice`"
 
 #: litegram.types.inline_query_result.InlineQueryResult:24 of
 msgid ""
-"**Note:** All URLs passed in inline query results will be available to "
-"end users and therefore must be assumed to be **public**."
+"**Note:** All URLs passed in inline query results will be available to end "
+"users and therefore must be assumed to be **public**."
 msgstr ""
+"**Примечание:** Все URL, передаваемые в результатах inline-запросов, будут "
+"доступны конечным пользователям, поэтому их следует считать "
+"**общедоступными**."
 
 #: litegram.types.inline_query_result.InlineQueryResult:26 of
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresult"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inlinequeryresult"

@@ -5,52 +5,56 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/checklist.rst:3
 msgid "Checklist"
-msgstr ""
+msgstr "Checklist"
 
 #: litegram.types.checklist.Checklist:1 of
 msgid "Describes a checklist."
-msgstr ""
+msgstr "Описывает чек-лист."
 
 #: litegram.types.checklist.Checklist:3 of
 msgid "Source: https://core.telegram.org/bots/api#checklist"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#checklist"
 
 #: litegram.types.checklist.Checklist.title:1 of
 msgid "Title of the checklist"
-msgstr ""
+msgstr "Название чек-листа"
 
 #: litegram.types.checklist.Checklist.tasks:1 of
 msgid "List of tasks in the checklist"
-msgstr ""
+msgstr "Список задач в чек-листе"
 
 #: litegram.types.checklist.Checklist.title_entities:1 of
 msgid "*Optional*. Special entities that appear in the checklist title"
 msgstr ""
+"*Необязательно*. Специальные сущности, встречающиеся в названии чек-листа"
 
 #: litegram.types.checklist.Checklist.others_can_add_tasks:1 of
 msgid ""
-"*Optional*. :code:`True`, if users other than the creator of the list can"
-" add tasks to the list"
+"*Optional*. :code:`True`, if users other than the creator of the list can add"
+" tasks to the list"
 msgstr ""
+"*Необязательно*. :code:`True`, если пользователи, кроме создателя списка, "
+"могут добавлять задачи в список"
 
 #: litegram.types.checklist.Checklist.others_can_mark_tasks_as_done:1 of
 msgid ""
-"*Optional*. :code:`True`, if users other than the creator of the list can"
-" mark tasks as done or not done"
+"*Optional*. :code:`True`, if users other than the creator of the list can "
+"mark tasks as done or not done"
 msgstr ""
+"*Необязательно*. :code:`True`, если пользователи, кроме создателя списка, "
+"могут отмечать задачи выполненными или невыполненными"

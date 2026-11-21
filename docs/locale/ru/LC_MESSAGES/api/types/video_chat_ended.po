@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,18 +18,19 @@ msgstr ""
 
 #: ../../api/types/video_chat_ended.rst:3
 msgid "VideoChatEnded"
-msgstr ""
+msgstr "VideoChatEnded"
 
 #: litegram.types.video_chat_ended.VideoChatEnded:1 of
 msgid ""
 "This object represents a service message about a video chat ended in the "
 "chat."
 msgstr ""
+"Этот объект представляет сервисное сообщение о завершении видеочата в чате."
 
 #: litegram.types.video_chat_ended.VideoChatEnded:3 of
 msgid "Source: https://core.telegram.org/bots/api#videochatended"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#videochatended"
 
 #: ../../docstring litegram.types.video_chat_ended.VideoChatEnded.duration:1 of
 msgid "Video chat duration in seconds"
-msgstr ""
+msgstr "Длительность видеочата в секундах"

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,26 +18,32 @@ msgstr ""
 
 #: ../../api/types/web_app_data.rst:3
 msgid "WebAppData"
-msgstr ""
+msgstr "WebAppData"
 
 #: litegram.types.web_app_data.WebAppData:1 of
 msgid ""
 "Describes data sent from a `Web App "
 "<https://core.telegram.org/bots/webapps>`_ to the bot."
 msgstr ""
+"Описывает данные, отправленные из `веб-приложения "
+"<https://core.telegram.org/bots/webapps>`_ боту."
 
 #: litegram.types.web_app_data.WebAppData:3 of
 msgid "Source: https://core.telegram.org/bots/api#webappdata"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#webappdata"
 
 #: ../../docstring litegram.types.web_app_data.WebAppData.data:1 of
 msgid ""
-"The data. Be aware that a bad client can send arbitrary data in this "
-"field."
+"The data. Be aware that a bad client can send arbitrary data in this field."
 msgstr ""
+"Данные. Учтите, что неисправный клиент может отправить в этом поле "
+"произвольные данные."
 
 #: ../../docstring litegram.types.web_app_data.WebAppData.button_text:1 of
 msgid ""
-"Text of the *web_app* keyboard button from which the Web App was opened. "
-"Be aware that a bad client can send arbitrary data in this field."
+"Text of the *web_app* keyboard button from which the Web App was opened. Be "
+"aware that a bad client can send arbitrary data in this field."
 msgstr ""
+"Текст кнопки *web_app* клавиатуры, из которого было открыто веб-приложение. "
+"Учтите, что неисправный клиент может отправить в этом поле произвольные "
+"данные."

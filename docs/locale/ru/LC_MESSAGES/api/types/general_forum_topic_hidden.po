@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-30 22:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,14 +18,16 @@ msgstr ""
 
 #: ../../api/types/general_forum_topic_hidden.rst:3
 msgid "GeneralForumTopicHidden"
-msgstr ""
+msgstr "GeneralForumTopicHidden"
 
 #: litegram.types.general_forum_topic_hidden.GeneralForumTopicHidden:1 of
 msgid ""
-"This object represents a service message about General forum topic hidden"
-" in the chat. Currently holds no information."
+"This object represents a service message about General forum topic hidden in "
+"the chat. Currently holds no information."
 msgstr ""
+"Этот объект представляет сервисное сообщение о скрытии общей темы форума в "
+"чате. Сейчас не содержит информации."
 
 #: litegram.types.general_forum_topic_hidden.GeneralForumTopicHidden:3 of
 msgid "Source: https://core.telegram.org/bots/api#generalforumtopichidden"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#generalforumtopichidden"

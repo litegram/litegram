@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,30 +18,38 @@ msgstr ""
 
 #: ../../api/types/response_parameters.rst:3
 msgid "ResponseParameters"
-msgstr ""
+msgstr "ResponseParameters"
 
 #: litegram.types.response_parameters.ResponseParameters:1 of
 msgid "Describes why a request was unsuccessful."
-msgstr ""
+msgstr "Описывает, почему запрос был неудачным."
 
 #: litegram.types.response_parameters.ResponseParameters:3 of
 msgid "Source: https://core.telegram.org/bots/api#responseparameters"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#responseparameters"
 
 #: ../../docstring
-#: litegram.types.response_parameters.ResponseParameters.migrate_to_chat_id:1 of
+#: litegram.types.response_parameters.ResponseParameters.migrate_to_chat_id:1
+#: of
 msgid ""
-"*Optional*. The group has been migrated to a supergroup with the "
-"specified identifier. This number may have more than 32 significant bits "
-"and some programming languages may have difficulty/silent defects in "
-"interpreting it. But it has at most 52 significant bits, so a signed "
-"64-bit integer or double-precision float type are safe for storing this "
-"identifier."
+"*Optional*. The group has been migrated to a supergroup with the specified "
+"identifier. This number may have more than 32 significant bits and some "
+"programming languages may have difficulty/silent defects in interpreting it. "
+"But it has at most 52 significant bits, so a signed 64-bit integer or double-"
+"precision float type are safe for storing this identifier."
 msgstr ""
+"*Необязательно*. Группа была преобразована в супергруппу с указанным "
+"идентификатором. Это число может иметь более 32 значащих битов, и в некоторых"
+" языках программирования могут возникать сложности или неявные ошибки при его"
+" интерпретации. Однако оно содержит не более 52 значащих битов, поэтому "
+"64-битное целое число со знаком или число с плавающей точкой двойной точности"
+" безопасны для хранения этого идентификатора."
 
 #: ../../docstring
 #: litegram.types.response_parameters.ResponseParameters.retry_after:1 of
 msgid ""
-"*Optional*. In case of exceeding flood control, the number of seconds "
-"left to wait before the request can be repeated"
+"*Optional*. In case of exceeding flood control, the number of seconds left to"
+" wait before the request can be repeated"
 msgstr ""
+"*Необязательно*. При превышении ограничения на частоту запросов — число "
+"секунд до момента, когда запрос можно будет повторить"

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,17 +18,17 @@ msgstr ""
 
 #: ../../api/types/menu_button_commands.rst:3
 msgid "MenuButtonCommands"
-msgstr ""
+msgstr "MenuButtonCommands"
 
 #: litegram.types.menu_button_commands.MenuButtonCommands:1 of
 msgid "Represents a menu button, which opens the bot's list of commands."
-msgstr ""
+msgstr "Представляет кнопку меню, которая открывает список команд бота."
 
 #: litegram.types.menu_button_commands.MenuButtonCommands:3 of
 msgid "Source: https://core.telegram.org/bots/api#menubuttoncommands"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#menubuttoncommands"
 
-#: ../../docstring litegram.types.menu_button_commands.MenuButtonCommands.type:1
-#: of
+#: ../../docstring
+#: litegram.types.menu_button_commands.MenuButtonCommands.type:1 of
 msgid "Type of the button, must be *commands*"
-msgstr ""
+msgstr "Тип кнопки; должно быть *commands*"

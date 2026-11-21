@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,50 +18,61 @@ msgstr ""
 
 #: ../../api/types/inline_query_result_cached_sticker.rst:3
 msgid "InlineQueryResultCachedSticker"
-msgstr ""
+msgstr "InlineQueryResultCachedSticker"
 
 #: litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker:1
 #: of
 msgid ""
-"Represents a link to a sticker stored on the Telegram servers. By "
-"default, this sticker will be sent by the user. Alternatively, you can "
-"use *input_message_content* to send a message with the specified content "
-"instead of the sticker."
+"Represents a link to a sticker stored on the Telegram servers. By default, "
+"this sticker will be sent by the user. Alternatively, you can use "
+"*input_message_content* to send a message with the specified content instead "
+"of the sticker."
 msgstr ""
+"Представляет ссылку на стикер, хранящийся на серверах Telegram. По умолчанию "
+"этот стикер будет отправлен пользователем. В качестве альтернативы можно "
+"использовать *input_message_content*, чтобы отправить сообщение с указанным "
+"содержимым вместо стикера."
 
 #: litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker:3
 #: of
-msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultcachedsticker"
+msgid ""
+"Source: https://core.telegram.org/bots/api#inlinequeryresultcachedsticker"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#inlinequeryresultcachedsticker"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker.type:1
 #: of
 msgid "Type of the result, must be *sticker*"
-msgstr ""
+msgstr "Тип результата; должно быть *sticker*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker.id:1
 #: of
 msgid "Unique identifier for this result, 1-64 bytes"
-msgstr ""
+msgstr "Уникальный идентификатор этого результата, 1-64 байта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker.sticker_file_id:1
 #: of
 msgid "A valid file identifier of the sticker"
-msgstr ""
+msgstr "Корректный file_id стикера"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker.reply_markup:1
 #: of
 msgid ""
-"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
-"#inline-keyboards>`_ attached to the message"
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-"
+"keyboards>`_ attached to the message"
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, прикреплённая к"
+" сообщению"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_sticker.InlineQueryResultCachedSticker.input_message_content:1
 #: of
 msgid "*Optional*. Content of the message to be sent instead of the sticker"
 msgstr ""
+"*Необязательно*. Содержимое сообщения, которое будет отправлено вместо "
+"стикера"

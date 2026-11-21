@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,46 +18,51 @@ msgstr ""
 
 #: ../../api/types/inline_query_result_contact.rst:3
 msgid "InlineQueryResultContact"
-msgstr ""
+msgstr "InlineQueryResultContact"
 
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact:1 of
 msgid ""
-"Represents a contact with a phone number. By default, this contact will "
-"be sent by the user. Alternatively, you can use *input_message_content* "
-"to send a message with the specified content instead of the contact."
+"Represents a contact with a phone number. By default, this contact will be "
+"sent by the user. Alternatively, you can use *input_message_content* to send "
+"a message with the specified content instead of the contact."
 msgstr ""
+"Представляет контакт с номером телефона. По умолчанию этот контакт будет "
+"отправлен пользователем. В качестве альтернативы можно использовать "
+"*input_message_content*, чтобы отправить сообщение с указанным содержимым "
+"вместо контакта."
 
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact:3 of
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultcontact"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inlinequeryresultcontact"
 
 #: ../../docstring
-#: litegram.types.inline_query_result_contact.InlineQueryResultContact.type:1 of
+#: litegram.types.inline_query_result_contact.InlineQueryResultContact.type:1
+#: of
 msgid "Type of the result, must be *contact*"
-msgstr ""
+msgstr "Тип результата; должно быть *contact*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.id:1 of
 msgid "Unique identifier for this result, 1-64 Bytes"
-msgstr ""
+msgstr "Уникальный идентификатор этого результата, 1-64 байта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.phone_number:1
 #: of
 msgid "Contact's phone number"
-msgstr ""
+msgstr "Номер телефона контакта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.first_name:1
 #: of
 msgid "Contact's first name"
-msgstr ""
+msgstr "Имя контакта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.last_name:1
 #: of
 msgid "*Optional*. Contact's last name"
-msgstr ""
+msgstr "*Необязательно*. Фамилия контакта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.vcard:1
@@ -66,35 +71,42 @@ msgid ""
 "*Optional*. Additional data about the contact in the form of a `vCard "
 "<https://en.wikipedia.org/wiki/VCard>`_, 0-2048 bytes"
 msgstr ""
+"*Необязательно*. Дополнительные данные о контакте в формате `vCard "
+"<https://en.wikipedia.org/wiki/VCard>`_, 0-2048 байт"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.reply_markup:1
 #: of
 msgid ""
-"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
-"#inline-keyboards>`_ attached to the message"
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-"
+"keyboards>`_ attached to the message"
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, прикреплённая к"
+" сообщению"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.input_message_content:1
 #: of
 msgid "*Optional*. Content of the message to be sent instead of the contact"
 msgstr ""
+"*Необязательно*. Содержимое сообщения, которое будет отправлено вместо "
+"контакта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.thumbnail_url:1
 #: of
 msgid "*Optional*. Url of the thumbnail for the result"
-msgstr ""
+msgstr "*Необязательно*. URL превью результата"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.thumbnail_width:1
 #: of
 msgid "*Optional*. Thumbnail width"
-msgstr ""
+msgstr "*Необязательно*. Ширина превью"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_contact.InlineQueryResultContact.thumbnail_height:1
 #: of
 msgid "*Optional*. Thumbnail height"
-msgstr ""
+msgstr "*Необязательно*. Высота превью"

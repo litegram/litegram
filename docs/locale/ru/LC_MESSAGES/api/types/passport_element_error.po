@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,50 +18,70 @@ msgstr ""
 
 #: ../../api/types/passport_element_error.rst:3
 msgid "PassportElementError"
-msgstr ""
+msgstr "PassportElementError"
 
 #: litegram.types.passport_element_error.PassportElementError:1 of
 msgid ""
-"This object represents an error in the Telegram Passport element which "
-"was submitted that should be resolved by the user. It should be one of:"
+"This object represents an error in the Telegram Passport element which was "
+"submitted that should be resolved by the user. It should be one of:"
 msgstr ""
+"Этот объект представляет ошибку в отправленном элементе Telegram Passport, "
+"которую должен устранить пользователь. Это должен быть один из следующих:"
 
 #: litegram.types.passport_element_error.PassportElementError:3 of
-msgid ":class:`litegram.types.passport_element_error_data_field.PassportElementErrorDataField`"
+msgid ""
+":class:`litegram.types.passport_element_error_data_field.PassportElementErrorDataField`"
 msgstr ""
+":class:`litegram.types.passport_element_error_data_field.PassportElementErrorDataField`"
 
 #: litegram.types.passport_element_error.PassportElementError:4 of
-msgid ":class:`litegram.types.passport_element_error_front_side.PassportElementErrorFrontSide`"
+msgid ""
+":class:`litegram.types.passport_element_error_front_side.PassportElementErrorFrontSide`"
 msgstr ""
+":class:`litegram.types.passport_element_error_front_side.PassportElementErrorFrontSide`"
 
 #: litegram.types.passport_element_error.PassportElementError:5 of
-msgid ":class:`litegram.types.passport_element_error_reverse_side.PassportElementErrorReverseSide`"
+msgid ""
+":class:`litegram.types.passport_element_error_reverse_side.PassportElementErrorReverseSide`"
 msgstr ""
+":class:`litegram.types.passport_element_error_reverse_side.PassportElementErrorReverseSide`"
 
 #: litegram.types.passport_element_error.PassportElementError:6 of
-msgid ":class:`litegram.types.passport_element_error_selfie.PassportElementErrorSelfie`"
+msgid ""
+":class:`litegram.types.passport_element_error_selfie.PassportElementErrorSelfie`"
 msgstr ""
+":class:`litegram.types.passport_element_error_selfie.PassportElementErrorSelfie`"
 
 #: litegram.types.passport_element_error.PassportElementError:7 of
-msgid ":class:`litegram.types.passport_element_error_file.PassportElementErrorFile`"
+msgid ""
+":class:`litegram.types.passport_element_error_file.PassportElementErrorFile`"
 msgstr ""
+":class:`litegram.types.passport_element_error_file.PassportElementErrorFile`"
 
 #: litegram.types.passport_element_error.PassportElementError:8 of
-msgid ":class:`litegram.types.passport_element_error_files.PassportElementErrorFiles`"
+msgid ""
+":class:`litegram.types.passport_element_error_files.PassportElementErrorFiles`"
 msgstr ""
+":class:`litegram.types.passport_element_error_files.PassportElementErrorFiles`"
 
 #: litegram.types.passport_element_error.PassportElementError:9 of
-msgid ":class:`litegram.types.passport_element_error_translation_file.PassportElementErrorTranslationFile`"
+msgid ""
+":class:`litegram.types.passport_element_error_translation_file.PassportElementErrorTranslationFile`"
 msgstr ""
+":class:`litegram.types.passport_element_error_translation_file.PassportElementErrorTranslationFile`"
 
 #: litegram.types.passport_element_error.PassportElementError:10 of
-msgid ":class:`litegram.types.passport_element_error_translation_files.PassportElementErrorTranslationFiles`"
+msgid ""
+":class:`litegram.types.passport_element_error_translation_files.PassportElementErrorTranslationFiles`"
 msgstr ""
+":class:`litegram.types.passport_element_error_translation_files.PassportElementErrorTranslationFiles`"
 
 #: litegram.types.passport_element_error.PassportElementError:11 of
-msgid ":class:`litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified`"
+msgid ""
+":class:`litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified`"
 msgstr ""
+":class:`litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified`"
 
 #: litegram.types.passport_element_error.PassportElementError:13 of
 msgid "Source: https://core.telegram.org/bots/api#passportelementerror"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#passportelementerror"

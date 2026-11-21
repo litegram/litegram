@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,21 +18,25 @@ msgstr ""
 
 #: ../../api/types/video_chat_scheduled.rst:3
 msgid "VideoChatScheduled"
-msgstr ""
+msgstr "VideoChatScheduled"
 
 #: litegram.types.video_chat_scheduled.VideoChatScheduled:1 of
 msgid ""
-"This object represents a service message about a video chat scheduled in "
-"the chat."
+"This object represents a service message about a video chat scheduled in the "
+"chat."
 msgstr ""
+"Этот объект представляет сервисное сообщение о запланированном видеочате в "
+"чате."
 
 #: litegram.types.video_chat_scheduled.VideoChatScheduled:3 of
 msgid "Source: https://core.telegram.org/bots/api#videochatscheduled"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#videochatscheduled"
 
 #: ../../docstring
 #: litegram.types.video_chat_scheduled.VideoChatScheduled.start_date:1 of
 msgid ""
-"Point in time (Unix timestamp) when the video chat is supposed to be "
-"started by a chat administrator"
+"Point in time (Unix timestamp) when the video chat is supposed to be started "
+"by a chat administrator"
 msgstr ""
+"Момент времени (Unix timestamp), когда администратор чата должен начать "
+"видеочат"

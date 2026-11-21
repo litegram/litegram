@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,84 +18,97 @@ msgstr ""
 
 #: ../../api/types/inline_query_result_audio.rst:3
 msgid "InlineQueryResultAudio"
-msgstr ""
+msgstr "InlineQueryResultAudio"
 
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio:1 of
 msgid ""
-"Represents a link to an MP3 audio file. By default, this audio file will "
-"be sent by the user. Alternatively, you can use *input_message_content* "
-"to send a message with the specified content instead of the audio."
+"Represents a link to an MP3 audio file. By default, this audio file will be "
+"sent by the user. Alternatively, you can use *input_message_content* to send "
+"a message with the specified content instead of the audio."
 msgstr ""
+"Представляет ссылку на MP3-аудиофайл. По умолчанию этот аудиофайл будет "
+"отправлен пользователем. В качестве альтернативы можно использовать "
+"*input_message_content*, чтобы отправить сообщение с указанным содержимым "
+"вместо аудио."
 
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio:3 of
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultaudio"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inlinequeryresultaudio"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.type:1 of
 msgid "Type of the result, must be *audio*"
-msgstr ""
+msgstr "Тип результата; должно быть *audio*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.id:1 of
 msgid "Unique identifier for this result, 1-64 bytes"
-msgstr ""
+msgstr "Уникальный идентификатор этого результата, 1-64 байта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.audio_url:1
 #: of
 msgid "A valid URL for the audio file"
-msgstr ""
+msgstr "Корректный URL аудиофайла"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.title:1 of
 msgid "Title"
-msgstr ""
+msgstr "Название"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.caption:1 of
 msgid "*Optional*. Caption, 0-1024 characters after entities parsing"
-msgstr ""
+msgstr "*Необязательно*. Подпись, 0-1024 символа после разбора сущностей"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.parse_mode:1
 #: of
 msgid ""
-"*Optional*. Mode for parsing entities in the audio caption. See "
-"`formatting options <https://core.telegram.org/bots/api#formatting-"
-"options>`_ for more details."
+"*Optional*. Mode for parsing entities in the audio caption. See `formatting "
+"options <https://core.telegram.org/bots/api#formatting-options>`_ for more "
+"details."
 msgstr ""
+"*Необязательно*. Режим разбора сущностей в подписи аудио. Подробнее см. "
+"`варианты форматирования <https://core.telegram.org/bots/api#formatting-"
+"options>`_."
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.caption_entities:1
 #: of
 msgid ""
-"*Optional*. List of special entities that appear in the caption, which "
-"can be specified instead of *parse_mode*"
+"*Optional*. List of special entities that appear in the caption, which can be"
+" specified instead of *parse_mode*"
 msgstr ""
+"*Необязательно*. Список специальных сущностей в подписи; можно указать вместо"
+" *parse_mode*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.performer:1
 #: of
 msgid "*Optional*. Performer"
-msgstr ""
+msgstr "*Необязательно*. Исполнитель"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.audio_duration:1
 #: of
 msgid "*Optional*. Audio duration in seconds"
-msgstr ""
+msgstr "*Необязательно*. Длительность аудио в секундах"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.reply_markup:1
 #: of
 msgid ""
-"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
-"#inline-keyboards>`_ attached to the message"
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-"
+"keyboards>`_ attached to the message"
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, прикреплённая к"
+" сообщению"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_audio.InlineQueryResultAudio.input_message_content:1
 #: of
 msgid "*Optional*. Content of the message to be sent instead of the audio"
 msgstr ""
+"*Необязательно*. Содержимое сообщения, которое будет отправлено вместо аудио"

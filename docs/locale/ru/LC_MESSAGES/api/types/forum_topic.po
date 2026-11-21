@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,34 +18,39 @@ msgstr ""
 
 #: ../../api/types/forum_topic.rst:3
 msgid "ForumTopic"
-msgstr ""
+msgstr "ForumTopic"
 
 #: litegram.types.forum_topic.ForumTopic:1 of
 msgid "This object represents a forum topic."
-msgstr ""
+msgstr "Этот объект представляет тему форума."
 
 #: litegram.types.forum_topic.ForumTopic:3 of
 msgid "Source: https://core.telegram.org/bots/api#forumtopic"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#forumtopic"
 
 #: litegram.types.forum_topic.ForumTopic.message_thread_id:1 of
 msgid "Unique identifier of the forum topic"
-msgstr ""
+msgstr "Уникальный идентификатор темы форума"
 
 #: litegram.types.forum_topic.ForumTopic.name:1 of
 msgid "Name of the topic"
-msgstr ""
+msgstr "Название темы"
 
 #: litegram.types.forum_topic.ForumTopic.icon_color:1 of
 msgid "Color of the topic icon in RGB format"
-msgstr ""
+msgstr "Цвет значка темы в формате RGB"
 
 #: litegram.types.forum_topic.ForumTopic.icon_custom_emoji_id:1 of
-msgid "*Optional*. Unique identifier of the custom emoji shown as the topic icon"
+msgid ""
+"*Optional*. Unique identifier of the custom emoji shown as the topic icon"
 msgstr ""
+"*Необязательно*. Уникальный идентификатор кастомного эмодзи, показываемого в "
+"качестве значка темы"
 
 #: litegram.types.forum_topic.ForumTopic.is_name_implicit:1 of
 msgid ""
 "*Optional*. :code:`True`, if the name of the topic wasn't specified "
 "explicitly by its creator and likely needs to be changed by the bot"
 msgstr ""
+"*Необязательно*. :code:`True`, если название темы не было явно задано её "
+"создателем и, вероятно, должно быть изменено ботом"

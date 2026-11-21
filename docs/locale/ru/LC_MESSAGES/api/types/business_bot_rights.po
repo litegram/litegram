@@ -5,48 +5,55 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/business_bot_rights.rst:3
 msgid "BusinessBotRights"
-msgstr ""
+msgstr "BusinessBotRights"
 
 #: litegram.types.business_bot_rights.BusinessBotRights:1 of
 msgid "Represents the rights of a business bot."
-msgstr ""
+msgstr "Представляет права бизнес-бота."
 
 #: litegram.types.business_bot_rights.BusinessBotRights:3 of
 msgid "Source: https://core.telegram.org/bots/api#businessbotrights"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#businessbotrights"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_reply:1 of
 msgid ""
 "*Optional*. :code:`True`, if the bot can send and edit messages in the "
 "private chats that had incoming messages in the last 24 hours"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может отправлять и редактировать "
+"сообщения в личных чатах, в которых были входящие сообщения за последние 24 "
+"часа"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_read_messages:1 of
 msgid ""
-"*Optional*. :code:`True`, if the bot can mark incoming private messages "
-"as read"
+"*Optional*. :code:`True`, if the bot can mark incoming private messages as "
+"read"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может отмечать входящие личные "
+"сообщения как прочитанные"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_delete_sent_messages:1
 #: of
-msgid "*Optional*. :code:`True`, if the bot can delete messages sent by the bot"
+msgid ""
+"*Optional*. :code:`True`, if the bot can delete messages sent by the bot"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может удалять сообщения, отправленные"
+" ботом"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_delete_all_messages:1
 #: of
@@ -54,18 +61,23 @@ msgid ""
 "*Optional*. :code:`True`, if the bot can delete all private messages in "
 "managed chats"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может удалять все личные сообщения в "
+"управляемых чатах"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_edit_name:1 of
 msgid ""
-"*Optional*. :code:`True`, if the bot can edit the first and last name of "
-"the business account"
+"*Optional*. :code:`True`, if the bot can edit the first and last name of the "
+"business account"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может изменять имя и фамилию бизнес-"
+"аккаунта"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_edit_bio:1 of
 msgid ""
-"*Optional*. :code:`True`, if the bot can edit the bio of the business "
-"account"
+"*Optional*. :code:`True`, if the bot can edit the bio of the business account"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может изменять описание (bio) бизнес-"
+"аккаунта"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_edit_profile_photo:1
 #: of
@@ -73,12 +85,16 @@ msgid ""
 "*Optional*. :code:`True`, if the bot can edit the profile photo of the "
 "business account"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может изменять фото профиля бизнес-"
+"аккаунта"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_edit_username:1 of
 msgid ""
-"*Optional*. :code:`True`, if the bot can edit the username of the "
-"business account"
+"*Optional*. :code:`True`, if the bot can edit the username of the business "
+"account"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может изменять имя пользователя "
+"бизнес-аккаунта"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_change_gift_settings:1
 #: of
@@ -86,6 +102,8 @@ msgid ""
 "*Optional*. :code:`True`, if the bot can change the privacy settings "
 "pertaining to gifts for the business account"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может изменять настройки "
+"конфиденциальности бизнес-аккаунта, касающиеся подарков"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_view_gifts_and_stars:1
 #: of
@@ -93,40 +111,52 @@ msgid ""
 "*Optional*. :code:`True`, if the bot can view gifts and the amount of "
 "Telegram Stars owned by the business account"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может просматривать подарки и "
+"количество Telegram Stars бизнес-аккаунта"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_convert_gifts_to_stars:1
 #: of
 msgid ""
-"*Optional*. :code:`True`, if the bot can convert regular gifts owned by "
-"the business account to Telegram Stars"
+"*Optional*. :code:`True`, if the bot can convert regular gifts owned by the "
+"business account to Telegram Stars"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может преобразовывать обычные подарки"
+" бизнес-аккаунта в Telegram Stars"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_transfer_and_upgrade_gifts:1
 #: of
 msgid ""
-"*Optional*. :code:`True`, if the bot can transfer and upgrade gifts owned"
-" by the business account"
+"*Optional*. :code:`True`, if the bot can transfer and upgrade gifts owned by "
+"the business account"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может передавать и улучшать подарки "
+"бизнес-аккаунта"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_transfer_stars:1 of
 msgid ""
-"*Optional*. :code:`True`, if the bot can transfer Telegram Stars received"
-" by the business account to its own account, or use them to upgrade and "
-"transfer gifts"
+"*Optional*. :code:`True`, if the bot can transfer Telegram Stars received by "
+"the business account to its own account, or use them to upgrade and transfer "
+"gifts"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может переводить Telegram Stars, "
+"полученные бизнес-аккаунтом, на свой счёт или использовать их для улучшения и"
+" передачи подарков"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_manage_stories:1 of
 msgid ""
-"*Optional*. :code:`True`, if the bot can post, edit and delete stories on"
-" behalf of the business account"
+"*Optional*. :code:`True`, if the bot can post, edit and delete stories on "
+"behalf of the business account"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может публиковать, редактировать и "
+"удалять сторис от имени бизнес-аккаунта"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_delete_outgoing_messages:1
 #: of
 msgid "*Optional*. True, if the bot can delete messages sent by the bot"
 msgstr ""
+"*Необязательно*. True, если бот может удалять сообщения, отправленные ботом"
 
 #: litegram.types.business_bot_rights.BusinessBotRights.can_delete_outgoing_messages:3
 #: of
 msgid "https://core.telegram.org/bots/api-changelog#july-3-2025"
-msgstr ""
+msgstr "https://core.telegram.org/bots/api-changelog#july-3-2025"

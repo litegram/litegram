@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-16 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../../api/types/keyboard_button_request_user.rst:3
 msgid "KeyboardButtonRequestUser"
-msgstr ""
+msgstr "KeyboardButtonRequestUser"
 
 #: litegram.types.keyboard_button_request_user.KeyboardButtonRequestUser:1 of
 msgid ""
@@ -27,38 +27,50 @@ msgid ""
 "corresponding button is pressed. `More about requesting users » "
 "<https://core.telegram.org/bots/features#chat-and-user-selection>`_"
 msgstr ""
+"Этот объект задаёт критерии запроса подходящего пользователя. Идентификатор "
+"выбранного пользователя будет передан боту при нажатии соответствующей "
+"кнопки. `Подробнее о запросе пользователей » "
+"<https://core.telegram.org/bots/features#chat-and-user-selection>`_"
 
 #: litegram.types.keyboard_button_request_user.KeyboardButtonRequestUser:3 of
 msgid "https://core.telegram.org/bots/api-changelog#december-29-2023"
-msgstr ""
+msgstr "https://core.telegram.org/bots/api-changelog#december-29-2023"
 
 #: litegram.types.keyboard_button_request_user.KeyboardButtonRequestUser:6 of
 msgid "Source: https://core.telegram.org/bots/api#keyboardbuttonrequestuser"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#keyboardbuttonrequestuser"
 
 #: ../../docstring
 #: litegram.types.keyboard_button_request_user.KeyboardButtonRequestUser.request_id:1
 #: of
 msgid ""
-"Signed 32-bit identifier of the request, which will be received back in "
-"the :class:`litegram.types.user_shared.UserShared` object. Must be unique "
-"within the message"
+"Signed 32-bit identifier of the request, which will be received back in the "
+":class:`litegram.types.user_shared.UserShared` object. Must be unique within "
+"the message"
 msgstr ""
+"32-битный идентификатор запроса со знаком, который будет получен обратно в "
+"объекте :class:`litegram.types.user_shared.UserShared`. Должен быть "
+"уникальным в пределах сообщения"
 
 #: ../../docstring
 #: litegram.types.keyboard_button_request_user.KeyboardButtonRequestUser.user_is_bot:1
 #: of
 msgid ""
-"*Optional*. Pass :code:`True` to request a bot, pass :code:`False` to "
-"request a regular user. If not specified, no additional restrictions are "
-"applied."
+"*Optional*. Pass :code:`True` to request a bot, pass :code:`False` to request"
+" a regular user. If not specified, no additional restrictions are applied."
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы запросить бота, :code:`False` "
+"— чтобы запросить обычного пользователя. Если не задано, дополнительные "
+"ограничения не применяются."
 
 #: ../../docstring
 #: litegram.types.keyboard_button_request_user.KeyboardButtonRequestUser.user_is_premium:1
 #: of
 msgid ""
-"*Optional*. Pass :code:`True` to request a premium user, pass "
-":code:`False` to request a non-premium user. If not specified, no "
-"additional restrictions are applied."
+"*Optional*. Pass :code:`True` to request a premium user, pass :code:`False` "
+"to request a non-premium user. If not specified, no additional restrictions "
+"are applied."
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы запросить пользователя с "
+"Telegram Premium, :code:`False` — чтобы запросить пользователя без Telegram "
+"Premium. Если не задано, дополнительные ограничения не применяются."

@@ -5,41 +5,44 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.13.1\n"
 
 #: ../../api/types/background_fill_freeform_gradient.rst:3
 msgid "BackgroundFillFreeformGradient"
-msgstr ""
+msgstr "BackgroundFillFreeformGradient"
 
 #: litegram.types.background_fill_freeform_gradient.BackgroundFillFreeformGradient:1
 #: of
 msgid ""
-"The background is a freeform gradient that rotates after every message in"
-" the chat."
+"The background is a freeform gradient that rotates after every message in the"
+" chat."
 msgstr ""
+"Фон — свободный градиент, который меняет поворот после каждого сообщения в "
+"чате."
 
 #: litegram.types.background_fill_freeform_gradient.BackgroundFillFreeformGradient:3
 #: of
-msgid "Source: https://core.telegram.org/bots/api#backgroundfillfreeformgradient"
+msgid ""
+"Source: https://core.telegram.org/bots/api#backgroundfillfreeformgradient"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#backgroundfillfreeformgradient"
 
 #: ../../docstring
 #: litegram.types.background_fill_freeform_gradient.BackgroundFillFreeformGradient.type:1
 #: of
 msgid "Type of the background fill, always 'freeform_gradient'"
-msgstr ""
+msgstr "Тип заливки фона, всегда 'freeform_gradient'"
 
 #: ../../docstring
 #: litegram.types.background_fill_freeform_gradient.BackgroundFillFreeformGradient.colors:1
@@ -48,3 +51,5 @@ msgid ""
 "A list of the 3 or 4 base colors that are used to generate the freeform "
 "gradient in the RGB24 format"
 msgstr ""
+"Список из 3 или 4 базовых цветов в формате RGB24, используемых для генерации "
+"свободной градиентной заливки"

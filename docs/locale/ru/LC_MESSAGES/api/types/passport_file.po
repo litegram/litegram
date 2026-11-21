@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,33 +18,43 @@ msgstr ""
 
 #: ../../api/types/passport_file.rst:3
 msgid "PassportFile"
-msgstr ""
+msgstr "PassportFile"
 
 #: litegram.types.passport_file.PassportFile:1 of
 msgid ""
-"This object represents a file uploaded to Telegram Passport. Currently "
-"all Telegram Passport files are in JPEG format when decrypted and don't "
-"exceed 10MB."
+"This object represents a file uploaded to Telegram Passport. Currently all "
+"Telegram Passport files are in JPEG format when decrypted and don't exceed "
+"10MB."
 msgstr ""
+"Этот объект представляет файл, загруженный в Telegram Passport. Сейчас все "
+"файлы Telegram Passport после расшифровки имеют формат JPEG и не превышают 10"
+" МБ."
 
 #: litegram.types.passport_file.PassportFile:3 of
 msgid "Source: https://core.telegram.org/bots/api#passportfile"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#passportfile"
 
 #: ../../docstring litegram.types.passport_file.PassportFile.file_id:1 of
-msgid "Identifier for this file, which can be used to download or reuse the file"
-msgstr ""
-
-#: ../../docstring litegram.types.passport_file.PassportFile.file_unique_id:1 of
 msgid ""
-"Unique identifier for this file, which is supposed to be the same over "
-"time and for different bots. Can't be used to download or reuse the file."
+"Identifier for this file, which can be used to download or reuse the file"
 msgstr ""
+"Идентификатор файла, который можно использовать для скачивания или повторной "
+"отправки файла"
+
+#: ../../docstring litegram.types.passport_file.PassportFile.file_unique_id:1
+#: of
+msgid ""
+"Unique identifier for this file, which is supposed to be the same over time "
+"and for different bots. Can't be used to download or reuse the file."
+msgstr ""
+"Уникальный идентификатор этого файла, который должен оставаться одинаковым со"
+" временем и для разных ботов. Нельзя использовать для скачивания или "
+"повторной отправки файла."
 
 #: ../../docstring litegram.types.passport_file.PassportFile.file_size:1 of
 msgid "File size in bytes"
-msgstr ""
+msgstr "Размер файла в байтах"
 
 #: ../../docstring litegram.types.passport_file.PassportFile.file_date:1 of
 msgid "Unix time when the file was uploaded"
-msgstr ""
+msgstr "Unix time загрузки файла"

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,17 +18,18 @@ msgstr ""
 
 #: ../../api/types/menu_button_default.rst:3
 msgid "MenuButtonDefault"
-msgstr ""
+msgstr "MenuButtonDefault"
 
 #: litegram.types.menu_button_default.MenuButtonDefault:1 of
 msgid "Describes that no specific value for the menu button was set."
 msgstr ""
+"Описывает ситуацию, когда для кнопки меню не задано конкретное значение."
 
 #: litegram.types.menu_button_default.MenuButtonDefault:3 of
 msgid "Source: https://core.telegram.org/bots/api#menubuttondefault"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#menubuttondefault"
 
 #: ../../docstring litegram.types.menu_button_default.MenuButtonDefault.type:1
 #: of
 msgid "Type of the button, must be *default*"
-msgstr ""
+msgstr "Тип кнопки; должно быть *default*"

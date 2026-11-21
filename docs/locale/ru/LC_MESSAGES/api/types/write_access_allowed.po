@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,38 +18,50 @@ msgstr ""
 
 #: ../../api/types/write_access_allowed.rst:3
 msgid "WriteAccessAllowed"
-msgstr ""
+msgstr "WriteAccessAllowed"
 
 #: litegram.types.write_access_allowed.WriteAccessAllowed:1 of
 msgid ""
-"This object represents a service message about a user allowing a bot to "
-"write messages after adding it to the attachment menu, launching a Web "
-"App from a link, or accepting an explicit request from a Web App sent by "
-"the method `requestWriteAccess <https://core.telegram.org/bots/webapps"
-"#initializing-mini-apps>`_."
+"This object represents a service message about a user allowing a bot to write"
+" messages after adding it to the attachment menu, launching a Web App from a "
+"link, or accepting an explicit request from a Web App sent by the method "
+"`requestWriteAccess <https://core.telegram.org/bots/webapps#initializing-"
+"mini-apps>`_."
 msgstr ""
+"Этот объект представляет сервисное сообщение о том, что пользователь разрешил"
+" боту писать сообщения после добавления бота в меню вложений, запуска веб-"
+"приложения по ссылке или принятия явного запроса из веб-приложения, "
+"отправленного методом `requestWriteAccess "
+"<https://core.telegram.org/bots/webapps#initializing-mini-apps>`_."
 
 #: litegram.types.write_access_allowed.WriteAccessAllowed:3 of
 msgid "Source: https://core.telegram.org/bots/api#writeaccessallowed"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#writeaccessallowed"
 
 #: litegram.types.write_access_allowed.WriteAccessAllowed.from_request:1 of
 msgid ""
-"*Optional*. :code:`True`, if the access was granted after the user "
-"accepted an explicit request from a Web App sent by the method "
+"*Optional*. :code:`True`, if the access was granted after the user accepted "
+"an explicit request from a Web App sent by the method `requestWriteAccess "
+"<https://core.telegram.org/bots/webapps#initializing-mini-apps>`_"
+msgstr ""
+"*Необязательно*. :code:`True`, если доступ предоставлен после того, как "
+"пользователь принял явный запрос из веб-приложения, отправленный методом "
 "`requestWriteAccess <https://core.telegram.org/bots/webapps#initializing-"
 "mini-apps>`_"
-msgstr ""
 
 #: litegram.types.write_access_allowed.WriteAccessAllowed.web_app_name:1 of
 msgid ""
-"*Optional*. Name of the Web App, if the access was granted when the Web "
-"App was launched from a link"
+"*Optional*. Name of the Web App, if the access was granted when the Web App "
+"was launched from a link"
 msgstr ""
+"*Необязательно*. Название веб-приложения, если доступ предоставлен при "
+"запуске веб-приложения по ссылке"
 
 #: litegram.types.write_access_allowed.WriteAccessAllowed.from_attachment_menu:1
 #: of
 msgid ""
-"*Optional*. :code:`True`, if the access was granted when the bot was "
-"added to the attachment or side menu"
+"*Optional*. :code:`True`, if the access was granted when the bot was added to"
+" the attachment or side menu"
 msgstr ""
+"*Необязательно*. :code:`True`, если доступ предоставлен при добавлении бота в"
+" меню вложений или боковое меню"

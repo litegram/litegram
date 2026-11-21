@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,33 +18,33 @@ msgstr ""
 
 #: ../../api/types/shipping_query.rst:3
 msgid "ShippingQuery"
-msgstr ""
+msgstr "ShippingQuery"
 
 #: litegram.types.shipping_query.ShippingQuery:1 of
 msgid "This object contains information about an incoming shipping query."
-msgstr ""
+msgstr "Этот объект содержит информацию о входящем запросе доставки."
 
 #: litegram.types.shipping_query.ShippingQuery:3 of
 msgid "Source: https://core.telegram.org/bots/api#shippingquery"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#shippingquery"
 
 #: ../../docstring litegram.types.shipping_query.ShippingQuery.id:1 of
 msgid "Unique query identifier"
-msgstr ""
+msgstr "Уникальный идентификатор запроса"
 
 #: ../../docstring litegram.types.shipping_query.ShippingQuery.from_user:1 of
 msgid "User who sent the query"
-msgstr ""
+msgstr "Пользователь, отправивший запрос"
 
-#: ../../docstring litegram.types.shipping_query.ShippingQuery.invoice_payload:1
-#: of
+#: ../../docstring
+#: litegram.types.shipping_query.ShippingQuery.invoice_payload:1 of
 msgid "Bot-specified invoice payload"
-msgstr ""
+msgstr "Заданный ботом payload счёта"
 
 #: ../../docstring
 #: litegram.types.shipping_query.ShippingQuery.shipping_address:1 of
 msgid "User specified shipping address"
-msgstr ""
+msgstr "Указанный пользователем адрес доставки"
 
 #: litegram.types.shipping_query.ShippingQuery.answer:1 of
 msgid ""
@@ -52,27 +52,34 @@ msgid ""
 ":class:`litegram.methods.answer_shipping_query.AnswerShippingQuery` will "
 "automatically fill method attributes:"
 msgstr ""
+"Сокращение для метода "
+":class:`litegram.methods.answer_shipping_query.AnswerShippingQuery` — "
+"автоматически заполнит атрибуты метода:"
 
 #: litegram.types.shipping_query.ShippingQuery.answer:4 of
 msgid ":code:`shipping_query_id`"
-msgstr ""
+msgstr ":code:`shipping_query_id`"
 
 #: litegram.types.shipping_query.ShippingQuery.answer:6 of
 msgid ""
 "If you sent an invoice requesting a shipping address and the parameter "
 "*is_flexible* was specified, the Bot API will send an "
-":class:`litegram.types.update.Update` with a *shipping_query* field to the"
-" bot. Use this method to reply to shipping queries. On success, "
-":code:`True` is returned."
+":class:`litegram.types.update.Update` with a *shipping_query* field to the "
+"bot. Use this method to reply to shipping queries. On success, :code:`True` "
+"is returned."
 msgstr ""
+"Если вы отправили счёт с запросом адреса доставки и был указан параметр "
+"*is_flexible*, Bot API отправит боту :class:`litegram.types.update.Update` с "
+"полем *shipping_query*. Используйте этот метод, чтобы ответить на запросы "
+"доставки. При успехе возвращается :code:`True`."
 
 #: litegram.types.shipping_query.ShippingQuery.answer:8 of
 msgid "Source: https://core.telegram.org/bots/api#answershippingquery"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#answershippingquery"
 
 #: ../../api/types/shipping_query.rst
 msgid "Parameters"
-msgstr ""
+msgstr "Параметры"
 
 #: litegram.types.shipping_query.ShippingQuery.answer:10 of
 msgid ""
@@ -80,27 +87,38 @@ msgid ""
 ":code:`False` if there are any problems (for example, if delivery to the "
 "specified address is not possible)"
 msgstr ""
+"Передайте :code:`True`, если доставка по указанному адресу возможна, и "
+":code:`False`, если есть какие-либо проблемы (например, если доставка по "
+"указанному адресу невозможна)"
 
 #: litegram.types.shipping_query.ShippingQuery.answer:11 of
 msgid ""
 "Required if *ok* is :code:`True`. A JSON-serialized array of available "
 "shipping options."
 msgstr ""
+"Обязателен, если *ok* равно :code:`True`. JSON-сериализованный массив "
+"доступных вариантов доставки."
 
 #: litegram.types.shipping_query.ShippingQuery.answer:12 of
 msgid ""
-"Required if *ok* is :code:`False`. Error message in human readable form "
-"that explains why it is impossible to complete the order (e.g. 'Sorry, "
-"delivery to your desired address is unavailable'). Telegram will display "
-"this message to the user."
+"Required if *ok* is :code:`False`. Error message in human readable form that "
+"explains why it is impossible to complete the order (e.g. 'Sorry, delivery to"
+" your desired address is unavailable'). Telegram will display this message to"
+" the user."
 msgstr ""
+"Обязателен, если *ok* равно :code:`False`. Сообщение об ошибке в "
+"удобочитаемом виде, объясняющее, почему невозможно выполнить заказ (например:"
+" 'Извините, доставка по указанному адресу недоступна'). Telegram покажет это "
+"сообщение пользователю."
 
 #: ../../api/types/shipping_query.rst
 msgid "Returns"
-msgstr ""
+msgstr "Возвращает"
 
 #: litegram.types.shipping_query.ShippingQuery.answer:13 of
 msgid ""
 "instance of method "
 ":class:`litegram.methods.answer_shipping_query.AnswerShippingQuery`"
 msgstr ""
+"экземпляр метода "
+":class:`litegram.methods.answer_shipping_query.AnswerShippingQuery`"

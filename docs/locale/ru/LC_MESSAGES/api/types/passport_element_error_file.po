@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,40 +18,46 @@ msgstr ""
 
 #: ../../api/types/passport_element_error_file.rst:3
 msgid "PassportElementErrorFile"
-msgstr ""
+msgstr "PassportElementErrorFile"
 
 #: litegram.types.passport_element_error_file.PassportElementErrorFile:1 of
 msgid ""
-"Represents an issue with a document scan. The error is considered "
-"resolved when the file with the document scan changes."
+"Represents an issue with a document scan. The error is considered resolved "
+"when the file with the document scan changes."
 msgstr ""
+"Представляет проблему со сканом документа. Ошибка считается решённой, когда "
+"файл со сканом документа изменится."
 
 #: litegram.types.passport_element_error_file.PassportElementErrorFile:3 of
 msgid "Source: https://core.telegram.org/bots/api#passportelementerrorfile"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#passportelementerrorfile"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_file.PassportElementErrorFile.source:1
 #: of
 msgid "Error source, must be *file*"
-msgstr ""
+msgstr "Источник ошибки, должно быть *file*"
 
 #: ../../docstring
-#: litegram.types.passport_element_error_file.PassportElementErrorFile.type:1 of
+#: litegram.types.passport_element_error_file.PassportElementErrorFile.type:1
+#: of
 msgid ""
 "The section of the user's Telegram Passport which has the issue, one of "
 "'utility_bill', 'bank_statement', 'rental_agreement', "
 "'passport_registration', 'temporary_registration'"
 msgstr ""
+"Раздел Telegram Passport пользователя, в котором проблема; одно из значений: "
+"'utility_bill', 'bank_statement', 'rental_agreement', "
+"'passport_registration', 'temporary_registration'"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_file.PassportElementErrorFile.file_hash:1
 #: of
 msgid "Base64-encoded file hash"
-msgstr ""
+msgstr "Хеш файла в кодировке Base64"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_file.PassportElementErrorFile.message:1
 #: of
 msgid "Error message"
-msgstr ""
+msgstr "Сообщение об ошибке"

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../../api/types/input_contact_message_content.rst:3
 msgid "InputContactMessageContent"
-msgstr ""
+msgstr "InputContactMessageContent"
 
 #: litegram.types.input_contact_message_content.InputContactMessageContent:1 of
 msgid ""
@@ -26,28 +26,32 @@ msgid ""
 "<https://core.telegram.org/bots/api#inputmessagecontent>`_ of a contact "
 "message to be sent as the result of an inline query."
 msgstr ""
+"Представляет `содержимое "
+"<https://core.telegram.org/bots/api#inputmessagecontent>`_ сообщения с "
+"контактом, которое будет отправлено как результат inline-запроса."
 
 #: litegram.types.input_contact_message_content.InputContactMessageContent:3 of
 msgid "Source: https://core.telegram.org/bots/api#inputcontactmessagecontent"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#inputcontactmessagecontent"
 
 #: ../../docstring
 #: litegram.types.input_contact_message_content.InputContactMessageContent.phone_number:1
 #: of
 msgid "Contact's phone number"
-msgstr ""
+msgstr "Номер телефона контакта"
 
 #: ../../docstring
 #: litegram.types.input_contact_message_content.InputContactMessageContent.first_name:1
 #: of
 msgid "Contact's first name"
-msgstr ""
+msgstr "Имя контакта"
 
 #: ../../docstring
 #: litegram.types.input_contact_message_content.InputContactMessageContent.last_name:1
 #: of
 msgid "*Optional*. Contact's last name"
-msgstr ""
+msgstr "*Необязательно*. Фамилия контакта"
 
 #: ../../docstring
 #: litegram.types.input_contact_message_content.InputContactMessageContent.vcard:1
@@ -56,3 +60,5 @@ msgid ""
 "*Optional*. Additional data about the contact in the form of a `vCard "
 "<https://en.wikipedia.org/wiki/VCard>`_, 0-2048 bytes"
 msgstr ""
+"*Необязательно*. Дополнительные данные о контакте в формате `vCard "
+"<https://en.wikipedia.org/wiki/VCard>`_, 0-2048 байт"

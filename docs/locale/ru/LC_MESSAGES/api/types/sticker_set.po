@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,51 +18,57 @@ msgstr ""
 
 #: ../../api/types/sticker_set.rst:3
 msgid "StickerSet"
-msgstr ""
+msgstr "StickerSet"
 
 #: litegram.types.sticker_set.StickerSet:1 of
 msgid "This object represents a sticker set."
-msgstr ""
+msgstr "Этот объект представляет набор стикеров."
 
 #: litegram.types.sticker_set.StickerSet:3 of
 msgid "Source: https://core.telegram.org/bots/api#stickerset"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#stickerset"
 
 #: ../../docstring litegram.types.sticker_set.StickerSet.name:1 of
 msgid "Sticker set name"
-msgstr ""
+msgstr "Имя набора стикеров"
 
 #: ../../docstring litegram.types.sticker_set.StickerSet.title:1 of
 msgid "Sticker set title"
-msgstr ""
+msgstr "Название набора стикеров"
 
 #: ../../docstring litegram.types.sticker_set.StickerSet.sticker_type:1 of
 msgid ""
 "Type of stickers in the set, currently one of 'regular', 'mask', "
 "'custom_emoji'"
 msgstr ""
+"Тип стикеров в наборе; сейчас один из 'regular', 'mask', 'custom_emoji'"
 
 #: ../../docstring litegram.types.sticker_set.StickerSet.stickers:1 of
 msgid "List of all set stickers"
-msgstr ""
+msgstr "Список всех установленных стикеров"
 
 #: ../../docstring litegram.types.sticker_set.StickerSet.thumbnail:1 of
 msgid "*Optional*. Sticker set thumbnail in the .WEBP, .TGS, or .WEBM format"
 msgstr ""
+"*Необязательно*. Превью набора стикеров в формате .WEBP, .TGS или .WEBM"
 
 #: ../../docstring litegram.types.sticker_set.StickerSet.is_animated:1 of
 msgid ""
 ":code:`True`, if the sticker set contains `animated stickers "
 "<https://telegram.org/blog/animated-stickers>`_"
 msgstr ""
+":code:`True`, если набор содержит `анимированные стикеры "
+"<https://telegram.org/blog/animated-stickers>`_"
 
 #: ../../docstring litegram.types.sticker_set.StickerSet.is_animated:3
 #: litegram.types.sticker_set.StickerSet.is_video:3 of
 msgid "https://core.telegram.org/bots/api-changelog#march-31-2024"
-msgstr ""
+msgstr "https://core.telegram.org/bots/api-changelog#march-31-2024"
 
 #: ../../docstring litegram.types.sticker_set.StickerSet.is_video:1 of
 msgid ""
 ":code:`True`, if the sticker set contains `video stickers "
 "<https://telegram.org/blog/video-stickers-better-reactions>`_"
 msgstr ""
+":code:`True`, если набор содержит `видеостикеры "
+"<https://telegram.org/blog/video-stickers-better-reactions>`_"

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-16 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,35 +18,45 @@ msgstr ""
 
 #: ../../api/types/user_shared.rst:3
 msgid "UserShared"
-msgstr ""
+msgstr "UserShared"
 
 #: litegram.types.user_shared.UserShared:1 of
 msgid ""
-"This object contains information about the user whose identifier was "
-"shared with the bot using a "
+"This object contains information about the user whose identifier was shared "
+"with the bot using a "
 ":class:`litegram.types.keyboard_button_request_user.KeyboardButtonRequestUser`"
 " button."
 msgstr ""
+"Этот объект содержит информацию о пользователе, чей идентификатор был передан"
+" боту с помощью кнопки "
+":class:`litegram.types.keyboard_button_request_user.KeyboardButtonRequestUser`."
 
 #: litegram.types.user_shared.UserShared:3 of
 msgid "https://core.telegram.org/bots/api-changelog#december-29-2023"
-msgstr ""
+msgstr "https://core.telegram.org/bots/api-changelog#december-29-2023"
 
 #: litegram.types.user_shared.UserShared:6 of
 msgid "Source: https://core.telegram.org/bots/api#usershared"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#usershared"
 
 #: ../../docstring litegram.types.user_shared.UserShared.request_id:1 of
 msgid "Identifier of the request"
-msgstr ""
+msgstr "Идентификатор запроса"
 
 #: ../../docstring litegram.types.user_shared.UserShared.user_id:1 of
 msgid ""
-"Identifier of the shared user. This number may have more than 32 "
-"significant bits and some programming languages may have "
-"difficulty/silent defects in interpreting it. But it has at most 52 "
-"significant bits, so a 64-bit integer or double-precision float type are "
-"safe for storing this identifier. The bot may not have access to the user"
-" and could be unable to use this identifier, unless the user is already "
-"known to the bot by some other means."
+"Identifier of the shared user. This number may have more than 32 significant "
+"bits and some programming languages may have difficulty/silent defects in "
+"interpreting it. But it has at most 52 significant bits, so a 64-bit integer "
+"or double-precision float type are safe for storing this identifier. The bot "
+"may not have access to the user and could be unable to use this identifier, "
+"unless the user is already known to the bot by some other means."
 msgstr ""
+"Идентификатор переданного пользователя. Это число может иметь более 32 "
+"значащих битов, и в некоторых языках программирования могут возникать "
+"сложности или неявные ошибки при его интерпретации. Но оно содержит не более "
+"52 значащих битов, поэтому 64-битное целое число или число с плавающей точкой"
+" двойной точности безопасны для хранения этого идентификатора. У бота может "
+"не быть доступа к пользователю, и он может не суметь использовать этот "
+"идентификатор, если пользователь уже не известен боту каким-либо иным "
+"способом."

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,55 +18,59 @@ msgstr ""
 
 #: ../../api/types/inline_query_result_venue.rst:3
 msgid "InlineQueryResultVenue"
-msgstr ""
+msgstr "InlineQueryResultVenue"
 
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue:1 of
 msgid ""
 "Represents a venue. By default, the venue will be sent by the user. "
-"Alternatively, you can use *input_message_content* to send a message with"
-" the specified content instead of the venue."
+"Alternatively, you can use *input_message_content* to send a message with the"
+" specified content instead of the venue."
 msgstr ""
+"Представляет место. По умолчанию это место будет отправлено пользователем. В "
+"качестве альтернативы можно использовать *input_message_content*, чтобы "
+"отправить сообщение с указанным содержимым вместо места."
 
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue:3 of
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultvenue"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inlinequeryresultvenue"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.type:1 of
 msgid "Type of the result, must be *venue*"
-msgstr ""
+msgstr "Тип результата; должно быть *venue*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.id:1 of
 msgid "Unique identifier for this result, 1-64 Bytes"
-msgstr ""
+msgstr "Уникальный идентификатор этого результата, 1-64 байта"
 
 #: ../../docstring
-#: litegram.types.inline_query_result_venue.InlineQueryResultVenue.latitude:1 of
+#: litegram.types.inline_query_result_venue.InlineQueryResultVenue.latitude:1
+#: of
 msgid "Latitude of the venue location in degrees"
-msgstr ""
+msgstr "Широта местоположения места в градусах"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.longitude:1
 #: of
 msgid "Longitude of the venue location in degrees"
-msgstr ""
+msgstr "Долгота местоположения места в градусах"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.title:1 of
 msgid "Title of the venue"
-msgstr ""
+msgstr "Название места"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.address:1 of
 msgid "Address of the venue"
-msgstr ""
+msgstr "Адрес места"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.foursquare_id:1
 #: of
 msgid "*Optional*. Foursquare identifier of the venue if known"
-msgstr ""
+msgstr "*Необязательно*. Идентификатор места в Foursquare, если известен"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.foursquare_type:1
@@ -76,12 +80,15 @@ msgid ""
 "'arts_entertainment/default', 'arts_entertainment/aquarium' or "
 "'food/icecream'.)"
 msgstr ""
+"*Необязательно*. Тип места в Foursquare, если известен (например, "
+"'arts_entertainment/default', 'arts_entertainment/aquarium' или "
+"'food/icecream')."
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.google_place_id:1
 #: of
 msgid "*Optional*. Google Places identifier of the venue"
-msgstr ""
+msgstr "*Необязательно*. Идентификатор места в Google Places"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.google_place_type:1
@@ -90,35 +97,41 @@ msgid ""
 "*Optional*. Google Places type of the venue. (See `supported types "
 "<https://developers.google.com/places/web-service/supported_types>`_.)"
 msgstr ""
+"*Необязательно*. Тип места в Google Places (см. `поддерживаемые типы "
+"<https://developers.google.com/places/web-service/supported_types>`_)."
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.reply_markup:1
 #: of
 msgid ""
-"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
-"#inline-keyboards>`_ attached to the message"
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-"
+"keyboards>`_ attached to the message"
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, прикреплённая к"
+" сообщению"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.input_message_content:1
 #: of
 msgid "*Optional*. Content of the message to be sent instead of the venue"
 msgstr ""
+"*Необязательно*. Содержимое сообщения, которое будет отправлено вместо места"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.thumbnail_url:1
 #: of
 msgid "*Optional*. Url of the thumbnail for the result"
-msgstr ""
+msgstr "*Необязательно*. URL превью результата"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.thumbnail_width:1
 #: of
 msgid "*Optional*. Thumbnail width"
-msgstr ""
+msgstr "*Необязательно*. Ширина превью"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_venue.InlineQueryResultVenue.thumbnail_height:1
 #: of
 msgid "*Optional*. Thumbnail height"
-msgstr ""
+msgstr "*Необязательно*. Высота превью"

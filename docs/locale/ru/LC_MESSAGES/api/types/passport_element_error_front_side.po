@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../../api/types/passport_element_error_front_side.rst:3
 msgid "PassportElementErrorFrontSide"
-msgstr ""
+msgstr "PassportElementErrorFrontSide"
 
 #: litegram.types.passport_element_error_front_side.PassportElementErrorFrontSide:1
 #: of
@@ -27,17 +27,21 @@ msgid ""
 "considered resolved when the file with the front side of the document "
 "changes."
 msgstr ""
+"Представляет проблему с лицевой стороной документа. Ошибка считается "
+"решённой, когда файл с лицевой стороной документа изменится."
 
 #: litegram.types.passport_element_error_front_side.PassportElementErrorFrontSide:3
 #: of
-msgid "Source: https://core.telegram.org/bots/api#passportelementerrorfrontside"
+msgid ""
+"Source: https://core.telegram.org/bots/api#passportelementerrorfrontside"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#passportelementerrorfrontside"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_front_side.PassportElementErrorFrontSide.source:1
 #: of
 msgid "Error source, must be *front_side*"
-msgstr ""
+msgstr "Источник ошибки, должно быть *front_side*"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_front_side.PassportElementErrorFrontSide.type:1
@@ -46,15 +50,17 @@ msgid ""
 "The section of the user's Telegram Passport which has the issue, one of "
 "'passport', 'driver_license', 'identity_card', 'internal_passport'"
 msgstr ""
+"Раздел Telegram Passport пользователя, в котором проблема; одно из значений: "
+"'passport', 'driver_license', 'identity_card', 'internal_passport'"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_front_side.PassportElementErrorFrontSide.file_hash:1
 #: of
 msgid "Base64-encoded hash of the file with the front side of the document"
-msgstr ""
+msgstr "Хеш в кодировке Base64 файла с лицевой стороной документа"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_front_side.PassportElementErrorFrontSide.message:1
 #: of
 msgid "Error message"
-msgstr ""
+msgstr "Сообщение об ошибке"

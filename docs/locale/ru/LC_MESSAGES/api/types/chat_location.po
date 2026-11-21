@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,22 +18,23 @@ msgstr ""
 
 #: ../../api/types/chat_location.rst:3
 msgid "ChatLocation"
-msgstr ""
+msgstr "ChatLocation"
 
 #: litegram.types.chat_location.ChatLocation:1 of
 msgid "Represents a location to which a chat is connected."
-msgstr ""
+msgstr "Представляет местоположение, к которому привязан чат."
 
 #: litegram.types.chat_location.ChatLocation:3 of
 msgid "Source: https://core.telegram.org/bots/api#chatlocation"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#chatlocation"
 
 #: ../../docstring litegram.types.chat_location.ChatLocation.location:1 of
 msgid ""
-"The location to which the supergroup is connected. Can't be a live "
-"location."
+"The location to which the supergroup is connected. Can't be a live location."
 msgstr ""
+"Местоположение, к которому привязана супергруппа. Не может быть live-"
+"локацией."
 
 #: ../../docstring litegram.types.chat_location.ChatLocation.address:1 of
 msgid "Location address; 1-64 characters, as defined by the chat owner"
-msgstr ""
+msgstr "Адрес местоположения; 1-64 символа, задан владельцем чата"

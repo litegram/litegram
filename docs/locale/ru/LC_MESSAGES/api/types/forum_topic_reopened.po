@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-06 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,14 +18,16 @@ msgstr ""
 
 #: ../../api/types/forum_topic_reopened.rst:3
 msgid "ForumTopicReopened"
-msgstr ""
+msgstr "ForumTopicReopened"
 
 #: litegram.types.forum_topic_reopened.ForumTopicReopened:1 of
 msgid ""
-"This object represents a service message about a forum topic reopened in "
-"the chat. Currently holds no information."
+"This object represents a service message about a forum topic reopened in the "
+"chat. Currently holds no information."
 msgstr ""
+"Этот объект представляет сервисное сообщение о повторном открытии темы форума"
+" в чате. Сейчас не содержит информации."
 
 #: litegram.types.forum_topic_reopened.ForumTopicReopened:3 of
 msgid "Source: https://core.telegram.org/bots/api#forumtopicreopened"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#forumtopicreopened"

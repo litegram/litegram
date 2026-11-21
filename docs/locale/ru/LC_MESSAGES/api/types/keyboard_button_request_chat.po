@@ -5,53 +5,57 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/keyboard_button_request_chat.rst:3
 msgid "KeyboardButtonRequestChat"
-msgstr ""
+msgstr "KeyboardButtonRequestChat"
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat:1 of
 msgid ""
-"This object defines the criteria used to request a suitable chat. "
-"Information about the selected chat will be shared with the bot when the "
-"corresponding button is pressed. The bot will be granted requested rights"
-" in the chat if appropriate. `More about requesting chats » "
+"This object defines the criteria used to request a suitable chat. Information"
+" about the selected chat will be shared with the bot when the corresponding "
+"button is pressed. The bot will be granted requested rights in the chat if "
+"appropriate. `More about requesting chats » "
 "<https://core.telegram.org/bots/features#chat-and-user-selection>`_."
 msgstr ""
+"Этот объект задаёт критерии запроса подходящего чата. Информация о выбранном "
+"чате будет передана боту при нажатии соответствующей кнопки. При "
+"необходимости боту будут предоставлены запрошенные права в чате. `Подробнее о"
+" запросе чатов » <https://core.telegram.org/bots/features#chat-and-user-"
+"selection>`_."
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat:3 of
 msgid "Source: https://core.telegram.org/bots/api#keyboardbuttonrequestchat"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#keyboardbuttonrequestchat"
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.request_id:1
 #: of
 msgid ""
-"Signed 32-bit identifier of the request, which will be received back in "
-"the :class:`litegram.types.chat_shared.ChatShared` object. Must be unique"
-" within the message."
+"Signed 32-bit identifier of the request, which will be received back in the "
+":class:`litegram.types.chat_shared.ChatShared` object. Must be unique within "
+"the message."
 msgstr ""
-"Знаковый 32-битный идентификатор запроса, который будет возвращён в "
-"объекте :class:`litegram.types.chat_shared.ChatShared`. Должен быть "
-"уникальным в пределах сообщения."
+"Знаковый 32-битный идентификатор запроса, который будет возвращён в объекте "
+":class:`litegram.types.chat_shared.ChatShared`. Должен быть уникальным в "
+"пределах сообщения."
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.chat_is_channel:1
 #: of
 msgid ""
-"Pass :code:`True` to request a channel chat, pass :code:`False` to "
-"request a group or a supergroup chat"
+"Pass :code:`True` to request a channel chat, pass :code:`False` to request a "
+"group or a supergroup chat"
 msgstr ""
 "Передайте :code:`True`, чтобы запросить канал, или :code:`False`, чтобы "
 "запросить группу или супергруппу"
@@ -60,75 +64,93 @@ msgstr ""
 #: of
 msgid ""
 "*Optional*. Pass :code:`True` to request a forum supergroup, pass "
-":code:`False` to request a non-forum chat. If not specified, no "
-"additional restrictions are applied."
+":code:`False` to request a non-forum chat. If not specified, no additional "
+"restrictions are applied."
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы запросить супергруппу-форум, "
+":code:`False` — чтобы запросить чат без тем форума. Если не задано, "
+"дополнительные ограничения не применяются."
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.chat_has_username:1
 #: of
 msgid ""
-"*Optional*. Pass :code:`True` to request a supergroup or a channel with a"
-" username, pass :code:`False` to request a chat without a username. If "
-"not specified, no additional restrictions are applied."
+"*Optional*. Pass :code:`True` to request a supergroup or a channel with a "
+"username, pass :code:`False` to request a chat without a username. If not "
+"specified, no additional restrictions are applied."
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы запросить супергруппу или "
+"канал с именем пользователя, :code:`False` — чтобы запросить чат без имени "
+"пользователя. Если не задано, дополнительные ограничения не применяются."
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.chat_is_created:1
 #: of
 msgid ""
-"*Optional*. Pass :code:`True` to request a chat owned by the user. "
-"Otherwise, no additional restrictions are applied."
+"*Optional*. Pass :code:`True` to request a chat owned by the user. Otherwise,"
+" no additional restrictions are applied."
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы запросить чат, принадлежащий "
+"пользователю. В противном случае дополнительные ограничения не применяются."
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.user_administrator_rights:1
 #: of
 msgid ""
 "*Optional*. A JSON-serialized object listing the required administrator "
 "rights of the user in the chat. The rights must be a superset of "
-"*bot_administrator_rights*. If not specified, no additional restrictions "
-"are applied."
+"*bot_administrator_rights*. If not specified, no additional restrictions are "
+"applied."
 msgstr ""
+"*Необязательно*. JSON-сериализованный объект со списком необходимых прав "
+"администратора пользователя в чате. Права должны быть надмножеством "
+"*bot_administrator_rights*. Если не задано, дополнительные ограничения не "
+"применяются."
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.bot_administrator_rights:1
 #: of
 msgid ""
 "*Optional*. A JSON-serialized object listing the required administrator "
 "rights of the bot in the chat. The rights must be a subset of "
-"*user_administrator_rights*. If not specified, no additional restrictions"
-" are applied."
+"*user_administrator_rights*. If not specified, no additional restrictions are"
+" applied."
 msgstr ""
+"*Необязательно*. JSON-сериализованный объект со списком необходимых прав "
+"администратора бота в чате. Права должны быть подмножеством "
+"*user_administrator_rights*. Если не задано, дополнительные ограничения не "
+"применяются."
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.bot_is_member:1
 #: of
 msgid ""
-"*Optional*. Pass :code:`True` to request a chat with the bot as a member."
-" Otherwise, no additional restrictions are applied."
+"*Optional*. Pass :code:`True` to request a chat with the bot as a member. "
+"Otherwise, no additional restrictions are applied."
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы запросить чат, в котором "
+"состоит бот. В противном случае дополнительные ограничения не применяются."
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.request_title:1
 #: of
 msgid "*Optional*. Pass :code:`True` to request the chat's title"
-msgstr ""
+msgstr "*Необязательно*. Передайте :code:`True`, чтобы запросить название чата"
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.request_username:1
 #: of
 msgid "*Optional*. Pass :code:`True` to request the chat's username"
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы запросить имя пользователя "
+"чата"
 
 #: litegram.types.keyboard_button_request_chat.KeyboardButtonRequestChat.request_photo:1
 #: of
 msgid "*Optional*. Pass :code:`True` to request the chat's photo"
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, чтобы запросить фотографию чата"
 
 #~ msgid ""
-#~ "Signed 32-bit identifier of the request,"
-#~ " which will be received back in "
-#~ "the :class:`litegram.types.chat_shared.ChatShared` object."
-#~ " Must be unique within the message"
+#~ "Signed 32-bit identifier of the request, which will be received back in the "
+#~ ":class:`litegram.types.chat_shared.ChatShared` object. Must be unique within "
+#~ "the message"
 #~ msgstr ""
 
 #~ msgid ""
-#~ "Pass :code:`True` to request a channel"
-#~ " chat, pass :code:`False` to request "
-#~ "a group or a supergroup chat."
+#~ "Pass :code:`True` to request a channel chat, pass :code:`False` to request a "
+#~ "group or a supergroup chat."
 #~ msgstr ""
-

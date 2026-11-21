@@ -5,44 +5,43 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-16 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.13.1\n"
 
 #: ../../api/types/message_origin_hidden_user.rst:3
 msgid "MessageOriginHiddenUser"
-msgstr ""
+msgstr "MessageOriginHiddenUser"
 
 #: litegram.types.message_origin_hidden_user.MessageOriginHiddenUser:1 of
 msgid "The message was originally sent by an unknown user."
-msgstr ""
+msgstr "Сообщение исходно отправлено неизвестным пользователем."
 
 #: litegram.types.message_origin_hidden_user.MessageOriginHiddenUser:3 of
 msgid "Source: https://core.telegram.org/bots/api#messageoriginhiddenuser"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#messageoriginhiddenuser"
 
 #: ../../docstring
 #: litegram.types.message_origin_hidden_user.MessageOriginHiddenUser.type:1 of
 msgid "Type of the message origin, always 'hidden_user'"
-msgstr ""
+msgstr "Тип происхождения сообщения, всегда 'hidden_user'"
 
 #: ../../docstring
 #: litegram.types.message_origin_hidden_user.MessageOriginHiddenUser.date:1 of
 msgid "Date the message was sent originally in Unix time"
-msgstr ""
+msgstr "Исходная дата отправки сообщения в Unix time"
 
 #: ../../docstring
 #: litegram.types.message_origin_hidden_user.MessageOriginHiddenUser.sender_user_name:1
 #: of
 msgid "Name of the user that sent the message originally"
-msgstr ""
+msgstr "Имя пользователя, который исходно отправил сообщение"

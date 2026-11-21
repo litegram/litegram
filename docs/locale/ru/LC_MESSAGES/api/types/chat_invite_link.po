@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,79 +18,93 @@ msgstr ""
 
 #: ../../api/types/chat_invite_link.rst:3
 msgid "ChatInviteLink"
-msgstr ""
+msgstr "ChatInviteLink"
 
 #: litegram.types.chat_invite_link.ChatInviteLink:1 of
 msgid "Represents an invite link for a chat."
-msgstr ""
+msgstr "Представляет ссылку-приглашение в чат."
 
 #: litegram.types.chat_invite_link.ChatInviteLink:3 of
 msgid "Source: https://core.telegram.org/bots/api#chatinvitelink"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#chatinvitelink"
 
 #: ../../docstring litegram.types.chat_invite_link.ChatInviteLink.invite_link:1
 #: of
 msgid ""
-"The invite link. If the link was created by another chat administrator, "
-"then the second part of the link will be replaced with '…'."
+"The invite link. If the link was created by another chat administrator, then "
+"the second part of the link will be replaced with '…'."
 msgstr ""
+"Ссылка-приглашение. Если ссылка была создана другим администратором чата, "
+"вторая часть ссылки будет заменена на '…'."
 
 #: ../../docstring litegram.types.chat_invite_link.ChatInviteLink.creator:1 of
 msgid "Creator of the link"
-msgstr ""
+msgstr "Создатель ссылки"
 
 #: ../../docstring
 #: litegram.types.chat_invite_link.ChatInviteLink.creates_join_request:1 of
 msgid ""
-":code:`True`, if users joining the chat via the link need to be approved "
-"by chat administrators"
+":code:`True`, if users joining the chat via the link need to be approved by "
+"chat administrators"
 msgstr ""
+":code:`True`, если вступление пользователей в чат по ссылке требует одобрения"
+" администраторов чата"
 
 #: ../../docstring litegram.types.chat_invite_link.ChatInviteLink.is_primary:1
 #: of
 msgid ":code:`True`, if the link is primary"
-msgstr ""
+msgstr ":code:`True`, если ссылка основная"
 
 #: ../../docstring litegram.types.chat_invite_link.ChatInviteLink.is_revoked:1
 #: of
 msgid ":code:`True`, if the link is revoked"
-msgstr ""
+msgstr ":code:`True`, если ссылка отозвана"
 
 #: ../../docstring litegram.types.chat_invite_link.ChatInviteLink.name:1 of
 msgid "*Optional*. Invite link name"
-msgstr ""
+msgstr "*Необязательно*. Название ссылки-приглашения"
 
 #: ../../docstring litegram.types.chat_invite_link.ChatInviteLink.expire_date:1
 #: of
 msgid ""
-"*Optional*. Point in time (Unix timestamp) when the link will expire or "
-"has been expired"
+"*Optional*. Point in time (Unix timestamp) when the link will expire or has "
+"been expired"
 msgstr ""
+"*Необязательно*. Момент времени (Unix timestamp), когда ссылка истечёт или "
+"уже истекла"
 
-#: ../../docstring litegram.types.chat_invite_link.ChatInviteLink.member_limit:1
-#: of
+#: ../../docstring
+#: litegram.types.chat_invite_link.ChatInviteLink.member_limit:1 of
 msgid ""
 "*Optional*. The maximum number of users that can be members of the chat "
 "simultaneously after joining the chat via this invite link; 1-99999"
 msgstr ""
+"*Необязательно*. Максимальное число пользователей, которые могут одновременно"
+" быть участниками чата после вступления по этой ссылке-приглашению; 1-99999"
 
 #: ../../docstring
 #: litegram.types.chat_invite_link.ChatInviteLink.pending_join_request_count:1
 #: of
 msgid "*Optional*. Number of pending join requests created using this link"
 msgstr ""
+"*Необязательно*. Число ожидающих запросов на вступление, созданных по этой "
+"ссылке"
 
 #: ../../docstring
 #: litegram.types.chat_invite_link.ChatInviteLink.subscription_period:1 of
 msgid ""
-"*Optional*. The number of seconds the subscription will be active for "
-"before the next payment"
+"*Optional*. The number of seconds the subscription will be active for before "
+"the next payment"
 msgstr ""
+"*Необязательно*. Число секунд, в течение которых подписка будет активна до "
+"следующего платежа"
 
 #: ../../docstring
 #: litegram.types.chat_invite_link.ChatInviteLink.subscription_price:1 of
 msgid ""
-"*Optional*. The amount of Telegram Stars a user must pay initially and "
-"after each subsequent subscription period to be a member of the chat "
-"using the link"
+"*Optional*. The amount of Telegram Stars a user must pay initially and after "
+"each subsequent subscription period to be a member of the chat using the link"
 msgstr ""
+"*Необязательно*. Число Telegram Stars, которое пользователь должен платить "
+"изначально и после каждого следующего периода подписки, чтобы быть участником"
+" чата по этой ссылке"

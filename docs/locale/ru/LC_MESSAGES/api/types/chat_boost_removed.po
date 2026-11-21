@@ -5,47 +5,46 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-16 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.13.1\n"
 
 #: ../../api/types/chat_boost_removed.rst:3
 msgid "ChatBoostRemoved"
-msgstr ""
+msgstr "ChatBoostRemoved"
 
 #: litegram.types.chat_boost_removed.ChatBoostRemoved:1 of
 msgid "This object represents a boost removed from a chat."
-msgstr ""
+msgstr "Этот объект представляет буст, удалённый из чата."
 
 #: litegram.types.chat_boost_removed.ChatBoostRemoved:3 of
 msgid "Source: https://core.telegram.org/bots/api#chatboostremoved"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#chatboostremoved"
 
 #: ../../docstring litegram.types.chat_boost_removed.ChatBoostRemoved.chat:1 of
 msgid "Chat which was boosted"
-msgstr ""
+msgstr "Чат, который был забуштен"
 
-#: ../../docstring litegram.types.chat_boost_removed.ChatBoostRemoved.boost_id:1
-#: of
+#: ../../docstring
+#: litegram.types.chat_boost_removed.ChatBoostRemoved.boost_id:1 of
 msgid "Unique identifier of the boost"
-msgstr ""
+msgstr "Уникальный идентификатор буста"
 
 #: ../../docstring
 #: litegram.types.chat_boost_removed.ChatBoostRemoved.remove_date:1 of
 msgid "Point in time (Unix timestamp) when the boost was removed"
-msgstr ""
+msgstr "Момент времени (Unix timestamp), когда буст был удалён"
 
 #: ../../docstring litegram.types.chat_boost_removed.ChatBoostRemoved.source:1
 #: of
 msgid "Source of the removed boost"
-msgstr ""
+msgstr "Источник удалённого буста"

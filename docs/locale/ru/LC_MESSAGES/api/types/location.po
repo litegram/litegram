@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,44 +18,51 @@ msgstr ""
 
 #: ../../api/types/location.rst:3
 msgid "Location"
-msgstr ""
+msgstr "Location"
 
 #: litegram.types.location.Location:1 of
 msgid "This object represents a point on the map."
-msgstr ""
+msgstr "Этот объект представляет точку на карте."
 
 #: litegram.types.location.Location:3 of
 msgid "Source: https://core.telegram.org/bots/api#location"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#location"
 
 #: ../../docstring litegram.types.location.Location.latitude:1 of
 msgid "Latitude as defined by the sender"
-msgstr ""
+msgstr "Широта, заданная отправителем"
 
 #: ../../docstring litegram.types.location.Location.longitude:1 of
 msgid "Longitude as defined by the sender"
-msgstr ""
+msgstr "Долгота, заданная отправителем"
 
 #: ../../docstring litegram.types.location.Location.horizontal_accuracy:1 of
 msgid ""
-"*Optional*. The radius of uncertainty for the location, measured in "
-"meters; 0-1500"
-msgstr ""
+"*Optional*. The radius of uncertainty for the location, measured in meters; "
+"0-1500"
+msgstr "*Необязательно*. Радиус неточности местоположения в метрах; 0-1500"
 
 #: ../../docstring litegram.types.location.Location.live_period:1 of
 msgid ""
 "*Optional*. Time relative to the message sending date, during which the "
 "location can be updated; in seconds. For active live locations only."
 msgstr ""
+"*Необязательно*. Время относительно даты отправки сообщения, в течение "
+"которого местоположение можно обновлять; в секундах. Только для активных "
+"live-локаций."
 
 #: ../../docstring litegram.types.location.Location.heading:1 of
 msgid ""
-"*Optional*. The direction in which user is moving, in degrees; 1-360. For"
-" active live locations only."
+"*Optional*. The direction in which user is moving, in degrees; 1-360. For "
+"active live locations only."
 msgstr ""
+"*Необязательно*. Направление движения пользователя в градусах; 1-360. Только "
+"для активных live-локаций."
 
 #: ../../docstring litegram.types.location.Location.proximity_alert_radius:1 of
 msgid ""
 "*Optional*. The maximum distance for proximity alerts about approaching "
 "another chat member, in meters. For sent live locations only."
 msgstr ""
+"*Необязательно*. Максимальное расстояние для уведомлений о приближении к "
+"другому участнику чата, в метрах. Только для отправленных live-локаций."

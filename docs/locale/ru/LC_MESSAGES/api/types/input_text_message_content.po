@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-16 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,56 +18,66 @@ msgstr ""
 
 #: ../../api/types/input_text_message_content.rst:3
 msgid "InputTextMessageContent"
-msgstr ""
+msgstr "InputTextMessageContent"
 
 #: litegram.types.input_text_message_content.InputTextMessageContent:1 of
 msgid ""
 "Represents the `content "
-"<https://core.telegram.org/bots/api#inputmessagecontent>`_ of a text "
-"message to be sent as the result of an inline query."
+"<https://core.telegram.org/bots/api#inputmessagecontent>`_ of a text message "
+"to be sent as the result of an inline query."
 msgstr ""
+"Представляет `содержимое "
+"<https://core.telegram.org/bots/api#inputmessagecontent>`_ текстового "
+"сообщения, которое будет отправлено как результат inline-запроса."
 
 #: litegram.types.input_text_message_content.InputTextMessageContent:3 of
 msgid "Source: https://core.telegram.org/bots/api#inputtextmessagecontent"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inputtextmessagecontent"
 
 #: ../../docstring
 #: litegram.types.input_text_message_content.InputTextMessageContent.message_text:1
 #: of
 msgid "Text of the message to be sent, 1-4096 characters"
-msgstr ""
+msgstr "Текст отправляемого сообщения, 1-4096 символов"
 
 #: ../../docstring
 #: litegram.types.input_text_message_content.InputTextMessageContent.parse_mode:1
 #: of
 msgid ""
-"*Optional*. Mode for parsing entities in the message text. See "
-"`formatting options <https://core.telegram.org/bots/api#formatting-"
-"options>`_ for more details."
+"*Optional*. Mode for parsing entities in the message text. See `formatting "
+"options <https://core.telegram.org/bots/api#formatting-options>`_ for more "
+"details."
 msgstr ""
+"*Необязательно*. Режим разбора сущностей в тексте сообщения. Подробнее см. "
+"`варианты форматирования <https://core.telegram.org/bots/api#formatting-"
+"options>`_."
 
 #: ../../docstring
 #: litegram.types.input_text_message_content.InputTextMessageContent.entities:1
 #: of
 msgid ""
-"*Optional*. List of special entities that appear in message text, which "
-"can be specified instead of *parse_mode*"
+"*Optional*. List of special entities that appear in message text, which can "
+"be specified instead of *parse_mode*"
 msgstr ""
+"*Необязательно*. Список специальных сущностей в тексте сообщения; можно "
+"указать вместо *parse_mode*"
 
 #: ../../docstring
 #: litegram.types.input_text_message_content.InputTextMessageContent.link_preview_options:1
 #: of
 msgid "*Optional*. Link preview generation options for the message"
 msgstr ""
+"*Необязательно*. Настройки генерации предпросмотра ссылок для сообщения"
 
 #: ../../docstring
 #: litegram.types.input_text_message_content.InputTextMessageContent.disable_web_page_preview:1
 #: of
 msgid "*Optional*. Disables link previews for links in the sent message"
 msgstr ""
+"*Необязательно*. Отключает предпросмотр ссылок в отправляемом сообщении"
 
 #: ../../docstring
 #: litegram.types.input_text_message_content.InputTextMessageContent.disable_web_page_preview:3
 #: of
 msgid "https://core.telegram.org/bots/api-changelog#december-29-2023"
-msgstr ""
+msgstr "https://core.telegram.org/bots/api-changelog#december-29-2023"

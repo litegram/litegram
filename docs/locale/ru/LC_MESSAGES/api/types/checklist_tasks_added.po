@@ -5,41 +5,43 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/checklist_tasks_added.rst:3
 msgid "ChecklistTasksAdded"
-msgstr ""
+msgstr "ChecklistTasksAdded"
 
 #: litegram.types.checklist_tasks_added.ChecklistTasksAdded:1 of
 msgid "Describes a service message about tasks added to a checklist."
-msgstr ""
+msgstr "Описывает сервисное сообщение о задачах, добавленных в чек-лист."
 
 #: litegram.types.checklist_tasks_added.ChecklistTasksAdded:3 of
 msgid "Source: https://core.telegram.org/bots/api#checklisttasksadded"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#checklisttasksadded"
 
 #: litegram.types.checklist_tasks_added.ChecklistTasksAdded.tasks:1 of
 msgid "List of tasks added to the checklist"
-msgstr ""
+msgstr "Список задач, добавленных в чек-лист"
 
 #: litegram.types.checklist_tasks_added.ChecklistTasksAdded.checklist_message:1
 #: of
 msgid ""
-"*Optional*. Message containing the checklist to which the tasks were "
-"added. Note that the :class:`litegram.types.message.Message` object in "
-"this field will not contain the *reply_to_message* field even if it "
-"itself is a reply."
+"*Optional*. Message containing the checklist to which the tasks were added. "
+"Note that the :class:`litegram.types.message.Message` object in this field "
+"will not contain the *reply_to_message* field even if it itself is a reply."
 msgstr ""
+"*Необязательно*. Сообщение, содержащее чек-лист, в который были добавлены "
+"задачи. Обратите внимание: объект :class:`litegram.types.message.Message` в "
+"этом поле не содержит поля *reply_to_message*, даже если сам является "
+"ответом."

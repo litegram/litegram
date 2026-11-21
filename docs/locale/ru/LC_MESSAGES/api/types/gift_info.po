@@ -5,80 +5,91 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/gift_info.rst:3
 msgid "GiftInfo"
-msgstr ""
+msgstr "GiftInfo"
 
 #: litegram.types.gift_info.GiftInfo:1 of
 msgid ""
-"Describes a service message about a regular gift that was sent or "
-"received."
+"Describes a service message about a regular gift that was sent or received."
 msgstr ""
+"Описывает сервисное сообщение об отправленном или полученном обычном подарке."
 
 #: litegram.types.gift_info.GiftInfo:3 of
 msgid "Source: https://core.telegram.org/bots/api#giftinfo"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#giftinfo"
 
 #: litegram.types.gift_info.GiftInfo.gift:1 of
 msgid "Information about the gift"
-msgstr ""
+msgstr "Информация о подарке"
 
 #: litegram.types.gift_info.GiftInfo.owned_gift_id:1 of
 msgid ""
-"*Optional*. Unique identifier of the received gift for the bot; only "
-"present for gifts received on behalf of business accounts"
+"*Optional*. Unique identifier of the received gift for the bot; only present "
+"for gifts received on behalf of business accounts"
 msgstr ""
+"*Необязательно*. Уникальный идентификатор полученного подарка для бота; "
+"присутствует только у подарков, полученных от имени бизнес-аккаунтов"
 
 #: litegram.types.gift_info.GiftInfo.convert_star_count:1 of
 msgid ""
-"*Optional*. Number of Telegram Stars that can be claimed by the receiver "
-"by converting the gift; omitted if conversion to Telegram Stars is "
-"impossible"
+"*Optional*. Number of Telegram Stars that can be claimed by the receiver by "
+"converting the gift; omitted if conversion to Telegram Stars is impossible"
 msgstr ""
+"*Необязательно*. Число Telegram Stars, которое получатель может получить, "
+"конвертировав подарок; отсутствует, если конвертация в Telegram Stars "
+"невозможна"
 
 #: litegram.types.gift_info.GiftInfo.prepaid_upgrade_star_count:1 of
 msgid ""
-"*Optional*. Number of Telegram Stars that were prepaid for the ability to"
-" upgrade the gift"
+"*Optional*. Number of Telegram Stars that were prepaid for the ability to "
+"upgrade the gift"
 msgstr ""
+"*Необязательно*. Число Telegram Stars, предоплаченное за возможность улучшить"
+" подарок"
 
 #: litegram.types.gift_info.GiftInfo.is_upgrade_separate:1 of
 msgid ""
-"*Optional*. :code:`True`, if the gift's upgrade was purchased after the "
-"gift was sent"
+"*Optional*. :code:`True`, if the gift's upgrade was purchased after the gift "
+"was sent"
 msgstr ""
+"*Необязательно*. :code:`True`, если улучшение подарка было куплено после его "
+"отправки"
 
 #: litegram.types.gift_info.GiftInfo.can_be_upgraded:1 of
 msgid "*Optional*. :code:`True`, if the gift can be upgraded to a unique gift"
 msgstr ""
+"*Необязательно*. :code:`True`, если подарок можно улучшить до уникального "
+"подарка"
 
 #: litegram.types.gift_info.GiftInfo.text:1 of
 msgid "*Optional*. Text of the message that was added to the gift"
-msgstr ""
+msgstr "*Необязательно*. Текст сообщения, добавленный к подарку"
 
 #: litegram.types.gift_info.GiftInfo.entities:1 of
 msgid "*Optional*. Special entities that appear in the text"
-msgstr ""
+msgstr "*Необязательно*. Специальные сущности, встречающиеся в тексте"
 
 #: litegram.types.gift_info.GiftInfo.is_private:1 of
 msgid ""
-"*Optional*. :code:`True`, if the sender and gift text are shown only to "
-"the gift receiver; otherwise, everyone will be able to see them"
+"*Optional*. :code:`True`, if the sender and gift text are shown only to the "
+"gift receiver; otherwise, everyone will be able to see them"
 msgstr ""
+"*Необязательно*. :code:`True`, если отправитель и текст подарка показаны "
+"только получателю подарка; иначе их смогут видеть все"
 
 #: litegram.types.gift_info.GiftInfo.unique_gift_number:1 of
 msgid ""
@@ -90,9 +101,6 @@ msgstr ""
 ":class:`litegram.types.unique_gift.UniqueGift`."
 
 #~ msgid ""
-#~ "*Optional*. Unique number reserved for "
-#~ "this gift when upgraded. See the "
-#~ "*number* field in "
-#~ ":class:`litegram.types.unique_gift.UniqueGift`"
+#~ "*Optional*. Unique number reserved for this gift when upgraded. See the "
+#~ "*number* field in :class:`litegram.types.unique_gift.UniqueGift`"
 #~ msgstr ""
-

@@ -5,78 +5,87 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/webhook_info.rst:3
 msgid "WebhookInfo"
-msgstr ""
+msgstr "WebhookInfo"
 
 #: litegram.types.webhook_info.WebhookInfo:1 of
 msgid "Describes the current status of a webhook."
-msgstr ""
+msgstr "Описывает текущее состояние webhook."
 
 #: litegram.types.webhook_info.WebhookInfo:3 of
 msgid "Source: https://core.telegram.org/bots/api#webhookinfo"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#webhookinfo"
 
 #: litegram.types.webhook_info.WebhookInfo.url:1 of
 msgid "Webhook URL, may be empty if webhook is not set up"
-msgstr ""
+msgstr "URL webhook; может быть пустым, если webhook не настроен"
 
 #: litegram.types.webhook_info.WebhookInfo.has_custom_certificate:1 of
 msgid ""
-":code:`True`, if a custom certificate was provided for webhook "
-"certificate checks"
+":code:`True`, if a custom certificate was provided for webhook certificate "
+"checks"
 msgstr ""
+":code:`True`, если для проверки сертификата webhook предоставлен "
+"пользовательский сертификат"
 
 #: litegram.types.webhook_info.WebhookInfo.pending_update_count:1 of
 msgid "Number of updates awaiting delivery"
-msgstr ""
+msgstr "Число обновлений, ожидающих доставки"
 
 #: litegram.types.webhook_info.WebhookInfo.ip_address:1 of
 msgid "*Optional*. Currently used webhook IP address"
-msgstr ""
+msgstr "*Необязательно*. Текущий IP-адрес webhook"
 
 #: litegram.types.webhook_info.WebhookInfo.last_error_date:1 of
 msgid ""
-"*Optional*. Unix time for the most recent error that happened when trying"
-" to deliver an update via webhook"
+"*Optional*. Unix time for the most recent error that happened when trying to "
+"deliver an update via webhook"
 msgstr ""
+"*Необязательно*. Unix time последней ошибки при попытке доставки обновления "
+"через webhook"
 
 #: litegram.types.webhook_info.WebhookInfo.last_error_message:1 of
 msgid ""
-"*Optional*. Error message in human-readable format for the most recent "
-"error that happened when trying to deliver an update via webhook"
+"*Optional*. Error message in human-readable format for the most recent error "
+"that happened when trying to deliver an update via webhook"
 msgstr ""
+"*Необязательно*. Сообщение об ошибке в удобочитаемом виде для последней "
+"ошибки при попытке доставки обновления через webhook"
 
 #: litegram.types.webhook_info.WebhookInfo.last_synchronization_error_date:1 of
 msgid ""
-"*Optional*. Unix time of the most recent error that happened when trying "
-"to synchronize available updates with Telegram datacenters"
+"*Optional*. Unix time of the most recent error that happened when trying to "
+"synchronize available updates with Telegram datacenters"
 msgstr ""
+"*Необязательно*. Unix time последней ошибки при попытке синхронизации "
+"доступных обновлений с датацентрами Telegram"
 
 #: litegram.types.webhook_info.WebhookInfo.max_connections:1 of
 msgid ""
-"*Optional*. The maximum allowed number of simultaneous HTTPS connections "
-"to the webhook for update delivery"
+"*Optional*. The maximum allowed number of simultaneous HTTPS connections to "
+"the webhook for update delivery"
 msgstr ""
+"*Необязательно*. Максимально допустимое число одновременных HTTPS-соединений "
+"с webhook для доставки обновлений"
 
 #: litegram.types.webhook_info.WebhookInfo.allowed_updates:1 of
 msgid ""
-"*Optional*. A list of update types the bot is subscribed to. Defaults to "
-"all update types except *chat_member*, *message_reaction*, and "
+"*Optional*. A list of update types the bot is subscribed to. Defaults to all "
+"update types except *chat_member*, *message_reaction*, and "
 "*message_reaction_count*."
 msgstr ""
 "*Необязательно*. Список типов обновлений, на которые подписан бот. По "
@@ -84,8 +93,6 @@ msgstr ""
 "*message_reaction_count*."
 
 #~ msgid ""
-#~ "*Optional*. A list of update types "
-#~ "the bot is subscribed to. Defaults "
-#~ "to all update types except *chat_member*"
+#~ "*Optional*. A list of update types the bot is subscribed to. Defaults to all "
+#~ "update types except *chat_member*"
 #~ msgstr ""
-

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-30 22:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,22 +18,24 @@ msgstr ""
 
 #: ../../api/types/error_event.rst:3
 msgid "ErrorEvent"
-msgstr ""
+msgstr "ErrorEvent"
 
 #: litegram.types.error_event.ErrorEvent:1 of
 msgid ""
-"Internal event, should be used to receive errors while processing Updates"
-" from Telegram"
+"Internal event, should be used to receive errors while processing Updates "
+"from Telegram"
 msgstr ""
+"Внутреннее событие; используется для получения ошибок при обработке "
+"обновлений от Telegram"
 
 #: litegram.types.error_event.ErrorEvent:3 of
 msgid "Source: https://core.telegram.org/bots/api#error-event"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#error-event"
 
 #: ../../docstring litegram.types.error_event.ErrorEvent.update:1 of
 msgid "Received update"
-msgstr ""
+msgstr "Полученное обновление"
 
 #: ../../docstring litegram.types.error_event.ErrorEvent.exception:1 of
 msgid "Exception"
-msgstr ""
+msgstr "Exception"

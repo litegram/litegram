@@ -5,74 +5,74 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/suggested_post_paid.rst:3
 msgid "SuggestedPostPaid"
-msgstr ""
+msgstr "SuggestedPostPaid"
 
 #: litegram.types.suggested_post_paid.SuggestedPostPaid:1 of
 msgid ""
-"Describes a service message about a successful payment for a suggested "
-"post."
+"Describes a service message about a successful payment for a suggested post."
 msgstr ""
+"Описывает сервисное сообщение об успешной оплате предлагаемой публикации."
 
 #: litegram.types.suggested_post_paid.SuggestedPostPaid:3 of
 msgid "Source: https://core.telegram.org/bots/api#suggestedpostpaid"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#suggestedpostpaid"
 
 #: litegram.types.suggested_post_paid.SuggestedPostPaid.currency:1 of
 msgid ""
-"Currency in which the payment was made. Currently, one of 'XTR' for "
-"Telegram Stars or 'TON' for TON grams."
+"Currency in which the payment was made. Currently, one of 'XTR' for Telegram "
+"Stars or 'TON' for TON grams."
 msgstr ""
-"Валюта, в которой произведена оплата. Сейчас одно из значений: 'XTR' "
-"(звёзды Telegram) или 'TON' (граммы TON)."
+"Валюта, в которой произведена оплата. Сейчас одно из значений: 'XTR' (звёзды "
+"Telegram) или 'TON' (граммы TON)."
 
 #: litegram.types.suggested_post_paid.SuggestedPostPaid.suggested_post_message:1
 #: of
 msgid ""
 "*Optional*. Message containing the suggested post. Note that the "
-":class:`litegram.types.message.Message` object in this field will not "
-"contain the *reply_to_message* field even if it itself is a reply."
+":class:`litegram.types.message.Message` object in this field will not contain"
+" the *reply_to_message* field even if it itself is a reply."
 msgstr ""
+"*Необязательно*. Сообщение, содержащее предлагаемую публикацию. Обратите "
+"внимание: объект :class:`litegram.types.message.Message` в этом поле не "
+"содержит поля *reply_to_message*, даже если сам является ответом."
 
 #: litegram.types.suggested_post_paid.SuggestedPostPaid.amount:1 of
 msgid ""
-"*Optional*. The amount of the currency that was received by the channel "
-"in nanograms; for payments in TON grams only"
+"*Optional*. The amount of the currency that was received by the channel in "
+"nanograms; for payments in TON grams only"
 msgstr ""
-"*Необязательно*. Сумма валюты, полученная каналом, в нанограммах; только "
-"для оплаты в граммах TON"
+"*Необязательно*. Сумма валюты, полученная каналом, в нанограммах; только для "
+"оплаты в граммах TON"
 
 #: litegram.types.suggested_post_paid.SuggestedPostPaid.star_amount:1 of
 msgid ""
-"*Optional*. The amount of Telegram Stars that was received by the "
-"channel; for payments in Telegram Stars only"
+"*Optional*. The amount of Telegram Stars that was received by the channel; "
+"for payments in Telegram Stars only"
 msgstr ""
+"*Необязательно*. Число Telegram Stars, полученное каналом; только для "
+"платежей в Telegram Stars"
 
 #~ msgid ""
-#~ "Currency in which the payment was "
-#~ "made. Currently, one of 'XTR' for "
-#~ "Telegram Stars or 'TON' for toncoins"
+#~ "Currency in which the payment was made. Currently, one of 'XTR' for Telegram "
+#~ "Stars or 'TON' for toncoins"
 #~ msgstr ""
 
 #~ msgid ""
-#~ "*Optional*. The amount of the currency"
-#~ " that was received by the channel "
-#~ "in nanotoncoins; for payments in "
-#~ "toncoins only"
+#~ "*Optional*. The amount of the currency that was received by the channel in "
+#~ "nanotoncoins; for payments in toncoins only"
 #~ msgstr ""
-

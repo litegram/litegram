@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-02 15:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,36 +18,36 @@ msgstr ""
 
 #: ../../api/types/index.rst:3
 msgid "Types"
-msgstr ""
+msgstr "Типы"
 
 #: ../../api/types/index.rst:5
 msgid "Here is list of all available API types:"
-msgstr ""
+msgstr "Вот список всех доступных типов API:"
 
 #: ../../api/types/index.rst:9
 msgid "Inline mode"
-msgstr ""
+msgstr "Inline-режим"
 
 #: ../../api/types/index.rst:47
 msgid "Available types"
-msgstr ""
+msgstr "Доступные типы"
 
 #: ../../api/types/index.rst:143
 msgid "Telegram Passport"
-msgstr ""
+msgstr "Telegram Passport"
 
 #: ../../api/types/index.rst:164
 msgid "Getting updates"
-msgstr ""
+msgstr "Получение обновлений"
 
 #: ../../api/types/index.rst:173
 msgid "Stickers"
-msgstr ""
+msgstr "Стикеры"
 
 #: ../../api/types/index.rst:184
 msgid "Payments"
-msgstr ""
+msgstr "Платежи"
 
 #: ../../api/types/index.rst:199
 msgid "Games"
-msgstr ""
+msgstr "Игры"

@@ -5,72 +5,76 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/inline_query_result_mpeg4_gif.rst:3
 msgid "InlineQueryResultMpeg4Gif"
-msgstr ""
+msgstr "InlineQueryResultMpeg4Gif"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif:1 of
 msgid ""
 "Represents a link to a video animation (H.264/MPEG-4 AVC video without "
-"sound). By default, this animated MPEG-4 file will be sent by the user "
-"with optional caption. Alternatively, you can use *input_message_content*"
-" to send a message with the specified content instead of the animation."
+"sound). By default, this animated MPEG-4 file will be sent by the user with "
+"optional caption. Alternatively, you can use *input_message_content* to send "
+"a message with the specified content instead of the animation."
 msgstr ""
+"Представляет ссылку на видео-анимацию (видео H.264/MPEG-4 AVC без звука). По "
+"умолчанию этот анимированный MPEG-4 файл будет отправлен пользователем с "
+"необязательной подписью. В качестве альтернативы можно использовать "
+"*input_message_content*, чтобы отправить сообщение с указанным содержимым "
+"вместо анимации."
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif:3 of
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultmpeg4gif"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inlinequeryresultmpeg4gif"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.type:1
 #: of
 msgid "Type of the result, must be *mpeg4_gif*"
-msgstr ""
+msgstr "Тип результата; должно быть *mpeg4_gif*"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.id:1
 #: of
 msgid "Unique identifier for this result, 1-64 bytes"
-msgstr ""
+msgstr "Уникальный идентификатор этого результата, 1-64 байта"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.mpeg4_url:1
 #: of
 msgid "A valid URL for the MPEG4 file"
-msgstr ""
+msgstr "Корректный URL MPEG4-файла"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.thumbnail_url:1
 #: of
 msgid ""
-"URL of the static (JPEG or GIF) or animated (MPEG4) thumbnail for the "
-"result"
+"URL of the static (JPEG or GIF) or animated (MPEG4) thumbnail for the result"
 msgstr ""
+"URL статичного (JPEG или GIF) или анимированного (MPEG4) превью результата"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.mpeg4_width:1
 #: of
 msgid "*Optional*. Video width"
-msgstr ""
+msgstr "*Необязательно*. Ширина видео"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.mpeg4_height:1
 #: of
 msgid "*Optional*. Video height"
-msgstr ""
+msgstr "*Необязательно*. Высота видео"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.mpeg4_duration:1
 #: of
 msgid "*Optional*. Video duration in seconds"
-msgstr ""
+msgstr "*Необязательно*. Длительность видео в секундах"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.thumbnail_mime_type:1
 #: of
@@ -84,63 +88,68 @@ msgstr ""
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.title:1
 #: of
 msgid "*Optional*. Title for the result"
-msgstr ""
+msgstr "*Необязательно*. Название результата"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.caption:1
 #: of
 msgid ""
-"*Optional*. Caption of the MPEG-4 file to be sent, 0-1024 characters "
-"after entities parsing"
+"*Optional*. Caption of the MPEG-4 file to be sent, 0-1024 characters after "
+"entities parsing"
 msgstr ""
+"*Необязательно*. Подпись отправляемого MPEG-4 файла, 0-1024 символа после "
+"разбора сущностей"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.parse_mode:1
 #: of
 msgid ""
-"*Optional*. Mode for parsing entities in the caption. See `formatting "
-"options <https://core.telegram.org/bots/api#formatting-options>`_ for "
-"more details."
+"*Optional*. Mode for parsing entities in the caption. See `formatting options"
+" <https://core.telegram.org/bots/api#formatting-options>`_ for more details."
 msgstr ""
+"*Необязательно*. Режим разбора сущностей в подписи. Подробнее см. `варианты "
+"форматирования <https://core.telegram.org/bots/api#formatting-options>`_."
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.caption_entities:1
 #: of
 msgid ""
-"*Optional*. List of special entities that appear in the caption, which "
-"can be specified instead of *parse_mode*"
+"*Optional*. List of special entities that appear in the caption, which can be"
+" specified instead of *parse_mode*"
 msgstr ""
+"*Необязательно*. Список специальных сущностей в подписи; можно указать вместо"
+" *parse_mode*"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.show_caption_above_media:1
 #: of
 msgid ""
-"*Optional*. Pass :code:`True` if the caption must be shown above the "
-"message media"
+"*Optional*. Pass :code:`True` if the caption must be shown above the message "
+"media"
 msgstr ""
-"*Необязательно*. Передайте :code:`True`, чтобы показать подпись над медиа"
-" сообщения"
+"*Необязательно*. Передайте :code:`True`, чтобы показать подпись над медиа "
+"сообщения"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.reply_markup:1
 #: of
 msgid ""
-"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
-"#inline-keyboards>`_ attached to the message"
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-"
+"keyboards>`_ attached to the message"
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, прикреплённая к"
+" сообщению"
 
 #: litegram.types.inline_query_result_mpeg4_gif.InlineQueryResultMpeg4Gif.input_message_content:1
 #: of
 msgid ""
-"*Optional*. Content of the message to be sent instead of the video "
-"animation"
+"*Optional*. Content of the message to be sent instead of the video animation"
 msgstr ""
+"*Необязательно*. Содержимое сообщения, которое будет отправлено вместо видео-"
+"анимации"
 
 #~ msgid ""
-#~ "*Optional*. MIME type of the thumbnail,"
-#~ " must be one of 'image/jpeg', "
-#~ "'image/gif', or 'video/mp4'. Defaults to "
-#~ "'image/jpeg'"
+#~ "*Optional*. MIME type of the thumbnail, must be one of 'image/jpeg', "
+#~ "'image/gif', or 'video/mp4'. Defaults to 'image/jpeg'"
 #~ msgstr ""
 
 #~ msgid ""
-#~ "*Optional*. Pass :code:`True`, if the "
-#~ "caption must be shown above the "
-#~ "message media"
+#~ "*Optional*. Pass :code:`True`, if the caption must be shown above the message"
+#~ " media"
 #~ msgstr ""
-

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,38 +18,49 @@ msgstr ""
 
 #: ../../api/types/chat_photo.rst:3
 msgid "ChatPhoto"
-msgstr ""
+msgstr "ChatPhoto"
 
 #: litegram.types.chat_photo.ChatPhoto:1 of
 msgid "This object represents a chat photo."
-msgstr ""
+msgstr "Этот объект представляет фотографию чата."
 
 #: litegram.types.chat_photo.ChatPhoto:3 of
 msgid "Source: https://core.telegram.org/bots/api#chatphoto"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#chatphoto"
 
 #: ../../docstring litegram.types.chat_photo.ChatPhoto.small_file_id:1 of
 msgid ""
-"File identifier of small (160x160) chat photo. This file_id can be used "
-"only for photo download and only for as long as the photo is not changed."
+"File identifier of small (160x160) chat photo. This file_id can be used only "
+"for photo download and only for as long as the photo is not changed."
 msgstr ""
+"file_id маленькой (160x160) фотографии чата. Этот file_id можно использовать "
+"только для скачивания фотографии и только пока фотография не изменена."
 
-#: ../../docstring litegram.types.chat_photo.ChatPhoto.small_file_unique_id:1 of
+#: ../../docstring litegram.types.chat_photo.ChatPhoto.small_file_unique_id:1
+#: of
 msgid ""
-"Unique file identifier of small (160x160) chat photo, which is supposed "
-"to be the same over time and for different bots. Can't be used to "
-"download or reuse the file."
+"Unique file identifier of small (160x160) chat photo, which is supposed to be"
+" the same over time and for different bots. Can't be used to download or "
+"reuse the file."
 msgstr ""
+"Уникальный file_id маленькой (160x160) фотографии чата, который должен "
+"оставаться одинаковым со временем и для разных ботов. Нельзя использовать для"
+" скачивания или повторной отправки файла."
 
 #: ../../docstring litegram.types.chat_photo.ChatPhoto.big_file_id:1 of
 msgid ""
-"File identifier of big (640x640) chat photo. This file_id can be used "
-"only for photo download and only for as long as the photo is not changed."
+"File identifier of big (640x640) chat photo. This file_id can be used only "
+"for photo download and only for as long as the photo is not changed."
 msgstr ""
+"file_id большой (640x640) фотографии чата. Этот file_id можно использовать "
+"только для скачивания фотографии и только пока фотография не изменена."
 
 #: ../../docstring litegram.types.chat_photo.ChatPhoto.big_file_unique_id:1 of
 msgid ""
-"Unique file identifier of big (640x640) chat photo, which is supposed to "
-"be the same over time and for different bots. Can't be used to download "
-"or reuse the file."
+"Unique file identifier of big (640x640) chat photo, which is supposed to be "
+"the same over time and for different bots. Can't be used to download or reuse"
+" the file."
 msgstr ""
+"Уникальный file_id большой (640x640) фотографии чата, который должен "
+"оставаться одинаковым со временем и для разных ботов. Нельзя использовать для"
+" скачивания или повторной отправки файла."

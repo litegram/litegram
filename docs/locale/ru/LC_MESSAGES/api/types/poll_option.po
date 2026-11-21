@@ -5,35 +5,34 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/poll_option.rst:3
 msgid "PollOption"
-msgstr ""
+msgstr "PollOption"
 
 #: litegram.types.poll_option.PollOption:1 of
 msgid "This object contains information about one answer option in a poll."
-msgstr ""
+msgstr "Этот объект содержит информацию об одном варианте ответа в опросе."
 
 #: litegram.types.poll_option.PollOption:3 of
 msgid "Source: https://core.telegram.org/bots/api#polloption"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#polloption"
 
 #: litegram.types.poll_option.PollOption.text:1 of
 msgid "Option text, 1-100 characters"
-msgstr ""
+msgstr "Текст варианта ответа, 1-100 символов"
 
 #: litegram.types.poll_option.PollOption.voter_count:1 of
 msgid "Number of users who voted for this option; may be 0 if unknown"
@@ -43,17 +42,19 @@ msgstr ""
 
 #: litegram.types.poll_option.PollOption.text_entities:1 of
 msgid ""
-"*Optional*. Special entities that appear in the option *text*. Currently,"
-" only custom emoji entities are allowed in poll option texts"
+"*Optional*. Special entities that appear in the option *text*. Currently, "
+"only custom emoji entities are allowed in poll option texts"
 msgstr ""
+"*Необязательно*. Специальные сущности, встречающиеся в *text* варианта "
+"ответа. Сейчас в текстах вариантов ответа опроса допускаются только сущности "
+"с кастомными эмодзи"
 
 #: litegram.types.poll_option.PollOption.persistent_id:1 of
 msgid ""
-"Unique identifier of the option, persistent on option addition and "
-"deletion"
+"Unique identifier of the option, persistent on option addition and deletion"
 msgstr ""
-"Уникальный идентификатор варианта, сохраняющийся при добавлении и "
-"удалении вариантов"
+"Уникальный идентификатор варианта, сохраняющийся при добавлении и удалении "
+"вариантов"
 
 #: litegram.types.poll_option.PollOption.media:1 of
 msgid "*Optional*. Media added to the poll option"
@@ -61,28 +62,27 @@ msgstr "*Необязательно*. Медиа, добавленное к ва
 
 #: litegram.types.poll_option.PollOption.added_by_user:1 of
 msgid ""
-"*Optional*. User who added the option; omitted if the option wasn't added"
-" by a user after poll creation"
+"*Optional*. User who added the option; omitted if the option wasn't added by "
+"a user after poll creation"
 msgstr ""
-"*Необязательно*. Пользователь, добавивший вариант; отсутствует, если "
-"вариант не был добавлен пользователем после создания опроса"
+"*Необязательно*. Пользователь, добавивший вариант; отсутствует, если вариант "
+"не был добавлен пользователем после создания опроса"
 
 #: litegram.types.poll_option.PollOption.added_by_chat:1 of
 msgid ""
-"*Optional*. Chat that added the option; omitted if the option wasn't "
-"added by a chat after poll creation"
+"*Optional*. Chat that added the option; omitted if the option wasn't added by"
+" a chat after poll creation"
 msgstr ""
-"*Необязательно*. Чат, добавивший вариант; отсутствует, если вариант не "
-"был добавлен чатом после создания опроса"
+"*Необязательно*. Чат, добавивший вариант; отсутствует, если вариант не был "
+"добавлен чатом после создания опроса"
 
 #: litegram.types.poll_option.PollOption.addition_date:1 of
 msgid ""
-"*Optional*. Point in time (Unix timestamp) when the option was added; "
-"omitted if the option existed in the original poll"
+"*Optional*. Point in time (Unix timestamp) when the option was added; omitted"
+" if the option existed in the original poll"
 msgstr ""
 "*Необязательно*. Момент времени (метка времени Unix), когда вариант был "
 "добавлен; отсутствует, если вариант был в исходном опросе"
 
 #~ msgid "Number of users that voted for this option"
 #~ msgstr ""
-

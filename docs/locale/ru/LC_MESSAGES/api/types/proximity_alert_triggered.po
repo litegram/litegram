@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,31 +18,35 @@ msgstr ""
 
 #: ../../api/types/proximity_alert_triggered.rst:3
 msgid "ProximityAlertTriggered"
-msgstr ""
+msgstr "ProximityAlertTriggered"
 
 #: litegram.types.proximity_alert_triggered.ProximityAlertTriggered:1 of
 msgid ""
-"This object represents the content of a service message, sent whenever a "
-"user in the chat triggers a proximity alert set by another user."
+"This object represents the content of a service message, sent whenever a user"
+" in the chat triggers a proximity alert set by another user."
 msgstr ""
+"Этот объект представляет содержимое сервисного сообщения, отправляемого "
+"всякий раз, когда пользователь в чате срабатывает уведомление о приближении, "
+"заданное другим пользователем."
 
 #: litegram.types.proximity_alert_triggered.ProximityAlertTriggered:3 of
 msgid "Source: https://core.telegram.org/bots/api#proximityalerttriggered"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#proximityalerttriggered"
 
 #: ../../docstring
 #: litegram.types.proximity_alert_triggered.ProximityAlertTriggered.traveler:1
 #: of
 msgid "User that triggered the alert"
-msgstr ""
+msgstr "Пользователь, сработавший уведомление о приближении"
 
 #: ../../docstring
-#: litegram.types.proximity_alert_triggered.ProximityAlertTriggered.watcher:1 of
+#: litegram.types.proximity_alert_triggered.ProximityAlertTriggered.watcher:1
+#: of
 msgid "User that set the alert"
-msgstr ""
+msgstr "Пользователь, установивший уведомление о приближении"
 
 #: ../../docstring
 #: litegram.types.proximity_alert_triggered.ProximityAlertTriggered.distance:1
 #: of
 msgid "The distance between the users"
-msgstr ""
+msgstr "Расстояние между пользователями"

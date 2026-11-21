@@ -5,23 +5,22 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/inline_query_result_game.rst:3
 msgid "InlineQueryResultGame"
-msgstr ""
+msgstr "InlineQueryResultGame"
 
 #: litegram.types.inline_query_result_game.InlineQueryResultGame:1 of
 msgid "Represents a :class:`litegram.types.game.Game`."
@@ -29,28 +28,30 @@ msgstr "Представляет объект :class:`litegram.types.game.Game`.
 
 #: litegram.types.inline_query_result_game.InlineQueryResultGame:3 of
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultgame"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inlinequeryresultgame"
 
 #: litegram.types.inline_query_result_game.InlineQueryResultGame.type:1 of
 msgid "Type of the result, must be *game*"
-msgstr ""
+msgstr "Тип результата; должно быть *game*"
 
 #: litegram.types.inline_query_result_game.InlineQueryResultGame.id:1 of
 msgid "Unique identifier for this result, 1-64 bytes"
-msgstr ""
+msgstr "Уникальный идентификатор этого результата, 1-64 байта"
 
 #: litegram.types.inline_query_result_game.InlineQueryResultGame.game_short_name:1
 #: of
 msgid "Short name of the game"
-msgstr ""
+msgstr "Короткое имя игры"
 
 #: litegram.types.inline_query_result_game.InlineQueryResultGame.reply_markup:1
 #: of
 msgid ""
-"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
-"#inline-keyboards>`_ attached to the message"
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-"
+"keyboards>`_ attached to the message"
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, прикреплённая к"
+" сообщению"
 
 #~ msgid "Represents a `Game <https://core.telegram.org/bots/api#games>`_."
 #~ msgstr ""
-

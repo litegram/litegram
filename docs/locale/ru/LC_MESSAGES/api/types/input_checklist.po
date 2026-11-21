@@ -5,77 +5,77 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/input_checklist.rst:3
 msgid "InputChecklist"
-msgstr ""
+msgstr "InputChecklist"
 
 #: litegram.types.input_checklist.InputChecklist:1 of
 msgid "Describes a checklist to create."
-msgstr ""
+msgstr "Описывает чек-лист для создания."
 
 #: litegram.types.input_checklist.InputChecklist:3 of
 msgid "Source: https://core.telegram.org/bots/api#inputchecklist"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inputchecklist"
 
 #: litegram.types.input_checklist.InputChecklist.title:1 of
 msgid "Title of the checklist; 1-255 characters after entities parsing"
-msgstr ""
+msgstr "Название чек-листа; 1-255 символов после разбора сущностей"
 
 #: litegram.types.input_checklist.InputChecklist.tasks:1 of
 msgid "List of 1-30 tasks in the checklist"
-msgstr ""
+msgstr "Список из 1-30 задач в чек-листе"
 
 #: litegram.types.input_checklist.InputChecklist.parse_mode:1 of
 msgid ""
-"*Optional*. Mode for parsing entities in the title. See `formatting "
-"options <https://core.telegram.org/bots/api#formatting-options>`_ for "
-"more details."
+"*Optional*. Mode for parsing entities in the title. See `formatting options "
+"<https://core.telegram.org/bots/api#formatting-options>`_ for more details."
 msgstr ""
+"*Необязательно*. Режим разбора сущностей в названии. Подробнее см. `варианты "
+"форматирования <https://core.telegram.org/bots/api#formatting-options>`_."
 
 #: litegram.types.input_checklist.InputChecklist.title_entities:1 of
 msgid ""
-"*Optional*. List of special entities that appear in the title, which can "
-"be specified instead of parse_mode. Currently, only *bold*, *italic*, "
+"*Optional*. List of special entities that appear in the title, which can be "
+"specified instead of parse_mode. Currently, only *bold*, *italic*, "
 "*underline*, *strikethrough*, *spoiler*, *custom_emoji*, and *date_time* "
 "entities are allowed."
 msgstr ""
-"*Необязательно*. Список специальных сущностей в заголовке; можно передать"
-" вместо parse_mode. Сейчас допускаются только сущности *bold*, *italic*, "
+"*Необязательно*. Список специальных сущностей в заголовке; можно передать "
+"вместо parse_mode. Сейчас допускаются только сущности *bold*, *italic*, "
 "*underline*, *strikethrough*, *spoiler*, *custom_emoji* и *date_time*."
 
 #: litegram.types.input_checklist.InputChecklist.others_can_add_tasks:1 of
 msgid ""
-"*Optional*. Pass :code:`True` if other users can add tasks to the "
-"checklist"
+"*Optional*. Pass :code:`True` if other users can add tasks to the checklist"
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, если другие пользователи могут "
+"добавлять задачи в чек-лист"
 
 #: litegram.types.input_checklist.InputChecklist.others_can_mark_tasks_as_done:1
 #: of
 msgid ""
-"*Optional*. Pass :code:`True` if other users can mark tasks as done or "
-"not done in the checklist"
+"*Optional*. Pass :code:`True` if other users can mark tasks as done or not "
+"done in the checklist"
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, если другие пользователи могут "
+"отмечать задачи в чек-листе выполненными или невыполненными"
 
 #~ msgid ""
-#~ "*Optional*. List of special entities "
-#~ "that appear in the title, which "
-#~ "can be specified instead of parse_mode."
-#~ " Currently, only *bold*, *italic*, "
-#~ "*underline*, *strikethrough*, *spoiler*, and "
-#~ "*custom_emoji* entities are allowed."
+#~ "*Optional*. List of special entities that appear in the title, which can be "
+#~ "specified instead of parse_mode. Currently, only *bold*, *italic*, "
+#~ "*underline*, *strikethrough*, *spoiler*, and *custom_emoji* entities are "
+#~ "allowed."
 #~ msgstr ""
-

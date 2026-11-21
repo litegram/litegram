@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-11 01:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,94 +18,110 @@ msgstr ""
 
 #: ../../api/types/sticker.rst:3
 msgid "Sticker"
-msgstr ""
+msgstr "Sticker"
 
 #: litegram.types.sticker.Sticker:1 of
 msgid "This object represents a sticker."
-msgstr ""
+msgstr "Этот объект представляет стикер."
 
 #: litegram.types.sticker.Sticker:3 of
 msgid "Source: https://core.telegram.org/bots/api#sticker"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#sticker"
 
 #: ../../docstring litegram.types.sticker.Sticker.file_id:1 of
-msgid "Identifier for this file, which can be used to download or reuse the file"
+msgid ""
+"Identifier for this file, which can be used to download or reuse the file"
 msgstr ""
+"Идентификатор файла, который можно использовать для скачивания или повторной "
+"отправки файла"
 
 #: ../../docstring litegram.types.sticker.Sticker.file_unique_id:1 of
 msgid ""
-"Unique identifier for this file, which is supposed to be the same over "
-"time and for different bots. Can't be used to download or reuse the file."
+"Unique identifier for this file, which is supposed to be the same over time "
+"and for different bots. Can't be used to download or reuse the file."
 msgstr ""
+"Уникальный идентификатор этого файла, который должен оставаться одинаковым со"
+" временем и для разных ботов. Нельзя использовать для скачивания или "
+"повторной отправки файла."
 
 #: ../../docstring litegram.types.sticker.Sticker.type:1 of
 msgid ""
-"Type of the sticker, currently one of 'regular', 'mask', 'custom_emoji'. "
-"The type of the sticker is independent from its format, which is "
-"determined by the fields *is_animated* and *is_video*."
+"Type of the sticker, currently one of 'regular', 'mask', 'custom_emoji'. The "
+"type of the sticker is independent from its format, which is determined by "
+"the fields *is_animated* and *is_video*."
 msgstr ""
+"Тип стикера; сейчас один из 'regular', 'mask', 'custom_emoji'. Тип стикера не"
+" зависит от его формата, который определяется полями *is_animated* и "
+"*is_video*."
 
 #: ../../docstring litegram.types.sticker.Sticker.width:1 of
 msgid "Sticker width"
-msgstr ""
+msgstr "Ширина стикера"
 
 #: ../../docstring litegram.types.sticker.Sticker.height:1 of
 msgid "Sticker height"
-msgstr ""
+msgstr "Высота стикера"
 
 #: ../../docstring litegram.types.sticker.Sticker.is_animated:1 of
 msgid ""
-":code:`True`, if the sticker is `animated <https://telegram.org/blog"
-"/animated-stickers>`_"
+":code:`True`, if the sticker is `animated "
+"<https://telegram.org/blog/animated-stickers>`_"
 msgstr ""
+":code:`True`, если стикер `анимированный <https://telegram.org/blog/animated-"
+"stickers>`_"
 
 #: ../../docstring litegram.types.sticker.Sticker.is_video:1 of
 msgid ""
 ":code:`True`, if the sticker is a `video sticker "
 "<https://telegram.org/blog/video-stickers-better-reactions>`_"
 msgstr ""
+":code:`True`, если стикер — `видеостикер <https://telegram.org/blog/video-"
+"stickers-better-reactions>`_"
 
 #: ../../docstring litegram.types.sticker.Sticker.thumbnail:1 of
 msgid "*Optional*. Sticker thumbnail in the .WEBP or .JPG format"
-msgstr ""
+msgstr "*Необязательно*. Превью стикера в формате .WEBP или .JPG"
 
 #: ../../docstring litegram.types.sticker.Sticker.emoji:1 of
 msgid "*Optional*. Emoji associated with the sticker"
-msgstr ""
+msgstr "*Необязательно*. Эмодзи, связанный со стикером"
 
 #: ../../docstring litegram.types.sticker.Sticker.set_name:1 of
 msgid "*Optional*. Name of the sticker set to which the sticker belongs"
-msgstr ""
+msgstr "*Необязательно*. Имя набора стикеров, к которому принадлежит стикер"
 
 #: ../../docstring litegram.types.sticker.Sticker.premium_animation:1 of
 msgid ""
-"*Optional*. For premium regular stickers, premium animation for the "
-"sticker"
-msgstr ""
+"*Optional*. For premium regular stickers, premium animation for the sticker"
+msgstr "*Необязательно*. Для премиум-стикеров — премиум-анимация стикера"
 
 #: ../../docstring litegram.types.sticker.Sticker.mask_position:1 of
 msgid ""
-"*Optional*. For mask stickers, the position where the mask should be "
-"placed"
+"*Optional*. For mask stickers, the position where the mask should be placed"
 msgstr ""
+"*Необязательно*. Для стикеров-масок — позиция, где должна быть размещена "
+"маска"
 
 #: ../../docstring litegram.types.sticker.Sticker.custom_emoji_id:1 of
 msgid ""
-"*Optional*. For custom emoji stickers, unique identifier of the custom "
-"emoji"
+"*Optional*. For custom emoji stickers, unique identifier of the custom emoji"
 msgstr ""
+"*Необязательно*. Для стикеров с кастомными эмодзи — уникальный идентификатор "
+"кастомного эмодзи"
 
 #: ../../docstring litegram.types.sticker.Sticker.needs_repainting:1 of
 msgid ""
-"*Optional*. :code:`True`, if the sticker must be repainted to a text "
-"color in messages, the color of the Telegram Premium badge in emoji "
-"status, white color on chat photos, or another appropriate color in other"
-" places"
+"*Optional*. :code:`True`, if the sticker must be repainted to a text color in"
+" messages, the color of the Telegram Premium badge in emoji status, white "
+"color on chat photos, or another appropriate color in other places"
 msgstr ""
+"*Необязательно*. :code:`True`, если стикер должен перекрашиваться в цвет "
+"текста в сообщениях, в цвет значка Telegram Premium в эмодзи-статусе, в белый"
+" цвет на фотографиях чата или другой подходящий цвет в остальных местах"
 
 #: ../../docstring litegram.types.sticker.Sticker.file_size:1 of
 msgid "*Optional*. File size in bytes"
-msgstr ""
+msgstr "*Необязательно*. Размер файла в байтах"
 
 #: litegram.types.sticker.Sticker.set_position_in_set:1 of
 msgid ""
@@ -113,60 +129,74 @@ msgid ""
 ":class:`litegram.methods.set_sticker_position_in_set.SetStickerPositionInSet`"
 " will automatically fill method attributes:"
 msgstr ""
+"Сокращение для метода "
+":class:`litegram.methods.set_sticker_position_in_set.SetStickerPositionInSet`"
+" — автоматически заполнит атрибуты метода:"
 
 #: litegram.types.sticker.Sticker.delete_from_set:4
 #: litegram.types.sticker.Sticker.set_position_in_set:4 of
 msgid ":code:`sticker`"
-msgstr ""
+msgstr ":code:`sticker`"
 
 #: litegram.types.sticker.Sticker.set_position_in_set:6 of
 msgid ""
-"Use this method to move a sticker in a set created by the bot to a "
-"specific position. Returns :code:`True` on success."
+"Use this method to move a sticker in a set created by the bot to a specific "
+"position. Returns :code:`True` on success."
 msgstr ""
+"Используйте этот метод, чтобы переместить стикер в наборе, созданном ботом, "
+"на конкретную позицию. Возвращает :code:`True` при успехе."
 
 #: litegram.types.sticker.Sticker.set_position_in_set:8 of
 msgid "Source: https://core.telegram.org/bots/api#setstickerpositioninset"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#setstickerpositioninset"
 
 #: litegram.types.sticker.Sticker.set_position_in_set of
 msgid "Parameters"
-msgstr ""
+msgstr "Параметры"
 
 #: litegram.types.sticker.Sticker.set_position_in_set:10 of
 msgid "New sticker position in the set, zero-based"
-msgstr ""
+msgstr "Новая позиция стикера в наборе, с нуля"
 
 #: litegram.types.sticker.Sticker.delete_from_set
 #: litegram.types.sticker.Sticker.set_position_in_set of
 msgid "Returns"
-msgstr ""
+msgstr "Возвращает"
 
 #: litegram.types.sticker.Sticker.set_position_in_set:11 of
 msgid ""
 "instance of method "
 ":class:`litegram.methods.set_sticker_position_in_set.SetStickerPositionInSet`"
 msgstr ""
+"экземпляр метода "
+":class:`litegram.methods.set_sticker_position_in_set.SetStickerPositionInSet`"
 
 #: litegram.types.sticker.Sticker.delete_from_set:1 of
 msgid ""
 "Shortcut for method "
-":class:`litegram.methods.delete_sticker_from_set.DeleteStickerFromSet` "
-"will automatically fill method attributes:"
+":class:`litegram.methods.delete_sticker_from_set.DeleteStickerFromSet` will "
+"automatically fill method attributes:"
 msgstr ""
+"Сокращение для метода "
+":class:`litegram.methods.delete_sticker_from_set.DeleteStickerFromSet` — "
+"автоматически заполнит атрибуты метода:"
 
 #: litegram.types.sticker.Sticker.delete_from_set:6 of
 msgid ""
-"Use this method to delete a sticker from a set created by the bot. "
-"Returns :code:`True` on success."
+"Use this method to delete a sticker from a set created by the bot. Returns "
+":code:`True` on success."
 msgstr ""
+"Используйте этот метод, чтобы удалить стикер из набора, созданного ботом. "
+"Возвращает :code:`True` при успехе."
 
 #: litegram.types.sticker.Sticker.delete_from_set:8 of
 msgid "Source: https://core.telegram.org/bots/api#deletestickerfromset"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#deletestickerfromset"
 
 #: litegram.types.sticker.Sticker.delete_from_set:10 of
 msgid ""
 "instance of method "
 ":class:`litegram.methods.delete_sticker_from_set.DeleteStickerFromSet`"
 msgstr ""
+"экземпляр метода "
+":class:`litegram.methods.delete_sticker_from_set.DeleteStickerFromSet`"

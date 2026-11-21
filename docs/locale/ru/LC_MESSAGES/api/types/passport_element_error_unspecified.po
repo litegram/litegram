@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,40 +18,44 @@ msgstr ""
 
 #: ../../api/types/passport_element_error_unspecified.rst:3
 msgid "PassportElementErrorUnspecified"
-msgstr ""
+msgstr "PassportElementErrorUnspecified"
 
 #: litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified:1
 #: of
 msgid ""
-"Represents an issue in an unspecified place. The error is considered "
-"resolved when new data is added."
+"Represents an issue in an unspecified place. The error is considered resolved"
+" when new data is added."
 msgstr ""
+"Представляет проблему в неуказанном месте. Ошибка считается решённой, когда "
+"добавлены новые данные."
 
 #: litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified:3
 #: of
-msgid "Source: https://core.telegram.org/bots/api#passportelementerrorunspecified"
+msgid ""
+"Source: https://core.telegram.org/bots/api#passportelementerrorunspecified"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#passportelementerrorunspecified"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified.source:1
 #: of
 msgid "Error source, must be *unspecified*"
-msgstr ""
+msgstr "Источник ошибки, должно быть *unspecified*"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified.type:1
 #: of
 msgid "Type of element of the user's Telegram Passport which has the issue"
-msgstr ""
+msgstr "Тип элемента Telegram Passport пользователя, в котором проблема"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified.element_hash:1
 #: of
 msgid "Base64-encoded element hash"
-msgstr ""
+msgstr "Хеш элемента в кодировке Base64"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified.message:1
 #: of
 msgid "Error message"
-msgstr ""
+msgstr "Сообщение об ошибке"

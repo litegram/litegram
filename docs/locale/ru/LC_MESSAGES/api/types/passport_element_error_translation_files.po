@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,14 +18,16 @@ msgstr ""
 
 #: ../../api/types/passport_element_error_translation_files.rst:3
 msgid "PassportElementErrorTranslationFiles"
-msgstr ""
+msgstr "PassportElementErrorTranslationFiles"
 
 #: litegram.types.passport_element_error_translation_files.PassportElementErrorTranslationFiles:1
 #: of
 msgid ""
-"Represents an issue with the translated version of a document. The error "
-"is considered resolved when a file with the document translation change."
+"Represents an issue with the translated version of a document. The error is "
+"considered resolved when a file with the document translation change."
 msgstr ""
+"Представляет проблему с переводом документа. Ошибка считается решённой, когда"
+" файл с переводом документа изменится."
 
 #: litegram.types.passport_element_error_translation_files.PassportElementErrorTranslationFiles:3
 #: of
@@ -33,31 +35,37 @@ msgid ""
 "Source: "
 "https://core.telegram.org/bots/api#passportelementerrortranslationfiles"
 msgstr ""
+"Источник: "
+"https://core.telegram.org/bots/api#passportelementerrortranslationfiles"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_translation_files.PassportElementErrorTranslationFiles.source:1
 #: of
 msgid "Error source, must be *translation_files*"
-msgstr ""
+msgstr "Источник ошибки, должно быть *translation_files*"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_translation_files.PassportElementErrorTranslationFiles.type:1
 #: of
 msgid ""
-"Type of element of the user's Telegram Passport which has the issue, one "
-"of 'passport', 'driver_license', 'identity_card', 'internal_passport', "
+"Type of element of the user's Telegram Passport which has the issue, one of "
+"'passport', 'driver_license', 'identity_card', 'internal_passport', "
 "'utility_bill', 'bank_statement', 'rental_agreement', "
 "'passport_registration', 'temporary_registration'"
 msgstr ""
+"Тип элемента Telegram Passport пользователя, в котором проблема; одно из "
+"значений: 'passport', 'driver_license', 'identity_card', 'internal_passport',"
+" 'utility_bill', 'bank_statement', 'rental_agreement', "
+"'passport_registration', 'temporary_registration'"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_translation_files.PassportElementErrorTranslationFiles.file_hashes:1
 #: of
 msgid "List of base64-encoded file hashes"
-msgstr ""
+msgstr "Список хешей файлов в кодировке Base64"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_translation_files.PassportElementErrorTranslationFiles.message:1
 #: of
 msgid "Error message"
-msgstr ""
+msgstr "Сообщение об ошибке"

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,22 +18,22 @@ msgstr ""
 
 #: ../../api/types/user_profile_photos.rst:3
 msgid "UserProfilePhotos"
-msgstr ""
+msgstr "UserProfilePhotos"
 
 #: litegram.types.user_profile_photos.UserProfilePhotos:1 of
 msgid "This object represent a user's profile pictures."
-msgstr ""
+msgstr "Этот объект представляет фотографии профиля пользователя."
 
 #: litegram.types.user_profile_photos.UserProfilePhotos:3 of
 msgid "Source: https://core.telegram.org/bots/api#userprofilephotos"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#userprofilephotos"
 
 #: ../../docstring
 #: litegram.types.user_profile_photos.UserProfilePhotos.total_count:1 of
 msgid "Total number of profile pictures the target user has"
-msgstr ""
+msgstr "Общее число фотографий профиля у целевого пользователя"
 
-#: ../../docstring litegram.types.user_profile_photos.UserProfilePhotos.photos:1
-#: of
+#: ../../docstring
+#: litegram.types.user_profile_photos.UserProfilePhotos.photos:1 of
 msgid "Requested profile pictures (in up to 4 sizes each)"
-msgstr ""
+msgstr "Запрошенные фотографии профиля (до 4 размеров каждая)"

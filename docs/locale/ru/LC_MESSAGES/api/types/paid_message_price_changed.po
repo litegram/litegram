@@ -5,37 +5,39 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/paid_message_price_changed.rst:3
 msgid "PaidMessagePriceChanged"
-msgstr ""
+msgstr "PaidMessagePriceChanged"
 
 #: litegram.types.paid_message_price_changed.PaidMessagePriceChanged:1 of
 msgid ""
 "Describes a service message about a change in the price of paid messages "
 "within a chat."
 msgstr ""
+"Описывает сервисное сообщение об изменении цены платных сообщений в чате."
 
 #: litegram.types.paid_message_price_changed.PaidMessagePriceChanged:3 of
 msgid "Source: https://core.telegram.org/bots/api#paidmessagepricechanged"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#paidmessagepricechanged"
 
 #: litegram.types.paid_message_price_changed.PaidMessagePriceChanged.paid_message_star_count:1
 #: of
 msgid ""
-"The new number of Telegram Stars that must be paid by non-administrator "
-"users of the supergroup chat for each sent message"
+"The new number of Telegram Stars that must be paid by non-administrator users"
+" of the supergroup chat for each sent message"
 msgstr ""
+"Новое число Telegram Stars, которое обычные пользователи супергруппы должны "
+"платить за каждое отправленное сообщение"

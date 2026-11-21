@@ -5,93 +5,102 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/poll.rst:3
 msgid "Poll"
-msgstr ""
+msgstr "Poll"
 
 #: litegram.types.poll.Poll:1 of
 msgid "This object contains information about a poll."
-msgstr ""
+msgstr "Этот объект содержит информацию об опросе."
 
 #: litegram.types.poll.Poll:3 of
 msgid "Source: https://core.telegram.org/bots/api#poll"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#poll"
 
 #: litegram.types.poll.Poll.id:1 of
 msgid "Unique poll identifier"
-msgstr ""
+msgstr "Уникальный идентификатор опроса"
 
 #: litegram.types.poll.Poll.question:1 of
 msgid "Poll question, 1-300 characters"
-msgstr ""
+msgstr "Вопрос опроса, 1-300 символов"
 
 #: litegram.types.poll.Poll.options:1 of
 msgid "List of poll options"
-msgstr ""
+msgstr "Список вариантов ответа опроса"
 
 #: litegram.types.poll.Poll.total_voter_count:1 of
 msgid "Total number of users that voted in the poll"
-msgstr ""
+msgstr "Общее число проголосовавших в опросе пользователей"
 
 #: litegram.types.poll.Poll.is_closed:1 of
 msgid ":code:`True`, if the poll is closed"
-msgstr ""
+msgstr ":code:`True`, если опрос закрыт"
 
 #: litegram.types.poll.Poll.is_anonymous:1 of
 msgid ":code:`True`, if the poll is anonymous"
-msgstr ""
+msgstr ":code:`True`, если опрос анонимный"
 
 #: litegram.types.poll.Poll.type:1 of
 msgid "Poll type, currently can be 'regular' or 'quiz'"
-msgstr ""
+msgstr "Тип опроса, сейчас может быть 'regular' или 'quiz'"
 
 #: litegram.types.poll.Poll.allows_multiple_answers:1 of
 msgid ":code:`True`, if the poll allows multiple answers"
-msgstr ""
+msgstr ":code:`True`, если опрос допускает несколько вариантов ответа"
 
 #: litegram.types.poll.Poll.question_entities:1 of
 msgid ""
-"*Optional*. Special entities that appear in the *question*. Currently, "
-"only custom emoji entities are allowed in poll questions"
+"*Optional*. Special entities that appear in the *question*. Currently, only "
+"custom emoji entities are allowed in poll questions"
 msgstr ""
+"*Необязательно*. Специальные сущности, встречающиеся в *question*. Сейчас в "
+"вопросах опросов допускаются только сущности с кастомными эмодзи"
 
 #: litegram.types.poll.Poll.explanation:1 of
 msgid ""
-"*Optional*. Text that is shown when a user chooses an incorrect answer or"
-" taps on the lamp icon in a quiz-style poll, 0-200 characters"
+"*Optional*. Text that is shown when a user chooses an incorrect answer or "
+"taps on the lamp icon in a quiz-style poll, 0-200 characters"
 msgstr ""
+"*Необязательно*. Текст, который показывается, когда пользователь выбирает "
+"неправильный ответ или нажимает значок лампочки в опросе в режиме викторины, "
+"0-200 символов"
 
 #: litegram.types.poll.Poll.explanation_entities:1 of
 msgid ""
-"*Optional*. Special entities like usernames, URLs, bot commands, etc. "
-"that appear in the *explanation*"
+"*Optional*. Special entities like usernames, URLs, bot commands, etc. that "
+"appear in the *explanation*"
 msgstr ""
+"*Необязательно*. Специальные сущности, такие как имена пользователей, URL, "
+"команды ботов и т. п., встречающиеся в *explanation*"
 
 #: litegram.types.poll.Poll.open_period:1 of
 msgid ""
-"*Optional*. Amount of time in seconds the poll will be active after "
-"creation"
+"*Optional*. Amount of time in seconds the poll will be active after creation"
 msgstr ""
+"*Необязательно*. Время в секундах, в течение которого опрос будет активен "
+"после создания"
 
 #: litegram.types.poll.Poll.close_date:1 of
 msgid ""
 "*Optional*. Point in time (Unix timestamp) when the poll will be "
 "automatically closed"
 msgstr ""
+"*Необязательно*. Момент времени (Unix timestamp), когда опрос будет "
+"автоматически закрыт"
 
 #: litegram.types.poll.Poll.allows_revoting:1 of
 msgid ":code:`True`, if the poll allows to change the chosen answer options"
@@ -99,25 +108,25 @@ msgstr ":code:`True`, если опрос позволяет изменять в
 
 #: litegram.types.poll.Poll.members_only:1 of
 msgid ""
-":code:`True` if voting is limited to users who have been members of the "
-"chat where the poll was originally sent for more than 24 hours"
+":code:`True` if voting is limited to users who have been members of the chat "
+"where the poll was originally sent for more than 24 hours"
 msgstr ""
-":code:`True`, если голосовать могут только пользователи, состоящие в "
-"чате, где опрос был изначально отправлен, более 24 часов"
+":code:`True`, если голосовать могут только пользователи, состоящие в чате, "
+"где опрос был изначально отправлен, более 24 часов"
 
 #: litegram.types.poll.Poll.country_codes:1 of
 msgid ""
 "*Optional*. A list of two-letter `ISO 3166-1 alpha-2 "
-"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_ country codes "
-"indicating the countries from which users can vote in the poll. The "
-"country code 'FT' is used for users with anonymous numbers. If omitted, "
-"then users from any country can participate in the poll."
+"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_ country codes indicating"
+" the countries from which users can vote in the poll. The country code 'FT' "
+"is used for users with anonymous numbers. If omitted, then users from any "
+"country can participate in the poll."
 msgstr ""
 "*Необязательно*. Список двухбуквенных кодов стран `ISO 3166-1 alpha-2 "
-"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_, жители которых "
-"могут участвовать в опросе. Код страны 'FT' используется для "
-"пользователей с анонимными номерами. Если не задан, в опросе могут "
-"участвовать пользователи из любых стран."
+"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_, жители которых могут "
+"участвовать в опросе. Код страны 'FT' используется для пользователей с "
+"анонимными номерами. Если не задан, в опросе могут участвовать пользователи "
+"из любых стран."
 
 #: litegram.types.poll.Poll.correct_option_ids:1 of
 msgid ""
@@ -126,9 +135,8 @@ msgid ""
 "forwarded) by the bot or to the private chat with the bot."
 msgstr ""
 "*Необязательно*. Массив идентификаторов правильных вариантов ответа "
-"(нумерация с нуля). Доступен только для опросов в режиме викторины, "
-"которые закрыты или были отправлены (не пересланы) ботом либо в личный "
-"чат с ботом."
+"(нумерация с нуля). Доступен только для опросов в режиме викторины, которые "
+"закрыты или были отправлены (не пересланы) ботом либо в личный чат с ботом."
 
 #: litegram.types.poll.Poll.explanation_media:1 of
 msgid "*Optional*. Media added to the quiz explanation"
@@ -144,26 +152,22 @@ msgstr ""
 
 #: litegram.types.poll.Poll.description_entities:1 of
 msgid ""
-"*Optional*. Special entities like usernames, URLs, bot commands, etc. "
-"that appear in the description"
+"*Optional*. Special entities like usernames, URLs, bot commands, etc. that "
+"appear in the description"
 msgstr ""
-"*Необязательно*. Специальные сущности, такие как имена пользователей, "
-"URL, команды ботов и т.д., в описании"
+"*Необязательно*. Специальные сущности, такие как имена пользователей, URL, "
+"команды ботов и т.д., в описании"
 
 #: litegram.types.poll.Poll.media:1 of
 msgid ""
 "*Optional*. Media added to the poll description; for polls inside the "
 ":class:`litegram.types.message.Message` object only"
 msgstr ""
-"*Необязательно*. Медиа, добавленное к описанию опроса; только для опросов"
-" внутри объекта :class:`litegram.types.message.Message`"
+"*Необязательно*. Медиа, добавленное к описанию опроса; только для опросов "
+"внутри объекта :class:`litegram.types.message.Message`"
 
 #~ msgid ""
-#~ "*Optional*. 0-based identifier of the "
-#~ "correct answer option. Available only "
-#~ "for polls in the quiz mode, which"
-#~ " are closed, or was sent (not "
-#~ "forwarded) by the bot or to the"
-#~ " private chat with the bot."
+#~ "*Optional*. 0-based identifier of the correct answer option. Available only "
+#~ "for polls in the quiz mode, which are closed, or was sent (not forwarded) by "
+#~ "the bot or to the private chat with the bot."
 #~ msgstr ""
-

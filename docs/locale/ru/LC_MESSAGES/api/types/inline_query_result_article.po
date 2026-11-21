@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,85 +18,91 @@ msgstr ""
 
 #: ../../api/types/inline_query_result_article.rst:3
 msgid "InlineQueryResultArticle"
-msgstr ""
+msgstr "InlineQueryResultArticle"
 
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle:1 of
 msgid "Represents a link to an article or web page."
-msgstr ""
+msgstr "Представляет ссылку на статью или веб-страницу."
 
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle:3 of
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultarticle"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inlinequeryresultarticle"
 
 #: ../../docstring
-#: litegram.types.inline_query_result_article.InlineQueryResultArticle.type:1 of
+#: litegram.types.inline_query_result_article.InlineQueryResultArticle.type:1
+#: of
 msgid "Type of the result, must be *article*"
-msgstr ""
+msgstr "Тип результата; должно быть *article*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.id:1 of
 msgid "Unique identifier for this result, 1-64 Bytes"
-msgstr ""
+msgstr "Уникальный идентификатор этого результата, 1-64 байта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.title:1
 #: of
 msgid "Title of the result"
-msgstr ""
+msgstr "Название результата"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.input_message_content:1
 #: of
 msgid "Content of the message to be sent"
-msgstr ""
+msgstr "Содержимое отправляемого сообщения"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.reply_markup:1
 #: of
 msgid ""
-"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
-"#inline-keyboards>`_ attached to the message"
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-"
+"keyboards>`_ attached to the message"
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, прикреплённая к"
+" сообщению"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.url:1 of
 msgid "*Optional*. URL of the result"
-msgstr ""
+msgstr "*Необязательно*. URL результата"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.description:1
 #: of
 msgid "*Optional*. Short description of the result"
-msgstr ""
+msgstr "*Необязательно*. Краткое описание результата"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.thumbnail_url:1
 #: of
 msgid "*Optional*. Url of the thumbnail for the result"
-msgstr ""
+msgstr "*Необязательно*. URL превью результата"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.thumbnail_width:1
 #: of
 msgid "*Optional*. Thumbnail width"
-msgstr ""
+msgstr "*Необязательно*. Ширина превью"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.thumbnail_height:1
 #: of
 msgid "*Optional*. Thumbnail height"
-msgstr ""
+msgstr "*Необязательно*. Высота превью"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.hide_url:1
 #: of
 msgid ""
-"*Optional*. Pass :code:`True` if you don't want the URL to be shown in "
-"the message"
+"*Optional*. Pass :code:`True` if you don't want the URL to be shown in the "
+"message"
 msgstr ""
+"*Необязательно*. Передайте :code:`True`, если не хотите показывать URL в "
+"сообщении"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_article.InlineQueryResultArticle.hide_url:3
 #: of
 msgid "https://core.telegram.org/bots/api-changelog#january-1-2025"
-msgstr ""
+msgstr "https://core.telegram.org/bots/api-changelog#january-1-2025"

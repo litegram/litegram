@@ -5,75 +5,73 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/background_type_pattern.rst:3
 msgid "BackgroundTypePattern"
-msgstr ""
+msgstr "BackgroundTypePattern"
 
 #: litegram.types.background_type_pattern.BackgroundTypePattern:1 of
 msgid ""
 "The background is a .PNG or .TGV (gzipped subset of SVG with MIME type "
-"'application/x-tgwallpattern') pattern to be combined with the background"
-" fill chosen by the user."
+"'application/x-tgwallpattern') pattern to be combined with the background "
+"fill chosen by the user."
 msgstr ""
+"Фон — узор в формате .PNG или .TGV (сжатое подмножество SVG с MIME-типом "
+"'application/x-tgwallpattern'), который объединяется с заливкой фона, "
+"выбранной пользователем."
 
 #: litegram.types.background_type_pattern.BackgroundTypePattern:3 of
 msgid "Source: https://core.telegram.org/bots/api#backgroundtypepattern"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#backgroundtypepattern"
 
 #: litegram.types.background_type_pattern.BackgroundTypePattern.type:1 of
 msgid "Type of the background, always 'pattern'"
-msgstr ""
+msgstr "Тип фона, всегда 'pattern'"
 
 #: litegram.types.background_type_pattern.BackgroundTypePattern.document:1 of
 msgid "Document with the pattern"
-msgstr ""
+msgstr "Документ с узором"
 
 #: litegram.types.background_type_pattern.BackgroundTypePattern.fill:1 of
 msgid "The background fill that is combined with the pattern"
-msgstr ""
+msgstr "Заливка фона, объединяемая с узором"
 
 #: litegram.types.background_type_pattern.BackgroundTypePattern.intensity:1 of
 msgid ""
-"Intensity of the pattern when it is shown above the filled background; "
-"0-100"
-msgstr ""
+"Intensity of the pattern when it is shown above the filled background; 0-100"
+msgstr "Интенсивность узора, когда он показан поверх залитого фона; 0-100"
 
 #: litegram.types.background_type_pattern.BackgroundTypePattern.is_inverted:1
 #: of
 msgid ""
-"*Optional*. :code:`True`, if the background fill must be applied only to "
-"the pattern itself. All other pixels are black in this case. For dark "
-"themes only."
+"*Optional*. :code:`True`, if the background fill must be applied only to the "
+"pattern itself. All other pixels are black in this case. For dark themes "
+"only."
 msgstr ""
-"*Необязательно*. :code:`True`, если заливку нужно применять только к "
-"самому узору; остальные пиксели в этом случае чёрные. Только для тёмных "
-"тем."
+"*Необязательно*. :code:`True`, если заливку нужно применять только к самому "
+"узору; остальные пиксели в этом случае чёрные. Только для тёмных тем."
 
 #: litegram.types.background_type_pattern.BackgroundTypePattern.is_moving:1 of
 msgid ""
-"*Optional*. :code:`True`, if the background moves slightly when the "
-"device is tilted"
+"*Optional*. :code:`True`, if the background moves slightly when the device is"
+" tilted"
 msgstr ""
+"*Необязательно*. :code:`True`, если фон слегка смещается при наклоне "
+"устройства"
 
 #~ msgid ""
-#~ "*Optional*. :code:`True`, if the background"
-#~ " fill must be applied only to "
-#~ "the pattern itself. All other pixels "
-#~ "are black in this case. For dark"
-#~ " themes only"
+#~ "*Optional*. :code:`True`, if the background fill must be applied only to the "
+#~ "pattern itself. All other pixels are black in this case. For dark themes only"
 #~ msgstr ""
-

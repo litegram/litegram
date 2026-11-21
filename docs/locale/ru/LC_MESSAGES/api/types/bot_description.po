@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-11 01:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,17 +18,17 @@ msgstr ""
 
 #: ../../api/types/bot_description.rst:3
 msgid "BotDescription"
-msgstr ""
+msgstr "BotDescription"
 
 #: litegram.types.bot_description.BotDescription:1 of
 msgid "This object represents the bot's description."
-msgstr ""
+msgstr "Этот объект представляет описание бота."
 
 #: litegram.types.bot_description.BotDescription:3 of
 msgid "Source: https://core.telegram.org/bots/api#botdescription"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#botdescription"
 
 #: ../../docstring litegram.types.bot_description.BotDescription.description:1
 #: of
 msgid "The bot's description"
-msgstr ""
+msgstr "Описание бота"

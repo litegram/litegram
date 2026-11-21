@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,28 +18,28 @@ msgstr ""
 
 #: ../../api/types/order_info.rst:3
 msgid "OrderInfo"
-msgstr ""
+msgstr "OrderInfo"
 
 #: litegram.types.order_info.OrderInfo:1 of
 msgid "This object represents information about an order."
-msgstr ""
+msgstr "Этот объект представляет информацию о заказе."
 
 #: litegram.types.order_info.OrderInfo:3 of
 msgid "Source: https://core.telegram.org/bots/api#orderinfo"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#orderinfo"
 
 #: ../../docstring litegram.types.order_info.OrderInfo.name:1 of
 msgid "*Optional*. User name"
-msgstr ""
+msgstr "*Необязательно*. Имя пользователя"
 
 #: ../../docstring litegram.types.order_info.OrderInfo.phone_number:1 of
 msgid "*Optional*. User's phone number"
-msgstr ""
+msgstr "*Необязательно*. Номер телефона пользователя"
 
 #: ../../docstring litegram.types.order_info.OrderInfo.email:1 of
 msgid "*Optional*. User email"
-msgstr ""
+msgstr "*Необязательно*. Электронная почта пользователя"
 
 #: ../../docstring litegram.types.order_info.OrderInfo.shipping_address:1 of
 msgid "*Optional*. User shipping address"
-msgstr ""
+msgstr "*Необязательно*. Адрес доставки пользователя"

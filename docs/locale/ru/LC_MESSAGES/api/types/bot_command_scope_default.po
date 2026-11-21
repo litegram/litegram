@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../../api/types/bot_command_scope_default.rst:3
 msgid "BotCommandScopeDefault"
-msgstr ""
+msgstr "BotCommandScopeDefault"
 
 #: litegram.types.bot_command_scope_default.BotCommandScopeDefault:1 of
 msgid ""
@@ -28,12 +28,17 @@ msgid ""
 "<https://core.telegram.org/bots/api#determining-list-of-commands>`_ are "
 "specified for the user."
 msgstr ""
+"Представляет `область действия "
+"<https://core.telegram.org/bots/api#botcommandscope>`_ команд бота по "
+"умолчанию. Команды по умолчанию используются, если для пользователя не заданы"
+" команды с более `узкой областью действия "
+"<https://core.telegram.org/bots/api#determining-list-of-commands>`_."
 
 #: litegram.types.bot_command_scope_default.BotCommandScopeDefault:3 of
 msgid "Source: https://core.telegram.org/bots/api#botcommandscopedefault"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#botcommandscopedefault"
 
 #: ../../docstring
 #: litegram.types.bot_command_scope_default.BotCommandScopeDefault.type:1 of
 msgid "Scope type, must be *default*"
-msgstr ""
+msgstr "Тип области действия, должно быть *default*"

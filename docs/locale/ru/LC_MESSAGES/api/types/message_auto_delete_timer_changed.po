@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,22 +18,26 @@ msgstr ""
 
 #: ../../api/types/message_auto_delete_timer_changed.rst:3
 msgid "MessageAutoDeleteTimerChanged"
-msgstr ""
+msgstr "MessageAutoDeleteTimerChanged"
 
 #: litegram.types.message_auto_delete_timer_changed.MessageAutoDeleteTimerChanged:1
 #: of
 msgid ""
-"This object represents a service message about a change in auto-delete "
-"timer settings."
+"This object represents a service message about a change in auto-delete timer "
+"settings."
 msgstr ""
+"Этот объект представляет сервисное сообщение об изменении настроек таймера "
+"автоудаления."
 
 #: litegram.types.message_auto_delete_timer_changed.MessageAutoDeleteTimerChanged:3
 #: of
-msgid "Source: https://core.telegram.org/bots/api#messageautodeletetimerchanged"
+msgid ""
+"Source: https://core.telegram.org/bots/api#messageautodeletetimerchanged"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#messageautodeletetimerchanged"
 
 #: ../../docstring
 #: litegram.types.message_auto_delete_timer_changed.MessageAutoDeleteTimerChanged.message_auto_delete_time:1
 #: of
 msgid "New auto-delete time for messages in the chat; in seconds"
-msgstr ""
+msgstr "Новое время автоудаления сообщений в чате; в секундах"

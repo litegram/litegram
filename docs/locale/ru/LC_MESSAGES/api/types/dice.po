@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,22 +18,26 @@ msgstr ""
 
 #: ../../api/types/dice.rst:3
 msgid "Dice"
-msgstr ""
+msgstr "Dice"
 
 #: litegram.types.dice.Dice:1 of
 msgid "This object represents an animated emoji that displays a random value."
 msgstr ""
+"Этот объект представляет анимированный эмодзи, отображающий случайное "
+"значение."
 
 #: litegram.types.dice.Dice:3 of
 msgid "Source: https://core.telegram.org/bots/api#dice"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#dice"
 
 #: ../../docstring litegram.types.dice.Dice.emoji:1 of
 msgid "Emoji on which the dice throw animation is based"
-msgstr ""
+msgstr "Эмодзи, на котором основана анимация броска кубика"
 
 #: ../../docstring litegram.types.dice.Dice.value:1 of
 msgid ""
-"Value of the dice, 1-6 for '🎲', '🎯' and '🎳' base emoji, 1-5 for '🏀' and "
-"'⚽' base emoji, 1-64 for '🎰' base emoji"
+"Value of the dice, 1-6 for '🎲', '🎯' and '🎳' base emoji, 1-5 for '🏀' and '⚽' "
+"base emoji, 1-64 for '🎰' base emoji"
 msgstr ""
+"Значение кубика: 1-6 для базовых эмодзи '🎲', '🎯' и '🎳', 1-5 для '🏀' и '⚽', "
+"1-64 для '🎰'"

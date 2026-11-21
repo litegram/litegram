@@ -5,71 +5,75 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/link_preview_options.rst:3
 msgid "LinkPreviewOptions"
-msgstr ""
+msgstr "LinkPreviewOptions"
 
 #: litegram.types.link_preview_options.LinkPreviewOptions:1 of
 msgid "Describes the options used for link preview generation."
-msgstr ""
+msgstr "Описывает настройки, используемые для генерации предпросмотра ссылок."
 
 #: litegram.types.link_preview_options.LinkPreviewOptions:3 of
 msgid "Source: https://core.telegram.org/bots/api#linkpreviewoptions"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#linkpreviewoptions"
 
 #: litegram.types.link_preview_options.LinkPreviewOptions.is_disabled:1 of
 msgid "*Optional*. :code:`True`, if the link preview is disabled"
-msgstr ""
+msgstr "*Необязательно*. :code:`True`, если предпросмотр ссылки отключён"
 
 #: litegram.types.link_preview_options.LinkPreviewOptions.url:1 of
 msgid ""
-"*Optional*. URL to use for the link preview. If empty, then the first URL"
-" found in the message text will be used."
+"*Optional*. URL to use for the link preview. If empty, then the first URL "
+"found in the message text will be used."
 msgstr ""
-"*Необязательно*. URL для предпросмотра ссылки. Если пусто, будет "
-"использован первый URL, найденный в тексте сообщения."
+"*Необязательно*. URL для предпросмотра ссылки. Если пусто, будет использован "
+"первый URL, найденный в тексте сообщения."
 
 #: litegram.types.link_preview_options.LinkPreviewOptions.prefer_small_media:1
 #: of
 msgid ""
-"*Optional*. :code:`True`, if the media in the link preview is supposed to"
-" be shrunk; ignored if the URL isn't explicitly specified or media size "
-"change isn't supported for the preview"
+"*Optional*. :code:`True`, if the media in the link preview is supposed to be "
+"shrunk; ignored if the URL isn't explicitly specified or media size change "
+"isn't supported for the preview"
 msgstr ""
+"*Необязательно*. :code:`True`, если медиа в предпросмотре ссылки должно быть "
+"уменьшено; игнорируется, если URL не указан явно или изменение размера медиа "
+"не поддерживается для предпросмотра"
 
 #: litegram.types.link_preview_options.LinkPreviewOptions.prefer_large_media:1
 #: of
 msgid ""
-"*Optional*. :code:`True`, if the media in the link preview is supposed to"
-" be enlarged; ignored if the URL isn't explicitly specified or media size"
-" change isn't supported for the preview"
+"*Optional*. :code:`True`, if the media in the link preview is supposed to be "
+"enlarged; ignored if the URL isn't explicitly specified or media size change "
+"isn't supported for the preview"
 msgstr ""
+"*Необязательно*. :code:`True`, если медиа в предпросмотре ссылки должно быть "
+"увеличено; игнорируется, если URL не указан явно или изменение размера медиа "
+"не поддерживается для предпросмотра"
 
 #: litegram.types.link_preview_options.LinkPreviewOptions.show_above_text:1 of
 msgid ""
-"*Optional*. :code:`True`, if the link preview must be shown above the "
-"message text; otherwise, the link preview will be shown below the message"
-" text"
+"*Optional*. :code:`True`, if the link preview must be shown above the message"
+" text; otherwise, the link preview will be shown below the message text"
 msgstr ""
+"*Необязательно*. :code:`True`, если предпросмотр ссылки нужно показать над "
+"текстом сообщения; в противном случае предпросмотр будет показан под текстом "
+"сообщения"
 
 #~ msgid ""
-#~ "*Optional*. URL to use for the "
-#~ "link preview. If empty, then the "
-#~ "first URL found in the message "
-#~ "text will be used"
+#~ "*Optional*. URL to use for the link preview. If empty, then the first URL "
+#~ "found in the message text will be used"
 #~ msgstr ""
-

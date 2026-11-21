@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,23 +18,27 @@ msgstr ""
 
 #: ../../api/types/bot_command_scope_all_private_chats.rst:3
 msgid "BotCommandScopeAllPrivateChats"
-msgstr ""
+msgstr "BotCommandScopeAllPrivateChats"
 
 #: litegram.types.bot_command_scope_all_private_chats.BotCommandScopeAllPrivateChats:1
 #: of
 msgid ""
-"Represents the `scope "
-"<https://core.telegram.org/bots/api#botcommandscope>`_ of bot commands, "
-"covering all private chats."
+"Represents the `scope <https://core.telegram.org/bots/api#botcommandscope>`_ "
+"of bot commands, covering all private chats."
 msgstr ""
+"Представляет `область действия "
+"<https://core.telegram.org/bots/api#botcommandscope>`_ команд бота, "
+"охватывающую все личные чаты."
 
 #: litegram.types.bot_command_scope_all_private_chats.BotCommandScopeAllPrivateChats:3
 #: of
-msgid "Source: https://core.telegram.org/bots/api#botcommandscopeallprivatechats"
+msgid ""
+"Source: https://core.telegram.org/bots/api#botcommandscopeallprivatechats"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#botcommandscopeallprivatechats"
 
 #: ../../docstring
 #: litegram.types.bot_command_scope_all_private_chats.BotCommandScopeAllPrivateChats.type:1
 #: of
 msgid "Scope type, must be *all_private_chats*"
-msgstr ""
+msgstr "Тип области действия, должно быть *all_private_chats*"

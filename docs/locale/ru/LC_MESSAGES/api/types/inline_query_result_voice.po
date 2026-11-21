@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,81 +18,95 @@ msgstr ""
 
 #: ../../api/types/inline_query_result_voice.rst:3
 msgid "InlineQueryResultVoice"
-msgstr ""
+msgstr "InlineQueryResultVoice"
 
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice:1 of
 msgid ""
 "Represents a link to a voice recording in an .OGG container encoded with "
 "OPUS. By default, this voice recording will be sent by the user. "
-"Alternatively, you can use *input_message_content* to send a message with"
-" the specified content instead of the the voice message."
+"Alternatively, you can use *input_message_content* to send a message with the"
+" specified content instead of the the voice message."
 msgstr ""
+"Представляет ссылку на голосовую запись в контейнере .OGG, закодированную "
+"кодеком OPUS. По умолчанию эта голосовая запись будет отправлена "
+"пользователем. В качестве альтернативы можно использовать "
+"*input_message_content*, чтобы отправить сообщение с указанным содержимым "
+"вместо голосового сообщения."
 
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice:3 of
 msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultvoice"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inlinequeryresultvoice"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.type:1 of
 msgid "Type of the result, must be *voice*"
-msgstr ""
+msgstr "Тип результата; должно быть *voice*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.id:1 of
 msgid "Unique identifier for this result, 1-64 bytes"
-msgstr ""
+msgstr "Уникальный идентификатор этого результата, 1-64 байта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.voice_url:1
 #: of
 msgid "A valid URL for the voice recording"
-msgstr ""
+msgstr "Корректный URL голосовой записи"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.title:1 of
 msgid "Recording title"
-msgstr ""
+msgstr "Название записи"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.caption:1 of
 msgid "*Optional*. Caption, 0-1024 characters after entities parsing"
-msgstr ""
+msgstr "*Необязательно*. Подпись, 0-1024 символа после разбора сущностей"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.parse_mode:1
 #: of
 msgid ""
 "*Optional*. Mode for parsing entities in the voice message caption. See "
-"`formatting options <https://core.telegram.org/bots/api#formatting-"
-"options>`_ for more details."
+"`formatting options <https://core.telegram.org/bots/api#formatting-options>`_"
+" for more details."
 msgstr ""
+"*Необязательно*. Режим разбора сущностей в подписи голосового сообщения. "
+"Подробнее см. `варианты форматирования "
+"<https://core.telegram.org/bots/api#formatting-options>`_."
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.caption_entities:1
 #: of
 msgid ""
-"*Optional*. List of special entities that appear in the caption, which "
-"can be specified instead of *parse_mode*"
+"*Optional*. List of special entities that appear in the caption, which can be"
+" specified instead of *parse_mode*"
 msgstr ""
+"*Необязательно*. Список специальных сущностей в подписи; можно указать вместо"
+" *parse_mode*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.voice_duration:1
 #: of
 msgid "*Optional*. Recording duration in seconds"
-msgstr ""
+msgstr "*Необязательно*. Длительность записи в секундах"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.reply_markup:1
 #: of
 msgid ""
-"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
-"#inline-keyboards>`_ attached to the message"
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-"
+"keyboards>`_ attached to the message"
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, прикреплённая к"
+" сообщению"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_voice.InlineQueryResultVoice.input_message_content:1
 #: of
 msgid ""
-"*Optional*. Content of the message to be sent instead of the voice "
-"recording"
+"*Optional*. Content of the message to be sent instead of the voice recording"
 msgstr ""
+"*Необязательно*. Содержимое сообщения, которое будет отправлено вместо "
+"голосового сообщения"

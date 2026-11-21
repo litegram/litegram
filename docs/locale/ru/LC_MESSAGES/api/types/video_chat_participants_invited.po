@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,22 +18,25 @@ msgstr ""
 
 #: ../../api/types/video_chat_participants_invited.rst:3
 msgid "VideoChatParticipantsInvited"
-msgstr ""
+msgstr "VideoChatParticipantsInvited"
 
 #: litegram.types.video_chat_participants_invited.VideoChatParticipantsInvited:1
 #: of
 msgid ""
-"This object represents a service message about new members invited to a "
-"video chat."
+"This object represents a service message about new members invited to a video"
+" chat."
 msgstr ""
+"Этот объект представляет сервисное сообщение о приглашении новых участников в"
+" видеочат."
 
 #: litegram.types.video_chat_participants_invited.VideoChatParticipantsInvited:3
 #: of
 msgid "Source: https://core.telegram.org/bots/api#videochatparticipantsinvited"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#videochatparticipantsinvited"
 
 #: ../../docstring
 #: litegram.types.video_chat_participants_invited.VideoChatParticipantsInvited.users:1
 #: of
 msgid "New members that were invited to the video chat"
-msgstr ""
+msgstr "Новые участники, приглашённые в видеочат"

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-16 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,15 +18,15 @@ msgstr ""
 
 #: ../../api/types/shipping_address.rst:3
 msgid "ShippingAddress"
-msgstr ""
+msgstr "ShippingAddress"
 
 #: litegram.types.shipping_address.ShippingAddress:1 of
 msgid "This object represents a shipping address."
-msgstr ""
+msgstr "Этот объект представляет адрес доставки."
 
 #: litegram.types.shipping_address.ShippingAddress:3 of
 msgid "Source: https://core.telegram.org/bots/api#shippingaddress"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#shippingaddress"
 
 #: ../../docstring
 #: litegram.types.shipping_address.ShippingAddress.country_code:1 of
@@ -34,26 +34,28 @@ msgid ""
 "Two-letter `ISO 3166-1 alpha-2 "
 "<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_ country code"
 msgstr ""
+"Двухбуквенный код страны `ISO 3166-1 alpha-2 "
+"<https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_"
 
 #: ../../docstring litegram.types.shipping_address.ShippingAddress.state:1 of
 msgid "State, if applicable"
-msgstr ""
+msgstr "Штат, если применимо"
 
 #: ../../docstring litegram.types.shipping_address.ShippingAddress.city:1 of
 msgid "City"
-msgstr ""
+msgstr "Город"
 
 #: ../../docstring
 #: litegram.types.shipping_address.ShippingAddress.street_line1:1 of
 msgid "First line for the address"
-msgstr ""
+msgstr "Первая строка адреса"
 
 #: ../../docstring
 #: litegram.types.shipping_address.ShippingAddress.street_line2:1 of
 msgid "Second line for the address"
-msgstr ""
+msgstr "Вторая строка адреса"
 
 #: ../../docstring litegram.types.shipping_address.ShippingAddress.post_code:1
 #: of
 msgid "Address post code"
-msgstr ""
+msgstr "Почтовый индекс адреса"

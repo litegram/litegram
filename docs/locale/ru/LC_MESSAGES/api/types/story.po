@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,20 +18,20 @@ msgstr ""
 
 #: ../../api/types/story.rst:3
 msgid "Story"
-msgstr ""
+msgstr "Story"
 
 #: litegram.types.story.Story:1 of
 msgid "This object represents a story."
-msgstr ""
+msgstr "Этот объект представляет сторис."
 
 #: litegram.types.story.Story:3 of
 msgid "Source: https://core.telegram.org/bots/api#story"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#story"
 
 #: ../../docstring litegram.types.story.Story.chat:1 of
 msgid "Chat that posted the story"
-msgstr ""
+msgstr "Чат, опубликовавший сторис"
 
 #: ../../docstring litegram.types.story.Story.id:1 of
 msgid "Unique identifier for the story in the chat"
-msgstr ""
+msgstr "Уникальный идентификатор сторис в чате"

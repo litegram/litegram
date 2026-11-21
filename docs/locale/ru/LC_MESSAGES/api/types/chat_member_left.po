@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,23 +18,25 @@ msgstr ""
 
 #: ../../api/types/chat_member_left.rst:3
 msgid "ChatMemberLeft"
-msgstr ""
+msgstr "ChatMemberLeft"
 
 #: litegram.types.chat_member_left.ChatMemberLeft:1 of
 msgid ""
-"Represents a `chat member "
-"<https://core.telegram.org/bots/api#chatmember>`_ that isn't currently a "
-"member of the chat, but may join it themselves."
+"Represents a `chat member <https://core.telegram.org/bots/api#chatmember>`_ "
+"that isn't currently a member of the chat, but may join it themselves."
 msgstr ""
+"Представляет `участника чата "
+"<https://core.telegram.org/bots/api#chatmember>`_, который сейчас не является"
+" участником чата, но может вступить в него сам."
 
 #: litegram.types.chat_member_left.ChatMemberLeft:3 of
 msgid "Source: https://core.telegram.org/bots/api#chatmemberleft"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#chatmemberleft"
 
 #: ../../docstring litegram.types.chat_member_left.ChatMemberLeft.status:1 of
 msgid "The member's status in the chat, always 'left'"
-msgstr ""
+msgstr "Статус участника в чате, всегда 'left'"
 
 #: ../../docstring litegram.types.chat_member_left.ChatMemberLeft.user:1 of
 msgid "Information about the user"
-msgstr ""
+msgstr "Информация о пользователе"

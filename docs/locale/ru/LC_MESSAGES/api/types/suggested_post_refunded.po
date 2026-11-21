@@ -5,44 +5,51 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/suggested_post_refunded.rst:3
 msgid "SuggestedPostRefunded"
-msgstr ""
+msgstr "SuggestedPostRefunded"
 
 #: litegram.types.suggested_post_refunded.SuggestedPostRefunded:1 of
-msgid "Describes a service message about a payment refund for a suggested post."
+msgid ""
+"Describes a service message about a payment refund for a suggested post."
 msgstr ""
+"Описывает сервисное сообщение о возврате оплаты за предлагаемую публикацию."
 
 #: litegram.types.suggested_post_refunded.SuggestedPostRefunded:3 of
 msgid "Source: https://core.telegram.org/bots/api#suggestedpostrefunded"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#suggestedpostrefunded"
 
 #: litegram.types.suggested_post_refunded.SuggestedPostRefunded.reason:1 of
 msgid ""
 "Reason for the refund. Currently, one of 'post_deleted' if the post was "
-"deleted within 24 hours of being posted or removed from scheduled "
-"messages without being posted, or 'payment_refunded' if the payer "
-"refunded their payment."
+"deleted within 24 hours of being posted or removed from scheduled messages "
+"without being posted, or 'payment_refunded' if the payer refunded their "
+"payment."
 msgstr ""
+"Причина возврата. Сейчас одно из значений: 'post_deleted' — публикация "
+"удалена в течение 24 часов после публикации или убрана из отложенных без "
+"публикации; 'payment_refunded' — плательщик оформил возврат оплаты."
 
 #: litegram.types.suggested_post_refunded.SuggestedPostRefunded.suggested_post_message:1
 #: of
 msgid ""
 "*Optional*. Message containing the suggested post. Note that the "
-":class:`litegram.types.message.Message` object in this field will not "
-"contain the *reply_to_message* field even if it itself is a reply."
+":class:`litegram.types.message.Message` object in this field will not contain"
+" the *reply_to_message* field even if it itself is a reply."
 msgstr ""
+"*Необязательно*. Сообщение, содержащее предлагаемую публикацию. Обратите "
+"внимание: объект :class:`litegram.types.message.Message` в этом поле не "
+"содержит поля *reply_to_message*, даже если сам является ответом."

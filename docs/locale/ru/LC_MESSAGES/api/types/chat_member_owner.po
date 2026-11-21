@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,33 +18,35 @@ msgstr ""
 
 #: ../../api/types/chat_member_owner.rst:3
 msgid "ChatMemberOwner"
-msgstr ""
+msgstr "ChatMemberOwner"
 
 #: litegram.types.chat_member_owner.ChatMemberOwner:1 of
 msgid ""
-"Represents a `chat member "
-"<https://core.telegram.org/bots/api#chatmember>`_ that owns the chat and "
-"has all administrator privileges."
+"Represents a `chat member <https://core.telegram.org/bots/api#chatmember>`_ "
+"that owns the chat and has all administrator privileges."
 msgstr ""
+"Представляет `участника чата "
+"<https://core.telegram.org/bots/api#chatmember>`_, владеющего чатом и "
+"имеющего все права администратора."
 
 #: litegram.types.chat_member_owner.ChatMemberOwner:3 of
 msgid "Source: https://core.telegram.org/bots/api#chatmemberowner"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#chatmemberowner"
 
 #: ../../docstring litegram.types.chat_member_owner.ChatMemberOwner.status:1 of
 msgid "The member's status in the chat, always 'creator'"
-msgstr ""
+msgstr "Статус участника в чате, всегда 'creator'"
 
 #: ../../docstring litegram.types.chat_member_owner.ChatMemberOwner.user:1 of
 msgid "Information about the user"
-msgstr ""
+msgstr "Информация о пользователе"
 
 #: ../../docstring
 #: litegram.types.chat_member_owner.ChatMemberOwner.is_anonymous:1 of
 msgid ":code:`True`, if the user's presence in the chat is hidden"
-msgstr ""
+msgstr ":code:`True`, если присутствие пользователя в чате скрыто"
 
 #: ../../docstring
 #: litegram.types.chat_member_owner.ChatMemberOwner.custom_title:1 of
 msgid "*Optional*. Custom title for this user"
-msgstr ""
+msgstr "*Необязательно*. Пользовательский титул для этого пользователя"

@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,32 +18,35 @@ msgstr ""
 
 #: ../../api/types/pre_checkout_query.rst:3
 msgid "PreCheckoutQuery"
-msgstr ""
+msgstr "PreCheckoutQuery"
 
 #: litegram.types.pre_checkout_query.PreCheckoutQuery:1 of
 msgid "This object contains information about an incoming pre-checkout query."
-msgstr ""
+msgstr "Этот объект содержит информацию о входящем pre-checkout запросе."
 
 #: litegram.types.pre_checkout_query.PreCheckoutQuery:3 of
 msgid "Source: https://core.telegram.org/bots/api#precheckoutquery"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#precheckoutquery"
 
 #: ../../docstring litegram.types.pre_checkout_query.PreCheckoutQuery.id:1 of
 msgid "Unique query identifier"
-msgstr ""
+msgstr "Уникальный идентификатор запроса"
 
 #: ../../docstring
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.from_user:1 of
 msgid "User who sent the query"
-msgstr ""
+msgstr "Пользователь, отправивший запрос"
 
-#: ../../docstring litegram.types.pre_checkout_query.PreCheckoutQuery.currency:1
-#: of
+#: ../../docstring
+#: litegram.types.pre_checkout_query.PreCheckoutQuery.currency:1 of
 msgid ""
-"Three-letter ISO 4217 `currency <https://core.telegram.org/bots/payments"
-"#supported-currencies>`_ code, or 'XTR' for payments in `Telegram Stars "
-"<https://t.me/BotNews/90>`_"
+"Three-letter ISO 4217 `currency "
+"<https://core.telegram.org/bots/payments#supported-currencies>`_ code, or "
+"'XTR' for payments in `Telegram Stars <https://t.me/BotNews/90>`_"
 msgstr ""
+"Трёхбуквенный код `валюты <https://core.telegram.org/bots/payments#supported-"
+"currencies>`_ по ISO 4217 или 'XTR' для платежей в `Telegram Stars "
+"<https://t.me/BotNews/90>`_"
 
 #: ../../docstring
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.total_amount:1 of
@@ -51,78 +54,103 @@ msgid ""
 "Total price in the *smallest units* of the currency (integer, **not** "
 "float/double). For example, for a price of :code:`US$ 1.45` pass "
 ":code:`amount = 145`. See the *exp* parameter in `currencies.json "
-"<https://core.telegram.org/bots/payments/currencies.json>`_, it shows the"
-" number of digits past the decimal point for each currency (2 for the "
-"majority of currencies)."
+"<https://core.telegram.org/bots/payments/currencies.json>`_, it shows the "
+"number of digits past the decimal point for each currency (2 for the majority"
+" of currencies)."
 msgstr ""
+"Итоговая цена в *минимальных единицах* валюты (целое число, **не** "
+"float/double). Например, для цены :code:`US$ 1.45` передайте :code:`amount = "
+"145`. См. параметр *exp* в `currencies.json "
+"<https://core.telegram.org/bots/payments/currencies.json>`_ — он показывает "
+"число знаков после запятой для каждой валюты (2 для большинства валют)."
 
 #: ../../docstring
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.invoice_payload:1 of
 msgid "Bot-specified invoice payload"
-msgstr ""
+msgstr "Заданный ботом payload счёта"
 
 #: ../../docstring
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.shipping_option_id:1 of
 msgid "*Optional*. Identifier of the shipping option chosen by the user"
 msgstr ""
+"*Необязательно*. Идентификатор выбранного пользователем варианта доставки"
 
 #: ../../docstring
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.order_info:1 of
 msgid "*Optional*. Order information provided by the user"
-msgstr ""
+msgstr "*Необязательно*. Информация о заказе, предоставленная пользователем"
 
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.answer:1 of
 msgid ""
 "Shortcut for method "
-":class:`litegram.methods.answer_pre_checkout_query.AnswerPreCheckoutQuery`"
-" will automatically fill method attributes:"
+":class:`litegram.methods.answer_pre_checkout_query.AnswerPreCheckoutQuery` "
+"will automatically fill method attributes:"
 msgstr ""
+"Сокращение для метода "
+":class:`litegram.methods.answer_pre_checkout_query.AnswerPreCheckoutQuery` — "
+"автоматически заполнит атрибуты метода:"
 
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.answer:4 of
 msgid ":code:`pre_checkout_query_id`"
-msgstr ""
+msgstr ":code:`pre_checkout_query_id`"
 
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.answer:6 of
 msgid ""
-"Once the user has confirmed their payment and shipping details, the Bot "
-"API sends the final confirmation in the form of an "
-":class:`litegram.types.update.Update` with the field *pre_checkout_query*."
-" Use this method to respond to such pre-checkout queries. On success, "
-":code:`True` is returned. **Note:** The Bot API must receive an answer "
-"within 10 seconds after the pre-checkout query was sent."
+"Once the user has confirmed their payment and shipping details, the Bot API "
+"sends the final confirmation in the form of an "
+":class:`litegram.types.update.Update` with the field *pre_checkout_query*. "
+"Use this method to respond to such pre-checkout queries. On success, "
+":code:`True` is returned. **Note:** The Bot API must receive an answer within"
+" 10 seconds after the pre-checkout query was sent."
 msgstr ""
+"Когда пользователь подтвердит оплату и данные доставки, Bot API отправит "
+"финальное подтверждение в виде :class:`litegram.types.update.Update` с полем "
+"*pre_checkout_query*. Используйте этот метод, чтобы ответить на такие pre-"
+"checkout запросы. При успехе возвращается :code:`True`. **Примечание:** Bot "
+"API должен получить ответ в течение 10 секунд после отправки pre-checkout "
+"запроса."
 
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.answer:8 of
 msgid "Source: https://core.telegram.org/bots/api#answerprecheckoutquery"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#answerprecheckoutquery"
 
 #: ../../api/types/pre_checkout_query.rst
 msgid "Parameters"
-msgstr ""
+msgstr "Параметры"
 
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.answer:10 of
 msgid ""
-"Specify :code:`True` if everything is alright (goods are available, etc.)"
-" and the bot is ready to proceed with the order. Use :code:`False` if "
-"there are any problems."
+"Specify :code:`True` if everything is alright (goods are available, etc.) and"
+" the bot is ready to proceed with the order. Use :code:`False` if there are "
+"any problems."
 msgstr ""
+"Укажите :code:`True`, если всё в порядке (товары есть в наличии и т. п.) и "
+"бот готов продолжить оформление заказа. Используйте :code:`False`, если есть "
+"какие-либо проблемы."
 
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.answer:11 of
 msgid ""
-"Required if *ok* is :code:`False`. Error message in human readable form "
-"that explains the reason for failure to proceed with the checkout (e.g. "
-"\"Sorry, somebody just bought the last of our amazing black T-shirts "
-"while you were busy filling out your payment details. Please choose a "
-"different color or garment!\"). Telegram will display this message to the"
-" user."
+"Required if *ok* is :code:`False`. Error message in human readable form that "
+"explains the reason for failure to proceed with the checkout (e.g. \"Sorry, "
+"somebody just bought the last of our amazing black T-shirts while you were "
+"busy filling out your payment details. Please choose a different color or "
+"garment!\"). Telegram will display this message to the user."
 msgstr ""
+"Обязателен, если *ok* равно :code:`False`. Сообщение об ошибке в "
+"удобочитаемом виде, объясняющее причину невозможности продолжить оформление "
+"заказа (например: \"Извините, кто-то только что купил последнюю из наших "
+"прекрасных чёрных футболок, пока вы заполняли данные оплаты. Пожалуйста, "
+"выберите другой цвет или одежду!\"). Telegram покажет это сообщение "
+"пользователю."
 
 #: ../../api/types/pre_checkout_query.rst
 msgid "Returns"
-msgstr ""
+msgstr "Возвращает"
 
 #: litegram.types.pre_checkout_query.PreCheckoutQuery.answer:12 of
 msgid ""
 "instance of method "
 ":class:`litegram.methods.answer_pre_checkout_query.AnswerPreCheckoutQuery`"
 msgstr ""
+"экземпляр метода "
+":class:`litegram.methods.answer_pre_checkout_query.AnswerPreCheckoutQuery`"

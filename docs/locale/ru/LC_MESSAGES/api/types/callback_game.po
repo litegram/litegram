@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,14 +18,16 @@ msgstr ""
 
 #: ../../api/types/callback_game.rst:3
 msgid "CallbackGame"
-msgstr ""
+msgstr "CallbackGame"
 
 #: litegram.types.callback_game.CallbackGame:1 of
 msgid ""
 "A placeholder, currently holds no information. Use `BotFather "
 "<https://t.me/botfather>`_ to set up your game."
 msgstr ""
+"Заполнитель, сейчас не содержит информации. Используйте `BotFather "
+"<https://t.me/botfather>`_, чтобы настроить игру."
 
 #: litegram.types.callback_game.CallbackGame:3 of
 msgid "Source: https://core.telegram.org/bots/api#callbackgame"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#callbackgame"

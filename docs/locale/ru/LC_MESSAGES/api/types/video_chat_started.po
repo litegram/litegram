@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,14 +18,16 @@ msgstr ""
 
 #: ../../api/types/video_chat_started.rst:3
 msgid "VideoChatStarted"
-msgstr ""
+msgstr "VideoChatStarted"
 
 #: litegram.types.video_chat_started.VideoChatStarted:1 of
 msgid ""
-"This object represents a service message about a video chat started in "
-"the chat. Currently holds no information."
+"This object represents a service message about a video chat started in the "
+"chat. Currently holds no information."
 msgstr ""
+"Этот объект представляет сервисное сообщение о начале видеочата в чате. "
+"Сейчас не содержит информации."
 
 #: litegram.types.video_chat_started.VideoChatStarted:3 of
 msgid "Source: https://core.telegram.org/bots/api#videochatstarted"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#videochatstarted"

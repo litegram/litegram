@@ -5,42 +5,43 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/unique_gift_backdrop.rst:3
 msgid "UniqueGiftBackdrop"
-msgstr ""
+msgstr "UniqueGiftBackdrop"
 
 #: litegram.types.unique_gift_backdrop.UniqueGiftBackdrop:1 of
 msgid "This object describes the backdrop of a unique gift."
-msgstr ""
+msgstr "Этот объект описывает подложку уникального подарка."
 
 #: litegram.types.unique_gift_backdrop.UniqueGiftBackdrop:3 of
 msgid "Source: https://core.telegram.org/bots/api#uniquegiftbackdrop"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#uniquegiftbackdrop"
 
 #: litegram.types.unique_gift_backdrop.UniqueGiftBackdrop.name:1 of
 msgid "Name of the backdrop"
-msgstr ""
+msgstr "Название подложки"
 
 #: litegram.types.unique_gift_backdrop.UniqueGiftBackdrop.colors:1 of
 msgid "Colors of the backdrop"
-msgstr ""
+msgstr "Цвета подложки"
 
 #: litegram.types.unique_gift_backdrop.UniqueGiftBackdrop.rarity_per_mille:1 of
 msgid ""
-"The number of unique gifts that receive this backdrop for every 1000 "
-"gifts upgraded"
+"The number of unique gifts that receive this backdrop for every 1000 gifts "
+"upgraded"
 msgstr ""
+"Число уникальных подарков, получающих эту подложку на каждые 1000 улучшенных "
+"подарков"

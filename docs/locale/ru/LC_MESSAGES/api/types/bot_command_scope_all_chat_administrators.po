@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,15 +18,17 @@ msgstr ""
 
 #: ../../api/types/bot_command_scope_all_chat_administrators.rst:3
 msgid "BotCommandScopeAllChatAdministrators"
-msgstr ""
+msgstr "BotCommandScopeAllChatAdministrators"
 
 #: litegram.types.bot_command_scope_all_chat_administrators.BotCommandScopeAllChatAdministrators:1
 #: of
 msgid ""
-"Represents the `scope "
-"<https://core.telegram.org/bots/api#botcommandscope>`_ of bot commands, "
-"covering all group and supergroup chat administrators."
+"Represents the `scope <https://core.telegram.org/bots/api#botcommandscope>`_ "
+"of bot commands, covering all group and supergroup chat administrators."
 msgstr ""
+"Представляет `область действия "
+"<https://core.telegram.org/bots/api#botcommandscope>`_ команд бота, "
+"охватывающую всех администраторов групп и супергрупп."
 
 #: litegram.types.bot_command_scope_all_chat_administrators.BotCommandScopeAllChatAdministrators:3
 #: of
@@ -34,9 +36,11 @@ msgid ""
 "Source: "
 "https://core.telegram.org/bots/api#botcommandscopeallchatadministrators"
 msgstr ""
+"Источник: "
+"https://core.telegram.org/bots/api#botcommandscopeallchatadministrators"
 
 #: ../../docstring
 #: litegram.types.bot_command_scope_all_chat_administrators.BotCommandScopeAllChatAdministrators.type:1
 #: of
 msgid "Scope type, must be *all_chat_administrators*"
-msgstr ""
+msgstr "Тип области действия, должно быть *all_chat_administrators*"

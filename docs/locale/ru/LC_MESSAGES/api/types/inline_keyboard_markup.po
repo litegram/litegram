@@ -5,52 +5,52 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/inline_keyboard_markup.rst:3
 msgid "InlineKeyboardMarkup"
-msgstr ""
+msgstr "InlineKeyboardMarkup"
 
 #: litegram.types.inline_keyboard_markup.InlineKeyboardMarkup:1 of
 msgid ""
 "This object represents an `inline keyboard "
-"<https://core.telegram.org/bots/features#inline-keyboards>`_ that appears"
-" right next to the message it belongs to."
+"<https://core.telegram.org/bots/features#inline-keyboards>`_ that appears "
+"right next to the message it belongs to."
 msgstr ""
+"Этот объект представляет `inline-клавиатуру "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, которая "
+"отображается непосредственно рядом с сообщением, к которому относится."
 
 #: litegram.types.inline_keyboard_markup.InlineKeyboardMarkup:3 of
 msgid "Source: https://core.telegram.org/bots/api#inlinekeyboardmarkup"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inlinekeyboardmarkup"
 
 #: litegram.types.inline_keyboard_markup.InlineKeyboardMarkup.inline_keyboard:1
 #: of
 msgid ""
 "Array of button rows, each represented by an Array of "
-":class:`litegram.types.inline_keyboard_button.InlineKeyboardButton` "
-"objects"
+":class:`litegram.types.inline_keyboard_button.InlineKeyboardButton` objects"
 msgstr ""
+"Массив рядов кнопок, каждый представлен массивом объектов "
+":class:`litegram.types.inline_keyboard_button.InlineKeyboardButton`"
 
 #: litegram.types.inline_keyboard_markup.InlineKeyboardMarkup.force_reply:1 of
 msgid ""
-"*Optional*. Pass :code:`True` if the reply interface must be shown to the"
-" user, as if they had manually selected the bot's message and tapped "
-"'Reply'. The value of the field can't be changed when the inline keyboard"
-" is edited."
+"*Optional*. Pass :code:`True` if the reply interface must be shown to the "
+"user, as if they had manually selected the bot's message and tapped 'Reply'. "
+"The value of the field can't be changed when the inline keyboard is edited."
 msgstr ""
 "*Необязательно*. Передайте :code:`True`, чтобы показать пользователю "
-"интерфейс ответа, как будто он сам выбрал сообщение бота и нажал "
-"«Ответить». Значение поля нельзя изменить при редактировании "
-"inline-клавиатуры."
-
+"интерфейс ответа, как будто он сам выбрал сообщение бота и нажал «Ответить». "
+"Значение поля нельзя изменить при редактировании inline-клавиатуры."

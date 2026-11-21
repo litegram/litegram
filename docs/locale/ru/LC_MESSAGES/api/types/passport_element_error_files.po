@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,23 +18,25 @@ msgstr ""
 
 #: ../../api/types/passport_element_error_files.rst:3
 msgid "PassportElementErrorFiles"
-msgstr ""
+msgstr "PassportElementErrorFiles"
 
 #: litegram.types.passport_element_error_files.PassportElementErrorFiles:1 of
 msgid ""
-"Represents an issue with a list of scans. The error is considered "
-"resolved when the list of files containing the scans changes."
+"Represents an issue with a list of scans. The error is considered resolved "
+"when the list of files containing the scans changes."
 msgstr ""
+"Представляет проблему со списком сканов. Ошибка считается решённой, когда "
+"список файлов со сканами изменится."
 
 #: litegram.types.passport_element_error_files.PassportElementErrorFiles:3 of
 msgid "Source: https://core.telegram.org/bots/api#passportelementerrorfiles"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#passportelementerrorfiles"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_files.PassportElementErrorFiles.source:1
 #: of
 msgid "Error source, must be *files*"
-msgstr ""
+msgstr "Источник ошибки, должно быть *files*"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_files.PassportElementErrorFiles.type:1
@@ -44,15 +46,18 @@ msgid ""
 "'utility_bill', 'bank_statement', 'rental_agreement', "
 "'passport_registration', 'temporary_registration'"
 msgstr ""
+"Раздел Telegram Passport пользователя, в котором проблема; одно из значений: "
+"'utility_bill', 'bank_statement', 'rental_agreement', "
+"'passport_registration', 'temporary_registration'"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_files.PassportElementErrorFiles.file_hashes:1
 #: of
 msgid "List of base64-encoded file hashes"
-msgstr ""
+msgstr "Список хешей файлов в кодировке Base64"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_files.PassportElementErrorFiles.message:1
 #: of
 msgid "Error message"
-msgstr ""
+msgstr "Сообщение об ошибке"

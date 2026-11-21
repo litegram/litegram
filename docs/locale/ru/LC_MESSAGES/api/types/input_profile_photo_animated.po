@@ -5,65 +5,61 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/input_profile_photo_animated.rst:3
 msgid "InputProfilePhotoAnimated"
-msgstr ""
+msgstr "InputProfilePhotoAnimated"
 
 #: litegram.types.input_profile_photo_animated.InputProfilePhotoAnimated:1 of
 msgid "An animated profile photo in the MPEG4 format."
-msgstr ""
+msgstr "Анимированная фотография профиля в формате MPEG4."
 
 #: litegram.types.input_profile_photo_animated.InputProfilePhotoAnimated:3 of
 msgid "Source: https://core.telegram.org/bots/api#inputprofilephotoanimated"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inputprofilephotoanimated"
 
 #: litegram.types.input_profile_photo_animated.InputProfilePhotoAnimated.type:1
 #: of
 msgid "Type of the profile photo, must be *animated*"
-msgstr ""
+msgstr "Тип фотографии профиля; должно быть *animated*"
 
 #: litegram.types.input_profile_photo_animated.InputProfilePhotoAnimated.animation:1
 #: of
 msgid ""
-"The animated profile photo. Profile photos can't be reused and can only "
-"be uploaded as a new file, so you can pass 'attach://' if the photo was "
-"uploaded using multipart/form-data under . :ref:`More information on "
-"Sending Files » <sending-files>`"
+"The animated profile photo. Profile photos can't be reused and can only be "
+"uploaded as a new file, so you can pass 'attach://' if the photo was uploaded"
+" using multipart/form-data under . :ref:`More information on Sending Files » "
+"<sending-files>`"
 msgstr ""
-"Анимированная фотография профиля. Фотографии профиля нельзя "
-"переиспользовать, их можно отправить только новым файлом, поэтому можно "
-"передать 'attach://', если фотография загружена через multipart/form-data"
-" под этим именем. :ref:`Подробнее об отправке файлов <sending-files>`"
+"Анимированная фотография профиля. Фотографии профиля нельзя переиспользовать,"
+" их можно отправить только новым файлом, поэтому можно передать 'attach://', "
+"если фотография загружена через multipart/form-data под этим именем. "
+":ref:`Подробнее об отправке файлов <sending-files>`"
 
 #: litegram.types.input_profile_photo_animated.InputProfilePhotoAnimated.main_frame_timestamp:1
 #: of
 msgid ""
-"*Optional*. Timestamp in seconds of the frame that will be used as the "
-"static profile photo. Defaults to 0.0."
+"*Optional*. Timestamp in seconds of the frame that will be used as the static"
+" profile photo. Defaults to 0.0."
 msgstr ""
+"*Необязательно*. Временная метка в секундах кадра, который будет "
+"использоваться как статичная фотография профиля. По умолчанию 0.0."
 
 #~ msgid ""
-#~ "The animated profile photo. Profile "
-#~ "photos can't be reused and can "
-#~ "only be uploaded as a new file,"
-#~ " so you can pass "
-#~ "'attach://<file_attach_name>' if the photo was"
-#~ " uploaded using multipart/form-data under"
-#~ " <file_attach_name>. :ref:`More information on"
-#~ " Sending Files » <sending-files>`"
+#~ "The animated profile photo. Profile photos can't be reused and can only be "
+#~ "uploaded as a new file, so you can pass 'attach://<file_attach_name>' if the "
+#~ "photo was uploaded using multipart/form-data under <file_attach_name>. "
+#~ ":ref:`More information on Sending Files » <sending-files>`"
 #~ msgstr ""
-

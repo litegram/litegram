@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-30 22:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,23 +18,26 @@ msgstr ""
 
 #: ../../api/types/forum_topic_edited.rst:3
 msgid "ForumTopicEdited"
-msgstr ""
+msgstr "ForumTopicEdited"
 
 #: litegram.types.forum_topic_edited.ForumTopicEdited:1 of
 msgid "This object represents a service message about an edited forum topic."
-msgstr ""
+msgstr "Этот объект представляет сервисное сообщение об изменении темы форума."
 
 #: litegram.types.forum_topic_edited.ForumTopicEdited:3 of
 msgid "Source: https://core.telegram.org/bots/api#forumtopicedited"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#forumtopicedited"
 
 #: ../../docstring litegram.types.forum_topic_edited.ForumTopicEdited.name:1 of
 msgid "*Optional*. New name of the topic, if it was edited"
-msgstr ""
+msgstr "*Необязательно*. Новое название темы, если оно было изменено"
 
 #: ../../docstring
 #: litegram.types.forum_topic_edited.ForumTopicEdited.icon_custom_emoji_id:1 of
 msgid ""
-"*Optional*. New identifier of the custom emoji shown as the topic icon, "
-"if it was edited; an empty string if the icon was removed"
+"*Optional*. New identifier of the custom emoji shown as the topic icon, if it"
+" was edited; an empty string if the icon was removed"
 msgstr ""
+"*Необязательно*. Новый идентификатор кастомного эмодзи, показываемого в "
+"качестве значка темы, если он был изменён; пустая строка, если значок был "
+"удалён"

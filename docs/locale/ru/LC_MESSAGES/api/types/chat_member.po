@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-30 18:31+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,38 +18,42 @@ msgstr ""
 
 #: ../../api/types/chat_member.rst:3
 msgid "ChatMember"
-msgstr ""
+msgstr "ChatMember"
 
 #: litegram.types.chat_member.ChatMember:1 of
 msgid ""
-"This object contains information about one member of a chat. Currently, "
-"the following 6 types of chat members are supported:"
+"This object contains information about one member of a chat. Currently, the "
+"following 6 types of chat members are supported:"
 msgstr ""
+"Этот объект содержит информацию об одном участнике чата. Сейчас "
+"поддерживаются следующие 6 типов участников чата:"
 
 #: litegram.types.chat_member.ChatMember:3 of
 msgid ":class:`litegram.types.chat_member_owner.ChatMemberOwner`"
-msgstr ""
+msgstr ":class:`litegram.types.chat_member_owner.ChatMemberOwner`"
 
 #: litegram.types.chat_member.ChatMember:4 of
-msgid ":class:`litegram.types.chat_member_administrator.ChatMemberAdministrator`"
+msgid ""
+":class:`litegram.types.chat_member_administrator.ChatMemberAdministrator`"
 msgstr ""
+":class:`litegram.types.chat_member_administrator.ChatMemberAdministrator`"
 
 #: litegram.types.chat_member.ChatMember:5 of
 msgid ":class:`litegram.types.chat_member_member.ChatMemberMember`"
-msgstr ""
+msgstr ":class:`litegram.types.chat_member_member.ChatMemberMember`"
 
 #: litegram.types.chat_member.ChatMember:6 of
 msgid ":class:`litegram.types.chat_member_restricted.ChatMemberRestricted`"
-msgstr ""
+msgstr ":class:`litegram.types.chat_member_restricted.ChatMemberRestricted`"
 
 #: litegram.types.chat_member.ChatMember:7 of
 msgid ":class:`litegram.types.chat_member_left.ChatMemberLeft`"
-msgstr ""
+msgstr ":class:`litegram.types.chat_member_left.ChatMemberLeft`"
 
 #: litegram.types.chat_member.ChatMember:8 of
 msgid ":class:`litegram.types.chat_member_banned.ChatMemberBanned`"
-msgstr ""
+msgstr ":class:`litegram.types.chat_member_banned.ChatMemberBanned`"
 
 #: litegram.types.chat_member.ChatMember:10 of
 msgid "Source: https://core.telegram.org/bots/api#chatmember"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#chatmember"

@@ -5,41 +5,42 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/game.rst:3
 msgid "Game"
-msgstr ""
+msgstr "Game"
 
 #: litegram.types.game.Game:1 of
 msgid ""
-"This object represents a game. Use BotFather to create and edit games, "
-"their short names will act as unique identifiers."
+"This object represents a game. Use BotFather to create and edit games, their "
+"short names will act as unique identifiers."
 msgstr ""
+"Этот объект представляет игру. Используйте BotFather для создания и "
+"редактирования игр; их короткие имена служат уникальными идентификаторами."
 
 #: litegram.types.game.Game:3 of
 msgid "Source: https://core.telegram.org/bots/api#game"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#game"
 
 #: litegram.types.game.Game.title:1 of
 msgid "Title of the game"
-msgstr ""
+msgstr "Название игры"
 
 #: litegram.types.game.Game.description:1 of
 msgid "Description of the game"
-msgstr ""
+msgstr "Описание игры"
 
 #: litegram.types.game.Game.photo:1 of
 msgid "Photo that will be displayed in the game message in chats"
@@ -47,24 +48,32 @@ msgstr "Фотография, которая будет показана в со
 
 #: litegram.types.game.Game.text:1 of
 msgid ""
-"*Optional*. Brief description of the game or high scores included in the "
-"game message. Can be automatically edited to include current high scores "
-"for the game when the bot calls "
-":class:`litegram.methods.set_game_score.SetGameScore`, or manually edited"
-" using :class:`litegram.methods.edit_message_text.EditMessageText`. "
-"0-4096 characters."
+"*Optional*. Brief description of the game or high scores included in the game"
+" message. Can be automatically edited to include current high scores for the "
+"game when the bot calls "
+":class:`litegram.methods.set_game_score.SetGameScore`, or manually edited "
+"using :class:`litegram.methods.edit_message_text.EditMessageText`. 0-4096 "
+"characters."
 msgstr ""
+"*Необязательно*. Краткое описание игры или таблица рекордов, включённая в "
+"сообщение с игрой. Может автоматически редактироваться, чтобы включить "
+"текущие рекорды игры, когда бот вызывает "
+":class:`litegram.methods.set_game_score.SetGameScore`, либо редактироваться "
+"вручную с помощью "
+":class:`litegram.methods.edit_message_text.EditMessageText`. 0-4096 символов."
 
 #: litegram.types.game.Game.text_entities:1 of
 msgid ""
-"*Optional*. Special entities that appear in *text*, such as usernames, "
-"URLs, bot commands, etc."
+"*Optional*. Special entities that appear in *text*, such as usernames, URLs, "
+"bot commands, etc."
 msgstr ""
+"*Необязательно*. Специальные сущности, встречающиеся в *text*, такие как "
+"имена пользователей, URL, команды ботов и т. п."
 
 #: litegram.types.game.Game.animation:1 of
 msgid ""
-"*Optional*. Animation that will be displayed in the game message in "
-"chats. Upload via `BotFather <https://t.me/botfather>`_."
+"*Optional*. Animation that will be displayed in the game message in chats. "
+"Upload via `BotFather <https://t.me/botfather>`_."
 msgstr ""
 "*Необязательно*. Анимация, которая будет показана в сообщении с игрой в "
 "чатах. Загрузите через `BotFather <https://t.me/botfather>`_."
@@ -73,9 +82,6 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ "*Optional*. Animation that will be "
-#~ "displayed in the game message in "
-#~ "chats. Upload via `BotFather "
-#~ "<https://t.me/botfather>`_"
+#~ "*Optional*. Animation that will be displayed in the game message in chats. "
+#~ "Upload via `BotFather <https://t.me/botfather>`_"
 #~ msgstr ""
-

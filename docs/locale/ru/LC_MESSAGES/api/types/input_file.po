@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,45 +18,48 @@ msgstr ""
 
 #: ../../api/types/input_file.rst:3
 msgid "InputFile"
-msgstr ""
+msgstr "InputFile"
 
 #: litegram.types.input_file.InputFile:1 of
 msgid ""
-"This object represents the contents of a file to be uploaded. Must be "
-"posted using multipart/form-data in the usual way that files are uploaded"
-" via the browser."
+"This object represents the contents of a file to be uploaded. Must be posted "
+"using multipart/form-data in the usual way that files are uploaded via the "
+"browser."
 msgstr ""
+"Этот объект представляет содержимое загружаемого файла. Должен отправляться "
+"через multipart/form-data обычным способом загрузки файлов через браузер."
 
 #: litegram.types.input_file.InputFile:3 of
 msgid "Source: https://core.telegram.org/bots/api#inputfile"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#inputfile"
 
 #: litegram.types.input_file.BufferedInputFile.from_file:1 of
 msgid "Create buffer from file"
-msgstr ""
+msgstr "Создаёт буфер из файла"
 
 #: litegram.types.input_file.BufferedInputFile.from_file of
 msgid "Parameters"
-msgstr ""
+msgstr "Параметры"
 
 #: litegram.types.input_file.BufferedInputFile.from_file:3 of
 msgid "Path to file"
-msgstr ""
+msgstr "Путь к файлу"
 
 #: litegram.types.input_file.BufferedInputFile.from_file:4 of
 msgid ""
-"Filename to be propagated to telegram. By default, will be parsed from "
-"path"
+"Filename to be propagated to telegram. By default, will be parsed from path"
 msgstr ""
+"Имя файла, которое будет передано в Telegram. По умолчанию извлекается из "
+"пути"
 
 #: litegram.types.input_file.BufferedInputFile.from_file:6 of
 msgid "Uploading chunk size"
-msgstr ""
+msgstr "Размер загружаемого фрагмента"
 
 #: litegram.types.input_file.BufferedInputFile.from_file of
 msgid "Returns"
-msgstr ""
+msgstr "Возвращает"
 
 #: litegram.types.input_file.BufferedInputFile.from_file:7 of
 msgid "instance of :obj:`BufferedInputFile`"
-msgstr ""
+msgstr "экземпляр :obj:`BufferedInputFile`"

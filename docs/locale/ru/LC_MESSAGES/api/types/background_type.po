@@ -5,46 +5,49 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.13.1\n"
 
 #: ../../api/types/background_type.rst:3
 msgid "BackgroundType"
-msgstr ""
+msgstr "BackgroundType"
 
 #: litegram.types.background_type.BackgroundType:1 of
 msgid ""
-"This object describes the type of a background. Currently, it can be one "
-"of"
+"This object describes the type of a background. Currently, it can be one of"
 msgstr ""
+"Этот объект описывает тип фона. Сейчас это может быть один из следующих:"
 
 #: litegram.types.background_type.BackgroundType:3 of
 msgid ":class:`litegram.types.background_type_fill.BackgroundTypeFill`"
-msgstr ""
+msgstr ":class:`litegram.types.background_type_fill.BackgroundTypeFill`"
 
 #: litegram.types.background_type.BackgroundType:4 of
-msgid ":class:`litegram.types.background_type_wallpaper.BackgroundTypeWallpaper`"
+msgid ""
+":class:`litegram.types.background_type_wallpaper.BackgroundTypeWallpaper`"
 msgstr ""
+":class:`litegram.types.background_type_wallpaper.BackgroundTypeWallpaper`"
 
 #: litegram.types.background_type.BackgroundType:5 of
 msgid ":class:`litegram.types.background_type_pattern.BackgroundTypePattern`"
-msgstr ""
+msgstr ":class:`litegram.types.background_type_pattern.BackgroundTypePattern`"
 
 #: litegram.types.background_type.BackgroundType:6 of
-msgid ":class:`litegram.types.background_type_chat_theme.BackgroundTypeChatTheme`"
+msgid ""
+":class:`litegram.types.background_type_chat_theme.BackgroundTypeChatTheme`"
 msgstr ""
+":class:`litegram.types.background_type_chat_theme.BackgroundTypeChatTheme`"
 
 #: litegram.types.background_type.BackgroundType:8 of
 msgid "Source: https://core.telegram.org/bots/api#backgroundtype"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#backgroundtype"

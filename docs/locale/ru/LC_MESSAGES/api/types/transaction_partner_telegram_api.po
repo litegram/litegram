@@ -5,23 +5,22 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.13.1\n"
 
 #: ../../api/types/transaction_partner_telegram_api.rst:3
 msgid "TransactionPartnerTelegramApi"
-msgstr ""
+msgstr "TransactionPartnerTelegramApi"
 
 #: litegram.types.transaction_partner_telegram_api.TransactionPartnerTelegramApi:1
 #: of
@@ -29,17 +28,21 @@ msgid ""
 "Describes a transaction with payment for `paid broadcasting "
 "<https://core.telegram.org/bots/api#paid-broadcasts>`_."
 msgstr ""
+"Описывает транзакцию с оплатой `платной рассылки "
+"<https://core.telegram.org/bots/api#paid-broadcasts>`_."
 
 #: litegram.types.transaction_partner_telegram_api.TransactionPartnerTelegramApi:3
 #: of
-msgid "Source: https://core.telegram.org/bots/api#transactionpartnertelegramapi"
+msgid ""
+"Source: https://core.telegram.org/bots/api#transactionpartnertelegramapi"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#transactionpartnertelegramapi"
 
 #: ../../docstring
 #: litegram.types.transaction_partner_telegram_api.TransactionPartnerTelegramApi.type:1
 #: of
 msgid "Type of the transaction partner, always 'telegram_api'"
-msgstr ""
+msgstr "Тип партнёра транзакции, всегда 'telegram_api'"
 
 #: ../../docstring
 #: litegram.types.transaction_partner_telegram_api.TransactionPartnerTelegramApi.request_count:1
@@ -48,3 +51,4 @@ msgid ""
 "The number of successful requests that exceeded regular limits and were "
 "therefore billed"
 msgstr ""
+"Число успешных запросов, превысивших обычные лимиты и потому тарифицированных"

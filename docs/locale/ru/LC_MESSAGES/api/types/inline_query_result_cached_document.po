@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,51 +18,57 @@ msgstr ""
 
 #: ../../api/types/inline_query_result_cached_document.rst:3
 msgid "InlineQueryResultCachedDocument"
-msgstr ""
+msgstr "InlineQueryResultCachedDocument"
 
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument:1
 #: of
 msgid ""
-"Represents a link to a file stored on the Telegram servers. By default, "
-"this file will be sent by the user with an optional caption. "
-"Alternatively, you can use *input_message_content* to send a message with"
-" the specified content instead of the file."
+"Represents a link to a file stored on the Telegram servers. By default, this "
+"file will be sent by the user with an optional caption. Alternatively, you "
+"can use *input_message_content* to send a message with the specified content "
+"instead of the file."
 msgstr ""
+"Представляет ссылку на файл, хранящийся на серверах Telegram. По умолчанию "
+"этот файл будет отправлен пользователем с необязательной подписью. В качестве"
+" альтернативы можно использовать *input_message_content*, чтобы отправить "
+"сообщение с указанным содержимым вместо файла."
 
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument:3
 #: of
-msgid "Source: https://core.telegram.org/bots/api#inlinequeryresultcacheddocument"
+msgid ""
+"Source: https://core.telegram.org/bots/api#inlinequeryresultcacheddocument"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#inlinequeryresultcacheddocument"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.type:1
 #: of
 msgid "Type of the result, must be *document*"
-msgstr ""
+msgstr "Тип результата; должно быть *document*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.id:1
 #: of
 msgid "Unique identifier for this result, 1-64 bytes"
-msgstr ""
+msgstr "Уникальный идентификатор этого результата, 1-64 байта"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.title:1
 #: of
 msgid "Title for the result"
-msgstr ""
+msgstr "Название результата"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.document_file_id:1
 #: of
 msgid "A valid file identifier for the file"
-msgstr ""
+msgstr "Корректный file_id файла"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.description:1
 #: of
 msgid "*Optional*. Short description of the result"
-msgstr ""
+msgstr "*Необязательно*. Краткое описание результата"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.caption:1
@@ -71,34 +77,45 @@ msgid ""
 "*Optional*. Caption of the document to be sent, 0-1024 characters after "
 "entities parsing"
 msgstr ""
+"*Необязательно*. Подпись отправляемого документа, 0-1024 символа после "
+"разбора сущностей"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.parse_mode:1
 #: of
 msgid ""
 "*Optional*. Mode for parsing entities in the document caption. See "
-"`formatting options <https://core.telegram.org/bots/api#formatting-"
-"options>`_ for more details."
+"`formatting options <https://core.telegram.org/bots/api#formatting-options>`_"
+" for more details."
 msgstr ""
+"*Необязательно*. Режим разбора сущностей в подписи документа. Подробнее см. "
+"`варианты форматирования <https://core.telegram.org/bots/api#formatting-"
+"options>`_."
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.caption_entities:1
 #: of
 msgid ""
-"*Optional*. List of special entities that appear in the caption, which "
-"can be specified instead of *parse_mode*"
+"*Optional*. List of special entities that appear in the caption, which can be"
+" specified instead of *parse_mode*"
 msgstr ""
+"*Необязательно*. Список специальных сущностей в подписи; можно указать вместо"
+" *parse_mode*"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.reply_markup:1
 #: of
 msgid ""
-"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features"
-"#inline-keyboards>`_ attached to the message"
+"*Optional*. `Inline keyboard <https://core.telegram.org/bots/features#inline-"
+"keyboards>`_ attached to the message"
 msgstr ""
+"*Необязательно*. `Inline-клавиатура "
+"<https://core.telegram.org/bots/features#inline-keyboards>`_, прикреплённая к"
+" сообщению"
 
 #: ../../docstring
 #: litegram.types.inline_query_result_cached_document.InlineQueryResultCachedDocument.input_message_content:1
 #: of
 msgid "*Optional*. Content of the message to be sent instead of the file"
 msgstr ""
+"*Необязательно*. Содержимое сообщения, которое будет отправлено вместо файла"

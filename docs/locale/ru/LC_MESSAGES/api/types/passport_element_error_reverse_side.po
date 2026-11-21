@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,26 +18,29 @@ msgstr ""
 
 #: ../../api/types/passport_element_error_reverse_side.rst:3
 msgid "PassportElementErrorReverseSide"
-msgstr ""
+msgstr "PassportElementErrorReverseSide"
 
 #: litegram.types.passport_element_error_reverse_side.PassportElementErrorReverseSide:1
 #: of
 msgid ""
 "Represents an issue with the reverse side of a document. The error is "
-"considered resolved when the file with reverse side of the document "
-"changes."
+"considered resolved when the file with reverse side of the document changes."
 msgstr ""
+"Представляет проблему с обратной стороной документа. Ошибка считается "
+"решённой, когда файл с обратной стороной документа изменится."
 
 #: litegram.types.passport_element_error_reverse_side.PassportElementErrorReverseSide:3
 #: of
-msgid "Source: https://core.telegram.org/bots/api#passportelementerrorreverseside"
+msgid ""
+"Source: https://core.telegram.org/bots/api#passportelementerrorreverseside"
 msgstr ""
+"Источник: https://core.telegram.org/bots/api#passportelementerrorreverseside"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_reverse_side.PassportElementErrorReverseSide.source:1
 #: of
 msgid "Error source, must be *reverse_side*"
-msgstr ""
+msgstr "Источник ошибки, должно быть *reverse_side*"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_reverse_side.PassportElementErrorReverseSide.type:1
@@ -46,15 +49,17 @@ msgid ""
 "The section of the user's Telegram Passport which has the issue, one of "
 "'driver_license', 'identity_card'"
 msgstr ""
+"Раздел Telegram Passport пользователя, в котором проблема; одно из значений: "
+"'driver_license', 'identity_card'"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_reverse_side.PassportElementErrorReverseSide.file_hash:1
 #: of
 msgid "Base64-encoded hash of the file with the reverse side of the document"
-msgstr ""
+msgstr "Хеш в кодировке Base64 файла с обратной стороной документа"
 
 #: ../../docstring
 #: litegram.types.passport_element_error_reverse_side.PassportElementErrorReverseSide.message:1
 #: of
 msgid "Error message"
-msgstr ""
+msgstr "Сообщение об ошибке"

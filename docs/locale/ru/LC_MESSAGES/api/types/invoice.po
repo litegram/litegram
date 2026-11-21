@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,43 +18,52 @@ msgstr ""
 
 #: ../../api/types/invoice.rst:3
 msgid "Invoice"
-msgstr ""
+msgstr "Invoice"
 
 #: litegram.types.invoice.Invoice:1 of
 msgid "This object contains basic information about an invoice."
-msgstr ""
+msgstr "Этот объект содержит основную информацию о счёте."
 
 #: litegram.types.invoice.Invoice:3 of
 msgid "Source: https://core.telegram.org/bots/api#invoice"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#invoice"
 
 #: ../../docstring litegram.types.invoice.Invoice.title:1 of
 msgid "Product name"
-msgstr ""
+msgstr "Название товара"
 
 #: ../../docstring litegram.types.invoice.Invoice.description:1 of
 msgid "Product description"
-msgstr ""
+msgstr "Описание товара"
 
 #: ../../docstring litegram.types.invoice.Invoice.start_parameter:1 of
 msgid ""
-"Unique bot deep-linking parameter that can be used to generate this "
-"invoice"
+"Unique bot deep-linking parameter that can be used to generate this invoice"
 msgstr ""
+"Уникальный параметр глубокой ссылки бота, который может использоваться для "
+"генерации этого счёта"
 
 #: ../../docstring litegram.types.invoice.Invoice.currency:1 of
 msgid ""
-"Three-letter ISO 4217 `currency <https://core.telegram.org/bots/payments"
-"#supported-currencies>`_ code, or 'XTR' for payments in `Telegram Stars "
-"<https://t.me/BotNews/90>`_"
+"Three-letter ISO 4217 `currency "
+"<https://core.telegram.org/bots/payments#supported-currencies>`_ code, or "
+"'XTR' for payments in `Telegram Stars <https://t.me/BotNews/90>`_"
 msgstr ""
+"Трёхбуквенный код `валюты <https://core.telegram.org/bots/payments#supported-"
+"currencies>`_ по ISO 4217 или 'XTR' для платежей в `Telegram Stars "
+"<https://t.me/BotNews/90>`_"
 
 #: ../../docstring litegram.types.invoice.Invoice.total_amount:1 of
 msgid ""
 "Total price in the *smallest units* of the currency (integer, **not** "
 "float/double). For example, for a price of :code:`US$ 1.45` pass "
 ":code:`amount = 145`. See the *exp* parameter in `currencies.json "
-"<https://core.telegram.org/bots/payments/currencies.json>`_, it shows the"
-" number of digits past the decimal point for each currency (2 for the "
-"majority of currencies)."
+"<https://core.telegram.org/bots/payments/currencies.json>`_, it shows the "
+"number of digits past the decimal point for each currency (2 for the majority"
+" of currencies)."
 msgstr ""
+"Итоговая цена в *минимальных единицах* валюты (целое число, **не** "
+"float/double). Например, для цены :code:`US$ 1.45` передайте :code:`amount = "
+"145`. См. параметр *exp* в `currencies.json "
+"<https://core.telegram.org/bots/payments/currencies.json>`_ — он показывает "
+"число знаков после запятой для каждой валюты (2 для большинства валют)."

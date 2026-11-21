@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,38 +18,49 @@ msgstr ""
 
 #: ../../api/types/mask_position.rst:3
 msgid "MaskPosition"
-msgstr ""
+msgstr "MaskPosition"
 
 #: litegram.types.mask_position.MaskPosition:1 of
 msgid ""
-"This object describes the position on faces where a mask should be placed"
-" by default."
+"This object describes the position on faces where a mask should be placed by "
+"default."
 msgstr ""
+"Этот объект описывает положение на лице, где маска должна размещаться по "
+"умолчанию."
 
 #: litegram.types.mask_position.MaskPosition:3 of
 msgid "Source: https://core.telegram.org/bots/api#maskposition"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#maskposition"
 
 #: ../../docstring litegram.types.mask_position.MaskPosition.point:1 of
 msgid ""
 "The part of the face relative to which the mask should be placed. One of "
 "'forehead', 'eyes', 'mouth', or 'chin'."
 msgstr ""
+"Часть лица, относительно которой должна быть размещена маска. Одно из "
+"значений: 'forehead', 'eyes', 'mouth' или 'chin'."
 
 #: ../../docstring litegram.types.mask_position.MaskPosition.x_shift:1 of
 msgid ""
-"Shift by X-axis measured in widths of the mask scaled to the face size, "
-"from left to right. For example, choosing -1.0 will place mask just to "
-"the left of the default mask position."
+"Shift by X-axis measured in widths of the mask scaled to the face size, from "
+"left to right. For example, choosing -1.0 will place mask just to the left of"
+" the default mask position."
 msgstr ""
+"Смещение по оси X, измеряемое в ширинах маски, масштабированной до размера "
+"лица, слева направо. Например, значение -1.0 поместит маску непосредственно "
+"слева от позиции маски по умолчанию."
 
 #: ../../docstring litegram.types.mask_position.MaskPosition.y_shift:1 of
 msgid ""
-"Shift by Y-axis measured in heights of the mask scaled to the face size, "
-"from top to bottom. For example, 1.0 will place the mask just below the "
-"default mask position."
+"Shift by Y-axis measured in heights of the mask scaled to the face size, from"
+" top to bottom. For example, 1.0 will place the mask just below the default "
+"mask position."
 msgstr ""
+"Смещение по оси Y, измеряемое в высотах маски, масштабированной до размера "
+"лица, сверху вниз. Например, значение 1.0 поместит маску непосредственно под "
+"позицией маски по умолчанию."
 
 #: ../../docstring litegram.types.mask_position.MaskPosition.scale:1 of
 msgid "Mask scaling coefficient. For example, 2.0 means double size."
 msgstr ""
+"Коэффициент масштабирования маски. Например, 2.0 означает двойной размер."

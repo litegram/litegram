@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,17 +18,19 @@ msgstr ""
 
 #: ../../api/types/encrypted_passport_element.rst:3
 msgid "EncryptedPassportElement"
-msgstr ""
+msgstr "EncryptedPassportElement"
 
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement:1 of
 msgid ""
-"Describes documents or other Telegram Passport elements shared with the "
-"bot by the user."
+"Describes documents or other Telegram Passport elements shared with the bot "
+"by the user."
 msgstr ""
+"Описывает документы или другие элементы Telegram Passport, переданные боту "
+"пользователем."
 
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement:3 of
 msgid "Source: https://core.telegram.org/bots/api#encryptedpassportelement"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#encryptedpassportelement"
 
 #: ../../docstring
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement.type:1 of
@@ -38,6 +40,10 @@ msgid ""
 "'bank_statement', 'rental_agreement', 'passport_registration', "
 "'temporary_registration', 'phone_number', 'email'."
 msgstr ""
+"Тип элемента. Одно из значений: 'personal_details', 'passport', "
+"'driver_license', 'identity_card', 'internal_passport', 'address', "
+"'utility_bill', 'bank_statement', 'rental_agreement', "
+"'passport_registration', 'temporary_registration', 'phone_number', 'email'."
 
 #: ../../docstring
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement.hash:1 of
@@ -45,82 +51,122 @@ msgid ""
 "Base64-encoded element hash for using in "
 ":class:`litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified`"
 msgstr ""
+"Хеш элемента в кодировке Base64 для использования в "
+":class:`litegram.types.passport_element_error_unspecified.PassportElementErrorUnspecified`"
 
 #: ../../docstring
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement.data:1 of
 msgid ""
-"*Optional*. Base64-encoded encrypted Telegram Passport element data "
-"provided by the user; available only for 'personal_details', 'passport', "
-"'driver_license', 'identity_card', 'internal_passport' and 'address' "
-"types. Can be decrypted and verified using the accompanying "
+"*Optional*. Base64-encoded encrypted Telegram Passport element data provided "
+"by the user; available only for 'personal_details', 'passport', "
+"'driver_license', 'identity_card', 'internal_passport' and 'address' types. "
+"Can be decrypted and verified using the accompanying "
 ":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 msgstr ""
+"*Необязательно*. Данные элемента Telegram Passport, предоставленные "
+"пользователем, в зашифрованном виде (Base64); доступны только для типов "
+"'personal_details', 'passport', 'driver_license', 'identity_card', "
+"'internal_passport' и 'address'. Их можно расшифровать и проверить с помощью "
+"сопутствующего объекта "
+":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 
 #: ../../docstring
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement.phone_number:1
 #: of
 msgid ""
-"*Optional*. User's verified phone number; available only for "
-"'phone_number' type"
+"*Optional*. User's verified phone number; available only for 'phone_number' "
+"type"
 msgstr ""
+"*Необязательно*. Подтверждённый номер телефона пользователя; доступен только "
+"для типа 'phone_number'"
 
 #: ../../docstring
-#: litegram.types.encrypted_passport_element.EncryptedPassportElement.email:1 of
-msgid "*Optional*. User's verified email address; available only for 'email' type"
-msgstr ""
-
-#: ../../docstring
-#: litegram.types.encrypted_passport_element.EncryptedPassportElement.files:1 of
+#: litegram.types.encrypted_passport_element.EncryptedPassportElement.email:1
+#: of
 msgid ""
-"*Optional*. Array of encrypted files with documents provided by the user;"
-" available only for 'utility_bill', 'bank_statement', 'rental_agreement',"
-" 'passport_registration' and 'temporary_registration' types. Files can be"
-" decrypted and verified using the accompanying "
+"*Optional*. User's verified email address; available only for 'email' type"
+msgstr ""
+"*Необязательно*. Подтверждённый адрес электронной почты пользователя; "
+"доступен только для типа 'email'"
+
+#: ../../docstring
+#: litegram.types.encrypted_passport_element.EncryptedPassportElement.files:1
+#: of
+msgid ""
+"*Optional*. Array of encrypted files with documents provided by the user; "
+"available only for 'utility_bill', 'bank_statement', 'rental_agreement', "
+"'passport_registration' and 'temporary_registration' types. Files can be "
+"decrypted and verified using the accompanying "
 ":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 msgstr ""
+"*Необязательно*. Массив зашифрованных файлов с документами, предоставленными "
+"пользователем; доступен только для типов 'utility_bill', 'bank_statement', "
+"'rental_agreement', 'passport_registration' и 'temporary_registration'. Файлы"
+" можно расшифровать и проверить с помощью сопутствующего объекта "
+":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 
 #: ../../docstring
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement.front_side:1
 #: of
 msgid ""
-"*Optional*. Encrypted file with the front side of the document, provided "
-"by the user; available only for 'passport', 'driver_license', "
-"'identity_card' and 'internal_passport'. The file can be decrypted and "
-"verified using the accompanying "
+"*Optional*. Encrypted file with the front side of the document, provided by "
+"the user; available only for 'passport', 'driver_license', 'identity_card' "
+"and 'internal_passport'. The file can be decrypted and verified using the "
+"accompanying "
 ":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 msgstr ""
+"*Необязательно*. Зашифрованный файл с лицевой стороной документа, "
+"предоставленный пользователем; доступен только для 'passport', "
+"'driver_license', 'identity_card' и 'internal_passport'. Файл можно "
+"расшифровать и проверить с помощью сопутствующего объекта "
+":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 
 #: ../../docstring
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement.reverse_side:1
 #: of
 msgid ""
-"*Optional*. Encrypted file with the reverse side of the document, "
-"provided by the user; available only for 'driver_license' and "
-"'identity_card'. The file can be decrypted and verified using the "
-"accompanying "
+"*Optional*. Encrypted file with the reverse side of the document, provided by"
+" the user; available only for 'driver_license' and 'identity_card'. The file "
+"can be decrypted and verified using the accompanying "
 ":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 msgstr ""
+"*Необязательно*. Зашифрованный файл с обратной стороной документа, "
+"предоставленный пользователем; доступен только для 'driver_license' и "
+"'identity_card'. Файл можно расшифровать и проверить с помощью сопутствующего"
+" объекта :class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 
 #: ../../docstring
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement.selfie:1
 #: of
 msgid ""
-"*Optional*. Encrypted file with the selfie of the user holding a "
-"document, provided by the user; available if requested for 'passport', "
-"'driver_license', 'identity_card' and 'internal_passport'. The file can "
-"be decrypted and verified using the accompanying "
+"*Optional*. Encrypted file with the selfie of the user holding a document, "
+"provided by the user; available if requested for 'passport', "
+"'driver_license', 'identity_card' and 'internal_passport'. The file can be "
+"decrypted and verified using the accompanying "
 ":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 msgstr ""
+"*Необязательно*. Зашифрованный файл с селфи пользователя, держащего документ,"
+" предоставленный пользователем; доступен, если запрашивался для 'passport', "
+"'driver_license', 'identity_card' и 'internal_passport'. Файл можно "
+"расшифровать и проверить с помощью сопутствующего объекта "
+":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 
 #: ../../docstring
 #: litegram.types.encrypted_passport_element.EncryptedPassportElement.translation:1
 #: of
 msgid ""
-"*Optional*. Array of encrypted files with translated versions of "
-"documents provided by the user; available if requested for 'passport', "
+"*Optional*. Array of encrypted files with translated versions of documents "
+"provided by the user; available if requested for 'passport', "
 "'driver_license', 'identity_card', 'internal_passport', 'utility_bill', "
 "'bank_statement', 'rental_agreement', 'passport_registration' and "
-"'temporary_registration' types. Files can be decrypted and verified using"
-" the accompanying "
+"'temporary_registration' types. Files can be decrypted and verified using the"
+" accompanying "
 ":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."
 msgstr ""
+"*Необязательно*. Массив зашифрованных файлов с переводами документов, "
+"предоставленных пользователем; доступен, если запрашивался для типов "
+"'passport', 'driver_license', 'identity_card', 'internal_passport', "
+"'utility_bill', 'bank_statement', 'rental_agreement', 'passport_registration'"
+" и 'temporary_registration'. Файлы можно расшифровать и проверить с помощью "
+"сопутствующего объекта "
+":class:`litegram.types.encrypted_credentials.EncryptedCredentials`."

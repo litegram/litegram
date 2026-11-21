@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,74 +18,89 @@ msgstr ""
 
 #: ../../api/types/successful_payment.rst:3
 msgid "SuccessfulPayment"
-msgstr ""
+msgstr "SuccessfulPayment"
 
 #: litegram.types.successful_payment.SuccessfulPayment:1 of
 msgid ""
-"This object contains basic information about a successful payment. Note "
-"that if the buyer initiates a chargeback with the relevant payment "
-"provider following this transaction, the funds may be debited from your "
-"balance. This is outside of Telegram's control."
+"This object contains basic information about a successful payment. Note that "
+"if the buyer initiates a chargeback with the relevant payment provider "
+"following this transaction, the funds may be debited from your balance. This "
+"is outside of Telegram's control."
 msgstr ""
+"Этот объект содержит основную информацию об успешном платеже. Обратите "
+"внимание: если покупатель инициирует возврат (chargeback) через "
+"соответствующего платёжного провайдера после этой транзакции, средства могут "
+"быть списаны с вашего баланса. Это вне контроля Telegram."
 
 #: litegram.types.successful_payment.SuccessfulPayment:3 of
 msgid "Source: https://core.telegram.org/bots/api#successfulpayment"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#successfulpayment"
 
 #: litegram.types.successful_payment.SuccessfulPayment.currency:1 of
 msgid ""
-"Three-letter ISO 4217 `currency <https://core.telegram.org/bots/payments"
-"#supported-currencies>`_ code, or 'XTR' for payments in `Telegram Stars "
-"<https://t.me/BotNews/90>`_"
+"Three-letter ISO 4217 `currency "
+"<https://core.telegram.org/bots/payments#supported-currencies>`_ code, or "
+"'XTR' for payments in `Telegram Stars <https://t.me/BotNews/90>`_"
 msgstr ""
+"Трёхбуквенный код `валюты <https://core.telegram.org/bots/payments#supported-"
+"currencies>`_ по ISO 4217 или 'XTR' для платежей в `Telegram Stars "
+"<https://t.me/BotNews/90>`_"
 
 #: litegram.types.successful_payment.SuccessfulPayment.total_amount:1 of
 msgid ""
 "Total price in the *smallest units* of the currency (integer, **not** "
 "float/double). For example, for a price of :code:`US$ 1.45` pass "
 ":code:`amount = 145`. See the *exp* parameter in `currencies.json "
-"<https://core.telegram.org/bots/payments/currencies.json>`_, it shows the"
-" number of digits past the decimal point for each currency (2 for the "
-"majority of currencies)."
+"<https://core.telegram.org/bots/payments/currencies.json>`_, it shows the "
+"number of digits past the decimal point for each currency (2 for the majority"
+" of currencies)."
 msgstr ""
+"Итоговая цена в *минимальных единицах* валюты (целое число, **не** "
+"float/double). Например, для цены :code:`US$ 1.45` передайте :code:`amount = "
+"145`. См. параметр *exp* в `currencies.json "
+"<https://core.telegram.org/bots/payments/currencies.json>`_ — он показывает "
+"число знаков после запятой для каждой валюты (2 для большинства валют)."
 
 #: litegram.types.successful_payment.SuccessfulPayment.invoice_payload:1 of
 msgid "Bot-specified invoice payload"
-msgstr ""
+msgstr "Заданный ботом payload счёта"
 
 #: litegram.types.successful_payment.SuccessfulPayment.telegram_payment_charge_id:1
 #: of
 msgid "Telegram payment identifier"
-msgstr ""
+msgstr "Идентификатор платежа Telegram"
 
 #: litegram.types.successful_payment.SuccessfulPayment.provider_payment_charge_id:1
 #: of
 msgid "Provider payment identifier"
-msgstr ""
+msgstr "Идентификатор платежа провайдера"
 
 #: litegram.types.successful_payment.SuccessfulPayment.subscription_expiration_date:1
 #: of
 msgid ""
-"*Optional*. Expiration date of the subscription, in Unix time; for "
-"recurring payments only"
+"*Optional*. Expiration date of the subscription, in Unix time; for recurring "
+"payments only"
 msgstr ""
+"*Необязательно*. Дата окончания подписки, в Unix time; только для регулярных "
+"платежей"
 
 #: litegram.types.successful_payment.SuccessfulPayment.is_recurring:1 of
 msgid ""
 "*Optional*. :code:`True`, if the payment is a recurring payment for a "
 "subscription"
-msgstr ""
+msgstr "*Необязательно*. :code:`True`, если это регулярный платёж за подписку"
 
 #: litegram.types.successful_payment.SuccessfulPayment.is_first_recurring:1 of
 msgid ""
 "*Optional*. :code:`True`, if the payment is the first payment for a "
 "subscription"
-msgstr ""
+msgstr "*Необязательно*. :code:`True`, если это первый платёж за подписку"
 
 #: litegram.types.successful_payment.SuccessfulPayment.shipping_option_id:1 of
 msgid "*Optional*. Identifier of the shipping option chosen by the user"
 msgstr ""
+"*Необязательно*. Идентификатор выбранного пользователем варианта доставки"
 
 #: litegram.types.successful_payment.SuccessfulPayment.order_info:1 of
 msgid "*Optional*. Order information provided by the user"
-msgstr ""
+msgstr "*Необязательно*. Информация о заказе, предоставленная пользователем"

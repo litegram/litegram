@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-06 14:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,14 +18,16 @@ msgstr ""
 
 #: ../../api/types/forum_topic_closed.rst:3
 msgid "ForumTopicClosed"
-msgstr ""
+msgstr "ForumTopicClosed"
 
 #: litegram.types.forum_topic_closed.ForumTopicClosed:1 of
 msgid ""
-"This object represents a service message about a forum topic closed in "
-"the chat. Currently holds no information."
+"This object represents a service message about a forum topic closed in the "
+"chat. Currently holds no information."
 msgstr ""
+"Этот объект представляет сервисное сообщение о закрытии темы форума в чате. "
+"Сейчас не содержит информации."
 
 #: litegram.types.forum_topic_closed.ForumTopicClosed:3 of
 msgid "Source: https://core.telegram.org/bots/api#forumtopicclosed"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#forumtopicclosed"

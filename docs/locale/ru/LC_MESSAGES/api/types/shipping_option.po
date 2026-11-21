@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-01 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,24 +18,24 @@ msgstr ""
 
 #: ../../api/types/shipping_option.rst:3
 msgid "ShippingOption"
-msgstr ""
+msgstr "ShippingOption"
 
 #: litegram.types.shipping_option.ShippingOption:1 of
 msgid "This object represents one shipping option."
-msgstr ""
+msgstr "Этот объект представляет один вариант доставки."
 
 #: litegram.types.shipping_option.ShippingOption:3 of
 msgid "Source: https://core.telegram.org/bots/api#shippingoption"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#shippingoption"
 
 #: ../../docstring litegram.types.shipping_option.ShippingOption.id:1 of
 msgid "Shipping option identifier"
-msgstr ""
+msgstr "Идентификатор варианта доставки"
 
 #: ../../docstring litegram.types.shipping_option.ShippingOption.title:1 of
 msgid "Option title"
-msgstr ""
+msgstr "Название варианта"
 
 #: ../../docstring litegram.types.shipping_option.ShippingOption.prices:1 of
 msgid "List of price portions"
-msgstr ""
+msgstr "Список частей счёта"

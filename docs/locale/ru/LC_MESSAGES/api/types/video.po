@@ -5,67 +5,74 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/video.rst:3
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: litegram.types.video.Video:1 of
 msgid "This object represents a video file."
-msgstr ""
+msgstr "Этот объект представляет видеофайл."
 
 #: litegram.types.video.Video:3 of
 msgid "Source: https://core.telegram.org/bots/api#video"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#video"
 
 #: litegram.types.video.Video.file_id:1 of
-msgid "Identifier for this file, which can be used to download or reuse the file"
+msgid ""
+"Identifier for this file, which can be used to download or reuse the file"
 msgstr ""
+"Идентификатор файла, который можно использовать для скачивания или повторной "
+"отправки файла"
 
 #: litegram.types.video.Video.file_unique_id:1 of
 msgid ""
-"Unique identifier for this file, which is supposed to be the same over "
-"time and for different bots. Can't be used to download or reuse the file."
+"Unique identifier for this file, which is supposed to be the same over time "
+"and for different bots. Can't be used to download or reuse the file."
 msgstr ""
+"Уникальный идентификатор этого файла, который должен оставаться одинаковым со"
+" временем и для разных ботов. Нельзя использовать для скачивания или "
+"повторной отправки файла."
 
 #: litegram.types.video.Video.width:1 of
 msgid "Video width as defined by the sender"
-msgstr ""
+msgstr "Ширина видео, заданная отправителем"
 
 #: litegram.types.video.Video.height:1 of
 msgid "Video height as defined by the sender"
-msgstr ""
+msgstr "Высота видео, заданная отправителем"
 
 #: litegram.types.video.Video.duration:1 of
 msgid "Duration of the video in seconds as defined by the sender"
-msgstr ""
+msgstr "Длительность видео в секундах, заданная отправителем"
 
 #: litegram.types.video.Video.thumbnail:1 of
 msgid "*Optional*. Video thumbnail"
-msgstr ""
+msgstr "*Необязательно*. Превью видео"
 
 #: litegram.types.video.Video.cover:1 of
 msgid "*Optional*. Available sizes of the cover of the video in the message"
-msgstr ""
+msgstr "*Необязательно*. Доступные размеры обложки видео в сообщении"
 
 #: litegram.types.video.Video.start_timestamp:1 of
 msgid ""
 "*Optional*. Timestamp in seconds from which the video will play in the "
 "message"
 msgstr ""
+"*Необязательно*. Временная метка в секундах, с которой видео будет "
+"воспроизводиться в сообщении"
 
 #: litegram.types.video.Video.qualities:1 of
 msgid "*Optional*. List of available qualities of the video"
@@ -73,17 +80,21 @@ msgstr "*Необязательно*. Список доступных качес
 
 #: litegram.types.video.Video.file_name:1 of
 msgid "*Optional*. Original filename as defined by the sender"
-msgstr ""
+msgstr "*Необязательно*. Исходное имя файла, заданное отправителем"
 
 #: litegram.types.video.Video.mime_type:1 of
 msgid "*Optional*. MIME type of the file as defined by the sender"
-msgstr ""
+msgstr "*Необязательно*. MIME-тип файла, заданный отправителем"
 
 #: litegram.types.video.Video.file_size:1 of
 msgid ""
 "*Optional*. File size in bytes. It can be bigger than 2^31 and some "
-"programming languages may have difficulty/silent defects in interpreting "
-"it. But it has at most 52 significant bits, so a signed 64-bit integer or"
-" double-precision float type are safe for storing this value."
+"programming languages may have difficulty/silent defects in interpreting it. "
+"But it has at most 52 significant bits, so a signed 64-bit integer or double-"
+"precision float type are safe for storing this value."
 msgstr ""
-
+"*Необязательно*. Размер файла в байтах. Может превышать 2^31, и в некоторых "
+"языках программирования возможны сложности или неявные ошибки при его "
+"интерпретации. Но он содержит не более 52 значащих битов, поэтому 64-битное "
+"целое число со знаком или число с плавающей точкой двойной точности безопасны"
+" для хранения этого значения."

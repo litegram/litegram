@@ -5,40 +5,43 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.13.1\n"
 
 #: ../../api/types/reaction_type.rst:3
 msgid "ReactionType"
-msgstr ""
+msgstr "ReactionType"
 
 #: litegram.types.reaction_type.ReactionType:1 of
-msgid "This object describes the type of a reaction. Currently, it can be one of"
+msgid ""
+"This object describes the type of a reaction. Currently, it can be one of"
 msgstr ""
+"Этот объект описывает тип реакции. Сейчас это может быть один из следующих:"
 
 #: litegram.types.reaction_type.ReactionType:3 of
 msgid ":class:`litegram.types.reaction_type_emoji.ReactionTypeEmoji`"
-msgstr ""
+msgstr ":class:`litegram.types.reaction_type_emoji.ReactionTypeEmoji`"
 
 #: litegram.types.reaction_type.ReactionType:4 of
-msgid ":class:`litegram.types.reaction_type_custom_emoji.ReactionTypeCustomEmoji`"
+msgid ""
+":class:`litegram.types.reaction_type_custom_emoji.ReactionTypeCustomEmoji`"
 msgstr ""
+":class:`litegram.types.reaction_type_custom_emoji.ReactionTypeCustomEmoji`"
 
 #: litegram.types.reaction_type.ReactionType:5 of
 msgid ":class:`litegram.types.reaction_type_paid.ReactionTypePaid`"
-msgstr ""
+msgstr ":class:`litegram.types.reaction_type_paid.ReactionTypePaid`"
 
 #: litegram.types.reaction_type.ReactionType:7 of
 msgid "Source: https://core.telegram.org/bots/api#reactiontype"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#reactiontype"

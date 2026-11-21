@@ -5,48 +5,47 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/unique_gift_backdrop_colors.rst:3
 msgid "UniqueGiftBackdropColors"
-msgstr ""
+msgstr "UniqueGiftBackdropColors"
 
 #: litegram.types.unique_gift_backdrop_colors.UniqueGiftBackdropColors:1 of
 msgid "This object describes the colors of the backdrop of a unique gift."
-msgstr ""
+msgstr "Этот объект описывает цвета подложки уникального подарка."
 
 #: litegram.types.unique_gift_backdrop_colors.UniqueGiftBackdropColors:3 of
 msgid "Source: https://core.telegram.org/bots/api#uniquegiftbackdropcolors"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#uniquegiftbackdropcolors"
 
 #: litegram.types.unique_gift_backdrop_colors.UniqueGiftBackdropColors.center_color:1
 #: of
 msgid "The color in the center of the backdrop in RGB format"
-msgstr ""
+msgstr "Цвет в центре подложки в формате RGB"
 
 #: litegram.types.unique_gift_backdrop_colors.UniqueGiftBackdropColors.edge_color:1
 #: of
 msgid "The color on the edges of the backdrop in RGB format"
-msgstr ""
+msgstr "Цвет по краям подложки в формате RGB"
 
 #: litegram.types.unique_gift_backdrop_colors.UniqueGiftBackdropColors.symbol_color:1
 #: of
 msgid "The color to be applied to the symbol in RGB format"
-msgstr ""
+msgstr "Цвет, применяемый к символу, в формате RGB"
 
 #: litegram.types.unique_gift_backdrop_colors.UniqueGiftBackdropColors.text_color:1
 #: of
 msgid "The color for the text on the backdrop in RGB format"
-msgstr ""
+msgstr "Цвет текста на подложке в формате RGB"

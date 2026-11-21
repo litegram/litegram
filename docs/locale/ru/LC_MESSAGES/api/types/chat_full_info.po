@@ -5,239 +5,291 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-21 10:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/chat_full_info.rst:3
 msgid "ChatFullInfo"
-msgstr ""
+msgstr "ChatFullInfo"
 
 #: litegram.types.chat_full_info.ChatFullInfo:1 of
 msgid "This object contains full information about a chat."
-msgstr ""
+msgstr "Этот объект содержит полную информацию о чате."
 
 #: litegram.types.chat_full_info.ChatFullInfo:3 of
 msgid "Source: https://core.telegram.org/bots/api#chatfullinfo"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#chatfullinfo"
 
 #: litegram.types.chat_full_info.ChatFullInfo.id:1 of
 msgid ""
 "Unique identifier for this chat. This number may have more than 32 "
-"significant bits and some programming languages may have "
-"difficulty/silent defects in interpreting it. But it has at most 52 "
-"significant bits, so a signed 64-bit integer or double-precision float "
-"type are safe for storing this identifier."
+"significant bits and some programming languages may have difficulty/silent "
+"defects in interpreting it. But it has at most 52 significant bits, so a "
+"signed 64-bit integer or double-precision float type are safe for storing "
+"this identifier."
 msgstr ""
+"Уникальный идентификатор этого чата. Это число может иметь более 32 значащих "
+"битов, и в некоторых языках программирования могут возникать сложности или "
+"неявные ошибки при его интерпретации. Но оно содержит не более 52 значащих "
+"битов, поэтому 64-битное целое число со знаком или число с плавающей точкой "
+"двойной точности безопасны для хранения этого идентификатора."
 
 #: litegram.types.chat_full_info.ChatFullInfo.type:1 of
 msgid ""
-"Type of the chat, can be either 'private', 'group', 'supergroup' or "
-"'channel'"
-msgstr ""
+"Type of the chat, can be either 'private', 'group', 'supergroup' or 'channel'"
+msgstr "Тип чата; может быть 'private', 'group', 'supergroup' или 'channel'"
 
 #: litegram.types.chat_full_info.ChatFullInfo.accent_color_id:1 of
 msgid ""
-"Identifier of the accent color for the chat name and backgrounds of the "
-"chat photo, reply header, and link preview. See `accent colors "
+"Identifier of the accent color for the chat name and backgrounds of the chat "
+"photo, reply header, and link preview. See `accent colors "
 "<https://core.telegram.org/bots/api#accent-colors>`_ for more details."
 msgstr ""
+"Идентификатор акцентного цвета для названия чата и фонов фотографии чата, "
+"заголовка ответа и предпросмотра ссылок. Подробнее см. `акцентные цвета "
+"<https://core.telegram.org/bots/api#accent-colors>`_."
 
 #: litegram.types.chat_full_info.ChatFullInfo.max_reaction_count:1 of
-msgid "The maximum number of reactions that can be set on a message in the chat"
+msgid ""
+"The maximum number of reactions that can be set on a message in the chat"
 msgstr ""
+"Максимальное число реакций, которые можно установить на сообщение в чате"
 
 #: litegram.types.chat_full_info.ChatFullInfo.accepted_gift_types:1 of
 msgid ""
 "Information about types of gifts that are accepted by the chat or by the "
 "corresponding user for private chats"
 msgstr ""
+"Информация о типах подарков, которые принимаются чатом или соответствующим "
+"пользователем в личных чатах"
 
 #: litegram.types.chat_full_info.ChatFullInfo.title:1 of
 msgid "*Optional*. Title, for supergroups, channels and group chats"
-msgstr ""
+msgstr "*Необязательно*. Название, для супергрупп, каналов и групповых чатов"
 
 #: litegram.types.chat_full_info.ChatFullInfo.username:1 of
 msgid ""
 "*Optional*. Username, for private chats, supergroups and channels if "
 "available"
 msgstr ""
+"*Необязательно*. Имя пользователя (username), для личных чатов, супергрупп и "
+"каналов, если доступно"
 
 #: litegram.types.chat_full_info.ChatFullInfo.first_name:1 of
 msgid "*Optional*. First name of the other party in a private chat"
-msgstr ""
+msgstr "*Необязательно*. Имя собеседника в личном чате"
 
 #: litegram.types.chat_full_info.ChatFullInfo.last_name:1 of
 msgid "*Optional*. Last name of the other party in a private chat"
-msgstr ""
+msgstr "*Необязательно*. Фамилия собеседника в личном чате"
 
 #: litegram.types.chat_full_info.ChatFullInfo.is_forum:1 of
 msgid ""
 "*Optional*. :code:`True`, if the supergroup chat is a forum (has `topics "
-"<https://telegram.org/blog/topics-in-groups-collectible-usernames#topics-"
-"in-groups>`_ enabled)"
+"<https://telegram.org/blog/topics-in-groups-collectible-usernames#topics-in-"
+"groups>`_ enabled)"
 msgstr ""
+"*Необязательно*. :code:`True`, если супергруппа является форумом (с "
+"включёнными `темами <https://telegram.org/blog/topics-in-groups-collectible-"
+"usernames#topics-in-groups>`_)"
 
 #: litegram.types.chat_full_info.ChatFullInfo.is_direct_messages:1 of
 msgid ""
 "*Optional*. :code:`True`, if the chat is the direct messages chat of a "
 "channel"
-msgstr ""
+msgstr "*Необязательно*. :code:`True`, если это чат личных сообщений канала"
 
 #: litegram.types.chat_full_info.ChatFullInfo.photo:1 of
 msgid "*Optional*. Chat photo"
-msgstr ""
+msgstr "*Необязательно*. Фотография чата"
 
 #: litegram.types.chat_full_info.ChatFullInfo.active_usernames:1 of
 msgid ""
 "*Optional*. If non-empty, the list of all `active chat usernames "
-"<https://telegram.org/blog/topics-in-groups-collectible-usernames"
-"#collectible-usernames>`_; for private chats, supergroups and channels"
+"<https://telegram.org/blog/topics-in-groups-collectible-"
+"usernames#collectible-usernames>`_; for private chats, supergroups and "
+"channels"
 msgstr ""
+"*Необязательно*. Если непусто, список всех `активных имён пользователя чата "
+"<https://telegram.org/blog/topics-in-groups-collectible-"
+"usernames#collectible-usernames>`_; для личных чатов, супергрупп и каналов"
 
 #: litegram.types.chat_full_info.ChatFullInfo.birthdate:1 of
 msgid "*Optional*. For private chats, the date of birth of the user"
-msgstr ""
+msgstr "*Необязательно*. Для личных чатов — дата рождения пользователя"
 
 #: litegram.types.chat_full_info.ChatFullInfo.business_intro:1 of
 msgid ""
 "*Optional*. For private chats with business accounts, the intro of the "
 "business"
-msgstr ""
+msgstr "*Необязательно*. Для личных чатов с бизнес-аккаунтами — интро бизнеса"
 
 #: litegram.types.chat_full_info.ChatFullInfo.business_location:1 of
 msgid ""
-"*Optional*. For private chats with business accounts, the location of the"
-" business"
+"*Optional*. For private chats with business accounts, the location of the "
+"business"
 msgstr ""
+"*Необязательно*. Для личных чатов с бизнес-аккаунтами — местоположение "
+"бизнеса"
 
 #: litegram.types.chat_full_info.ChatFullInfo.business_opening_hours:1 of
 msgid ""
-"*Optional*. For private chats with business accounts, the opening hours "
-"of the business"
+"*Optional*. For private chats with business accounts, the opening hours of "
+"the business"
 msgstr ""
+"*Необязательно*. Для личных чатов с бизнес-аккаунтами — часы работы бизнеса"
 
 #: litegram.types.chat_full_info.ChatFullInfo.personal_chat:1 of
 msgid "*Optional*. For private chats, the personal channel of the user"
-msgstr ""
+msgstr "*Необязательно*. Для личных чатов — личный канал пользователя"
 
 #: litegram.types.chat_full_info.ChatFullInfo.parent_chat:1 of
 msgid ""
 "*Optional*. Information about the corresponding channel chat; for direct "
 "messages chats only"
 msgstr ""
+"*Необязательно*. Информация о соответствующем канале; только для чатов личных"
+" сообщений"
 
 #: litegram.types.chat_full_info.ChatFullInfo.available_reactions:1 of
 msgid ""
-"*Optional*. List of available reactions allowed in the chat. If omitted, "
-"then all `emoji reactions "
+"*Optional*. List of available reactions allowed in the chat. If omitted, then"
+" all `emoji reactions "
 "<https://core.telegram.org/bots/api#reactiontypeemoji>`_ are allowed."
 msgstr ""
+"*Необязательно*. Список доступных реакций, разрешённых в чате. Если не "
+"задано, разрешены все `реакции эмодзи "
+"<https://core.telegram.org/bots/api#reactiontypeemoji>`_."
 
 #: litegram.types.chat_full_info.ChatFullInfo.background_custom_emoji_id:1 of
 msgid ""
-"*Optional*. Custom emoji identifier of the emoji chosen by the chat for "
-"the reply header and link preview background"
+"*Optional*. Custom emoji identifier of the emoji chosen by the chat for the "
+"reply header and link preview background"
 msgstr ""
+"*Необязательно*. Идентификатор кастомного эмодзи, выбранного чатом для "
+"заголовка ответа и фона предпросмотра ссылок"
 
 #: litegram.types.chat_full_info.ChatFullInfo.profile_accent_color_id:1 of
 msgid ""
-"*Optional*. Identifier of the accent color for the chat's profile "
-"background. See `profile accent colors "
-"<https://core.telegram.org/bots/api#profile-accent-colors>`_ for more "
-"details."
+"*Optional*. Identifier of the accent color for the chat's profile background."
+" See `profile accent colors <https://core.telegram.org/bots/api#profile-"
+"accent-colors>`_ for more details."
 msgstr ""
+"*Необязательно*. Идентификатор акцентного цвета для фона профиля чата. "
+"Подробнее см. `акцентные цвета профиля "
+"<https://core.telegram.org/bots/api#profile-accent-colors>`_."
 
 #: litegram.types.chat_full_info.ChatFullInfo.profile_background_custom_emoji_id:1
 #: of
 msgid ""
-"*Optional*. Custom emoji identifier of the emoji chosen by the chat for "
-"its profile background"
+"*Optional*. Custom emoji identifier of the emoji chosen by the chat for its "
+"profile background"
 msgstr ""
+"*Необязательно*. Идентификатор кастомного эмодзи, выбранного чатом для фона "
+"его профиля"
 
 #: litegram.types.chat_full_info.ChatFullInfo.emoji_status_custom_emoji_id:1 of
 msgid ""
-"*Optional*. Custom emoji identifier of the emoji status of the chat or "
-"the other party in a private chat"
+"*Optional*. Custom emoji identifier of the emoji status of the chat or the "
+"other party in a private chat"
 msgstr ""
+"*Необязательно*. Идентификатор кастомного эмодзи статуса чата или собеседника"
+" в личном чате"
 
 #: litegram.types.chat_full_info.ChatFullInfo.emoji_status_expiration_date:1 of
 msgid ""
 "*Optional*. Expiration date of the emoji status of the chat or the other "
 "party in a private chat, in Unix time, if any"
 msgstr ""
+"*Необязательно*. Дата окончания эмодзи-статуса чата или собеседника в личном "
+"чате, в Unix time, если задан"
 
 #: litegram.types.chat_full_info.ChatFullInfo.bio:1 of
 msgid "*Optional*. Bio of the other party in a private chat"
-msgstr ""
+msgstr "*Необязательно*. Описание (bio) собеседника в личном чате"
 
 #: litegram.types.chat_full_info.ChatFullInfo.has_private_forwards:1 of
 msgid ""
 "*Optional*. :code:`True`, if privacy settings of the other party in the "
-"private chat allows to use :code:`tg://user?id=` links only in chats with"
-" the user"
+"private chat allows to use :code:`tg://user?id=` links only in chats with the"
+" user"
 msgstr ""
-"*Необязательно*. :code:`True`, если настройки конфиденциальности "
-"собеседника в личном чате разрешают использовать ссылки "
-":code:`tg://user?id=` только в чатах с ним"
+"*Необязательно*. :code:`True`, если настройки конфиденциальности собеседника "
+"в личном чате разрешают использовать ссылки :code:`tg://user?id=` только в "
+"чатах с ним"
 
 #: litegram.types.chat_full_info.ChatFullInfo.has_restricted_voice_and_video_messages:1
 #: of
 msgid ""
-"*Optional*. :code:`True`, if the privacy settings of the other party "
-"restrict sending voice and video note messages in the private chat"
+"*Optional*. :code:`True`, if the privacy settings of the other party restrict"
+" sending voice and video note messages in the private chat"
 msgstr ""
+"*Необязательно*. :code:`True`, если настройки конфиденциальности собеседника "
+"ограничивают отправку голосовых и видеосообщений в личный чат"
 
 #: litegram.types.chat_full_info.ChatFullInfo.join_to_send_messages:1 of
 msgid ""
-"*Optional*. :code:`True`, if users need to join the supergroup before "
-"they can send messages"
+"*Optional*. :code:`True`, if users need to join the supergroup before they "
+"can send messages"
 msgstr ""
+"*Необязательно*. :code:`True`, если для отправки сообщений в супергруппе "
+"нужно сначала вступить в неё"
 
 #: litegram.types.chat_full_info.ChatFullInfo.join_by_request:1 of
 msgid ""
 "*Optional*. :code:`True`, if all users directly joining the supergroup "
-"without using an invite link need to be approved by supergroup "
-"administrators"
+"without using an invite link need to be approved by supergroup administrators"
 msgstr ""
+"*Необязательно*. :code:`True`, если вступление всех пользователей в "
+"супергруппу без использования ссылки-приглашения требует одобрения "
+"администраторов супергруппы"
 
 #: litegram.types.chat_full_info.ChatFullInfo.description:1 of
 msgid "*Optional*. Description, for groups, supergroups and channel chats"
-msgstr ""
+msgstr "*Необязательно*. Описание, для групп, супергрупп и каналов"
 
 #: litegram.types.chat_full_info.ChatFullInfo.invite_link:1 of
-msgid "*Optional*. Primary invite link, for groups, supergroups and channel chats"
+msgid ""
+"*Optional*. Primary invite link, for groups, supergroups and channel chats"
 msgstr ""
+"*Необязательно*. Основная ссылка-приглашение, для групп, супергрупп и каналов"
 
 #: litegram.types.chat_full_info.ChatFullInfo.pinned_message:1 of
 msgid "*Optional*. The most recent pinned message (by sending date)"
 msgstr ""
+"*Необязательно*. Самое недавнее закреплённое сообщение (по дате отправки)"
 
 #: litegram.types.chat_full_info.ChatFullInfo.permissions:1 of
 msgid "*Optional*. Default chat member permissions, for groups and supergroups"
 msgstr ""
+"*Необязательно*. Права участника чата по умолчанию, для групп и супергрупп"
 
 #: litegram.types.chat_full_info.ChatFullInfo.can_send_paid_media:1 of
 msgid ""
-"*Optional*. :code:`True`, if paid media messages can be sent or forwarded"
-" to the channel chat. The field is available only for channel chats."
+"*Optional*. :code:`True`, if paid media messages can be sent or forwarded to "
+"the channel chat. The field is available only for channel chats."
 msgstr ""
+"*Необязательно*. :code:`True`, если в канал можно отправлять или пересылать "
+"сообщения с платным медиа. Поле доступно только для каналов."
 
 #: litegram.types.chat_full_info.ChatFullInfo.slow_mode_delay:1 of
 msgid ""
-"*Optional*. For supergroups, the minimum allowed delay between "
-"consecutive messages sent by each unprivileged user; in seconds"
+"*Optional*. For supergroups, the minimum allowed delay between consecutive "
+"messages sent by each unprivileged user; in seconds"
 msgstr ""
+"*Необязательно*. Для супергрупп — минимально допустимая задержка между "
+"последовательными сообщениями, отправляемыми каждым обычным пользователем; в "
+"секундах"
 
 #: litegram.types.chat_full_info.ChatFullInfo.unrestrict_boost_count:1 of
 msgid ""
@@ -245,95 +297,123 @@ msgid ""
 "administrator user needs to add in order to ignore slow mode and chat "
 "permissions"
 msgstr ""
+"*Необязательно*. Для супергрупп — минимальное число бустов, которое нужно "
+"добавить обычному пользователю, чтобы игнорировать медленный режим и права в "
+"чате"
 
 #: litegram.types.chat_full_info.ChatFullInfo.message_auto_delete_time:1 of
 msgid ""
 "*Optional*. The time after which all messages sent to the chat will be "
 "automatically deleted; in seconds"
 msgstr ""
+"*Необязательно*. Время, по истечении которого все сообщения, отправленные в "
+"чат, будут автоматически удалены; в секундах"
 
 #: litegram.types.chat_full_info.ChatFullInfo.has_aggressive_anti_spam_enabled:1
 #: of
 msgid ""
-"*Optional*. :code:`True`, if aggressive anti-spam checks are enabled in "
-"the supergroup. The field is only available to chat administrators."
+"*Optional*. :code:`True`, if aggressive anti-spam checks are enabled in the "
+"supergroup. The field is only available to chat administrators."
 msgstr ""
+"*Необязательно*. :code:`True`, если в супергруппе включена агрессивная "
+"проверка на спам. Поле доступно только администраторам чата."
 
 #: litegram.types.chat_full_info.ChatFullInfo.has_hidden_members:1 of
 msgid ""
-"*Optional*. :code:`True`, if non-administrators can only get the list of "
-"bots and administrators in the chat"
+"*Optional*. :code:`True`, if non-administrators can only get the list of bots"
+" and administrators in the chat"
 msgstr ""
+"*Необязательно*. :code:`True`, если обычные участники могут получать только "
+"список ботов и администраторов чата"
 
 #: litegram.types.chat_full_info.ChatFullInfo.has_protected_content:1 of
 msgid ""
-"*Optional*. :code:`True`, if messages from the chat can't be forwarded to"
-" other chats"
+"*Optional*. :code:`True`, if messages from the chat can't be forwarded to "
+"other chats"
 msgstr ""
+"*Необязательно*. :code:`True`, если сообщения из чата нельзя пересылать в "
+"другие чаты"
 
 #: litegram.types.chat_full_info.ChatFullInfo.has_visible_history:1 of
 msgid ""
 "*Optional*. :code:`True`, if new chat members will have access to old "
 "messages; available only to chat administrators"
 msgstr ""
+"*Необязательно*. :code:`True`, если новые участники чата получат доступ к "
+"старым сообщениям; доступно только администраторам чата"
 
 #: litegram.types.chat_full_info.ChatFullInfo.sticker_set_name:1 of
 msgid "*Optional*. For supergroups, name of the group sticker set"
-msgstr ""
+msgstr "*Необязательно*. Для супергрупп — имя набора стикеров группы"
 
 #: litegram.types.chat_full_info.ChatFullInfo.can_set_sticker_set:1 of
 msgid "*Optional*. :code:`True`, if the bot can change the group sticker set"
 msgstr ""
+"*Необязательно*. :code:`True`, если бот может менять набор стикеров группы"
 
 #: litegram.types.chat_full_info.ChatFullInfo.custom_emoji_sticker_set_name:1
 #: of
 msgid ""
-"*Optional*. For supergroups, the name of the group's custom emoji sticker"
-" set. Custom emoji from this set can be used by all users and bots in the"
-" group."
+"*Optional*. For supergroups, the name of the group's custom emoji sticker "
+"set. Custom emoji from this set can be used by all users and bots in the "
+"group."
 msgstr ""
+"*Необязательно*. Для супергрупп — имя набора стикеров с кастомными эмодзи "
+"группы. Кастомные эмодзи из этого набора могут использовать все пользователи "
+"и боты в группе."
 
 #: litegram.types.chat_full_info.ChatFullInfo.linked_chat_id:1 of
 msgid ""
-"*Optional*. Unique identifier for the linked chat, i.e. the discussion "
-"group identifier for a channel and vice versa; for supergroups and "
-"channel chats. This identifier may be greater than 32 bits and some "
-"programming languages may have difficulty/silent defects in interpreting "
-"it. But it is smaller than 52 bits, so a signed 64 bit integer or double-"
-"precision float type are safe for storing this identifier."
+"*Optional*. Unique identifier for the linked chat, i.e. the discussion group "
+"identifier for a channel and vice versa; for supergroups and channel chats. "
+"This identifier may be greater than 32 bits and some programming languages "
+"may have difficulty/silent defects in interpreting it. But it is smaller than"
+" 52 bits, so a signed 64 bit integer or double-precision float type are safe "
+"for storing this identifier."
 msgstr ""
+"*Необязательно*. Уникальный идентификатор связанного чата, то есть "
+"идентификатор группы обсуждений для канала и наоборот; для супергрупп и "
+"каналов. Этот идентификатор может быть больше 32 битов, и в некоторых языках "
+"программирования могут возникать сложности или неявные ошибки при его "
+"интерпретации. Но он меньше 52 битов, поэтому 64-битное целое число со знаком"
+" или число с плавающей точкой двойной точности безопасны для хранения этого "
+"идентификатора."
 
 #: litegram.types.chat_full_info.ChatFullInfo.location:1 of
 msgid ""
 "*Optional*. For supergroups, the location to which the supergroup is "
 "connected"
 msgstr ""
+"*Необязательно*. Для супергрупп — местоположение, к которому привязана "
+"супергруппа"
 
 #: litegram.types.chat_full_info.ChatFullInfo.rating:1 of
 msgid "*Optional*. For private chats, the rating of the user if any"
-msgstr ""
+msgstr "*Необязательно*. Для личных чатов — рейтинг пользователя, если есть"
 
 #: litegram.types.chat_full_info.ChatFullInfo.unique_gift_colors:1 of
 msgid ""
-"*Optional*. The color scheme based on a unique gift that must be used for"
-" the chat's name, message replies and link previews"
+"*Optional*. The color scheme based on a unique gift that must be used for the"
+" chat's name, message replies and link previews"
 msgstr ""
+"*Необязательно*. Цветовая схема на основе уникального подарка, которую нужно "
+"использовать для названия чата, ответов на сообщения и предпросмотра ссылок"
 
 #: litegram.types.chat_full_info.ChatFullInfo.paid_message_star_count:1 of
 msgid ""
-"*Optional*. The number of Telegram Stars a general user has to pay to "
-"send a message to the chat"
+"*Optional*. The number of Telegram Stars a general user has to pay to send a "
+"message to the chat"
 msgstr ""
-"*Необязательно*. Количество звёзд Telegram, которое должен заплатить "
-"обычный пользователь за отправку сообщения в чат"
+"*Необязательно*. Количество звёзд Telegram, которое должен заплатить обычный "
+"пользователь за отправку сообщения в чат"
 
 #: litegram.types.chat_full_info.ChatFullInfo.first_profile_audio:1 of
 msgid ""
-"*Optional*. For private chats, the first audio added to the profile of "
-"the user"
+"*Optional*. For private chats, the first audio added to the profile of the "
+"user"
 msgstr ""
-"*Необязательно*. Для личных чатов — первая аудиозапись, добавленная в "
-"профиль пользователя"
+"*Необязательно*. Для личных чатов — первая аудиозапись, добавленная в профиль"
+" пользователя"
 
 #: litegram.types.chat_full_info.ChatFullInfo.guard_bot:1 of
 msgid ""
@@ -345,8 +425,8 @@ msgstr ""
 
 #: litegram.types.chat_full_info.ChatFullInfo.community:1 of
 msgid ""
-"*Optional*. The :class:`litegram.types.community.Community` to which the "
-"chat belongs"
+"*Optional*. The :class:`litegram.types.community.Community` to which the chat"
+" belongs"
 msgstr ""
 "*Необязательно*. :class:`litegram.types.community.Community`, к которой "
 "принадлежит чат"
@@ -361,33 +441,29 @@ msgstr ""
 
 #: litegram.types.chat_full_info.ChatFullInfo.share_theme:1 of
 msgid ""
-"*Optional*. For private chats, supergroups and channels, the theme of the"
-" screen for sharing a link to the user or the chat; omitted if the "
-"default theme is used"
+"*Optional*. For private chats, supergroups and channels, the theme of the "
+"screen for sharing a link to the user or the chat; omitted if the default "
+"theme is used"
 msgstr ""
 "*Необязательно*. Для личных чатов, супергрупп и каналов — тема экрана "
-"отправки ссылки на пользователя или чат; отсутствует, если используется "
-"тема по умолчанию"
+"отправки ссылки на пользователя или чат; отсутствует, если используется тема "
+"по умолчанию"
 
 #: litegram.types.chat_full_info.ChatFullInfo.can_send_gift:1 of
 msgid "*Optional*. :code:`True`, if gifts can be sent to the chat"
-msgstr ""
+msgstr "*Необязательно*. :code:`True`, если в чат можно отправлять подарки"
 
 #: litegram.types.chat_full_info.ChatFullInfo.can_send_gift:3 of
 msgid "https://core.telegram.org/bots/api-changelog#april-11-2025"
-msgstr ""
+msgstr "https://core.telegram.org/bots/api-changelog#april-11-2025"
 
 #~ msgid ""
-#~ "*Optional*. :code:`True`, if privacy settings"
-#~ " of the other party in the "
-#~ "private chat allows to use "
-#~ ":code:`tg://user?id=<user_id>` links only in "
-#~ "chats with the user"
+#~ "*Optional*. :code:`True`, if privacy settings of the other party in the "
+#~ "private chat allows to use :code:`tg://user?id=<user_id>` links only in chats"
+#~ " with the user"
 #~ msgstr ""
 
 #~ msgid ""
-#~ "*Optional*. The number of Telegram Stars"
-#~ " a general user have to pay to"
-#~ " send a message to the chat"
+#~ "*Optional*. The number of Telegram Stars a general user have to pay to send a"
+#~ " message to the chat"
 #~ msgstr ""
-

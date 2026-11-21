@@ -5,43 +5,48 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 10:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ru\n"
 "Language-Team: ru <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../api/types/suggested_post_parameters.rst:3
 msgid "SuggestedPostParameters"
-msgstr ""
+msgstr "SuggestedPostParameters"
 
 #: litegram.types.suggested_post_parameters.SuggestedPostParameters:1 of
 msgid "Contains parameters of a post that is being suggested by the bot."
-msgstr ""
+msgstr "Содержит параметры публикации, предлагаемой ботом."
 
 #: litegram.types.suggested_post_parameters.SuggestedPostParameters:3 of
 msgid "Source: https://core.telegram.org/bots/api#suggestedpostparameters"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#suggestedpostparameters"
 
 #: litegram.types.suggested_post_parameters.SuggestedPostParameters.price:1 of
 msgid ""
-"*Optional*. Proposed price for the post. If the field is omitted, then "
-"the post is unpaid."
+"*Optional*. Proposed price for the post. If the field is omitted, then the "
+"post is unpaid."
 msgstr ""
+"*Необязательно*. Предлагаемая цена публикации. Если поле отсутствует, "
+"публикация неоплачиваемая."
 
 #: litegram.types.suggested_post_parameters.SuggestedPostParameters.send_date:1
 #: of
 msgid ""
-"*Optional*. Proposed send date of the post. If specified, then the date "
-"must be between 300 second and 2678400 seconds (30 days) in the future. "
-"If the field is omitted, then the post can be published at any time "
-"within 30 days at the sole discretion of the user who approves it."
+"*Optional*. Proposed send date of the post. If specified, then the date must "
+"be between 300 second and 2678400 seconds (30 days) in the future. If the "
+"field is omitted, then the post can be published at any time within 30 days "
+"at the sole discretion of the user who approves it."
 msgstr ""
+"*Необязательно*. Предлагаемая дата отправки публикации. Если указана, дата "
+"должна быть в будущем — от 300 секунд до 2678400 секунд (30 дней). Если поле "
+"отсутствует, публикация может быть выпущена в любое время в течение 30 дней "
+"на единоличное усмотрение пользователя, одобряющего её."

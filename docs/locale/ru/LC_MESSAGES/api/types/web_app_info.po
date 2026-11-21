@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-08 19:04+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,19 +18,22 @@ msgstr ""
 
 #: ../../api/types/web_app_info.rst:3
 msgid "WebAppInfo"
-msgstr ""
+msgstr "WebAppInfo"
 
 #: litegram.types.web_app_info.WebAppInfo:1 of
 msgid "Describes a `Web App <https://core.telegram.org/bots/webapps>`_."
-msgstr ""
+msgstr "Описывает `веб-приложение <https://core.telegram.org/bots/webapps>`_."
 
 #: litegram.types.web_app_info.WebAppInfo:3 of
 msgid "Source: https://core.telegram.org/bots/api#webappinfo"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#webappinfo"
 
 #: ../../docstring litegram.types.web_app_info.WebAppInfo.url:1 of
 msgid ""
-"An HTTPS URL of a Web App to be opened with additional data as specified "
-"in `Initializing Web Apps <https://core.telegram.org/bots/webapps"
-"#initializing-mini-apps>`_"
+"An HTTPS URL of a Web App to be opened with additional data as specified in "
+"`Initializing Web Apps <https://core.telegram.org/bots/webapps#initializing-"
+"mini-apps>`_"
 msgstr ""
+"HTTPS URL веб-приложения, которое будет открыто с дополнительными данными, "
+"как описано в `инициализации веб-приложений "
+"<https://core.telegram.org/bots/webapps#initializing-mini-apps>`_"

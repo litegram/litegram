@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: litegram \n"
+"Project-Id-Version: litegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-08 02:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,38 +18,49 @@ msgstr ""
 
 #: ../../api/types/voice.rst:3
 msgid "Voice"
-msgstr ""
+msgstr "Voice"
 
 #: litegram.types.voice.Voice:1 of
 msgid "This object represents a voice note."
-msgstr ""
+msgstr "Этот объект представляет голосовое сообщение."
 
 #: litegram.types.voice.Voice:3 of
 msgid "Source: https://core.telegram.org/bots/api#voice"
-msgstr ""
+msgstr "Источник: https://core.telegram.org/bots/api#voice"
 
 #: ../../docstring litegram.types.voice.Voice.file_id:1 of
-msgid "Identifier for this file, which can be used to download or reuse the file"
+msgid ""
+"Identifier for this file, which can be used to download or reuse the file"
 msgstr ""
+"Идентификатор файла, который можно использовать для скачивания или повторной "
+"отправки файла"
 
 #: ../../docstring litegram.types.voice.Voice.file_unique_id:1 of
 msgid ""
-"Unique identifier for this file, which is supposed to be the same over "
-"time and for different bots. Can't be used to download or reuse the file."
+"Unique identifier for this file, which is supposed to be the same over time "
+"and for different bots. Can't be used to download or reuse the file."
 msgstr ""
+"Уникальный идентификатор этого файла, который должен оставаться одинаковым со"
+" временем и для разных ботов. Нельзя использовать для скачивания или "
+"повторной отправки файла."
 
 #: ../../docstring litegram.types.voice.Voice.duration:1 of
 msgid "Duration of the audio in seconds as defined by the sender"
-msgstr ""
+msgstr "Длительность аудио в секундах, заданная отправителем"
 
 #: ../../docstring litegram.types.voice.Voice.mime_type:1 of
 msgid "*Optional*. MIME type of the file as defined by the sender"
-msgstr ""
+msgstr "*Необязательно*. MIME-тип файла, заданный отправителем"
 
 #: ../../docstring litegram.types.voice.Voice.file_size:1 of
 msgid ""
 "*Optional*. File size in bytes. It can be bigger than 2^31 and some "
-"programming languages may have difficulty/silent defects in interpreting "
-"it. But it has at most 52 significant bits, so a signed 64-bit integer or"
-" double-precision float type are safe for storing this value."
+"programming languages may have difficulty/silent defects in interpreting it. "
+"But it has at most 52 significant bits, so a signed 64-bit integer or double-"
+"precision float type are safe for storing this value."
 msgstr ""
+"*Необязательно*. Размер файла в байтах. Может превышать 2^31, и в некоторых "
+"языках программирования возможны сложности или неявные ошибки при его "
+"интерпретации. Но он содержит не более 52 значащих битов, поэтому 64-битное "
+"целое число со знаком или число с плавающей точкой двойной точности безопасны"
+" для хранения этого значения."
