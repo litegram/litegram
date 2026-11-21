@@ -2,6 +2,10 @@
 
 This review covers the 10.4 API delta and the handwritten dispatcher, webhook, session, filters, handlers, FSM, CLI and utilities. It is a source review with targeted offline regression tests, not a certification or a live Telegram integration test.
 
+## Security scan status
+
+A Mimosa deep scan (`scan-2026-11-21T06-05-22.736Z-77d00af05764`, seal `sha256:5b60dd…bb32c`) over the current tree reports **0 findings** (dependency scan: 109 packages, 0 affected). The tool marks its own coverage as *partial / inconclusive*, so this is not a security certification — the flagged pre-commit findings (test temp file, examples with hardcoded secrets, docs-fetch SSRF surface) were fixed and the full static path analysis did not complete on this codebase size.
+
 ## Fixed and tested
 
 - Route all six new update types from raw JSON through the dispatcher and supply their user/chat context when available.
