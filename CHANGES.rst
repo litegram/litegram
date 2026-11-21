@@ -16,6 +16,31 @@ Changelog
 
 .. towncrier release notes start
 
+1.2.0 (2026-11-21)
+===================
+
+Features
+--------
+
+- Complete Russian localization of the API types reference: all 430 catalogs (~4730 entries) translated, including the pre-10.4 backlog. Untranslated entries now fall back only for sections outside api/types.
+
+Removals
+--------
+
+- Removed the legacy ``.butcher/`` infrastructure: enum configs moved to ``scripts/api_tool/config/enums/``, the schema baseline lives in ``.api/schema.json``, and the fresh parse lands in ``.api/new/``. ``make update-api`` follows the new layout.
+- Removed ``litegram.utils.mypy_hacks`` — use ``functools.lru_cache`` directly.
+
+Bugfixes
+--------
+
+- Removed ``lru_cache`` from ``Update.event_type``: the cache retained every processed ``Update`` object forever, causing unbounded memory growth under load.
+
+Misc
+----
+
+- Generated-file provenance comments rebranded to the litegram api tool; README badge, ``bump_versions.py`` and ``Makefile`` follow the new schema paths.
+
+
 1.1.0 (2026-11-20)
 ===================
 
