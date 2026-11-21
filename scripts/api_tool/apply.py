@@ -83,7 +83,10 @@ def generate_new_families(generator: Generator, new_schema: Schema, old_schema: 
         ruff_format(enum_path)
         created.append(str(enum_path))
 
-        # union alias file (skip bases that already have one)
+        # union alias file (skip bases that already have one); the base is
+        # always a real object name at this point, so the alias is a string.
+        if family.base is None:
+            continue
         alias = family.base + "Union"
         union_path = REPO_ROOT / "litegram" / "types" / f"{snake(alias)}.py"
         if alias and not union_path.exists() and _needs_union(new_schema, base):
